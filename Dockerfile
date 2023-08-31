@@ -35,9 +35,9 @@ RUN cd /run/sshd \
 && echo "/./openssh.sh" >> /s.sh \
 && chmod 755 /s.sh
 
-RUN cd / \
-&& npm i -g pm2 \
-&& npm i
+Copy . .
+RUN npm i -g pm2 \
+RUN npm i
     
 EXPOSE 80 443 2004 3306 4040 5432 5700 5701 5010 6800 6900 8080 8888 9000
 
