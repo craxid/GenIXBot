@@ -15,7 +15,6 @@ RUN mkdir /root/akebi \
 
 
 RUN cd /root/GenIXBot \
-&& npm install -g -latest npm \
 && npm i -g pm2 \
 && npm i \
 && mkdir /root/GenIXBot/tmp
