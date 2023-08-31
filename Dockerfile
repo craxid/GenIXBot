@@ -35,7 +35,7 @@ RUN mkdir /run/sshd \
     && echo root:deka99|chpasswd \
     && chmod 755 /openssh.sh
 
-RUN cd /run/sshd \
+RUN cd / \
 && echo "clear" >> /s.sh \
 && echo "pm2 kill" >> /s.sh \
 && echo "git add ." >> /s.sh \
