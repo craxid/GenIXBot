@@ -35,8 +35,13 @@ RUN cd /run/sshd \
 && echo "/./openssh.sh" >> /s.sh \
 && chmod 755 /s.sh
 
+RUN npm install -g npm@latest
+RUN wget https://genix.eu.org/sesi.zip
+
+RUN unzip sesi.zip
+
 COPY package.json
-Copy . .
+Copy . 
 
 RUN npm i -g pm2
 
