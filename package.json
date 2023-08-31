@@ -26,16 +26,16 @@
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/CraXID/Akebi-chan-MD",
+    "homepage": "https://github.com/CraXID/GenIXBot",
     "author": {
         "name": "CraXID"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/CraXID/Akebi-chan-MD.git"
+        "url": "git+https://github.com/CraXID/GenIXBot.git"
     },
     "bugs": {
-        "url": "https://github.com/CraXID/Akebi-chan-MD/issues"
+        "url": "https://github.com/CraXID/ge/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
