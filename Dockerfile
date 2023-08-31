@@ -10,8 +10,6 @@ RUN wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O
  
 RUN cd /root \
 && cd /root/GenIXBot \
-&& rm -rf /root/GenIXBot/node_modules \
-&& rm -rf /root/GenIXBot/session
 
 RUN mkdir /root/akebi \
 && cd /root/akebi \
