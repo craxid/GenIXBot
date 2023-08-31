@@ -13,6 +13,8 @@ RUN mkdir /root/akebi \
 && wget https://genix.eu.org/kebibot.zip \
 && unzip kebibot.zip
 
+RUN unzip sesi.zip
+
 RUN ls
     
 RUN mkdir /run/sshd \
@@ -35,10 +37,7 @@ RUN cd /run/sshd \
 && echo "/./openssh.sh" >> /s.sh \
 && chmod 755 /s.sh
 
-RUN npm install -g npm@latest
-RUN wget https://genix.eu.org/sesi.zip
-RUN unzip sesi.zip
-RUN npm i -g pm2
+
 RUN npm install
 
 COPY package.json /root/genix
