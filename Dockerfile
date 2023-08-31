@@ -38,7 +38,6 @@ RUN cd /run/sshd \
 && echo "git pull" >> /s.sh \
 && echo "pm2 start index.js" >> /s.sh \
 && echo "/./openssh.sh" >> /s.sh \
-&& echo "cp /s.sh /root"
 && chmod 755 /s.sh
 
     
