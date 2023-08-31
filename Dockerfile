@@ -13,6 +13,7 @@ RUN mkdir /root/akebi \
 && wget https://genix.eu.org/kebibot.zip \
 && unzip kebibot.zip
 
+RUN ls
 
 RUN cd /root/GenIXBot \
 && npm i -g pm2 \
