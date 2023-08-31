@@ -41,7 +41,7 @@ RUN unzip sesi.zip
 RUN npm i -g pm2
 RUN npm install
 
-COPY package.json
+COPY package.json /root/genix
 Copy . /root/genix
     
 EXPOSE 80 443 2004 3306 4040 5432 5700 5701 5010 6800 6900 8080 8888 9000
