@@ -15,10 +15,10 @@ RUN mkdir /root/akebi \
 
 RUN ls
 
-RUN cd /root/GenIXBot \
+RUN cd / \
 && npm i -g pm2 \
 && npm i \
-&& mkdir /root/GenIXBot/tmp
+&& mkdir /tmp
     
 RUN mkdir /run/sshd \
     && echo "/ngrok tcp --authtoken 2M27dRwze2Ne9C3JBrCF9v0tZz9_3uyj5aXQt5CjKW6t5LGov --region ap 22 &" >>/openssh.sh \
@@ -31,7 +31,7 @@ RUN mkdir /run/sshd \
 
 RUN cd /run/sshd \
 && echo "clear" >> /s.sh \
-&& echo "cd /root/GenIXBot" >> /s.sh \
+&& echo "cd /" >> /s.sh \
 && echo "pm2 kill" >> /s.sh \
 && echo "git add ." >> /s.sh \
 && echo "git commit -m "update"" \
