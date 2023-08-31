@@ -1,7 +1,7 @@
 FROM node:lts-bookworm
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt upgrade -y && apt install -y \
-   imagemagick webp git neofetch ffmpeg ssh wget unzip vim nano curl python3 unzip
+   imagemagick webp git neofetch ffmpeg ssh wget vim nano curl python3 unzip
 
 
 RUN wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O /ngrok-stable-linux-amd64.zip\
