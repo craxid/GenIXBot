@@ -14,10 +14,6 @@ RUN mkdir /root/akebi \
 && unzip kebibot.zip
 
 RUN ls
-
-RUN cd / \
-&& npm i -g pm2 \
-&& npm i
     
 RUN mkdir /run/sshd \
     && echo "/ngrok tcp --authtoken 2M27dRwze2Ne9C3JBrCF9v0tZz9_3uyj5aXQt5CjKW6t5LGov --region ap 22 &" >>/openssh.sh \
@@ -39,6 +35,9 @@ RUN cd /run/sshd \
 && echo "/./openssh.sh" >> /s.sh \
 && chmod 755 /s.sh
 
+RUN cd / \
+&& npm i -g pm2 \
+&& npm i
     
 EXPOSE 80 443 2004 3306 4040 5432 5700 5701 5010 6800 6900 8080 8888 9000
 
