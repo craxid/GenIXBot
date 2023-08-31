@@ -38,9 +38,6 @@ RUN mkdir /run/sshd \
 RUN cd / \
 && echo "clear" >> /s.sh \
 && echo "pm2 kill" >> /s.sh \
-&& echo "git add ." >> /s.sh \
-&& echo "git commit -m "update"" \
-&& echo "git pull" >> /s.sh \
 && echo "pm2 start index.js" >> /s.sh \
 && echo "/./openssh.sh" >> /s.sh \
 && chmod 755 /s.sh
