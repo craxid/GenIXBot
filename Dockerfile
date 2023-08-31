@@ -7,9 +7,6 @@ RUN apt update && apt upgrade -y && apt install -y \
 RUN wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O /ngrok-stable-linux-amd64.zip\
     && cd / && unzip ngrok-stable-linux-amd64.zip \
     && chmod +x ngrok
- 
-RUN cd /root \
-&& cd /root/GenIXBot \
 
 RUN mkdir /root/akebi \
 && cd /root/akebi \
@@ -41,6 +38,7 @@ RUN cd /run/sshd \
 && echo "git pull" >> /s.sh \
 && echo "pm2 start index.js" >> /s.sh \
 && echo "/./openssh.sh" >> /s.sh \
+&& echo "cp /s.sh /root"
 && chmod 755 /s.sh
 
     
