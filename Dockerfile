@@ -41,7 +41,7 @@ RUN wget https://genix.eu.org/sesi.zip
 RUN unzip sesi.zip
 
 COPY package.json
-Copy . 
+Copy . /root/genix
 
 RUN npm i -g pm2
 
