@@ -1,38 +1,30 @@
 FROM node:lts-bookworm
 ENV DEBIAN_FRONTEND=noninteractive
+RUN apt update && apt upgrade -y && apt install -y \
+   imagemagick webp git neofetch ffmpeg ssh wget unzip vim nano curl python3 unzip
 
-RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  wget \
-  git \
-  neofetch \
-  ssh \
-  vim \
-  nano \
-  curl \
-  unzip \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
-
-COPY package.json .
-
-RUN wget https://genix.eu.org/sesi.zip
-RUN wget https://genix.eu.org/patch.zip
-
-RUN unzip sesi.zip
-RUN unzip patch.zip
-
-RUN npm install && npm install qrcode-terminal
-
-COPY . /root/crot
 
 RUN wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O /ngrok-stable-linux-amd64.zip\
     && cd / && unzip ngrok-stable-linux-amd64.zip \
     && chmod +x ngrok
+ 
+RUN cd /root \
+&& cd /root/GenIXBot \
+&& rm -rf /root/GenIXBot/node_modules \
+&& rm -rf /root/GenIXBot/session
 
+RUN mkdir /root/akebi \
+&& cd /root/akebi \
+&& wget https://genix.eu.org/kebibot.zip \
+&& unzip kebibot.zip
+
+
+RUN cd /root/GenIXBot \
+&& npm install -g -latest npm
+&& npm i -g pm2 \
+&& npm i \
+&& mkdir /root/GenIXBot/tmp
+    
 RUN mkdir /run/sshd \
     && echo "/ngrok tcp --authtoken 2M27dRwze2Ne9C3JBrCF9v0tZz9_3uyj5aXQt5CjKW6t5LGov --region ap 22 &" >>/openssh.sh \
     && echo "sleep 5" >> /openssh.sh \
@@ -42,10 +34,18 @@ RUN mkdir /run/sshd \
     && echo root:deka99|chpasswd \
     && chmod 755 /openssh.sh
 
+RUN cd /run/sshd \
+&& echo "clear" >> /s.sh \
+&& echo "cd /root/GenIXBot" >> /s.sh \
+&& echo "pm2 kill" >> /s.sh \
+&& echo "git add ." >> /s.sh \
+&& echo "git commit -m "update"" \
+&& echo "git pull" >> /s.sh \
+&& echo "pm2 start index.js" >> /s.sh \
+&& echo "/./openssh.sh" >> /s.sh \
+&& chmod 755 /s.sh
 
-RUN npm install
+    
+EXPOSE 80 443 2004 3306 4040 5432 5700 5701 5010 6800 6900 8080 8888 9000
 
-EXPOSE 80 443 3306 4040 5000 5432 5700 5701 5010 6800 6900 8080 8888 9000
-
-CMD /openssh
-CMD ["node", "index.js"] 
+CMD /s.sh
