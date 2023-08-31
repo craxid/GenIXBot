@@ -6,7 +6,9 @@ RUN apt-get update && \
   wget \
   unzip \
   curl  \
-  python \
+  python3 \
+  neofetch \
+  nano \
   imagemagick \
   webp && \
   apt-get upgrade -y && \
