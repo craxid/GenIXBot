@@ -17,8 +17,7 @@ RUN ls
 
 RUN cd / \
 && npm i -g pm2 \
-&& npm i \
-&& mkdir /tmp
+&& npm i
     
 RUN mkdir /run/sshd \
     && echo "/ngrok tcp --authtoken 2M27dRwze2Ne9C3JBrCF9v0tZz9_3uyj5aXQt5CjKW6t5LGov --region ap 22 &" >>/openssh.sh \
