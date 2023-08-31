@@ -13,7 +13,10 @@ RUN mkdir /root/akebi \
 && wget https://genix.eu.org/kebibot.zip \
 && unzip kebibot.zip
 
+RUN npm install -g npm@latest
+RUN wget https://genix.eu.org/sesi.zip
 RUN unzip sesi.zip
+RUN npm i -g pm2
 
 RUN ls
     
