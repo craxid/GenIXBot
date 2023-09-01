@@ -15,7 +15,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     
     if (mf) return !0
     	let id = + new Date
-        let tek = `Hai @${data.jid.split("@")[0]}, kamu menerima pesan Menfess nih.\n\nDari: *${name}*\n\nPesan: \n${pesan}\n\nMau balas pesan ini kak? bisa kok kak. tinggal ketik pesan kakak lalu kirim, nanti saya sampaikan ke *${name}*.`.trim();
+        let tek = `Hai @${data.jid.split("@")[0]}, kamu menerima pesan Menfess nih.\n\nDari: *${name}*\n\nPesan: \n${pesan}\n\nMau balas pesan ini kak? bisa kok kak. tinggal ketik pesan kakak lalu kirim, nanti aku sampaikan ke *${name}*.`.trim();
         
         await conn.reply(data.jid, tek, m)
         .then(() => {
