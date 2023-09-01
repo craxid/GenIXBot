@@ -12,7 +12,6 @@ RUN apt-get update && \
   nano \
   ssh \
   imagemagick \
-  libwebp \
   webp && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
