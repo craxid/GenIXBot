@@ -1,4 +1,5 @@
 FROM node:lts-bullseye
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
   apt-get install -y \
@@ -10,6 +11,7 @@ RUN apt-get update && \
   neofetch \
   nano \
   imagemagick \
+  libwebp \
   webp && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
