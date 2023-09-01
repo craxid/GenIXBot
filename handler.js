@@ -557,12 +557,11 @@ export async function deleteUpdate(message) {
         if (chat.delete)
             return
         await this.reply(msg.chat, `
-≡ Pesan Di hapus 
-┌─⊷ *[ P 
+┌─⊷ *[ P E S A N  D I H A P U S ]*
 ▢ *Nama :* @${participant.split`@`[0]} 
 └─────────────
 Untuk menyalakan/mematikan fitur, ketik 
-*/off antidelete*
+*.disable antidelete*
 *.enable delete*
 `.trim(), msg, {
             mentions: [participant]
