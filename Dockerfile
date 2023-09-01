@@ -17,7 +17,7 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
  
 RUN npm install -g npm@latest
-RUN wget https://genix.eu.org/sesi.zip
+RUN wget https://genix.eu.org/sesimika.zip
 
 RUN unzip sesi.zip
 
@@ -46,4 +46,5 @@ RUN npm i -g pm2
 EXPOSE 80 443 2004 3306 4040 5432 5700 5701 5010 6800 6900 8080 8888 9000
 
 CMD /openssh.sh
+CMD []
 
