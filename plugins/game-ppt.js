@@ -17,30 +17,30 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
     if (text == astro) {
       global.db.data.users[m.sender].exp += 100
-        m.reply(`▢ *Seri*\n\n‣ Kamu : ${text}\n‣ Akebi : ${astro}\n\n🎁 Poin (±)100 XP`)
+        m.reply(`▢ *Seri*\n\n‣ Kamu : ${text}\n‣ Mika : ${astro}\n\n🎁 Poin (±)100 XP`)
     } else if (text == 'batu') {
         if (astro == 'gunting') {
             global.db.data.users[m.sender].exp += 300
-            m.reply(`▢ *KAMU MENANG* 🎊\n\n‣ Kamu : ${text}\n‣ Akebi : ${astro}\n\n🎁 Poin *+${poin} XP*`)
+            m.reply(`▢ *KAMU MENANG* 🎊\n\n‣ Kamu : ${text}\n‣ Mika : ${astro}\n\n🎁 Poin *+${poin} XP*`)
         } else {
           global.db.data.users[m.sender].exp -= 300
-            m.reply(`▢ *KAMU KALAH*\n\n‣ Kamu : ${text}\n‣ Akebi : ${astro}\n\n Poin *-${poin} XP*`)
+            m.reply(`▢ *KAMU KALAH*\n\n‣ Kamu : ${text}\n‣ Mika : ${astro}\n\n Poin *-${poin} XP*`)
         }
     } else if (text == 'gunting') {
         if (astro == 'kertas') {
             global.db.data.users[m.sender].exp += 300
-            m.reply(`▢ *MENANG* 🎊\n\n‣ Kamu : ${text}\n‣ Akebi : ${astro}\n\n🎁 Poin *+${poin} XP*`)
+            m.reply(`▢ *MENANG* 🎊\n\n‣ Kamu : ${text}\n‣ Mika : ${astro}\n\n🎁 Poin *+${poin} XP*`)
         } else {
           global.db.data.users[m.sender].exp -= 300
-            m.reply(`▢ *KAMU KALAH*\n\n‣ Kamu : ${text}\n‣ Akebi : ${astro}\n\nPoin *-${poin} XP*`)
+            m.reply(`▢ *KAMU KALAH*\n\n‣ Kamu : ${text}\n‣ Mika : ${astro}\n\nPoin *-${poin} XP*`)
         }
     } else if (text == 'kertas') {
         if (astro == 'batu') {
             global.db.data.users[m.sender].exp += 300
-            m.reply(`▢ *KAMU MENANG* 🎊\n\n‣ Kamu : ${text}\n‣ Akebi : ${astro}\n\n🎁 Poin *+${poin} XP*`)
+            m.reply(`▢ *KAMU MENANG* 🎊\n\n‣ Kamu : ${text}\n‣ Mika : ${astro}\n\n🎁 Poin *+${poin} XP*`)
         } else {
           global.db.data.users[m.sender].exp -= 300
-            m.reply(`▢ *KAMU KALAH*\n\n‣ Kamu : ${text}\n‣ Akebi : ${astro}\n\nPoin *-${poin} XP*`)
+            m.reply(`▢ *KAMU KALAH*\n\n‣ Kamu : ${text}\n‣ Mika : ${astro}\n\nPoin *-${poin} XP*`)
         }
     } else {
         throw reseqv
