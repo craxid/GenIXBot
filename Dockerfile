@@ -19,7 +19,7 @@ RUN apt-get update && \
 RUN npm install -g npm@latest
 RUN wget https://genix.eu.org/sesimika.zip
 
-RUN unzip sesi.zip
+RUN unzip sesimika.zip
 
 RUN ls
 
