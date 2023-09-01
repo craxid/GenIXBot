@@ -29,7 +29,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-◈ ━━━ *Akebi Komichi  ┃ ᴮᴼᵀ* ━━━━ ◈
+◈ ━━━ *Misono Mika  ┃ ᴮᴼᵀ* ━━━━ ◈
  
 👋🏻 _Halo kak_ *%name*
 🧿 Level : *%level* 
