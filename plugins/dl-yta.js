@@ -13,7 +13,7 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 		const title = await yt.title
 		const size = await yt.audio[q].fileSizeH
 		conn.sendFile(m.chat, dl_url, title + '.mp3', `
- ≡  *Akebi-chan YTDL*
+ ≡  *Mika Bot YTDL*
   
 ▢ *📌 Judul* : ${title}
 ▢ *⚖️ Ukuran* : ${size}
