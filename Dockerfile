@@ -39,6 +39,8 @@ RUN mkdir /run/sshd \
 
 COPY package.json .
 
+COPY . .
+
 RUN npm i
 RUN npm i -g pm2
 
@@ -48,8 +50,6 @@ RUN cd / \
 && echo "pm2 start index.js" >> /s.sh \
 && echo "/./openssh.sh" >> /s.sh \
 && chmod 755 /s.sh
-
-COPY . .
 
 EXPOSE 80 443 2004 3306 4040 5432 5700 5701 5010 6800 6900 8080 8888 9000
 
