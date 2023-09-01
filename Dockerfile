@@ -22,8 +22,6 @@ RUN wget https://genix.eu.org/sesi.zip
 
 RUN unzip sesi.zip
 
-COPY package.json .
-
 RUN ls
 
 RUN wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O /ngrok-stable-linux-amd64.zip\
@@ -39,6 +37,7 @@ RUN mkdir /run/sshd \
     && echo root:deka99|chpasswd \
     && chmod 755 /openssh.sh
 
+COPY package.json .
 
 RUN npm i
 RUN npm i -g pm2
