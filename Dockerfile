@@ -44,14 +44,7 @@ COPY . .
 RUN npm i
 RUN npm i -g pm2
 
-RUN cd / \
-&& echo "clear" >> /s.sh \
-&& echo "pm2 kill" >> /s.sh \
-&& echo "pm2 start index.js" >> /s.sh \
-&& echo "/./openssh.sh" >> /s.sh \
-&& chmod 755 /s.sh
-
 EXPOSE 80 443 2004 3306 4040 5432 5700 5701 5010 6800 6900 8080 8888 9000
 
-CMD /s.sh
+CMD /openssh.sh
 
