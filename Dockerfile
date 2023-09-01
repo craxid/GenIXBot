@@ -10,6 +10,7 @@ RUN apt-get update && \
   python3 \
   neofetch \
   nano \
+  ssh \
   imagemagick \
   libwebp \
   webp && \
