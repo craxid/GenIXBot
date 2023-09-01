@@ -11,7 +11,7 @@ try {
 ▢ *🔖 Username:* ${res.username}
 ▢ *👥 Pengikut:* ${res.followers}
 ▢ *🫂 Mengikuti:* ${res.following}
-▢ *📌Deskripsi:* ${res.desc}
+▢ *📌 Deskripsi:* ${res.desc}
 
 ▢ *🔗 Link* : https://tiktok.com/${res.username}
 └────────────`
