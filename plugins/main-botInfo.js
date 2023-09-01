@@ -67,7 +67,7 @@ let infobt = `
   
  *≡ S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
-*🔵 FreeRAM:* ${format(freemem())}
+*🔵 Sisa RAM:* ${format(freemem())}
 
 *≡  Memori yang digunakan NodeJS*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
@@ -77,6 +77,6 @@ m.reply(infobt)
 }
 handler.help = ['info']
 handler.tags = ['main']
-handler.command = ['info', 'infobot', 'akebi', 'botinfo']
+handler.command = ['info', 'infobot', 'mika', 'botinfo']
 
 export default handler
