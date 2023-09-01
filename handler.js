@@ -558,7 +558,7 @@ export async function deleteUpdate(message) {
             return
         await this.reply(msg.chat, `
 ≡ Pesan Di hapus 
-┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 
+┌─⊷ *[ P 
 ▢ *Nama :* @${participant.split`@`[0]} 
 └─────────────
 Untuk menyalakan/mematikan fitur, ketik 
@@ -583,7 +583,7 @@ global.dfail = (type, m, conn) => {
         private: '📮 Hanya bisa digunakan di *Chat Pribadi*',
         admin: '🛡️ Hanya untuk *Admin* grup!',
         botAdmin: '💥 Hanya untuk *Admin!*',
-        unreg: '📇 Fitur ini untuk pengguna terdaftar\n\n Ketik: *.register nama.umur*\n\n📌 Contoh : *.reg Akebi.14*',
+        unreg: '📇 Fitur ini untuk pengguna terdaftar\n\n Ketik: *.register nama.umur*\n\n📌 Contoh : *.reg Mika.16*',
         restrict: '🔐 Fitur ini *dinonaktifkan*'
     }[type]
     if (msg) return m.reply(msg)
