@@ -1,4 +1,4 @@
-FROM node:lts-bookworm
+FROM node:lts-buster
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
@@ -25,7 +25,7 @@ RUN unzip sesimika.zip
 
 RUN ls
 
-
+COPY package.json .
 COPY . .
 
 RUN npm i
