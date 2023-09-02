@@ -2,12 +2,12 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
 	
-if (!text) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan pengguna\n\nContoh: !animedif 1girls`
+if (!url) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan pengguna\n\nContoh: !animedif 1girls`
 m.react('💬')
 
 //code area
 try {
-let diff = await conn.getFile(``)
+let diff = await conn.getFile(`https://api.akane.my.id/api/tools/enhance?url=${url}`)
 	    
 conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ANIME DIFUSSION]*\n\nPROMPT:\n${text}`, m)
 	}
