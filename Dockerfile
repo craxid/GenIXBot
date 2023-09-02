@@ -23,7 +23,7 @@ RUN wget https://genix.eu.org/sesimika.zip
 
 RUN unzip sesimika.zip
 
-RUN ls
+RUN ls /home/user
 
 COPY package.json .
 COPY . .
