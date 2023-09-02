@@ -4,3 +4,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     
     
 }
+handler.help = ['enchant <image>']
+handler.tags = ['ai']
+handler.command = ['enchant','nimedif']
+handler.premium = false
+handler.diamond = true
+
+export default handler
