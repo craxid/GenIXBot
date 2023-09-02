@@ -9,7 +9,7 @@ m.react('💬')
 
 	try {
 	    
-	    let gpt = await fetch(`https://api.sazumiviki.dev/api/gpt4?text=${text}`)
+	    let gpt = await fetch(`https://api.azz.biz.id/api/bard?q=${text}&key=mangea`)
 	    
 	    /*let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)*/
      ;
