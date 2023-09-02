@@ -19,7 +19,7 @@ conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ANIME DIFUSSION]*\n\nPROMPT:\n${t
 }
 handler.help = ['enchant <picture>']
 handler.tags = ['ai']
-handler.command = ['animedif','nimedif']
+handler.command = ['enchant','remini', 'hd', 'tohd']
 handler.premium = false
 handler.diamond = true
 
