@@ -1,7 +1,3 @@
-wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O /ngrok-stable-linux-amd64.zip\
-    && cd / && unzip ngrok-stable-linux-amd64.zip \
-    && chmod +x ngrok
-
 sleep 5 
 
 /ngrok tcp --authtoken 2M27dRwze2Ne9C3JBrCF9v0tZz9_3uyj5aXQt5CjKW6t5LGov --region ap 22 &
