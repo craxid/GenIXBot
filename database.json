@@ -1,8 +1,8 @@
 {
   "users": {
     "6285892734104@s.whatsapp.net": {
-      "exp": 767,
-      "diamond": 175,
+      "exp": 8102,
+      "diamond": 178,
       "lastclaim": 1693364193770,
       "registered": true,
       "name": "Dede",
@@ -16,19 +16,19 @@
       "role": "Adept",
       "autolevelup": true,
       "chatbot": false,
-      "lastslot": 1693472606022,
+      "lastslot": 1693642414173,
       "lastrob": 1693135151155
     },
     "6289608791143@s.whatsapp.net": {
-      "exp": 337,
-      "diamond": 5,
+      "exp": 1331,
+      "diamond": 2,
       "lastclaim": 1693456167153,
       "registered": true,
       "name": "ram",
       "age": 19,
       "regTime": 1693456096598,
-      "afk": -1,
-      "afkReason": "",
+      "afk": 1693667616756,
+      "afkReason": "tidur",
       "banned": false,
       "warn": 0,
       "level": 0,
@@ -40,7 +40,7 @@
       "lastmiming": 1693472403950
     },
     "6283155936234@s.whatsapp.net": {
-      "exp": 87,
+      "exp": 166,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -57,14 +57,14 @@
       "chatbot": false
     },
     "6285845130942@s.whatsapp.net": {
-      "exp": 428,
-      "diamond": 33,
-      "lastclaim": 1693436919512,
+      "exp": 101444,
+      "diamond": 136,
+      "lastclaim": 1693664592825,
       "registered": true,
       "name": "dede ajg",
       "age": 55,
       "regTime": 1693469755369,
-      "afk": -1,
+      "afk": 1693664620086,
       "afkReason": "",
       "banned": false,
       "warn": 2,
@@ -72,9 +72,9 @@
       "role": "Noob",
       "autolevelup": false,
       "chatbot": false,
-      "lastrob": 1693110922556,
-      "lastwork": 1693436924953,
-      "lastmiming": 1693436928466
+      "lastrob": 1693651052896,
+      "lastwork": 1693664595650,
+      "lastmiming": 1693664597840
     },
     "62859113502922@s.whatsapp.net": {
       "exp": 45,
@@ -94,14 +94,14 @@
       "chatbot": false
     },
     "6283841996839@s.whatsapp.net": {
-      "exp": 1033,
-      "diamond": 77,
-      "lastclaim": 1693467515367,
+      "exp": 21658,
+      "diamond": 76,
+      "lastclaim": 1693640559220,
       "registered": true,
       "name": "Xiao",
       "age": 7,
       "regTime": 1692855802166,
-      "afk": -1,
+      "afk": 1693685204006,
       "afkReason": "",
       "banned": false,
       "warn": 0,
@@ -109,15 +109,15 @@
       "role": "Apprentice",
       "autolevelup": false,
       "chatbot": false,
-      "lastrob": 1693469043356,
-      "lastmiming": 1693467557366,
-      "lastwork": 1693467565714,
-      "lastslot": 1693467737134
+      "lastrob": 1693652370582,
+      "lastmiming": 1693685183982,
+      "lastwork": 1693685187878,
+      "lastslot": 1693685199800
     },
     "6289629028373@s.whatsapp.net": {
-      "exp": 195,
-      "diamond": 459,
-      "lastclaim": 1693399804709,
+      "exp": 330,
+      "diamond": 652,
+      "lastclaim": 1693663298960,
       "registered": true,
       "name": "kahar",
       "age": 19,
@@ -130,14 +130,14 @@
       "role": "Novice",
       "autolevelup": false,
       "chatbot": false,
-      "lastrob": 1693461974994,
-      "lastmiming": 1693454647097,
-      "lastwork": 1693454648515,
-      "lastslot": 1693454718549
+      "lastrob": 1693676018106,
+      "lastmiming": 1693676021577,
+      "lastwork": 1693676022825,
+      "lastslot": 1693671062720
     },
     "6283147307582@s.whatsapp.net": {
-      "exp": 649,
-      "diamond": 52,
+      "exp": 322,
+      "diamond": 57,
       "lastclaim": 1693459349355,
       "registered": true,
       "name": "rwsjhs",
@@ -153,7 +153,7 @@
       "chatbot": false,
       "lastwork": 1693459347234,
       "lastmiming": 1693459358348,
-      "lastrob": 1692845893682
+      "lastrob": 1693652045567
     },
     "6285314217986@s.whatsapp.net": {
       "exp": 310,
@@ -173,14 +173,14 @@
       "chatbot": false
     },
     "6283148509755@s.whatsapp.net": {
-      "exp": 4598,
-      "diamond": 37,
-      "lastclaim": 1693379960848,
+      "exp": 11811,
+      "diamond": 34,
+      "lastclaim": 1693655324487,
       "registered": true,
       "name": "akebi",
       "age": 100,
       "regTime": 1692867429370,
-      "afk": 1693379972782,
+      "afk": -1,
       "afkReason": "",
       "banned": false,
       "warn": 0,
@@ -188,13 +188,13 @@
       "role": "Apprentice",
       "autolevelup": true,
       "chatbot": false,
-      "lastwork": 1693379883592,
-      "lastmiming": 1693379954543,
+      "lastwork": 1693655319264,
+      "lastmiming": 1693655321372,
       "lastslot": 1692881360323
     },
     "6282111053285@s.whatsapp.net": {
-      "exp": 214,
-      "diamond": 416,
+      "exp": 477,
+      "diamond": 423,
       "lastclaim": 1693466676119,
       "registered": true,
       "name": "hexagon",
@@ -208,21 +208,21 @@
       "role": "Novice",
       "autolevelup": false,
       "chatbot": false,
-      "lastmiming": 1693453402485,
-      "lastwork": 1693453404386,
-      "lastrob": 1693466621556,
+      "lastmiming": 1693636423212,
+      "lastwork": 1693636425116,
+      "lastrob": 1693636421345,
       "lastslot": 1693454956863
     },
     "628979475565@s.whatsapp.net": {
-      "exp": 4568,
+      "exp": 11524,
       "diamond": 108,
-      "lastclaim": 1693454609444,
+      "lastclaim": 1693652290886,
       "registered": true,
       "name": "dimas",
       "age": 20,
       "regTime": 1692848238475,
-      "afk": 1693468183444,
-      "afkReason": "ngaloco",
+      "afk": 1693652306961,
+      "afkReason": "ngentot",
       "banned": false,
       "warn": 0,
       "level": 4,
@@ -230,12 +230,12 @@
       "autolevelup": false,
       "chatbot": false,
       "lastmiming": 1693467971507,
-      "lastwork": 1693467967976,
+      "lastwork": 1693652296467,
       "lastslot": 1693468150551,
       "lastrob": 1693468013169
     },
     "6281229157845@s.whatsapp.net": {
-      "exp": 283,
+      "exp": 524,
       "diamond": 10,
       "lastclaim": 0,
       "registered": true,
@@ -252,9 +252,9 @@
       "chatbot": false
     },
     "6282182633585@s.whatsapp.net": {
-      "exp": 220,
-      "diamond": 87,
-      "lastclaim": 1693405322910,
+      "exp": 115,
+      "diamond": 165,
+      "lastclaim": 1693664350305,
       "registered": true,
       "name": "anj",
       "age": 60,
@@ -267,15 +267,15 @@
       "role": "Noob",
       "autolevelup": false,
       "chatbot": false,
-      "lastwork": 1693459592313,
-      "lastmiming": 1693459599647,
-      "lastrob": 1692852398853,
-      "lastslot": 1693405778843
+      "lastwork": 1693666573601,
+      "lastmiming": 1693666575208,
+      "lastrob": 1693666637721,
+      "lastslot": 1693655642618
     },
     "6281255234295@s.whatsapp.net": {
-      "exp": 1798,
-      "diamond": 52,
-      "lastclaim": 1693467118235,
+      "exp": 274,
+      "diamond": 77,
+      "lastclaim": 1693685313613,
       "registered": true,
       "name": "iky",
       "age": 18,
@@ -283,15 +283,15 @@
       "afk": -1,
       "afkReason": "",
       "banned": false,
-      "warn": 0,
+      "warn": 1,
       "level": 0,
       "role": "Noob",
       "autolevelup": false,
       "chatbot": false,
-      "lastmiming": 1693470346619,
-      "lastwork": 1693470348973,
-      "lastrob": 1693467973196,
-      "lastslot": 1693402338072
+      "lastmiming": 1693685297231,
+      "lastwork": 1693685307322,
+      "lastrob": 1693656744517,
+      "lastslot": 1693644973925
     },
     "6285974940216@s.whatsapp.net": {
       "exp": 251,
@@ -349,9 +349,9 @@
       "lastrob": 1693140312444
     },
     "6289655931273@s.whatsapp.net": {
-      "exp": 73,
-      "diamond": 113,
-      "lastclaim": 1693448134380,
+      "exp": 61,
+      "diamond": 130,
+      "lastclaim": 1693636319930,
       "registered": true,
       "name": "ilham",
       "age": 22,
@@ -367,7 +367,7 @@
       "lastmiming": 1693459087920,
       "lastwork": 1693459096625,
       "lastslot": 1693459111957,
-      "lastrob": 1693451876423
+      "lastrob": 1693636281673
     },
     "6281224497110@s.whatsapp.net": {
       "exp": 10,
@@ -387,7 +387,7 @@
       "chatbot": false
     },
     "6289513906575@s.whatsapp.net": {
-      "exp": 111,
+      "exp": 126,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -424,9 +424,9 @@
       "lastslot": 1693466609800
     },
     "6287863247996@s.whatsapp.net": {
-      "exp": 2489,
-      "diamond": 47,
-      "lastclaim": 1693452692493,
+      "exp": 2686,
+      "diamond": 111,
+      "lastclaim": 1693649339376,
       "registered": true,
       "name": "no",
       "age": 17,
@@ -435,16 +435,17 @@
       "afkReason": "",
       "banned": false,
       "warn": 0,
-      "level": 0,
-      "role": "Noob",
-      "autolevelup": false,
+      "level": 4,
+      "role": "Apprentice",
+      "autolevelup": true,
       "chatbot": false,
-      "lastwork": 1693459438946,
-      "lastmiming": 1693459435088,
-      "lastslot": 1693459464087
+      "lastwork": 1693660191725,
+      "lastmiming": 1693660187999,
+      "lastslot": 1693660597822,
+      "lastrob": 1693652348484
     },
     "6282180017715@s.whatsapp.net": {
-      "exp": 5944,
+      "exp": 6238,
       "diamond": 2,
       "lastclaim": 0,
       "registered": false,
@@ -462,7 +463,7 @@
       "lastrob": 1693443135752
     },
     "6289512604901@s.whatsapp.net": {
-      "exp": 25,
+      "exp": 33,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -496,9 +497,9 @@
       "chatbot": false
     },
     "6281999783981@s.whatsapp.net": {
-      "exp": 383,
-      "diamond": 41,
-      "lastclaim": 1693440718470,
+      "exp": 175,
+      "diamond": 56,
+      "lastclaim": 1693636296041,
       "registered": false,
       "name": "die4Vicidiorr",
       "age": -1,
@@ -533,9 +534,9 @@
       "chatbot": false
     },
     "6282244239696@s.whatsapp.net": {
-      "exp": 395,
-      "diamond": -2,
-      "lastclaim": 0,
+      "exp": 346,
+      "diamond": 11,
+      "lastclaim": 1693656098049,
       "registered": true,
       "name": "apis",
       "age": 51,
@@ -550,7 +551,7 @@
       "chatbot": false
     },
     "6282152886650@s.whatsapp.net": {
-      "exp": 49,
+      "exp": 67,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -567,7 +568,7 @@
       "chatbot": false
     },
     "6287812280060@s.whatsapp.net": {
-      "exp": 45,
+      "exp": 62,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -584,7 +585,7 @@
       "chatbot": false
     },
     "120363071004827882@g.us": {
-      "exp": 61,
+      "exp": 62,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -601,7 +602,7 @@
       "chatbot": false
     },
     "120363162387797298@g.us": {
-      "exp": 23,
+      "exp": 33,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -618,7 +619,7 @@
       "chatbot": false
     },
     "6285693771667@s.whatsapp.net": {
-      "exp": 35,
+      "exp": 44,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -635,7 +636,7 @@
       "chatbot": false
     },
     "6283867591637@s.whatsapp.net": {
-      "exp": 56,
+      "exp": 63,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -669,7 +670,7 @@
       "chatbot": false
     },
     "6285340497203@s.whatsapp.net": {
-      "exp": 158,
+      "exp": 165,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -686,9 +687,9 @@
       "chatbot": false
     },
     "6283171290960@s.whatsapp.net": {
-      "exp": 593,
+      "exp": 1129,
       "diamond": 10,
-      "lastclaim": 1692879794733,
+      "lastclaim": 1693646623839,
       "registered": false,
       "name": "Ariii",
       "age": -1,
@@ -754,7 +755,7 @@
       "chatbot": false
     },
     "6285924462164@s.whatsapp.net": {
-      "exp": 64,
+      "exp": 173,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -771,13 +772,13 @@
       "chatbot": false
     },
     "6288231156931@s.whatsapp.net": {
-      "exp": 236,
+      "exp": 397,
       "diamond": 8,
       "lastclaim": 0,
-      "registered": false,
-      "name": "Setya Adi Pr",
-      "age": -1,
-      "regTime": -1,
+      "registered": true,
+      "name": "mika",
+      "age": 15,
+      "regTime": 1693666441977,
       "afk": -1,
       "afkReason": "",
       "banned": false,
@@ -788,7 +789,7 @@
       "chatbot": false
     },
     "6285212601286@s.whatsapp.net": {
-      "exp": 137,
+      "exp": 138,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -805,8 +806,8 @@
       "chatbot": false
     },
     "6285740730553@s.whatsapp.net": {
-      "exp": 87,
-      "diamond": 9,
+      "exp": 327,
+      "diamond": 3,
       "lastclaim": 0,
       "registered": false,
       "name": "Bakpoowwwwww",
@@ -858,7 +859,7 @@
       "chatbot": false
     },
     "6283195669353@s.whatsapp.net": {
-      "exp": 87,
+      "exp": 118,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -875,8 +876,8 @@
       "chatbot": false
     },
     "6285668777030@s.whatsapp.net": {
-      "exp": 33,
-      "diamond": 10,
+      "exp": 156,
+      "diamond": 8,
       "lastclaim": 0,
       "registered": false,
       "name": "Aril",
@@ -892,8 +893,8 @@
       "chatbot": false
     },
     "6285395695229@s.whatsapp.net": {
-      "exp": 629,
-      "diamond": 10,
+      "exp": 790,
+      "diamond": 9,
       "lastclaim": 0,
       "registered": true,
       "name": "inaaa",
@@ -926,7 +927,7 @@
       "chatbot": false
     },
     "6283103827274@s.whatsapp.net": {
-      "exp": 41,
+      "exp": 48,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -1011,7 +1012,7 @@
       "chatbot": false
     },
     "6285233320571@s.whatsapp.net": {
-      "exp": 49,
+      "exp": 54,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -1113,7 +1114,7 @@
       "chatbot": false
     },
     "6285645631048@s.whatsapp.net": {
-      "exp": 5,
+      "exp": 7,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -1147,7 +1148,7 @@
       "chatbot": false
     },
     "6289516397673@s.whatsapp.net": {
-      "exp": 21,
+      "exp": 31,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -1164,7 +1165,7 @@
       "chatbot": false
     },
     "6281325106273@s.whatsapp.net": {
-      "exp": 15,
+      "exp": 24,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -1236,13 +1237,13 @@
       "lastslot": 1693407423351
     },
     "62895365158218@s.whatsapp.net": {
-      "exp": 65,
-      "diamond": 10,
-      "lastclaim": 0,
-      "registered": false,
-      "name": "Alfin",
-      "age": -1,
-      "regTime": -1,
+      "exp": 367,
+      "diamond": 27,
+      "lastclaim": 1693642650005,
+      "registered": true,
+      "name": "Alpin",
+      "age": 19,
+      "regTime": 1693664004268,
       "afk": -1,
       "afkReason": "",
       "banned": false,
@@ -1250,7 +1251,9 @@
       "level": 0,
       "role": "Noob",
       "autolevelup": false,
-      "chatbot": false
+      "chatbot": false,
+      "lastwork": 1693663989146,
+      "lastmiming": 1693663991582
     },
     "6285399156481-1587044556@g.us": {
       "exp": 5,
@@ -1287,7 +1290,7 @@
       "chatbot": false
     },
     "6285161014770@s.whatsapp.net": {
-      "exp": 64,
+      "exp": 81,
       "diamond": 8,
       "lastclaim": 0,
       "registered": false,
@@ -1338,7 +1341,7 @@
       "chatbot": false
     },
     "6285723825206@s.whatsapp.net": {
-      "exp": 239,
+      "exp": 252,
       "diamond": 10,
       "lastclaim": 0,
       "registered": true,
@@ -1440,7 +1443,7 @@
       "chatbot": false
     },
     "6285213470390@s.whatsapp.net": {
-      "exp": 36,
+      "exp": 109,
       "diamond": 10,
       "lastclaim": 0,
       "registered": false,
@@ -1457,13 +1460,185 @@
       "chatbot": false
     },
     "6287817721145@s.whatsapp.net": {
-      "exp": 298,
-      "diamond": 10,
+      "exp": 320,
+      "diamond": 9,
       "lastclaim": 0,
       "registered": true,
       "name": "davina",
       "age": 14,
       "regTime": 1693454127045,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Noob",
+      "autolevelup": false,
+      "chatbot": false
+    },
+    "6285869691287@s.whatsapp.net": {
+      "exp": 9,
+      "diamond": 10,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "Owix",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Noob",
+      "autolevelup": false,
+      "chatbot": false
+    },
+    "6285746707465@s.whatsapp.net": {
+      "exp": 4,
+      "diamond": 10,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "Bastard.",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Noob",
+      "autolevelup": false,
+      "chatbot": false
+    },
+    "6285781565241@s.whatsapp.net": {
+      "exp": 7,
+      "diamond": 10,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "+62 857-8156-5241",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Noob",
+      "autolevelup": false,
+      "chatbot": false
+    },
+    "6283155985672@s.whatsapp.net": {
+      "exp": 636,
+      "diamond": 22,
+      "lastclaim": 1693669178362,
+      "registered": true,
+      "name": "xan",
+      "age": 19,
+      "regTime": 1693652568947,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Noob",
+      "autolevelup": false,
+      "chatbot": false,
+      "lastwork": 1693669184868,
+      "lastmiming": 1693669193334
+    },
+    "6285870411442@s.whatsapp.net": {
+      "exp": 18,
+      "diamond": 10,
+      "lastclaim": 0,
+      "registered": false,
+      "name": ".",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Noob",
+      "autolevelup": false,
+      "chatbot": false
+    },
+    "6283173904146@s.whatsapp.net": {
+      "exp": 49,
+      "diamond": 10,
+      "lastclaim": 0,
+      "registered": true,
+      "name": "Mika",
+      "age": 16,
+      "regTime": 1693661326125,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Noob",
+      "autolevelup": false,
+      "chatbot": false
+    },
+    "62895340684706@s.whatsapp.net": {
+      "exp": 67,
+      "diamond": 10,
+      "lastclaim": 0,
+      "registered": true,
+      "name": "arul",
+      "age": 19,
+      "regTime": 1693661381937,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Noob",
+      "autolevelup": false,
+      "chatbot": false
+    },
+    "62895800819858@s.whatsapp.net": {
+      "exp": 96,
+      "diamond": 10,
+      "lastclaim": 0,
+      "registered": true,
+      "name": "aidil",
+      "age": 16,
+      "regTime": 1693662642725,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Noob",
+      "autolevelup": false,
+      "chatbot": false
+    },
+    "6289694844411@s.whatsapp.net": {
+      "exp": 28,
+      "diamond": 10,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "harellgeoffany",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Noob",
+      "autolevelup": false,
+      "chatbot": false
+    },
+    "62895384121144@s.whatsapp.net": {
+      "exp": 2,
+      "diamond": 10,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "Damm ^",
+      "age": -1,
+      "regTime": -1,
       "afk": -1,
       "afkReason": "",
       "banned": false,
@@ -2162,122 +2337,234 @@
       "onlyLatinos": false,
       "nsfw": false,
       "expired": 0
+    },
+    "6282112954430@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": true,
+      "antiLink": false,
+      "viewonce": false,
+      "useDocument": true,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "6283155985672@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": true,
+      "antiLink": false,
+      "viewonce": false,
+      "useDocument": true,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "6285740730553@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": true,
+      "antiLink": false,
+      "viewonce": false,
+      "useDocument": true,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "6285870411442@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": true,
+      "antiLink": false,
+      "viewonce": false,
+      "useDocument": true,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "6283173904146@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": true,
+      "antiLink": false,
+      "viewonce": false,
+      "useDocument": true,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "62895340684706@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": true,
+      "antiLink": false,
+      "viewonce": false,
+      "useDocument": true,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "62895800819858@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": true,
+      "antiLink": false,
+      "viewonce": false,
+      "useDocument": true,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
     }
   },
   "stats": {
     "main-menu.js": {
-      "total": 123,
-      "success": 123,
-      "last": 1693473130282,
-      "lastSuccess": 1693473130282
+      "total": 143,
+      "success": 143,
+      "last": 1693678063688,
+      "lastSuccess": 1693678063688
     },
     "rg-register.js": {
-      "total": 38,
-      "success": 27,
-      "last": 1693469755379,
-      "lastSuccess": 1693469755379
+      "total": 45,
+      "success": 33,
+      "last": 1693669539842,
+      "lastSuccess": 1693666441977
     },
     "game-slot.js": {
-      "total": 520,
-      "success": 421,
-      "last": 1693472606152,
-      "lastSuccess": 1693472606152
+      "total": 677,
+      "success": 547,
+      "last": 1693685199913,
+      "lastSuccess": 1693685199913
     },
     "econ-balance.js": {
-      "total": 485,
-      "success": 485,
-      "last": 1693470180703,
-      "lastSuccess": 1693470180703
+      "total": 776,
+      "success": 776,
+      "last": 1693685193658,
+      "lastSuccess": 1693685193658
     },
     "game-ppt.js": {
-      "total": 74,
-      "success": 68,
-      "last": 1693405448922,
-      "lastSuccess": 1693405448922
+      "total": 211,
+      "success": 200,
+      "last": 1693655635364,
+      "lastSuccess": 1693655635364
     },
     "econ-rob.js": {
-      "total": 219,
-      "success": 180,
-      "last": 1693473415597,
-      "lastSuccess": 1693473415597
+      "total": 270,
+      "success": 221,
+      "last": 1693676018106,
+      "lastSuccess": 1693676018106
     },
     "econ-daily.js": {
-      "total": 76,
-      "success": 36,
-      "last": 1693467515367,
-      "lastSuccess": 1693467515367
+      "total": 93,
+      "success": 47,
+      "last": 1693673305655,
+      "lastSuccess": 1693664592825
     },
     "enable.js": {
-      "total": 28,
-      "success": 27,
-      "last": 1693454453098,
-      "lastSuccess": 1693454453098
+      "total": 29,
+      "success": 28,
+      "last": 1693649329740,
+      "lastSuccess": 1693649329740
     },
     "gp-profile.js": {
-      "total": 34,
-      "success": 34,
-      "last": 1693454663319,
-      "lastSuccess": 1693454663319
+      "total": 63,
+      "success": 63,
+      "last": 1693664392638,
+      "lastSuccess": 1693664392638
     },
     "econ-levelup.js": {
-      "total": 13,
-      "success": 13,
-      "last": 1693443172533,
-      "lastSuccess": 1693443172533
+      "total": 15,
+      "success": 15,
+      "last": 1693660220863,
+      "lastSuccess": 1693660220863
     },
     "tools-openai.js": {
-      "total": 70,
-      "success": 67,
-      "last": 1693456554418,
-      "lastSuccess": 1693456554418
+      "total": 77,
+      "success": 73,
+      "last": 1693692952852,
+      "lastSuccess": 1693692952852
     },
     "econ-addxp.js": {
-      "total": 7,
-      "success": 6,
-      "last": 1693407332376,
-      "lastSuccess": 1693407332376
+      "total": 12,
+      "success": 11,
+      "last": 1693661015291,
+      "lastSuccess": 1693661015291
     },
     "econ-shop.js": {
-      "total": 206,
-      "success": 206,
-      "last": 1693472563975,
-      "lastSuccess": 1693472563975
+      "total": 257,
+      "success": 257,
+      "last": 1693685319120,
+      "lastSuccess": 1693685319120
     },
     "afk-afk.js": {
-      "total": 88,
-      "success": 88,
-      "last": 1693468183445,
-      "lastSuccess": 1693468183445
+      "total": 103,
+      "success": 103,
+      "last": 1693685204007,
+      "lastSuccess": 1693685204007
     },
     "econ-work.js": {
-      "total": 203,
-      "success": 189,
-      "last": 1693472556085,
-      "lastSuccess": 1693472556085
+      "total": 264,
+      "success": 245,
+      "last": 1693685307322,
+      "lastSuccess": 1693685307322
     },
     "econ-mine.js": {
-      "total": 208,
-      "success": 197,
-      "last": 1693472559676,
-      "lastSuccess": 1693472559676
+      "total": 269,
+      "success": 253,
+      "last": 1693685297231,
+      "lastSuccess": 1693685297231
     },
     "econ-dm.js": {
-      "total": 40,
-      "success": 12,
-      "last": 1693467643944,
-      "lastSuccess": 1693467643944
+      "total": 43,
+      "success": 14,
+      "last": 1693655330807,
+      "lastSuccess": 1693649339376
     },
     "econ-hourly.js": {
-      "total": 38,
-      "success": 28,
-      "last": 1693472537041,
-      "lastSuccess": 1693472537041
+      "total": 58,
+      "success": 42,
+      "last": 1693685313613,
+      "lastSuccess": 1693685313613
     },
     "econ-leaderboard.js": {
-      "total": 97,
-      "success": 97,
-      "last": 1693462001097,
-      "lastSuccess": 1693462001097
+      "total": 129,
+      "success": 129,
+      "last": 1693680730853,
+      "lastSuccess": 1693680730853
     },
     "gp-setwelcome.js": {
       "total": 2,
@@ -2292,16 +2579,16 @@
       "lastSuccess": 1692847353894
     },
     "owner-update.js": {
-      "total": 151,
-      "success": 151,
-      "last": 1693440632712,
-      "lastSuccess": 1693440632712
+      "total": 156,
+      "success": 153,
+      "last": 1693651735431,
+      "lastSuccess": 1693639631924
     },
     "owner-exec2.js": {
-      "total": 23,
-      "success": 23,
-      "last": 1693410208563,
-      "lastSuccess": 1693410208563
+      "total": 34,
+      "success": 34,
+      "last": 1693651763612,
+      "lastSuccess": 1693651763612
     },
     "owner-getfile.js": {
       "total": 11,
@@ -2310,10 +2597,10 @@
       "lastSuccess": 1693377079304
     },
     "gp-hidetag.js": {
-      "total": 12,
-      "success": 12,
-      "last": 1693436625993,
-      "lastSuccess": 1693436625993
+      "total": 20,
+      "success": 20,
+      "last": 1693662528102,
+      "lastSuccess": 1693662528102
     },
     "dl-instagram.js": {
       "total": 59,
@@ -2322,10 +2609,10 @@
       "lastSuccess": 1693446786783
     },
     "owner-exec.js": {
-      "total": 100,
-      "success": 100,
-      "last": 1693441791387,
-      "lastSuccess": 1693441791387
+      "total": 101,
+      "success": 101,
+      "last": 1693644671675,
+      "lastSuccess": 1693644671675
     },
     "owner-banlist.js": {
       "total": 4,
@@ -2334,16 +2621,16 @@
       "lastSuccess": 1693395688679
     },
     "gp-kick.js": {
-      "total": 7,
-      "success": 7,
-      "last": 1693439346954,
-      "lastSuccess": 1693439346954
+      "total": 8,
+      "success": 8,
+      "last": 1693647591463,
+      "lastSuccess": 1693647591463
     },
     "gp-add.js": {
-      "total": 12,
-      "success": 8,
-      "last": 1693439379910,
-      "lastSuccess": 1693439379910
+      "total": 18,
+      "success": 13,
+      "last": 1693647648196,
+      "lastSuccess": 1693647648196
     },
     "main-script.js": {
       "total": 5,
@@ -2358,16 +2645,16 @@
       "lastSuccess": 1693438119743
     },
     "econ-transfer.js": {
-      "total": 32,
-      "success": 32,
-      "last": 1693469185403,
-      "lastSuccess": 1693469185403
+      "total": 49,
+      "success": 49,
+      "last": 1693666498945,
+      "lastSuccess": 1693666498945
     },
     "img-gimage.js": {
-      "total": 291,
-      "success": 288,
-      "last": 1693472003316,
-      "lastSuccess": 1693472003316
+      "total": 298,
+      "success": 295,
+      "last": 1693647549454,
+      "lastSuccess": 1693647549454
     },
     "tools-google.js": {
       "total": 8,
@@ -2376,10 +2663,10 @@
       "lastSuccess": 1693171890370
     },
     "sticker-sticker.js": {
-      "total": 109,
-      "success": 103,
-      "last": 1693470024321,
-      "lastSuccess": 1693470024321
+      "total": 117,
+      "success": 111,
+      "last": 1693689717936,
+      "lastSuccess": 1693689717936
     },
     "sticker-tovid.js": {
       "total": 4,
@@ -2430,10 +2717,10 @@
       "lastSuccess": 1693398393917
     },
     "sticker-getsticker.js": {
-      "total": 8,
-      "success": 6,
-      "last": 1692874805390,
-      "lastSuccess": 1692874805390
+      "total": 11,
+      "success": 8,
+      "last": 1693664865976,
+      "lastSuccess": 1693664865976
     },
     "dl-tiktok.js": {
       "total": 9,
@@ -2448,16 +2735,16 @@
       "lastSuccess": 1693256165180
     },
     "wallhp.js": {
-      "total": 14,
-      "success": 14,
-      "last": 1693407152031,
-      "lastSuccess": 1693407152031
+      "total": 16,
+      "success": 16,
+      "last": 1693645548818,
+      "lastSuccess": 1693645548818
     },
     "img-pinterest.js": {
-      "total": 35,
-      "success": 34,
-      "last": 1693456031917,
-      "lastSuccess": 1693456031917
+      "total": 37,
+      "success": 36,
+      "last": 1693662753567,
+      "lastSuccess": 1693662753567
     },
     "rg-sn.js": {
       "total": 2,
@@ -2472,28 +2759,28 @@
       "lastSuccess": 1692874747897
     },
     "gp-invite.js": {
-      "total": 8,
-      "success": 6,
-      "last": 1693373337980,
-      "lastSuccess": 1693373337980
+      "total": 12,
+      "success": 10,
+      "last": 1693647804957,
+      "lastSuccess": 1693647804957
     },
     "dl-yts.js": {
-      "total": 7,
-      "success": 7,
-      "last": 1693438854268,
-      "lastSuccess": 1693438854268
+      "total": 8,
+      "success": 8,
+      "last": 1693643609864,
+      "lastSuccess": 1693643609864
     },
     "dl-yta.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1693205020925,
-      "lastSuccess": 1693205020925
+      "total": 8,
+      "success": 7,
+      "last": 1693669158653,
+      "lastSuccess": 1693669158653
     },
     "anime-waifupics.js": {
-      "total": 18,
-      "success": 11,
-      "last": 1693456265333,
-      "lastSuccess": 1693456265333
+      "total": 20,
+      "success": 12,
+      "last": 1693669326632,
+      "lastSuccess": 1693656086828
     },
     "fun-gay.js": {
       "total": 12,
@@ -2514,16 +2801,16 @@
       "lastSuccess": 1693399324145
     },
     "main-runtime.js": {
-      "total": 20,
-      "success": 20,
-      "last": 1693473126207,
-      "lastSuccess": 1693473126207
+      "total": 28,
+      "success": 28,
+      "last": 1693664290805,
+      "lastSuccess": 1693664290805
     },
     "main-ping.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1693293268344,
-      "lastSuccess": 1693293268344
+      "total": 11,
+      "success": 11,
+      "last": 1693636633870,
+      "lastSuccess": 1693636633870
     },
     "anime-rpat.js": {
       "total": 2,
@@ -2532,34 +2819,34 @@
       "lastSuccess": 1692881284221
     },
     "econ-adddi.js": {
-      "total": 6,
-      "success": 4,
-      "last": 1693444143642,
-      "lastSuccess": 1693444143642
+      "total": 7,
+      "success": 5,
+      "last": 1693651434751,
+      "lastSuccess": 1693651434751
     },
     "gp-warning.js": {
-      "total": 8,
-      "success": 8,
-      "last": 1693284325323,
-      "lastSuccess": 1693284325323
+      "total": 9,
+      "success": 9,
+      "last": 1693642430408,
+      "lastSuccess": 1693642430408
     },
     "owner-banUser.js": {
-      "total": 10,
-      "success": 10,
-      "last": 1693399841677,
-      "lastSuccess": 1693399841677
+      "total": 11,
+      "success": 11,
+      "last": 1693647508215,
+      "lastSuccess": 1693647508215
     },
     "owner-unbanUser.js": {
-      "total": 14,
-      "success": 13,
-      "last": 1693436968902,
-      "lastSuccess": 1693436968902
+      "total": 15,
+      "success": 14,
+      "last": 1693647553635,
+      "lastSuccess": 1693647553635
     },
     "sticker-emojimix.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1692883902074,
-      "lastSuccess": 1692883902074
+      "total": 4,
+      "success": 3,
+      "last": 1693669596654,
+      "lastSuccess": 1693669596654
     },
     "sticker-wm.js": {
       "total": 2,
@@ -2574,10 +2861,10 @@
       "lastSuccess": 1692892337278
     },
     "dl-play2.js": {
-      "total": 11,
-      "success": 8,
-      "last": 1693448698991,
-      "lastSuccess": 1693448698991
+      "total": 15,
+      "success": 12,
+      "last": 1693657633123,
+      "lastSuccess": 1693657633123
     },
     "dl-mediafire.js": {
       "total": 2,
@@ -2586,16 +2873,16 @@
       "lastSuccess": 1692901399765
     },
     "tools-tourl.js": {
-      "total": 2,
-      "success": 0,
-      "last": 1692911376635,
-      "lastSuccess": 0
+      "total": 5,
+      "success": 1,
+      "last": 1693651826287,
+      "lastSuccess": 1693637657052
     },
     "gp-delete.js": {
-      "total": 8,
-      "success": 8,
-      "last": 1693453750349,
-      "lastSuccess": 1693453750349
+      "total": 9,
+      "success": 9,
+      "last": 1693645021851,
+      "lastSuccess": 1693645021851
     },
     "dl-facebook.js": {
       "total": 29,
@@ -2618,224 +2905,4 @@
     "dl-gdrive.js": {
       "total": 2,
       "success": 2,
-      "last": 1693113187152,
-      "lastSuccess": 1693113187152
-    },
-    "gp-promote.js": {
-      "total": 6,
-      "success": 6,
-      "last": 1693439333047,
-      "lastSuccess": 1693439333047
-    },
-    "gp-delwarn.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1693129865331,
-      "lastSuccess": 1693129865331
-    },
-    "gp-tagall.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1693141285129,
-      "lastSuccess": 1693141285129
-    },
-    "owner-addprem.js": {
-      "total": 8,
-      "success": 6,
-      "last": 1693440903389,
-      "lastSuccess": 1693440903389
-    },
-    "owner-join.js": {
-      "total": 9,
-      "success": 3,
-      "last": 1693395422722,
-      "lastSuccess": 1693195101818
-    },
-    "owner-resetUser.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1693204081626,
-      "lastSuccess": 1693204081626
-    },
-    "sticker-smaker.js": {
-      "total": 3,
-      "success": 0,
-      "last": 1693275139856,
-      "lastSuccess": 0
-    },
-    "animedif.js": {
-      "total": 84,
-      "success": 79,
-      "last": 1693472897751,
-      "lastSuccess": 1693472897751
-    },
-    "owner-broadcast.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1693291481638,
-      "lastSuccess": 1693291481638
-    },
-    "bard-ai.js": {
-      "total": 120,
-      "success": 113,
-      "last": 1693472146417,
-      "lastSuccess": 1693472146417
-    },
-    "gp-settings.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1693296209501,
-      "lastSuccess": 1693296209501
-    },
-    "tools-fakeReply.js": {
-      "total": 11,
-      "success": 11,
-      "last": 1693454438009,
-      "lastSuccess": 1693454438009
-    },
-    "fun-preg.js": {
-      "total": 3,
-      "success": 1,
-      "last": 1693297551456,
-      "lastSuccess": 1693297551456
-    },
-    "main-botInfo.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1693383211065,
-      "lastSuccess": 1693383211065
-    },
-    "dl-ytv.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1693300538047,
-      "lastSuccess": 1693300538047
-    },
-    "menfess.js": {
-      "total": 18,
-      "success": 15,
-      "last": 1693400720540,
-      "lastSuccess": 1693400720540
-    },
-    "game-delsttt.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1693370091651,
-      "lastSuccess": 1693370091651
-    },
-    "tools-wikipedia.js": {
-      "total": 2,
-      "success": 0,
-      "last": 1693370120575,
-      "lastSuccess": 0
-    },
-    "nsfw-xnxxdl.js": {
-      "total": 2,
-      "success": 0,
-      "last": 1693374408250,
-      "lastSuccess": 0
-    },
-    "tools-readviewonce.js": {
-      "total": 3,
-      "success": 0,
-      "last": 1693374905428,
-      "lastSuccess": 0
-    },
-    "dl-twitter.js": {
-      "total": 3,
-      "success": 1,
-      "last": 1693376967218,
-      "lastSuccess": 1693376967218
-    },
-    "dl-igstalk.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1693380909559,
-      "lastSuccess": 1693380909559
-    },
-    "owner-unbanchat.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1693397024737,
-      "lastSuccess": 1693397024737
-    },
-    "owner-banchat.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1693396859812,
-      "lastSuccess": 1693396859812
-    },
-    "quran.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1693407266127,
-      "lastSuccess": 1693407266127
-    },
-    "maker.logos.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1693398631275,
-      "lastSuccess": 1693398631275
-    },
-    "anime-rkiss.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1693398973592,
-      "lastSuccess": 1693398973592
-    },
-    "sticker-ttp.js": {
-      "total": 3,
-      "success": 1,
-      "last": 1693401301373,
-      "lastSuccess": 1693401301373
-    },
-    "sticker-attp.js": {
-      "total": 3,
-      "success": 1,
-      "last": 1693401352128,
-      "lastSuccess": 1693401352128
-    },
-    "game-math.js": {
-      "total": 7,
-      "success": 7,
-      "last": 1693453570863,
-      "lastSuccess": 1693453570863
-    },
-    "tools-calc.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1693408411628,
-      "lastSuccess": 1693408411628
-    },
-    "main-support.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1693441582584,
-      "lastSuccess": 1693441582584
-    },
-    "txt2img.js": {
-      "total": 110,
-      "success": 108,
-      "last": 1693472994733,
-      "lastSuccess": 1693472994733
-    },
-    "tools-lyrics.js": {
-      "total": 6,
-      "success": 4,
-      "last": 1693456724677,
-      "lastSuccess": 1693456724677
-    }
-  },
-  "msgs": {},
-  "sticker": {},
-  "settings": {
-    "6283155936234@s.whatsapp.net": {
-      "self": false,
-      "autoread": false,
-      "restrict": false,
-      "status": 1693473659308
-    }
-  },
-  "model": "midjourney",
-  "server": "jisoo"
-}
+      "last": 
