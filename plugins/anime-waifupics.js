@@ -7,7 +7,7 @@ m.react('💬')
 
 //code area
 try {
-let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
+let diff = await conn.getFile(``)
 	    
 conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ANIME DIFUSSION]*\n\nPROMPT:\n${text}`, m)
 	}
