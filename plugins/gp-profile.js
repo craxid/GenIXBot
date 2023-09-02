@@ -31,7 +31,7 @@ let str = `
 ▢ *📇 Terdaftar:* ${registered ? 'Ya': 'Tidak'}
 ▢ *⭐ Premium*: ${prem ? 'Ya' : 'Tidak'}
 └──────────────`
-    conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
+    conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
     m.react(done)
 
 }
