@@ -25,6 +25,9 @@ RUN unzip sesimika.zip
 
 RUN ls
 
+
+COPY . .
+
 RUN npm i
 
 EXPOSE 5000
