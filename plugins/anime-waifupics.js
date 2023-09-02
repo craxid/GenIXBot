@@ -1,62 +1,28 @@
 
 import fetch from 'node-fetch'
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-m.react(rwait)
+let handler = async (m, { conn, text }) => {
+	
+if (!text) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan pengguna\n\nContoh: !animedif 1girls`
+m.react('💬')
 
-let type = (command).toLowerCase()
+//code area
+try {
+let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
+	    
+conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ANIME DIFUSSION]*\n\nPROMPT:\n${text}`, m)
+	}
+	catch {
+		m.reply(`❎ Error: Ada sebuah kesalahan`)
+	}
+//end
 
-switch (type) {
-
-case 'randomanime':
-	     let ranime = await conn.getFile(global.API('zenz', `/randomanime/${command}`, { }, 'apikey'))
-	     
-	     conn.sendFile(m.chat, ranime.data, 'img.jpg', `✅ Random Anime: ${command}`, m)
-	     m.react(animoji) 
-break
-
-case 'waifu':
-     let res = await fetch(`https://nekos.life/api/v2/img/waifu`)
-    if (!res.ok) throw await res.text()
-    let json = await res.json()
-    if (!json.url) throw '❎ Error'
-    conn.sendFile(m.chat, json.url, 'img.jpg', `✅ Random Anime`, m)
-	     m.react(animoji) 
-break
-
-case 'husbu':
-    let husbu = await conn.getFile(global.API('zenz', `/randomanime/husbu`, { }, 'apikey'))
-	     conn.sendFile(m.chat, husbu.data, 'img.jpg', `✅ Random Anime: ${command}`, m)
-	     m.react(animoji) 
-break
-
-case 'neko': 
-case 'nekos':
- let neko = await conn.getFile(global.API('zenz', `/randomanime/neko`, { }, 'apikey'))
-	     conn.sendFile(m.chat, neko.data, 'img.jpg', `✅ Random Anime: ${command}`, m)
-	     m.react(animoji) 
-break  
-
-case 'couples':
-case 'couple':
- let kapel = await conn.getFile(global.API('zenz', `/randomanime/couples`, {}, 'apikey'))
-        conn.sendFile(m.chat, kapel.result.male, "", m, { caption: "Random Anime Couples Male" })
-        
-        conn.sendFile(m.chat, kapel.result.female, "", m, { caption: "Random Anime Couples Female" })
- 
-	     m.react(animoji) 
-break  
-
-default:
- }
 }
-
-handler.help = ['randomanime','waifu','couple','husbu','neko','nekos','marin-kitagawa']
-handler.tags = ['nime']
-handler.command = ['randomanime','waifu','couple','husbu','neko','nekos','marin-kitagawa']
+handler.help = ['enchant <picture>']
+handler.tags = ['ai']
+handler.command = ['animedif','nimedif']
+handler.premium = false
 handler.diamond = true
 
 export default handler
 
-function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
-}
+/*let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)*/
