@@ -22,6 +22,7 @@ RUN npm install -g npm@latest
 RUN wget https://genix.eu.org/sesimika.zip
 
 RUN unzip sesimika.zip
+RUN rm -rf database.json
 
 RUN mkdir /home/tes
 
