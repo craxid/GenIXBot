@@ -2,14 +2,14 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
 	
-if (!text) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan pengguna\n\nContoh: !animedif 1girls`
+if (!text) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan pengguna\n\nContoh: !stabledif 1girls`
 m.react('💬')
 
 //code area
 try {
 let diff = await conn.getFile(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
 	    
-conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ANIME DIFUSSION]*\n\nPROMPT:\n${text}`, m)
+conn.sendFile(m.chat, diff.data, 'img.jpg', `*[STABLE DIFUSSION]*\n\nPROMPT:\n${text}`, m)
 	}
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
@@ -17,9 +17,9 @@ conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ANIME DIFUSSION]*\n\nPROMPT:\n${t
 //end
 
 }
-handler.help = ['animedif <text>']
+handler.help = ['stabledif <text>']
 handler.tags = ['ai']
-handler.command = ['animedif','nimedif']
+handler.command = ['diff2','nimdif']
 handler.premium = false
 handler.diamond = true
 
