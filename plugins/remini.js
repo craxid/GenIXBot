@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     
-    
+     (!text) throw `✳️ Under Development`
     
 }
 handler.help = ['enchant <image>']
