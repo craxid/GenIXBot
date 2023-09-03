@@ -6,6 +6,7 @@ if (!text) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan p
 m.react('💬')
 
 //code area
+switch (type) {
 case 'stabledif':
      let res = await fetch(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
     if (!res.ok) throw await res.text()
@@ -15,6 +16,7 @@ case 'stabledif':
 	     m.react(animoji) 
 break
 default
+}
 //end
 
 }
