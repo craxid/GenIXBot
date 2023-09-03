@@ -2,7 +2,7 @@ import igeh from 'api-dylux'
 import { instagramdl } from '@bochilteam/scraper'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!url} throw `✳️ Penggunaan\n *${usedPrefix + command}* https://www.instagram.com/p/CYHeKxyMj-J/?igshid=YmMyMTA2M2Y=`
+    if (!/^https?:\/\//.test(text)) throw `✳️ Penggunaan\n *${usedPrefix + command}* https://www.instagram.com/p/CYHeKxyMj-J/?igshid=YmMyMTA2M2Y=`
     m.react(rwait) 
     
    try {
