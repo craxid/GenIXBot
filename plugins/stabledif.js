@@ -6,17 +6,14 @@ if (!text) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan p
 m.react('💬')
 
 //code area
-switch (type) {
-case 'stabledif':
-     let res = await fetch(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
-    if (!res.ok) throw await res.text()
-    let json = await res.json()
-    if (!json.result.url) throw '❎ Error'
-    conn.sendFile(m.chat, json.result.url, 'img.jpg', `✅ tes`, m)
-	     m.react(animoji) 
-break
-default
-}
+try {
+let diff = await conn.getFile(``)
+	    
+conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ANIME DIFUSSION]*\n\nPROMPT:\n${text}`, m)
+	}
+	catch {
+		m.reply(`❎ Error: Ada sebuah kesalahan`)
+	}
 //end
 
 }
