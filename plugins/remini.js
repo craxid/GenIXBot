@@ -5,7 +5,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     m.react('🥰')
 }
 handler.help = ['enchant <image>']
-handler.tags = ['ai']
+handler.tags = ['tools']
 handler.command = ['enchant','remini','hd','tohd']
 handler.premium = false
 handler.diamond = true
