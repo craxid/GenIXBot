@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 ▢ *URL:* ${result.url}
 └───────────`;
 
-    conn.sendFile(m.chat, { video: { url: result.url }, { image: { url: result.url } }, 'ig.mp4', tex, m);
+    conn.sendFile(m.chat, { video: { url: result.url }, { image: { url: result.url } }, 'ig.mp4' 'ig.jpg', tex, m);
     
     m.react(done);
   } catch (error) {
