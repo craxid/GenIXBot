@@ -1,8 +1,8 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     
-     (!text) throw `✳️ Under Development`
-    
+    if (!text) throw `✳️ Under Development!`
+    m.react('')
 }
 handler.help = ['enchant <image>']
 handler.tags = ['ai']
