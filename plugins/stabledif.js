@@ -10,7 +10,7 @@ case 'stabledif':
      let res = await fetch(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
     if (!res.ok) throw await res.text()
     let json = await res.json()
-    if (!json.url) throw '❎ Error'
+    if (!json.result.url) throw '❎ Error'
     conn.sendFile(m.chat, json.result.url, 'img.jpg', `✅ tes`, m)
 	     m.react(animoji) 
 break
