@@ -2,11 +2,11 @@ import igeh from 'api-dylux'
 import { instagramdl } from '@bochilteam/scraper'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args[0]) throw `✳️ Penggunaan\n *${usedPrefix + command}* https://www.instagram.com/p/CYHeKxyMj-J/?igshid=YmMyMTA2M2Y=`
+    if (!url} throw `✳️ Penggunaan\n *${usedPrefix + command}* https://www.instagram.com/p/CYHeKxyMj-J/?igshid=YmMyMTA2M2Y=`
     m.react(rwait) 
     
    try {
-    let result = await instagramdl(args[0]);
+    let result = await https://api.akane.my.id/api/downloader/instagram?url=${url}
     
     let tex = `
 ┌─⊷ *Akebi-chan IGDL*
