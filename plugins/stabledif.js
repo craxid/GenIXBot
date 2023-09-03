@@ -7,7 +7,7 @@ m.react('💬')
 
 //code area
 case 'stabledif':
-     let res = await fetch(``)
+     let res = await fetch(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
     if (!res.ok) throw await res.text()
     let json = await res.json()
     if (!json.url) throw '❎ Error'
