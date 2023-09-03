@@ -7,7 +7,7 @@ m.react('💬')
 
 //code area
 try {
-let diff = await conn.getFile(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
+let diff = await fetch(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
 	    
 conn.sendFile(m.chat, diff.result.url, 'img.jpg', `*[STABLE DIFFUSION]*\n\nPROMPT:\n${text}`, m)
 	}
