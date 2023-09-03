@@ -19,9 +19,9 @@ conn.sendFile(m.chat, diff.data, 'img.jpg', `*[STABLE DIFUSSION]*\n\nPROMPT:\n${
 }
 handler.help = ['stabledif <text>']
 handler.tags = ['ai']
-handler.command = ['diff2','nimdif']
+handler.command = ['diff2','stabledif']
 handler.premium = false
-handler.diamond = true
+handler.diamond = 3
 
 export default handler
 
