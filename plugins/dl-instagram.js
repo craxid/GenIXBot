@@ -6,7 +6,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     m.react(rwait) 
     
    try {
-    let result = await conn.getFile (`https://api.akane.my.id/api/downloader/instagram?url=${url}`)}
+    let result = await conn.getFile (`https://api.akane.my.id/api/downloader/instagram?url=${url}`)
     
     let tex = `
 ┌─⊷ *Akebi-chan IGDL*
@@ -20,6 +20,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
  	m.reply('Error: Coba lagi dengan tautan lain')
  	} 
      
+  }
   }
 handler.help = ['instagram <link ig>']
 handler.tags = ['dl']
