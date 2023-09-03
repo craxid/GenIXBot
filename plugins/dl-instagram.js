@@ -6,7 +6,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     m.react(rwait) 
     
    try {
-    let result = await conn.getFile (`https://api.akane.my.id/api/downloader/instagram?url=${url}`)
+    let result = await conn.getFile (`https://api.akane.my.id/api/downloader/instagram?url=${(!/^https?:\/\//.test(text))}`)
     
     let tex = `
 ┌─⊷ *Akebi-chan IGDL*
