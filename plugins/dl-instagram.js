@@ -1,32 +1,18 @@
-import igeh from 'api-dylux'
-import { instagramdl } from '@bochilteam/scraper'
+
+import fg from 'api-dylux'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!/^https?:\/\//.test(text)) throw `✳️ Penggunaan\n *${usedPrefix + command}* https://www.instagram.com/p/CYHeKxyMj-J/?igshid=YmMyMTA2M2Y=`
-    m.react(rwait) 
-    
-   try {
-    let result = await conn.getFile (`https://api.akane.my.id/api/downloader/instagram?url=${(!/^https?:\/\//.test(text))}`)
-    
-    let tex = `
-┌─⊷ *Akebi-chan IGDL*
-▢ *URL:* ${result.url}
-└───────────`;
-
-    conn.sendFile(m.chat, { video: { url: result.url }, { image: { url: result.url } }, 'ig.mp4' 'ig.jpg', tex, m);
-    
-    m.react(done);
-  } catch (error) {
- 	m.reply('Error: Coba lagi dengan tautan lain')
- 	} 
-     
+    if (!args[0]) throw `✳️ Cara penggunaan\n *${usedPrefix + command}* https://www.instagram.com/p/CYHeKxyMj-J/?igshid=YmMyMTA2M2Y=`
+    m.react(rwait)
+    let res = await fg.igdl(args[0])
+    for (let result of res.url_list) {
+    conn.sendFile(m.chat, result, 'igdl.mp4', `✅ Done`, m)
+    m.react(done)
   }
-  }
+}
 handler.help = ['instagram <link ig>']
 handler.tags = ['dl']
 handler.command = ['ig', 'igdl', 'instagram', 'igimg', 'igvid'] 
 handler.diamond = true
 
 export default handler 
-
-//https://api.itsrose.life/downloader/ig?url=${url}&apikey=Rk-fd4853c2a4e2d058b8d9f5ac
