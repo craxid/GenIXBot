@@ -10,14 +10,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     
     let tex = `
 ┌─⊷ *Akebi-chan IGDL*
-▢ *Title:* ${result.title}
-▢ *Quality:* ${result.quality}
-▢ *Extention:* ${result.extention}
-▢ *Size:* ${result.formattedSize}
 ▢ *URL:* ${result.url}
 └───────────`;
 
-    conn.sendFile(m.chat, { video: { url: result.url }, { image: {result:url }, 'ig.mp4', tex, m);
+    conn.sendFile(m.chat, { video: { url: result.url }, { image: { url: result.url } }, 'ig.mp4', tex, m);
     
     m.react(done);
   } catch (error) {
