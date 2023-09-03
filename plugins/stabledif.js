@@ -11,9 +11,10 @@ case 'stabledif':
     if (!res.ok) throw await res.text()
     let json = await res.json()
     if (!json.url) throw '❎ Error'
-    conn.sendFile(m.chat, json.url, 'img.jpg', `✅ tes`, m)
+    conn.sendFile(m.chat, json.result.url, 'img.jpg', `✅ tes`, m)
 	     m.react(animoji) 
 break
+default
 //end
 
 }
