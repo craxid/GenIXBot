@@ -8,7 +8,7 @@ let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
 }
 handler.help = ['image']
 handler.tags = ['img']
-handler.command = /^(img|image|gimage|imagen)$/i
-handler.diamond = true
+handler.command = /^(img|image|gimage|gambar)$/i
+handler.limit = true
 
 export default handler
