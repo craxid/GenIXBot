@@ -2,21 +2,19 @@
 let handler = async(m, { conn, usedPrefix, command }) => {
 
     let don = `
-≡ *DONATION*
-Kamu dapat menyumbang jika ingin membantu agar bot tetap aktif
+┏━━━ꕥ〔 *${global.namebot}* 〕ꕥ━⬣ 
+┃Dana:  085892734104
+┃Pulsa: 083155936234 ( AXIS )
+┃Pulsa: 085892734104 ( IM3 )
+┃Gopay: 085892734104
+┗━━━ꕥ
+┏━━━ꕥ〔 *Website* 〕ꕥ━⬣ 
+┃Saweria: https://saweria.co/ClanDare
+┃Trakteer: https://teer.id/dede_klender
+┗━━━ꕥ
 
-▢ *PayPal*
-• *Link :* https://paypal.me/dedeklender
-
-▢ *Gopay*
-• *Nomor :* 085892734104
-
-▢ *Saweria*
-• *Link :* https://saweria.co/ClanDare
-
-▢ *Trakteer*
-• *Link :* https://teer.id/dede_klender
-
+Thanks for Donationing!
+`
 ▢ *[ADS] Dapatkan $5 hanya dengan mengisi survey*
 • *Link :* https://lootup.me?refer=3892731
 `
