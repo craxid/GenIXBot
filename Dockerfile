@@ -23,7 +23,7 @@ COPY package.json .
 
 RUN npm install -g update npm@latest
 
-COPY . ./
+COPY . .
 
 EXPOSE 3000
 
