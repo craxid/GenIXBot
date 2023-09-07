@@ -25,6 +25,7 @@ RUN rm -rf /home/user/.local/share/buildkit/runc-overlayfs/cachemounts
 
 COPY . .
 
+RUN npm install -g npm@latest
 RUN npm i
 
 EXPOSE 3000
