@@ -38,9 +38,9 @@ RUN mkdir /home/tes
 RUN ls /home/
 
 COPY package.json .
-COPY . .
 
 RUN npm i
+COPY . .
 
 EXPOSE 5000
 
