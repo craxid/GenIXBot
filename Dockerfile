@@ -23,7 +23,7 @@ RUN npm install -g update npm@latest
 
 RUN npm i
 
-COPY . .
+COPY . /root/kode/
 
 EXPOSE 3000
 
