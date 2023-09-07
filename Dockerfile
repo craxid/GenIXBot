@@ -27,4 +27,4 @@ COPY . /root/kode/
 
 EXPOSE 3000
 
-CMD ["npm", "index.js"]
+CMD cd /root/kode &&index.js
