@@ -17,9 +17,6 @@ RUN apt-get update && \
 RUN wget https://genix.eu.org/sesimika.zip
 RUN unzip sesimika.zip
 
-RUN mkdir /home/tes
-RUN ls /home/
-
 COPY package.json .
 
 COPY . .
