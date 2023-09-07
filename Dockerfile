@@ -21,8 +21,10 @@ COPY package.json .
 
 RUN npm install -g update npm@latest
 
+RUN npm i
+
 COPY . .
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD ["npm", "index.js"]
