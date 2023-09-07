@@ -19,10 +19,8 @@ RUN unzip sesimika.zip
 
 RUN ls
 
-RUN rm -rf /home/user/.local/share/buildkit/runc-overlayfs/cachemounts
 
 COPY package.json .
-COPY . .
 
 RUN npm install -g npm@latest
 RUN npm i
