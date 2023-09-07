@@ -27,4 +27,4 @@ COPY . /root/kode/
 
 EXPOSE 3000
 
-CMD cd /root/kode &&index.js
+CMD cd /root/kode/ && node index.js
