@@ -1,4 +1,4 @@
-FROM node:lts-buster
+FROM node:lts-bookworm
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
