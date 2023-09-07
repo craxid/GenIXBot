@@ -21,6 +21,8 @@ COPY package.json .
 
 RUN ls
 
+RUN rm -rf /home/user/.local/share/buildkit/runc-overlayfs/cachemounts/buildkit1951996986/lib
+
 COPY . .
 
 RUN npm i
