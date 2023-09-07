@@ -21,7 +21,7 @@ COPY package.json .
 
 RUN ls
 
-COPY . /
+COPY . .
 
 RUN npm i
 
