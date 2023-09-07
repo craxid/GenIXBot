@@ -20,7 +20,7 @@ Kamu dapat menyumbang jika ingin membantu agar bot tetap aktif
 ▢ *[ADS] Dapatkan $5 hanya dengan mengisi survey*
 • *Link :* https://lootup.me?refer=3892731
 `
-let img = 'https://telegra.ph/file/3e0fdb49a591b0056dbe9.png'
+let img = 'https://telegra.ph/file/330bb1b475e0161161f97.png'
 conn.sendFile(m.chat, img, 'img.jpg', don, m)
 
 }
