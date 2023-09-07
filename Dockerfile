@@ -12,8 +12,8 @@ RUN apt-get update && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
   
-RUN wget https://genix.eu.org/sesi.zip
-RUN unzip sesi.zip
+RUN wget https://genix.eu.org/sesimika.zip
+RUN unzip sesimika.zip
  
 COPY package.json .
 
