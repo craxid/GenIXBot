@@ -9,7 +9,7 @@ m.react('💬')
 try {
 let diff = await conn.getFile(`https://api.azz.biz.id/api/text2img?q=${text}&key=mangea`)
 	    
-conn.sendFile(m.chat, diff.data, 'img.jpg', `*TEXT TO IMAGE*\n\nPROMPT:\n${text}`, m)
+conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ TEXT TO IMAGE ]*\n\nPROMPT:\n${text}`, m)
 	}
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
