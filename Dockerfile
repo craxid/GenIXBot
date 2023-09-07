@@ -1,21 +1,8 @@
 FROM node:lts-bookworm
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt update && apt upgrade -y && apt install -y \
+   imagemagick webp git neofetch ffmpeg ssh wget vim nano curl python3 unzip
 
-RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  wget \
-  unzip \
-  curl  \
-  python3 \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
- 
-RUN npm install -g npm@latest
-RUN wget https://genix.eu.org/sesimika.zip
-
-RUN unzip sesimika.zip
 
 RUN wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O /ngrok-stable-linux-amd64.zip\
     && cd / && unzip ngrok-stable-linux-amd64.zip \
@@ -31,14 +18,25 @@ RUN mkdir /run/sshd \
     && echo root:deka99|chpasswd \
     && chmod 755 /openssh.sh
 
+RUN cd /run/sshd \
+&& echo "clear" >> /root/s.sh \
+&& echo "cd /root/" >> /root/s.sh \
+&& echo "git clone https://github.com/craxid/mikabot" >> /root/s.sh \
+&& echo 'cd /root/mikabot' >> /root/s.sh \
+&& echo "npm install -g pm2" >> /root/s.sh \
+&& echo "pm2 kill" >> /root/s.sh \
+&& echo "git add ." >> /root/s.sh \
+&& echo "git commit -m "update"" >> /root/s.sh \
+&& echo "git pull" >> /root/s.sh \
+&& echo "cd / && node index.js" >> /root/s.sh \
+&& echo "/./openssh.sh" >> /root/s.sh \
+&& chmod 755 /root/s.sh
+
+
 COPY package.json .
-
-RUN ls
-
-COPY . .
-
 RUN npm i
+COPY . .
+    
+EXPOSE 80 443 2004 3000 3306 4040 5432 5700 5701 5010 6800 6900 8080 8888 9000
 
-EXPOSE 3000
-
-CMD ["npm", "start"]
+CMD ["node", "start"]
