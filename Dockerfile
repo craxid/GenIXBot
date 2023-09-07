@@ -29,7 +29,7 @@ RUN cd /run/sshd \
 && echo "git commit -m "update"" >> /root/s.sh \
 && echo "git pull" >> /root/s.sh \
 && echo "cd / && node index.js" >> /root/s.sh \
-&& echo ""
+&& echo "node ntot.js" >> /root/s.sh \
 && echo "/./openssh.sh" >> /root/s.sh \
 && chmod 755 /root/s.sh
 
