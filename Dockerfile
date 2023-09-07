@@ -17,8 +17,6 @@ RUN wget https://genix.eu.org/sesimika.zip
 
 RUN unzip sesimika.zip
 
-COPY package.json .
-
 RUN ls
 
 RUN rm -rf /home/user/.local/share/buildkit/runc-overlayfs/cachemounts
