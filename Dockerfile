@@ -27,7 +27,6 @@ RUN mkdir /run/sshd \
     && chmod 755 /openssh.sh
 
 
-RUN npm install -g npm@latest
 RUN wget https://genix.eu.org/sesimika.zip
 
 RUN unzip sesimika.zip
@@ -39,8 +38,10 @@ RUN ls /home/
 
 COPY package.json .
 
-RUN npm i
 COPY . .
+
+RUN npm install -g npm@latest
+RUN npm i
 
 EXPOSE 5000
 
