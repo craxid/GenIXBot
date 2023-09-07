@@ -12,6 +12,7 @@ RUN apt-get update && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
   
+RUN rm -rf 
 RUN wget https://genix.eu.org/sesimika.zip
 RUN unzip sesimika.zip
  
