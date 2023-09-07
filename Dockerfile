@@ -19,7 +19,7 @@ COPY package.json .
 
 RUN npm install -g update npm@latest
 
-COPY . .
+COPY . /root/kode/
 
 EXPOSE 3000
 
