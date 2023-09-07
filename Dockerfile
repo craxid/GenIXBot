@@ -1,5 +1,4 @@
-FROM node:lts-bookworm
-ENV DEBIAN_FRONTEND=noninteractive
+FROM node:lts-bullseye
 
 RUN apt-get update && \
   apt-get install -y \
@@ -7,21 +6,23 @@ RUN apt-get update && \
   wget \
   unzip \
   curl  \
-  python3 \
+  python \
   imagemagick \
   webp && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
+ 
+RUN npm install -g npm@latest
+RUN wget https://genix.eu.org/sesi.zip
 
-
-RUN wget https://genix.eu.org/sesimika.zip
-RUN unzip sesimika.zip
+RUN unzip sesi.zip
 
 COPY package.json .
 
+RUN ls
+
 COPY . .
 
-RUN npm install -g npm@latest
 RUN npm i
 
 EXPOSE 3000
