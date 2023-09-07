@@ -9,7 +9,7 @@ m.react('💬')
 try {
 let diff2 = await fetch(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
 	    
-conn.sendFile(m.chat, diff2.result.url, 'img.jpg', `*[STABLE DIFFUSION]*\n\nPROMPT:\n${text}`, m)
+conn.sendFile(m.chat, diff2.result.url, 'img.jpg', `*[ STABLE DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
 	}
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
@@ -19,7 +19,7 @@ conn.sendFile(m.chat, diff2.result.url, 'img.jpg', `*[STABLE DIFFUSION]*\n\nPROM
 }
 handler.help = ['stabledif <text>']
 handler.tags = ['ai']
-handler.command = ['diff2','stabledif']
+handler.command = ['diff','stabledif']
 handler.premium = false
 handler.diamond = 3
 
