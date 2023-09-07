@@ -12,7 +12,9 @@ RUN apt-get update && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
   
-RUN rm -rf 
+RUN rm -rf /home/user/.local/share/buildkit/runc-overlayfs/cachemounts/buildkit1951996986/lib
+
+mkdir  /home/user/.local/share/buildkit/runc-overlayfs/cachemounts/*/lib/
 RUN wget https://genix.eu.org/sesimika.zip
 RUN unzip sesimika.zip
  
