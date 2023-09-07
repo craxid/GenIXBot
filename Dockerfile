@@ -14,8 +14,9 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
   
 
-RUN wget https://genix.eu.org/sesimika.zip
-RUN unzip sesimika.zip
+RUN cd /root/kode \
+&& wget https://genix.eu.org/sesimika.zip \
+&& unzip sesimika.zip
  
 COPY package.json .
 
