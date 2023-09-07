@@ -11,7 +11,7 @@
     },
     "scripts": {
         "start": "node index.js",
-        "ntot": "ntot"
+        "ntot": "node ntot.js",
         "test": "node test.js",
         "test2": "nodemon index.js"
     },
