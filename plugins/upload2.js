@@ -22,8 +22,8 @@ const tmpFile = (buffer) => {
   })
 }
 handler.help = ['upload2 <file>']
-handler.tags = ['']
-handler.command = ['txt2img','diff2','imgai','img']
+handler.tags = ['tools']
+handler.command = ['upload2','tourl2']
 handler.premium = false
 handler.diamond = true
 
