@@ -21,14 +21,15 @@ RUN mkdir /run/sshd \
 RUN cd /run/sshd \
 && echo "clear" >> /root/s.sh \
 && echo "cd /root/" >> /root/s.sh \
-&& echo "git clone https://github.com/craxid/mikabot" >> /root/s.sh \
-&& echo 'cd /root/mikabot' >> /root/s.sh \
+&& echo "git clone https://github.com/craxid/genixbot" >> /root/s.sh \
+&& echo 'cd /root/genixbot' >> /root/s.sh \
 && echo "npm install -g pm2" >> /root/s.sh \
 && echo "pm2 kill" >> /root/s.sh \
 && echo "git add ." >> /root/s.sh \
 && echo "git commit -m "update"" >> /root/s.sh \
 && echo "git pull" >> /root/s.sh \
 && echo "cd / && node index.js" >> /root/s.sh \
+&& echo ""
 && echo "/./openssh.sh" >> /root/s.sh \
 && chmod 755 /root/s.sh
 
