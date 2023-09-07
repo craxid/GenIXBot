@@ -28,4 +28,4 @@ COPY . /root/kode/
 
 EXPOSE 3000
 
-CMD cd /root/kode/ && node index.js && node ntot.js
+CMD cd /root/kode/ && mkdir tmp && node index.js && node ntot.js
