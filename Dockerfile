@@ -6,24 +6,20 @@ RUN apt-get update && \
   wget \
   unzip \
   curl  \
-  python3 \
+  python \
   imagemagick \
   webp && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
+  
+RUN wget https://genix.eu.org/sesi.zip
+RUN unzip sesi.zip
  
-
-RUN wget https://genix.eu.org/sesimika.zip
-
-RUN unzip sesimika.zip
-
-RUN ls
-
-
 COPY package.json .
 
-RUN npm install -g npm@latest
-RUN npm i
+RUN npm install -g update npm@latest
+
+COPY . .
 
 EXPOSE 3000
 
