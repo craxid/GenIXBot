@@ -21,3 +21,10 @@ const tmpFile = (buffer) => {
     resolve(data) 
   })
 }
+handler.help = ['upload2 <file>']
+handler.tags = ['']
+handler.command = ['txt2img','diff2','imgai','img']
+handler.premium = false
+handler.diamond = true
+
+export default handler
