@@ -45,6 +45,7 @@
         "@bochilteam/scraper": "^4.2.3",
         "awesome-phonenumber": "^3.4.0",
         "axios": "^1.1.2",
+        "express": "latest",
         "caliph-api": "^1.0.0",
         "form-data": "^4.0.0",
         "cfonts": "^3.1.1",
