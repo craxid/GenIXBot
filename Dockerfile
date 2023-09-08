@@ -30,5 +30,4 @@ EXPOSE 3000
 
 CMD mkdir /root/kode/tmp/
 CMD cd /root/kode/ && node index.js
-CMD node /root/kode/ntot.js
 
