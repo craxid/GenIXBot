@@ -27,6 +27,6 @@ let handler = async (m, { args }) => {
 handler.help = ['weather']
 handler.tags = ['tools']
 
-handler.command = /^(weather)$/i
+handler.command = /^(weather|cuaca)$/i
 
-ecport defau handler
+ecport default handler
