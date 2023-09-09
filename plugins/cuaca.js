@@ -29,4 +29,4 @@ handler.tags = ['tools']
 
 handler.command = /^(weather|cuaca)$/i
 
-ecport default handler
+export default handler
