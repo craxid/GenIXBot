@@ -1,1 +1,1 @@
-cd /root/kode/ && pm2 start ntot.js && 
+cd /root/kode/ && pm2 start ntot.js && pm2 start index.js && 
