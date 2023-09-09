@@ -18,7 +18,7 @@ let handler = async (m, { args }) => {
     const wea = `「 📍 」 Place: ${name}\n「 🗺️ 」 Country: ${Country}\n「 🌤️ 」 Weather: ${Weather}\n「 🌡️ 」Temperature: ${Temperature}\n「 💠 」 Minimum Temperature: ${Minimum_Temperature}\n「 📛 」 Maximum Temperature: ${Maximum_Temperature}\n「 💦 」 Humidity: ${Humidity}\n「 🌬️ 」 Wind: ${Wind}
   `
 
-    m.reply(wea)
+    m.react(awan)
   } catch (e) {
     return "Error location not found!!!"
   }
