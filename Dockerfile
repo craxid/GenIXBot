@@ -32,4 +32,4 @@ RUN  mkdir /root/kode/tmp/
 
 EXPOSE 3000
 
-CMD cd /root/kode/ && ni start index.js
+CMD cd /root/kode/ && pm2 start index.js
