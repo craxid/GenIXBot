@@ -88,6 +88,7 @@ ${teks}
 • 🧬Level Baru : ${user.level}
 • 🧬Role Kamu : ${user.role}
 • Pada Jam : ${new Date().toLocaleString('id-ID')}
+
 *_Semakin sering berinteraksi dengan bot Semakin Tinggi level kamu_*
 `.trim()
         try {
