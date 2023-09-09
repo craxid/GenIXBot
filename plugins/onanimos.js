@@ -62,4 +62,4 @@ handler.tags = 'anonymous'
 handler.command = ['start', 'skip', 'stop', 'next', 'search']
 handler.private = true
 
-module.exports = handler
+export default handler
