@@ -33,6 +33,6 @@ handler.tags = 'anonymous'
 handler.command = /^(sendkontak)$/i
 handler.private = true
 handler.fail = null
-module.exports = handler
+export default handler
 
 
