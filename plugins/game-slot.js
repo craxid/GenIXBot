@@ -67,6 +67,7 @@ handler.help = ['slot <jumlah taruhan>']
 handler.tags = ['game']
 handler.command = ['slot']
 handler.register = true
+hanlder.group = true
 
 export default handler
 
