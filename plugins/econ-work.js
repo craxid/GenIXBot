@@ -17,7 +17,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
   m.reply(`
 ‣ ${res.fgwork} *${hasil} XP*
-`, ${global.ppmika})
+`, `${global.ppmika}`)
   global.db.data.users[m.sender].lastwork = new Date * 1
 }
 handler.help = ['work']
