@@ -9,12 +9,12 @@ m.react('💬')
 
 	try {
 	    
-	    let gpt = await fetch(`https://api.neoxr.eu/api/gpt-pro?q=${text}&apikey=t5bm05`)
+	    let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)
 	    
 	    /*let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)*/
      ;
         let res = await gpt.json()
-        await m.reply(res.msg)
+        await m.reply(res.respon)
 	} catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
