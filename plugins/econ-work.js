@@ -42,7 +42,7 @@ function pickRandom(list) {
 }
 */
 
-let { MessageType } = require('@adiwajshing/baileys')
+import { MessageType } from('@adiwajshing/baileys')
 
 let handler = async (m, {conn, command, args, usedPrefix}) => {
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
@@ -163,7 +163,7 @@ default:
 handler.help = ['kerja','work']
 handler.tags = ['rpg']
 handler.command = /^kerja$/i
-han
+handler.group = true
 let wm = global.wm
 export default handler
 
