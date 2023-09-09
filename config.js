@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url'
 
 global.owner = [
   ['6285892734104', 'Dede Kurniawan', true],
-  ['62858927341040','DK', true], 
+  [''], 
   [''] 
 ] //Numeros de owner 
 
