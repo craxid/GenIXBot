@@ -16,7 +16,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 		const size = await yt.video[q].fileSizeH 
 		
        if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)    
-	  conn.sendFile(m.chat, dl_url, title + '.mp4', `
+	  conn.sendMessage(m.chat, dl_url, title + '.mp4', `
  ≡  *Akebi-chan YTDL*
   
 ▢ *📌 Judul* : ${title}
