@@ -24,9 +24,9 @@ COPY package.json .
 RUN npm install -g update npm@latest
 RUN npm install -g pm2
 RUN npm i
-RUN node ntot.js
 
 COPY . /root/kode/
+RUN node ntot.js
 
 RUN  mkdir /root/kode/tmp/ \
 
