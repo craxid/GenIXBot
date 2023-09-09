@@ -1,5 +1,6 @@
-let axios from ('axios'
-const FormData = require('form-data');
+
+import axios from 'axios'
+import FormData from 'form-data'
 
 let handler = async (m, { conn, command }) => {
   let q = m.quoted ? m.quoted : m;
@@ -18,7 +19,7 @@ let handler = async (m, { conn, command }) => {
       let imageUrl = res.data.data.url;
       let api = `https://api.neoxr.my.id/api/remini?image=${encodeURIComponent(imageUrl)}&apikey=lucycat`;
 
-      m.reply(wait);
+      m.react(wait);
 
       let { data } = await axios.get(api);
       let resultURL = data.data.url;
