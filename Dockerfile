@@ -26,9 +26,11 @@ RUN npm i
 
 COPY . /root/kode/
 
+RUN  mkdir /root/kode/tmp/
+
 RUN cd /root/kode/ && pm2 start index.js && pm2 start ntot.js
 
 EXPOSE 3000
 
-RUN  mkdir /root/kode/tmp/
+
 CMD cd /root/kode/ && pm2 restart index.js --cron "0 * * * *"
