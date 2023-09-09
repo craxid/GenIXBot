@@ -1,6 +1,6 @@
 
-import axios from 'axios'
-import FormData from 'form-data'
+import axios from "axios"
+import FormData from "form-data"
 
 let handler = async (m, { conn, command }) => {
   let q = m.quoted ? m.quoted : m
@@ -17,7 +17,7 @@ let handler = async (m, { conn, command }) => {
         headers: formData.getHeaders()
       });
       let imageUrl = res.data.data.url
-      let api = `https://api.neoxr.eu/api/remini?image=${encodeURIComponent(imageUrl)}&apikey=t5bm05`
+      let api = `https://api.neoxr.eu.org/api/remini?image=${encodeURIComponent(imageUrl)}&apikey=t5bm05`
 
       m.react(rwait)
 
