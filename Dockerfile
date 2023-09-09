@@ -26,7 +26,8 @@ RUN npm install -g pm2
 RUN npm i
 
 COPY . /root/kode/
-RUN cd /root/kode/ && node ntot.js
+RUN cd /root/kode/ \
+&& node ntot.js
 
 RUN  mkdir /root/kode/tmp/ \
 
