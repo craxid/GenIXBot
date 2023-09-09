@@ -578,7 +578,7 @@ global.dfail = (type, m, conn) => {
         owner: '🔱 Hanya untuk *Admin Bot*',
         mods: '🔰 Hanya untuk *moderator Bot*',
         premium: '💠 Hanya untuk *Pengguna Premium*\n\nPesan *Premium* ke *Owner*',
-        group: '⚙️ Hanya bisa digunakan di grup!',
+        group: '⚙️ Hanya bisa digunakan di grup!\nSilahkan gunakan digrup mu atau di ',
         private: '📮 Hanya bisa digunakan di *Chat Pribadi*',
         admin: '🛡️ Hanya untuk *Admin* grup!',
         botAdmin: '💥 Hanya untuk *Admin!*',
