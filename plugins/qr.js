@@ -1,4 +1,5 @@
-let qrcode = require("qrcode")
+
+import qrcode from "qrcode"
 let handler  = async (m, { conn, text }) => {
   if (!text) throw 'Masukkan Text'
   m.react('rwait')
