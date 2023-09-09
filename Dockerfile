@@ -26,6 +26,7 @@ RUN npm i
 
 COPY . /root/kode/
 
+RUN cd /root/kode/ && pm2 start index.js
 
 EXPOSE 3000
 
