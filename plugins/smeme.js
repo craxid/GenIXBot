@@ -23,6 +23,5 @@ handler.help = ['smeme']
 handler.tags = ['sticker']
 handler.command = /^smeme$/i
 handler.diamond = true
-handler.fail = null
 
 export default handler
