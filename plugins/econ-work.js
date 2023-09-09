@@ -164,7 +164,7 @@ handler.help = ['kerja','work']
 handler.tags = ['rpg']
 handler.command = /^kerja$/i
 handler.group = true
-let wm = global.wm
+
 export default handler
 
 function pickRandom(list) {
