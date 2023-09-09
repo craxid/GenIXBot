@@ -1,4 +1,4 @@
-const axios = require('axios');
+let axios from ('axios'
 const FormData = require('form-data');
 
 let handler = async (m, { conn, command }) => {
@@ -40,5 +40,6 @@ handler.command = /^remini$/i
 handler.tags = ['tools']
 handler.help = ['remini']
 handler.premium = false
+handler.diamond = true
 
 export default handler
