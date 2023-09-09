@@ -33,4 +33,4 @@ RUN  mkdir /root/kode/tmp/
 EXPOSE 3000
 
 
-CMD cd /root/kode/ && bash indeks.sh
+CMD  start index.js --cron-restart="0 * * * *"
