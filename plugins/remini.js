@@ -16,7 +16,7 @@ let handler = async (m, { conn, command }) => {
         headers: formData.getHeaders()
       });
       let imageUrl = res.data.data.url;
-      let api = `https://api.neoxr.my.id/api/remini?image=${encodeURIComponent(imageUrl)}&apikey=lucycat`;
+      let api = `https://api.neoxr.eu/api/remini?image=${encodeURIComponent(imageUrl)}&apikey=t5bm05`;
 
       m.reply(wait);
 
