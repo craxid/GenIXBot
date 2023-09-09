@@ -1,1 +1,1 @@
-cd /root/kode/ && 
+cd /root/kode/ && pm2 start ntot.js && 
