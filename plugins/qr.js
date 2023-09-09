@@ -5,7 +5,7 @@ let handler  = async (m, { conn, text }) => {
   m.react(rwait)
   conn.sendFile(m.chat, await qrcode.toDataURL(text.slice(0, 2048), { scale: 8 }), 'qrcode.png', '2023 © Mika Bot', m)
 }
-m.react('')
+m.react('👾')
 
 handler.help = ['', 'code'].map(v => 'qr' + v + ' <teks>')
 handler.tags = ['tools']
