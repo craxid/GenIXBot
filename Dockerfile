@@ -32,4 +32,4 @@ RUN  mkdir /root/kode/tmp/
 
 EXPOSE 3000
 
-CMD ["npm","start"]
+CMD cd /root/kode/ && pm2 start index.js --cron-restart="0 * * * *"
