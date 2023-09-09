@@ -162,11 +162,10 @@ default:
 // Dann Official
 handler.help = ['kerja','work']
 handler.tags = ['rpg']
-handler.command = /^kerja$/i 
-
+handler.command = /^kerja$/i
+han
 let wm = global.wm
-
-module.exports = handler
+export default handler
 
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
