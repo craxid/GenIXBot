@@ -13,10 +13,10 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 ┃Trakteer: https://teer.id/dede_klender
 ┗━━━ꕥ
 
-Thanks for Donationing!
-
 ▢ *[ADS] Dapatkan $5 hanya dengan mengisi survey*
 • *Link :* https://lootup.me?refer=3892731
+
+Thanks for Donationing!
 `
 let img = 'https://telegra.ph/file/3e0fdb49a591b0056dbe9.png'
 conn.sendFile(m.chat, img, 'img.jpg', don, m)
