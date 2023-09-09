@@ -23,7 +23,7 @@ COPY package.json .
 
 RUN npm install -g update npm@latest
 RUN npm install -g pm2
-
+RUN node ntot.json
 RUN npm i
 
 COPY . /root/kode/
