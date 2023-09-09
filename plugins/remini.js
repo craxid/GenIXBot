@@ -36,9 +36,9 @@ let handler = async (m, { conn, command }) => {
   }
 }
 
-handler.command = /^remini$/i;
-handler.tags = ['tools'];
-handler.help = ['remini'];
-handler.premium = false;
+handler.command = /^remini$/i
+handler.tags = ['tools']
+handler.help = ['remini']
+handler.premium = false
 
-modhandler;
+export default handler
