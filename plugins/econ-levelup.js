@@ -100,7 +100,7 @@ ${teks}
 }
 
 handler.help = ['levelup']
-handler.tags = ['xp']
+handler.tags = ['econ']
 
 handler.command = /^level(|up)$/i
 
