@@ -93,7 +93,7 @@ ${teks}
 `.trim()
         try {
             const img = await levelup(m, user.level)
-            conn.sendFile(m.chat, img, 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg', str, m)
+            conn.sendFile(m.chat, img, 'mika.jpg', str, m)
         } catch (e) {
             m.reply(str)
         }
