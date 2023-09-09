@@ -21,6 +21,7 @@ RUN cd /root/kode/ \
 COPY package.json .
 
 RUN npm install -g update npm@latest
+RUN npm install -g pm2
 
 RUN npm i
 
