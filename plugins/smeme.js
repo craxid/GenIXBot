@@ -1,6 +1,6 @@
 
-impprt uploadImage '../lib/uploadImage'
-const { sticker } fr'../lib/sticker'
+import uploadImage from '../lib/uploadImage'
+import { sticker } from '../lib/sticker'
 
 let handler = async (m, { conn, text, usedPrefix }) => {
  try {
@@ -22,9 +22,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 handler.help = ['smeme']
 handler.tags = ['sticker']
 handler.command = /^smeme$/i
-
-handler.limit = true
-
+handler.diamond = true
 handler.fail = null
 
 module.exports = handler
