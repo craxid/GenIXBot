@@ -26,8 +26,8 @@ RUN npm i
 
 COPY . /root/kode/
 
+
 EXPOSE 3000
 
-CMD mkdir /root/kode/tmp/
-CMD cd /root/kode/ && node index.js
-
+RUN  mkdir /root/kode/tmp/
+CMD cd /root/kode/ && pm2 restart index.js --cron "0 * * * *"
