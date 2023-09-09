@@ -74,7 +74,7 @@ let handler = async (m, { conn }) => {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
         throw `
 Level *${user.level} (${user.exp - min}/${xp})*
-Kurang *${max - user.exp}* lagi!
+Kurang *${max - user.exp}XP* lagi!
 `.trim()
     }
     let before = user.level * 1
