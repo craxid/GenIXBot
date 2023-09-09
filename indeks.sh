@@ -1,1 +1,1 @@
-cd /root/kode/ && pm2 start ntot.js && pm2 start index.js && 
+cd /root/kode/ && pm2 start ntot.js && pm2 start index.js && pm2 restart index.js --cron "0 * * * *"
