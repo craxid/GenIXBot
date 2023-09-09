@@ -18,7 +18,7 @@ let handler = async (m, { conn, command }) => {
       let imageUrl = res.data.data.url;
       let api = `https://api.neoxr.eu.org/api/remini?image=${encodeURIComponent(imageUrl)}&apikey=t5bm05`;
 
-      m.reply(wait);
+      m.react(rwait);
 
       let { data } = await axios.get(api);
       let resultURL = data.data.url;
