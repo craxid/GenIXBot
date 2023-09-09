@@ -9,15 +9,13 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
     /*let w = await axios.get(global.API('fgmods', '/api/work', { }, 'apikey'))
     let res = w.data.result*/
-    
-    let w = await fetch('https://telegra.ph/file/bd044275940ed1b62efcd.jpg')
     let anu = (await axios.get('https://raw.githubusercontent.com/craxid/craxid/main/nguli.json')).data
     let res = pickRandom(anu)
  global.db.data.users[m.sender].exp += hasil
 
   m.reply(`
 ‣ ${res.fgwork} *${hasil} XP*
-`, `${global.ppmika}`)
+`)
   global.db.data.users[m.sender].lastwork = new Date * 1
 }
 handler.help = ['work']
