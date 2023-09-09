@@ -92,7 +92,7 @@ ${teks}
 `.trim()
         try {
             const img = await levelup(m, user.level)
-            conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
+            conn.sendFile(m.chat, img, '', str, m)
         } catch (e) {
             m.reply(str)
         }
