@@ -12,7 +12,7 @@ let handler = async (m, { conn }) => {
 }
 handler.help = ['nambang']
 handler.tags = ['econ']
-hanlder.group = true
+handler.group = true
 handler.command = ['nambang', 'mining', 'mine'] 
 
 export default handler
