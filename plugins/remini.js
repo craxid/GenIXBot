@@ -1,6 +1,6 @@
 
 import axios from "axios"
-import FormData from "formdata-node"
+import FormData from "form-data"
 
 let handler = async (m, { conn, command }) => {
   let q = m.quoted ? m.quoted : m
