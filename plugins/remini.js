@@ -27,7 +27,7 @@ let handler = async (m, { conn, command }) => {
       let resultImage = await axios.get(resultURL, { responseType: 'arraybuffer' })
       let contentType = resultImage.headers['content-type']
 
-      await conn.sendFile(m.chat, Buffer.from(resultImage.data, 'binary'), 'remini.jpg', wm, m, false, { mimetype: contentType })
+      await conn.sendMessage(m.chat, Buffer.from(resultImage.data, 'binary'), 'remini.jpg', wm, m, false, { mimetype: contentType })
     } catch (e) {
       console.log(e)
       m.reply('There is an error!')
