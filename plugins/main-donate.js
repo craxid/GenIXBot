@@ -2,7 +2,7 @@
 let handler = async(m, { conn, usedPrefix, command }) => {
 
     let don = `
-┏━━━ꕥ〔 * g{lobal.namebot} *     〕ꕥ━⬣ 
+┏━━━ꕥ〔 * {global.namebot} * 〕ꕥ━⬣ 
 ┃Dana:  085892734104
 ┃Pulsa: 083155936234 ( AXIS )
 ┃Pulsa: 085892734104 ( IM3 )
