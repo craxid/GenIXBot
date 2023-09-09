@@ -14,7 +14,7 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 ┗━━━ꕥ
 
 Thanks for Donationing!
-`
+
 ▢ *[ADS] Dapatkan $5 hanya dengan mengisi survey*
 • *Link :* https://lootup.me?refer=3892731
 `
