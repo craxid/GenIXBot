@@ -7,7 +7,6 @@ let handler  = async (m, { conn, text }) => {
 handler.help = ['', 'code'].map(v => 'qr' + v + ' <teks>')
 handler.tags = ['tools']
 handler.command = /^qr(code)?$/i
-
 handler.diamond = true
 
-handler
+export default handler
