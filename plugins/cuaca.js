@@ -15,7 +15,7 @@ let handler = async (m, { args }) => {
     let Maximum_Temperature = res.data.main.temp_max + "°C"
     let Humidity = res.data.main.humidity + "%"
     let Wind = res.data.wind.speed + "km/h"
-    let wea = `「 📍 」 Kota: ${name}\n「 🗺️ 」 Negara: ${Country}\n「 🌤️ 」 Cuaca: ${Weather}\n「 🌡️ 」Temperatue: ${Temperature}\n「 💠 」 Temperatur Minimum: ${Minimum_Temperature}\n「 📛 」 Temperatur Maksimum: ${Maximum_Temperature}\n「 💦 」 : ${Humidity}\n「 🌬️ 」 Wind: ${Wind}
+    let wea = `「 📍 」 Kota: ${name}\n「 🗺️ 」 Negara: ${Country}\n「 🌤️ 」 Cuaca: ${Weather}\n「 🌡️ 」Temperatue: ${Temperature}\n「 💠 」 Temperatur Minimum: ${Minimum_Temperature}\n「 📛 」 Temperatur Maksimum: ${Maximum_Temperature}\n「 💦 」 Kelembaban: ${Humidity}\n「 🌬️ 」 Angin: ${Wind}
   `
 
     m.react(awan)
