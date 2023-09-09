@@ -20,6 +20,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 }
 handler.help = ['work']
 handler.tags = ['econ']
+hanlder.group = true
 handler.command = ['work', 'kerja', 'nguli']
 
 export default handler
