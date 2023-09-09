@@ -42,7 +42,7 @@ function pickRandom(list) {
 }
 */
 
-import { MessageType } from('@adiwajshing/baileys')
+import { MessageType } from '@adiwajshing/baileys'
 
 let handler = async (m, {conn, command, args, usedPrefix}) => {
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
