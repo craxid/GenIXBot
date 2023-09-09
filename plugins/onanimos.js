@@ -57,7 +57,7 @@ async function handler(m, { command, usedPrefix }) {
     }
 }
 handler.help = ['start', 'skip', 'stop', 'next']
-handler.tags = 'anonymous'
+handler.tags = 'anon'
 
 handler.command = ['start', 'skip', 'stop', 'next', 'search']
 handler.private = true
