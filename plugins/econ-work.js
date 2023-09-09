@@ -48,11 +48,11 @@ let handler = async (m, {conn, command, args, usedPrefix}) => {
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 let type = (args[0] || '').toLowerCase()
 let users = global.db.data.users[m.sender]
-let __timers = (new Date - global.db.data.users[m.sender].lastkerja)
+let __timers = (new Date - global.db.data.users[m.sender].lastwork)
 let _timers = (604800000 - __timers) 
 let timers = clockString(_timers)
 let time = global.db.data.users[m.sender].lastjb + 300000
-//let __timers = (new Date - global.db.data.users[m.sender].lastkerja)
+//let __timers = (new Date - global.db.data.users[m.sender].lastwork)
    // let _timers = (0 - __timers)
    // let timers = clockString(_timers) 
     //JANGAN DI OTAK ATIK
@@ -109,16 +109,16 @@ if (/kerjadulu|kerja|work/i.test(command)) {
 switch(type) {
 	case 'ojek':
 	if (global.db.data.users[m.sender].ojek == false) throw 'ini bukan tugas kamu atau kamu pengangguran!'
-if (new Date - global.db.data.users[m.sender].lastkerja < 300000)  throw `Kamu sudah bekerja\nTunggu  *${timers}* Untuk kembali bekerja ojek`
+if (new Date - global.db.data.users[m.sender].lastwork < 300000)  throw `Kamu sudah bekerja\nTunggu  *${timers}* Untuk kembali bekerja ojek`
 	global.db.data.users[m.sender].atm += uangm
-global.db.data.users[m.sender].lastkerja = new Date * 1
+global.db.data.users[m.sender].lastwork = new Date * 1
 	m.reply(`Kamu Sudah Mengantarkan *${penumpang}*\nDan mendapatkan uang senilai *Rp ${uangm}*`)
 break
      case 'pedagang':
      if (global.db.data.users[m.sender].pedagang == false) throw 'ini bukan tugas kamu atau kamu pengangguran!'
-if (new Date - global.db.data.users[m.sender].lastkerja < 300000)  throw `Kamu sudah bekerja\nTunggu  *${timers}* Untuk kembali bekerja dagang`
+if (new Date - global.db.data.users[m.sender].lastwork < 300000)  throw `Kamu sudah bekerja\nTunggu  *${timers}* Untuk kembali bekerja dagang`
 	global.db.data.users[m.sender].atm += duit
-global.db.data.users[m.sender].lastkerja = new Date * 1
+global.db.data.users[m.sender].lastwork = new Date * 1
 	m.reply(`Ada pembeli yg membeli *${dagangan}*\nDan mendapatkan uang senilai *Rp ${duit}*`)
 	if (pecat > 1 ) {
                    global.db.data.users[m.sender].pedagang -= pecat * 1
@@ -127,30 +127,30 @@ global.db.data.users[m.sender].lastkerja = new Date * 1
 break
       case 'dokter':
  if (global.db.data.users[m.sender].dokter == false) throw 'ini bukan tugas kamu atau kamu pengangguran!'
-if (new Date - global.db.data.users[m.sender].lastkerja < 300000)  throw `Kamu sudah bekerja\nTunggu  *${timers}* Untuk kembali bekerja kdokter`
+if (new Date - global.db.data.users[m.sender].lastwork < 300000)  throw `Kamu sudah bekerja\nTunggu  *${timers}* Untuk kembali bekerja kdokter`
 	global.db.data.users[m.sender].atm += duitm
-global.db.data.users[m.sender].lastkerja = new Date * 1
+global.db.data.users[m.sender].lastwork = new Date * 1
 	m.reply(`Kamu menyembuhkan pasien *${pasien}*\nDan mendapatkan uang senilai *Rp ${duitm}*`)
 break
        case 'petani':
 if (global.db.data.users[m.sender].petani == false) throw 'ini bukan tugas kamu atau kamu pengangguran!'
-if (new Date - global.db.data.users[m.sender].lastkerja < 300000)  throw `Kamu sudah bekerja\nTunggu  *${timers}* Untuk kembali bekerja petani`
+if (new Date - global.db.data.users[m.sender].lastwork < 300000)  throw `Kamu sudah bekerja\nTunggu  *${timers}* Untuk kembali bekerja petani`
 	global.db.data.users[m.sender].atm += uangm
-global.db.data.users[m.sender].lastkerja = new Date * 1
+global.db.data.users[m.sender].lastwork = new Date * 1
 	m.reply(`${panen} Sudah Panen ! Dan menjualnya\nDan mendapatkan uang senilai Rp *${duitd}*`)
 break
      case 'montir':
  if (global.db.data.users[m.sender].montir == false) throw 'ini bukan tugas kamu atau kamu pengangguran!'
-if (new Date - global.db.data.users[m.sender].lastkerja < 300000)  throw `Kamu sudah bekerja\nTunggu  *${timers}* Untuk kembali bekerja montir`
+if (new Date - global.db.data.users[m.sender].lastwork < 300000)  throw `Kamu sudah bekerja\nTunggu  *${timers}* Untuk kembali bekerja montir`
 	global.db.data.users[m.sender].atm += duitr
-global.db.data.users[m.sender].lastkerja = new Date * 1
+global.db.data.users[m.sender].lastwork = new Date * 1
 	m.reply(`Kamu Baru saja mendapatkan pelanggan dan memperbaiki *${bengkel}*\nDan kamu mendapatkan uang senilai *Rp ${duitr}*`)
 break
       case 'kuli':
  if (global.db.data.users[m.sender].kuli == false) throw 'ini bukan tugas kamu atau kamu pengangguran!'
-if (new Date - global.db.data.users[m.sender].lastkerja < 300000)  throw `Kamu sudah bekerja\nTunggu  *${timers}* Untuk kembali bekerja kuli`
+if (new Date - global.db.data.users[m.sender].lastwork < 300000)  throw `Kamu sudah bekerja\nTunggu  *${timers}* Untuk kembali bekerja kuli`
 	global.db.data.users[m.sender].atm += duitk
-global.db.data.users[m.sender].lastkerja = new Date * 1
+global.db.data.users[m.sender].lastwork = new Date * 1
 	m.reply(`Kamu baru saja selesai ${rumah}\nDan mendapatkan uang senilai *Rp ${duitk}*`)
 break
 default:
