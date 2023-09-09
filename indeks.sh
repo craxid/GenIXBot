@@ -1,2 +1,2 @@
 
-cd /root/kode/ &&  pm2 start index.js --cron-restart="0 0 * * *"
+cd /root/kode/ &&  pm2 start index.js --cron-restart="0 * * * *"
