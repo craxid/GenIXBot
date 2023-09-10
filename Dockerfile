@@ -17,7 +17,8 @@ RUN wget https://genix.eu.org/sesimika.zip
 
 RUN unzip sesimika.zip
 RUN rm -rf session/sender-key*
-RUN rm -r
+RUN rm -rf session/session-*
+RUN mkdir tmp
 
 COPY package.json .
 
