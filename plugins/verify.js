@@ -1,5 +1,6 @@
-const nodemailer = require('nodemailer')
-const { v4: uuidv4 } = require('uuid')
+
+import nodemailer from 'nodemailer'
+import { v4: uuidv4 } from 'uuid'
 
 let transporter = nodemailer.createTransport({
   service: 'gmail',
