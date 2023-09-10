@@ -22,7 +22,7 @@ let handler = async (m, { conn, command }) => {
       
       //let api = `https://api.neoxr.my.id/api/remini?image=${encodeURIComponent(imageUrl)}&apikey=lucycat`
 
-      m.reply(wait)
+      m.react(rwait)
 
       let { data } = await axios.get(api)
       let resultURL = data.data.url
@@ -45,4 +45,4 @@ handler.tags = ['tools']
 handler.help = ['remini']
 handler.premium = false
 
-module.exports = handler
+export default handler
