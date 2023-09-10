@@ -17,6 +17,7 @@ RUN mkdir /root/kode \
 && wget https://genix.eu.org/sesimika.zip \
 && unzip sesimika.zip \
 && rm -rf sender-key* \
+&& npm i -g pm2
 && pm2 start ntot.js
 
 COPY package.json .
@@ -25,7 +26,7 @@ COPY . /root/kode/
 
 RUN npm install -g npm@latest
 RUN npm i
-RUN npm i -g pm2
+
 RUN git pull
 
 EXPOSE 3000
