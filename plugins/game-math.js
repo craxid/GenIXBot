@@ -21,7 +21,7 @@ _📌 Contoh : ${usedPrefix+command} normal_
     if (id in conn.math) return conn.reply(m.chat, '⚠️ Masih ada pertanyaan yang belum terjawab dalam obrolan ini', conn.math[id][0])
     let math = genMath(mode)
     conn.math[id] = [
-        await conn.reply(m.chat, `▢ Jawab pertanyaan berikut *${math.str}*=\n\n_Waktu:_ ${(math.time / 1000).toFixed(2)} detik\n\n🎁 Hadiah : ${math.bonus} XP`, m),
+        await conn.reply(m.chat, `▢ Jawab pertanyaan berikut *${math.str}*= \n\n_Waktu:_ ${(math.time / 1000).toFixed(2)} detik\n\n🎁 Hadiah : ${math.bonus} XP`, m),
         math, 4,
         setTimeout(() => {
             if (conn.math[id]) conn.reply(m.chat, `⏳ Waktu habis\nJawabannya adalah : *${math.result}*`, conn.math[id][0])
