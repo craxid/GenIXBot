@@ -47,8 +47,8 @@ INFORMATION
 -----  -----  -----  -----  -----
   ≡ *MENU LISTS*`.trimStart(),
   header: `▣───「 %category 」───▣`,
-  body: `│✇' %cmd %isdiamond %isPremium`,
-  footer: `╰────࿐'`,
+  body: `│✇ %cmd %isdiamond %isPremium`,
+  footer: `╰────࿐`,
   after: `\n*Mika Bot masih dalam tahap pengembangan.*
 `,
 }
