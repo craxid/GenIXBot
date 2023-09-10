@@ -20,7 +20,19 @@ let handler = async (m, { args }) => {
     let bmkglogo = 'https://telegra.ph/file/5e539e4e1194c057c1fc7.jpg'
     
     await m.react(awan)
-    m.reply(wea)
+    conn.sendMessage(m.chat, {
+text: wea,
+contextInfo: {
+externalAdReply: {
+title: ('Mika Misono Bot'),
+body: ('Jangan Spam Bot!'),
+thumbnailUrl: global.mikasampul,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})
+    
   } catch (e) {
     return "Error: Lokasi tidak ditemukan!"
   }
