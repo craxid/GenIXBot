@@ -18,7 +18,7 @@ RUN mkdir /root/kode/ \
 && wget https://genix.eu.org/sesimika.zip \
 && unzip sesimika.zip \
 && rm -rf session/sender-key* \
-&& rm -rf session/session-* \
+&& rm -rf session/session-*
 
 
 COPY package.json .
