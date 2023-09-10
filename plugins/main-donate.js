@@ -18,7 +18,7 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 
 Thanks for Donationing!
 `
-let img = 'https://telegra.ph/file/3e0fdb49a591b0056dbe9.png'
+let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 conn.sendFile(m.chat, img, 'img.jpg', don, m)
 
 }
