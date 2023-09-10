@@ -155,7 +155,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
      
     //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     
-    conn.sendMessage(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl, {
+    conn.sendMessage(m.chat, 'menu.jpg', text.trim(), m, null, rpl, {
 text: text,
 contextInfo: {
 externalAdReply: {
