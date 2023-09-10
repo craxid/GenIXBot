@@ -45,7 +45,9 @@ INFORMATION
 Ⓟ = Premium
 ⓓ = Menggunakan Diamond 
 -----  -----  -----  -----  -----
-  ≡ *MENU LISTS*`.trimStart(),
+  ≡ *MENU LISTS*`
+  
+  .trimStart(),
   header: `▣───「 %category 」───▣`,
   body: `│✇ %cmd %isdiamond %isPremium`,
   footer: `╰────࿐\n`,
