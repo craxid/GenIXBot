@@ -6,7 +6,7 @@ conn.sendMessage(m.chat, {
 text: mika,
 contextInfo: {
 externalAdReply: {
-title: ${global.namebot},
+title: title,
 body: wm,
 thumbnailUrl: thumb,
 sourceUrl: sig,
