@@ -46,8 +46,8 @@ INFORMATION
 ⓓ = Menggunakan Diamond 
 -----  -----  -----  -----  -----
   ≡ *MENU LISTS*`.trimStart(),
-  header: ```▣───「 %category 」───▣```,
-  body: ```│✇ %cmd %isdiamond %isPremium```,
+  header: `▣───「 %category 」───▣`,
+  body: `│✇ %cmd %isdiamond %isPremium`,
   footer: `╰────࿐\n`,
   after: `\n*Mika Bot masih dalam tahap pengembangan.*
 `,
