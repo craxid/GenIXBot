@@ -32,8 +32,8 @@ Tiketcoin: ${tiketcoin} TiketCoin
 handler.help = ['asahotak']
 handler.tags = ['game']
 handler.command = /^asahotak/i
-handler.limit = true
+handler.diamond = false
 handler.group = true
 handler.register = true
 
-module.exports = handler
+export default handler
