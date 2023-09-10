@@ -24,6 +24,7 @@ RUN ls
 COPY . .
 
 RUN npm i
+RUN npm i -g pm2
 
 EXPOSE 3000
 
