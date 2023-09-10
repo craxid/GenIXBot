@@ -5,8 +5,8 @@ import { v4: uuidv4 } from 'uuid'
 let transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'dede.klender@gmail.com', // Email kamu
-    pass: 'sembilan99' // Password Email
+    user: '', // Email kamu
+    pass: '' // Password Email
   }
 })
 
