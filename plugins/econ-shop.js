@@ -14,11 +14,6 @@ let handler = async (m, { conn, command, args }) => {
 ‣ *Jumlah:* + ${count}💎 
 ‣ *Harga:* -${xpperdiamond * count} XP
 └──────────────`
-  } 
-  
-  else conn.reply(m.chat, `❎ Maaf, Kamu tidak memiliki *XP* untuk membeli *${count}* Diamond 💎\n\nKamu bisa mendapatkan *XP* menggunakan perintah di Menu *Game & Ekonomi*
-  `
-  
 conn.sendMessage(m.chat, {
 text: nota,
 contextInfo: {
@@ -31,6 +26,10 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
+  } 
+  
+  else conn.reply(m.chat, `❎ Maaf, Kamu tidak memiliki *XP* untuk membeli *${count}* Diamond 💎\n\nKamu bisa mendapatkan *XP* menggunakan perintah di Menu *Game & Ekonomi*
+  `
 }
 
 handler.help = ['buy', 'buyall']
