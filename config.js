@@ -56,7 +56,7 @@ global.xmoji = '🔥'
 global.sange = '🥵'
 global.awan = '🌦️'
 
-Tampilan
+// Tampilan
 global.htki =  '▣───「' // Hiasan kiri
 global.htka = '」───▣' // Hiasan kanan
 global.htjava = '❃' // Hiasan
