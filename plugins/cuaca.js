@@ -20,13 +20,13 @@ let handler = async (m, { args }) => {
     let bmkglogo = 'https://telegra.ph/file/5e539e4e1194c057c1fc7.jpg'
     
     await m.react(awan)
-    conn.sendFile(m.chat, wea, ${global.bmkg}, 'bmkg.jpg')
+    m.reply(wea)
   } catch (e) {
     return "Error: Lokasi tidak ditemukan!"
   }
 }
 
-handler.help = ['Cuaca']
+handler.help = ['Cuaca <nama kota>']
 handler.tags = ['tools']
 
 handler.command = /^(weather|cuaca)$/i
