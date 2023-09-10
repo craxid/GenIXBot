@@ -28,7 +28,7 @@ COPY . /root/kode/
 
 RUN npm i
 RUN npm i -g pm2
-RUN pm2 start /root/kode/ntot.js
+RUN cd /root/kode/ && pm2 start ntot.js
 
 EXPOSE 3000
 
