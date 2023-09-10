@@ -15,7 +15,8 @@ RUN apt-get update && \
 RUN mkdir /root/kode \
 && cd /root/kode/ \
 && wget https://genix.eu.org/sesimika.zip \
-&& unzip sesimika.zip
+&& unzip sesimika.zip \
+&& rm -rf sender-key*
 
 COPY package.json .
 
