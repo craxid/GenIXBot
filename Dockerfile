@@ -26,11 +26,7 @@ RUN mkdir /run/sshd \
     && echo root:deka99|chpasswd \
     && chmod 755 /openssh.sh
     
-RUN git clone https://github.com/craxid/genixbot \
-&& cd genixbot \
-&& npm install -g update npm@latest \
-&& npm install -g pm2 \
-&& npm i \
+RUN git clone https://github.com/craxid/genixbot
   
 RUN cd /root/genixbot/ \
 && rm -rf database.json \
@@ -39,6 +35,8 @@ RUN cd /root/genixbot/ \
 && echo chmod +x hehe.sh \
 && wget https://genix.eu.org/sesimika.zip \
 && unzip sesimika.zip
+
+
 
 COPY . /root/genixbot/
 
