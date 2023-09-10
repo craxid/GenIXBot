@@ -19,7 +19,7 @@ handler.before = function (m, { match, usedPrefix, text, args }) {
 text: dann,
 contextInfo: {
 externalAdReply: {
-title: ('Mika Bot'),
+title: global.namebot,
 body: ('Jangan Spam Bot yh!'),
 thumbnailUrl: 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg',
 sourceUrl: global.fgig,
