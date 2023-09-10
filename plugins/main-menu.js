@@ -157,7 +157,18 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
     ],m, rpl)*/
-  
+  {
+text: mika,
+contextInfo: {
+externalAdReply: {
+title: ('Mika Misono Bot'),
+body: ('Jangan Spam Bot!'),
+thumbnailUrl: thumb,
+sourceUrl: global.ppmika,
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}}
     m.react('📚') 
     
   } catch (e) {
