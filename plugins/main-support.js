@@ -20,7 +20,7 @@ Terima Kasih kepada:
 - Teman-teman yang udah mau bantu ngetes
 
 _Project Bot ini Tidak akan terwujud tanpa kontribusi kalian_
-`
+`)
 }
 handler.help = ['support']
 handler.tags = ['main']
