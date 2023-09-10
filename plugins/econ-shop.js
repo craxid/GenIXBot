@@ -16,7 +16,7 @@ let handler = async (m, { conn, command, args }) => {
 └──────────────`, m)
   } else conn.reply(m.chat, `❎ Maaf, Kamu tidak memiliki *XP* untuk membeli *${count}* Diamond 💎\n\nKamu bisa mendapatkan *XP* menggunakan perintah di Menu *Game & Ekonomi*`
   
-  conn.sendMessage(m.chat, {
+conn.sendMessage(m.chat, {
 text: nota,
 contextInfo: {
 externalAdReply: {
