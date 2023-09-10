@@ -16,7 +16,7 @@ Terima Kasih kepada:
 - Library Baileys
 - Penyedia API
 - Plugin Base DannTeam
-- Teman-teman yang udah mau bantu ngetes
+- Teman-teman yang bantu ngetes bot
 
 _Project Bot ini Tidak akan terwujud tanpa kontribusi kalian_
 `
