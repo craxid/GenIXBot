@@ -32,7 +32,6 @@ RUN git clone https://github.com/craxid/genixbot \
 && npm install -g pm2 \
 && npm i \
   
-RUN mkdir /root/genixbot/
 RUN cd /root/genixbot/ \
 && rm -rf database.json \
 && echo "pm2 start index.js --cron-restart="0 * * * *" " >> /root/genixbot/hehe.sh \
