@@ -9,7 +9,7 @@ externalAdReply: {
 title: global.namebot,
 body: global.pesanbot,
 thumbnailUrl: thumb,
-sourceUrl: sig,
+sourceUrl: global.ppmika,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
