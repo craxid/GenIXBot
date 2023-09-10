@@ -15,7 +15,18 @@ export async function before(m, { conn }) {
 ‣ *Sekarang:* *_${user.level}_*
 └──────────────`
  
- 
+conn.sendMessage(m.chat, {
+text: teks1,
+contextInfo: {
+externalAdReply: {
+title: ('Mika Misono Bot'),
+body: ('Jangan Spam Bot!'),
+thumbnailUrl: (''),
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})
  
  _untuk menonaktifkan, ketik_
 _*/off autolevelup*_
