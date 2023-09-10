@@ -153,9 +153,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     
     let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
      
-    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
+    //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     
-    conn.sendMessage(m.chat, {
+    conn.sendMessage(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl, {
 text: mika,
 contextInfo: {
 externalAdReply: {
