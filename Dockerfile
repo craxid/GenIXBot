@@ -20,8 +20,6 @@ RUN rm -rf session/sender-key*
 
 COPY package.json .
 
-RUN ls /root/kode
-
 COPY . /root/kode/
 
 RUN npm i
