@@ -47,8 +47,8 @@ INFORMATION
 -----  -----  -----  -----  -----
   ≡ *MENU LISTS*
 `.trimStart(),
-  header: '${global.htki}*%category*${global.htka}',
-  body: '```▢ %cmd %isdiamond %isPremium```',
+  header: `${global.htki}*%category*${global.htka}`,
+  body: '`${ %cmd %isdiamond %isPremium```',
   footer: '└───────────\n',
   after: `
 `,
