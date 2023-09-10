@@ -38,6 +38,8 @@ RUN cd /root/genixbot/ \
 
 
 
+COPY package.json .
+
 COPY . /root/genixbot/
 
 RUN  mkdir /root/genixbot/tmp/ \
