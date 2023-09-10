@@ -21,11 +21,11 @@ let handler = async (m, { args }) => {
     m.react(awan)
     m.reply(wea)
   } catch (e) {
-    return "Error location not found!!!"
+    return "Error: Lokasi tidak ditemukan!"
   }
 }
 
-handler.help = ['weather']
+handler.help = ['Cuaca']
 handler.tags = ['tools']
 
 handler.command = /^(weather|cuaca)$/i
