@@ -28,10 +28,10 @@ RUN mkdir /run/sshd \
     
 RUN git clone https://github.com/craxid/genixbot
   
-RUN mkdir /root/genix/
-RUN cd /root/kode/ \
+RUN mkdir /root/genixbot/
+RUN cd /root/genixbot/ \
 && rm -rf database.json \
-&& echo "start index.js --cron-restart="0 * * * *" " >> /root/kode/hehe.sh \
+&& echo "start index.js --cron-restart="0 * * * *" " >> /root/genixbot/hehe.sh \
 && echo chmod +x hehe.sh \
 && wget https://genix.eu.org/sesimika.zip \
 && unzip sesimika.zip
@@ -42,9 +42,9 @@ RUN npm install -g update npm@latest
 RUN npm install -g pm2
 RUN npm i
 
-COPY . /root/kode/
+COPY . /root/genixbot/
 
-RUN  mkdir /root/kode/tmp/ \
+RUN  mkdir /root/genixbot/tmp/ \
 
 EXPOSE 3000
 
