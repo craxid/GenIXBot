@@ -13,7 +13,7 @@ conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ TEXT TO IMAGE ]*\n\nPROMPT:\n${t
 	}
 	
 conn.sendMessage(m.chat, diff.data, 'img.jpg', m, {
-text: mika,
+text: ('Done'),
 contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
