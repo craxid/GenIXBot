@@ -16,7 +16,7 @@ RUN apt-get update && \
 RUN mkdir /root/kode/
 RUN cd /root/kode/ \
 && rm -rf database.json \
-&& echo ""
+&& echo "start index.js --cron-restart="0 * * * *" " >> hehe.sh \
 && wget https://genix.eu.org/sesimika.zip \
 && unzip sesimika.zip
  
@@ -32,4 +32,4 @@ RUN  mkdir /root/kode/tmp/ \
 
 EXPOSE 3000
 
-CMD cd /root/kode/ && pm2 start index.js --cron-restart="0 * * * *" && clear
+CMD cd /root/kode/ && pm2
