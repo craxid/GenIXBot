@@ -8,31 +8,13 @@ let handler = async (m, { conn, command, args }) => {
   if (global.db.data.users[m.sender].exp >= xpperdiamond * count) {
     global.db.data.users[m.sender].exp -= xpperdiamond * count
     global.db.data.users[m.sender].diamond += count
-    
-    let nota = `
+    conn.reply(m.chat, `
 ┌─「 *NOTA PEMBELIAN* 」
 ‣ *Jumlah:* + ${count}💎 
 ‣ *Harga:* -${xpperdiamond * count} XP
-└──────────────`
-
-  }
-  
-  else conn.reply(m.chat, `❎ Maaf, Kamu tidak memiliki *XP* untuk membeli *${count}* Diamond 💎\n\nKamu bisa mendapatkan *XP* menggunakan perintah di Menu *Game & Ekonomi*
-  `
-  conn.reply(m.chat, {
-text: nota,
-contextInfo: {
-externalAdReply: {
-title: ('Mika Misono Bot'),
-body: ('Jangan Spam Bot!'),
-thumbnailUrl: global.mikasampul,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}})
+└──────────────`, m)
+  } else conn.reply(m.chat, `❎ Maaf, Kamu tidak memiliki *XP* untuk membeli *${count}* Diamond 💎\n\nKamu bisa mendapatkan *XP* menggunakan perintah di Menu *Game & Ekonomi*`, m)
 }
-
 handler.help = ['buy', 'buyall']
 handler.tags = ['econ']
 handler.command = ['buy', 'buyall'] 
