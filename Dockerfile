@@ -32,4 +32,4 @@ RUN cd /root/kode/ && pm2 start ntot.js
 
 EXPOSE 3000
 
-CMD cd /root/kode/ && pm2 start index.js --cron-restart="0 * * * *"
+CMD cd /root/kode/ && node index.js
