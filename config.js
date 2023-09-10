@@ -56,6 +56,20 @@ global.xmoji = '🔥'
 global.sange = '🥵'
 global.awan = '🌦️'
 
+Tampilan
+global.htki =  '▣───「' // Hiasan kiri
+global.htka = '」───▣' // Hiasan kanan
+global.htjava = '❃' // Hiasan
+global.sa = '╭─'
+global.gx = '│✇'
+global.gy = '│•'
+global.gz = '│'
+global.sb = '╰────࿐'
+global.kki = '「'
+global.kka = '」'
+global.zt = '*'
+global.zc = ''
+
 global.multiplier = 69 
 global.maxwarn = '3' // máxima advertencias
 
