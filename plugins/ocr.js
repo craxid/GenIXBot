@@ -1,6 +1,7 @@
 import uploadImage from '../lib/uploadImage'
 import ocrapi = from "ocr-space-api-wrapper"
-const { MessageType } = require('@adiwajshing/baileys')
+import { MessageType } from '@adiwajshing/baileys'
+
 let handler = async (m, { conn, text }) => {
       let q = m.quoted ? m.quoted : m
     let mime = (q.msg || q).mimetype || ''
