@@ -10,10 +10,12 @@ export async function before(m, { conn }) {
         user.level++
     user.role = global.rpg.role(user.level).name
     if (before !== user.level) {
-        m.reply(`┌─「 *NAIK LEVEL* 」
+        let teks1 =`┌─「 *NAIK LEVEL* 」
 ‣ *Sebelumnya:* *${before}*
 ‣ *Sekarang:* *_${user.level}_*
-└──────────────`)
+└──────────────`
+ 
+ 
  
  _untuk menonaktifkan, ketik_
 _*/off autolevelup*_
