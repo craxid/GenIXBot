@@ -39,12 +39,13 @@ RUN cd /root/genixbot/ \
 
 COPY package.json .
 
+
+COPY . /root/genixbot/
+
 RUN cd /root/genixbot/ \
 && npm install -g update npm@latest \
 && npm install -g pm2 \
 && npm i
-
-COPY . /root/genixbot/
 
 RUN  mkdir /root/genixbot/tmp/ \
 
