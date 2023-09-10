@@ -1,9 +1,9 @@
 let handler = async (m, { conn }) => {
 let name = await conn.getName(m.sender)
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
-let dann = `Hai ${name} 👋\n\nAda yang bisa ${namebot} bantu?\n\nKetik !help untuk membuka Menu`
+let mika = `Hai ${name} 👋\n\nAda yang bisa ${namebot} bantu?\n\nKetik !help untuk membuka Menu`
 conn.sendMessage(m.chat, {
-text: dann,
+text: mika,
 contextInfo: {
 externalAdReply: {
 title: namebot,
@@ -18,4 +18,4 @@ renderLargerThumbnail: false
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang)$/i
 handler.command = new RegExp
 
-module.exports = handler
+export default handler
