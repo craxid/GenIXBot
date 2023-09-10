@@ -20,7 +20,6 @@ RUN mkdir /root/kode/ \
 && rm -rf session/sender-key* \
 && rm -rf session/session-*
 
-
 COPY package.json .
 
 RUN ls
