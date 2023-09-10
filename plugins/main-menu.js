@@ -137,6 +137,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let replace = {
       '%': '%',
       p: _p, uptime, muptime,
+      ucapan: ucapan(),
       me: conn.getName(conn.user.jid),
       npmname: _package.name,
       npmdesc: _package.description,
