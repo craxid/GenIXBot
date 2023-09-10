@@ -26,7 +26,7 @@ let handler = async (m, { args }) => {
   }
 }
 
-handler.help = ['Cuaca <nama kota>']
+handler.help = ['cuaca <nama kota>']
 handler.tags = ['tools']
 
 handler.command = /^(weather|cuaca)$/i
