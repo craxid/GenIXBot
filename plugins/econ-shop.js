@@ -30,6 +30,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
 }
+
 handler.help = ['buy', 'buyall']
 handler.tags = ['econ']
 handler.command = ['buy', 'buyall'] 
