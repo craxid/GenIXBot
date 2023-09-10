@@ -3,13 +3,11 @@
 export function before(m) {
     let user = global.db.data.users[m.sender]
     if (user.afk > -1) {
-        
-        let teks1`
+        m.reply(`
   ✅ Berhenti AFK
 ${user.afkReason ? ' \n▢ *Alasan :* ' + user.afkReason : ''}
 ▢ *AFK sejak :* ${(new Date - user.afk).toTimeString()}
-  `.trim()
-  
+  `.trim())
         user.afk = -1
         user.afkReason = ''
     }
@@ -22,40 +20,12 @@ ${user.afkReason ? ' \n▢ *Alasan :* ' + user.afkReason : ''}
         if (!afkTime || afkTime < 0)
             continue
         let reason = user.afkReason || ''
-        
-        let teks2 = `
+        m.reply(`
 💤 Orang yang kamu tag sedang AFK
 
 ${reason ? '▢ *Alasan* : ' + reason : '▢ *Alasan* : Tanpa alasan'}
 ▢ *AFK sejak :* ${(new Date - afkTime).toTimeString()}
   `.trim())
-  
- conn.sendMessage(m.chat, {
-text: teks1,
-contextInfo: {
-externalAdReply: {
-title: ('Mika Misono Bot'),
-body: ('Jangan Spam Bot!'),
-thumbnailUrl: global.ppmika,
-sourceUrl: global.dygp,
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}})
-
-conn.sendMessage(m.chat, {
-text: teks2,
-contextInfo: {
-externalAdReply: {
-title: ('Mika Misono Bot'),
-body: ('Jangan Spam Bot!'),
-thumbnailUrl: global.ppmika,
-sourceUrl: global.dygp,
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}})
-  
     }
     return true
 }
