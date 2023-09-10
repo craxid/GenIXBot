@@ -31,4 +31,4 @@ RUN  mkdir /root/kode/tmp/ \
 
 EXPOSE 3000
 
-CMD cd /root/kode/ && pm2 start index.js --cron-restart="0 0 * * *" ini kalau mau restart otomatis tiap jam 12 malam
+CMD cd /root/kode/ && pm2 start index.js --cron-restart="0 * * * *"
