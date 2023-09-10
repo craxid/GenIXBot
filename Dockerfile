@@ -38,14 +38,10 @@ COPY package.json .
 
 RUN ls /root/
 
-COPY . /root/kode/GenIXBot/
+COPY . /root/GenIXBot/
 
-RUN cd /root/kode/GenIXBot/ \
-&& npm install -g update npm@latest \
-&& npm install -g pm2 \
-&& npm i
 
-RUN  mkdir /root/kode/GenIXBot/tmp/ \
+RUN  mkdir /root/GenIXBot/tmp/ \
 
 EXPOSE 80 443 2004 3000 3306 4040 5432 5700 5701 5010 6800 6900 8080 8888 9000
 
