@@ -26,10 +26,9 @@ RUN mkdir /run/sshd \
     && echo root:deka99|chpasswd \
     && chmod 755 /openssh.sh
     
-RUN git clone https://github.com/craxid/genixbot \
-&& mv geni
+RUN git clone https://github.com/craxid/genixbot
   
-RUN mkdir /root/kode/
+RUN mkdir /root/genix/
 RUN cd /root/kode/ \
 && rm -rf database.json \
 && echo "start index.js --cron-restart="0 * * * *" " >> /root/kode/hehe.sh \
