@@ -23,7 +23,7 @@ _Project Bot ini Tidak akan terwujud tanpa kontribusi kalian_
 `
  )
 }
-handler.help = ['support']
+handler.help = ['kontribusi']
 handler.tags = ['main']
 handler.command = ['contribution', 'thxto', 'kontribusi'] 
 
