@@ -40,7 +40,7 @@ RUN ls /root/
 
 COPY . ./GenIXBot/
 
-RUN  mkdir ./GenIXBot/tmp/
+RUN mkdir ./GenIXBot/tmp/
 
 EXPOSE 80 443 2004 3000 3306 4040 5432 5700 5701 5010 6800 6900 8080 8888 9000
 
