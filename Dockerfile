@@ -13,15 +13,14 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
  
 
-RUN npm install -g npm@latest
 RUN wget https://genix.eu.org/sesimika.zip
 RUN unzip sesimika.zip
-RUN rm -rf session/sender-key*
 
 COPY package.json .
 
 COPY . /root/kode/
 
+RUN npm install -g npm@latest
 RUN npm i
 RUN npm i -g pm2
 RUN cd /root/kode/ && pm2 start ntot.js
