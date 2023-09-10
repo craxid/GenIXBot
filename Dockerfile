@@ -33,4 +33,4 @@ RUN  mkdir /root/kode/tmp/ \
 
 EXPOSE 3000
 
-CMD cd /root/kode/ && 
+CMD cd /root/kode/ && ./root/kode/hehe.sh
