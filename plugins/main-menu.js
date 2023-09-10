@@ -50,7 +50,7 @@ INFORMATION
   header: `${global.htki} *%category* ${global.htka}`,
   body: `${global.gx} %cmd %isdiamond %isPremium,
   footer: `${global.sb}`,
-  after: `\nMika Bot Dalam Pengembangan`
+  after: `Mika Bot Dalam Pengembangan`
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
