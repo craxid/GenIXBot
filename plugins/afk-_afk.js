@@ -3,7 +3,8 @@
 export function before(m) {
     let user = global.db.data.users[m.sender]
     if (user.afk > -1) {
-        m.reply(`
+        
+        let teks1`
   ✅ Berhenti AFK
 ${user.afkReason ? ' \n▢ *Alasan :* ' + user.afkReason : ''}
 ▢ *AFK sejak :* ${(new Date - user.afk).toTimeString()}
@@ -22,7 +23,7 @@ ${user.afkReason ? ' \n▢ *Alasan :* ' + user.afkReason : ''}
             continue
         let reason = user.afkReason || ''
         
-        m.rep`
+        let teks2 = `
 💤 Orang yang kamu tag sedang AFK
 
 ${reason ? '▢ *Alasan* : ' + reason : '▢ *Alasan* : Tanpa alasan'}
