@@ -35,7 +35,8 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'Mika Bot' 
+global.packname = 'Mika Bot'
+global.namebot = 'Mika Misono Bot'
 global.author = '+62 831-5593-6234' 
 global.fgig = '▢ Follow Instagram\nhttps://www.instagram.com/dede_klender\n' 
 global.dygp = 'https://chat.whatsapp.com/BDYIsBhoR2I2aXpEvZRzWP'
