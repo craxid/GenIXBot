@@ -1,6 +1,8 @@
 let handler = async (m, { conn }) => {
 let name = await conn.getName(m.sender)
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
+let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
+
 let mika = `Halo kak ${name} 👋\nAda yang bisa ${global.packname} bantu?\n\nKetik !help untuk membuka Menu`
 conn.sendMessage(m.chat, {
 text: mika,
@@ -8,7 +10,7 @@ contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: thumb,
+thumbnailUrl: mikapp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
