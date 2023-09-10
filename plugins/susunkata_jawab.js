@@ -13,7 +13,7 @@ handler.before = async function (m) {
         if (m.text.toLowerCase() == json.jawaban.toLowerCase().trim()) {
             global.db.data.users[m.sender].exp += this.susunkata[id][2]
             global.db.data.users[m.sender].tiketcoin += 1
-            m.reply(`*Jawaban Benar 🎉*\n Kamu mendapat +${this.susunkata[id][2]} XP\n`)
+            m.reply(`*Jawaban Benar 🎉*\nKamu mendapat +${this.susunkata[id][2]} XP\n`)
             clearTimeout(this.susunkata[id][3])
             delete this.susunkata[id]
         } else if (similarity(m.text.toLowerCase(), json.jawaban.toLowerCase().trim()) >= threshold) m.reply(`*Dikit Lagi!*`)
