@@ -27,6 +27,7 @@ RUN mkdir /run/sshd \
     && chmod 755 /openssh.sh
 
 RUN mkdir /root/kode/ \
+&& cd /root/kode/ \
 && git clone https://github.com/craxid/GenIXBot \
 && cd /root/kode/GenIXBot/ \
 && rm -rf database.json \
