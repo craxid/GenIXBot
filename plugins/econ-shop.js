@@ -11,7 +11,7 @@ let handler = async (m, { conn, command, args }) => {
   if (global.db.data.users[m.sender].exp >= xpperdiamond * count) {
     global.db.data.users[m.sender].exp -= xpperdiamond * count
     global.db.data.users[m.sender].diamond += count
-    conn.reply(m.chat, mikapp, `
+    conn.reply(m.chat, mikapp, 'mika.jpg', `
 ┌─「 *NOTA PEMBELIAN* 」
 ‣ *Jumlah:* + ${count}💎 
 ‣ *Harga:* -${xpperdiamond * count} XP
