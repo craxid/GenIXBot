@@ -44,7 +44,7 @@ global.fgyt = 'https://youtube.com/ClanDare'
 global.ppmika ='https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 global.fgpyp = 'https://paypal.me/dedeklender'
 global.fglog = 'https://genix.eu.org/akebi_bot.jpg'
-global.qris = 'https://telegra.ph/file/3e0fdb49a591b0056dbe9.png'
+global.qris = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 
 global.wait = '*⌛ _Tunggu bentar.._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
