@@ -26,8 +26,7 @@ COPY . /root/kode/
 RUN npm install -g npm@latest
 RUN npm i
 RUN npm i -g pm2
-RUN git
-
+RUN git pull
 
 EXPOSE 3000
 
