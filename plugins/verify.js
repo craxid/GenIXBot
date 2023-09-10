@@ -55,4 +55,4 @@ handler.tags = ['tools']
 handler.command = /^(regist|vercode)$/i
 handler.owner = false
 
-module.exports = handler
+export default handler
