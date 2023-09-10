@@ -15,7 +15,8 @@ Terima Kasih kepada:
 - WhatsApp Business
 - Library Baileys
 - Penyedia API
-- Dann
+- Plugin Base DannTeam
+- Teman-teman yang ba
 
 }
 handler.help = ['support']
