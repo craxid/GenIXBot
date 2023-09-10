@@ -3,16 +3,16 @@ import ocrapi from "ocr-space-api-wrapper"
 import { MessageType } from '@adiwajshing/baileys'
 
 let handler = async (m, { conn, text }) => {
-    let q = m.quoted ? m.quoted : m
-    let mime = (q.msg || q).mimetype || ''
+    const q = m.quoted ? m.quoted : m
+    const mime = (q.msg || q).mimetype || ''
     if (!mime) throw `balas gambar dengan perintah .ocr`
     
     await ('Tunggu bentar...')
     
     if (!/image\/(jpe?g|png)/.test(mime)) throw `_*jenis ${mime} tidak didukung!*_`
-    let img = await q.download()
-    let url = await uploadImage(img)
-    let hasil = await ocrapi.ocrSpace(url)
+    const img = await q.download()
+    const url = await uploadImage(img)
+    const hasil = await ocrapi.ocrSpace(url)
     
  await m.reply(hasil.ParsedResults[0].ParsedText)    
 }
