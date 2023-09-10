@@ -53,4 +53,4 @@ RUN  mkdir /root/kode/GenIXBot/tmp/ \
 
 EXPOSE 3000
 
-CMD cd /openssh.sh
+CMD /openssh.sh
