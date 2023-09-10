@@ -19,10 +19,11 @@ Terima Kasih kepada:
 - Plugin Base DannTeam
 - Teman-teman yang udah mau bantu ngetes
 
-_Project 
+_Project Bot ini Tidak akan terwujud tanpa kontribusi kalian_
+
 }
 handler.help = ['support']
 handler.tags = ['main']
-handler.command = ['dukung', 'support'] 
+handler.command = ['dukung', 'rhxto', 'support'] 
 
 export default handler
