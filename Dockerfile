@@ -28,8 +28,8 @@ RUN mkdir /run/sshd \
     
 RUN git clone https://github.com/craxid/genixbot \
 && npm install -g update npm@latest \
-RUN npm install -g pm2
-RUN npm i
+&& npm install -g pm2 \
+&& npm i \
   
 RUN mkdir /root/genixbot/
 RUN cd /root/genixbot/ \
