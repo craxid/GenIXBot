@@ -49,7 +49,7 @@ INFORMATION
 `.trimStart(),
   header: `${global.htki}*%category*${global.htka}`,
   body: `${global.gx} %cmd %isdiamond %isPremium`,
-  footer: '${global.sb}\n`,
+  footer: `${global.sb}\n`,
   after: `
 `,
 }
