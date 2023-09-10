@@ -157,7 +157,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
     ],m, rpl)*/
-conn.sendMessage(m.chat {
+/*conn.sendMessage(m.chat {
 text: text,
 contextInfo: {
 externalAdReply: {
@@ -168,7 +168,7 @@ sourceUrl: global.ppmika,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})
+}}})*/
     m.react('📚') 
     
   } catch (e) {
