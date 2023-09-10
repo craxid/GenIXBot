@@ -8,7 +8,7 @@ let handler = async (m, { conn, text }) => {
     const mime = (q.msg || q).mimetype || ''
     if (!mime) throw `balas gambar dengan perintah .ocr`
     
-    await ('Tunggu bentar...')
+    await m.reply('Tunggu bentar...')
     
     if (!/image\/(jpe?g|png)/.test(mime)) throw `_*jenis ${mime} tidak didukung!*_`
     const img = await q.download()
