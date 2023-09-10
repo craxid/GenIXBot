@@ -32,4 +32,4 @@ RUN cd /root/kode/ && pm2 start ntot.js
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD cd /root/kode/ && pm2 start index.js
