@@ -38,7 +38,7 @@ COPY package.json .
 
 RUN ls /root/
 
-COPY . /root/GenIXBot/
+COPY . ./GenIXBot/
 
 RUN  mkdir /root/GenIXBot/tmp/ \
 
