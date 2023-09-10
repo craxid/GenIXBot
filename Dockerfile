@@ -37,8 +37,12 @@ RUN cd /root/genixbot/ \
 && unzip sesimika.zip
 
 
-
 COPY package.json .
+
+RUN cd genixbot \
+&& npm install -g update npm@latest \
+&& npm install -g pm2 \
+&& npm i
 
 COPY . /root/genixbot/
 
