@@ -32,7 +32,7 @@ ${sn}
 handler.help = ['reg'].map(v => v + ' <nama.umur>')
 handler.tags = ['rg']
 
-handler.command = ['verify', 'reg', 'register', 'daftar'] 
+handler.command = [ 'reg', 'register', 'daftar'] 
 
 export default handler
 
