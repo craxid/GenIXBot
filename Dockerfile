@@ -12,9 +12,9 @@ RUN apt-get update && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
  
-RUN npm install -g npm@latest
 
 RUN mkdir /root/kode/ \
+&& npm install -g npm@latest
 && wget https://genix.eu.org/sesimika.zip \
 && unzip sesimika.zip \
 && rm -rf session/sender-key* \
