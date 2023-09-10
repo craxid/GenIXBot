@@ -1,13 +1,13 @@
 let handler = async (m, { conn }) => {
 let name = await conn.getName(m.sender)
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
-let dann = `Halo ${name} 👋\n\nAda yang bisa ${global.packname} bantu?\n\nKetik !help untuk membuka Menu`
+let mika = `Halo ${name} 👋\n\nAda yang bisa ${global.packname} bantu?\n\nKetik !help untuk membuka Menu`
 conn.sendMessage(m.chat, {
-text: dann,
+text: mika,
 contextInfo: {
 externalAdReply: {
-title: Mika Misono Bot,
-body: Jangan Spam Bot!,
+title: ('Mika Misono Bot'),
+body: Jangan Spam Bot!')',
 thumbnailUrl: thumb,
 sourceUrl: global.ppmika,
 mediaType: 1,
