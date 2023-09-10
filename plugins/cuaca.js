@@ -20,7 +20,7 @@ let handler = async (m, { args }) => {
     let bmkglogo = 'https://telegra.ph/file/5e539e4e1194c057c1fc7.jpg'
     
     await m.react(awan)
-    m.reply(wea, '${global.bmkg})
+    m.reply(wea, ${global.bmkg})
   } catch (e) {
     return "Error: Lokasi tidak ditemukan!"
   }
