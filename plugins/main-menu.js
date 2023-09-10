@@ -6,10 +6,8 @@ import moment from 'moment-timezone'
 import { xpRange } from '../lib/levelling.js'
 import { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 import fs from 'fs'
-im path from 'path'
-let fetch = require('node-fetch')
-let moment = require('moment-timezone')
-let levelling = require('../lib/levelling')
+import path from 'path'
+import levelling from '../lib/levelling')
 let { platform } = require('node:process')
 let os = require('os')
 //import { plugins } from '../lib/plugins.js'
