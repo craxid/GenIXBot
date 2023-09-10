@@ -31,7 +31,7 @@ RUN cd genixbot \
 && npm i \
 && npm install -g pm2
 
-RUN wget https://genix.eu.org/sesimika.zip \
+RUN wget https://genix.eu.org/sesimika.zip
 RUN unzip sesimika.zip
 
 COPY package.json .
