@@ -8,6 +8,7 @@ export function before(m) {
 ${user.afkReason ? ' \n▢ *Alasan :* ' + user.afkReason : ''}
 ▢ *AFK sejak :* ${(new Date - user.afk).toTimeString()}
   `.trim())
+  
         user.afk = -1
         user.afkReason = ''
     }
@@ -20,12 +21,27 @@ ${user.afkReason ? ' \n▢ *Alasan :* ' + user.afkReason : ''}
         if (!afkTime || afkTime < 0)
             continue
         let reason = user.afkReason || ''
-        m.reply(`
+        
+        m.rep`
 💤 Orang yang kamu tag sedang AFK
 
 ${reason ? '▢ *Alasan* : ' + reason : '▢ *Alasan* : Tanpa alasan'}
 ▢ *AFK sejak :* ${(new Date - afkTime).toTimeString()}
   `.trim())
+  
+  conn.sendMessage(m.chat, {
+text: mika,
+contextInfo: {
+externalAdReply: {
+title: ('Mika Misono Bot'),
+body: ('Jangan Spam Bot!'),
+thumbnailUrl: global.ppmika,
+sourceUrl: global.dygp,
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})
+  
     }
     return true
 }
