@@ -7,7 +7,7 @@ text: dann,
 contextInfo: {
 externalAdReply: {
 title: namebot,
-body: wm,
+body: pesanbot,
 thumbnailUrl: thumb,
 sourceUrl: sig,
 mediaType: 1,
