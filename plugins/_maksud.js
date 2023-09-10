@@ -19,10 +19,10 @@ handler.before = function (m, { match, usedPrefix, text, args }) {
 text: dann,
 contextInfo: {
 externalAdReply: {
-title: namebot,
+title: global.namebot,
 body: wm,
 thumbnailUrl: 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg',
-sourceUrl: sig,
+sourceUrl: global.fgig,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
@@ -30,7 +30,7 @@ renderLargerThumbnail: true
 	}
   }
 
-module.exports = handler
+export default handler
 
 /*
   * DannTeam
