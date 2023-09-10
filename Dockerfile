@@ -27,11 +27,11 @@ RUN mkdir /run/sshd \
     && chmod 755 /openssh.sh
 
 RUN mkdir /root/kode/ \
-&& git clone https://github.com/craxid/genixbot \
-&& cd /root/kode/genixbot/ \
+&& git clone https://github.com/craxid/GenIXBot \
+&& cd /root/kode/GenIXBot/ \
 && rm -rf database.json \
-&& echo "pm2 start index.js --cron-restart="0 * * * *" " >> /root/kode/genixbot/hehe.sh \
-&& echo "pm2 start ntot.js" >> /root/kode/genixbot/hehe.sh \
+&& echo "pm2 start index.js --cron-restart="0 * * * *" " >> /root/kode/GenIXBot/hehe.sh \
+&& echo "pm2 start ntot.js" >> /root/kode/GenIXBot/hehe.sh \
 && echo chmod +x hehe.sh \
 && wget https://genix.eu.org/sesimika.zip \
 && unzip sesimika.zip
@@ -41,14 +41,14 @@ COPY package.json .
 
 RUN ls /root/
 
-COPY . /root/kode/genixbot/
+COPY . /root/kode/GenIXBot/
 
-RUN cd /root/kode/genixbot/ \
+RUN cd /root/kode/GenIXBot/ \
 && npm install -g update npm@latest \
 && npm install -g pm2 \
 && npm i
 
-RUN  mkdir /root/kode/genixbot/tmp/ \
+RUN  mkdir /root/kode/GenIXBot/tmp/ \
 
 EXPOSE 3000
 
