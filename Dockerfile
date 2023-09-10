@@ -17,6 +17,7 @@ RUN mkdir /root/kode/
 RUN cd /root/kode/ \
 && rm -rf database.json \
 && echo "start index.js --cron-restart="0 * * * *" " >> hehe.sh \
+&& echo chmod +x hehe.sh \
 && wget https://genix.eu.org/sesimika.zip \
 && unzip sesimika.zip
  
@@ -32,4 +33,4 @@ RUN  mkdir /root/kode/tmp/ \
 
 EXPOSE 3000
 
-CMD cd /root/kode/ && pm2
+CMD cd /root/kode/ && 
