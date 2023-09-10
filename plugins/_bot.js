@@ -6,8 +6,8 @@ conn.sendMessage(m.chat, {
 text: dann,
 contextInfo: {
 externalAdReply: {
-title: global.namebot,
-body: global.pesanbot,
+title: Mika Misono Bot,
+body: Jangan Spam Bot!,
 thumbnailUrl: thumb,
 sourceUrl: global.ppmika,
 mediaType: 1,
