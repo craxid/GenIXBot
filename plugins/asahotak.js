@@ -17,7 +17,7 @@ ${json.soal}
 
 Waktu *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}ao untuk bantuan
-Bonus: ${poin} XP
+Bonus: ${reg} XP
 Tiketcoin: ${tiketcoin} TiketCoin
 `.trim()
     conn.asahotak[id] = [
