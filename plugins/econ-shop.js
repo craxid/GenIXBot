@@ -9,7 +9,7 @@ let handler = async (m, { conn, command, args }) => {
     global.db.data.users[m.sender].exp -= xpperdiamond * count
     global.db.data.users[m.sender].diamond += count
     
-    let msg = `
+    let nota = `
 ┌─「 *NOTA PEMBELIAN* 」
 ‣ *Jumlah:* + ${count}💎 
 ‣ *Harga:* -${xpperdiamond * count} XP
@@ -17,7 +17,7 @@ let handler = async (m, { conn, command, args }) => {
   } else conn.reply(m.chat, `❎ Maaf, Kamu tidak memiliki *XP* untuk membeli *${count}* Diamond 💎\n\nKamu bisa mendapatkan *XP* menggunakan perintah di Menu *Game & Ekonomi*`
   
   conn.sendMessage(m.chat, {
-text: msg,
+text: nota,
 contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
