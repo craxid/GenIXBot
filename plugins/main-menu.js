@@ -46,10 +46,10 @@ INFORMATION
 ⓓ = Menggunakan Diamond 
 -----  -----  -----  -----  -----
   ≡ *MENU LISTS*`.trimStart(),
-  header: `${global.htki} *%category* ${global.htka}`,
-  body: `${global.gx} %cmd %isdiamond %isPremium,
+  header: `${global.htki} %category ${global.htka}`,
+  body: `${global.gx} %cmd %islimit %isPremium`,
   footer: `${global.sb}`,
-  after: `Mika Bot Dalam Pengembangan`
+  after: `\n*Mika Bot masih dalam tahap pengembangan.*
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
