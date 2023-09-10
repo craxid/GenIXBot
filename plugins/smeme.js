@@ -9,6 +9,9 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   let mime = (q.msg || q).mimetype || ''
   if (!mime) throw 'Tidak ada foto'
   if (!/image\/(jpe?g|png)/.test(mime)) throw `Mime ${mime} tidak support`
+  
+  await m.reply('Tunggu bentar...')
+  
   let img = await q.download()
   let url = await uploadImage(img)
   let wasted = `https://api.memegen.link/images/custom/${teks}/${teks2}.png?background=${url}`
