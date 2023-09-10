@@ -9,22 +9,8 @@ m.react('💬')
 try {
 let diff = await conn.getFile(`https://api.azz.biz.id/api/text2img?q=${text}&key=mangea`)
 	    
-//conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ TEXT TO IMAGE ]*\n\nPROMPT:\n${text}`, m)
+conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ TEXT TO IMAGE ]*\n\nPROMPT:\n${text}`, m)
 	}
-	
-conn.sendMessage(m.chat, diff.data, 'img.jpg', m, {
-text: ('Done'),
-contextInfo: {
-externalAdReply: {
-title: ('Mika Misono Bot'),
-body: ('Jangan Spam Bot!'),
-thumbnailUrl: mikapp,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}})
-	
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
