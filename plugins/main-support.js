@@ -10,7 +10,10 @@ https://chat.whatsapp.com/BDYIsBhoR2I2aXpEvZRzWP
 
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
 
+Terima Kasih kepada:
 
+- WhatsApp Business
+- Peny
 
 }
 handler.help = ['support']
