@@ -8,5 +8,5 @@ let handler = async (m, { conn }) => {
     m.reply('```' + clue + '```')
 }
 handler.command = /^ao$/i
-handler.limit = true
-module.exports = handler
+handler.diamond = true
+export default handler
