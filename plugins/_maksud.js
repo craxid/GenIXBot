@@ -20,7 +20,7 @@ text: dann,
 contextInfo: {
 externalAdReply: {
 title: global.namebot,
-body: wm,
+body: ('Jangan Spam Bot yh!'),
 thumbnailUrl: 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg',
 sourceUrl: global.fgig,
 mediaType: 1,
