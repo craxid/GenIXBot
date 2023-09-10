@@ -1,5 +1,5 @@
 import uploadImage from '../lib/uploadImage'
-import ocrapi from "ocr-space-api-wrapper"
+import ocrapi from 'ocr-space-api-wrapper'
 import { MessageType } from '@adiwajshing/baileys'
 
 let handler = async (m, { conn, text }) => {
