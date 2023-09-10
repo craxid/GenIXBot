@@ -14,7 +14,7 @@ RUN apt-get update && \
  
 
 RUN mkdir /root/kode/ \
-&& npm install -g npm@latest
+&& npm install -g npm@latest \
 && wget https://genix.eu.org/sesimika.zip \
 && unzip sesimika.zip \
 && rm -rf session/sender-key* \
