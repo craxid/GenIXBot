@@ -158,7 +158,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       ['⌬ Grupos', `${_p}gpdylux`]
     ],m, rpl)*/
 conn.sendMessage(m.chat {
-text: mika,
+text: text,
 contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
