@@ -6,7 +6,7 @@ let handler = async (m, { text, conn }) => {
     user.afkReason = text
     let mika = `
   😴 *AFK* 
-Sekarang Kamu AFK sampai Kamu mengirim pesan 
+Sekarang Kamu AFK
 ▢ *User:* ${conn.getName(m.sender)} 
 ▢ *Alasan:* ${text ? text : ''}
   `
