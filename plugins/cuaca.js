@@ -18,8 +18,9 @@ let handler = async (m, { args }) => {
     let wea = `「 📍 」 Lokasi: ${name}\n「 🗺️ 」 Negara: ${Country}\n「 🌤️ 」 Cuaca: ${Weather}\n「 🌡️ 」 Temperatur: ${Temperature}\n「 💠 」 Temperatur Minimum: ${Minimum_Temperature}\n「 📛 」 Temperatur Maksimum: ${Maximum_Temperature}\n「 💦 」 Kelembaban: ${Humidity}\n「 🌬️ 」 Angin: ${Wind}
   `
     let bmkglogo = fetch('https://telegra.ph/file/5e539e4e1194c057c1fc7.jpg')
+    
     await m.react(awan)
-    m.reply(wea, )
+    m.reply(wea, bmkglogo)
   } catch (e) {
     return "Error: Lokasi tidak ditemukan!"
   }
