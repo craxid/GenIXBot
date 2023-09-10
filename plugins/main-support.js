@@ -8,7 +8,7 @@ m.reply(`
 ▢ Grup
 https://chat.whatsapp.com/BDYIsBhoR2I2aXpEvZRzWP
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
-
+%readmore
 Terima Kasih kepada:
 
 - Tuhan Yang Maha Esa
