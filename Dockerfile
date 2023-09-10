@@ -25,8 +25,9 @@ RUN mkdir /run/sshd \
     && echo 'PermitRootLogin yes' >>  /etc/ssh/sshd_config  \
     && echo root:deka99|chpasswd \
     && chmod 755 /openssh.sh
-    
-RUN git clone https://github.com/craxid/genixbot \
+
+RUN mkdir /root/kode/ \
+&& git clone https://github.com/craxid/genixbot \
 && cd /root/genixbot/ \
 && rm -rf database.json \
 && echo "pm2 start index.js --cron-restart="0 * * * *" " >> /root/genixbot/hehe.sh \
