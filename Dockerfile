@@ -1,4 +1,4 @@
-FROM node:lts-bullseye
+FROM node:lts-bookworm
 
 RUN apt-get update && \
   apt-get install -y \
@@ -6,16 +6,16 @@ RUN apt-get update && \
   wget \
   unzip \
   curl  \
-  python \
+  python3 \
   imagemagick \
   webp && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
  
 RUN npm install -g npm@latest
-RUN wget https://genix.eu.org/sesi.zip
+RUN wget https://genix.eu.org/sesimika.zip
 
-RUN unzip sesi.zip
+RUN unzip sesimika.zip
 
 COPY package.json .
 
