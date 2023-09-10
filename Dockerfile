@@ -39,6 +39,7 @@ RUN cd /root/genixbot/ \
 
 COPY package.json .
 
+RUN ls /root/
 
 COPY . /root/genixbot/
 
