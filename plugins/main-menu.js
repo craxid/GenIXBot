@@ -31,7 +31,7 @@ const defaultMenu = {
   before: `
 ◈ ━━━ *Mika Misono  ┃ ᴮᴼᵀ* ━━━━ ◈
  
-👋🏻 _Halo kak_ *%name* 
+👋🏻 %ucapan *%name* 
 🧿 Level : *%level* 
 👥 User : %totalreg
 📈 Runtime : %muptime
