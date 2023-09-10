@@ -52,7 +52,6 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
 }
 handler.help = ['regist <email>', 'vercode <code>']
 handler.tags = ['tools']
-
 handler.command = /^(regist|vercode)$/i
 handler.owner = false
 
