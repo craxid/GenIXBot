@@ -45,8 +45,7 @@ INFORMATION
 Ⓟ = Premium
 ⓓ = Menggunakan Diamond 
 -----  -----  -----  -----  -----
-  ≡ *MENU LISTS*
-`.trimStart(),
+  ≡ *MENU LISTS*`.trimStart(),
   header: `${global.htki} *%category* ${global.htka}`,
   body: `${global.gx} %cmd %isdiamond %isPremium,
   footer: `${global.sb}`,
