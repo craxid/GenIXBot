@@ -24,7 +24,7 @@ COPY package.json .
 
 RUN ls
 
-COPY . .
+COPY . /root/kode
 
 RUN npm i
 RUN npm i -g pm2
