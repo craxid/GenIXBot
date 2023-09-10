@@ -18,7 +18,7 @@ let handler = async (m, { args }) => {
     let wea = `「 📍 」 Lokasi: ${name}\n「 🗺️ 」 Negara: ${Country}\n「 🌤️ 」 Cuaca: ${Weather}\n「 🌡️ 」Temperatur: ${Temperature}\n「 💠 」 Temperatur Minimum: ${Minimum_Temperature}\n「 📛 」 Temperatur Maksimum: ${Maximum_Temperature}\n「 💦 」 Kelembaban: ${Humidity}\n「 🌬️ 」 Angin: ${Wind}
   `
 
-    m.react(awan)
+    await m.react(awan)
     m.reply(wea)
   } catch (e) {
     return "Error: Lokasi tidak ditemukan!"
