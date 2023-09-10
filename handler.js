@@ -585,8 +585,7 @@ global.dfail = (type, m, conn) => {
         unreg: '📇 Fitur ini untuk pengguna terdaftar\n\n Ketik: *.register nama.umur*\n\n📌 Contoh : *.reg Mika.16*',
         restrict: '🔐 Fitur ini *dinonaktifkan*'
     }[type]
-    if (msg) return m.reply(msg)
-    conn.sendMessage(m.chat, {
+    if (msg) return conn.sendMessage(m.chat, {
 text: msg,
 contextInfo: {
 externalAdReply: {
