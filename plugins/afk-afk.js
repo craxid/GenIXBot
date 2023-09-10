@@ -7,6 +7,7 @@ let handler = async (m, { text, conn }) => {
     let mika = `
   😴 *AFK* 
 Sekarang Kamu AFK
+
 ▢ *User:* ${conn.getName(m.sender)} 
 ▢ *Alasan:* ${text ? text : ''}
   `
