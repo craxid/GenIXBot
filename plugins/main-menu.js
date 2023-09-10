@@ -47,10 +47,10 @@ INFORMATION
 -----  -----  -----  -----  -----
   ≡ *MENU LISTS*
 .trimStart(),
-  header: ${global.htki} *%category* ${global.htka},
-  body: ${global.gx} %cmd %isdiamond %isPremium,
-  footer: ${global.sb}\n,
-  after: 
+  header: `${global.htki} *%category* ${global.htka}`,
+  body: `${global.gx}` %cmd %isdiamond %isPremium,
+  footer: `${global.sb}`,
+  after: ``
 ',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
