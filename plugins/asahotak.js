@@ -2,7 +2,7 @@
 import fetch from 'node-fetch'
 
 let timeout = 180000
-let exp = 500
+let exp = 1000
 let handler = async (m, { conn, usedPrefix }) => {
     conn.asahotak = conn.asahotak ? conn.asahotak : {}
     let id = m.chat
@@ -17,7 +17,7 @@ ${json.soal}
 
 Waktu *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}ao untuk bantuan
-Bonus: ${exp} XP
+Hadiah: ${exp} XP
 `.trim()
     conn.asahotak[id] = [
         await conn.reply(m.chat, caption, m),
