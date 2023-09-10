@@ -3,6 +3,7 @@ import fetch from 'node-fetch'
 
 let exp = 200
 let timeout = 180000
+let src
 let handler = async (m, { conn, usedPrefix }) => {
     conn.tebakbendera = conn.tebakbendera ? conn.tebakbendera : {}
     let id = m.chat
