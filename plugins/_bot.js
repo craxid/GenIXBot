@@ -12,7 +12,7 @@ thumbnailUrl: thumb,
 sourceUrl: global.ppmika,
 mediaType: 1,
 showAdAttribution: true,
-renderLargerThumbnail: false
+renderLargerThumbnail: true
 }}})
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang)$/i
