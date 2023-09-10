@@ -48,7 +48,7 @@ INFORMATION
   ≡ *MENU LISTS*
 `.trimStart(),
   header: `${global.htki} *%category* ${global.htka}`,
-  body: `${global.gx}` %cmd %isdiamond %isPremium,
+  body: `${global.gx} %cmd %isdiamond %isPremium,
   footer: `${global.sb}`,
   after: `\nMika Bot Dalam Pengembangan`
 `,
