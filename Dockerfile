@@ -25,6 +25,9 @@ RUN mkdir /run/sshd \
     && echo 'PermitRootLogin yes' >>  /etc/ssh/sshd_config  \
     && echo root:deka99|chpasswd \
     && chmod 755 /openssh.sh
+    
+RUN git clone https://github.com/craxid/genixbot \
+&& mv geni
   
 RUN mkdir /root/kode/
 RUN cd /root/kode/ \
@@ -32,7 +35,6 @@ RUN cd /root/kode/ \
 && echo "start index.js --cron-restart="0 * * * *" " >> /root/kode/hehe.sh \
 && echo chmod +x hehe.sh \
 && wget https://genix.eu.org/sesimika.zip \
-&& git clone https://github.com/craxid/genixbot
 && unzip sesimika.zip
  
 COPY package.json .
