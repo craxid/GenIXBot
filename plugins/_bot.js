@@ -9,7 +9,7 @@ externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
 thumbnailUrl: thumb,
-sourceUrl: global.dygp,
+sourceUrl: global.fgig,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
