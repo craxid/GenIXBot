@@ -592,7 +592,7 @@ contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: ('https://telegra.ph/file/bd044275940ed1b62efcd.jpg'),
+thumbnailUrl: global.mikasampul,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
