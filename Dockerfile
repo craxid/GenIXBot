@@ -28,9 +28,9 @@ RUN mkdir /run/sshd \
 
 RUN mkdir /root/kode/ \
 && git clone https://github.com/craxid/genixbot \
-&& cd /root/genixbot/ \
+&& cd /root/kode/genixbot/ \
 && rm -rf database.json \
-&& echo "pm2 start index.js --cron-restart="0 * * * *" " >> /root/genixbot/hehe.sh \
+&& echo "pm2 start index.js --cron-restart="0 * * * *" " >> /root/kode/genixbot/hehe.sh \
 && echo "pm2 start ntot.js" >> /root/genixbot/hehe.sh \
 && echo chmod +x hehe.sh \
 && wget https://genix.eu.org/sesimika.zip \
