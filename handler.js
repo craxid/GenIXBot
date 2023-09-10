@@ -573,8 +573,8 @@ Untuk menyalakan/mematikan fitur, ketik
 }
 
 global.dfail = (type, m, conn) => {
+    let mikapp = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
     let msg = {
-        let mikapp = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
         rowner: '👑 Hanya untuk *Pemilik bot*',
         owner: '🔱 Hanya untuk *Admin Bot*',
         mods: '🔰 Hanya untuk *moderator Bot*',
