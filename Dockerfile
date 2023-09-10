@@ -15,6 +15,7 @@ RUN apt-get update && \
 RUN npm install -g npm@latest
 RUN wget https://genix.eu.org/sesimika.zip
 
+RUN
 RUN unzip sesimika.zip
 RUN rm -rf session/sender-key*
 RUN rm -rf session/session-*
