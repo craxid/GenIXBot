@@ -12,7 +12,7 @@ let diff = await conn.getFile(`https://api.azz.biz.id/api/text2img?q=${text}&key
 conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ TEXT TO IMAGE ]*\n\nPROMPT:\n${text}`, m)
 	}
 	
-conn.sendMessage(m.chat, {
+conn.sendMessage(m.chat, diff.data, 'img.jpg', m, {
 text: mika,
 contextInfo: {
 externalAdReply: {
