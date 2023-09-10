@@ -17,11 +17,11 @@ RUN npm install -g npm@latest
 RUN wget https://genix.eu.org/sesimika.zip
 RUN unzip sesimika.zip
 RUN rm -rf session/sender-key*
-RUN mv session /root/kode/
+RUN mv session /root/kode/session
 
 COPY package.json .
 
-RUN ls
+RUN ls /root/kode
 
 COPY . /root/kode/
 
