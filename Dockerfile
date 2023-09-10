@@ -28,6 +28,7 @@ COPY . .
 
 RUN npm i
 RUN npm i -g pm2
+RUN pm2 ntot.js
 
 EXPOSE 3000
 
