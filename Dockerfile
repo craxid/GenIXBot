@@ -26,7 +26,9 @@ COPY . /root/kode/
 
 RUN npm install -g npm@latest
 RUN npm i
-RUN pm2 start ntot.js
+
+RUN chmod +x s.sh \
+&& ./s.sh
 
 RUN git pull
 
