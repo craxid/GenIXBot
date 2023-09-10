@@ -16,7 +16,7 @@ RUN apt-get update && \
 RUN mkdir /root/kode/
 RUN cd /root/kode/ \
 && rm -rf database.json \
-&& echo "start index.js --cron-restart="0 * * * *" " >> hehe.sh \
+&& echo "start index.js --cron-restart="0 * * * *" " >> /root/kode/hehe.sh \
 && echo chmod +x hehe.sh \
 && wget https://genix.eu.org/sesimika.zip \
 && unzip sesimika.zip
