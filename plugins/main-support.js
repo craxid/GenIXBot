@@ -25,6 +25,6 @@ _Project Bot ini Tidak akan terwujud tanpa kontribusi kalian_
 }
 handler.help = ['support']
 handler.tags = ['main']
-handler.command = ['dukung', 'thxto', 'support'] 
+handler.command = ['contribution', 'thxto', 'kontribusi'] 
 
 export default handler
