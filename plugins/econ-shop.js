@@ -14,7 +14,7 @@ let handler = async (m, { conn, command, args }) => {
 ‣ *Jumlah:* + ${count}💎 
 ‣ *Harga:* -${xpperdiamond * count} XP
 └──────────────`
-conn.sendMessage(m.chat, {
+conn.reply(m.chat, {
 text: nota,
 contextInfo: {
 externalAdReply: {
