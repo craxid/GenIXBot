@@ -1,14 +1,13 @@
-
-import axios from "axios"
-import FormData from "form-data"
+const axios = require('axios');
+const FormData = require('form-data');
 
 let handler = async (m, { conn, command }) => {
-  let q = m.quoted ? m.quoted : m
-  let mime = (q.msg || q).mimetype || ''
+  let q = m.quoted ? m.quoted : m;
+  let mime = (q.msg || q).mimetype || '';
   if (/image/.test(mime)) {
-    let img = await q.download()
-    let formData = new FormData()
-    formData.append('image', img, 'image.jpg')
+    let img = await q.download();
+    let formData = new FormData();
+    formData.append('image', img, 'image.jpg');
     try {
       let res = await axios.post('https://api.imgbb.com/1/upload', formData, {
         params: {
@@ -16,34 +15,30 @@ let handler = async (m, { conn, command }) => {
         },
         headers: formData.getHeaders()
       });
-      let imageUrl = res.data.data.url
-      
-      let api = `https://api.yanzbotz.my.id/api/tools/enhance?url=${encodeURIComponent(imageUrl)}`
-      
-      
-      // let api = `https://api.neoxr.eu/api/remini?image=${encodeURIComponent(imageUrl)}&apikey=t5bm05`
+      let imageUrl = res.data.data.url;
+      let api = `https://api.neoxr.my.id/api/remini?image=${encodeURIComponent(imageUrl)}&apikey=lucycat`;
 
-      m.react(rwait)
+      m.reply(wait);
 
-      let { data } = await axios.get(api)
-      let resultURL = data.data.url
+      let { data } = await axios.get(api);
+      let resultURL = data.data.url;
 
-      let resultImage = await axios.get(resultURL, { responseType: 'arraybuffer' })
-      let contentType = resultImage.headers['content-type']
+      let resultImage = await axios.get(resultURL, { responseType: 'arraybuffer' });
+      let contentType = resultImage.headers['content-type'];
 
-      await conn.sendFile(m., Buffer.from(resultImage.data, 'binary'), 'remini.jpg', m, { mimetype: contentType })
-    } catch {
-      m.reply('There is an error!')
+      await conn.sendFile(m.chat, Buffer.from(resultImage.data, 'binary'), 'remini.jpg', wm, m, false, { mimetype: contentType });
+    } catch (e) {
+      console.log(e);
+      m.reply('There is an error!');
     }
   } else {
-    m.reply('Kirim/Balas gambar dengan caption .remini')
+    m.reply('Kirim/Balas gambar dengan caption .remini');
   }
 }
 
-handler.command = /^remini$/i
-handler.tags = ['tools']
-handler.help = ['remini']
-handler.premium = false
-handler.diamond = true
+handler.command = /^remini$/i;
+handler.tags = ['tools'];
+handler.help = ['remini'];
+handler.premium = false;
 
-export default handler
+module.exports = handler;
