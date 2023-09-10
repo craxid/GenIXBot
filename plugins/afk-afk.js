@@ -4,12 +4,12 @@ let handler = async (m, { text, conn }) => {
     let user = global.db.data.users[m.sender]
     user.afk = + new Date
     user.afkReason = text
-    m.reply(`
+    let mika = `
   😴 *AFK* 
 Sekarang Kamu AFK sampai Kamu mengirim pesan 
 ▢ *User:* ${conn.getName(m.sender)} 
 ▢ *Alasan:* ${text ? text : ''}
-  `)
+  `
   
 conn.sendMessage(m.chat, {
 text: mika,
