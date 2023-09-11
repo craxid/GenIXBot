@@ -4,7 +4,7 @@ import { join } from 'path'
 import fetch from 'node-fetch'
 import moment from 'moment-timezone'
 import { xpRange } from '../lib/levelling.js'
-import { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
+import { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } from '@adiwajshing/baileys'
 import fs from 'fs'
 import path from 'path'
 import levelling from '../lib/levelling'
@@ -163,7 +163,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
      
     //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     
-    conn.sendMessage(m.chat, {
+conn.sendMessage(m.chat, {
 text: text,
 contextInfo: {
 externalAdReply: {
