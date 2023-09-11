@@ -8,7 +8,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 	 let chat = global.db.data.chats[m.chat]
 	 m.react(rwait) 
 	try {
-		let q = args[1] || '360p'
+		let q = args[1] || '720p'
 		let v = args[0]
 		const yt = await youtubedl(v).catch(async () => await youtubedlv2(v))
 		const dl_url = await yt.video[q].download()
