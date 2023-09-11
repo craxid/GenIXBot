@@ -9,10 +9,18 @@ export function before(m) {
 ${user.afkReason ? ' \n▢ *Alasan :* ' + user.afkReason : ''}
 ▢ *AFK sejak :* ${(new Date - user.afk).toTimeString()}
   `
-  
-  
-  
-  .trim())
+  conn.sendMessage(m.chat, {
+text: afk,
+contextInfo: {
+externalAdReply: {
+title: ('Mika Misono Bot'),
+body: ('Jangan Spam Bot!'),
+thumbnailUrl: mikapp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}}).trim())
         user.afk = -1
         user.afkReason = ''
     }
