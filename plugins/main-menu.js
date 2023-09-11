@@ -163,7 +163,7 @@ thumbnailUrl: ppmika,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
-renderLargerThumbnail: false
+renderLargerThumbnail: true
 }}})
 
     //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
