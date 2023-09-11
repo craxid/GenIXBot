@@ -7,7 +7,9 @@ m.reply(wait)
 
 //code area
 try {
-let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
+    let diff = await conn.getFile(`https://api.yanzbotz.my.id/api/text2img/neima?prompt=${text}&key=mange`)
+    
+// let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
 	    
 conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ ANIME DIFUSSION ]*\n\nPROMPT:\n${text}`, m)
 	}
