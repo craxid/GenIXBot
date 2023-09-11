@@ -11,7 +11,7 @@ try {
     
 // let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
 	    
-conn.sendFile(m.chat, animdif.data, 'img.jpg', `*[ ANIME DIFUSSION ]*\n\nPROMPT:\n${text}`, m)
+conn.sendFile(m.chat, animdif.data, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
 	}
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
