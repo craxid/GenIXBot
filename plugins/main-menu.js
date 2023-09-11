@@ -7,9 +7,9 @@ import { xpRange } from '../lib/levelling.js'
 import { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 import fs from 'fs'
 import path from 'path'
-import levelling from'../lib/levelling')
-let { platform } = require('node:process')
-let os = require('os')
+import levelling from '../lib/levelling'
+import { platform } from 'node:process'
+import os from 'os'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
   'main': 'MAIN MENU',
@@ -73,6 +73,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     // Offset -420 is 18.00
     // Offset    0 is  0.00
     // Offset  420 is  7.00
+    const wib = moment.tz('Asia/Jakarta').format("HH:mm:ss")
+    const wita = moment.tz('Asia/Makassar').format("HH:mm:ss")
+    const wit = moment.tz('Asia/Jayapura').format("HH:mm:ss")
     let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let date = d.toLocaleDateString(locale, {
