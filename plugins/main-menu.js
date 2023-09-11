@@ -163,7 +163,7 @@ thumbnailUrl: ('https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'),
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
-renderLargerThumbnail: true
+renderLargerThumbnail: false
 }}})
 
     //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
