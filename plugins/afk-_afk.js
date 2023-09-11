@@ -20,7 +20,8 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}}).trim())
+}}}).trim()
+
         user.afk = -1
         user.afkReason = ''
     }
