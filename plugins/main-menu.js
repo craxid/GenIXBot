@@ -161,7 +161,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     
     let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
      
-    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
+    //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98_ff', pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
       ['⏍ Info', `${_p}botinfo`],
@@ -173,7 +173,7 @@ contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: pp,
+thumbnailUrl: ,
 sourceUrl: global.ppmika,
 mediaType: 1,
 showAdAttribution: true,
@@ -197,11 +197,29 @@ export default handler
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
-
 function clockString(ms) {
-  let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000)
-  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
+  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [h, ' jam ', m, ' menit ', s, ' detik'].map(v => v.toString().padStart(2, 0)).join('')
+  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
+
+function ucapan() {
+        const hour_now = moment.tz('Asia/Jakarta').format('HH')
+        var ucapanWaktu = 'Pagi kak'
+        if (hour_now >= '03' && hour_now <= '10') {
+          ucapanWaktu = 'Pagi kak'
+        } else if (hour_now >= '10' && hour_now <= '15') {
+          ucapanWaktu = 'Siang kak'
+        } else if (hour_now >= '15' && hour_now <= '17') {
+          ucapanWaktu = 'Sore kak'
+        } else if (hour_now >= '17' && hour_now <= '18') {
+          ucapanWaktu = 'Selamat Petang kak'
+        } else if (hour_now >= '18' && hour_now <= '23') {
+          ucapanWaktu = 'Malam kak'
+        } else {
+          ucapanWaktu = 'Selamat Malam!'
+        }	
+        return ucapanWaktu
+}
+
