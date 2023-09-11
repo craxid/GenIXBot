@@ -38,7 +38,7 @@ const defaultMenu = {
   before: `
 ◈ ━━━ *Misono Mika  ┃ ᴮᴼᵀ* ━━━━ ◈
  
-👋🏻 _Halo kak_ *%name*
+👋🏻 %ucapan *%name*
 🧿 Level : *%level* 
 👥 User : %totalreg
 📈 Runtime : %muptime
@@ -145,6 +145,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       '%': '%',
       p: _p, uptime, muptime,
       me: conn.getName(conn.user.jid),
+      ucapan: ucapan(),
       npmname: _package.name,
       npmdesc: _package.description,
       version: _package.version,
@@ -206,4 +207,23 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, ' jam ', m, ' menit ', s, ' detik'].map(v => v.toString().padStart(2, 0)).join('')
+}
+
+function ucapan() {
+        const hour_now = moment.tz('Asia/Jakarta').format('HH')
+        var ucapanWaktu = 'Pagi kak'
+        if (hour_now >= '03' && hour_now <= '10') {
+          ucapanWaktu = 'Pagi kak'
+        } else if (hour_now >= '10' && hour_now <= '15') {
+          ucapanWaktu = 'Siang kak'
+        } else if (hour_now >= '15' && hour_now <= '17') {
+          ucapanWaktu = 'Sore kak'
+        } else if (hour_now >= '17' && hour_now <= '18') {
+          ucapanWaktu = 'Selamat Petang kak'
+        } else if (hour_now >= '18' && hour_now <= '23') {
+          ucapanWaktu = 'Malam kak'
+        } else {
+          ucapanWaktu = 'Selamat Malam!'
+        }	
+        return ucapanWaktu
 }
