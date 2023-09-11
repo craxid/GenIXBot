@@ -1,15 +1,8 @@
-//import db from '../lib/database.js'import { promises } from 'fs'
-//import { join } from 'path'
+//import db from '../lib/database.js'
+import { promises } from 'fs'
+import { join } from 'path'
 import fetch from 'node-fetch'
-import moment from 'moment-timezone'
 import { xpRange } from '../lib/levelling.js'
-import { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } from '@adiwajshing/baileys'
-import fs from 'fs'
-import { path, join } from 'path'
-import levelling from '../lib/levelling'
-import { platform } from 'node:process'
-import os from 'os'
-
 //import { plugins } from '../lib/plugins.js'
 let tags = {
   'main': 'MAIN MENU',
@@ -38,7 +31,7 @@ const defaultMenu = {
   before: `
 ◈ ━━━ *Misono Mika  ┃ ᴮᴼᵀ* ━━━━ ◈
  
-👋🏻 %ucapan *%name*
+👋🏻 _Halo kak_ *%name*
 🧿 Level : *%level* 
 👥 User : %totalreg
 📈 Runtime : %muptime
@@ -145,7 +138,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       '%': '%',
       p: _p, uptime, muptime,
       me: conn.getName(conn.user.jid),
-      ucapan: ucapan(),
       npmname: _package.name,
       npmdesc: _package.description,
       version: _package.version,
@@ -207,4 +199,3 @@ function clockString(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, ' jam ', m, ' menit ', s, ' detik'].map(v => v.toString().padStart(2, 0)).join('')
 }
-
