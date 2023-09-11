@@ -9,9 +9,9 @@ m.react('💬')
 
 	try {
 	    
-	    let gpt = await fetch(`https://api.yanzbotz.my.id/api/ai/openai?query=${text}`)
+	    //let gpt = await fetch(`https://api.yanzbotz.my.id/api/ai/openai?query=${text}`)
 	    
-	    /*let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)*/
+	    let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)
      ;
         let res = await gpt.json()
         await m.reply(res.sesult: choices.text)
