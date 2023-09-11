@@ -5,10 +5,11 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 import { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } from '@adiwajshing/baileys'
 import fetch from 'node-fetch'
-let moment from 'moment-timezone'
-let levelling from '../lib/levelling'
-let { platform } = require('node:process'
-let os = require('os')
+import moment from 'moment-timezone'
+import levelling from '../lib/levelling'
+import { platform } from 'node:process'
+import os from 'os'
+
 //import { plugins } from '../lib/plugins.js'
 let tags = {
   'main': 'MAIN MENU',
