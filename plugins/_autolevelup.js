@@ -21,9 +21,10 @@ _*off autolevelup*_
     }
 }*/
 
-import { color } = require('../lib/color')
-const moment = require("moment-timezone")
-let levelling = require('../lib/levelling')
+import { color } from '../lib/color'
+import moment from "moment-timezone"
+
+i levelling from '../lib/levelling'
 module.exports = {
 	before(m) {
 		let user = global.db.data.users[m.sender]
