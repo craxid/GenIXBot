@@ -2,14 +2,7 @@
 import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
-import moment from 'moment-timezone'
 import { xpRange } from '../lib/levelling.js'
-import { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } from '@adiwajshing/baileys'
-import fs from 'fs'
-import path from 'path'
-import levelling from '../lib/levelling'
-import { platform } from 'node:process'
-import os from 'os'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
   'main': 'MAIN MENU',
@@ -38,7 +31,7 @@ const defaultMenu = {
   before: `
 ◈ ━━━ *Misono Mika  ┃ ᴮᴼᵀ* ━━━━ ◈
  
-👋🏻 %ucapan *%name*
+👋🏻 _Halo kak_ *%name*
 🧿 Level : *%level* 
 👥 User : %totalreg
 📈 Runtime : %muptime
@@ -158,28 +151,27 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
-    let ppmika = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
+    let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
      
-    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
+    //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     
-/*conn.sendMessage(m.chat, {
-text: text,
-contextInfo: {
-externalAdReply: {
-title: ('Mika Misono Bot'),
-body: ('Jangan Spam Bot!'),
-thumbnailUrl: ('https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'),
-sourceUrl: ('https://www.facebook.com/dede2015k'),
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}})*/
-
     /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98_ff', pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
     ],m, rpl)*/
+conn.sendMessage(m.chat {
+text: text,
+contextInfo: {
+externalAdReply: {
+title: ('Mika Misono Bot'),
+body: ('Jangan Spam Bot!'),
+thumbnailUrl: ,
+sourceUrl: global.ppmika,
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})*/
     m.react('📚') 
     
   } catch (e) {
