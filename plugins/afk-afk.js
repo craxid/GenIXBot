@@ -22,7 +22,7 @@ thumbnailUrl: global.ppmika,
 sourceUrl: global.dygp,
 mediaType: 1,
 showAdAttribution: true,
-renderLargerThumbnail: true
+renderLargerThumbnail: false
 }}})
   
 }
