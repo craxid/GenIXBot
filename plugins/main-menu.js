@@ -154,12 +154,12 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
      
 conn.sendMessage(m.chat, {
-text: mika,
+text: text,
 contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: mikapp,
+thumbnailUrl: ('https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'),
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
