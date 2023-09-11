@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
 	
 if (!text) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan pengguna\n\nContoh: !animedif 1girls`
-m.reply('${global.wait})
+m.reply(wait)
 
 //code area
 try {
