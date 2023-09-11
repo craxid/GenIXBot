@@ -7,8 +7,8 @@ m.reply(wait)
 
 //code area
 try {
-    diff = await conn.getFile(`https://api.yanzbotz.my.id/api/text2img/realistic?prompt=${text}`)
-    1girl,%20hoodie,%20smile
+  let diff = await conn.getFile(`https://api.yanzbotz.my.id/api/text2img/realistic?prompt=${text}`)
+    
 //let diff = await conn.getFile(`https://api.azz.biz.id/api/text2img?q=${text}&key=mangea`)
 	    
 conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ TEXT TO IMAGE ]*\n\nPROMPT:\n${text}`, m)
