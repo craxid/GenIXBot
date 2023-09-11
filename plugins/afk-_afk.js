@@ -4,11 +4,15 @@ export function before(m) {
     let user = global.db.data.users[m.sender]
     
     if (user.afk > -1) {
-        m.reply(`
+        let afk = `
   ✅ Berhenti AFK
 ${user.afkReason ? ' \n▢ *Alasan :* ' + user.afkReason : ''}
 ▢ *AFK sejak :* ${(new Date - user.afk).toTimeString()}
-  `.trim())
+  `
+  
+  
+  
+  .trim())
         user.afk = -1
         user.afkReason = ''
     }
@@ -28,7 +32,7 @@ ${user.afkReason ? ' \n▢ *Alasan :* ' + user.afkReason : ''}
 
 ${reason ? '▢ *Alasan* : ' + reason : '▢ *Alasan* : Tanpa alasan'}
 ▢ *AFK sejak :* ${(new Date - afkTime).toTimeString()}
-  `.trim() 
+  `
   
   conn.sendMessage(m.chat, {
 text: aefka,
@@ -41,7 +45,7 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})
+}}}).trim()
   
     }
     return true
