@@ -166,7 +166,7 @@ contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: ,
+thumbnailUrl: ('https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'),
 sourceUrl: global.ppmika,
 mediaType: 1,
 showAdAttribution: true,
