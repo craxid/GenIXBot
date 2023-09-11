@@ -1,14 +1,8 @@
 //import db from '../lib/database.js'
-import { promises, fs } from 'fs'
-import { join, path } from 'path'
+import { promises } from 'fs'
+import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
-import { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } from '@adiwajshing/baileys'
-import moment from 'moment-timezone'
-import levelling from '../lib/levelling'
-import { platform } from 'node:process'
-import os from 'os'
-
 //import { plugins } from '../lib/plugins.js'
 let tags = {
   'main': 'MAIN MENU',
@@ -37,7 +31,7 @@ const defaultMenu = {
   before: `
 ◈ ━━━ *Misono Mika  ┃ ᴮᴼᵀ* ━━━━ ◈
  
-👋🏻 %ucapan *%name*
+👋🏻 _Halo kak_ *%name*
 🧿 Level : *%level* 
 👥 User : %totalreg
 📈 Runtime : %muptime
@@ -144,7 +138,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       '%': '%',
       p: _p, uptime, muptime,
       me: conn.getName(conn.user.jid),
-      ucapan: ucapan(),
       npmname: _package.name,
       npmdesc: _package.description,
       version: _package.version,
@@ -171,7 +164,7 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}})
+}}},)
 
     //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     
@@ -206,23 +199,4 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, ' jam ', m, ' menit ', s, ' detik'].map(v => v.toString().padStart(2, 0)).join('')
-}
-
-function ucapan() {
-        const hour_now = moment.tz('Asia/Jakarta').format('HH')
-        var ucapanWaktu = 'Pagi kak'
-        if (hour_now >= '03' && hour_now <= '10') {
-          ucapanWaktu = 'Pagi kak'
-        } else if (hour_now >= '10' && hour_now <= '15') {
-          ucapanWaktu = 'Siang kak'
-        } else if (hour_now >= '15' && hour_now <= '17') {
-          ucapanWaktu = 'Sore kak'
-        } else if (hour_now >= '17' && hour_now <= '18') {
-          ucapanWaktu = 'Selamat Petang kak'
-        } else if (hour_now >= '18' && hour_now <= '23') {
-          ucapanWaktu = 'Malam kak'
-        } else {
-          ucapanWaktu = 'Selamat Malam!'
-        }	
-        return ucapanWaktu
 }
