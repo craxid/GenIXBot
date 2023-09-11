@@ -174,7 +174,7 @@ externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
 thumbnailUrl: ('https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'),
-sourceUrl: global.ppmika,
+sourceUrl: ('https://www.facebool.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
