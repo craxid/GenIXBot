@@ -9,7 +9,7 @@ export function before(m) {
 ${user.afkReason ? ' \n▢ *Alasan :* ' + user.afkReason : ''}
 ▢ *AFK sejak :* ${(new Date - user.afk).toTimeString()}
   `
-  conn.sendMessage(m.chat, {
+conn.sendMessage(m.chat, {
 text: afk,
 contextInfo: {
 externalAdReply: {
@@ -43,7 +43,7 @@ ${reason ? '▢ *Alasan* : ' + reason : '▢ *Alasan* : Tanpa alasan'}
 ▢ *AFK sejak :* ${(new Date - afkTime).toTimeString()}
   `
   
-  conn.sendMessage(m.chat, {
+conn.sendMessage(m.chat, {
 text: aefka,
 contextInfo: {
 externalAdReply: {
