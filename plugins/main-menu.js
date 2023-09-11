@@ -4,7 +4,7 @@ import { join } from 'path'
 import fetch from 'node-fetch'
 import moment from 'moment-timezone'
 import { xpRange } from '../lib/levelling.js'
-import { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
+
 import fs from 'fs'
 import path from 'path'
 import levelling from '../lib/levelling'
@@ -36,9 +36,9 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-◈ ━━━ *Mika Misono  ┃ ᴮᴼᵀ* ━━━━ ◈
+◈ ━━━ *Misono Mika  ┃ ᴮᴼᵀ* ━━━━ ◈
  
-👋🏻 %ucapan *%name*
+👋🏻 _Halo kak_ *%name*
 🧿 Level : *%level* 
 👥 User : %totalreg
 📈 Runtime : %muptime
@@ -55,7 +55,7 @@ INFORMATION
   ≡ *MENU LISTS*`
   
   .trimStart(),
-  header: `▣───「 *%category* 」───▣`,
+  header: `▣───「 %category 」───▣`,
   body: `│✇ %cmd %isdiamond %isPremium`,
   footer: `╰────࿐\n`,
   after: `\n*Mika Bot masih dalam tahap pengembangan.*
@@ -73,9 +73,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     // Offset -420 is 18.00
     // Offset    0 is  0.00
     // Offset  420 is  7.00
-    const wib = moment.tz('Asia/Jakarta').format("HH:mm:ss")
-    const wita = moment.tz('Asia/Makassar').format("HH:mm:ss")
-    const wit = moment.tz('Asia/Jayapura').format("HH:mm:ss")
     let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let date = d.toLocaleDateString(locale, {
@@ -147,7 +144,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let replace = {
       '%': '%',
       p: _p, uptime, muptime,
-      ucapan: ucapan(),
       me: conn.getName(conn.user.jid),
       npmname: _package.name,
       npmdesc: _package.description,
@@ -164,21 +160,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     
     let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
      
-    //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
-    
-conn.sendMessage(m.chat, {
-text: text,
-contextInfo: {
-externalAdReply: {
-title: ('Mika Misono Bot'),
-body: ('Jangan Spam Bot!'),
-thumbnailUrl: ('https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'),
-sourceUrl: ('https://www.facebook.com/dede2015k'),
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}})
-    
+    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98_ff', pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
       ['⏍ Info', `${_p}botinfo`],
@@ -221,23 +203,4 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, ' jam ', m, ' menit ', s, ' detik'].map(v => v.toString().padStart(2, 0)).join('')
-}
-
-function ucapan() {
-        const hour_now = moment.tz('Asia/Jakarta').format('HH')
-        var ucapanWaktu = 'Pagi kak'
-        if (hour_now >= '03' && hour_now <= '10') {
-          ucapanWaktu = 'Pagi kak'
-        } else if (hour_now >= '10' && hour_now <= '15') {
-          ucapanWaktu = 'Siang kak'
-        } else if (hour_now >= '15' && hour_now <= '17') {
-          ucapanWaktu = 'Sore kak'
-        } else if (hour_now >= '17' && hour_now <= '18') {
-          ucapanWaktu = 'Selamat Petang kak'
-        } else if (hour_now >= '18' && hour_now <= '23') {
-          ucapanWaktu = 'Malam kak'
-        } else {
-          ucapanWaktu = 'Selamat Malam!'
-        }	
-        return ucapanWaktu
 }
