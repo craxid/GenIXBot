@@ -17,7 +17,7 @@ let handler = async (m, { args }) => {
     let Wind = res.data.wind.speed + "km/h"
     let wea = `「 📍 」 Lokasi: ${name}\n「 🗺️ 」 Negara: ${Country}\n「 🌤️ 」 Cuaca: ${Weather}\n「 🌡️ 」 Temperatur: ${Temperature}\n「 💠 」 Temperatur Minimum: ${Minimum_Temperature}\n「 📛 」 Temperatur Maksimum: ${Maximum_Temperature}\n「 💦 」 Kelembaban: ${Humidity}\n「 🌬️ 」 Angin: ${Wind}
   `
-    let bmkglogo = 'https://telegra.ph/file/5e539e4e1194c057c1fc7.jpg'
+    let bmkglogo = 'https://api.zahwazein.xyz/creator/ttp'
     
     await m.react(awan)
     conn.sendMessage(m.chat, {
