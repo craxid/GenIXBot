@@ -1,8 +1,15 @@
 //import db from '../lib/database.js'
-import { promises } from 'fs'
+import { promises, fs } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
+import { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } from '@adiwajshing/baileys'
+let path = require('path')
+let fetch = require('node-fetch')
+let moment = require('moment-timezone')
+let levelling = require('../lib/levelling')
+let { platform } = require('node:process')
+let os = require('os')
 //import { plugins } from '../lib/plugins.js'
 let tags = {
   'main': 'MAIN MENU',
