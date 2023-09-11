@@ -42,6 +42,8 @@ const defaultMenu = {
 🧿 Level : *%level* 
 👥 User : %totalreg
 📈 Runtime : %muptime
+
+%wib
 ─────────────
 Support Us!
 🔰 https://teer.id/dede_klender
