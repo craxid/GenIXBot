@@ -23,12 +23,26 @@ ${user.afkReason ? ' \n▢ *Alasan :* ' + user.afkReason : ''}
             continue
         let reason = user.afkReason || ''
         
-        m.reply(`
+        let aefka =`
 💤 Orang yang kamu tag sedang AFK
 
 ${reason ? '▢ *Alasan* : ' + reason : '▢ *Alasan* : Tanpa alasan'}
 ▢ *AFK sejak :* ${(new Date - afkTime).toTimeString()}
-  `.trim())
+  `.trim() 
+  
+  conn.sendMessage(m.chat, {
+text: aefka,
+contextInfo: {
+externalAdReply: {
+title: ('Mika Misono Bot'),
+body: ('Jangan Spam Bot!'),
+thumbnailUrl: mikapp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})
+  
     }
     return true
 }
