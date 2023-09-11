@@ -7,9 +7,9 @@ import { xpRange } from '../lib/levelling.js'
 import { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 import fs from 'fs'
 import path from 'path'
-import levelling from '../lib/levelling'
-import { platform } from 'node:process'
-import os from 'os'
+import levelling from'../lib/levelling')
+let { platform } = require('node:process')
+let os = require('os')
 //import { plugins } from '../lib/plugins.js'
 let tags = {
   'main': 'MAIN MENU',
