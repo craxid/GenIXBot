@@ -153,26 +153,24 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     
     let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
      
-    //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
-    
+    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98_ff', pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
     ],m, rpl)*/
-    
-conn.sendMessage(m.chat {
+/*conn.sendMessage(m.chat {
 text: text,
 contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: ('https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'),
-sourceUrl: ('https://www.facebook com/dede2015k'),
+thumbnailUrl: pp,
+sourceUrl: global.ppmika,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})
+}}})*/
     m.react('📚') 
     
   } catch (e) {
