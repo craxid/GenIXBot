@@ -1,10 +1,10 @@
 //import db from '../lib/database.js'
+import { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
 import moment from 'moment-timezone'
 import { xpRange } from '../lib/levelling.js'
-
 import fs from 'fs'
 import path from 'path'
 import levelling from '../lib/levelling'
@@ -38,7 +38,7 @@ const defaultMenu = {
   before: `
 ◈ ━━━ *Misono Mika  ┃ ᴮᴼᵀ* ━━━━ ◈
  
-👋🏻 _Halo kak_ *%name*
+👋🏻 %ucapan *%name*
 🧿 Level : *%level* 
 👥 User : %totalreg
 📈 Runtime : %muptime
@@ -145,6 +145,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       '%': '%',
       p: _p, uptime, muptime,
       me: conn.getName(conn.user.jid),
+      ucapan: ucapan()
       npmname: _package.name,
       npmdesc: _package.description,
       version: _package.version,
