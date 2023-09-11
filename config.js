@@ -44,7 +44,7 @@ global.mikasampul = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 global.dygp = 'https://chat.whatsapp.com/BDYIsBhoR2I2aXpEvZRzWP'
 global.fgsc = 'https://github.com/craxid/Akebi-chan-MD' 
 global.fgyt = 'https://youtube.com/ClanDare'
-global.ppmika ='https://telegra.ph/file/36c63ddbd8855ee789e64.jpg'
+global.ppmika ='https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 
 global.fgpyp = 'https://paypal.me/dedeklender'
 global.fglog = 'https://genix.eu.org/akebi_bot.jpg'
