@@ -169,7 +169,7 @@ contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: ppmika,
+thumbnailUrl: ('https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'),
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
@@ -181,18 +181,6 @@ renderLargerThumbnail: true
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
     ],m, rpl)*/
-/*conn.sendMessage(m.chat {
-text: text,
-contextInfo: {
-externalAdReply: {
-title: ('Mika Misono Bot'),
-body: ('Jangan Spam Bot!'),
-thumbnailUrl: pp,
-sourceUrl: global.ppmika,
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}})*/
     m.react('📚') 
     
   } catch (e) {
