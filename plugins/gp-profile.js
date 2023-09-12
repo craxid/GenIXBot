@@ -32,7 +32,8 @@ let str = `
 ▢ *⭐ Premium*: ${prem ? 'Ya' : 'Tidak'}
 └──────────────`
     //conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
-    
+   let lepellu = 
+   
 conn.sendMessage(m.chat, {
 text: str,
 contextInfo: {
