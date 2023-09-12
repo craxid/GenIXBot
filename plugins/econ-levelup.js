@@ -77,23 +77,28 @@ Level *${user.level} (${user.exp - min}/${xp})*
 Kurang *${max - user.exp}XP* lagi!
 `.trim()
     }
+    
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
+    
     if (before !== user.level) {
         user.role = global.rpg.role(user.level).name
-        let teks = `Selamat ${conn.getName(m.sender)} naik 🧬level`
+        
+        let teks = `Selamat, ${conn.getName(m.sender)} naik level 🎉`
         let str = `
 ${teks} 
-• 🧬Level Sebelumnya : ${before}
-• 🧬Level Baru : ${user.level}
-• 🧬Role Kamu : ${user.role}
-• Pada Jam : ${new Date().toLocaleString('id-ID')}
+• 👾 Level Sebelumnya : ${before}
+• 👾 Level Baru : ${user.level}
+• 👾 Role Kamu : ${user.role}
+• 👾 Pada : ${new Date().toLocaleString( 'id-ID', { timeZone: 'Asia/Jakarta' } )}
 
 *_Semakin sering berinteraksi dengan bot Semakin Tinggi level kamu_*
 `.trim()
         try {
             const img = await levelup(m, user.level)
+            
             conn.sendFile(m.chat, img, 'mika.jpg', str, m)
+            
         } catch (e) {
             m.reply(str)
         }
