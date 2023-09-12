@@ -39,7 +39,7 @@ contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: mikapp,
+thumbnailUrl: global.mikapp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
