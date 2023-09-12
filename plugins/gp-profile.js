@@ -31,14 +31,15 @@ let str = `
 ▢ *📇 Terdaftar:* ${registered ? 'Ya': 'Tidak'}
 ▢ *⭐ Premium*: ${prem ? 'Ya' : 'Tidak'}
 └──────────────`
-    conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
+    //conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
     
-text: dann,
+conn.sendMessage(m.chat, {
+text: str,
 contextInfo: {
 externalAdReply: {
-title: ('Mika Bot'),
-body: ('SEPERTINYA KAMU SALAH MENGEJA?'),
-thumbnailUrl: 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg',
+title: ('Mika Misono Bot'),
+body: ('Jangan Spam Bot!'),
+thumbnailUrl: mikapp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
