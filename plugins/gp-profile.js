@@ -40,7 +40,7 @@ externalAdReply: {
 title: (`${username}`),
 body: (`${level}`),
 thumbnailUrl: pp,
-sourceUrl: global.dygp,
+sourceUrl: global.fgig,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
