@@ -22,7 +22,7 @@ contextInfo: {
 externalAdReply: {
 title: (`${conn.getName(m.sender)}`),
 body: ('SEDANG AFK'),
-thumbnailUrl: global.pp,
+thumbnailUrl: pp,
 sourceUrl: global.fbku,
 mediaType: 1,
 showAdAttribution: false,
