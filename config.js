@@ -9,7 +9,7 @@ global.owner = [
 ] //Numeros de owner 
 
 global.mods = ['6285892734104'] 
-global.prems = ['', '', '']
+global.prems = ['6285892734104', '', '']
 global.APIs = { // API Prefix
   // name: 'https://website'
   xteam: 'https://api.xteam.xyz', 
@@ -38,7 +38,7 @@ global.APIKeys = { // APIKey Here
 global.packname = 'Mika Bot'
 global.namebot = 'Mika Misono Bot'
 global.pesanbot = 'Jangan spam Bot'
-global.author = '+62 831-5593-6234' 
+global.author = '+62 831-5593-62345' 
 global.fgig = '▢ Follow Instagram\nhttps://www.instagram.com/dede_klender\n' 
 global.mikasampul = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 global.dygp = 'https://chat.whatsapp.com/BDYIsBhoR2I2aXpEvZRzWP'
