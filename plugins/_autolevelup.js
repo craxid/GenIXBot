@@ -36,8 +36,10 @@ module.exports = {
 			let chating = `*Congratulations*, you have leveled up!
 *[ ${before} ]* ➠ *[ ${user.level} ]*
 Use *.profile* to check`.trim()
-			let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
-    conn.sendMessage(m.chat, {
+
+	let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
+	
+conn.sendMessage(m.chat, {
 text: chating,
 contextInfo: {
 externalAdReply: {
