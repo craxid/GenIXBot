@@ -4,6 +4,12 @@ let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 
 let mika = `Halo kak ${name} 👋\nAda yang bisa ${global.packname} bantu?\n\nKetik !help untuk membuka Menu`
+
+let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+if (!(who in global.db.data.users)) throw `✳️ Pengguna tidak ada di database`
+    let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
+    let username = conn.getName(who)
+    
 conn.sendMessage(m.chat, {
 text: mika,
 contextInfo: {
