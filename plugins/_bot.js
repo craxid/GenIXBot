@@ -15,7 +15,7 @@ text: mika,
 contextInfo: {
 externalAdReply: {
 title: (`${username}`),
-body: ('Aku '),
+body: ('Aku Online Kak!'),
 thumbnailUrl: mikapp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
