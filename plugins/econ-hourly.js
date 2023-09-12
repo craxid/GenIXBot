@@ -5,15 +5,15 @@ const free = 500
 const prem = 1000
 
 let handler = async (m, {conn, isPrems }) => {
-  let timehourly = global.db.data.users[m.sender].lastclaim + 3600000
-  if (new Date - global.db.data.users[m.sender].lastclaim < 3600000) throw `🎁 *Kamu sudah mengumpulkan hadiah*\n\n🕚 Kembalilah dalam *${msToTime(timehourly - new Date())}* `
+  let timehourly = global.db.data.users[m.sender].claimhourly + 3600000
+  if (new Date - global.db.data.users[m.sender].claimhourly < 3600000) throw `🎁 *Kamu sudah mengumpulkan hadiah*\n\n🕚 Kembalilah dalam *${msToTime(timehourly - new Date())}* `
   global.db.data.users[m.sender].exp += isPrems ? prem : free
   m.reply(`
 🎁 *HOURLY REWARD*
 
 ▢ *Mendapat:*
 🆙 *XP* : +${isPrems ? prem : free}`)
-  global.db.data.users[m.sender].lastclaim = new Date * 1
+  global.db.data.users[m.sender].claimhourly = new Date * 1
 }
 handler.help = ['hourly']
 handler.tags = ['econ']
