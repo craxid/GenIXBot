@@ -16,7 +16,7 @@ conn.sendMessage(m.chat, {
 text: mika,
 contextInfo: {
 externalAdReply: {
-title: (``),
+title: (user),
 body: ('Jangan Spam Bot!'),
 thumbnailUrl: global.ppmika,
 sourceUrl: global.fbku,
