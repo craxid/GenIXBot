@@ -37,8 +37,8 @@ conn.sendMessage(m.chat, {
 text: str,
 contextInfo: {
 externalAdReply: {
-title: (`@${who.replace(/@.+/, '')}`),
-body: (`${username}`),
+title: (`${username}`),
+body: (`@${who.replace(/@.+/, '')}`),
 thumbnailUrl: pp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
