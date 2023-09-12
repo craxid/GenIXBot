@@ -84,7 +84,7 @@ Kurang *${max - user.exp}XP* lagi!
     if (before !== user.level) {
         user.role = global.rpg.role(user.level).name
         
-    let img = await (`${global.mikapp}`)
+    
     
         let teks = `Selamat, ${conn.getName(m.sender)} naik level 🎉`
         let str = `
@@ -97,6 +97,7 @@ ${teks}
 *_Semakin sering berinteraksi dengan bot Semakin Tinggi level kamu_*
 `.trim()
         try {
+            let img = await (`${global.mikapp}`)
             //const img = await levelup(m, user.level)
             
             conn.sendFile(m.chat, img, 'mika.jpg', str, m)
