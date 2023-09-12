@@ -97,7 +97,7 @@ ${teks}
 *_Semakin sering berinteraksi dengan bot Semakin Tinggi level kamu_*
 `.trim()
         try {
-            const img = await levelup(m, user.level)
+            //const img = await levelup(m, user.level)
             
             conn.sendFile(m.chat, img, 'mika.jpg', str, m)
             
