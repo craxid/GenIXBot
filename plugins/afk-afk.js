@@ -19,7 +19,7 @@ externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
 thumbnailUrl: global.ppmika,
-sourceUrl: global.dygp,
+sourceUrl: global.fbku,
 mediaType: 1,
 showAdAttribution: false,
 renderLargerThumbnail: false
