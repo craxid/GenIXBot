@@ -162,7 +162,7 @@ title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
 thumbnailUrl: ppmika,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
-mediaType: 1,
+mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: false
 }}})
