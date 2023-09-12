@@ -16,7 +16,7 @@ conn.sendMessage(m.chat, {
 text: mika,
 contextInfo: {
 externalAdReply: {
-title: (user),
+title: (`{conn.getName(m.sender)}`),
 body: ('SEDANG AFK'),
 thumbnailUrl: global.ppmika,
 sourceUrl: global.fbku,
