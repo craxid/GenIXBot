@@ -4,15 +4,15 @@ const free = 30
 const prem = 50
 
 let handler = async (m, {conn, isPrems }) => {
-  let timedm = global.db.data.users[m.sender].lastclaim + 86400000
-  if (new Date - global.db.data.users[m.sender].lastclaim < 86400000) throw `🎁 *Kamu sudah mengumpulkan Diamond untuk hari ini*\n\n🕚 Kembalilah dalam *${msToTime(timedm - new Date())}* `
+  let timedm = global.db.data.users[m.sender].claimdm + 86400000
+  if (new Date - global.db.data.users[m.sender].claimdm < 86400000) throw `🎁 *Kamu sudah mengumpulkan Diamond untuk hari ini*\n\n🕚 Kembalilah dalam *${msToTime(timedm - new Date())}* `
   global.db.data.users[m.sender].diamond += isPrems ? prem : free
   m.reply(`
 🎁 *DIAMOND REWARD*
 
 ▢ *Mendapat:*
 💎 *DIAMOND:* +${isPrems ? prem : free}`)
-  global.db.data.users[m.sender].lastclaim = new Date * 1
+  global.db.data.users[m.sender].claimdm = new Date * 1
 }
 handler.help = ['claimdm']
 handler.tags = ['econ']
