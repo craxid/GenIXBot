@@ -21,7 +21,7 @@ body: ('Jangan Spam Bot!'),
 thumbnailUrl: global.ppmika,
 sourceUrl: global.dygp,
 mediaType: 1,
-showAdAttribution: true,
+showAdAttribution: false,
 renderLargerThumbnail: false
 }}})
   
