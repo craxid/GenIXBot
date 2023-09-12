@@ -38,7 +38,7 @@ text: str,
 contextInfo: {
 externalAdReply: {
 title: (`@${who.replace(/@.+/, '')}`),
-body: ('$'),
+body: (`${username} ${registered ? '\n   • ' + name + ' ': ''}`@),
 thumbnailUrl: pp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
