@@ -90,7 +90,7 @@ ${teks}
 • 👾 Level Sebelumnya : ${before}
 • 👾 Level Baru : ${user.level}
 • 👾 Role Kamu : ${user.role}
-• 👾 Pada : ${new Date().toLocaleString( 'id-ID', { timeZone: 'Asia/Jakarta' } )}
+• 👾 Pada : ${new Date().toLocaleString( 'id-ID', { timeZone: 'Asia/Jakarta' } )} WIB
 
 *_Semakin sering berinteraksi dengan bot Semakin Tinggi level kamu_*
 `.trim()
