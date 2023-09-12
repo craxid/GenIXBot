@@ -42,7 +42,6 @@ Support Us!
 %readmore
 ─────────────
 *INFORMATION*
-
 Ⓟ = Premium
 ⓓ = Menggunakan Diamond 
 -----  -----  -----  -----  -----
