@@ -38,9 +38,9 @@ text: str,
 contextInfo: {
 externalAdReply: {
 title: (`${username}`),
-body: (`@${who.replace(/@.+/, '')}`),
+body: (`${level}`),
 thumbnailUrl: pp,
-sourceUrl: (`${level}`),
+sourceUrl: (`@${who.replace(/@.+/, '')}`),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
