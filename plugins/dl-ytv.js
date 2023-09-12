@@ -6,9 +6,11 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 	if (!args || !args[0]) throw `✳️ Contoh :\n${usedPrefix + command} https://youtu.be/YzkTFFwxtXI`
     if (!args[0].match(/youtu/gi)) throw `❎ link YouTube tidak valid`
 	 let chat = global.db.data.chats[m.chat]
+	 
 	 m.react(rwait) 
+	 m.reply(wait)
 	try {
-		let q = args[1] || '720p'
+		let q = args[1] || '360p'
 		let v = args[0]
 		const yt = await youtubedl(v).catch(async () => await youtubedlv2(v))
 		const dl_url = await yt.video[q].download()
@@ -17,7 +19,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 		
        if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)    
 	  conn.sendFile(m.chat, dl_url, title + '.mp4', `
- ≡  *Akebi-chan YTDL*
+ ≡  *Mika Bot YTDL*
   
 ▢ *📌 Judul* : ${title}
 ▢ *📟 Ekstensi* : mp4
