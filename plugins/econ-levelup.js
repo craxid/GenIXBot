@@ -84,7 +84,7 @@ Kurang *${max - user.exp}XP* lagi!
     if (before !== user.level) {
         user.role = global.rpg.role(user.level).name
         
-    let img = ('${glob')
+    let img = (${global.mikapp)
     
         let teks = `Selamat, ${conn.getName(m.sender)} naik level 🎉`
         let str = `
