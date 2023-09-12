@@ -45,7 +45,7 @@ global.dygp = 'https://chat.whatsapp.com/BDYIsBhoR2I2aXpEvZRzWP'
 global.fgsc = 'https://github.com/craxid/Akebi-chan-MD' 
 global.fgyt = 'https://youtube.com/ClanDare'
 global.ppmika ='https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
-
+global.fbku = 'https://facebook.com/dede2015k'
 global.fgpyp = 'https://paypal.me/dedeklender'
 global.fglog = 'https://genix.eu.org/akebi_bot.jpg'
 global.qris = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
