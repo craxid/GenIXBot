@@ -17,7 +17,7 @@ text: mika,
 contextInfo: {
 externalAdReply: {
 title: (user),
-body: ('Jangan Spam Bot!'),
+body: ('SEDANG AFK'),
 thumbnailUrl: global.ppmika,
 sourceUrl: global.fbku,
 mediaType: 1,
