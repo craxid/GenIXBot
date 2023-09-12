@@ -32,14 +32,14 @@ let str = `
 ▢ *⭐ Premium*: ${prem ? 'Ya' : 'Tidak'}
 └──────────────`
     //conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
-   let lepellu = 
+   let lepellu = ('Level:')
    
 conn.sendMessage(m.chat, {
 text: str,
 contextInfo: {
 externalAdReply: {
 title: (`${username}`),
-body: ('Level:' `${level}`),
+body: lepellu (`${level}`),
 thumbnailUrl: pp,
 sourceUrl: global.fgig,
 mediaType: 1,
