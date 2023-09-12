@@ -150,15 +150,16 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
-    let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
-     
+    //let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
+    let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
+    
 conn.sendMessage(m.chat, {
 text: text,
 contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: ppmika,
+thumbnailUrl: pp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
