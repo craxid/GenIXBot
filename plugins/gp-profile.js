@@ -40,7 +40,7 @@ externalAdReply: {
 title: (`${username}`),
 body: (`@${who.replace(/@.+/, '')}`),
 thumbnailUrl: pp,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
+sourceUrl: wa.me(${who.split`@`[0]}${registered ?)
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
