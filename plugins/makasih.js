@@ -17,7 +17,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
 }
-handler.customPrefix = /^teri(ma)kasih$/i
+handler.customPrefix = /^(makasih|terimakasih|thx|than)$/i
 handler.command = new RegExp
 
 export default handler
