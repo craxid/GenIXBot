@@ -161,7 +161,7 @@ text: text,
 contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
-body: (${username}),
+body: (`${username}`),
 thumbnailUrl: pp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
