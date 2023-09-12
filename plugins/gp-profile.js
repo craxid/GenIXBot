@@ -38,7 +38,7 @@ text: str,
 contextInfo: {
 externalAdReply: {
 title: (`${username}`),
-body: (`${level}`),
+body: ('Level:' `${level}`),
 thumbnailUrl: pp,
 sourceUrl: global.fgig,
 mediaType: 1,
