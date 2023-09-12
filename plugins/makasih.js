@@ -1,33 +1,23 @@
-/*import fetch from "node-fetch"
+let handler = async (m, { conn }) => {
+let name = await conn.getName(m.sender)
+let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
+let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 
-async function handler(m, { conn, args, usedPrefix, command }) {}
-handler.before = async m => {
-
-case "contributor":
-case "kontribusi":
-case "thaksto":
-case "thxto":
-    
-conn.sendMessage(
-m, 
-{ 
-image: { 
-	url: "https://genix.eu.org/akebi_pray.jpg" }, caption: "*Terima Kasih Kepada*\n- Tuhan Yang Maha Esa\n- WhatsApp Business\n- LIB Baileys\n- Penyedia API\n- Penyedia Source Code\n- @CraXID (Owner Bot)\n\ndan Teman-teman yang udah mau ngetes bot ini. \n\n*Project bot ini tidak akan terwujud tanpa kontribusi dari kalian.*" 
+let mika = `Halo kak ${name} 👋\nAda yang bisa ${global.packname} bantu?\n\nKetik !help untuk membuka Menu`
+conn.sendMessage(m.chat, {
+text: mika,
+contextInfo: {
+externalAdReply: {
+title: ('Mika Misono Bot'),
+body: ('Jangan Spam Bot!'),
+thumbnailUrl: mikapp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})
 }
-);
-
-break
-
-}
-
-handler.help = ['kontribusi']
-handler.tags = ['']
-handler.command = ['kontribusi','terimakasih','thx','arigatou']
-
-handler.disabled = false
+handler.customPrefix = /^teri(ma)()$/i
+handler.command = new RegExp
 
 export default handler
-
-function isNumber(x) {
-    return !isNaN(x)
-}*/
