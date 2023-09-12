@@ -19,7 +19,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 		
        if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)    
 	  conn.sendFile(m.chat, dl_url, title + '.mp4', `
- ≡  *Mika Bot YTDL*
+ ≡  *Mika Bot YT Video*
   
 ▢ *📌 Judul* : ${title}
 ▢ *📟 Ekstensi* : mp4
