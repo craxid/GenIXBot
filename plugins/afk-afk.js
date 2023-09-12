@@ -25,7 +25,7 @@ body: ('SEDANG AFK'),
 thumbnailUrl: pp,
 sourceUrl: global.fbku,
 mediaType: 1,
-showAdAttribution: false,
+showAdAttribution: true,
 renderLargerThumbnail: false
 }}})
   
