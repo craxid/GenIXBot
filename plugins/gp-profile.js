@@ -37,7 +37,7 @@ conn.sendMessage(m.chat, {
 text: str,
 contextInfo: {
 externalAdReply: {
-title: ('Mika Misono Bot'),
+title: ('${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}'),
 body: ('Jangan Spam Bot!'),
 thumbnailUrl: pp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
