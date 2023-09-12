@@ -25,8 +25,8 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 ┌──────────────
 ▢ 📌 *Judul* : ${vid.title}
 ▢ 📆 *Diunggah pada:* ${vid.ago}
-▢ ⌚ *Durasi* ${vid.timestamp}
-▢ 👀 *Dilihat:* ${vid.views}
+▢ ⌚ *Durasi* ${vid.timestamp} Menit
+▢ 👀 *Dilihat:* ${vid.views} kali
 └──────────────
 
 _Mengirim..._`
