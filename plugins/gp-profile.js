@@ -40,7 +40,7 @@ externalAdReply: {
 title: (`${username}`),
 body: (`@${who.replace(/@.+/, '')}`),
 thumbnailUrl: pp,
-sourceUrl: (`${who.split`@`[0]}`),
+sourceUrl: (`${level}`),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
