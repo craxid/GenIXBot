@@ -45,7 +45,7 @@ text: mika,
 contextInfo: {
 externalAdReply: {
 title: (`${username}`),
-body: ('Peraturan Bot'),
+body: ('Kebijakan Bot'),
 thumbnailUrl: mikapp,
 sourceUrl: global.dygp,
 mediaType: 1,
