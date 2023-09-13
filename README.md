@@ -19,7 +19,7 @@
 ***
 ### Informasi
 - Ubah nomor owner dengan nomormu di [Config](https://github.com/CraXID/GenIXBot/blob/main/config.js#L6)
-- Kamu dapat mengubah versi baileys ke versi terbaru dengan mengedit package.json [esta sección](https://github.com/CraXID/genixbot/blob/main/package.json#L42)
+- Kamu dapat mengubah versi baileys ke versi terbaru dengan mengedit package.json [disini](https://github.com/CraXID/genixbot/blob/main/package.json#L42)
 
 ### Contoh 
 Jika ragu, sebelum menginstal Mika-Bot, uji botnya di sini
