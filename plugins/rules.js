@@ -48,4 +48,4 @@ ${global.wm}
 handler.tags = ['main']
 handler.command = /^(rules|rule)$/i
 handler.help = ['rules']
-module.exports = handler
+export default handler
