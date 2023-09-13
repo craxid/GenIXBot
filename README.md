@@ -21,11 +21,7 @@
 - Cambie número de dueño en [Config](https://github.com/CraXID/GenIXBot/blob/main/config.js#L6)
 - Kamu dapat mengubah versi baileys ke versi terbaru dengan mengedit package.json [esta sección](https://github.com/CraXID/genixbot/blob/main/package.json#L42)
 
-### FREE APIKEY
--  [click aquí](https://api-fgmods.ddns.net)
-
-### Ejemplo 
-En caso de duda, antes de instalar dylux-bot, pruebe el bot aquí
+### Contoh 
 
 [![WhatsApp](https://img.shields.io/badge/DyLux-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://instabio.cc/fg98ff) 
 
