@@ -98,7 +98,7 @@ ${teks}
 `.trim()
 
 conn.sendMessage(m.chat, {
-text: (teks, str)),
+text: (teks, str),
 contextInfo: {
 externalAdReply: {
 title: (`${conn.getName(m.sender)}`),
