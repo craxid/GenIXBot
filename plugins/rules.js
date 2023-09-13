@@ -32,7 +32,7 @@ let handler = async(m, { conn }) => {
 
 📬 Rules: 3/09/23
 
-`.trim()
+`
   /*const button = {
         buttonText: 'Klik Di sini',
         description: 'tes',
