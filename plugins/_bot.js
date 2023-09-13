@@ -3,7 +3,7 @@ let name = await conn.getName(m.sender)
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 
-let mika = `Halo kak ${name} 👋\nAda yang bisa ${global.packname} bantu?\n\nKetik !help untuk membuka Menu`
+let mika = `%ucapan ${name} 👋\nAda yang bisa ${global.packname} bantu?\n\nKetik !help untuk membuka Menu`
 
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
@@ -27,3 +27,21 @@ handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh)$/i
 handler.command = new RegExp
 
 export default handler
+
+function ucapan() {
+  const time = moment.tz('Asia/Jakarta').format('HH')
+  let res = "Dini kak"
+  if (time >= 4) {
+    res = "Pagi kak"
+  }
+  if (time >= 10) {
+    res = "Siang kak️"
+  }
+  if (time >= 15) {
+    res = "Sore kak"
+  }
+  if (time >= 18) {
+    res = "Malam kak"
+  }
+  return res
+}
