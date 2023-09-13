@@ -22,6 +22,7 @@
 - Kamu dapat mengubah versi baileys ke versi terbaru dengan mengedit package.json [esta sección](https://github.com/CraXID/genixbot/blob/main/package.json#L42)
 
 ### Contoh 
+Jika ragu, sebelum menginstal dylux-bot, uji botnya di sini
 
 [![WhatsApp](https://img.shields.io/badge/DyLux-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://instabio.cc/fg98ff) 
 
