@@ -2,7 +2,8 @@ import fetch from 'node-fetch'
 import { MessageType } from '@adiwajshing/baileys'
 
 let handler = async(m, { conn }) => {
-let teks = `Kebijakan Privasi, Syarat Ketentuan dan Peraturan Mika Misono Bot
+let teks = `
+Kebijakan Privasi, Syarat Ketentuan dan Peraturan Mika Misono Bot
 
 🔐 Kebijakan Privasi
 1. Bot tidak akan merekam data riwayat chat user.
