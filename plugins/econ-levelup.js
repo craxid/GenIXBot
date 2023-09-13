@@ -84,7 +84,9 @@ Kurang *${max - user.exp}XP* lagi!
     if (before !== user.level) {
         user.role = global.rpg.role(user.level).name
         
-     let pp = await conn.profilePictureUrl('image').catch(_ => './src/avatar_contact.png')
+     let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+
+let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     
         let teks = `Selamat, ${conn.getName(m.sender)} naik level 🎉`
         let str = `
