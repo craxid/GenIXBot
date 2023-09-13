@@ -1,8 +1,8 @@
-const { WAMessageStubType } = require('@adiwajshing/baileys')
+import { WAMessageStubType } from '@adiwajshing/baileys'
+
 var { format } = require('util');
 
 let handler = m => m
-
 const isNumber = x => typeof x === 'number' && !isNaN(x)
 const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(function () {
     clearTimeout(this)
