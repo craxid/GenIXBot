@@ -19,9 +19,9 @@ text: sc,
 contextInfo: {
 externalAdReply: {
 title: (global.namebot),
-body: ('S'),
+body: ('Script Bot Mika Dijual kak!'),
 thumbnailUrl: mikapp,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
+sourceUrl: ('https://wa.me/6285892734104'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
