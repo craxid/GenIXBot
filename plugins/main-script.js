@@ -21,7 +21,7 @@ externalAdReply: {
 title: global.namebot,
 body: ('Rp 15.000,-'),
 thumbnailUrl: global.ppmika,
-sourceUrl: ('https://wa.me/6285892734104'),
+sourceUrl: ('https://wa.me/6285892734104?text=Hai, saya mau beli script bot'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
