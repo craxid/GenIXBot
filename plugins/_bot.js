@@ -1,3 +1,5 @@
+
+import moment from 'moment-timezone'
 let handler = async (m, { conn }) => {
 let name = await conn.getName(m.sender)
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
