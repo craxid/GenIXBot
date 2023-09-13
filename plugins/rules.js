@@ -53,7 +53,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
 }
-handler.customPrefix = /^rule(s)$/i
+handler.customPrefix = /^rule(|s)$/i
 handler.command = new RegExp
 
 export default handler
