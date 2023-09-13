@@ -84,7 +84,7 @@ Kurang *${max - user.exp}XP* lagi!
     if (before !== user.level) {
         user.role = global.rpg.role(user.level).name
         
-    
+     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     
         let teks = `Selamat, ${conn.getName(m.sender)} naik level 🎉`
         let str = `
@@ -103,7 +103,7 @@ contextInfo: {
 externalAdReply: {
 title: (`${conn.getName(m.sender)}`),
 body: (`Level: ${user.level}`),
-thumbnailUrl: global.ppmika,
+thumbnailUrl: pp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
