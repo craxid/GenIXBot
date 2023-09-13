@@ -20,12 +20,12 @@ text: dann,
 contextInfo: {
 externalAdReply: {
 title: (global.namebot),
-body: ('SEPERTINYA KAMU SALAH MENGEJA?'),
+body: ('Command '),
 thumbnailUrl: 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg',
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
-renderLargerThumbnail: false
+renderLargerThumbnail: true
 }}})
 	}
   }
