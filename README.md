@@ -50,8 +50,8 @@ $ cd dylux-fg
 $ npm i 
 $ npm start
 ```
-2. Esperar a que se inicie el bot...
-3. Escanea el código QR desde el segundo dispositivo. (ir a whatsapp > Dispositivos Vinculados > Vincular un dispositivo)
+2. Tunggu hingga bot memulai...
+3.  (ir a whatsapp > Dispositivos Vinculados > Vincular un dispositivo)
 ---------
 
 
