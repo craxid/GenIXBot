@@ -20,7 +20,7 @@ handler.before = function (m, { match, usedPrefix, text, args }) {
 text: dann,
 contextInfo: {
 externalAdReply: {
-title: (),
+title: (`${name}`),
 body: ('SEPERTINYA KAMU SALAH MENGEJA?'),
 thumbnailUrl: 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg',
 sourceUrl: ('https://www.facebook.com/dede2015k'),
