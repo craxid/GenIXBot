@@ -57,6 +57,6 @@ catch {
 }
 
 handler.tags = ['main']
-handler.command = /^(rules|rule)$/i
+handler.customPrefix = /^(rules|rule)$/i
 handler.help = ['rules']
 export default handler
