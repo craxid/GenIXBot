@@ -42,7 +42,21 @@ let handler = async(m, { conn }) => {
        ] }],
         listType: 1
        }*/
-    m.reply(teks)
+    
+    //m.reply(teks)
+    
+conn.sendMessage(m.chat, {
+text: teks,
+contextInfo: {
+externalAdReply: {
+title: (`Mika Bot`),
+body: ('Rules Bot'),
+thumbnailUrl: mikapp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})
 }
 
 handler.tags = ['main']
