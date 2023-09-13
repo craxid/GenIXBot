@@ -17,8 +17,8 @@
 <h3 align="center">WHATSAPP BOT</h3>
 
 ***
-### Información
-- Cambie número de dueño en [Config](https://github.com/CraXID/GenIXBot/blob/main/config.js#L6)
+### Informasi
+- Ubah nomor owner dengan nomormu di [Config](https://github.com/CraXID/GenIXBot/blob/main/config.js#L6)
 - Kamu dapat mengubah versi baileys ke versi terbaru dengan mengedit package.json [esta sección](https://github.com/CraXID/genixbot/blob/main/package.json#L42)
 
 ### Contoh 
