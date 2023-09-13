@@ -24,7 +24,7 @@ thumbnailUrl: mikapp,
 sourceUrl: ('https://wa.me/6285892734104'),
 mediaType: 1,
 showAdAttribution: true,
-renderLargerThumbnail: true
+renderLargerThumbnail: false
 }}})
     
 }
