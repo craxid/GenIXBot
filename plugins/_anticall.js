@@ -1,6 +1,5 @@
 import { WAMessageStubType } from '@adiwajshing/baileys'
-
-var { format } = require('util');
+import { format } from 'util'
 
 let handler = m => m
 const isNumber = x => typeof x === 'number' && !isNaN(x)
