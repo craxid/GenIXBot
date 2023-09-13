@@ -51,7 +51,7 @@ $ npm i
 $ npm start
 ```
 2. Tunggu hingga bot memulai...
-3. Scan kode QR dari perangkat kedua. (Dari whatsapp > Perangkat tertaut > Vincular un dispositivo)
+3. Scan kode QR dari perangkat kedua. (Dari whatsapp > Perangkat tertaut > Sandingkan Perangkat)
 ---------
 
 
