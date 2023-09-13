@@ -1,6 +1,8 @@
 //import db from '../lib/database.js'
 
+let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
+    let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     
 let handler = async (m, { text, conn }) => {
     let user = global.db.data.users[m.sender]
@@ -20,7 +22,7 @@ contextInfo: {
 externalAdReply: {
 title: (`${conn.getName(m.sender)}`),
 body: ('SEDANG AFK'),
-thumbnailUrl: global.mikasampul,
+thumbnailUrl: pp,
 sourceUrl: global.fbku,
 mediaType: 1,
 showAdAttribution: true,
