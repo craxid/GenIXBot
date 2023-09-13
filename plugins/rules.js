@@ -31,7 +31,7 @@ let handler = async(m, { conn }) => {
 5. Bot bertanggung jawab atas kesalahan fatal dalam programing maupun owner.
 
 📬 Rules: 3/09/23
-${global.wm}
+
 `.trim()
   /*const button = {
         buttonText: 'Klik Di sini',
