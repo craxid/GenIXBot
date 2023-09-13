@@ -13,6 +13,19 @@ let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.js
 let sc = (`
 Script Mika Bot dijual, silahkan pesan ke owner\n\n.Owner
 `)
+
+conn.sendMessage(m.chat, {
+text: sc,
+contextInfo: {
+externalAdReply: {
+title: (global.namebot),
+body: ('S'),
+thumbnailUrl: mikapp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})
     
 }
 
