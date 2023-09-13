@@ -11,7 +11,7 @@ let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.js
 `.trim())*/
 
 let sc = (`
-Mau script bot? Silahkan pesan ke owner\n\nKetik .owner
+Silahkan pesan ke owner\n\nKetik .owner
 `)
 
 conn.sendMessage(m.chat, {
@@ -19,7 +19,7 @@ text: sc,
 contextInfo: {
 externalAdReply: {
 title: global.namebot,
-body: ('Script Bot Mika Dijual kak!'),
+body: ('Script Bot Mika Dijual '),
 thumbnailUrl: global.ppmika,
 sourceUrl: ('https://wa.me/6285892734104'),
 mediaType: 1,
