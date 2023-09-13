@@ -50,6 +50,12 @@ renderLargerThumbnail: true
 }}})
 }
 
+catch {
+    m.reply(Eror:)
+}
+    
+}
+
 handler.tags = ['main']
 handler.command = /^(rules|rule)$/i
 handler.help = ['rules']
