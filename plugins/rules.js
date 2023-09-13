@@ -47,7 +47,7 @@ externalAdReply: {
 title: (`${username}`),
 body: ('Peraturan Bot'),
 thumbnailUrl: mikapp,
-sourceUrl: (''),
+sourceUrl: global.fygp,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
