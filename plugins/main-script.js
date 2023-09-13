@@ -10,7 +10,9 @@ let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.js
 ▢ Git : ${_package.homepage}
 `.trim())*/
 
-let sc = 
+let sc = (`
+Script Mi
+`)
     
 }
 
