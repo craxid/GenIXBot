@@ -59,7 +59,7 @@ $ npm start
 
 <a href="https://dash.boxmineworld.com/register?ref=bqcbUAUD"><img src="https://k.top4top.io/p_2413wh2bh0.jpg" width="450" height="230" alt="BoxMine"/></a>
 
-Instal bot dengan sekali klik! dan akan akif selama 7/24
+Instal bot dengan sekali klik! dan akan akif selama 24/7
 
 ---------
 * Create una cuenta  [`aquí`](https://dash.boxmineworld.com/register?ref=Mb0BN5ny)
