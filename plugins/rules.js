@@ -33,16 +33,7 @@ let teks = `Kebijakan Privasi, Syarat Ketentuan dan Peraturan Mika Misono Bot
 📬 Rules: 3/09/23
 
 `
-  /*const button = {
-        buttonText: 'Klik Di sini',
-        description: 'tes',
-        sections:  [{title: "Klik di bawah", rows: [
-        {title: 'Menu Utama', description: "Kembali ke menu", rowId:".menu"},
-        {title: 'Nomor Owner', description: "Owner", rowId:".owner"},
-       ] }],
-        listType: 1
-       }*/
-    
+  
     //m.reply(teks)
     
 conn.sendMessage(m.chat, {
