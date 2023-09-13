@@ -32,7 +32,7 @@ Kebijakan Privasi, Syarat Ketentuan dan Peraturan Mika Misono Bot
 4. Bot akan memberlakukan hukuman: block atau ban terhadap users yang melanggar peraturan.
 5. Bot bertanggung jawab atas kesalahan fatal dalam programing maupun owner.
 
-📬 Rules: 3/09/23
+📬 Rules: 13/09/23
 `
 
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
