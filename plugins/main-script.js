@@ -19,7 +19,7 @@ text: sc,
 contextInfo: {
 externalAdReply: {
 title: global.namebot,
-body: ('Script Bot Mika Dijual '),
+body: ('Rp 15.000,-'),
 thumbnailUrl: global.ppmika,
 sourceUrl: ('https://wa.me/6285892734104'),
 mediaType: 1,
