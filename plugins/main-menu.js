@@ -159,7 +159,7 @@ if (!(who in global.db.data.users)) throw `✳️ Pengguna tidak ada di database
     let username = conn.getName(who)
     
 conn.sendMessage(m.chat, {
-text: (text, m, null, rpl),
+text: (text),
 contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
