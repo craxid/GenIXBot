@@ -32,7 +32,7 @@ const defaultMenu = {
   before: `
 ◈ ━━━ *Misono Mika  ┃ ᴮᴼᵀ* ━━━━ ◈
  
-👋🏻 _Halo kak_ *%name*
+👋🏻 %ucapan *%name*
 🧿 Level : *%level* 
 👥 User : %totalreg
 📈 Runtime : %muptime
@@ -205,3 +205,20 @@ function clockString(ms) {
   return [h, ' jam ', m, ' menit ', s, ' detik'].map(v => v.toString().padStart(2, 0)).join('')
 }
 
+function ucapan() {
+  const time = moment.tz('Asia/Jakarta').format('HH')
+  let res = "Dini kak"
+  if (time >= 4) {
+    res = "Pagi kak"
+  }
+  if (time >= 10) {
+    res = "Siang kak️"
+  }
+  if (time >= 15) {
+    res = "Sore kak"
+  }
+  if (time >= 18) {
+    res = "Malam kak"
+  }
+  return res
+}
