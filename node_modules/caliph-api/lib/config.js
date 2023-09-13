@@ -1,0 +1,1 @@
+const axios=require("axios");module.exports=async function(){let{data:a}=await axios.get("https://caliph-api.js.org/config.json");return a}.bind();

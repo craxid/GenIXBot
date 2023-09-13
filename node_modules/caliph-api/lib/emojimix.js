@@ -1,0 +1,1 @@
+let fetch=require("node-fetch");module.exports=(async(e,t)=>{let n=await fetch(`https://api-emix.caliph.my.id/api/v1/${encodeURIComponent(e)}/${encodeURIComponent(t)}`);if(200!=n.status)throw await n.json();return n.buffer()}).bind();

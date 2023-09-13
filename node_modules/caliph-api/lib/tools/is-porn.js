@@ -1,0 +1,1 @@
+const{Resolver:Resolver}=require("dns"),resolver=new Resolver;resolver.setServers(["1.1.1.3","1.0.0.3"]);var isNull=function(e){return"0.0.0.0"==e},isPorn=function(e){return new Promise((async(r,s)=>{resolver.resolve4(e,((o,n)=>{if(o)return s(o);r({creator:"Caliph",result:{host:e,isporn:isNull(n[0])}})}))}))};module.exports=isPorn.bind();

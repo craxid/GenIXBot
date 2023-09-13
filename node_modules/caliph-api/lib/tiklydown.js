@@ -1,0 +1,1 @@
+const axios=require("axios");module.exports=function(e){return new Promise(((o,t)=>{axios.get(`https://developers.tiklydown.me/api/download?url=${e}`).then((({data:e})=>{o(e)})).catch((e=>{t(e)}))}))};
