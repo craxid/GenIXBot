@@ -45,9 +45,9 @@ text: mika,
 contextInfo: {
 externalAdReply: {
 title: (`${username}`),
-body: ('Aku Online Kak!'),
+body: ('Peraturan Bot'),
 thumbnailUrl: mikapp,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
+sourceUrl: (''),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
