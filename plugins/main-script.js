@@ -18,7 +18,7 @@ conn.sendMessage(m.chat, {
 text: sc,
 contextInfo: {
 externalAdReply: {
-title: (global.namebot),
+title: global.namebot,
 body: ('Script Bot Mika Dijual kak!'),
 thumbnailUrl: global.mikapp,
 sourceUrl: ('https://wa.me/6285892734104'),
