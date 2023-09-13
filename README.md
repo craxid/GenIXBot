@@ -8,8 +8,8 @@
 <p align="center">
 <a href="https://github.com/CraXID?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/CraXID?label=Followers&style=social"></a>
 <a href="https://github.com/CraXID/genixbot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/CraXID/genixbot?&style=social"></a>
-<a href="https://github.com/CraXID/genixbot/network/members"><img title="Fork" src="https://img.shields.io/github/forks/FG98F/dylux-fg?style=social"></a>
-<a href="https://github.com/FG98F/dylux-fg/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/FG98F/dylux-fg?label=Watching&style=social"></a>
+<a href="https://github.com/CraXID/genixbot/network/members"><img title="Fork" src="https://img.shields.io/github/forks/CraXID/genixbot?style=social"></a>
+<a href="https://github.com/CraXID/GenIXBot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/CraXID/dylux-fg?label=Watching&style=social"></a>
 </p>
 
 
