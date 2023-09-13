@@ -42,7 +42,7 @@ contextInfo: {
 externalAdReply: {
 title: (`Mika Bot`),
 body: ('Rules Bot'),
-thumbnailUrl: glibal.ppmika,
+thumbnailUrl: global.ppmika,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
