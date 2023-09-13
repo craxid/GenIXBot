@@ -9,7 +9,7 @@
 <a href="https://github.com/CraXID?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/CraXID?label=Followers&style=social"></a>
 <a href="https://github.com/CraXID/genixbot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/CraXID/genixbot?&style=social"></a>
 <a href="https://github.com/CraXID/genixbot/network/members"><img title="Fork" src="https://img.shields.io/github/forks/CraXID/genixbot?style=social"></a>
-<a href="https://github.com/CraXID/GenIXBot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/CraXID/dylux-fg?label=Watching&style=social"></a>
+<a href="https://github.com/CraXID/g/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/CraXID/dylux-fg?label=Watching&style=social"></a>
 </p>
 
 
@@ -18,7 +18,7 @@
 
 ***
 ### Información
-- Cambie número de dueño en [Config](https://github.com/FG98F/dylux-fg/blob/main/config.js#L6)
+- Cambie número de dueño en [Config](https://github.com/CraXID/GenIXBot/blob/main/config.js#L6)
 - Puede cambiar a la última versión de baileys editando el package.json [esta sección](https://github.com/FG98F/dylux-fg/blob/main/package.json#L42)
 
 ### FREE APIKEY
