@@ -138,6 +138,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       '%': '%',
       p: _p, uptime, muptime,
       me: conn.getName(conn.user.jid),
+      ucapan: ucapan(),
       npmname: _package.name,
       npmdesc: _package.description,
       version: _package.version,
