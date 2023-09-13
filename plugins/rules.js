@@ -51,7 +51,7 @@ renderLargerThumbnail: true
 }
 
 catch {
-    m.reply(Eror:)
+    m.reply('Eror: ada sebuah kesalahan')
 }
     
 }
