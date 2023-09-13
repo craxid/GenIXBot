@@ -19,11 +19,11 @@ Kebijakan Privasi, Syarat Ketentuan dan Peraturan Mika Misono Bot
 📃 Peraturan Penggunaan
 1. Dilarang menelpon Atau video call nomor bot.
 2. Dilarang kirim berbagai bug, virtex, dll ke nomor bot.
-3. Diharap Keras melakukan spam dalam penggunaan bot.
+3. Dilarang Keras melakukan spam dalam penggunaan bot.
 4. Dilarang Menculik bot secara illegal, untuk menambahkan silahkan hubungi owner.
 5. Tidak menyalah gunakan fitur fitur bot.
 6. Dilarang keras menggunakan fitur bot 18+ Bagi Yg bukan User Premium/bawah 18+
-( Konsokuensi jika mlanggar = BLOCK, BANNED, SPAM BUG. BLACK LIST, VIRALIN )
+( Konsokuensi jika melanggar = BLOCK, BANNED, SPAM BUG. BLACK LIST, VIRALIN )
 
 🖇️ Syarat Ketentuan  
 1. Bot akan keluar dari group Jika Waktu Sewa Habis.
