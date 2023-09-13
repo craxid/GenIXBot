@@ -57,7 +57,7 @@ $ npm start
 
 ## BOXMINE
 
-<a href="https://dash.boxmineworld.com/register?ref=Mb0BN5ny"><img src="https://k.top4top.io/p_2413wh2bh0.jpg" width="450" height="230" alt="BoxMine"/></a>
+<a href="https://dash.boxmineworld.com/register?ref=bqcbUAUD"><img src="https://k.top4top.io/p_2413wh2bh0.jpg" width="450" height="230" alt="BoxMine"/></a>
 
 Instale el bot con un solo click! para que este activo 24/7
 
