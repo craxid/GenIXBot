@@ -32,7 +32,7 @@ let teks = `Kebijakan Privasi, Syarat Ketentuan dan Peraturan Mika Misono Bot
 
 📬 Rules: 3/09/23
 
-`
+`.trim()
   
     //m.reply(teks)
     
