@@ -204,3 +204,4 @@ function clockString(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, ' jam ', m, ' menit ', s, ' detik'].map(v => v.toString().padStart(2, 0)).join('')
 }
+
