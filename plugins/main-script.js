@@ -11,7 +11,7 @@ let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.js
 `.trim())*/
 
 let sc = (`
-Script Mika Bot dijual, silahkan pesan ke owner\n\nKetik .Owner
+Script Mika Bot dijual, silahkan pesan ke owner\n\nKetik .owner
 `)
 
 conn.sendMessage(m.chat, {
