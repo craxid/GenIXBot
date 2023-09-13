@@ -51,7 +51,7 @@ Support Us!
   header: `▣───「 *%category* 」───▣`,
   body: `│✇ %cmd %isdiamond %isPremium`,
   footer: `╰────࿐\n`,
-  after: ` `,
+  after: `\n*Mika Bot masih dalam tahap pengembangan.*
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
