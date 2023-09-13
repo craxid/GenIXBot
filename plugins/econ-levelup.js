@@ -109,13 +109,13 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
-        try {
-            const img = await (global.mikapp)
+        /*try {
+            //const img = await (global.mikapp)
             //const img = await levelup(m, user.level)
             
-            //conn.sendFile(m.chat, img, 'mika.jpg', str, m)
+            conn.sendFile(m.chat, img, 'mika.jpg', str, m)
             
-        } catch (e) {
+        }*/ catch (e) {
             m.reply(str)
         }
     }
