@@ -24,7 +24,7 @@
 ### Contoh 
 Jika ragu, sebelum menginstal dylux-bot, uji botnya di sini
 
-[![WhatsApp](https://img.shields.io/badge/Mika -25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://zurox.my.id/mylink) 
+[![WhatsApp](https://img.shields.io/badge/MikaBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://zurox.my.id/mylink) 
 
 ***
 
