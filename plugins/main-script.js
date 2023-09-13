@@ -20,7 +20,7 @@ contextInfo: {
 externalAdReply: {
 title: (global.namebot),
 body: ('Script Bot Mika Dijual kak!'),
-thumbnailUrl: mikapp,
+thumbnailUrl: global.mikapp,
 sourceUrl: ('https://wa.me/6285892734104'),
 mediaType: 1,
 showAdAttribution: true,
