@@ -58,5 +58,6 @@ catch {
 
 handler.tags = ['main']
 handler.customPrefix = /^(rules|rule)$/i
+handler.command = new RegExp
 handler.help = ['rules']
 export default handler
