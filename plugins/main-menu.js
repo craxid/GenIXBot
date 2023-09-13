@@ -51,7 +51,7 @@ Support Us!
   header: `▣───「 *%category* 」───▣`,
   body: `│✇ %cmd %isdiamond %isPremium`,
   footer: `╰────࿐\n`,
-  after: `(${global.kki ${global.wm} ${global.kka}`
+  after:  `${global.kki ${global.wm} ${global.kka}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
