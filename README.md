@@ -62,10 +62,10 @@ $ npm start
 Instal bot dengan sekali klik! dan akan akif selama 24/7
 
 ---------
-* Create una cuenta  [`aquí`](https://dash.boxmineworld.com/register?ref=Mb0BN5ny)
-* Tutorial [`Click Aquí`](https://youtu.be/xFqjKN1Qt80)
+* Buat panel [`aquí`](https://dash.boxmineworld.com/register?ref=bqcbUAUD)
+* Tutorial [`Klik`](https://youtu.be/xFqjKN1Qt80)
 
-* Dashboard [`Click aquí`](https://dash.boxmineworld.com)
+* Dashboard [`Klik`](https://dash.boxmineworld.com)
 * Panel [`Click aquí`](https://panel.boxmineworld.com/)
 
 ---------
