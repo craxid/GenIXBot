@@ -19,7 +19,7 @@
 ***
 ### Información
 - Cambie número de dueño en [Config](https://github.com/CraXID/GenIXBot/blob/main/config.js#L6)
-- Puede cambiar a la última versión de baileys editando el package.json [esta sección](https://github.com/FG98F/dylux-fg/blob/main/package.json#L42)
+- Kamu dapat mengubah versi baileys ke versi terbaru dengan mengedit package.json [esta sección](https://github.com/CraXID/genixbot/blob/main/package.json#L42)
 
 ### FREE APIKEY
 -  [click aquí](https://api-fgmods.ddns.net)
