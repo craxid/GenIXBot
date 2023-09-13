@@ -1,9 +1,7 @@
-import fetch from 'node-fetch'
-import { MessageType } from '@adiwajshing/baileys'
-
+let fetch = require('node-fetch')
+let { MessageType } = require('@adiwajshing/baileys')
 let handler = async(m, { conn }) => {
-let teks = `
-Kebijakan Privasi, Syarat Ketentuan dan Peraturan Mika Misono Bot
+    let teks = `Kebijakan Privasi, Syarat Ketentuan dan Peraturan Mika Misono Bot
 
 🔐 Kebijakan Privasi
 1. Bot tidak akan merekam data riwayat chat user.
@@ -32,32 +30,21 @@ Kebijakan Privasi, Syarat Ketentuan dan Peraturan Mika Misono Bot
 5. Bot bertanggung jawab atas kesalahan fatal dalam programing maupun owner.
 
 📬 Rules: 3/09/23
-
+${global.wm}
 `.trim()
-  
-    //m.reply(teks)
-    
-conn.sendMessage(m.chat, {
-text: teks,
-contextInfo: {
-externalAdReply: {
-title: (`Mika Bot`),
-body: ('Rules Bot'),
-thumbnailUrl: global.ppmika,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}})
-}
-
-catch {
-    m.reply('Eror: ada sebuah kesalahan')
-}
-    
+  const button = {
+        buttonText: 'Klik Di sini',
+        description: 'tes',
+        sections:  [{title: "Klik di bawah", rows: [
+        {title: 'Menu Utama', description: "Kembali ke menu", rowId:".menu"},
+        {title: 'Nomor Owner', description: "Owner", rowId:".owner"},
+       ] }],
+        listType: 1
+       }
+    m.reply(teks)
 }
 
 handler.tags = ['main']
-handler.command = /^rule(|s)$/i
+handler.command = /^(rules|rule)$/i
 handler.help = ['rules']
 export default handler
