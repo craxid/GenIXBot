@@ -3,7 +3,11 @@ import didyoumean from 'didyoumean'
 import similarity from 'similarity'
 
 let handler = m => m
-let name = await conn.getName(m.sender)
+
+let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+
+    let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
+    let username = conn.getName(who)
 
 handler.before = function (m, { match, usedPrefix, text, args }) {
 	if ((usedPrefix = (match[0] || '')[0])) {
@@ -20,7 +24,7 @@ handler.before = function (m, { match, usedPrefix, text, args }) {
 text: dann,
 contextInfo: {
 externalAdReply: {
-title: (`${name}`),
+title: (`${username}`),
 body: ('SEPERTINYA KAMU SALAH MENGEJA?'),
 thumbnailUrl: 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg',
 sourceUrl: ('https://www.facebook.com/dede2015k'),
