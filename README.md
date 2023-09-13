@@ -29,7 +29,7 @@ Jika ragu, sebelum menginstal dylux-bot, uji botnya di sini
 ***
 
 #### Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FG98F/dylux-fg)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/craxid/genixbot)
 
 #### Heroku Buildpack
 | BuildPack | LINK |
