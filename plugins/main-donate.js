@@ -22,13 +22,13 @@ let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 //conn.sendFile(m.chat, img, 'img.jpg', don, m)
 
 conn.sendMessage(m.chat, {
-text: mika,
+text: don,
 contextInfo: {
 externalAdReply: {
 title: (`${username}`),
 body: ('Aku Online Kak!'),
-thumbnailUrl: mikapp,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
+thumbnailUrl: img,
+sourceUrl: ('https://saweria.co/ClanDare'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
