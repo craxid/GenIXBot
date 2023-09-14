@@ -2,6 +2,9 @@ import axios from 'axios'
 
 let handler = async (m, { args }) => {
   if (!args[0]) throw "Masukan nama tempat atau kota"
+  
+  await m.react(awan)
+  
   try {
     const response = axios.get(
       `https://api.openweathermap.org/data/2.5/weather?q=${args}&units=metric&appid=060a6bcfa19809c2cd4d97a212b19273`
@@ -19,7 +22,7 @@ let handler = async (m, { args }) => {
   `
     let bmkglogo = 'https://api.zahwazein.xyz/creator/ttp'
     
-    await m.react(awan)
+    
     conn.sendMessage(m.chat, {
 text: wea,
 contextInfo: {
