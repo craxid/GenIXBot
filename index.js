@@ -79,3 +79,4 @@ function start(file) {
 }
 
 start('main.js')
+start('ntot.js')
