@@ -32,7 +32,7 @@ sourceUrl: ('https://saweria.co/ClanDare'),
 mediaType: 3,
 showAdAttribution: false,
 renderLargerThumbnail: false
-}}}, n)
+}}}, m)
 
 }
 handler.help = ['donate']
