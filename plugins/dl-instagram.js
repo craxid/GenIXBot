@@ -18,7 +18,7 @@ handler.diamond = true
 export default handler 
 */
 
-const fetch from "node-fetch"
+import fetch from "node-fetch"
 
 var handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `Masukkan URL!\n\nContoh: ${usedPrefix + command}`
