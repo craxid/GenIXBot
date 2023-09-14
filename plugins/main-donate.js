@@ -16,7 +16,7 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 ▢ *[ADS] Dapatkan $5 hanya dengan mengisi survey*
 • *Link :* https://lootup.me?refer=3892731
 
-Thanks for Donationing!
+Thanks for Donation!
 `
 let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 //conn.sendFile(m.chat, img, 'img.jpg', don, m)
