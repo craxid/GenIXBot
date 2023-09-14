@@ -24,7 +24,7 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `Masukkan URL!\n\nContoh: ${usedPrefix + command} https://api.arifzyn.biz.id/api/download/instagram?url=`
   let dann = await fetch(`https://api.arifzyn.biz.id/api/download/instagram?url=${text}`)
   let res = await dann.json()
-  conn.sendFile(m.chat, res.result, 'ig.mp4', 'Nih kak', m)
+  conn.sendFile(m.chat, res.result.media, 'ig.mp4', 'Nih kak', m)
 }
 
 handler.help = ['ig']
