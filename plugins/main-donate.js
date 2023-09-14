@@ -30,7 +30,7 @@ body: ('Ayo support Developer!'),
 thumbnailUrl: img,
 sourceUrl: ('https://saweria.co/ClanDare'),
 mediaType: 1,
-showAdAttribution: true,
+showAdAttribution: false,
 renderLargerThumbnail: false
 }}})
 
