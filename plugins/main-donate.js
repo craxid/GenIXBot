@@ -25,8 +25,8 @@ conn.sendMessage(m.chat, {
 text: don,
 contextInfo: {
 externalAdReply: {
-title: (`${username}`),
-body: ('Aku Online Kak!'),
+title: (`Donasi`),
+body: ('Ayo support Developer!'),
 thumbnailUrl: img,
 sourceUrl: ('https://saweria.co/ClanDare'),
 mediaType: 1,
