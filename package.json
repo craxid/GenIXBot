@@ -87,6 +87,7 @@
         "didyoumean": "^1.2.2",
         "api-dylux": "^1.5.6",
         "wgpt": "latest",
+        "pm2": "latest",
         "@vitalets/google-translate-api": "^9.2.0",
         "openai": "^3.1.0",
         "aptoide-scraper": "^1.0.1",
