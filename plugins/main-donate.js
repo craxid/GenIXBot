@@ -31,7 +31,7 @@ thumbnailUrl: img,
 sourceUrl: ('https://saweria.co/ClanDare'),
 mediaType: 1,
 showAdAttribution: true,
-renderLargerThumbnail: true
+renderLargerThumbnail: falase
 }}})
 
 }
