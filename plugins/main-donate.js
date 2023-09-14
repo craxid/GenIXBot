@@ -29,7 +29,7 @@ title: (`Donasi`),
 body: ('Ayo support Developer!'),
 thumbnailUrl: img,
 sourceUrl: ('https://saweria.co/ClanDare'),
-mediaType: 1,
+mediaType: 3,
 showAdAttribution: false,
 renderLargerThumbnail: false
 }}})
