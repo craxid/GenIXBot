@@ -19,7 +19,20 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 Thanks for Donationing!
 `
 let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
-conn.sendFile(m.chat, img, 'img.jpg', don, m)
+//conn.sendFile(m.chat, img, 'img.jpg', don, m)
+
+conn.sendMessage(m.chat, {
+text: mika,
+contextInfo: {
+externalAdReply: {
+title: (`${username}`),
+body: ('Aku Online Kak!'),
+thumbnailUrl: mikapp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})
 
 }
 handler.help = ['donate']
