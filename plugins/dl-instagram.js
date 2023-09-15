@@ -27,11 +27,24 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   let idgl = await fetch(`https://api.arifzyn.biz.id/api/download/instagram?url=${text}`)
   let res = await idgl.json()
   
-  let tumnail = await fetch(`https://api.arifzyn.biz.id/api/download/instagram?url=${text}`)
+  let tumnail = await fetch(`https://api.yanzbotz.my.id/api/downloader/instagram?url=${text}`)
   
   let restum = await tumnail.json()
   
-  conn.sendFile(m.chat, res.result.media, 'ig.mp4', 'Done kak!', m)
+  //conn.sendFile(m.chat, res.result.media, 'ig.mp4', 'Done kak!', m)
+  
+conn.sendMessage(m.chat, {
+text: mika,
+contextInfo: {
+externalAdReply: {
+title: (`${username}`),
+body: ('Aku Online Kak!'),
+thumbnailUrl: mikapp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})
 }
 
 handler.help = ['ig']
