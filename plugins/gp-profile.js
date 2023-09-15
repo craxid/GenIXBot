@@ -20,7 +20,7 @@ let str = `
 ┌───「 *Profil* 」
 ▢ *🔖 Nama:* 
    • ${username} ${registered ? '\n   • ' + name + ' ': ''}
-   • @${who.replace(/@.+/, '')}
+   • `@${who.replace(/@.+/, '')}
 ▢ *📱 Nomor:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 ▢ *🔗 Link:* wa.me/${who.split`@`[0]}${registered ? '\n▢ *🎈 Umur*: ' + age + ' Tahun' : ''}
 ▢ *⚠️ Peringatan:* ${warn}/${maxwarn}
@@ -31,8 +31,8 @@ let str = `
 ▢ *📇 Terdaftar:* ${registered ? 'Ya': 'Tidak'}
 ▢ *⭐ Premium*: ${prem ? 'Ya' : 'Tidak'}
 └──────────────`
-    conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
-   /*let lepellu = ('Level:')
+    //conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
+   let lepellu = ('Level:')
    
 conn.sendMessage(m.chat, {
 text: str,
@@ -45,7 +45,7 @@ sourceUrl: global.fgig,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})*/
+}}})
     
     m.react(done)
 
