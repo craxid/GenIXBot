@@ -12,6 +12,7 @@ const sections = [
 	{title: "🔗 | Antilink", rowId: `${usedPrefix + command} antilink`},
     {title: "🚫 | Antidelete", rowId: `${usedPrefix + command} antidelete`},
 	{title: "⏏️ | Autolevelup", rowId: `${usedPrefix + command} autolevelup`},
+	{title: "⏏️ | Autolevelup", rowId: `${usedPrefix + command} autolevelup`}
 	{title: "🗣️ | ChatBot", rowId: `${usedPrefix + command} chatbot`},
 	{title: "🔎 | Detect", rowId: `${usedPrefix + command} detect`},
 	{title: "📑 | Document", rowId: `${usedPrefix + command} document`},
@@ -192,7 +193,7 @@ const listMessage = {
 
 ┌─⊷ *ADMIN*
 ▢ welcome
-
+▢ autoread
 ▢ antilink
 ▢ detect 
 ▢ document
