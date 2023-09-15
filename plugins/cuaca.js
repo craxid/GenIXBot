@@ -27,9 +27,9 @@ let handler = async (m, { args }) => {
 text: wea,
 contextInfo: {
 externalAdReply: {
-title: ('Mika Misono Bot'),
+title: ('Laporan Cuaca'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: global.ppmika,
+thumbnailUrl: global.bmkg,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
