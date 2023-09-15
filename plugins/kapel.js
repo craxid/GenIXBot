@@ -7,7 +7,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 let type = (command).toLowerCase()
 
 switch (type) {
-
     
 case "couple": case"ppcp":{
 if (isBan) return newReply('Lu di ban kocak awokwok') 
@@ -18,10 +17,10 @@ let random = anu[Math.floor(Math.random() * anu.length)]
 juna.sendMessage(m.chat,{image: {url: random.male,},caption: `Couple Male`,},{quoted: m,})
 juna.sendMessage(m.chat,{image: {url: random.female,},caption: `Couple Female`,},{quoted: m,})
 }
-limitAdd(m.sender, limit)
 break
+
 default;
-}
+ }
 }
 
 handler.help = ['ppcouple']
