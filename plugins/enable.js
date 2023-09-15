@@ -38,14 +38,6 @@ const listMessage = {
   let type = (args[0] || '').toLowerCase()
   let isAll = false, isUser = false
   switch (type) {
-     case 'autoread':
-     isAll = true
-     if (!isROwner) {
-    global.dfail('rowner', m, conn)
-    throw false
-     }
-    global.opts['autoread'] = isEnable
-    break
     
     case 'welcome':
     case 'sdatang':
@@ -94,6 +86,15 @@ const listMessage = {
       }
     chat.useDocument = isEnable
     break
+    case 'autoread':
+     isAll = true
+     if (!isROwner) {
+    global.dfail('rowner', m, conn)
+    throw false
+     }
+    global.opts['autoread'] = isEnable
+    break
+    
     case 'public':
     case 'publik':
       isAll = true
