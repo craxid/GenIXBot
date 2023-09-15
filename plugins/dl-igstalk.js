@@ -17,7 +17,7 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
 └────────────`
      await conn.sendFile(m.chat, res.profilePic, 'igstalk.png', teks, m)
       } catch {
-        m.reply(`✳️ Pastikan nama pengguna ada di * Instagram*`)
+        m.reply(`✳️ Pastikan nama pengguna ada di *Instagram*`)
       }
 }
 handler.help = ['igstalk']
