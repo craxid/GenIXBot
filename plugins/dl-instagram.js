@@ -24,30 +24,10 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `Masukkan URL!\n\nContoh: ${usedPrefix + command} https://api.arifzyn.biz.id/api/download/instagram?url=`
   await m.reply(wait)
   
-  let idgl = await fetch(`https://api.yanzbotz.my.id/api/downloader/instagram?url=${text}`)
+  let idgl = await fetch(`https://api.arifzyn.biz.id/api/download/instagram?url=${text}`)
+  let res = await dann.json()
   
-  let res = await idgl.json()
-  let tipe = res.type
-  let thumb = res.thumbnail
-  let url = res.url
-  
-  //let dann = await fetch(`https://api.arifzyn.biz.id/api/download/instagram?url=${text}`)
-  
-  
-  //conn.sendFile(m.chat, res.result.url, 'ig.mp4', 'Done kak!', m)
-  
-conn.sendMessage(m.chat, {
-text: (tipe),
-contextInfo: {
-externalAdReply: {
-title: ('tes'),
-body: ('Aku Online Kak!'),
-thumbnailUrl: thumb,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}})
+  conn.sendFile(m.chat, res.result.media, 'ig.mp4', 'Done kak!', m)
 }
 
 handler.help = ['ig']
