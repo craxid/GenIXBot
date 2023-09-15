@@ -166,14 +166,6 @@ const listMessage = {
       global.opts['pconly'] = isEnable
       break
       
-      case 'autoread':
-     isAll = true
-     if (!isROwner) {
-    global.dfail('rowner', m, conn)
-    throw false
-     }
-    global.opts['autoread'] = isEnable
-    break
       
     case 'gponly':
     case 'onlygp':
@@ -187,6 +179,8 @@ const listMessage = {
       }
       global.opts['gconly'] = isEnable
       break
+      
+      
       
     default:
       if (!/[01]/.test(command)) return m.reply(`
