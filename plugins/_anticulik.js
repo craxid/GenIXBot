@@ -5,7 +5,7 @@ handler.all = async function (m, { isBlocked }) {
     if (isBlocked) return
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('Undangan untuk bergabung') || m.text.startsWith('Invitation to join') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
     let teks = `Invite Group
-• 15 Day / Rp 10k
+• 14 Day / Rp 10k
 • 30 Day / Rp 15k
 
 Jika berminat hubungi: @${global.owner[0]} untuk order:)
