@@ -9,6 +9,7 @@ const sections = [
 	{title: "🔮 | Welcome", rowId: `${usedPrefix + command} welcome`},
 	{title: "🌎 | Public", rowId: `${usedPrefix + command} public`},
 	{title: "🔞 | Nsfw", rowId: `${usedPrefix + command} nsfw`},
+	{title: "🔗 | Autoread", rowId: `${usedPrefix + command} autoread`}
 	{title: "🔗 | Antilink", rowId: `${usedPrefix + command} antilink`},
     {title: "🚫 | Antidelete", rowId: `${usedPrefix + command} antidelete`},
 	{title: "⏏️ | Autolevelup", rowId: `${usedPrefix + command} autolevelup`},
@@ -44,7 +45,8 @@ const listMessage = {
     throw false
      }
     global.opts['autoread'] = isEnable
-      break
+    break
+    
     case 'welcome':
     case 'sdatang':
     case 'selamatdatang':
