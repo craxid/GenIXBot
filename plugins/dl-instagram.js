@@ -34,12 +34,12 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   //conn.sendFile(m.chat, res.result.media, 'ig.mp4', 'Done kak!', m)
   
 conn.sendMessage(m.chat, {
-text: mika,
+text: res,
 contextInfo: {
 externalAdReply: {
-title: (`${username}`),
-body: ('Aku Online Kak!'),
-thumbnailUrl: mikapp,
+title: ('instagram Downloader'),
+body: ('Done Kak!'),
+thumbnailUrl: restum,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
