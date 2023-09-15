@@ -28,7 +28,7 @@ text: wea,
 contextInfo: {
 externalAdReply: {
 title: ('Laporan Cuaca'),
-body: ('Jangan Spam Bot!'),
+body: (name),
 thumbnailUrl: global.bmkg,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
