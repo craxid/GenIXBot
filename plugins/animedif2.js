@@ -7,13 +7,13 @@ if (!text) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan p
 m.reply(wait)
 
 //code area
-try {
+
     let anidif2 = await fetch(`https://api.neoxr.eu/api/waifudiff?q=${text}`)
     
     let hasil = await anidif2.json()
 	    
 conn.sendFile(m.chat, hasil.anidif2.data.url, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
-	}
+
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
