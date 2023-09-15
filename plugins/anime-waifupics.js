@@ -40,9 +40,9 @@ default:
  }
 }
 
-handler.help = ['randomanime','waifu','couple','husbu','neko','nekos','marin-kitagawa']
+handler.help = ['randomanime','waifu','couple','husbu','neko','nekos','']
 handler.tags = ['nime']
-handler.command = ['randomanime','waifu','couple','husbu','neko','nekos','marin-kitagawa']
+handler.command = ['randomanime','waifu','couple','husbu','neko','nekos','']
 handler.diamond = true
 
 export default handler
