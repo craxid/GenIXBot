@@ -10,7 +10,8 @@ m.reply(wait)
 
     let ntot = await fetch(`https://api.neoxr.eu/api/waifudiff?q=${text}`)
     
-    let hasil = await ntot.json()
+    let data1 = await ntot.json()
+    let hasil = await data1
 	    
 conn.sendFile(m.chat, hasil.ntot.data.url, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
 
