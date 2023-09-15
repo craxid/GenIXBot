@@ -46,8 +46,6 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
-    
-    m.react(done)
 
 }
 handler.help = ['profile']
