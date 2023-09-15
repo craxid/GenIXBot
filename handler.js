@@ -128,6 +128,7 @@ export async function handler(chatUpdate) {
                     isBanned: false,
                     welcome: false,
                     detect: false,
+                    autoread: true,
                     sWelcome: '',
                     sBye: '',
                     sPromote: '',
