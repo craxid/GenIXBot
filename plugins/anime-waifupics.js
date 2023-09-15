@@ -36,16 +36,6 @@ case 'nekos':
 	     m.react(animoji) 
 break  
 
-case 'couples':
-case 'couple':
- let kapel = await conn.getFile(global.API('zenz', `/randomanime/couples`, {}, 'apikey'))
-        conn.sendFile(m.chat, kapel.result.male, "", m, { caption: "Random Anime Couples Male" })
-        
-        conn.sendFile(m.chat, kapel.result.female, "", m, { caption: "Random Anime Couples Female" })
- 
-	     m.react(animoji) 
-break  
-
 default:
  }
 }
