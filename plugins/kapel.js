@@ -1,10 +1,11 @@
 import fs from "fs" 
 import axios from "axios"
-import fetch = require("node-fetch")
-import { color } = require('../lib/color')
-import moment = require("moment-timezone")
-im { MessageType } = require('@adiwajshing/baileys')
-     let handler  = async (m, { conn, command }) => {
+import fetch from "node-fetch"
+import { color } from '../lib/color'
+import moment from "moment-timezone"
+import { MessageType } from'@adiwajshing/baileys'
+
+let handler  = async (m, { conn, command }) => {
      const time = moment.tz('Asia/Jakarta').format("HH:mm:ss")
      let username = conn.getName(m.sender)
      console.log(color('[COMMAND]', 'pink'), color(command, 'yellow'), color(time, 'white'), color('Name:', 'yellow'), color(username, 'cyan'), color('Number:', 'yellow'), color(m.sender.split('@')[0], 'cyan'))
