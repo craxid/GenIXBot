@@ -44,5 +44,6 @@ handler.command = /^remini$/i
 handler.tags = ['tools']
 handler.help = ['remini','enchant','tohd']
 handler.premium = false
+handler.diamond = true
 
 export default handler
