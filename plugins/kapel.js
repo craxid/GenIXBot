@@ -14,7 +14,12 @@ case "ppcp":
 case "kapel": {
 if (isBan) return newReply('Lu di ban kocak awokwok') 
 
-let anu = await fetch("https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json")
+let anu = await fetch(`https://nekos.life/api/v2/img/waifu`)
+    if (!res.ok) throw await res.text()
+    let json = await res.json()
+    if (!json.url) throw '❎ Error'
+
+// let anu = await fetch("https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json")
 
 let random = anu[Math.floor(Math.random() * anu.length)]
 conn.sendMessage(m.chat,{image: {url: random.male,},caption: `Couple Male`,},{quoted: m,})
