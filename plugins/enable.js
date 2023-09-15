@@ -207,7 +207,7 @@ const listMessage = {
 }
 
 m.reply(`
-✅ *${type}* *${isEnable ? 'diaktif' : 'Nonaktif'}* ${isAll ? 'di bot' : isUser ? '' : 'di chat ini'}
+✅ *${type}* *${isEnable ? 'diaktifkan' : 'dinonaktifan'}* ${isAll ? 'di bot' : isUser ? '' : 'di chat ini'}
 `.trim()) 
 
 }
