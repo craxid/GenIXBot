@@ -201,6 +201,7 @@ const listMessage = {
 └───────────── 
 ┌─⊷ *USERS*
 ▢ autolevelup
+▢ autoread
 ▢ chatbot 
 └─────────────
 ┌─⊷ *OWNER*
