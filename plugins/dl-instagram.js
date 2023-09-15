@@ -25,7 +25,9 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   await m.reply(wait)
   
   let idgl = await fetch(`https://api.arifzyn.biz.id/api/download/instagram?url=${text}`)
-  let res = await dann.json()
+  let res = await idgl.json()
+  
+  let tumnail = await fetch()
   
   conn.sendFile(m.chat, res.result.media, 'ig.mp4', 'Done kak!', m)
 }
