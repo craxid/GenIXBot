@@ -1,37 +1,69 @@
-
-import fetch from 'node-fetch'
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-    m.reply(wait)
-
-let type = (command).toLowerCase()
-
-switch (type) {
-    
-case "couple": 
-case "ppcouple":
-case "ppcp":
-case "kapel": {
-if (isBan) return newReply('Lu di ban kocak awokwok') 
-if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return newReply(`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
-let anu = await fetchJson("https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json")
-newReply(mess.wait)
-let random = anu[Math.floor(Math.random() * anu.length)]
-conn.sendMessage(m.chat,{image: {url: random.male,},caption: `Couple Male`,},{quoted: m,})
-conn.sendMessage(m.chat,{image: {url: random.female,},caption: `Couple Female`,},{quoted: m,})
+import fs from "fs" 
+import axios from "axios"
+import fetch = require("node-fetch")
+import { color } = require('../lib/color')
+import moment = require("moment-timezone")
+im { MessageType } = require('@adiwajshing/baileys')
+     let handler  = async (m, { conn, command }) => {
+     const time = moment.tz('Asia/Jakarta').format("HH:mm:ss")
+     let username = conn.getName(m.sender)
+     console.log(color('[COMMAND]', 'pink'), color(command, 'yellow'), color(time, 'white'), color('Name:', 'yellow'), color(username, 'cyan'), color('Number:', 'yellow'), color(m.sender.split('@')[0], 'cyan'))
+     let data = fs.readFileSync('./lib/ppcouple.js');
+     let  jsonData = JSON.parse(data);
+     let randIndex = Math.floor(Math.random() * jsonData.length);
+     let json = jsonData[randIndex];
+     let randCowo= await getBuffer(json.cowo)
+     conn.sendMessage(m.chat, { image: randCowo, caption: '*Cowo*', quoted: m })
+	 // conn.sendMessage(m.chat, randCowo, MessageType.image,  { caption: '*Cowo*', quoted: m })
+	 let randCewe = await getBuffer(json.cewe)
+	conn.sendMessage(m.chat, { image: randCewe, caption: '*Cewe*', quoted: m })
+	 // conn.sendMessage(m.chat, randCewe, MessageType.image, { caption: '*Cewe*', quoted: m })
 }
-break
-
-default;
- }
-}
-
 handler.help = ['ppcouple']
-handler.tags = ['nime']
-handler.command = ['ppcouple','couple','kapel','ppcp']
-handler.diamond = true
+handler.tags = ['internet']
+handler.command = /^ppcouple|ppcp$/i
+handler.owner = false
+handler.limit = true
+handler.premium = false
+handler.group = false
+handler.private = false
 
-export default handler
+handler.admin = false
+handler.botAdmin = false
 
-/*function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
-}*/
+handler.fail = null
+
+module.exports = handler
+
+const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
+    fetch(url, options)
+        .then(response => response.json())
+        .then(json => {
+            // console.log(json)
+            resolve(json)
+        })
+        .catch((err) => {
+            reject(err)
+        })
+})
+
+
+const getBuffer = async (url, options) => {
+	try {
+		options ? options : {}
+		const res = await axios({
+			method: "get",
+			url,
+			headers: {
+				'DNT': 1,
+                    'User-Agent': 'GoogleBot',
+				'Upgrade-Insecure-Request': 1
+			},
+			...options,
+			responseType: 'arraybuffer'
+		})
+		return res.data
+	} catch (e) {
+		console.log(`Error : ${e}`)
+	}
+}
