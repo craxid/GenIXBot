@@ -13,7 +13,7 @@ m.reply(wait)
     let data1 = await ntot.json()
     let hasil = await data1
 	    
-conn.sendFile(m.chat, hasil.ntot.data.url, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
+conn.sendFile(m.chat, hasil.data1.url, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
 
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
