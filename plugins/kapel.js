@@ -3,7 +3,7 @@ import axios from "axios"
 import fetch from "node-fetch"
 import { color } from '../lib/color'
 import moment from "moment-timezone"
-import { MessageType } from'@adiwajshing/baileys'
+import { MessageType } from '@adiwajshing/baileys'
 
 let handler  = async (m, { conn, command }) => {
      const time = moment.tz('Asia/Jakarta').format("HH:mm:ss")
@@ -24,7 +24,7 @@ handler.help = ['ppcouple']
 handler.tags = ['internet']
 handler.command = /^ppcouple|ppcp$/i
 handler.owner = false
-handler.limit = true
+handler.diamond = true
 handler.premium = false
 handler.group = false
 handler.private = false
@@ -34,7 +34,7 @@ handler.botAdmin = false
 
 handler.fail = null
 
-module.exports = handler
+export default handler
 
 const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
     fetch(url, options)
