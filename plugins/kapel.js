@@ -18,7 +18,7 @@ break
 
 handler.help = ['ppcouple']
 handler.tags = ['nime']
-handler.command = ['ppcouple','couple',kap]
+handler.command = ['ppcouple','couple','kapel']
 handler.diamond = true
 
 export default handler
