@@ -21,7 +21,7 @@ let str = `
 ▢ *🔖 Nama:* 
    • ${username} ${registered ? '\n   • ' + name + ' ': ''}
    • `@${who.replace(/@.+/, '')}
-▢ *📱 Nomor:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+▢ *📱 Nomor:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}`
 ▢ *🔗 Link:* wa.me/${who.split`@`[0]}${registered ? '\n▢ *🎈 Umur*: ' + age + ' Tahun' : ''}
 ▢ *⚠️ Peringatan:* ${warn}/${maxwarn}
 ▢ *💎 Diamond:* ${diamond}
