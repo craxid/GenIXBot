@@ -28,6 +28,7 @@ let handler = async (m, { conn, command }) => {
       let resultURL = data.data.url
 
       let resultImage = await axios.get(resultURL, { responseType: 'arraybuffer' })
+      
       let contentType = resultImage.headers['content-type']
 
       await conn.sendFile(m.chat, Buffer.from(resultImage.result.url, 'binary'), 'remini.jpg', wm, m, false, { mimetype: contentType })
