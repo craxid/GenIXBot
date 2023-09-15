@@ -42,7 +42,7 @@ contextInfo: {
 externalAdReply: {
 title: ('tes'),
 body: ('Aku Online Kak!'),
-thumbnailUrl: mikapp,
+thumbnailUrl: global.ppmika,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
