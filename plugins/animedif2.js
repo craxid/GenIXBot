@@ -7,11 +7,11 @@ m.reply(wait)
 
 //code area
 try {
-    let animdif = await conn.getFile(`https://api.neoxr.eu/api/waifudiff?q=${text}`)
+    let animdif2 = await conn.getFile(`https://api.neoxr.eu/api/waifudiff?q=${text}`)
     
 // let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
 	    
-conn.sendFile(m.chat, animdif.data, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
+conn.sendFile(m.chat, animdif2.data.prompt, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
 	}
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
