@@ -9,11 +9,13 @@ let handler = async (m, { conn, command }) => {
     let img = await q.download()
     let formData = new FormData()
     formData.append('image', img, 'image.jpg')
+    
     try {
       let res = await axios.post('https://api.imgbb.com/1/upload', formData, {
         params: {
           key: '32dccc1da5b49fc9ed09fd6d9e691d40'
         },
+        
         headers: formData.getHeaders()
       })
       let imageUrl = res.data.data.url
