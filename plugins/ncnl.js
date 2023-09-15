@@ -42,9 +42,9 @@ text: mika,
 contextInfo: {
 externalAdReply: {
 title: (`${username}`),
-body: ('Kebijakan Bot'),
+body: ('No Colly N'),
 thumbnailUrl: mikapp,
-sourceUrl: global.dygp,
+sourceUrl: ('https://ncnl.eu.org/'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
