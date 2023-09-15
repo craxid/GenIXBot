@@ -37,7 +37,7 @@ let handler = async (m, { conn, command }) => {
 text: (resultImage.result.url),
 contextInfo: {
 externalAdReply: {
-title: (`${username}`),
+title: tes,
 body: ('Aku Online Kak!'),
 thumbnailUrl: global.ppmika,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
