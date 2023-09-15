@@ -32,7 +32,7 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
 
 handler.help = ['ig']
 handler.tags = ['dl']
-handler.command = /^(ig(dl)?)|(instagram)$/i
+handler.command = /^(ig(dl)?)|(instagram(dl?))$/i
 handler.register = true
 handler.diamond = true
 
