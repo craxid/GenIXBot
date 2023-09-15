@@ -27,7 +27,9 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   let idgl = await fetch(`https://api.yanzbotz.my.id/api/downloader/instagram?url=${text}`)
   
   let res = await result
+  let tipe = result.type
   let thumb = result.thumbnail
+  let url = result
   
   //let dann = await fetch(`https://api.arifzyn.biz.id/api/download/instagram?url=${text}`)
   let res = await dann.json()
