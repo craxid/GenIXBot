@@ -1,4 +1,4 @@
-const { MessageType } = require("@adiwajshing/baileys")
+import { MessageType } from "@adiwajshing/baileys"
 
 async function handler(m, { command, usedPrefix }) {
     command = command.toLowerCase()
