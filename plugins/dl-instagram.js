@@ -34,7 +34,7 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   //conn.sendFile(m.chat, res.result.media, 'ig.mp4', 'Done kak!', m)
   
 conn.sendMessage(m.chat, {
-text: res.result.media,
+text: (res.result.media),
 contextInfo: {
 externalAdReply: {
 title: ('instagram Downloader'),
