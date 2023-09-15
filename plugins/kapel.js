@@ -13,3 +13,16 @@ juna.sendMessage(m.chat,{image: {url: random.female,},caption: `Couple Female`,}
 }
 limitAdd(m.sender, limit)
 break
+
+}
+
+handler.help = ['ppcouple','coup','couple','husbu','neko','nekos','marin-kitagawa']
+handler.tags = ['nime']
+handler.command = ['randomanime','waifu','couple','husbu','neko','nekos','marin-kitagawa']
+handler.diamond = true
+
+export default handler
+
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}
