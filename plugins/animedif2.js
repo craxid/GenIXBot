@@ -1,5 +1,6 @@
 
 import fetch from 'node-fetch'
+import axios from 'axios'
 let handler = async (m, { conn, text }) => {
 	
 if (!text) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan pengguna\n\nContoh: !animedif 1girls`
