@@ -20,7 +20,7 @@ thumbnailUrl: mikapp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
-renderLargerThumbnail: false
+renderLargerThumbnail: true
 }}})
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh)$/i
