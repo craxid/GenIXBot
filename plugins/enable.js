@@ -9,7 +9,6 @@ const sections = [
 	{title: "🔮 | Welcome", rowId: `${usedPrefix + command} welcome`},
 	{title: "🌎 | Public", rowId: `${usedPrefix + command} public`},
 	{title: "🔞 | Nsfw", rowId: `${usedPrefix + command} nsfw`},
-	{title: "🔗 | Autoread", rowId: `${usedPrefix + command} autoread`}
 	{title: "🔗 | Antilink", rowId: `${usedPrefix + command} antilink`},
     {title: "🚫 | Antidelete", rowId: `${usedPrefix + command} antidelete`},
 	{title: "⏏️ | Autolevelup", rowId: `${usedPrefix + command} autolevelup`},
@@ -38,7 +37,6 @@ const listMessage = {
   let type = (args[0] || '').toLowerCase()
   let isAll = false, isUser = false
   switch (type) {
-    
     case 'welcome':
     case 'sdatang':
     case 'selamatdatang':
@@ -166,7 +164,6 @@ const listMessage = {
       global.opts['pconly'] = isEnable
       break
       
-      
     case 'gponly':
     case 'onlygp':
     case 'grouponly':
@@ -180,7 +177,14 @@ const listMessage = {
       global.opts['gconly'] = isEnable
       break
       
-      
+      case 'autoread':
+     isAll = true
+     if (!isROwner) {
+    global.dfail('rowner', m, conn)
+    throw false
+     }
+    global.opts['autoread'] = isEnable
+    break
       
     default:
       if (!/[01]/.test(command)) return m.reply(`
@@ -188,7 +192,7 @@ const listMessage = {
 
 ┌─⊷ *ADMIN*
 ▢ welcome
-▢ autoread
+
 ▢ antilink
 ▢ detect 
 ▢ document
@@ -211,7 +215,7 @@ const listMessage = {
 }
 
 m.reply(`
-✅ *${type}* *${isEnable ? 'diaktifkan' : 'dimatikan'}* ${isAll ? 'untuk bot' : isUser ? '' : 'untuk chat ini'}
+✅ *${type}* *${isEnable ? 'Aktif' : 'Nonaktif'}* ${isAll ? 'di bot' : isUser ? '' : 'di chat ini'}
 `.trim()) 
 
 }
