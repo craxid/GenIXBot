@@ -86,15 +86,6 @@ const listMessage = {
       }
     chat.useDocument = isEnable
     break
-    case 'autoread':
-     isAll = true
-     if (!isROwner) {
-    global.dfail('rowner', m, conn)
-    throw false
-     }
-    global.opts['autoread'] = isEnable
-    break
-    
     case 'public':
     case 'publik':
       isAll = true
