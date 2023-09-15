@@ -22,30 +22,15 @@ let handler = async (m, { conn, command }) => {
       
       //let api = `https://api.neoxr.my.id/api/remini?image=${encodeURIComponent(imageUrl)}&apikey=lucycat`
 
-      m.reply(wait)
+      m.react(rwait)
 
       let { data } = await axios.get(api)
       let resultURL = data.data.url
 
       let resultImage = await axios.get(resultURL, { responseType: 'arraybuffer' })
-      
       let contentType = resultImage.headers['content-type']
 
-      //await conn.sendFile(m.chat, Buffer.from(resultImage.result.url, 'binary'), 'remini.jpg', wm, m, false, { mimetype: contentType })
-      
-      conn.sendMessage(m.chat, {
-text: (resultImage.result.url),
-contextInfo: {
-externalAdReply: {
-title: tes,
-body: ('Aku Online Kak!'),
-thumbnailUrl: global.ppmika,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}})
-      
+      await conn.sendFile(m.chat, Buffer.from(resultImage.result.url, 'binary'), 'remini.jpg', wm, m, false, { mimetype: contentType })
     } catch (e) {
       console.log(e)
       m.reply('There is an error!')
