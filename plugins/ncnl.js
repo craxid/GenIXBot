@@ -8,7 +8,26 @@ let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 let ncnl = `
 NCNL: Network
 
+Notice !
 
+Aturan utama jangan main rusuh/ganggu, main kooperatif friendly dan saling support ini sirkel solid kalo main rusuh gw ban permanen lu pada..
+
+Lapor ke admin kalo ada yang main rusuh/ganggu sertakan bukti&saksi biar disidang..
+
+Info server
+IP/Host: play.ncnl.eu.org
+Port: 17810
+Versi: Versi terbaru (liat di play store)
+
+Link Server (nambahin IP+Port otomatis)
+https://ncnl.eu.org/
+
+Server NCNL: Terraria
+IP: terraria.ncnl.eu.org
+Port: 2570
+
+Link realm
+(Kosong)
 `
 
 //end kode
