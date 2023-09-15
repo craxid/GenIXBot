@@ -166,6 +166,15 @@ const listMessage = {
       global.opts['pconly'] = isEnable
       break
       
+      case 'autoread':
+     isAll = true
+     if (!isROwner) {
+    global.dfail('rowner', m, conn)
+    throw false
+     }
+    global.opts['autoread'] = isEnable
+    break
+      
     case 'gponly':
     case 'onlygp':
     case 'grouponly':
@@ -207,7 +216,7 @@ const listMessage = {
 }
 
 m.reply(`
-✅ *${type}* *${isEnable ? 'diaktifkan' : 'dinonaktifan'}* ${isAll ? 'di bot' : isUser ? '' : 'di chat ini'}
+✅ *${type}* *${isEnable ? 'diaktifkan' : 'dimatikan'}* ${isAll ? 'untuk bot' : isUser ? '' : 'untuk chat ini'}
 `.trim()) 
 
 }
