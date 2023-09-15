@@ -42,7 +42,7 @@ text: ncnl,
 contextInfo: {
 externalAdReply: {
 title: (`NCNL: Network`),
-body: ('Server NCNL'),
+body: ('KLIK DISINI UNTUK LOGIN'),
 thumbnailUrl: thumb,
 sourceUrl: ('https://ncnl.eu.org/'),
 mediaType: 1,
