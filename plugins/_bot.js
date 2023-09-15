@@ -10,7 +10,7 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     let username = conn.getName(who)
     
-conn.sendMessage(m.chat, {
+if (mika) conn.sendMessage(m.chat, {
 text: mika,
 contextInfo: {
 externalAdReply: {
