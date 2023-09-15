@@ -582,7 +582,7 @@ global.dfail = (type, m, conn) => {
         group: '⚙️ Hanya bisa digunakan di grup!\n\nSilahkan order premium atau kamu bisa gabung di grup Mika untuk menggunakan perintah ini\n\nhttps://chat.whatsapp.com/BDYIsBhoR2I2aXpEvZRzWP',
         private: '📮 Hanya bisa digunakan di *Chat Pribadi*',
         admin: '🛡️ Hanya untuk *Admin* grup!',
-        botAdmin: '💥 Jadikan bot  *Admin* Grup!',
+        botAdmin: '💥 Jadikan bot sebagai *Admin* Grup!',
         unreg: '📇 Fitur ini untuk pengguna terdaftar\n\n Ketik: *.register nama.umur*\n\n📌 Contoh : *.reg Mika.16*',
         restrict: '🔐 Fitur ini *dinonaktifkan*'
     }[type]
