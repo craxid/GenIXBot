@@ -37,7 +37,7 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   //conn.sendFile(m.chat, res.result.url, 'ig.mp4', 'Done kak!', m)
   
 conn.sendMessage(m.chat, {
-text: ( tipe),
+text: (tipe),
 contextInfo: {
 externalAdReply: {
 title: ('tes'),
