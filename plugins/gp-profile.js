@@ -14,15 +14,13 @@ let { min, xp, max } = xpRange(user.level, global.multiplier)
 let username = conn.getName(who)
 let math = max - xp
 let prem = global.prems.includes(who.split`@`[0])
-let sn = createHash('md5').update(who).digest('hex') 
-
-let teg = (@${who.replace(/@.+/, '')})
+let sn = createHash('md5').update(who).digest('hex')
 
 let str = `
 ┌───「 *Profil* 」
 ▢ *🔖 Nama:* 
    • ${username} ${registered ? '\n   • ' + name + ' ': ''}
-   • ${teg}
+   • ${who.replace(/@.+/, '')}
 ▢ *📱 Nomor:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 ▢ *🔗 Link:* wa.me/${who.split`@`[0]}${registered ? '\n▢ *🎈 Umur*: ' + age + ' Tahun' : ''}
 ▢ *⚠️ Peringatan:* ${warn}/${maxwarn}
@@ -48,6 +46,8 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
+    
+    m.react(done)
 
 }
 handler.help = ['profile']
