@@ -116,7 +116,7 @@ export async function handler(chatUpdate) {
                 if (!('antiLink' in chat))
                     chat.antiLink = false
                 if (!('autoread' in chat))
-                    chat.antiLink = false
+                    chat.autoread = true
                 if (!('viewonce' in chat))
                     chat.viewonce = false
                 if (!('onlyLatinos' in chat))
