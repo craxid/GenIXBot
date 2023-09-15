@@ -1,8 +1,7 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    
-    m.react(rwait)
+    m.reply(wait)
 
 let type = (command).toLowerCase()
 
@@ -17,10 +16,9 @@ if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return newReply(
 let anu = await fetchJson("https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json")
 newReply(mess.wait)
 let random = anu[Math.floor(Math.random() * anu.length)]
-juna.sendMessage(m.chat,{image: {url: random.male,},caption: `Couple Male`,},{quoted: m,})
-juna.sendMessage(m.chat,{image: {url: random.female,},caption: `Couple Female`,},{quoted: m,})
+conn.sendMessage(m.chat,{image: {url: random.male,},caption: `Couple Male`,},{quoted: m,})
+conn.sendMessage(m.chat,{image: {url: random.female,},caption: `Couple Female`,},{quoted: m,})
 }
-limitAdd(m.sender, limit)
 break
 
 default;
