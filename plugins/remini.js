@@ -48,8 +48,8 @@ handler.premium = false
 export default handler
 */
 
-import { TelegraPh } = require('../lib/telegraph')
-const { fetchJson } = require("../lib/function")    
+import { TelegraPh } from '../lib/telegraph'
+import { fetchJson } from "../lib/function"  
  
 module.exports = {
 	order: ['enhance','hd','remini'],
