@@ -50,7 +50,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
 }
-handler.customPrefix = /^rule(|s)$/i
+handler.customPrefix = /^ncnl|server$/i
 handler.command = new RegExp
 
 export default handler
