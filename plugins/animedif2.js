@@ -8,7 +8,7 @@ m.reply(wait)
 
 //code area
 try {
-    let anidif2 = await conn.getFile(`https://api.neoxr.eu/api/waifudiff?q=${text}`)
+    let anidif2 = await conn.getFile(`https://api.neoxr.eu.org/api/waifudiff?q=${text}`)
     let hasil = await animdif2.json()
     
 // let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
