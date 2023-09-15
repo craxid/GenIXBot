@@ -42,12 +42,12 @@ text: ncnl,
 contextInfo: {
 externalAdReply: {
 title: (`NCNL: Network`),
-body: ('No Colly No Life: Network'),
+body: ('Server NCNL'),
 thumbnailUrl: thumb,
 sourceUrl: ('https://ncnl.eu.org/'),
 mediaType: 1,
 showAdAttribution: true,
-renderLargerThumbnail: true
+renderLargerThumbnail: false
 }}})
 }
 handler.customPrefix = /^ncnl|server$/i
