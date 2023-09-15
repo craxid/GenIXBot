@@ -5,7 +5,11 @@ let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 
 // start kode
 
-let ncnl = ` = `
+let ncnl = `
+NCNL: Network
+
+
+`
 
 //end kode
 
