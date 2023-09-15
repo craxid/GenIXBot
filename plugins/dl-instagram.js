@@ -41,7 +41,7 @@ conn.sendMessage(m.chat, {
 text: (thumb, tipe),
 contextInfo: {
 externalAdReply: {
-title: (`${username}`),
+title: ('tes'),
 body: ('Aku Online Kak!'),
 thumbnailUrl: mikapp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
