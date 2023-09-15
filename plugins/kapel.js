@@ -9,6 +9,7 @@ let type = (command).toLowerCase()
 switch (type) {
     
 case "couple": 
+case "ppcouple":
 case "ppcp":
 case "kapel": {
 if (isBan) return newReply('Lu di ban kocak awokwok') 
