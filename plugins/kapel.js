@@ -28,7 +28,7 @@ default;
 
 handler.help = ['ppcouple']
 handler.tags = ['nime']
-handler.command = ['ppcouple','couple','kapel']
+handler.command = ['ppcouple','couple','kapel','ppcp']
 handler.diamond = true
 
 export default handler
