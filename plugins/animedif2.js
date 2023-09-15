@@ -10,10 +10,9 @@ m.reply(wait)
 
     let ntot = await fetch(`https://api.neoxr.eu/api/waifudiff?q=${text}`)
     
-    let data1 = await ntot.json()
-    let hasil = await data1
+    let hasil = await ntot.json()
 	    
-conn.sendFile(m.chat, hasil.url, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
+conn.sendFile(m.chat, hasil.ntot.data.url, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
 
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
