@@ -38,8 +38,6 @@ handler.private = false
 handler.admin = false
 handler.botAdmin = false
 
-handler.fail = null
-
 export default handler
 
 const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
