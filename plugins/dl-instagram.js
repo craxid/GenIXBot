@@ -25,27 +25,9 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   await m.reply(wait)
   
   let idgl = await fetch(`https://api.arifzyn.biz.id/api/download/instagram?url=${text}`)
-  let res = await idgl.json()
+  let res = await dann.json()
   
-  let tumnail = await fetch(`https://api.yanzbotz.my.id/api/downloader/instagram?url=${text}`)
-  
-  let restum = await tumnail.json()
-  let teks =  `(`${res.result.media}`)`
-  
-  //conn.sendFile(m.chat, res.result.media, 'ig.mp4', 'Done kak!', m)
-  
-conn.sendMessage(m.chat, {
-text: teks,
-contextInfo: {
-externalAdReply: {
-title: ('instagram Downloader'),
-body: ('Done Kak!'),
-thumbnailUrl: restum,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: false
-}}})
+  conn.sendFile(m.chat, res.result.media, 'ig.mp4', 'Done kak!', m)
 }
 
 handler.help = ['ig']
