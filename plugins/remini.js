@@ -22,7 +22,7 @@ let handler = async (m, { conn, command }) => {
       
       //let api = `https://api.neoxr.my.id/api/remini?image=${encodeURIComponent(imageUrl)}&apikey=lucycat`
 
-      m.react(rwait)
+      m.reply(wait)
 
       let { data } = await axios.get(api)
       let resultURL = data.data.url
