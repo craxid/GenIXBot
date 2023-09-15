@@ -34,12 +34,12 @@ let handler = async (m, { conn, command }) => {
       //await conn.sendFile(m.chat, Buffer.from(resultImage.result.url, 'binary'), 'remini.jpg', wm, m, false, { mimetype: contentType })
       
       conn.sendMessage(m.chat, {
-text: mika,
+text: (resultImage.result.url),
 contextInfo: {
 externalAdReply: {
 title: (`${username}`),
 body: ('Aku Online Kak!'),
-thumbnailUrl: mikapp,
+thumbnailUrl: global.ppmika,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
