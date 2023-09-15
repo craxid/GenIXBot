@@ -20,7 +20,7 @@ juna.sendMessage(m.chat,{image: {url: random.female,},caption: `Couple Female`,}
 }
 limitAdd(m.sender, limit)
 break
-default
+default;
 }
 }
 
@@ -31,6 +31,9 @@ handler.diamond = true
 
 export default handler
 
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}
 function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
