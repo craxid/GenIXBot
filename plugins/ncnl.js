@@ -38,11 +38,11 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
     let username = conn.getName(who)
     
 conn.sendMessage(m.chat, {
-text: mika,
+text: ncnl,
 contextInfo: {
 externalAdReply: {
-title: (`${username}`),
-body: ('No Colly N'),
+title: (`NCNL: Network`),
+body: ('No Colly No Life: Network'),
 thumbnailUrl: mikapp,
 sourceUrl: ('https://ncnl.eu.org/'),
 mediaType: 1,
