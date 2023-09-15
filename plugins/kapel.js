@@ -16,9 +16,9 @@ break
 
 }
 
-handler.help = ['ppcouple','coup','couple','husbu','neko','nekos','marin-kitagawa']
+handler.help = ['ppcouple']
 handler.tags = ['nime']
-handler.command = ['randomanime','waifu','couple','husbu','neko','nekos','marin-kitagawa']
+handler.command = ['ppcouple','couple',kap]
 handler.diamond = true
 
 export default handler
