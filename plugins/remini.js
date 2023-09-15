@@ -1,4 +1,4 @@
-
+/*
 import axios from 'axios'
 import FormData from 'form-data'
 
@@ -46,3 +46,5 @@ handler.help = ['remini']
 handler.premium = false
 
 export default handler
+*/
+
