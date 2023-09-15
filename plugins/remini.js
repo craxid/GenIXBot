@@ -31,6 +31,7 @@ let handler = async (m, { conn, command }) => {
       let contentType = resultImage.headers['content-type']
 
       await conn.sendFile(m.chat, Buffer.from(resultImage.result.url, 'binary'), 'remini.jpg', wm, m, false, { mimetype: contentType })
+      
     } catch (e) {
       console.log(e)
       m.reply('There is an error!')
