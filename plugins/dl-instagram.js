@@ -26,13 +26,14 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   
   let idgl = await fetch(`https://api.yanzbotz.my.id/api/downloader/instagram?url=${text}`)
   
-  let res = await result
+  let res = await idgl.json()
+  let hasil = await result
   let tipe = result.type
   let thumb = result.thumbnail
-  let url = result
+  let url = result.url
   
   //let dann = await fetch(`https://api.arifzyn.biz.id/api/download/instagram?url=${text}`)
-  let res = await dann.json()
+  
   
   //conn.sendFile(m.chat, res.result.url, 'ig.mp4', 'Done kak!', m)
   
