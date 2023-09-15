@@ -159,6 +159,7 @@ export async function handler(chatUpdate) {
         } catch (e) {
             console.error(e)
         }
+        if (opts['autoread']) await this.readMessages([m.key])
         if (opts['nyimak'])
             return
         if (!m.fromMe && opts['self'])
