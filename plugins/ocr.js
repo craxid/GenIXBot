@@ -10,7 +10,9 @@ let handler = async (m, { conn, text }) => {
     
     await m.reply(wait)
     
-    if (!/image\/(jpe?g|png)/.test(mime)) throw `_*jenis ${mime} tidak didukung!*_`
+    if (!/image\/(jpe?g|png)/.test(mime)) throw `
+    _*jenis ${mime} tidak didukung!*_
+    `
     const img = await q.download()
     const url = await uploadImage(img)
     const hasil = await ocrapi.ocrSpace(url)
