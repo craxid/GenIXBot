@@ -30,6 +30,7 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   let tumnail = await fetch(`https://api.yanzbotz.my.id/api/downloader/instagram?url=${text}`)
   
   let restum = await tumnail.json()
+  let teks =  `Halo kak ${name} 👋\nAda yang bisa  bantu?\n\nKetik !help untuk membuka Menu`
   
   //conn.sendFile(m.chat, res.result.media, 'ig.mp4', 'Done kak!', m)
   
