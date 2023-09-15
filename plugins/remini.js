@@ -48,7 +48,7 @@ handler.premium = false
 export default handler
 */
 
-const { TelegraPh } = require('../lib/telegraph')
+import { TelegraPh } = require('../lib/telegraph')
 const { fetchJson } = require("../lib/function")    
  
 module.exports = {
@@ -77,3 +77,11 @@ module.exports = {
     }
 	}
 }
+
+handler.command = /^remini$/i
+handler.tags = ['tools']
+handler.help = ['remini']
+handler.premium = false
+handler.diamond = true
+
+export default handler
