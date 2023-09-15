@@ -42,7 +42,7 @@ let handler = async (m, { conn, command }) => {
 
 handler.command = /^remini$/i
 handler.tags = ['tools']
-handler.help = ['remini']
+handler.help = ['remini','enchant','tohd']
 handler.premium = false
 
 export default handler
