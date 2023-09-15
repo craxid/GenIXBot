@@ -17,6 +17,7 @@ let anu = await fetch("https://raw.githubusercontent.com/iamriz7/kopel_/main/kop
 
 let random = anu[Math.floor(Math.random() * anu.length)]
 conn.sendMessage(m.chat,{image: {url: random.male,},caption: `Couple Male`,},{quoted: m,})
+
 conn.sendMessage(m.chat,{image: {url: random.female,},caption: `Couple Female`,},{quoted: m,})
 }
 break
@@ -32,6 +33,6 @@ handler.diamond = true
 
 export default handler
 
-function pickRandom(list) {
+/*function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
-}
+}*/
