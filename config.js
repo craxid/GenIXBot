@@ -74,7 +74,7 @@ global.kka = '」'
 global.zt = '*'
 global.zc = ''
 
-global.bmkg = 'https://telegra.ph/file/5e539e4e1194c057c1fc7.jpg'
+global.bmkg = 'https://telegra.ph/file/0f2ef7353ef5eaa5c5272.jpg'
 
 global.multiplier = 69 
 global.maxwarn = '3' // máxima advertencias
