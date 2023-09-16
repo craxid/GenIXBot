@@ -39,7 +39,7 @@ let { limit, role, level, exp, premiumTime } = db.data.users[m.sender]
 handler.help = ['bugmenu']
 handler.tags = ['tools']
 handler.command = /^(bugmenu)$/i
-h
+handler.diamond = 5
 
 export default handler
 
