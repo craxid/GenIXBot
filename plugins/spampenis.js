@@ -4,4 +4,5 @@ let name = await conn.getName(m.sender)
 => "kontol\n".repeat(100)
 
 handler.help = ['spampenis <jimlah>']
-hanler.
+handler.diamond = 3
+handler
