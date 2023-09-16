@@ -142,4 +142,4 @@ handler.help = ["enhancer", "hdr", "colorize","remini"];
 handler.tags = ["tools"];
 handler.premium = false;
 handler.command = ["unblur", "enchaner", "enhance", "hdr", "colorize","remini"];
-module.exphandler
+export default handler
