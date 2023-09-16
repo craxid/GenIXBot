@@ -7,7 +7,9 @@ import { MessageType } from '@adiwajshing/baileys'
 
 let handler  = async (m, { conn, command }) => {
      const time = moment.tz('Asia/Jakarta').format("HH:mm:ss")
+     
      let username = conn.getName(m.sender)
+     
      console.log(color('[COMMAND]', 'pink'), color(command, 'yellow'), color(time, 'white'), color('Name:', 'yellow'), color(username, 'cyan'), color('Number:', 'yellow'), color(m.sender.split('@')[0], 'cyan'))
      
      let data = fs.readFileSync('../lib/kapelan.js');
