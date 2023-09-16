@@ -24,3 +24,9 @@ break
 default;
   }
 }
+
+handler.help = ['ppcouple']
+handler.tags = ['img']
+handler.command = ['ppcouple','ppcp']
+handler.premium = false
+handler.diamond = true
