@@ -10,7 +10,7 @@ switch (type) {
 
 case 'ppcouple':
 case 'ppcp':
-	let fetch(`https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json`).then(({ data }) => {
+let kapel = await fetch(`https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json`).then(({ data }) => {
 	conn.sendMessage(from, { image: { url: data.result.male }, caption: 'Male' })
 	
 	conn.sendMessage(from, { image: { url: data.result.female }, caption: 'Female' })
