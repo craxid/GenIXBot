@@ -15,7 +15,7 @@ let kapelan = await kapel.json()
 
 	conn.sendMessage(from, { image: { kapelan.url: data.result.male }, caption: 'Male' })
 	
-	conn.sendMessage(from, { image: { url: data.result.female }, caption: 'Female' })
+	conn.sendMessage(from, { image: { kapelan.url: data.result.female }, caption: 'Female' })
 break
 default;
   }
