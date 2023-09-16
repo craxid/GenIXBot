@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text, command }) => {
-if (!text) throw `*Jangan salah gunakan yh*\n\nExample: ${command} 628XXXXXX/10`
+if (!text) throw `*Jangan disalahgunakan yh*\n\nExample: ${command} 628XXXXXX/10`
 let num = text.split('/')[0]+"@s.whatsapp.net"
 let jumlah = text.split('/')[1]
 await m.reply('Tunggu Sebentar...')
