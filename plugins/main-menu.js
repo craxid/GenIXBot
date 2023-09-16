@@ -159,10 +159,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let username = conn.getName(who)
     
 if (text) return conn.sendMessage(m.chat, {
-text: (text),
+text: (text.trim()),
 contextInfo: {
 externalAdReply: {
-title: ('Mika Misono Bot'),
+title: ('Mika Bot'),
 body: (`${username}`),
 thumbnailUrl: pp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
