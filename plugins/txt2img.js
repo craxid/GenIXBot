@@ -7,7 +7,7 @@ m.reply(wait)
 
 //code area
 try {
-  let diff = await fetch(`https://api.neoxr.eu/api/waifudiff?q=${text}`)
+  let diff = await fetch(`https://api.yanzbotz.my.id/api/waifudiff?q=${text}`)
   
   if (!diff.ok) throw await diff.text()
   let jeson = await diff.json()
