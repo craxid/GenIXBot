@@ -29,4 +29,4 @@ handler.help = ['🗿 <nomer/jumlah>']
 handler.tags = ['tools']
 handler.command = /^(🗿)$/i 
 handler.premium = true 
-modhandler
+export default handler
