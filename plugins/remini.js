@@ -1,6 +1,6 @@
 
 import FormData from "form-data"
-Jimp from "jimp"
+import Jimp from "jimp"
 
 async function processing(urlPath, method) {
 	return new Promise(async (resolve, reject) => {
@@ -138,8 +138,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 			break;
 	}
 };
-handler.help = ["enhancer", "hdr", "colorize"];
+handler.help = ["enhancer", "hdr", "colorize","remini"];
 handler.tags = ["tools"];
 handler.premium = false;
-handler.command = ["unblur", "enchaner", "enhance", "hdr", "colorize"];
-module.exports = handler;
+handler.command = ["unblur", "enchaner", "enhance", "hdr", "colorize","remini"];
+module.exphandler
