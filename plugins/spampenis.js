@@ -5,4 +5,5 @@ let name = await conn.getName(m.sender)
 
 handler.help = ['spampenis <jimlah>']
 handler.diamond = 3
-handler
+handler.tags =['spam']
+handler.command =['spampeni']
