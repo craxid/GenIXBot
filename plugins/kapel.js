@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-m.reply(wait)
+m.reply()
 let type = (command).toLowerCase()
 switch (type) {
 
@@ -13,6 +13,11 @@ if (isBan) return newReply('Lu di ban kocak awokwok')
 let anu = await fetch("https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json")
 let anuin = await anu.json()
 
+let random = anuin[Math.floor(Math.random() * anuin.length)]
+
+conn.sendMessage(m.chat,{image: {anuin.url: random.male,},caption: `Couple Male`,},{quoted: m,})
+
+conn.sendMessage(m.chat,{image: {anuin.url: random.female,},caption: `Couple Female`,},{quoted: m,})
 }
 limitAdd(m.sender, limit)
 break
