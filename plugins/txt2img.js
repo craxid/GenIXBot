@@ -9,7 +9,7 @@ m.reply(wait)
 try {
   let diff = await fetch(`https://api.neoxr.eu/api/waifudiff?q=${text}`)
   
-    if (!res.ok) throw await res.text()
+  if (!diff.ok) throw await diff.json()
   
 //let diff = await conn.getFile(`https://api.azz.biz.id/api/text2img?q=${text}&key=mangea`)
 	    
