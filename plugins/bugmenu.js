@@ -4,7 +4,7 @@ import moment from 'moment-timezone'
 import fs from 'fs'
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
-let { limit, role, level, exp, premiumTime } = db.data.users[m.sender]
+let { diamond, role, level, exp, premiumTime } = db.data.users[m.sender]
   let name = await conn.getName(m.sender)
   let tag = `@${m.sender.replace(/@.+/, '')}`
   let ucpn = `${ucapan()}`
@@ -14,7 +14,7 @@ let { limit, role, level, exp, premiumTime } = db.data.users[m.sender]
 █ ❏ *Name:* ${name}
 █ ❏ *Tag:* ${tag}
 █ ❏ *Status:* ${premiumTime > 0 ? 'Premium' : 'Free user' }
-█ ❏ *Limit:* ${limit}
+█ ❏ *Diamond:* ${diamond}
 █ ❏ *Role:* ${role}
 █ ❏ *Level:* ${level}
 █ ❏ *XP:* ${exp}
