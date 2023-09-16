@@ -13,7 +13,7 @@ case "ppcp": {
 let anu = await fetch("https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json")
 let anuin = await anu.json()
 
-let random = anuin[Math.floor(Math.random() * anuin.length)]
+//let random = anuin[Math.floor(Math.random() * anuin.length)]
 
 conn.sendMessage(m.chat,{image: {anuin.url: random.male,},caption: `Couple Male`,},{quoted: m,})
 
