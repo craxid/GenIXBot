@@ -8,7 +8,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let result = await fb.fbdl(args[0]);
     
     let tex = `
-┌─⊷ *Akebi-chan FBDL*
+┌─⊷ *Mika Bot FBDL*
 ▢ *Title:* ${result.title}
 └───────────`;
     conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, m);
