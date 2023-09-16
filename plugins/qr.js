@@ -3,7 +3,7 @@ import qrcode from "qrcode"
 let handler  = async (m, { conn, text }) => {
   if (!text) throw 'Masukkan Text'
   
-  m.reply('Tunggu bentar...')
+  await m.reply('Tunggu bentar...')
   
   conn.sendFile(m.chat, await qrcode.toDataURL(text.slice(0, 2048), { scale: 8 }), 'qrcode.png', `2023 © Mika Bot\n\n[ ${text} ]`, m)
   await m.react('👾')
