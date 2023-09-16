@@ -8,10 +8,11 @@ let type = (command).toLowerCase()
 switch (type) {
 
 case 'ppcouple':
+case 'ppcp':
 	axios.get(`https://api.lolhuman.xyz/api/random/${command}?apikey=${apikey}`).then(({ data }) => {
 	conn.sendMessage(from, { image: { url: data.result.male }, caption: 'Male' })
 	
-	sock.sendMessage(from, { image: { url: data.result.female }, caption: 'Female' })
+	conn.sendMessage(from, { image: { url: data.result.female }, caption: 'Female' })
 	})
 break
 default;*/
