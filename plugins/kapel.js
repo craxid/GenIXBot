@@ -5,7 +5,7 @@ m.reply()
 let type = (command).toLowerCase()
 switch (type) {
 
-case "couple":
+/*case "couple":
 case "ppcp": {
 
 //if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return newReply(`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
@@ -20,7 +20,7 @@ conn.sendMessage(m.chat,{image: {anuin.url: random.male,},caption: `Couple Male`
 conn.sendMessage(m.chat,{image: {anuin.url: random.female,},caption: `Couple Female`,},{quoted: m,})
 }
 break
-default;
+default;*/
   }
 }
 
