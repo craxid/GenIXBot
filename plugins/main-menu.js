@@ -8,6 +8,7 @@ import moment from 'moment-timezone'
 let tags = {
   'main': 'MAIN MENU',
   'ai': 'AI MENU',
+  'spam': 'SPAM MENU'
   'anon': 'ANONYMOUS',
   'game': 'GAMES',
   'econ': 'LEVEL & EKONOMI',
