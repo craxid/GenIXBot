@@ -9,7 +9,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
     if (!global.prems.includes(who.split`@`[0])) throw '✳️ Target bukan user Premium'
     let index = global.prems.findIndex(v => (v.replace(/[^0-9]/g, '') + '@s.whatsapp.net') === (who.replace(/[^0-9]/g, '') + '@s.whatsapp.net'))
     global.prems.splice(index, 1)
-    conn.reply(m.chat, `✅ Peemium dihapus\n\n@${who.split('@')[0]} Kamu bukan premium lagi`, m, { mentions: [who] })
+    conn.reply(m.chat, `✅ Premium dihapus\n\n@${who.split('@')[0]} Kamu bukan premium lagi`, m, { mentions: [who] })
     
 }
 handler.help = ['delprem @user']
