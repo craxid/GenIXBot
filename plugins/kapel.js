@@ -1,5 +1,6 @@
 
 import fetch from 'node-fetch'
+import axios from 'axios'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 await m.reply(wait)
