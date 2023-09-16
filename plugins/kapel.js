@@ -21,6 +21,6 @@ conn.sendMessage(m.chat,{image: {url: random.female,},caption: `Couple Female`,}
 }
 limitAdd(m.sender, limit)
 break
-}
+default;
   }
 }
