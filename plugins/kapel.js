@@ -20,7 +20,6 @@ conn.sendMessage(m.chat,{image: {anuin.url: random.male,},caption: `Couple Male`
 
 conn.sendMessage(m.chat,{image: {anuin.url: random.female,},caption: `Couple Female`,},{quoted: m,})
 }
-limitAdd(m.sender, limit)
 break
 default;
   }
