@@ -1,13 +1,11 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-m.react(rwait)
 
 let type = (command).toLowerCase()
-
 switch (type) {
 
 case "couple":
-case"ppcp":{
+case "ppcp":{
 if (isBan) return newReply('Lu di ban kocak awokwok') 
 
 if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return newReply(`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
@@ -23,6 +21,6 @@ conn.sendMessage(m.chat,{image: {url: random.female,},caption: `Couple Female`,}
 }
 limitAdd(m.sender, limit)
 break
-  
+}
   }
 }
