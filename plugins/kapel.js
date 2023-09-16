@@ -16,7 +16,7 @@ case 'ppcp':
 	conn.sendMessage(from, { image: { url: data.result.female }, caption: 'Female' })
 	})
 break
-default;*/
+default;
   }
 }
 
