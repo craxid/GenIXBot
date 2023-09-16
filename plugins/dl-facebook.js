@@ -1,7 +1,9 @@
 
-import fb from 'api-dylux' 
+import fb from 'api-dylux'
+let limit = 15
+
 let handler = async (m, { conn, args, usedPrefix, command }) => {
- let limit = 15
+
  
  if (!args[0]) throw `✳️ Kirim tautan video Facebook\n\n📌 Contoh :\n*${usedPrefix + command}* https://fb.watch/d7nB8-L-gR/`
     m.react(rwait)
