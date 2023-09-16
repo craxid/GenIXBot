@@ -51,6 +51,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 		case "enhancer":
 		case "unblur":
 		case "enhance":
+		case "remini":
 			{
 				conn.enhancer = conn.enhancer ? conn.enhancer : {}
 				if (m.sender in conn.enhancer)
