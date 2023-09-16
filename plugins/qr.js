@@ -5,7 +5,7 @@ let handler  = async (m, { conn, text }) => {
   
   await m.reply('Tunggu bentar...')
   
-conn.sendFile(m.chat, await qrcode.toDataURL(text.slice(0, 2048), { scale: 8 }), 'qrcode.png', `QR Code Generator by Mika Bot\n\n${text}`, m)
+conn.sendFile(m.chat, await qrcode.toDataURL(text.slice(0, 2048), { scale: 8 }), 'qrcode.png', `QR Code Generator by Mika Bot\n\nResult [ ${text}]`, m)
   await m.react('👾')
 
 }
