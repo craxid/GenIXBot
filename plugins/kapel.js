@@ -1,4 +1,5 @@
 import fetch from 'node-fetch'
+
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 m.reply()
 let type = (command).toLowerCase()
