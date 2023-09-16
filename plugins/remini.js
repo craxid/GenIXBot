@@ -63,7 +63,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				if (!/image\/(jpe?g|png)/.test(mime))
 					throw `Mime ${mime} tidak support`
 				else conn.enhancer[m.sender] = true
-				m.reply("Lagi diproses kak...")
+				m.reply(wait)
 				let img = await q.download?.()
 				let error
 				try {
@@ -92,7 +92,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				if (!/image\/(jpe?g|png)/.test(mime))
 					throw `Mime ${mime} tidak support`
 				else conn.recolor[m.sender] = true
-				m.reply("Lagi diproses kak...")
+				m.reply(wait)
 				let img = await q.download?.()
 				let error
 				try {
@@ -121,7 +121,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				if (!/image\/(jpe?g|png)/.test(mime))
 					throw `Mime ${mime} tidak support`
 				else conn.hdr[m.sender] = true
-				m.reply("Lagi diproses kak...")
+				m.reply(wait)
 				let img = await q.download?.()
 				let error
 				try {
