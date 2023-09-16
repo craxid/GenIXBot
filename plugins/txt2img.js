@@ -9,8 +9,8 @@ m.reply(wait)
 try {
   let diff = await fetch(`https://api.neoxr.eu/api/waifudiff?q=${text}`)
   
-  let difu = await diff()
-    
+    if (!res.ok) throw await res.text()
+  
 //let diff = await conn.getFile(`https://api.azz.biz.id/api/text2img?q=${text}&key=mangea`)
 	    
 conn.sendFile(m.chat, difu.data.url, 'img.jpg', `*[ TEXT TO IMAGE ]*\n\nPROMPT:\n${text}`, m)
