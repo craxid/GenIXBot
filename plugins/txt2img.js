@@ -7,7 +7,7 @@ m.reply(wait)
 
 //code area
 try {
-  let diff = await conn.getFile(`https://api.neoxr.eu/api/waifudiff?q=${text}`)
+  let diff = await fetch(`https://api.neoxr.eu/api/waifudiff?q=${text}`)
   
   let difu = await diff()
     
