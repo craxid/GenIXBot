@@ -28,7 +28,7 @@ conn.sendMessage(num, { text: '🗿'}, { quoted: dann })
 m.reply(`Sukses Mengirim ${command}\nKe Nomor: ${text}\n\n*Note :* Virus ini aktif ketika korban membuka chat nya, maka WhatsApp akan crash hehe`)
 }
 handler.help = ['spambatu <nomer/jumlah>']
-handler.tags = ['tools']
+handler.tags = ['spam']
 handler.command = /^(🗿|spambatu)$/i 
 handler.premium = false
 handler.diamond = 3
