@@ -11,8 +11,9 @@ switch (type) {
 case 'ppcouple':
 case 'ppcp':
 let kapel = await fetch(`https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json`)
-let kapelan = await 
-	conn.sendMessage(from, { image: { url: data.result.male }, caption: 'Male' })
+let kapelan = await kapel.json()
+
+	conn.sendMessage(from, { image: { kapelan.url: data.result.male }, caption: 'Male' })
 	
 	conn.sendMessage(from, { image: { url: data.result.female }, caption: 'Female' })
 break
