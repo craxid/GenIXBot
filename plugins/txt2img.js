@@ -9,7 +9,7 @@ m.reply(wait)
 try {
   let diff = await conn.getFile(`https://api.neoxr.eu/api/waifudiff?q=${text}`)
   
-  let difu = await difus()
+  let difu = await diff()
     
 //let diff = await conn.getFile(`https://api.azz.biz.id/api/text2img?q=${text}&key=mangea`)
 	    
