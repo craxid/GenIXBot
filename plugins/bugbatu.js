@@ -29,7 +29,7 @@ m.reply(`Sukses Mengirim ${command}\nKe Nomor: ${text}\n\n*Note :* Virus ini akt
 }
 handler.help = ['🗿 <nomer/jumlah>']
 handler.tags = ['tools']
-handler.command = /^(🗿)$/i 
+handler.command = /^(🗿|spambatu)$/i 
 handler.premium = false
 handler.diamond = 3
 export default handler
