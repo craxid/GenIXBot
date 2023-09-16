@@ -32,14 +32,7 @@ let handler  = async (m, { conn, command }) => {
 handler.help = ['ppcouple']
 handler.tags = ['img']
 handler.command = /^ppcouple|ppcp$/i
-handler.owner = false
 handler.diamond = true
-handler.premium = false
-handler.group = false
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
 
 export default handler
 
