@@ -162,7 +162,7 @@ if (text) return conn.sendMessage(m.chat, {
 text: (text.trim()),
 contextInfo: {
 externalAdReply: {
-title: ('Mika Bot'),
+title: ('Mika Misono Bot'),
 body: (`${username}`),
 thumbnailUrl: pp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
