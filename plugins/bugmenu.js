@@ -1,7 +1,8 @@
 
 import fetch from 'node-fetch'
 import moment from 'moment-timezone'
-impo fs = require('fs')
+import fs from 'fs'
+
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 let { limit, role, level, exp, premiumTime } = db.data.users[m.sender]
   let name = await conn.getName(m.sender)
@@ -38,8 +39,9 @@ let { limit, role, level, exp, premiumTime } = db.data.users[m.sender]
 handler.help = ['bugmenu']
 handler.tags = ['tools']
 handler.command = /^(bugmenu)$/i
+h
 
-module.exports = handler
+export default handler
 
 function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
