@@ -18,7 +18,8 @@ m.reply(wait)
 
 let random = anu[Math.floor(Math.random() * anu.length)]
 conn.sendMessage(m.chat,{image: {url: random.male,},caption: `Couple Male`,},{quoted: m,})
-juna.sendMessage(m.chat,{image: {url: random.female,},caption: `Couple Female`,},{quoted: m,})
+
+conn.sendMessage(m.chat,{image: {url: random.female,},caption: `Couple Female`,},{quoted: m,})
 }
 limitAdd(m.sender, limit)
 break
