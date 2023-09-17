@@ -1,7 +1,7 @@
 
 import yts from 'yt-search'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
-let limit = 8
+let limit = 80
 let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
   
     if (!text) throw `✳️ Masukan judul lagu\n\n📌Contoh *${usedPrefix + command}* Hajimari no Setsuna`
