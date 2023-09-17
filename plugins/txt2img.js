@@ -9,8 +9,6 @@ m.reply(wait)
 try {
   let diff = await fetch(`https://api.yanzbotz.my.id/api/text2img/yanzbotz?prompt=${text}`)
   
-  if (!diff.ok) throw await diff.text()
-  let jeson = await diff.json()
   
 //let diff = await conn.getFile(`https://api.azz.biz.id/api/text2img?q=${text}&key=mangea`)
 	    
