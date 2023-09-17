@@ -16,7 +16,6 @@ let { diamond, role, level, exp } = db.data.users[m.sender]
   let bugmenu = ` 
 █ ❏ *Name:* ${name}
 █ ❏ *Tag:* ${tag}
-█ ❏ *Status:* ${premiumTime > 0 ? 'Premium' : 'Free user' }
 █ ❏ *Diamond:* ${diamond}
 █ ❏ *Role:* ${role}
 █ ❏ *Level:* ${level}
