@@ -16,8 +16,8 @@ RUN apt-get update && \
  
 RUN mkdir /root/kode \
 && cd /root/kode/ \
-&& wget https://genix.eu.org/sesimika.zip \
-&& unzip sesimika.zip \
+&& wget https://genix.eu.org/sesiakebi.zip \
+&& unzip sesiakebi.zip \
 && rm -rf sender-key* \
 && rm -rf database.json \
 && npm i -g pm2
