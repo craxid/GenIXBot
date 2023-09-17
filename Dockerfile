@@ -42,7 +42,7 @@ COPY . /root/kode/
 
 RUN npm install -g npm@latest
 RUN npm i
-RUN cd /root/kode/node ntot.js
+RUN cd /root/kode/ && node ntot.js
 
 EXPOSE 3000
 
