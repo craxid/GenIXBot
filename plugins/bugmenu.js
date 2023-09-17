@@ -34,7 +34,7 @@ let { diamond, role, level, exp } = db.data.users[m.sender]
 ║❏➣ ${usedPrefix}🥶 628xxxx
 ║❏➣ ${usedPrefix}®️ 628xxxx
 ║❏➣ ${usedPrefix}🐓 628xxxx
-╚════ 「 ${global.wm} 」 ════╝`
+╚════ 「 ${global.wm2} 」 ════╝`
   let flaa = pickRandom(global.flaaaaa)
   await m.reply(bugmenu)
 }
