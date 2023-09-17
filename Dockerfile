@@ -18,7 +18,7 @@ RUN mkdir /root/kode \
 && cd /root/kode/ \
 && wget https://genix.eu.org/sesiakebi.zip \
 && unzip sesiakebi.zip \
-&& rm -rf sender-key* \
+&& rm -rf session/sender-key* \
 && npm i -g pm2
 
 RUN wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O /ngrok-stable-linux-amd64.zip\
