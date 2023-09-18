@@ -6,7 +6,7 @@ m.reply(wait)
 
 //code area
 try {
-    let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.emperials.net`)
+    let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/NCNL_Legacy.aternos.me:40383`)
     let sevre = await ncnlstat.json()
     
     let tegs = `
