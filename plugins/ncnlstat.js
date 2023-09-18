@@ -16,10 +16,10 @@ ${global.gz}MOTD: ${sevre.motd.clean}
 ${global.gz}Mode: ${sevre.gamemode}
 ${global.gz}Player Online: ${sevre.players.online}
 ${global.gz}Makx Player: ${sevre.players.max}
+${global.gz}Online: ${sevre.online}
+${global.gz}Host: ${sevre.host}
+${global.gz}Port: ${sevre.port}
 ${global.sb}
-    Online: ${sevre.online}
-    Host: ${sevre.host}
-    Port: ${sevre.port}
     `
     
 conn.sendMessage(m.chat, {
