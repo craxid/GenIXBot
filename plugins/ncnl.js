@@ -1,48 +1,57 @@
-let handler = async (m, { conn }) => {
-let name = await conn.getName(m.sender)
+
+import fetch from 'node-fetch'
+let handler = async (m, { conn, text }) => {
 let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
-let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
-
-// start kode
-
-let ncnl = `
-*NCNL Network*
-
-*INFO SERVER*
-IP/Host: ncnl_legacy.aternos.me
-Port: 40383
-Versi: Versi terbaru (liat di play store)
+let kace = 'https://api.mcsrvstat.us/icon/play.genix.eu.org:29427'
+m.reply(wait)
 
 
-*NCNL Terraria*
-IP: terraria.ncnl.eu.org
-Port: 2570
+try {
+let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/ncnl_legacy.aternos.org:4038`)
 
-Link realm
-(Kosong)
-`
+let sevre = await ncnlstat.json()
+    
+let tegs = `
+${global.htki} *GenIX Server* ${global.htka}
+${global.gz} *Version:* ${sevre.protocol.name}
+${global.gz} *MOTD:* ${sevre.motd.clean}
+${global.gz} *World Name:* ${sevre.map.clean}
+${global.gz} *Game Mode:* ${sevre.gamemode}
+${global.gz} *Player:* ${sevre.players.online}
+${global.gz} *Max Player:* ${sevre.players.max}
+${global.gz} *Online:* ${sevre.online}
+${global.sb}
 
-//end kode
-
-let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-
-    let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
-    let username = conn.getName(who)
+${global.htki} *HOST & PORT* ${global.htka}
+${global.gz} *Host:* ${sevre.hostname}
+${global.gz} *Port:* ${sevre.port}
+${global.sb}
+    `
     
 conn.sendMessage(m.chat, {
-text: ncnl,
+text: tegs,
 contextInfo: {
 externalAdReply: {
-title: (`NCNL Network`),
-body: ('KLIK DISINI UNTUK LOGIN'),
+title: (`Server Stalker`),
+body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=NCNL_Legacy.aternos.me|NCNL_Legacy.aternos.me:40383'),
+sourceUrl: ('minecraft://?addExternalServer=GenIX Network|play.genix.eu.org:29427'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
 }}})
+
+	}
+	catch {
+		m.reply(`❎ Server sedang offline`)
+	}
+//end
+
 }
-handler.customPrefix = /^ncnl|server$/i
-handler.command = new RegExp
+handler.help = ['mcstalk']
+handler.tags = ['tools']
+handler.command = ['mcstalk']
+handler.premium = false
+handler.diamond = false
 
 export default handler
