@@ -40,11 +40,11 @@ renderLargerThumbnail: false
 //end
 
 }
-handler.help = ['animedif <text>']
-handler.tags = ['ai']
-handler.command = ['animedif','nimedif']
+handler.help = ['mcstalk']
+handler.tags = ['tools']
+handler.command = ['mcstalk']
 handler.premium = false
-handler.diamond = true
+handler.diamond = false
 
 export default handler
 
