@@ -15,7 +15,7 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
 ▢ *🏝️ Posts:* ${res.postsH}
 ▢ *🔗 Link* : https://instagram.com/${res.username.replace(/^@/, '')}
 └────────────`
-     await conn.sendFile(m.chat, res.profilePic, 'igstalk.png', teks, m)
+     //await conn.sendFile(m.chat, res.profilePic, 'igstalk.png', teks, m)
       } catch {
         m.reply(`✳️ Pastikan nama pengguna ada di *Instagram*`)
       }
