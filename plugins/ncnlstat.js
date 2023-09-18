@@ -29,10 +29,10 @@ conn.sendMessage(m.chat, {
 text: tegs,
 contextInfo: {
 externalAdReply: {
-title: (`NCNL Stalker`),
+title: (`Server Stalker`),
 body: ('Status Server'),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|DE-1.retslav:29427'),
+sourceUrl: ('minecraft://?addExternalServer=ZYBRA Network|play.zybra.eu.org:29427'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
