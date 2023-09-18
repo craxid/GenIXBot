@@ -16,7 +16,7 @@ ${global.gz}MOTD: ${sevre.motd.clean}
 ${global.gz}Mode: ${sevre.gamemode}
 ${global.gz}Player Online: ${sevre.players.online}
 ${global.gz}Makx Player: ${sevre.players.max}
-    
+${global.sb}
     Online: ${sevre.online}
     Host: ${sevre.host}
     Port: ${sevre.port}
