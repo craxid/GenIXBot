@@ -13,7 +13,7 @@ try {
     let tegs = `
     *NCNL Server*
     
-    Player: ${pleyer.}
+    Player: ${pleyer.players.online}
     
     Status: ${sevre.online}
     Host: ${sevre.host}
