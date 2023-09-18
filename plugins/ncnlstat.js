@@ -8,6 +8,7 @@ m.reply(wait)
 try {
     let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.zybra.eu.org:17112`)
     let statu = await ncnlstat.json()
+    let pler = await statu.json()
     
     let tegs = `
     *NCNL Server*
