@@ -14,7 +14,7 @@ Port: 40383
 Versi: Versi terbaru (liat di play store)
 
 
-*Server NCNL Terraria*
+*NCNL Terraria*
 IP: terraria.ncnl.eu.org
 Port: 2570
 
