@@ -19,7 +19,7 @@ ${global.gz}Max Player: ${sevre.players.max}
 ${global.gz}Online: ${sevre.online}
 ${global.gz}Host: ${sevre.host}
 ${global.gz}Port: ${sevre.port}
-
+${global.gz}Version: ${sevre.version
 ${global.sb}
     `
     
