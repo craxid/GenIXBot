@@ -12,7 +12,7 @@ try {
     let tegs = `
     *NCNL Server*
     
-    MOTD: ${sevre
+    MOTD: ${sevre.motd.clean}
     Player Online: ${sevre.players.online}
     Makx Player: ${sevre.players.max}
     Online: ${sevre.online}
