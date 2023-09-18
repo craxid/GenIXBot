@@ -8,7 +8,7 @@ let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 let ncnl = `
 *NCNL Network*
 
-*Info server*
+*INFO SERVER*
 IP/Host: ncnl_legacy.aternos.me
 Port: 40383
 Versi: Versi terbaru (liat di play store)
