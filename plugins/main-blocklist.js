@@ -10,7 +10,7 @@ let handler = async (m, { conn }) => {
 		return conn.reply(m.chat, txt, m, { mentions: await conn.parseMention(txt) })
 	}).catch(err => {
 		console.log(err);
-		throw 'No hay números bloqueados'
+		throw 'Tidak ada nomor yang diokir'
 	})
 }
 
