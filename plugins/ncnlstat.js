@@ -34,7 +34,7 @@ text: tegs,
 contextInfo: {
 externalAdReply: {
 title: (`Server Stalker`),
-body: ('Status Server'),
+body: (`${sevre.`),
 thumbnailUrl: thumb,
 sourceUrl: ('minecraft://?addExternalServer=GenIX Network|play.genix.eu.org:29427'),
 mediaType: 1,
