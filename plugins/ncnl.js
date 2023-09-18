@@ -7,7 +7,7 @@ m.reply(wait)
 
 
 try {
-let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/ncnl_legacy.aternos.org:4038`)
+let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/ncnl_legacy.aternos.org:40383`)
 
 let sevre = await ncnlstat.json()
     
@@ -35,7 +35,7 @@ externalAdReply: {
 title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=GenIX Network|play.genix.eu.org:29427'),
+sourceUrl: ('minecraft://?addExternalServer=NXNL Legacy|ncnl_legacy.aternos.org:40383'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
