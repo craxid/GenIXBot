@@ -9,7 +9,7 @@ m.reply(wait)
 try {
 
 
-let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org:29427`)
+let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org:2942`)
 //if (!online) throw fetch('https://api.mcsrvstat.us/bedrock/simple/play.genix.eu.org:29427')
 
 let sevre = await ncnlstat.json()
