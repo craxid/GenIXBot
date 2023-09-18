@@ -13,7 +13,9 @@ try {
     let tegs = `
     *NCNL Server*
     
-    Status: ${pl.online}
+    Player: ${pleyer.}
+    
+    Status: ${sevre.online}
     Host: ${sevre.host}
     Port: ${sevre.port}
     `
