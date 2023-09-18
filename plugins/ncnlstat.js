@@ -7,9 +7,9 @@ m.reply(wait)
 
 //code area
 try {
-    let animdif = await conn.getFile(``)
+    let ncnlstat = await conn.getFile(`https://api.mcstatus.io/v2/status/bedrock/de-1.retslav.nl:29427`)
     
-// let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
+//let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
 	    
 conn.sendFile(m.chat, animdif.data, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
 	}
