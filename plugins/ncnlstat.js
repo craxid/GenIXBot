@@ -13,7 +13,7 @@ try {
     let tegs = `
     *NCNL Server*
     
-    Status 
+    Status ${statu.
     
     `
     
