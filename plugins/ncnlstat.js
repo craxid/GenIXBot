@@ -7,6 +7,7 @@ m.reply(wait)
 
 
 try {
+if (!onlonehttps://api.mcsrvstat.us/bedrock/simple/play.genix.eu.org:29427
 let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org:29427`)
 let sevre = await ncnlstat.json()
     
