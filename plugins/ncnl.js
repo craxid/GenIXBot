@@ -43,7 +43,7 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-		m.reply(`Server sedang offline\n\nHos${sevre.hostname}:${sevre.port}`)
+		m.reply(`Server sedang offline\n\nHost: ${sevre.hostname}\nPort: ${sevre.port}`)
 	}
 //end
 
