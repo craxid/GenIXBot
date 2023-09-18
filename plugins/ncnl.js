@@ -6,15 +6,15 @@ let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 // start kode
 
 let ncnl = `
-NCNL Network
+*NCNL Network*
 
-Info server
+*Info server*
 IP/Host: ncnl_legacy.aternos.me
 Port: 40383
 Versi: Versi terbaru (liat di play store)
 
 
-Server NCNL Terraria
+*Server NCNL Terraria*
 IP: terraria.ncnl.eu.org
 Port: 2570
 
