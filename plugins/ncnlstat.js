@@ -23,9 +23,9 @@ m.reply(wait)
   try {
 
 
-    const response = await fetch('https://api.mcstatus.io/v2/status/bedrock/play.emperials.net')
+    let sevre = await fetch('https://api.mcstatus.io/v2/status/bedrock/play.emperials.net')
 
-    const data = await response.json()
+    const data = await sevre.json()
     const motd = data.motd.raw
     const status = data.online
     const host = data.host
