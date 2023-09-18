@@ -31,7 +31,7 @@ contextInfo: {
 externalAdReply: {
 title: (`Server Stalker`),
 body: ('Status Server'),
-thumbnailUrl: (`${}`),
+thumbnailUrl: (`${sevre.icon}`),
 sourceUrl: ('minecraft://?addExternalServer=GenIX Network|play.genix.eu.org:29427'),
 mediaType: 1,
 showAdAttribution: true,
