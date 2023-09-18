@@ -15,6 +15,19 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
 ▢ *🏝️ Posts:* ${res.postsH}
 ▢ *🔗 Link* : https://instagram.com/${res.username.replace(/^@/, '')}
 └────────────`
+
+if (teks) return conn.sendMessage(m.chat, {
+text: teks,
+contextInfo: {
+externalAdReply: {
+title: (``),
+body: (''),
+thumbnailUrl: mikapp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})
      //await conn.sendFile(m.chat, res.profilePic, 'igstalk.png', teks, m)
       } catch {
         m.reply(`✳️ Pastikan nama pengguna ada di *Instagram*`)
