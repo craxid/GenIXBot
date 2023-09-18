@@ -13,8 +13,11 @@ try {
     *NCNL Server*
     
     MOTD: ${sevre.motd.clean}
+    
+    Mode: ${sevre.}
     Player Online: ${sevre.players.online}
     Makx Player: ${sevre.players.max}
+    
     Online: ${sevre.online}
     Host: ${sevre.host}
     Port: ${sevre.port}
