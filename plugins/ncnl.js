@@ -17,7 +17,7 @@ ${global.gz} *Version:* ${sevre.protocol.name}
 ${global.gz} *MOTD:* ${sevre.motd.clean}
 ${global.gz} *World Name:* ${sevre.map.clean}
 ${global.gz} *Game Mode:* ${sevre.gamemode}
-${global.gz} *Player:* ${sevre.players.online}
+${global.gz} *PlayerOnline:* ${sevre.players.online}
 ${global.gz} *Max Player:* ${sevre.players.max}
 ${global.gz} *Online:* ${sevre.online}
 ${global.sb}
