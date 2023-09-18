@@ -25,10 +25,10 @@ m.reply(wait)
     let sevre = await fetch('https://api.mcstatus.io/v2/status/bedrock/play.emperials.net')
 
     let data = await sevre.json()
-    let motd = data.motd.raw
-    let status = data.online
-    let host = data.host
-    let port = data.port
+    let motd = data.motd.raw()
+    let status = data.online()
+    let host = data.host()
+    let port = data.port()
     
     let result = `*NCNL Server* 
 
