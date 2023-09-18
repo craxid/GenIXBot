@@ -38,31 +38,10 @@ m.reply(wait)
     Port: ${port}`;
 
     console.log(result);
-
-
   } catch (error) {
-
-
     console.log('Terjadi kesalahan:', error);
-
-
   }
-
-
 }
-
-
-getServerStatus();
-
-
-
-
-
-
-
-
-Kode ini menggunakan library `node-fetch` untuk melakukan permintaan HTTP GET ke API `https://api.mcstatus.io/v2/status/bedrock/play.emperials.net`. Fungsi `getServerStatus` akan mengambil status server dari API tersebut dan mencetaknya ke konsol dalam format yang diinginkan. Jika terjadi kesalahan dalam permintaan, pesan kesalahan akan dicetak ke konsol.
-
     
 conn.sendMessage(m.chat, {
 text: tegs,
