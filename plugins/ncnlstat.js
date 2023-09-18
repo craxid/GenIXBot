@@ -17,12 +17,12 @@ try {
     Host: ${statu.host}
     Port: ${statu.port}
     `
-if (teks) return conn.sendMessage(m.chat, {
-text: mika,
+conn.sendMessage(m.chat, {
+text: tegs,
 contextInfo: {
 externalAdReply: {
-title: (`${username}`),
-body: ('Aku Online Kak!'),
+title: (`NCNL Stalker`),
+body: ('Status Server'),
 thumbnailUrl: mikapp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
