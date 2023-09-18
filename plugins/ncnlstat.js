@@ -21,7 +21,7 @@ try {
     Status: ${statu.online}
     Host: ${statu.host}
     Port: ${statu.port}
-    Versoon: ${statu.version}
+    Versoon: ${versi.name}
     `
 conn.sendMessage(m.chat, {
 text: tegs,
