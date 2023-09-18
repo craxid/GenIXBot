@@ -11,6 +11,7 @@ try {
     
     let tegs = `
 ${global.htki} *NCNL Server* ${global.htka}
+${global.gz}*Version:* ${sevre.version.name}
 ${global.gz}*MOTD:* ${sevre.motd.clean}
 ${global.gz}*Mode:* ${sevre.gamemode}
 ${global.gz}*Player Online:* ${sevre.players.online}
@@ -19,7 +20,6 @@ ${global.gz}*Online:* ${sevre.online}
 ${global.gz}*Host:* ${sevre.host}
 ${global.gz}*Port:* ${sevre.port}
 ${global.gz}*Game Mode:* ${sevre.gamemode}
-${global.gz}*Version:* ${sevre.version.name}
 ${global.sb}
     `
     
