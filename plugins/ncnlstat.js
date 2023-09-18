@@ -8,12 +8,12 @@ m.reply(wait)
 try {
     let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.emperials.net`)
     let sevre = await ncnlstat.json()
-    let pleyer = await sevre.json()
+    let pleyer = await sevre.players.json()
     
     let tegs = `
     *NCNL Server*
     
-    Player: ${pleyer.players.online}
+    Player: ${pleyer.online}
     
     Status: ${sevre.online}
     Host: ${sevre.host}
