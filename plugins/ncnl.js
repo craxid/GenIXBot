@@ -38,7 +38,7 @@ externalAdReply: {
 title: (`NCNL Network`),
 body: ('KLIK DISINI UNTUK LOGIN'),
 thumbnailUrl: thumb,
-sourceUrl: ('https://ncnl.eu.org/'),
+sourceUrl: ('minecraft://?addExternalServer=NCNL_Legacy.aternos.me|NCNL_Legacy.aternos.me:40383'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
