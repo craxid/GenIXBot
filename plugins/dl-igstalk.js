@@ -21,8 +21,8 @@ text: teks,
 contextInfo: {
 externalAdReply: {
 title: ('Instagram Stalker'),
-body: (`${res.usernam}`),
-thumbnailUrl: mikapp,
+body: (`${res.username}`),
+thumbnailUrl: (`${res.profilePic}`),
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
