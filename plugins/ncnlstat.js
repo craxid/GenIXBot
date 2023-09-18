@@ -2,7 +2,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
 let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
-if (!text) throw `✳️ NCNL Status`
 m.reply(wait)
 
 //code area
