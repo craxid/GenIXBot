@@ -5,7 +5,7 @@ let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 m.reply(wait)
 
 //code area
-try {
+/*try {
     let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.emperials.net`)
     let statu = await ncnlstat.json()
     
@@ -18,7 +18,84 @@ try {
     Status: ${statu.online}
     Host: ${statu.host}
     Port: ${statu.port}
-    `
+    `*/
+    
+
+async function getServerStatus() {
+
+
+  try {
+
+
+    const response = await fetch('https://api.mcstatus.io/v2/status/bedrock/play.emperials.net');
+
+
+    const data = await response.json();
+
+
+    
+
+
+    const motd = data.motd.raw;
+
+
+    const status = data.online;
+
+
+    const host = data.host;
+
+
+    const port = data.port;
+
+
+    
+
+
+    const result = `*NCNL Server* 
+
+
+    Nama: ${motd}
+
+
+    Status: ${status}
+
+
+    Host: ${host}
+
+
+    Port: ${port}`;
+
+
+    
+
+
+    console.log(result);
+
+
+  } catch (error) {
+
+
+    console.log('Terjadi kesalahan:', error);
+
+
+  }
+
+
+}
+
+
+getServerStatus();
+
+
+
+
+
+
+
+
+Kode ini menggunakan library `node-fetch` untuk melakukan permintaan HTTP GET ke API `https://api.mcstatus.io/v2/status/bedrock/play.emperials.net`. Fungsi `getServerStatus` akan mengambil status server dari API tersebut dan mencetaknya ke konsol dalam format yang diinginkan. Jika terjadi kesalahan dalam permintaan, pesan kesalahan akan dicetak ke konsol.
+
+    
 conn.sendMessage(m.chat, {
 text: tegs,
 contextInfo: {
