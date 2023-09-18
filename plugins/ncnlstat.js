@@ -22,7 +22,6 @@ m.reply(wait)
     
   try {
 
-
     let sevre = await fetch('https://api.mcstatus.io/v2/status/bedrock/play.emperials.net')
 
     const data = await sevre.json()
@@ -38,7 +37,6 @@ m.reply(wait)
     Host: ${host}
     Port: ${port}`
 
-    console.log(result)
   } catch (error) {
     console.log('Terjadi kesalahan:', error)
   }
