@@ -23,7 +23,7 @@ try {
     Status: ${statu.online}
     Host: ${statu.host}
     Port: ${statu.port}
-    Versoon: ${versinya.name}
+    Version: ${versinya.name}
     `
 conn.sendMessage(m.chat, {
 text: tegs,
@@ -37,9 +37,6 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
 }}})
-//let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
-	    
-//conn.sendFile(m.chat, statu.data, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
 
 	}
 	catch {
