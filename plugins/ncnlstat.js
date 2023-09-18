@@ -8,11 +8,14 @@ m.reply(wait)
 //code area
 try {
     let ncnlstat = await conn.getFile(`https://api.mcstatus.io/v2/status/bedrock/de-1.retslav.nl:29427`)
-    let statu = ncnlstats.json()
+    let statu = await ncnlstats.json()
+    
+    
     
 //let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
 	    
-conn.sendFile(m.chat, animdif.data, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
+//conn.sendFile(m.chat, statu.data, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
+
 	}
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
