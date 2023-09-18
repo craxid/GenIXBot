@@ -20,7 +20,7 @@ try {
     `
     
 conn.sendMessage(m.chat, {
-text: result,
+text: tegs,
 contextInfo: {
 externalAdReply: {
 title: (`NCNL Stalker`),
