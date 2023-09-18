@@ -12,7 +12,7 @@ let sevre = await ncnlstat.json()
 let tegs = `
 ${global.htki} *GenIX Server* ${global.htka}
 ${global.gz} *📅 Version:* ${sevre.version.name}
-${global.gz} *MOTD:* ${sevre.motd.clean.replace(/^GenIX(S1)/, '')}
+${global.gz} *MOTD:* ${sevre.motd.clean.replace(/^GenIX S1)/, '')}
 ${global.gz} *Game Mode:* ${sevre.gamemode}
 ${global.gz} *Player:* ${sevre.players.online}
 ${global.gz} *Max Player:* ${sevre.players.max}
