@@ -1,7 +1,7 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
-	
+let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 if (!text) throw `✳️ NCNL Status`
 m.reply(wait)
 
@@ -23,7 +23,7 @@ contextInfo: {
 externalAdReply: {
 title: (`NCNL Stalker`),
 body: ('Status Server'),
-thumbnailUrl: mikapp,
+thumbnailUrl: m,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
