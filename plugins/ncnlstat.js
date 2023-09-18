@@ -10,7 +10,7 @@ try {
     let ncnlstat = await conn.getFile(`https://api.mcstatus.io/v2/status/bedrock/de-1.retslav.nl:29427`)
     let statu = await ncnlstats.json()
     
-    
+    let tegs = ``
     
 //let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
 	    
