@@ -12,13 +12,14 @@ try {
     let tegs = `
 ${global.htki} *NCNL Server* ${global.htka}
     
-${global.gz}MOTD: ${sevre.motd.raw}
+${global.gz}MOTD: ${sevre.motd.clean}
 ${global.gz}Mode: ${sevre.gamemode}
 ${global.gz}Player Online: ${sevre.players.online}
-${global.gz}Makx Player: ${sevre.players.max}
+${global.gz}Max Player: ${sevre.players.max}
 ${global.gz}Online: ${sevre.online}
 ${global.gz}Host: ${sevre.host}
 ${global.gz}Port: ${sevre.port}
+
 ${global.sb}
     `
     
