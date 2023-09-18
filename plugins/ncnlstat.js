@@ -30,7 +30,8 @@ m.reply(wait)
     const status = data.online
     const host = data.host
     const port = data.port
-    const result = `*NCNL Server* 
+    
+    let result = `*NCNL Server* 
 
     Nama: ${motd}
     Status: ${status}
@@ -44,7 +45,7 @@ m.reply(wait)
 }
     
 conn.sendMessage(m.chat, {
-text: tegs,
+text: result,
 contextInfo: {
 externalAdReply: {
 title: (`NCNL Stalker`),
