@@ -1,6 +1,6 @@
 
 <p align="center"> 
-<img src="https://genix.eu.org/akebi.jpg" />
+<img src="https://telegra.ph/file/bd044275940ed1b62efcd.jpg" />
 <p/>
 <p align="center">
 <a href="https://github.com/CraXID"><img title="Author" src="https://img.shields.io/badge/CraXID Bot-black?style=for-the-badge&logo=whatsApp"></a>
@@ -9,7 +9,7 @@
 <a href="https://github.com/CraXID?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/CraXID?label=Followers&style=social"></a>
 <a href="https://github.com/CraXID/genixbot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/CraXID/genixbot?&style=social"></a>
 <a href="https://github.com/CraXID/genixbot/network/members"><img title="Fork" src="https://img.shields.io/github/forks/CraXID/genixbot?style=social"></a>
-<a href="https://github.com/CraXID/genixbot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/CraXID/dylux-fg?label=Watching&style=social"></a>
+<a href="https://github.com/CraXID/genixbot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/CraXID/genixbot?label=Watching&style=social"></a>
 </p>
 
 
