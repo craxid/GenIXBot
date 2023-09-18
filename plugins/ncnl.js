@@ -50,8 +50,8 @@ renderLargerThumbnail: false
 }
 handler.help = ['server']
 handler.tags = ['tools']
-handler.command = ['server','ncnl']
+handler.customPrefix = /^ncnl|server$/i
+handler.command = new RegExp
 handler.premium = false
-handler.diamond = false
 
 export default handler
