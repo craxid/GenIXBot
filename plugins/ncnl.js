@@ -6,7 +6,7 @@ let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 // start kode
 
 let ncnl = `
-NCNL: Network
+NCNL Network
 
 Info server
 IP/Host: play.ncnl.eu.org
@@ -16,7 +16,7 @@ Versi: Versi terbaru (liat di play store)
 Link Server (nambahin IP+Port otomatis)
 https://ncnl.eu.org/
 
-Server NCNL: Terraria
+Server NCNL Terraria
 IP: terraria.ncnl.eu.org
 Port: 2570
 
@@ -35,7 +35,7 @@ conn.sendMessage(m.chat, {
 text: ncnl,
 contextInfo: {
 externalAdReply: {
-title: (`NCNL: Network`),
+title: (`NCNL Network`),
 body: ('KLIK DISINI UNTUK LOGIN'),
 thumbnailUrl: thumb,
 sourceUrl: ('https://ncnl.eu.org/'),
