@@ -14,7 +14,7 @@ try {
     
     MOTD: ${sevre.motd.clean}
     
-    Mode: ${sevre.}
+    Mode: ${sevre.gamemode}
     Player Online: ${sevre.players.online}
     Makx Player: ${sevre.players.max}
     
