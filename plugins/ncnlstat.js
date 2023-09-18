@@ -35,13 +35,7 @@ m.reply(wait)
     Nama: ${motd}
     Status: ${status}
     Host: ${host}
-
-
     Port: ${port}`;
-
-
-    
-
 
     console.log(result);
 
