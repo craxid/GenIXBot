@@ -12,7 +12,7 @@ let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.ncnl.eu.org:
 let sevre = await ncnlstat.json()
     
 let tegs = `
-${global.htki} *GenIX Server* ${global.htka}
+${global.htki} *NCNL Server* ${global.htka}
 ${global.gz} *Version:* ${sevre.protocol.name}
 ${global.gz} *MOTD:* ${sevre.motd.clean}
 ${global.gz} *World Name:* ${sevre.map.clean}
