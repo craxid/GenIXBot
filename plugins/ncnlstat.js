@@ -8,7 +8,8 @@ m.reply(wait)
 try {
     let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.emperials.net`)
     let statu = await ncnlstat.json()
-    let pler = await statu.json()
+    let pler = await ncnlstat.json()
+    let player1 = await 
     let versi = await ncnlstat.json()
     let versinya = await versi.json()
     
