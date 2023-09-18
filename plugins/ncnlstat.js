@@ -10,7 +10,7 @@ let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.genix
 let sevre = await ncnlstat.json()
     
 let tegs = `
-${global.htki} *Zybra Server* ${global.htka}
+${global.htki} *GenIX Server* ${global.htka}
 ${global.gz} *Version:* ${sevre.version.name}
 ${global.gz} *MOTD:* ${sevre.motd.clean}
 ${global.gz} *Game Mode:* ${sevre.gamemode}
@@ -32,7 +32,7 @@ externalAdReply: {
 title: (`Server Stalker`),
 body: ('Status Server'),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=ZYBRA Network|play.zybra.eu.org:29427'),
+sourceUrl: ('minecraft://?addExternalServer=GenIX Network|play.genix.eu.org:29427'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
