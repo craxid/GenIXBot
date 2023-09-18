@@ -9,9 +9,9 @@ try {
     let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.emperials.net`)
     let statu = await ncnlstat.json()
     let pler = await ncnlstat.json()
-    let player1 = await pler.json()
+    let player1 = await pler.players.json()
     let versi = await ncnlstat.json()
-    let versinya = await versi.json()
+    let versinya = await versi.version.json()
     
     let tegs = `
     *NCNL Server*
