@@ -9,7 +9,7 @@ try {
     let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.emperials.net`)
     let statu = await ncnlstat.json()
     let pler = await ncnlstat.json()
-    let player1 = await 
+    let player1 = await pler.json()
     let versi = await ncnlstat.json()
     let versinya = await versi.json()
     
@@ -18,7 +18,7 @@ try {
     
     Name: ${statu.name_raw}
     Player Online: ${pler.online}
-    Player Max: ${pler.max}
+    Player Max: ${player1.max}
     
     Status: ${statu.online}
     Host: ${statu.host}
