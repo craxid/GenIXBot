@@ -14,7 +14,7 @@ try {
     let tegs = `
     *NCNL Server*
     
-    Name: ${motd.raw}
+    Name: ${motd.clean}
     Status: ${data.online}
     Host: ${data.host}
     Port: ${data.port}
