@@ -6,7 +6,7 @@ m.reply(wait)
 
 
 try {
-    let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.ncnl.eu.org:17810`)
+let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.ncnl.eu.org:17810`)
 let sevre = await ncnlstat.json()
     
 let tegs = `
