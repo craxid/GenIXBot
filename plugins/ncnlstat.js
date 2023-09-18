@@ -9,7 +9,7 @@ try {
     let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.emperials.net`)
     let sevre = await ncnlstat.json()
     
-    let tegs = `
+if let tegs = `
 ${global.htki} *NCNL Server* ${global.htka}
 ${global.gz} *Version:* ${sevre.version.name}
 ${global.gz} *MOTD:* ${sevre.motd.clean}
