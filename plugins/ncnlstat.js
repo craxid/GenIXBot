@@ -5,9 +5,9 @@ let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 m.reply(wait)
 
 //code area
-/*try {
+try {
     let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.emperials.net`)
-    let statu = await ncnlstat.json()
+    let data = await ncnlstat.json()
     
     let motd = await statu.json()
     
@@ -18,29 +18,7 @@ m.reply(wait)
     Status: ${statu.online}
     Host: ${statu.host}
     Port: ${statu.port}
-    `*/
-    
-  try {
-
-    let sevre = await fetch('https://api.mcstatus.io/v2/status/bedrock/play.emperials.net')
-
-    let data = await sevre.json()
-    let motd = data.motd.raw()
-    let status = data.online()
-    let host = data.host()
-    let port = data.port()
-    
-    let result = `*NCNL Server* 
-
-    Nama: ${motd}
-    Status: ${status}
-    Host: ${host}
-    Port: ${port}`
-
-  } catch (error) {
-    console.log('Terjadi kesalahan:', error)
-  }
-}
+    `
     
 conn.sendMessage(m.chat, {
 text: result,
