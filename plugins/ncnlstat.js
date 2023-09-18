@@ -18,7 +18,7 @@ ${global.gz} *Player:* ${sevre.players.online}
 ${global.gz} *Max Player:* ${sevre.players.max}
 ${global.gz} *Online:* ${sevre.online}
 
-${global.htki} 
+${global.htki} *HOST & PORT* ${global.htka}
 ${global.gz} *Host:* ${sevre.host}
 ${global.gz} *Port:* ${sevre.port}
 ${global.sb}
