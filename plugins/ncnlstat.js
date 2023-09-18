@@ -23,23 +23,23 @@ m.reply(wait)
   try {
 
 
-    const response = await fetch('https://api.mcstatus.io/v2/status/bedrock/play.emperials.net');
+    const response = await fetch('https://api.mcstatus.io/v2/status/bedrock/play.emperials.net')
 
-    const data = await response.json();
-    const motd = data.motd.raw;
-    const status = data.online;
-    const host = data.host;
-    const port = data.port;
+    const data = await response.json()
+    const motd = data.motd.raw
+    const status = data.online
+    const host = data.host
+    const port = data.port
     const result = `*NCNL Server* 
 
     Nama: ${motd}
     Status: ${status}
     Host: ${host}
-    Port: ${port}`;
+    Port: ${port}`
 
-    console.log(result);
+    console.log(result)
   } catch (error) {
-    console.log('Terjadi kesalahan:', error);
+    console.log('Terjadi kesalahan:', error)
   }
 }
     
