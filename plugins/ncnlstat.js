@@ -7,9 +7,9 @@ m.reply(wait)
 //code area
 try {
     let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.ncnl.eu.org:17810`)
-    let sevre = await ncnlstat.json()
+if (!ncnlstat.true) let sevre = await ncnlstat.json()
     
-if (!ncnlstat.true) let tegs = `
+let tegs = `
 ${global.htki} *NCNL Server* ${global.htka}
 ${global.gz} *Version:* ${sevre.version.name}
 ${global.gz} *MOTD:* ${sevre.motd.clean}
