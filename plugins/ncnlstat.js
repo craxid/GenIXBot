@@ -12,7 +12,7 @@ let fersi = await sevre.json()
     
 let tegs = `
 ${global.htki} *GenIX Server* ${global.htka}
-${global.gz} *Version:* ${fersi.version.name}
+${global.gz} *Version:* ${fersi.protocol.name}
 ${global.gz} *MOTD:* ${sevre.motd.clean}
 ${global.gz} *Game Mode:* ${sevre.gamemode}
 ${global.gz} *Player:* ${sevre.players.online}
