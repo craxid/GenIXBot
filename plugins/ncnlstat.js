@@ -23,8 +23,8 @@ contextInfo: {
 externalAdReply: {
 title: (`NCNL Stalker`),
 body: ('Status Server'),
-thumbnailUrl: m,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
+thumbnailUrl: thumb,
+sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|NCNL_Legacy.aternos.me:40383'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
