@@ -53,5 +53,3 @@ handler.premium = false
 handler.diamond = false
 
 export default handler
-
-/*let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)*/
