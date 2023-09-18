@@ -13,8 +13,6 @@ IP/Host: ncnl_legacy.aternos.me
 Port: 40383
 Versi: Versi terbaru (liat di play store)
 
-Link Server (males update)
-https://ncnl.eu.org/
 
 Server NCNL Terraria
 IP: terraria.ncnl.eu.org
