@@ -10,7 +10,7 @@ try {
     let sevre = await ncnlstat.json()
     
     let tegs = `
-${global.htka} *NCNL Server* ${global.htki}
+${global.htki} *NCNL Server* ${global.htka}
     
 ${global.gz}MOTD: ${sevre.motd.raw}
 ${global.gz}Mode: ${sevre.gamemode}
