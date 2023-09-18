@@ -9,8 +9,8 @@ let ncnl = `
 NCNL Network
 
 Info server
-IP/Host: play.ncnl.eu.org
-Port: 17810
+IP/Host: ncnl_legacy.aternos.me
+Port: 40383
 Versi: Versi terbaru (liat di play store)
 
 Link Server (nambahin IP+Port otomatis)
