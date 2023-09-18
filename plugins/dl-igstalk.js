@@ -23,7 +23,7 @@ externalAdReply: {
 title: ('Instagram Stalker'),
 body: (`${res.username}`),
 thumbnailUrl: (`${res.profilePic}`),
-sourceUrl: (`https://instagram.com/${res.username}`),
+sourceUrl: (`https://www.instagram.com/${res.username.replace(/^@/, '')}}`),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
