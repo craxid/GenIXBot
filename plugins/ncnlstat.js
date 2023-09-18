@@ -14,7 +14,7 @@ try {
     let tegs = `
     *NCNL Server*
     
-    Name: ${statu.name_raw}
+    Name: ${motd.raw}
     Status: ${statu.online}
     Host: ${statu.host}
     Port: ${statu.port}
