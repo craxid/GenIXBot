@@ -6,11 +6,11 @@ m.reply(wait)
 
 
 try {
-let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.zybra.eu.org:DE-1.retslav.nl:29427`)
+let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.zybra.eu.org:29427`)
 let sevre = await ncnlstat.json()
     
 let tegs = `
-${global.htki} *NCNL Server* ${global.htka}
+${global.htki} *Zybra Server* ${global.htka}
 ${global.gz} *Version:* ${sevre.version.name}
 ${global.gz} *MOTD:* ${sevre.motd.clean}
 ${global.gz} *Game Mode:* ${sevre.gamemode}
@@ -32,7 +32,7 @@ externalAdReply: {
 title: (`NCNL Stalker`),
 body: ('Status Server'),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|NCNL_Legacy.aternos.me:40383'),
+sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|DE-1.retslav:29427'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
