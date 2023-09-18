@@ -48,9 +48,9 @@ renderLargerThumbnail: false
 //end
 
 }
-handler.help = ['mcstalk']
+handler.help = ['server']
 handler.tags = ['tools']
-handler.command = ['mcstalk']
+handler.command = ['server','ncnl']
 handler.premium = false
 handler.diamond = false
 
