@@ -14,7 +14,7 @@ Port: 40383
 Versi: Versi terbaru (liat di play store)
 
 Link Server (males update)
-https://ncnl.eu.org/
+```https://ncnl.eu.org/```
 
 Server NCNL Terraria
 IP: terraria.ncnl.eu.org
