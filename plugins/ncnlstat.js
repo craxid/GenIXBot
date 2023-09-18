@@ -14,7 +14,9 @@ try {
     *NCNL Server*
     
     Name: ${statu.name_raw}
-    Player Online: ${statu.online}
+    Player Online: ${pler.online}
+    Player Max: ${pler.max}
+    
     Status: ${statu.online}
     Host: ${statu.host}
     Port: ${statu.port}
