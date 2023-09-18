@@ -36,9 +36,9 @@ renderLargerThumbnail: false
 }}})
 
 	}
-	/*catch {
+	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
-	}*/
+	}
 //end
 
 }
