@@ -14,7 +14,7 @@ try {
     *NCNL Server*
     
     Status: ${statu.online}
-    Host:
+    Host: ${statu.host}
     Port: ${statu.port}
     
     
