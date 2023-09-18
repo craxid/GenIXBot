@@ -17,7 +17,18 @@ try {
     Host: ${statu.host}
     Port: ${statu.port}
     `
-    conn.senMessage
+if (teks) return conn.sendMessage(m.chat, {
+text: mika,
+contextInfo: {
+externalAdReply: {
+title: (`${username}`),
+body: ('Aku Online Kak!'),
+thumbnailUrl: mikapp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})
 //let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
 	    
 //conn.sendFile(m.chat, statu.data, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
