@@ -11,7 +11,6 @@ try {
     
     let tegs = `
 ${global.htki} *NCNL Server* ${global.htka}
-    
 ${global.gz}*MOTD:* ${sevre.motd.clean}
 ${global.gz}*Mode:* ${sevre.gamemode}
 ${global.gz}*Player Online:* ${sevre.players.online}
