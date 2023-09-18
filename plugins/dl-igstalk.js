@@ -20,8 +20,8 @@ if (teks) return conn.sendMessage(m.chat, {
 text: teks,
 contextInfo: {
 externalAdReply: {
-title: (``),
-body: (''),
+title: ('Instagram Stalker'),
+body: (`${res.usernam}`),
 thumbnailUrl: mikapp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
