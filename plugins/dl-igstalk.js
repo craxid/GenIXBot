@@ -23,10 +23,10 @@ externalAdReply: {
 title: ('Instagram Stalker'),
 body: (`${res.username}`),
 thumbnailUrl: (`${res.profilePic}`),
-sourceUrl: ('https://www.facebook.com/dede2015k'),
+sourceUrl: ('`${res.res.username}`),
 mediaType: 1,
 showAdAttribution: true,
-renderLargerThumbnail: true
+renderLargerThumbnail: false
 }}})
      //await conn.sendFile(m.chat, res.profilePic, 'igstalk.png', teks, m)
       } catch {
