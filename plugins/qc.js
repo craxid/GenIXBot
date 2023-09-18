@@ -1,5 +1,5 @@
-let { sticker } = require('../lib/sticker.js')
-let axios = require('axios')
+import { sticker } from '../lib/sticker.js'
+import axios from 'axios'
 
 let handler = async (m, { conn, args }) => {
 let text
