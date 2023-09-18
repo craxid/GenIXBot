@@ -43,7 +43,7 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-		m.reply(`❎ Server sedang offline`)
+		m.reply(`❎ Server sedang offline\nncnl_legacy.aternos.org:40383`)
 	}
 //end
 
