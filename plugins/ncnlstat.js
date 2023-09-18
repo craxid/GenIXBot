@@ -7,16 +7,16 @@ m.reply(wait)
 //code area
 try {
     let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.emperials.net`)
-    let data = await ncnlstat.json()
+    let sevre = await ncnlstat.json()
     
-    let motd = await data.json()
+    let motd = await sevre.json()
     
     let tegs = `
     *NCNL Server*
     
-    Status: ${data.online}
-    Host: ${data.host}
-    Port: ${data.port}
+    Status: ${sevre.online}
+    Host: ${sevre.host}
+    Port: ${sevre.port}
     `
     
 conn.sendMessage(m.chat, {
