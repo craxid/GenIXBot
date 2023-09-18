@@ -4,10 +4,10 @@ let handler = async (m, { conn, text }) => {
 let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 m.reply(wait)
 
-//code area
+
 try {
     let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.ncnl.eu.org:17810`)
-if (!ncnlstat.200) let sevre = await ncnlstat.json()
+if let sevre = await ncnlstat.json()
     
 let tegs = `
 ${global.htki} *NCNL Server* ${global.htka}
