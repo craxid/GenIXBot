@@ -9,15 +9,15 @@ try {
     let ncnlstat = await fetch(`https://api.mcstatus.io/v2/status/bedrock/play.emperials.net`)
     let data = await ncnlstat.json()
     
-    let motd = await statu.json()
+    let motd = await data.json()
     
     let tegs = `
     *NCNL Server*
     
     Name: ${motd.raw}
-    Status: ${statu.online}
-    Host: ${statu.host}
-    Port: ${statu.port}
+    Status: ${data.online}
+    Host: ${data.host}
+    Port: ${data.port}
     `
     
 conn.sendMessage(m.chat, {
