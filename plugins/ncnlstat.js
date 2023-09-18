@@ -13,7 +13,7 @@ let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org
 //if (!online) throw fetch('https://api.mcsrvstat.us/bedrock/simple/play.genix.eu.org:29427')
 
 let sevre = await ncnlstat.json()
-if (!offline) throw `Ups server sedang offline!`
+if (!sevre) throw `Ups server sedang offline!`
     
 let tegs = `
 ${global.htki} *GenIX Server* ${global.htka}
