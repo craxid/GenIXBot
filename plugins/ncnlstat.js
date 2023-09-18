@@ -10,7 +10,7 @@ try {
     let statu = await ncnlstat.json()
     let pler = await statu.json()
     let versi = await ncnlstat.json()
-    let versinya = await versi.json
+    let versinya = await versi.json()
     
     let tegs = `
     *NCNL Server*
@@ -22,7 +22,7 @@ try {
     Status: ${statu.online}
     Host: ${statu.host}
     Port: ${statu.port}
-    Versoon: ${versi.version.name}
+    Versoon: ${versinya.name}
     `
 conn.sendMessage(m.chat, {
 text: tegs,
