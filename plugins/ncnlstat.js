@@ -34,7 +34,7 @@ contextInfo: {
 externalAdReply: {
 title: (`Server Stalker`),
 body: ('Status Server'),
-thumbnailUrl: kace,
+thumbnailUrl: thumb,
 sourceUrl: ('minecraft://?addExternalServer=GenIX Network|play.genix.eu.org:29427'),
 mediaType: 1,
 showAdAttribution: true,
