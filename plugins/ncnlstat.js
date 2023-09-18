@@ -10,13 +10,12 @@ try {
     let sevre = await ncnlstat.json()
     
     let tegs = `
-    *NCNL Server*
+${global.htka}*NCNL Server*
     
-    ${global.htka}MOTD: ${sevre.motd.clean}${global.htki}
-    
-    Mode: ${sevre.gamemode}
-    Player Online: ${sevre.players.online}
-    Makx Player: ${sevre.players.max}
+MOTD: ${sevre.motd.clean}
+Mode: ${sevre.gamemode}
+Player Online: ${sevre.players.online}
+Makx Player: ${sevre.players.max}
     
     Online: ${sevre.online}
     Host: ${sevre.host}
