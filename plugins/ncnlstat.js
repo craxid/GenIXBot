@@ -11,6 +11,9 @@ try {
     let statu = await ncnlstats.json()
     
     let tegs = `
+    *NCNL Server*
+    
+    Status 
     
     `
     
