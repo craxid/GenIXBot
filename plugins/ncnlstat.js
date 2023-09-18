@@ -17,7 +17,7 @@ try {
     *NCNL Server*
     
     Name: ${statu.name_raw}
-    Player Online: ${pler.online}
+    Player Online: ${player1.online}
     Player Max: ${player1.max}
     
     Status: ${statu.online}
