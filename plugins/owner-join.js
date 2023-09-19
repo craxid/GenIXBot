@@ -35,7 +35,7 @@ let handler = async (m, { conn, text, usedPrefix, command, args, participants, i
      }).then(async () => {
      await delay(7000)
      }).then( async () => {
-     await conn.reply(res, `Oke semuanya santai 🤭`, 0)
+     await conn.reply(res, `Makasih udah ngundang aku 🥰`, 0)
      await conn.reply(global.owner[1]+'@s.whatsapp.net', `≡ *UNDANGAN GRUP*\n\n@${m.sender.split('@')[0]} mengundang *${conn.user.name}* ke grup\n\n*${await conn.getName(res)}*\n\n*ID* : ${res}\n\n📌 Link : ${args[0]}\n\nBot akan keluar secara otomatis setelah \n\n${msToDate(global.db.data.chats[res].expired - now)}`, null, {mentions: [m.sender]})
      })
      if (!e.length) await conn.reply(global.owner[1]+'@s.whatsapp.net', `≡ *UNDANGAN GRUP*\n\n@${m.sender.split('@')[0]} mengundang *${conn.user.name}* di grup\n\n*${await conn.getName(res)}*\n\n*ID* : ${res}\n\n📌 Link : ${args[0]}\n\nBot akan keluar secara otomatis setelah\n\n ${msToDate(global.db.data.chats[res].expired - now)}`, null, {mentions: [m.sender]})
