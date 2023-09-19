@@ -48,8 +48,7 @@ renderLargerThumbnail: false
 //end
 
 }
-handler.help = ['server']
-handler.customPrefix = /^ncnl|server$/i
-handler.command = new RegExp
+handler.help = ['mcstalk']
+handler.command = /^ncnl|server$/i
 
 export default handler
