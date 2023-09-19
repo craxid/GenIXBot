@@ -1,32 +1,30 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
-
+let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 await m.reply(wait)
 
 try {
-let ncnlstat = await fetch(`https://mcapi.us/server/status?ip=play.genix.eu.org&port=29427`)
-
+let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org:29427`)
 let sevre = await ncnlstat.json()
-let thumb = `${sevre.favicon}`
 
 let tegs = `
 ${global.htki} *NCNL Server* ${global.htka}
 ${global.gz} *Version:* ${sevre.version}
-${global.gz} *Server Nams:* ${sevre.server.name}
+${global.gz} *MOTD:* ${sevre.motd.clean}
 ${global.gz} *World Name:* ${sevre.map.clean}
 ${global.gz} *Game Mode:* ${sevre.gamemode}
-${global.gz} *Player:* ${sevre.players.now}/${sevre.players.max}
+${global.gz} *Player:* ${sevre.players.online}/${sevre.players.max}
 ${global.gz} *Online:* ${sevre.online}
 ${global.sb}
-
-${sevre.motd}
 
 ${global.htki} *HOST & PORT* ${global.htka}
 ${global.gz} *Host:* ${sevre.hostname}
 ${global.gz} *IP:* ${sevre.ip}
 ${global.gz} *Port:* ${sevre.port}
 ${global.sb}
+
+API version: ${sevre.debug.apiversion}
     `
     
 conn.sendMessage(m.chat, {
@@ -44,13 +42,14 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-		m.reply(`👾 Server sedang offline\n\nHost: play.genix.eu.org\nPort: 29427`)
+		m.reply(`👾 Server sedang offline\n\nHost: play.ncnl.eu.org\nPort: 29427`)
 	}
 //end
 
 }
-handler.help = ['mcstalk']
-handler.command = /^mcstalk$/i
+handler.help = ['server']
+handler.customPrefix = /^ncnl|server$/i
+handler.command = new RegExp
 handler.group = true
 
 export default handler
