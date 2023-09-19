@@ -160,7 +160,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     let username = conn.getName(who)
     
-if (text) async conn.sendMessage(m.chat, {
+if (text) return conn.sendMessage(m.chat, {
 text: text,
 contextInfo: {
 externalAdReply: {
