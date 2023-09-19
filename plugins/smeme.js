@@ -8,6 +8,8 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   let q = m.quoted ? m.quoted : m
   let mime = (q.msg || q).mimetype || ''
   if (!mime) throw 'Tidak ada foto'
+ atas = text.split('|')[0] ? text.split('|')[0] : '-'
+bawah = text.split('|')[1] ? text.split('|')[1] : '-'
   if (!/image\/(jpe?g|png)/.test(mime)) throw `Mime ${mime} tidak support`
   
   await m.reply(wait)
