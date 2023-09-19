@@ -42,7 +42,7 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-		m.reply(`👾 Server sedang offline\n\nHOST: play.ncnl.eu.org\nPORT: 40383\n${sevrr.hostname}`)
+		m.reply(`👾 Server sedang offline\n\nHOST: play.ncnl.eu.org\nPORT: 40383\n${sevre.hostname}`)
 	}
 //end
 
