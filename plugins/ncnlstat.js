@@ -25,6 +25,8 @@ ${global.htki} *HOST & PORT* ${global.htka}
 ${global.gz} *Host:* ${sevre.hostname}
 ${global.gz} *Port:* ${sevre.port}
 ${global.sb}
+
+API Version: ${sevre.debug.apiversion}
     `
     
 conn.sendMessage(m.chat, {
