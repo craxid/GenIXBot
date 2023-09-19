@@ -6,11 +6,11 @@ await m.reply(wait)
 
 try {
 let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org:29427`)
+
 let sevre = await ncnlstat.json()
 
-
 let tegs = `
-${global.htki} *GenIX Server* ${global.htka}
+${global.htki} *NCNL Server* ${global.htka}
 ${global.gz} *Version:* ${sevre.version}
 ${global.gz} *MOTD:* ${sevre.motd.clean}
 ${global.gz} *World Name:* ${sevre.map.clean}
@@ -27,6 +27,7 @@ ${global.sb}
 
 API Version: ${sevre.debug.apiversion}
     `
+    
 conn.sendMessage(m.chat, {
 text: tegs,
 contextInfo: {
@@ -34,7 +35,7 @@ externalAdReply: {
 title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
-sourceUrl: (`minecraft://?addExternalServer=GenIX Server|play.genix.eu.org:29427`),
+sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.gen.eu.org:29427'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
@@ -42,12 +43,13 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-		m.reply(`👾 Server sedang offline`)
+		m.reply(`👾 Server sedang offline\n\nHost: play.ncnl.eu.org\nPort: 29427`)
 	}
 //end
 
 }
-handler.help = ['mcstalk']
-handler.command = ['mcstalk']
+handler.help = ['server']
+handler.customPrefix = /^ncnl|server$/i
+handler.command = new RegExp
 
 export default handler
