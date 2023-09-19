@@ -35,7 +35,7 @@ externalAdReply: {
 title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.gen.eu.org:29427'),
+sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.genix.eu.org:29427'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
@@ -43,7 +43,7 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-		m.reply(`👾 Server sedang offline\n\nHost: play.ncnl.eu.org\nPort: 29427`)
+		m.reply(`👾 Server sedang offline\n\nHost: play.genix.eu.org\nPort: 29427`)
 	}
 //end
 
