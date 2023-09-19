@@ -28,6 +28,7 @@ ${global.gz} *Port:* ${sevre.port}
 ${global.sb}
 
 API Version: ${sevre.debug.apiversion}
+Cache: ${sevre.debug.cacheexpire}
     `
     
 conn.sendMessage(m.chat, {
