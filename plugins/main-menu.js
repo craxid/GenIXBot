@@ -166,7 +166,7 @@ contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: (`${username}`),
-thumbnailUrl: pp,
+thumbnailUrl: ${global.hwaifu,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
