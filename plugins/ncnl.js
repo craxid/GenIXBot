@@ -50,5 +50,6 @@ renderLargerThumbnail: false
 handler.help = ['server']
 handler.customPrefix = /^ncnl|server$/i
 handler.command = new RegExp
+handler.group = true
 
 export default handler
