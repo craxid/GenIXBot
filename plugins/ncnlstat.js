@@ -8,6 +8,7 @@ let kace = 'https://api.mcsrvstat.us/icon/play.genix.eu.org:29427'
 try {
 
 let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org:29427`)
+let pingsrv = await fetch(https://api.mcsrvstat.us/bedrock/simple/)
 m.reply(wait)
 let sevre = await ncnlstat.json()
     
