@@ -49,6 +49,6 @@ renderLargerThumbnail: false
 
 }
 handler.help = ['mcstalk']
-handler.command = /^ncnl|server$/i
+handler.command = /^mcstalk$/i
 
 export default handler
