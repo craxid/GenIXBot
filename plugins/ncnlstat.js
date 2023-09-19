@@ -1,13 +1,14 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
-let thumb = `${sevre.favicon}`
+
 await m.reply(wait)
 
 try {
 let ncnlstat = await fetch(`https://mcapi.us/server/status?ip=play.ncnl.eu.org&port=40383`)
 
 let sevre = await ncnlstat.json()
+let thumb = `${sevre.favicon}`
 
 let tegs = `
 ${global.htki} *NCNL Server* ${global.htka}
