@@ -38,6 +38,7 @@ global.APIKeys = { // APIKey Here
 global.packname = 'Mika Bot'
 global.namebot = 'Mika Misono Bot'
 global.pesanbot = 'Jangan spam Bot'
+global.deka ='6285892734104'
 global.author = '+62 831-5593-6234' 
 global.fgig = 'https://www.instagram.com/dede_klender' 
 global.mikasampul = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
