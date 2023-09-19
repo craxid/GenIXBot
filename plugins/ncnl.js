@@ -2,15 +2,14 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
 let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
-let kace = 'https://api.mcsrvstat.us/icon/play.genix.eu.org:29427'
-m.reply(wait)
 
 
 try {
 let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.ncnl.eu.org:40383`)
 
 let sevre = await ncnlstat.json()
-    
+await m.reply(wait)
+
 let tegs = `
 ${global.htki} *NCNL Server* ${global.htka}
 ${global.gz} *Version:* ${sevre.version}
