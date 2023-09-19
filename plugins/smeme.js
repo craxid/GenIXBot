@@ -10,7 +10,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   if (!mime) throw 'Tidak ada foto'
   if (!/image\/(jpe?g|png)/.test(mime)) throw `Mime ${mime} tidak support`
   
-  await m.reply('Tunggu bentar...')
+  await m.reply(wait)
   
   let img = await q.download()
   let url = await uploadImage(img)
