@@ -19,7 +19,7 @@ conn.sendFile(m.chat, animdif.data, 'img.jpg', `*[ ANIME DIFFUSION ]*\n\nPROMPT:
 //end
 
 }
-handler.help = ['animedif <text>']
+handler.help = ['animedif (Your Prompt)']
 handler.tags = ['ai']
 handler.command = ['animedif','nimedif']
 handler.premium = false
