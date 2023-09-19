@@ -25,6 +25,5 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 handler.help = ['smeme']
 handler.tags = ['sticker']
 handler.command = /^smeme$/i
-handler.diamond = true
 
 export default handler
