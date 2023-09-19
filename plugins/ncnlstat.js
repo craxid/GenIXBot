@@ -4,11 +4,9 @@ let handler = async (m, { conn, text }) => {
 let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 
 try {
-
 let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org:29427`)
 let sevre = await ncnlstat.json()
-
-m.reply(wait)
+await m.reply(wait)
 
 let tegs = `
 ${global.htki} *GenIX Server* ${global.htka}
