@@ -47,7 +47,7 @@ Support Us!
 Ⓟ = Premium
 ⓓ = Menggunakan Diamond 
 
-
+‼️ 
 -----  -----  -----  -----  -----
   ≡ *MENU LISTS*
   `.trimStart(),
