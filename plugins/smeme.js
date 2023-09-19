@@ -18,8 +18,8 @@ case 'smeme': case 'stickmeme': case 'stikmeme': case 'stickermeme': case 'stike
 	        
 let smeme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas)}/${encodeURIComponent(bawah)}.png?background=${fatGans}`
 	 
-       
-conn.sendFile(m.chat, smeme, 'sticker.webp', '', m)
+let stiker = await sticker(null, wasted, packname, author)       
+conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
 	        await fs.unlinkSync(FaTiH)
             }
 	       break
