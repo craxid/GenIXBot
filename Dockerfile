@@ -21,12 +21,12 @@ RUN mkdir /root/kode \
 && unzip sesiakebi.zip \
 && rm -rf session/sender-key* \
 && rm -rf session/session* \
-&& chmod +x /root/kode/indeks.sh \
 && npm i -g pm2
 
 COPY package.json .
 
 COPY . /root/kode/
+RUN chmod +x /root/kode/indeks.sh 
 
 RUN npm install -g npm@latest
 RUN npm i
