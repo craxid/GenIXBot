@@ -31,7 +31,7 @@ conn.sendMessage(m.chat, {
 text: tegs,
 contextInfo: {
 externalAdReply: {
-title: (`Server Stalke`),
+title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
 sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.ncnl.eu.org:40383'),
