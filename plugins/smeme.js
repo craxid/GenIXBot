@@ -22,7 +22,7 @@ bawah = text.split('|')[1] ? text.split('|')[1] : '-'
 	
 let smeme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas)}/${encodeURIComponent(bawah)}.png?background=${fatGans}`
 	 
-let stiker = await sticker(null, wasted, packname, author)       
+let stiker = await sticker(null, smeme, packname, author)       
 conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
 	        await fs.unlinkSync(FaTiH)
             }
