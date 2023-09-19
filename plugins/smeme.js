@@ -3,7 +3,8 @@ const { sticker } from '../lib/sticker.js'
 
 let handler = async (m, { conn, text, usedPrefix }) => {
  try {
-  let [teks1 = text.split('|')[0] ? text.split('|')[0] : '-'
+  let teks1 = text.split('|')[0] ? text.split('|')[0] : '-'
+  let teks2 = text.split('|')[1] ? text.split('|')[1] : '-'
   
 //atas = text.split('|')[0] ? text.split('|')[0] : '-'
 //bawah = text.split('|')[1] ? text.split('|')[1] : '-'
