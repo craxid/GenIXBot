@@ -11,6 +11,7 @@ let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org
 let sevre = await ncnlstat.json()
 
 let pingsrv = await fetch(`https://api.mcsrvstat.us/bedrock/simple/play.genix.eu.org:29427`)
+let ngw = await pingsrv.json()
 
 m.reply(wait)
 
