@@ -16,9 +16,10 @@ case 'smeme': case 'stickmeme': case 'stikmeme': case 'stickermeme': case 'stike
 	        
 	        let fatGans = await uploadImage(img)
 	        
-	        let smeme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas)}/${encodeURIComponent(bawah)}.png?background=${fatGans}`
-	        
-	        let FaTiH = await akame.sendImageAsSticker(m.chat, smeme, fdoc, { packname: global.packname, author: global.auhor })
+let smeme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas)}/${encodeURIComponent(bawah)}.png?background=${fatGans}`
+	 
+       
+conn.sendFile(m.chat, smeme, 'sticker.webp', '', m)
 	        await fs.unlinkSync(FaTiH)
             }
 	       break
