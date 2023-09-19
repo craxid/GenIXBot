@@ -46,8 +46,6 @@ Support Us!
 *INFORMATION*
 Ⓟ = Premium
 ⓓ = Menggunakan Diamond 
-
-‼️ do not enter the < > sign when executing the command
 -----  -----  -----  -----  -----
   `.trimStart(),
   header: `▣───「 *%category* 」───▣`,
