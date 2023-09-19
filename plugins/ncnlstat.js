@@ -15,11 +15,11 @@ ${global.gz} *Version:* ${sevre.version}
 ${global.gz} *MOTD:* ${sevre.motd.clean}
 ${global.gz} *World Name:* ${sevre.map.clean}
 ${global.gz} *Game Mode:* ${sevre.gamemode}
-${global.gz} *Player:* ${sevre.players.online}/${sevre.players.max}
+${global.gz} *Player:* ${sevre.players.now}/${sevre.players.max}
 ${global.gz} *Online:* ${sevre.online}
 ${global.sb}
 
-${sevre.text}
+${sevre.motd.text}
 
 ${global.htki} *HOST & PORT* ${global.htka}
 ${global.gz} *Host:* ${sevre.hostname}
