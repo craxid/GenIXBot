@@ -23,6 +23,7 @@ ${global.sb}
 
 ${global.htki} *HOST & PORT* ${global.htka}
 ${global.gz} *Host:* ${sevre.hostname}
+${global.gz} *IP:* ${sevre.ip}
 ${global.gz} *Port:* ${sevre.port}
 ${global.sb}
 
