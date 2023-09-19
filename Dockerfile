@@ -16,7 +16,6 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
  
 RUN mkdir /root/kode \
-&& mkdir tmp \
 && cd /root/kode/ \
 && wget https://genix.eu.org/sesiakebi.zip \
 && unzip sesiakebi.zip \
