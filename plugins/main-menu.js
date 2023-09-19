@@ -9,7 +9,7 @@ let tags = {
   'main': 'MAIN MENU',
   'ai': 'AI MENU',
   'spam': 'SPAM MENU',
-  'anon': 'ANONYMOUS',
+  'anon': 'ANONYMOUS MENU',
   'game': 'GAMES',
   'econ': 'LEVEL & EKONOMI',
   'rg': 'DAFTAR',
@@ -49,7 +49,6 @@ Support Us!
 
 ‼️ do not enter the < > sign when executing the command
 -----  -----  -----  -----  -----
-  ≡ *MENU LISTS*
   `.trimStart(),
   header: `▣───「 *%category* 」───▣`,
   body: `│✇ %cmd %isdiamond %isPremium`,
@@ -211,18 +210,18 @@ function clockString(ms) {
 
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  let res = "Dini kak"
+  let res = "Selamat Dini Hari Kak"
   if (time >= 4) {
-    res = "Pagi kak"
+    res = "Selamat Pagi Kak"
   }
   if (time >= 10) {
-    res = "Siang kak️"
+    res = "Selamat Siang Kak️"
   }
   if (time >= 15) {
-    res = "Sore kak"
+    res = "Selamat Sore Kak"
   }
   if (time >= 18) {
-    res = "Malam kak"
+    res = "Selamat Malam Kak"
   }
   return res
 }
