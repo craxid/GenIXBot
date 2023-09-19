@@ -30,7 +30,7 @@ let handler = async (m, { conn, text, usedPrefix, command, args, participants, i
  
  if (e.length) await conn.reply(res, `🏮 Salam kenal semua, namaku ${global.wm2}
 
-@${global.owner} dia adalah ownerku Saya diundang oleh *${m.name}*`, m, {
+@${global.owner} dia adalah ownerku, aku diundang oleh *${m.name}*`, m, {
     mentions: d
      }).then(async () => {
      await delay(7000)
