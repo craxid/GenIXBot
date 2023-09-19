@@ -7,7 +7,8 @@ m.reply(wait)
 
 
 try {
-let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org:29427`)
+let [teks, teks2] = text.split('|')
+let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/pl${teks1/teks2}`)
 
 let sevre = await ncnlstat.json()
     
