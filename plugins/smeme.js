@@ -4,7 +4,7 @@ const { sticker } from '../lib/sticker.js'
 let handler = async (m, { conn, text, usedPrefix }) => {
  try {
   //let [teks, teks2] = text.split('|')
-let atas = text.split('|')[0] ? text.split('|')[0] : '-'
+atas = text.split('|')[0] ? text.split('|')[0] : '-'
 bawah = text.split('|')[1] ? text.split('|')[1] : '-'
   let q = m.quoted ? m.quoted : m
   let mime = (q.msg || q).mimetype || ''
