@@ -6,10 +6,9 @@ let kace = 'https://api.mcsrvstat.us/icon/play.genix.eu.org:29427'
 
 
 try {
-let [teks1, teks2] = text.split('|')
 m.reply(wait)
 
-let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/${teks1}/${teks2}`)
+let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org:29427`)
 
 let sevre = await ncnlstat.json()
     
