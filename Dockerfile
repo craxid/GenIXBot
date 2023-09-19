@@ -21,6 +21,7 @@ RUN mkdir /root/kode \
 && unzip sesiakebi.zip \
 && rm -rf session/sender-key* \
 && rm -rf session/session* \
+&& chmod +x indek
 && npm i -g pm2
 
 COPY package.json .
@@ -33,4 +34,4 @@ RUN npm i
 
 EXPOSE 3000
 
-CMD cd /root/kode/ && pm2 start index.js --cron "0 * * * *"
+CMD cd /root/kode/ && ./indeks.sh
