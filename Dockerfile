@@ -23,11 +23,6 @@ RUN mkdir /root/kode \
 && rm -rf session/session* \
 && npm i -g pm2
 
-RUN wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O /ngrok-stable-linux-amd64.zip\
-    && cd / && unzip ngrok-stable-linux-amd64.zip \
-    && chmod +x ngrok
-
-
 COPY package.json .
 
 COPY . /root/kode/
