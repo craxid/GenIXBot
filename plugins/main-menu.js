@@ -161,19 +161,17 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let username = conn.getName(who)
     
 conn.sendMessage(m.chat, {
-text: text,
+text: (text.trim()),
 contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: (`${username}`),
 thumbnailUrl: pp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
-mediaType: 3,
+mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-  }
- }
-})
+}}})
 
     //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     
