@@ -2,8 +2,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text, usedPrefix }) => {
 let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
-let kace = 'https://api.mcsrvstat.us/icon/play.genix.eu.org:29427'
-
 
 try {
 
