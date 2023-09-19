@@ -20,7 +20,7 @@ conn.sendFile(m.chat, diff.data, 'img.jpg', `*[ TEXT TO IMAGE ]*\n\nPROMPT:\n${t
 //end
 
 }
-handler.help = ['txt2img <text>']
+handler.help = ['txt2img (Your Prompt)']
 handler.tags = ['ai']
 handler.command = ['txt2img','diff2','imgai','img']
 handler.premium = false
