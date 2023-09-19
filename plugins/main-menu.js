@@ -46,6 +46,8 @@ Support Us!
 *INFORMATION*
 Ⓟ = Premium
 ⓓ = Menggunakan Diamond 
+
+‼️ do not enter the < > sign when executing the command
 -----  -----  -----  -----  -----
   `.trimStart(),
   header: `▣───「 *%category* 」───▣`,
@@ -158,12 +160,12 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     let username = conn.getName(who)
     
-conn.sendMessage(m.chat, {
+iconn.sendMessage(m.chat, {
 text: text,
 contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
-body: ${username},
+body: (`${username}`),
 thumbnailUrl: pp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 3,
