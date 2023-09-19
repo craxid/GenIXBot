@@ -159,7 +159,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let username = conn.getName(who)
     
 conn.sendMessage(m.chat, {
-text: (text.trim()),
+text: text,
 contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
