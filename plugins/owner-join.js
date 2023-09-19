@@ -28,9 +28,9 @@ let handler = async (m, { conn, text, usedPrefix, command, args, participants, i
   else global.db.data.chats[res].expired = now + nDays
   if (e.length) await m.reply(`✅ Saya berhasil bergabung kedalam grup \n\n≡ Info grup \n\n *Nama :* ${await conn.getName(res)}\n\nBot akan keluar secara otomatis setelahnya \n\n${msToDate(global.db.data.chats[res].expired - now)}`)
  
- if (e.length) await conn.reply(res, `🏮 Salam kenal semua, namaku ${global.wm2}
+ if (e.length) await conn.reply(res, `🏮 Salam kenal semua, namaku ${global.namebot}
 
-@${global.deka} dia adalah ownerku, aku diundang oleh *${m.name}*`, m, {
+@${global.deka} adalah ownerku, aku diundang oleh *${m.name}*`, m, {
     mentions: d
      }).then(async () => {
      await delay(7000)
