@@ -28,6 +28,6 @@ handler.command = /^(poll|polling)$/i
 handler.help = ['poll name\nvalue', 'polling name\nvalue1']
 handler.tags = ['tools']
 handler.register = false
-handler.limit = false
+handler.diamond = false
 
-module.exports = handler
+export default handler
