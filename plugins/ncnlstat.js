@@ -42,7 +42,7 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-		m.reply(`👾 Server sedang offline\n\nHost: play.ncnl.eu.org\nPort: 29427`)
+		m.reply(`👾 Server sedang offline\n\nHost: play.genix.eu.org\nPort: 29427`)
 	}
 //end
 
