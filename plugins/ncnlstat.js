@@ -50,5 +50,6 @@ renderLargerThumbnail: false
 }
 handler.help = ['mcstalk']
 handler.command = /^mcstalk$/i
+handler.group = true
 
 export default handler
