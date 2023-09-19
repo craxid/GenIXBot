@@ -24,11 +24,11 @@ ${global.sb}
 
 ${global.htki} *HOST & PORT* ${global.htka}
 ${global.gz} *Host:* ${sevre.hostname}
+${global.gz} *Host:* ${sevre.ip}
 ${global.gz} *Port:* ${sevre.port}
 ${global.sb}
 
 API Version: ${sevre.debug.apiversion}
-Cache: ${sevre.debug.cachetime}
     `
     
 conn.sendMessage(m.chat, {
