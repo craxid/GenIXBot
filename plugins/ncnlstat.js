@@ -28,7 +28,6 @@ ${global.sb}
 
 API Version: ${sevre.debug.apiversion}
     `
-    
 conn.sendMessage(m.chat, {
 text: tegs,
 contextInfo: {
