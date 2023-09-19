@@ -5,7 +5,7 @@ let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 await m.reply(wait)
 
 try {
-let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org:29427`)
+let ncnlstat = await fetch(`https://mcapi.us/server/status?ip=play.ncnl.eu.org&port=40383`)
 
 let sevre = await ncnlstat.json()
 
