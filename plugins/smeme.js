@@ -14,7 +14,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   if (!/image\/(jpe?g|png)/.test(mime)) throw `Mime ${mime} tidak support`
   let img = await q.download()
   let url = await uploadImage(img)
-  let wasted = `https://api.memegen.link/images/custom/${encodeURIComponent(teks1)}/${encodeURIComponent(teks2)}.png?background=${url}`
+  let wasted = `https://api.memegen.link/images/custom/${teks1}/${teks2}.png?background=${url}`
 //  let wasted = `http://docs-jojo.herokuapp.com/api/meme-gen?top=${teks}&bottom=${teks2}&img=${url}`
   let stiker = await sticker(null, wasted, packname, author)
   conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
