@@ -7,7 +7,7 @@ let kace = 'https://api.mcsrvstat.us/icon/play.genix.eu.org:29427'
 
 try {
 let [teks1, teks2] = text.split('|')
-if [!teks1,teks2] throw ️`Masukkan Nama host dan ip, pisahlan dengan |\n\nContoh: play.genix.eu.org|29427`
+if (!text) throw ️`Masukkan Nama host dan ip, pisahlan dengan |\n\nContoh: play.genix.eu.org|29427`
 
 m.reply(wait)
 
