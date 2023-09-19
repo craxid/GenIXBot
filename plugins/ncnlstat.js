@@ -10,7 +10,6 @@ try {
 let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org:29427`)
 
 let pingsrv = await fetch(`https://api.mcsrvstat.us/bedrock/simple/play.genix.eu.org:29427`)
-let pink = await pingsrv.json()
 let sevre = await ncnlstat.json()
 m.reply(wait)
 
@@ -21,7 +20,7 @@ ${global.gz} *MOTD:* ${sevre.motd.clean}
 ${global.gz} *World Name:* ${sevre.map.clean}
 ${global.gz} *Game Mode:* ${sevre.gamemode}
 ${global.gz} *Player:* ${sevre.players.online}/${sevre.players.max}
-${global.gz} *Online:* ${pink}
+${global.gz} *Online:* ${pingsrv}
 ${global.sb}
 
 ${global.htki} *HOST & PORT* ${global.htka}
