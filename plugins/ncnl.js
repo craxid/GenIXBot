@@ -26,7 +26,7 @@ ${global.gz} *Host:* ${sevre.hostname}
 ${global.gz} *Port:* ${sevre.port}
 ${global.sb}
 
-${sevre.debug.apiversion
+API Version: ${sevre.debug.apiversion}
     `
     
 conn.sendMessage(m.chat, {
