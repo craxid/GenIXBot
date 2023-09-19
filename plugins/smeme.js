@@ -15,11 +15,11 @@ case 'stikermeme': {
 	if (!/image/.test(mime)) throw respond
 if (!text) throw respond
 	  m.reply(mess.wait)
-            atas = text.split('|')[0] ? text.split('|')[0] : '-'
-            bawah = text.split('|')[1] ? text.split('|')[1] : '-'
-	        
-	        let fatGans = await uploadImage(img)
-	        
+atas = text.split('|')[0] ? text.split('|')[0] : '-'
+bawah = text.split('|')[1] ? text.split('|')[1] : '-'
+	
+	let fatGans = await uploadImage(img)
+	
 let smeme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas)}/${encodeURIComponent(bawah)}.png?background=${fatGans}`
 	 
 let stiker = await sticker(null, wasted, packname, author)       
