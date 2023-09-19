@@ -4,12 +4,13 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 let kace = 'https://api.mcsrvstat.us/icon/play.genix.eu.org:29427'
 
-if (!teks1) throw ️`Masukkan Nama host dan ip, pisahlan dengan |\n\nContoh: play.genix.eu.org|29427`
-m.reply(wait)
-
 
 try {
 let [teks1, teks2] = text.split('|')
+if (!teks1) throw ️`Masukkan Nama host dan ip, pisahlan dengan |\n\nContoh: play.genix.eu.org|29427`
+
+m.reply(wait)
+
 let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/${teks1}/${teks2}`)
 
 let sevre = await ncnlstat.json()
