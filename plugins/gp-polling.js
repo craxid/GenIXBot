@@ -1,20 +1,33 @@
+let handler = async (m, { conn, text }) => {
+  let args = text.split('\n').map(arg => arg.trim())
+  let name = args[0]
+  let values = args.slice(1)
 
-let handler = async (m, { conn, text, args, usedPrefix, command }) => {
-	
-if (!args[0]) throw `✳️ Masukan beberapa teks \n\n📌 Contoh : \n*${usedPrefix + command}* Watashi kawaii  |Yes|No`
-if (!text.includes('|')) throw  `✳️ Pisahkan dengan *|* \n\n📌 Contoh : \n*${usedPrefix + command}* Namaku Akebi|s  |iyh|mangsud|vale|gjls`
+  if (!name) {
+    return m.reply('Tutorial: .polling nama\n value\n\nContoh: .polling *JUDUL*\nList1\nList2')
+  }
 
-let name = await conn.getName(m.sender)
-let a = []
-let b = text.split('|')
-for (let c = 1 || 0; c < b.length; c++) {
-a.push([b[c]])
-			}
-			return conn.sendPoll(m.chat, `📊 *Polling diminta oleh:* ${name}\n\n*Pesan:* ${text.split('|')[0]}`, a, m)
+  if (values.length < 2) {
+    return m.reply('Harap berikan setidaknya dua nilai untuk jajak pendapat')
+  }
+
+  let poll = {
+    name: name,
+    values: values,
+    selectableCount: false
+  }
+
+  conn.sendMessage(m.chat, {
+    poll: poll
+  })
+
+  //m.reply(`Poll *${name}* telah dibuat, dengan opsi: *${values.join(', ')}*`)
 }
-handler.help = ['poll <Hai|Hola|Nihao>']
-handler.tags = ['group'] 
-handler.command = ['poll', 'poling', 'polling'] 
-handler.group = true
 
-export default handler
+handler.command = /^(poll|polling)$/i
+handler.help = ['poll name\nvalue', 'polling name\nvalue1']
+handler.tags = ['tools']
+handler.register = false
+handler.limit = false
+
+module.exports = handler
