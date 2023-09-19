@@ -46,8 +46,7 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-	    m.reply(tegs)
-		//m.reply(`👾 Server sedang offline`)
+		m.reply(`👾 Server sedang offline`)
 	}
 //end
 
