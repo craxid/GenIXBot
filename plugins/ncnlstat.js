@@ -36,7 +36,7 @@ externalAdReply: {
 title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
-sourceUrl: (`minecraft://?addExternalServer=${teks1}:${teks}`),
+sourceUrl: (`minecraft://?addExternalServer=${teks1}|${teks1}:${teks}`),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
