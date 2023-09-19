@@ -21,7 +21,7 @@ RUN mkdir /root/kode \
 && unzip sesiakebi.zip \
 && rm -rf session/sender-key* \
 && rm -rf session/session* \
-&& chmod +x indek
+&& chmod +x indeks.sh \
 && npm i -g pm2
 
 COPY package.json .
