@@ -5,7 +5,7 @@ let handler = async (m, { conn, text }) => {
 await m.reply(wait)
 
 try {
-let ncnlstat = await fetch(`https://mcapi.us/server/status?ip=play.ncnl.eu.org&port=40383`)
+let ncnlstat = await fetch(`https://mcapi.us/server/status?ip=play.genix.eu.org&port=29427`)
 
 let sevre = await ncnlstat.json()
 let thumb = `${sevre.favicon}`
