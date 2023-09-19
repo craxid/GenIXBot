@@ -20,7 +20,7 @@ ${global.gz} *Player:* ${sevre.players.now}/${sevre.players.max}
 ${global.gz} *Online:* ${sevre.online}
 ${global.sb}
 
-${sevre.motd.text}
+${sevre.motd}
 
 ${global.htki} *HOST & PORT* ${global.htka}
 ${global.gz} *Host:* ${sevre.hostname}
