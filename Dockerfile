@@ -9,6 +9,7 @@ RUN apt-get update && \
   python3 \
   neofetch \
   net-tools \
+  speedtest-cli \
   imagemagick \
   webp && \
   apt-get upgrade -y && \
@@ -45,4 +46,4 @@ RUN npm i
 
 EXPOSE 3000
 
-CMD cd /root/kode/ && node index.js
+CMD cd /root/kode/ && pm2 start index.js --
