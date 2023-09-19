@@ -11,9 +11,9 @@ let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org
 
 let pingsrv = await fetch(`https://api.mcsrvstat.us/bedrock/simple/`)
 let pink = await pingsrv.json()
-m.reply(wait)
 let sevre = await ncnlstat.json()
-    
+m.reply(wait)
+
 let tegs = `
 ${global.htki} *GenIX Server* ${global.htka}
 ${global.gz} *Version:* ${sevre.version}
@@ -21,7 +21,7 @@ ${global.gz} *MOTD:* ${sevre.motd.clean}
 ${global.gz} *World Name:* ${sevre.map.clean}
 ${global.gz} *Game Mode:* ${sevre.gamemode}
 ${global.gz} *Player:* ${sevre.players.online}/${sevre.players.max}
-${global.gz} *Online:* ${sevre.online}
+${global.gz} *Online:* ${pink}
 ${global.sb}
 
 ${global.htki} *HOST & PORT* ${global.htka}
