@@ -13,10 +13,11 @@ case 'smeme': case 'stickmeme': case 'stikmeme': case 'stickermeme': case 'stike
 	        m.reply(mess.wait)
             atas = text.split('|')[0] ? text.split('|')[0] : '-'
             bawah = text.split('|')[1] ? text.split('|')[1] : '-'
-	        let dwnld = await akame.downloadAndSaveMediaMessage(qmsg)
-
-	        let fatGans = await TelegraPh(dwnld)
+	        
+	        let fatGans = await uploadImage(img)
+	        
 	        let smeme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas)}/${encodeURIComponent(bawah)}.png?background=${fatGans}`
+	        
 	        let FaTiH = await akame.sendImageAsSticker(m.chat, smeme, fdoc, { packname: global.packname, author: global.auhor })
 	        await fs.unlinkSync(FaTiH)
             }
