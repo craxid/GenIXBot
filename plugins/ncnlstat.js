@@ -9,7 +9,7 @@ try {
 
 let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org:29427`)
 
-let pingsrv = await fetch(`https://api.mcsrvstat.us/bedrock/simple/`)
+let pingsrv = await fetch(`https://api.mcsrvstat.us/bedrock/simple/play.genix.eu.org:29427`)
 let pink = await pingsrv.json()
 let sevre = await ncnlstat.json()
 m.reply(wait)
