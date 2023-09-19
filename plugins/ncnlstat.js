@@ -1,7 +1,7 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
-let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
+let thumb = `${sevre.`
 await m.reply(wait)
 
 try {
