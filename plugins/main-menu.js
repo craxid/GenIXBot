@@ -173,7 +173,7 @@ showAdAttribution: true,
 renderLargerThumbnail: false
 }}}, {
     sendEphemeral: true,
-    quoted: msg
+    quoted: text
   })
 
     //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
