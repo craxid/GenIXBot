@@ -1,7 +1,7 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
-let thumb = `${sevre.`
+let thumb = `${sevre.favicon}`
 await m.reply(wait)
 
 try {
