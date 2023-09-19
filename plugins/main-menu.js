@@ -47,7 +47,7 @@ Support Us!
 Ⓟ = Premium
 ⓓ = Menggunakan Diamond 
 
-‼️ 
+‼️ do not enter the < > sign when executing the command
 -----  -----  -----  -----  -----
   ≡ *MENU LISTS*
   `.trimStart(),
