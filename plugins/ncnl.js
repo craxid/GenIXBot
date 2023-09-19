@@ -42,8 +42,7 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-	    m.reply('tegs')
-		//m.reply(`👾 Server sedang offline\n\nHOST: play.ncnl.eu.org\nPORT: 40383`)
+		m.reply(`👾 Server sedang offline\n\nHOST: play.ncnl.eu.org\nPORT: 40383`)
 	}
 //end
 
