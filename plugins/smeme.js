@@ -6,11 +6,15 @@ import fs from 'fs'
 let handler = async (m, { conn, text, usedPrefix }) => {
     
 switch (type) {
-case 'smeme': case 'stickmeme': case 'stikmeme': case 'stickermeme': case 'stikermeme': {
-	        let respond = `Kirim/reply image/sticker dengan caption ${prefix + command} text1|text2`
-	        if (!/image/.test(mime)) throw respond
-            if (!text) throw respond
-	        m.reply(mess.wait)
+case 'smeme': 
+case 'stickmeme':
+case 'stikmeme':
+case 'stickermeme':
+case 'stikermeme': {
+	let respond = `Kirim/reply image/sticker dengan caption ${prefix + command} text1|text2`
+	if (!/image/.test(mime)) throw respond
+if (!text) throw respond
+	  m.reply(mess.wait)
             atas = text.split('|')[0] ? text.split('|')[0] : '-'
             bawah = text.split('|')[1] ? text.split('|')[1] : '-'
 	        
