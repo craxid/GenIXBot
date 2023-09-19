@@ -6,10 +6,9 @@ let kace = 'https://api.mcsrvstat.us/icon/play.genix.eu.org:29427'
 
 
 try {
-m.reply(wait)
 
 let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.genix.eu.org:29427`)
-
+m.reply(wait)
 let sevre = await ncnlstat.json()
     
 let tegs = `
