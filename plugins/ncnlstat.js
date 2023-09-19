@@ -3,6 +3,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, text, usedPrefix }) => {
 let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 let kace = 'https://api.mcsrvstat.us/icon/play.genix.eu.org:29427'
+if (!teks1) throw ️ Membuat Gambar AI menggunakan perintah yang diberikan pengguna\n\nContoh: !txt2img 1girls`
 m.reply(wait)
 
 
