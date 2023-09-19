@@ -12,7 +12,7 @@ let sevre = await ncnlstat.json()
 let tegs = `
 ${global.htki} *NCNL Server* ${global.htka}
 ${global.gz} *Version:* ${sevre.version}
-${global.gz} *MOTD:* ${sevre.motd.clean}
+${global.gz} *Server Nams:* ${sevre.server.name}
 ${global.gz} *World Name:* ${sevre.map.clean}
 ${global.gz} *Game Mode:* ${sevre.gamemode}
 ${global.gz} *Player:* ${sevre.players.now}/${sevre.players.max}
