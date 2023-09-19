@@ -1,5 +1,5 @@
-const uploadImage = require('../lib/uploadImage') 
-const { sticker } = require('../lib/sticker')
+import uploadImage from '../lib/uploadImage.js'
+const { sticker } from '../lib/sticker.js'
 
 let handler = async (m, { conn, text, usedPrefix }) => {
  try {
