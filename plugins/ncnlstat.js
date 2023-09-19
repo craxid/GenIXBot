@@ -49,9 +49,6 @@ renderLargerThumbnail: false
 
 }
 handler.help = ['mcstalk']
-handler.tags = ['tools']
 handler.command = ['mcstalk']
-handler.premium = false
-handler.diamond = false
 
 export default handler
