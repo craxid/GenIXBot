@@ -171,7 +171,7 @@ showAdAttribution: true,
 renderLargerThumbnail: false
   }
  }
-}, m, null, rpl)
+})
 
     //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     
