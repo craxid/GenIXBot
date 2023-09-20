@@ -14,8 +14,7 @@ return !0
 
 let mika = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=Misono%20Mika`)
 
-        
 let res = await mika.json()
-if (res.result)
+
 m.reply(res.result)
 }
