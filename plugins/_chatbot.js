@@ -10,7 +10,9 @@ if (m.isBaileys && m.fromMe)
       if (!user.chatbot)
         return !0
         let api = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?id=id3xBWK9-mcu8Y8JOQjbKzzAmOzgGgmp8HomTp-UOq8&query=${m.text}`)
+        
         let res = await api.json()
-        m.reply(res.result('simsimi', 'DyLux').replace('Simsimi', 'DyLux').replace('sim simi', 'Mika'))
+        
+        m.reply(res.result)
     
 }
