@@ -34,4 +34,4 @@ RUN npm i
 
 EXPOSE 3000
 
-CMD cd /root/kode/ && ./indeks.sh
+CMD cd /root/kode/ && node index.js
