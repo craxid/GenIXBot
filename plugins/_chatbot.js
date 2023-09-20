@@ -2,6 +2,7 @@
 import fetch from 'node-fetch'
 
 export async function before(m, { conn }) {
+    
 if (m.isBaileys && m.fromMe)
         return !0
 
@@ -14,7 +15,8 @@ return !0
 let mika = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=Mika`)
 
 let res = await mika.json()
-await m.react(💬)
+
+
 m.reply(res.result.replace('darling','Sensei').replace('dear','Sensei').replace('dearest','Sensei').replace('sayang','Sensei').replace('[Nama pengguna]', 'Sensei').replace('Anda','Sensei').replace('Hey there','Hey Sensei').replace('Hi there','Hi Sensei').replace('Hello there', 'Hello Sensei'))
 }
 
