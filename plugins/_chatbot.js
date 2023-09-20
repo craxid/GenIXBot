@@ -11,11 +11,11 @@ if (!m.isGroup) return !1
 if (!user.chatbot)
 return !0
 
-let mika = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=Misono%20Mika`).replace('darling').replace('Sensei')
+let mika = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=Misono%20Mika`)
 
 let res = await mika.json()
 
-m.reply(res.result)
+m.reply(res.result.replace('darling').replace('Sensei'))
 }
 
 //let mika = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?id=id3xBWK9-mcu8Y8JOQjbKzzAmOzgGgmp8HomTp-UOq8&query=${m.text}`)
