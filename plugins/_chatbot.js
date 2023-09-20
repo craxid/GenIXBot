@@ -14,5 +14,5 @@ if (m.isBaileys && m.fromMe)
         let res = await api.json()
         
         m.reply(res.result)
-    
 }
+{ catch (error)
