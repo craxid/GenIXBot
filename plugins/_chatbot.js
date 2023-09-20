@@ -9,7 +9,7 @@ if (m.isBaileys && m.fromMe)
     
       if (!user.chatbot)
         return !0
-        let mika = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?id=UGiJxTlsUMl802QN8K5k0IJ7xzNMSDpxQfARcM3Fu8Y&query=${text}`)
+        let mika = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?id=UGiJxTlsUMl802QN8K5k0IJ7xzNMSDpxQfARcM3Fu8Y&query=${m.text}`)
         
         let res = await mika.json()
         
