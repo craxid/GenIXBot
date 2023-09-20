@@ -15,7 +15,7 @@ let mika = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.t
 
 let res = await mika.json()
 
-m.reply(res.result.replace('darling','dear','dearest').replace('Darling','Dear','Dearest').replace('Sensei'))
+m.reply(res.result.replace('darling','Sensei').replace('Dear','Sensei').replace('Dearest'Sensei'))
 }
 
 //let mika = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?id=id3xBWK9-mcu8Y8JOQjbKzzAmOzgGgmp8HomTp-UOq8&query=${m.text}`)
