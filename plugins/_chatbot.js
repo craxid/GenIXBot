@@ -4,15 +4,13 @@ import fetch from 'node-fetch'
 export async function before(m, { conn }) {
 if (m.isBaileys && m.fromMe)
         return !0
-
-if (!m.isGroup) return !1
+    if (!m.isGroup) return !1
     let user = global.db.data.users[m.sender]
     
-if (!user.chatbot)
-return !0
-let mika = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?id=id3xBWK9-mcu8Y8JOQjbKzzAmOzgGgmp8HomTp-UOq8&query=${m.text}`)
-        
-let res = await mika.json()
-if (mika.result)
-m.reply(res.result)
+      if (!user.chatbot)
+        return !0
+        let api = await fetch(`https://api.simsimi.net/v2/?text=${m.text}&lc=id`)
+        let res = await api.json()
+        m.reply(res.success.replace('simsimi', 'DyLux').replace('Simsimi', 'DyLux').replace('sim simi', 'DyLux'))
+    
 }
