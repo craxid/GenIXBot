@@ -15,4 +15,3 @@ if (m.isBaileys && m.fromMe)
         
         m.reply(res.result)
 }
-{ catch (error)
