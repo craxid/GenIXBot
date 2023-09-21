@@ -18,7 +18,7 @@ ${global.sb}
 `
 
 conn.sendMessage(m.chat, {
-text: (''),
+text: tegs.replace(),
 contextInfo: {
 externalAdReply: {
 title: (`API Stalker`),
