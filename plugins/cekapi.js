@@ -6,11 +6,11 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
     if (!args[0]) return m.reply('Apikeynya mana?')
   
 try {
-let ncnlstat = await fetch(`https://api.zahwazein.xyz/user/cekapi?apikey=zenzkey_f59c1aacf2`)
+let zen = await fetch(`https://api.zahwazein.xyz/user/cekapi?apikey=zenzkey_f59c1aacf2`)
 let sevre = await ncnlstat.json()
 
 let tegs = `
-${global.htki} *NCNL Server* ${global.htka}
+${global.htki} *API Stalker* ${global.htka}
 ${global.gz} *Version:* ${sevre.version}
 ${global.gz} *MOTD:* ${sevre.motd.clean}
 ${global.gz} *World Name:* ${sevre.map}
@@ -31,7 +31,7 @@ text: tegs,
 contextInfo: {
 externalAdReply: {
 title: (`API Stalker`),
-body: (`${sevre.hostname}:${sevre.port}`),
+body: ,
 thumbnailUrl: thumb,
 sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.ncnl.eu.org:40383'),
 mediaType: 1,
