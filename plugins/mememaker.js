@@ -25,7 +25,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   }
 }
 handler.help = ['mememaker']
-handler.tags = ['sticker']
+handler.tags = ['img']
 handler.command = /^mememaker$/i
 handler.diamond = false
 handler.fail = null
