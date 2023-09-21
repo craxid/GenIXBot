@@ -10,6 +10,7 @@ try {
     if (/cekapi(key)?|cekkey/i.test(command)) {
       const count = args[1] && args[1].length > 0 ? Math.min(99999999, Math.max(parseInt(args[1]), 1)) : !args[1] || args.length < 3 ? 1 : Math.min(1, count)
         switch (type) {
+            
        case 'xteam':
        if (type == 'xteam') {
          let xteam = await (await fetch(`https://api.xteam.xyz/cekey?APIKEY=${args[0]}`)).json().catch(v => 'error')
@@ -32,6 +33,7 @@ conn.reply(m.chat, `• *Type:* XTeam
 }
 }
             break
+            
           case 'lolhuman': 
     let lol = await (await fetch(`https://api.lolhuman.xyz/api/checkapikey?apikey=${args[0]}`)).json()
     m.reply(cek)
