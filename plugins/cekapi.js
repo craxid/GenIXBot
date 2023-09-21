@@ -11,7 +11,7 @@ try {
       const count = args[1] && args[1].length > 0 ? Math.min(99999999, Math.max(parseInt(args[1]), 1)) : !args[1] || args.length < 3 ? 1 : Math.min(1, count)
         switch (type) {
             
-case 'zenzapi': 
+case 'zenz': 
     let zenz = await (await fetch(`https://api.zahwazein.xyz/user/cekapi?apikey=${args[0]}`)).json()
     m.reply(cek)
     if (zenz.message == 'success') {
