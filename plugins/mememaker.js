@@ -1,6 +1,7 @@
 import uploadImage from '../lib/uploadImage.js'
 import { sticker } from '../lib/sticker.js'
-import fetch fro
+import fetch from 'nodetech'
+
 let handler = async (m, { conn, text, usedPrefix }) => {
  try {
   let teks1 = text.split('|')[0] ? text.split('|')[0] : '-'
@@ -17,7 +18,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   let wasted = `https://api.memegen.link/images/custom/${encodeURIComponent(teks1)}/${encodeURIComponent(teks2)}.png?background=${url}`
 //  let wasted = `http://docs-jojo.herokuapp.com/api/meme-gen?top=${teks}&bottom=${teks2}&img=${url}`
   let stiker = await sticker(null, wasted, packname, author)
-  conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
+  conn.sendFile(m.chat, stiker, 'sticker.png', '', m)
  } catch (e) {
    m.reply(`Masukan format!!\nReply image dengan caption ${usedPrefix}smeme teks1|teks2\n*Jangan reply sticker*`)
   }
