@@ -15,18 +15,18 @@ ${global.gz} *Premium:* ${zenzapi.premium_expired}
 ${global.sb}
 `
 
-/*conn.sendMessage(m.chat, {
+conn.sendMessage(m.chat, {
 text: tegs,
 contextInfo: {
 externalAdReply: {
 title: (`API Stalker`),
 body: ('tes'),
 thumbnailUrl: thumb,
-sourceUrl: zenzapi.profile_image,
+sourceUrl: dygp,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}})*/
+}}})
 
 	}
 	catch {
