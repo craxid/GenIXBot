@@ -16,7 +16,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   let img = await q.download()
   let url = await uploadImage(img)
   
- let memeq = `https://api.zahwazein.xyz/creator/smeme?text=zenz&text2=api&url=https://i.ibb.co/KjSBWx4/${url}&apikey=zenzkey_f59c1aacf2`
+ let memeq = `https://api.zahwazein.xyz/creator/smeme?text=zenz&text2=api&url=${url}&apikey=zenzkey_f59c1aacf2`
   
 //  let wasted = `http://docs-jojo.herokuapp.com/api/meme-gen?top=${teks}&bottom=${teks2}&img=${url}`
   let stiker = await sticker(null, wasted, packname, author)
