@@ -19,12 +19,12 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   conn.sendFile(m.chat, memeq.data, 'meme_picture.jpg', '', m)
   
  } catch (e) {
-   m.reply(`Reply gambar dengan caption ${usedPrefix}meme teks atas|teks bawah\n*Jangan reply sticker*`)
+   m.reply(`Reply gambar dengan caption ${usedPrefix}mememaker teks atas|teks bawah\n*Jangan reply sticker*`)
   }
 }
-handler.help = ['meme','mememaker']
+handler.help = ['mememaker']
 handler.tags = ['img']
-handler.command = /^(meme|mememaker|memeq)$/i
+handler.command = /^(meme|memeq)$/i
 handler.diamond = false
 
 export default handler
