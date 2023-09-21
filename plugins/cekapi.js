@@ -22,7 +22,7 @@ text: tegs.replace('false / free user', 'Premium').replace('zenzkey_f59c1aacf2',
 contextInfo: {
 externalAdReply: {
 title: (`API Stalker`),
-body: (`${zenzapi.message.`),
+body: (`${zenzapi.message.username}`),
 thumbnailUrl: (`${zenzapi.message.profile_image}`),
 sourceUrl: ('https://api.zahwazein.xyz/'),
 mediaType: 1,
