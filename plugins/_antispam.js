@@ -11,7 +11,7 @@ handler.all = async function (m) {
                 //global.db.data.users[m.sender].banned = true
                 m.reply('Jangan spam, beri jeda 5 detik!')
             }
-            this.spam[m.sender].count = 2
+            this.spam[m.sender].count = 5
             this.spam[m.sender].lastspam = m.messageTimestamp.toNumber()
         }
     }
