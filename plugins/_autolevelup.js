@@ -24,7 +24,7 @@ externalAdReply: {
 title: namebot,
 body: global.wm2,
 thumbnailUrl: global.ppmika,
-sourceUrl: sig,
+sourceUrl: global.dygp,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
