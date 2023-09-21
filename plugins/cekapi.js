@@ -30,7 +30,7 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-		m.reply(`👾 ERROR`)
+		m.reply(`👾 erol`)
 	}
 }
 handler.help = ['cekapi']
