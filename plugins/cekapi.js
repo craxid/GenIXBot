@@ -56,8 +56,8 @@ case 'zenz api':
 • *Apikey:* ${args[0]}
 
 • *Name:* ${zenz.result.username}
-• *Total Hit:* ${zenz.result.requests}
-• *Hit Today:* ${zenz.result.today}
+• *Total Hit:* ${zenz.result.total_hits}
+• *Hit Today:* ${zenz.result.today_hits}
 • *Account:* ${zenz.result.account_type}
 
 • *Expired:* ${zenz.result.expired}`, m)
