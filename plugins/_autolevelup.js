@@ -1,6 +1,7 @@
-const { color } = require('../lib/color')
-const moment = require("moment-timezone")
-let levelling = require('../lib/levelling')
+
+import { color } from '../lib/color'
+import moment = require("moment-timezone"
+let levelling = require('../lib/levelling.js'
 module.exports = {
 	before(m) {
 		let user = global.db.data.users[m.sender]
@@ -13,7 +14,8 @@ module.exports = {
 *[ ${before} ]* ➠ *[ ${user.level} ]*
 Use *.profile* to check`.trim()
 			let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
-    conn.sendMessage(m.chat, {
+
+conn.sendMessage(m.chat, {
 text: chating,
 contextInfo: {
 externalAdReply: {
