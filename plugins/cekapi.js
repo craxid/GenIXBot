@@ -22,7 +22,7 @@ contextInfo: {
 externalAdReply: {
 title: (`API Stalker`),
 body: ('tes'),
-thumbnailUrl: zenzapi.profile_image,
+thumbnailUrl: ${`zenzapi.profile_image`},
 sourceUrl: global.dygp,
 mediaType: 1,
 showAdAttribution: true,
