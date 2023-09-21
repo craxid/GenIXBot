@@ -21,9 +21,9 @@ _*off autolevelup*_
     }
 }*/
 
-import { color } from '../lib/color'
+import { color } from '../lib/color.js'
 import moment from "moment-timezone"
-import levelling from '../lib/levelling'
+import levelling from '../lib/levelling.js'
 
 module.exports = { before(m) {
 		let user = global.db.data.users[m.sender]
