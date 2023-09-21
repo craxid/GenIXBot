@@ -80,8 +80,7 @@ case 'zenzapi':
 
         default:
           //return conn.sendButton( m.chat, wm, wm, null, [`⋮☰ Menu`, `.menu`], m)
-          
-          return conn.senMessage(m.chat, )
+
       }
     }
   } catch (err) {
