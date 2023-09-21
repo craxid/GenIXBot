@@ -22,7 +22,7 @@ externalAdReply: {
 title: (`API Stalker`),
 body: ('tes'),
 thumbnailUrl: global.dygp,
-sourceUrl: .global.dygp,
+sourceUrl: global.dygp,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
