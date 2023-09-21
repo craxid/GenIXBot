@@ -28,7 +28,6 @@ handler.help = ['mememaker']
 handler.tags = ['img']
 handler.command = /^mememaker$/i
 handler.diamond = false
-handler.fail = null
 
 export default handler
 
