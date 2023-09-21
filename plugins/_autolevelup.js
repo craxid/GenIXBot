@@ -10,15 +10,22 @@ export async function before(m, { conn }) {
         user.level++
     user.role = global.rpg.role(user.level).name
     if (before !== user.level) {
-        m.reply(`
-*▢ NAIK LEVEL*
-
- *${before}* ‣  *${user.level}*
- Rank : *${user.role}*
- 
- _untuk menonaktifkan, ketik_
-_*/off autolevelup*_
-	`.trim())
+        mlet chating = `*Congratulations*, you have leveled up!
+*[ ${before} ]* ➠ *[ ${user.level} ]*
+Use *.profile* to check`.trim()
+			let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
+    conn.sendMessage(m.chat, {
+text: chating,
+contextInfo: {
+externalAdReply: {
+title: namebot,
+body: wm,
+thumbnailUrl: thumb,
+sourceUrl: sig,
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})
     }
 }
 
