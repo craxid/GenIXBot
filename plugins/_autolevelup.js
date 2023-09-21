@@ -21,7 +21,7 @@ text: chating,
 contextInfo: {
 externalAdReply: {
 title: global.namebot,
-body: globaal.wm2,
+body: global.wm2,
 thumbnailUrl: thumb,
 sourceUrl: dygp,
 mediaType: 1,
@@ -30,4 +30,3 @@ renderLargerThumbnail: true
 }}})
     }
 }
-
