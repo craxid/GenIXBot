@@ -22,7 +22,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
    m.reply(`Reply gambar dengan caption ${usedPrefix}meme teks1|teks2\n*Jangan reply sticker*`)
   }
 }
-handler.help = ['mememaker']
+handler.help = ['meme','mememaker']
 handler.tags = ['img']
 handler.command = /^mememaker|meme$/i
 handler.diamond = false
