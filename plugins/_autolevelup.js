@@ -1,7 +1,8 @@
 
 import { color } from '../lib/color'
-import moment = require("moment-timezone"
-let levelling = require('../lib/levelling.js'
+import moment from "moment-timezone"
+
+let levelling = require('../lib/levelling.js')
 module.exports = {
 	before(m) {
 		let user = global.db.data.users[m.sender]
