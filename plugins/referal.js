@@ -47,7 +47,6 @@ Dapatkan ${xp_link_creator} XP untuk setiap pengguna baru yang menggunakan kode 
 ${users[m.sender].ref_count} orang telah menggunakan kode referal kamu
 
 Kode referal kamu: ${code}
-
 Bagikan link kepada teman: ${command_link}
 
 atau kirim pesan kepada teman wa.me/?text=${encodeURIComponent(share_text)}
@@ -58,9 +57,8 @@ ${Object.entries(xp_bonus).map(([count, xp]) => `${count} Orang = Bonus ${xp} XP
 }
 handler.help = ['ref']
 handler.tags = ['main']
-
 handler.command = ['ref']
 
 handler.register = true
 
-module.exports = handler
+export default handler
