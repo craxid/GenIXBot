@@ -20,7 +20,7 @@ conn.sendMessage(m.chat, {
 text: chating,
 contextInfo: {
 externalAdReply: {
-title: globanamebot,
+title: global.namebot,
 body: globaal.wm2,
 thumbnailUrl: thumb,
 sourceUrl: dygp,
