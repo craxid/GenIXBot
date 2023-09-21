@@ -3,8 +3,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, args, command }) => {
 	let type = (args[1] || '').toLowerCase()
     let _type = (args[1] || '').toLowerCase()
-    if (!args[0]) return m.reply('Apikeynya mana?')
-  
+    
 try {
 let zenz = await fetch(`https://api.zahwazein.xyz/user/cekapi?apikey=zenzkey_f59c1aacf2`)
 let zenzapi = await zenz.json()
