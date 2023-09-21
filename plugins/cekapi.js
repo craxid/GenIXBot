@@ -11,7 +11,8 @@ ${global.gz} *Nama pengguna:* ${zenzapi.message.username}
 ${global.gz} *Apikey:* ${zenzapi.message.apikey}
 ${global.gz} *Dibuat pada:* ${zenzapi.message.created}
 ${global.gz} *Diupdate:* ${zenzapi.message.updated}
-${global.gz} *Hit:* ${zenzapi.message.today_hit}/${zenzapi.message.total_hit}
+${global.gz} *Hit :* ${zenzapi.message.today_hit}
+${global.gz} *Total Hit:* ${zenzapi.message.total_hit}
 ${global.gz} *Premium:* ${zenzapi.message.premium_expired}
 ${global.sb}
 `
