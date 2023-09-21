@@ -14,8 +14,10 @@ ${global.gz} *Hit:* ${zenzapi.today_hits}/${zenzapi.total_hits}
 ${global.gz} *Premium:* ${zenzapi.premium_expired}
 ${global.sb}
 `
+
+conn.sendMessage(m.chat)
     
-conn.sendMessage(m.chat, {
+/conn.sendMessage(m.chat, {
 text: tegs,
 contextInfo: {
 externalAdReply: {
@@ -26,7 +28,7 @@ sourceUrl: zenzapi.profile_image,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}})
+}}})*/
 
 	}
 	catch {
