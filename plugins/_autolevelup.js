@@ -14,9 +14,10 @@ export async function before(m, { conn }) {
 let chating = `
 *Congratulations*, you have leveled up!
 *[ ${before} ]* ➠ *[ ${user.level} ]*
-Use *.profile* to check`.trim()
-let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg
-'
+Use *.profile* to check
+`.trim()
+
+let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 
 conn.sendMessage(m.chat, {
 text: chating,
