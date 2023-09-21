@@ -599,7 +599,7 @@ externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
 thumbnailUrl: global.mikasampul,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
+sourceUrl: global.dygp,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
