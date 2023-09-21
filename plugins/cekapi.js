@@ -49,14 +49,14 @@ conn.reply(m.chat, `• *Type:* XTeam
             break
             
 case 'zenz api': 
-    let zenz = await (await fetch(`https://api.lolhuman.xyz/api/checkapikey?apikey=${args[0]}`)).json()
+    let zenz = await (await fetch(`https://api.zahwazein.xyz/user/cekapi?apikey=${args[0]}`)).json()
     m.reply(cek)
     if (lol.message == 'success') {
-    conn.reply(m.chat, `• *Type:* Lolhuman
+    conn.reply(m.chat, `• *Type:* Zenz API
 • *Apikey:* ${args[0]}
 
-• *Name:* ${lol.result.username}
-• *Total Hit:* ${lol.result.requests}
+• *Name:* ${zenz.result.username}
+• *Total Hit:* ${zez.result.requests}
 • *Hit Today:* ${lol.result.today}
 • *Account:* ${lol.result.account_type}
 
