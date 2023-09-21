@@ -24,7 +24,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   conn.sendFile(m.chat, memeg, 'meme.png', '', m)
   
  } catch (e) {
-   m.reply(`Masukan format!!\nReply image dengan caption ${usedPrefix}smeme teks1|teks2\n*Jangan reply sticker*`)
+   m.reply(`Masukan format!!\nReply image dengan caption ${usedPrefix}mememaker teks1|teks2\n*Jangan reply sticker*`)
   }
 }
 handler.help = ['mememaker']
