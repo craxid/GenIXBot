@@ -10,15 +10,17 @@ export async function before(m, { conn }) {
         user.level++
     user.role = global.rpg.role(user.level).name
     if (before !== user.level) {
-        let chating = `*Congratulations*, you have leveled up!
+    
+let chating = `*Congratulations*, you have leveled up!
 *[ ${before} ]* ➠ *[ ${user.level} ]*
 Use *.profile* to check`.trim()
-			let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
-    conn.sendMessage(m.chat, {
+let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
+
+conn.sendMessage(m.chat, {
 text: chating,
 contextInfo: {
 externalAdReply: {
-title: namebot,
+title: globanamebot,
 body: globaal.wm2,
 thumbnailUrl: thumb,
 sourceUrl: dygp,
