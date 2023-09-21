@@ -1,4 +1,4 @@
-let fetch = require('node-fetch')
+import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, args, command }) => {
 	let type = (args[1] || '').toLowerCase()
