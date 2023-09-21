@@ -19,6 +19,7 @@ export default handler
 */
 
 import fetch from "node-fetch"
+let limit = 15
 
 var handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `Masukkan URL!\n\nContoh: ${usedPrefix + command} https://www.instagram.com`
