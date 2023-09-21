@@ -6,7 +6,7 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
     if (!args[0]) return m.reply('Apikeynya mana?')
   
 try {
-let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/1/play.ncnl.eu.org:40383`)
+let ncnlstat = await fetch(`https://api.zahwazein.xyz/user/cekapi?apikey=zenzkey_f59c1aacf2`)
 let sevre = await ncnlstat.json()
 
 let tegs = `
@@ -30,7 +30,7 @@ conn.sendMessage(m.chat, {
 text: tegs,
 contextInfo: {
 externalAdReply: {
-title: (`Server Stalker`),
+title: (`API Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
 sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.ncnl.eu.org:40383'),
@@ -44,10 +44,8 @@ renderLargerThumbnail: false
 		m.reply(`👾 ERROR`)
 	}
 }
-handler.help = ['cekapikey']
-handler.tags = ['tools']
-handler.command = /^(cek(key|api))$/i
 
+handler.command = /^(cek(key|api))$/i
 export default handler
 
 //https://api.zahwazein.xyz/user/cekapi?apikey=zenzkey_f59c1aacf2
