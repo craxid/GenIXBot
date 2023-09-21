@@ -16,7 +16,7 @@ ${global.sb}
 `
 let pp = (`${zenzapi.profile_image}`)
 
-conn.sendMessage(m.chat, tegs, m)
+conn.sendMessage(m.chat, tegs, pp, m)
     
 /*conn.sendMessage(m.chat, {
 text: tegs,
