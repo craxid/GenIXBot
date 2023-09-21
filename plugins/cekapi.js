@@ -18,7 +18,7 @@ ${global.sb}
 `
 
 conn.sendMessage(m.chat, {
-text: tegs.replace('false / free user', 'Premium').replace('zenzkey_f59c1aacf2','*********'),
+text: tegs.replace('false / free user', 'Premium').replace('zenzkey_f59c1aacf2','*****'),
 contextInfo: {
 externalAdReply: {
 title: (`API Stalker`),
