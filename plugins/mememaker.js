@@ -19,8 +19,9 @@ let handler = async (m, { conn, text, usedPrefix }) => {
  let memeq = `https://api.zahwazein.xyz/creator/smeme?text=${encodeURIComponent(teks1)}&text2=${encodeURIComponent(teks1)}&url=${url}&apikey=zenzkey_f59c1aacf2`
   
 //  let wasted = `http://docs-jojo.herokuapp.com/api/meme-gen?top=${teks}&bottom=${teks2}&img=${url}`
-  let stiker = await sticker(null, wasted, packname, author)
-  conn.sendFile(m.chat, stiker, 'meme.png', '', m)
+  let memeg = await sticker(null, memeq)
+  
+  conn.sendFile(m.chat, memeg, 'meme.png', '', m)
  } catch (e) {
    m.reply(`Masukan format!!\nReply image dengan caption ${usedPrefix}smeme teks1|teks2\n*Jangan reply sticker*`)
   }
