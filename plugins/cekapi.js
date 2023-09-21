@@ -21,8 +21,8 @@ contextInfo: {
 externalAdReply: {
 title: (`API Stalker`),
 body: ('tes'),
-thumbnailUrl: thumb,
-sourceUrl: dygp,
+thumbnailUrl: global.dygp,
+sourceUrl: .global.dygp,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
