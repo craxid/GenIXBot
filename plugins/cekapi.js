@@ -85,7 +85,7 @@ case 'zenz api':
   }
 }
 handler.help = ['cekapikey']
-handler.tags = [' 'tools']
+handler.tags = ['tools']
 handler.command = /^(cek(key|api))$/i
 
 export default handler
