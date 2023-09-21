@@ -1,4 +1,4 @@
-import uploadImage from '../lib/uploadImage.js'
+/*import uploadImage from '../lib/uploadImage.js'
 import { sticker } from '../lib/sticker.js'
 import fetch from 'nodetech'
 
@@ -34,3 +34,4 @@ handler.fail = null
 export default handler
 
   //let wasted = `https://api.memegen.link/images/custom/${encodeURIComponent(teks1)}/${encodeURIComponent(teks2)}.png?background=${url}`
+  */
