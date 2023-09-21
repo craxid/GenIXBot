@@ -1,7 +1,7 @@
 
 let handler = async(m, { conn, usedPrefix, command }) => {
 	
-    let img = await conn.getFile(global.API('zenz', '/randomasupan/asupantiktok', { }, 'apikey'))
+    let img = await conn.getFile(global.API('zenz', '/randomasupan/asupan', { }, 'apikey'))
     let asupan = img.data
     conn.sendFile(m.chat, asupan, 'vid.mp4', `✅ Hasil`, m)
     m.react(dmoji)
