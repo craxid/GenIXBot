@@ -1,10 +1,12 @@
 /*
      ig : https://www.instagram.com/fg98._/
 *//*
-import hispamemes from 'hispamemes'
+import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, command }) => {
 	
+	
+let mim = await get
 	const meme = hispamemes.meme()
     conn.sendFile(m.chat, meme, '', '', m)
     m.react('😆') 
