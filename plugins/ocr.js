@@ -1,5 +1,5 @@
 
-import uploadImage from '../lib/uploadImage'
+import uploadImage from '../lib/uploadImage.js'
 import ocrapi from 'ocr-space-api-wrapper'
 import { MessageType } from '@adiwajshing/baileys'
 
