@@ -16,8 +16,6 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   
  let memeq = await conn.getFile(`https://api.zahwazein.xyz/creator/smeme?text=${encodeURIComponent(teks1)}&text2=${encodeURIComponent(teks2)}&url=${url}&apikey=zenzkey_f59c1aacf2`)
   
-//  let wasted = `http://docs-jojo.herokuapp.com/api/meme-gen?top=${teks}&bottom=${teks2}&img=${url}`
-  
   conn.sendFile(m.chat, memeq.data, 'meme_picture.jpg', '', m)
   
  } catch (e) {
@@ -26,9 +24,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 }
 handler.help = ['mememaker']
 handler.tags = ['img']
-handler.command = /^meme?maker$/i
+handler.command = /^mememaker|meme$/i
 handler.diamond = false
 
 export default handler
-
-  //let wasted = `https://api.memegen.link/images/custom/${encodeURIComponent(teks1)}/${encodeURIComponent(teks2)}.png?background=${url}`
