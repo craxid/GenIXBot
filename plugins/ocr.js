@@ -1,8 +1,7 @@
 
 import uploadImage from '../lib/uploadImage.js'
-import ocrapi 'ocr-space-api-wrapper'
-
-const { MessageType } = require('@whiskeysockets/baileys')
+import ocrapi from 'ocr-space-api-wrapper'
+import { MessageType } from '@whiskeysockets/baileys'
 
 let handler = async (m, { conn, text }) => {
 let q = m.quoted ? m.quoted : m
