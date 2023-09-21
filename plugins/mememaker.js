@@ -1,4 +1,5 @@
-/*import uploadImage from '../lib/uploadImage.js'
+
+import uploadImage from '../lib/uploadImage.js'
 import { sticker } from '../lib/sticker.js'
 import fetch from 'nodetech'
 
@@ -14,10 +15,10 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   let img = await q.download()
   let url = await uploadImage(img)
   
- let memeq = `https://api.zahwazein.xyz/creator/smeme?text=${encodeURIComponent(teks1)}&text2=${encodeURIComponent(teks1)}&url=${url}&apikey=zenzkey_f59c1aacf2`
+ let memeq = fetch(`https://api.zahwazein.xyz/creator/smeme?text=${encodeURIComponent(teks1)}&text2=${encodeURIComponent(teks1)}&url=${url}&apikey=zenzkey_f59c1aacf2`)
   
 //  let wasted = `http://docs-jojo.herokuapp.com/api/meme-gen?top=${teks}&bottom=${teks2}&img=${url}`
-  let memeg = await memeq(null, memeq)
+  let memeg = await memeq(nul
   
   conn.sendFile(m.chat, memeg, 'meme.png', '', m)
   
@@ -34,4 +35,3 @@ handler.fail = null
 export default handler
 
   //let wasted = `https://api.memegen.link/images/custom/${encodeURIComponent(teks1)}/${encodeURIComponent(teks2)}.png?background=${url}`
-  */
