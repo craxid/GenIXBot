@@ -16,15 +16,15 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   
  let smeme = await conn.getFile(`https://api.zahwazein.xyz/creator/smeme?text=${encodeURIComponent(teks1)}&text2=${encodeURIComponent(teks2)}&url=${url}&apikey=zenzkey_f59c1aacf2`)
   
-  conn.sendFile(m.chat, meme.data, 'meme_picture.jpg', '', m)
+  conn.sendFile(m.chat, smeme.data, 'meme_picture.jpg', '', m)
   
  } catch (e) {
    m.reply(`Reply gambar dengan caption ${usedPrefix}mememaker teks atas|teks bawah\n*Jangan reply sticker*`)
   }
 }
-handler.help = ['mememaker']
-handler.tags = ['img']
-handler.command = /^(mememaker|memeq)$/i
+handler.help = ['smeme']
+handler.tags = ['sticker']
+handler.command = /^(smeme)$/i
 handler.diamond = false
 
 export default handler
