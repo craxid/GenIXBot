@@ -36,7 +36,7 @@ renderLargerThumbnail: false
 		m.reply(`👾 ERROR`)
 	}
 }
-handler.help = ['sekapi']
+handler.help = ['cekapi']
 handler.command = /^(cek(key|api))$/i
 handler.rowner = true
 export default handler
