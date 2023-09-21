@@ -23,7 +23,7 @@ externalAdReply: {
 title: global.namebot,
 body: global.wm2,
 thumbnailUrl: thumb,
-sourceUrl: dygp,
+sourceUrl: global.dygp,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
