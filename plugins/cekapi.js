@@ -7,9 +7,9 @@ let zenzapi = await zenz.json()
 
 let tegs = `
 ${global.htki} *API Stalker* ${global.htka}
+${global.gz} *Nama pengguna:* ${zenzapi.username}
 ${global.gz} *Dibuat pada:* ${zenzapi.created}
 ${global.gz} *Diupdate:* ${zenzapi.updated}
-${global.gz} *Nama pengguna:* ${zenzapi.username}
 ${global.gz} *Hit:* ${zenzapi.today_hits}/${zenzapi.total_hits}
 ${global.gz} *Premium:* ${zenzapi.premium_expired}
 ${global.sb}
