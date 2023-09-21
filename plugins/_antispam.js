@@ -7,7 +7,7 @@ handler.all = async function (m) {
     if (m.sender in this.spam) {
         this.spam[m.sender].count++
         if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 2) {
-            if (this.spam[m.sender].count > 2) {
+            if (this.spam[m.sender].count > 1) {
                 //global.db.data.users[m.sender].banned = true
                 m.reply('Jangan spam, beri jeda 5 detik!')
             }
