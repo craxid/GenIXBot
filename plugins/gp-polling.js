@@ -25,7 +25,7 @@ let handler = async (m, { conn, text }) => {
 }
 
 handler.command = /^(poll|polling)$/i
-handler.help = ['poll name\nvalue', 'polling name\nvalue1']
+handler.help = ['poll']
 handler.tags = ['tools']
 handler.register = false
 handler.diamond = false
