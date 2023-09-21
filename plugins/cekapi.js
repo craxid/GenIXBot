@@ -14,8 +14,7 @@ ${global.gz} *Hit:* ${zenzapi.today_hits}/${zenzapi.total_hits}
 ${global.gz} *Premium:* ${zenzapi.premium_expired}
 ${global.sb}
 `
-m.reply(m.chat, tegs, m)
-    
+
 /*conn.sendMessage(m.chat, {
 text: tegs,
 contextInfo: {
