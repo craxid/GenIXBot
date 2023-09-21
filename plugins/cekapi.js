@@ -51,16 +51,16 @@ conn.reply(m.chat, `• *Type:* XTeam
 case 'zenz api': 
     let zenz = await (await fetch(`https://api.zahwazein.xyz/user/cekapi?apikey=${args[0]}`)).json()
     m.reply(cek)
-    if (lol.message == 'success') {
+    if (zenz.message == 'success') {
     conn.reply(m.chat, `• *Type:* Zenz API
 • *Apikey:* ${args[0]}
 
 • *Name:* ${zenz.result.username}
-• *Total Hit:* ${zez.result.requests}
-• *Hit Today:* ${lol.result.today}
-• *Account:* ${lol.result.account_type}
+• *Total Hit:* ${zenz.result.requests}
+• *Hit Today:* ${zenz.result.today}
+• *Account:* ${zenz.result.account_type}
 
-• *Expired:* ${lol.result.expired}`, m)
+• *Expired:* ${zenz.result.expired}`, m)
 } else m.reply('Invalid Apikey !')
             break
 
@@ -85,7 +85,7 @@ case 'zenz api':
   }
 }
 handler.help = ['cekapikey']
-handler.tags = ['internet', 'tools']
+handler.tags = [' 'tools']
 handler.command = /^(cek(key|api))$/i
 
 export default handler
