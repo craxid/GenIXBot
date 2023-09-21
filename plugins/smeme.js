@@ -1,5 +1,6 @@
 
 import uploadImage from '../lib/uploadImage.js'
+import sticker from '...'
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text, usedPrefix }) => {
@@ -16,7 +17,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   
  let smeme = await conn.getFile(`https://api.zahwazein.xyz/creator/smeme?text=${encodeURIComponent(teks1)}&text2=${encodeURIComponent(teks2)}&url=${url}&apikey=zenzkey_f59c1aacf2`)
   
-  conn.sendFile(m.chat, smeme.data, 'meme_picture.jpg', '', m)
+  conn.sendFile(m.chat, sticker, smeme.data, 'meme_picture.webp', '', m)
   
  } catch (e) {
    m.reply(`Reply gambar dengan caption ${usedPrefix}mememaker teks atas|teks bawah\n*Jangan reply sticker*`)
