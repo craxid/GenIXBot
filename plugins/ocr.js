@@ -7,7 +7,6 @@ let handler = async (m, { conn, text }) => {
     let q = m.quoted ? m.quoted : m
     let mime = (q.msg || q).mimetype || ''
     if (!mime) throw `balas gambar dengan perintah .ocr`
-    
     await m.reply(wait)
     
     if (!/image\/(jpe?g|png)/.test(mime)) throw `
