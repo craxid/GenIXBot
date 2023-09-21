@@ -18,7 +18,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   
 //  let wasted = `http://docs-jojo.herokuapp.com/api/meme-gen?top=${teks}&bottom=${teks2}&img=${url}`
   
-  conn.sendFile(m.chat, memeq.data, 'meme.png', '', m)
+  conn.sendFile(m.chat, memeq.data, 'meme_picture.jpg', '', m)
   
  } catch (e) {
    m.reply(`Masukan format!!\nReply image dengan caption ${usedPrefix}mememaker teks1|teks2\n*Jangan reply sticker*`)
