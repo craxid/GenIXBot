@@ -48,7 +48,7 @@ conn.reply(m.chat, `• *Type:* XTeam
 } else m.reply('Invalid Apikey !')
             break
             
-case 'zenz api': 
+case 'zenzapi': 
     let zenz = await (await fetch(`https://api.zahwazein.xyz/user/cekapi?apikey=${args[0]}`)).json()
     m.reply(cek)
     if (zenz.message == 'success') {
@@ -58,7 +58,7 @@ case 'zenz api':
 • *Name:* ${zenz.result.username}
 • *Total Hit:* ${zenz.result.total_hits}
 • *Hit Today:* ${zenz.result.today_hits}
-• *Account:* ${zenz.result.account_type}
+• *Account:* ${zenz.result.premium_expired}
 
 • *Expired:* ${zenz.result.premium_expired}`, m)
 } else m.reply('Invalid Apikey !')
