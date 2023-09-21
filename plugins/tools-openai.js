@@ -14,7 +14,7 @@ m.react('💬')
 	    /*let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)*/
      ;
         let res = await gpt.json()
-        await m.reply(res.result.replace('YanzBotz','Mika Bot').replace('-APIs', ''))
+        await m.reply(res.result.replace('YanzBotz','Mika Bot').replace('-APIs', '').replace('YanzBotz',''))
 	} catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
