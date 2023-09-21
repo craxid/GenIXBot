@@ -15,10 +15,12 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   if (!/image\/(jpe?g|png)/.test(mime)) throw `Mime ${mime} tidak support`
   let img = await q.download()
   let url = await uploadImage(img)
-  let wasted = `https://api.memegen.link/images/custom/${encodeURIComponent(teks1)}/${encodeURIComponent(teks2)}.png?background=${url}`
+  
+  https://api.zahwazein.xyz/creator/smeme?text=zenz&text2=api&url=https://i.ibb.co/KjSBWx4/Pics-Art-02-07-11-45-03.jpg&apikey=zenzkey_f59c1aacf2
+  //let wasted = `https://api.memegen.link/images/custom/${encodeURIComponent(teks1)}/${encodeURIComponent(teks2)}.png?background=${url}`
 //  let wasted = `http://docs-jojo.herokuapp.com/api/meme-gen?top=${teks}&bottom=${teks2}&img=${url}`
   let stiker = await sticker(null, wasted, packname, author)
-  conn.sendFile(m.chat, stiker, 'sticker.png', '', m)
+  conn.sendFile(m.chat, stiker, 'meme.png', '', m)
  } catch (e) {
    m.reply(`Masukan format!!\nReply image dengan caption ${usedPrefix}smeme teks1|teks2\n*Jangan reply sticker*`)
   }
