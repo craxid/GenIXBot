@@ -17,7 +17,8 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   
  let smeme = await conn.getFile(`https://api.zahwazein.xyz/creator/smeme?text=${encodeURIComponent(teks1)}&text2=${encodeURIComponent(teks2)}&url=${url}&apikey=zenzkey_f59c1aacf2`)
   
-  conn.sendFile(m.chat, sticker, smeme.data, 'meme_picture.webp', '', m)
+  let stiker = await sticker(null, wasted, packname, author)
+  conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
   
  } catch (e) {
    m.reply(`Reply gambar dengan caption ${usedPrefix}mememaker teks atas|teks bawah\n*Jangan reply sticker*`)
