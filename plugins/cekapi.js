@@ -18,7 +18,7 @@ ${global.sb}
 `
 
 conn.sendMessage(m.chat, {
-text: tegs.replace('false / free user'),
+text: tegs.replace('false / free user', 'Premium'),
 contextInfo: {
 externalAdReply: {
 title: (`API Stalker`),
