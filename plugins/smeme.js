@@ -1,7 +1,7 @@
 
 
 import uploadImage from '../lib/uploadImage'
-const { sticker } = require('../lib/sticker'
+import { sticker } from '../lib/sticker'
 
 let handler = async (m, { conn, text, usedPrefix }) => {
  try {
@@ -25,4 +25,4 @@ handler.help = ['smeme']
 handler.tags = ['sticker']
 handler.command = /^smeme$/i
 
-module.exports = handler
+export default handler
