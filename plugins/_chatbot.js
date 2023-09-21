@@ -7,7 +7,7 @@ await m.react(💬)
 if (m.isBaileys && m.fromMe)
         return !0
 
-if (!m.isGroup) return !1
+if (!m.isGroup) return !0
     let user = global.db.data.users[m.sender]
     
 if (!user.chatbot)
