@@ -23,7 +23,7 @@ externalAdReply: {
 title: (`API Stalker`),
 body: ('tes'),
 thumbnailUrl: thumb,
-sourceUrl: ${zenzapi.profile_image},
+sourceUrl: zenzapi.profile_image,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
