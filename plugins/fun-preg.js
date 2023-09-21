@@ -8,13 +8,13 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   let res = await fetch(global.API('https://api.simsimi.net', '/v2/', { text: encodeURIComponent(text), lc: "id" }, ''))
   //let res = await fetch(`https://api.zahwazein.xyz/entertainment/simisimi?apikey=zenzkey_f59c1aacf2&text=${text}`)
   /*let res = await fetch(global.API('https://api.zahwazein.xyz', '/entertainment/simisimi/?apikey=zenzkey_f59c1aacf2&text=', { text: encodeURIComponent(text), lc: "id" }, ''))*/
-  let json = await res.json()
+  /*let json = await res.json()
   if (json.success) 
 m.reply(`≡ *SIMSIMI*
  
 ▢ *Kamu:* ${text}
 ▢ *Simi:* ${json.success.replace('simsimi', 'DyLux').replace('Simsimi', 'DyLux').replace('sim simi', 'DyLux')}`) 
-  else throw json
+  else throw json*/
 }
 
 handler.help = ['simi']
