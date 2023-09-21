@@ -25,7 +25,7 @@ import { color } from '../lib/color'
 import moment from "moment-timezone"
 import levelling from '../lib/levelling'
 
-export async function before { before(m) {
+module.exports = { before(m) {
 		let user = global.db.data.users[m.sender]
 		if (!user.autolevelup) return !0
 		let before = user.level * 1
