@@ -21,7 +21,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
   
  } catch (e) {
-   m.reply(`Reply gambar dengan caption ${usedPrefix}mememaker teks atas|teks bawah\n*Jangan reply sticker*`)
+   m.reply(`Reply gambar dengan caption ${usedPrefix}smeme teks atas|teks bawah\n*Jangan reply sticker*`)
   }
 }
 handler.help = ['smeme']
