@@ -15,16 +15,9 @@ ${global.gz} *Dibuat pada:* ${zenzapi.created}
 ${global.gz} *Diupdate:* ${zenzapi.updated}
 ${global.gz} *Nama pengguna:* ${zenzapi.username}
 ${global.gz} *Hit:* ${zenzapi.today_hits}/${zenzapi.total_hits}
-${global.gz} *M:* ${zenzapi.}
+${global.gz} *Premium:* ${zenzapi.premium_expired}
 ${global.sb}
-
-${global.htki} *HOST & PORT* ${global.htka}
-${global.gz} *Host:* ${zenzapi.hostname}
-${global.gz} *IP:* ${zenzapi.ip}
-${global.gz} *Port:* ${zenzapi.port}
-${global.sb}
-
-API version: ${zenzapi.debug.apiversion}`
+`
     
 conn.sendMessage(m.chat, {
 text: tegs,
