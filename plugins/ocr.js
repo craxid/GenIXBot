@@ -4,8 +4,8 @@ import ocrapi from 'ocr-space-api-wrapper'
 import { MessageType } from '@adiwajshing/baileys'
 
 let handler = async (m, { conn, text }) => {
-    const q = m.quoted ? m.quoted : m
-    const mime = (q.msg || q).mimetype || ''
+    let q = m.quoted ? m.quoted : m
+    let mime = (q.msg || q).mimetype || ''
     if (!mime) throw `balas gambar dengan perintah .ocr`
     
     await m.reply(wait)
