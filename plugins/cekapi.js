@@ -1,8 +1,6 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, args, command }) => {
-	let type = (args[1] || '').toLowerCase()
-    let _type = (args[1] || '').toLowerCase()
     
 try {
 let zenz = await fetch(`https://api.zahwazein.xyz/user/cekapi?apikey=zenzkey_f59c1aacf2`)
@@ -23,7 +21,7 @@ text: tegs,
 contextInfo: {
 externalAdReply: {
 title: (`API Stalker`),
-body: ,
+body: ('tes'),
 thumbnailUrl: thumb,
 sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.ncnl.eu.org:40383'),
 mediaType: 1,
