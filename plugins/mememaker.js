@@ -17,7 +17,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
  let memeq = `https://api.zahwazein.xyz/creator/smeme?text=${encodeURIComponent(teks1)}&text2=${encodeURIComponent(teks1)}&url=${url}&apikey=zenzkey_f59c1aacf2`
   
 //  let wasted = `http://docs-jojo.herokuapp.com/api/meme-gen?top=${teks}&bottom=${teks2}&img=${url}`
-  let memeg = await sticker(null, memeq)
+  let memeg = await memeq(null, memeq)
   
   conn.sendFile(m.chat, memeg, 'meme.png', '', m)
   
