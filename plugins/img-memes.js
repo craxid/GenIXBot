@@ -1,6 +1,6 @@
 /*
      ig : https://www.instagram.com/fg98._/
-*/
+*//*
 import hispamemes from 'hispamemes'
 
 let handler = async (m, { conn, usedPrefix, command }) => {
@@ -15,3 +15,4 @@ handler.command = ['meme', 'memes']
 handler.diamond = true
 
 export default handler
+*/
