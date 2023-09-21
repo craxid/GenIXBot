@@ -9,7 +9,7 @@ m.react('💬')
 
 	try {
 	    
-	    let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)
+	    let gpt = await fetch(`https://api.yanzbotz.my.id/api/ai/gpt4?query=${text}`)
 	    
 	    /*let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)*/
      ;
