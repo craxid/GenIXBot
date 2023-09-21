@@ -1,13 +1,14 @@
 /*
      ig : https://www.instagram.com/fg98._/
-*//*
+*/
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, command }) => {
 	
 	
-let mim = await get
-	const meme = hispamemes.meme()
+let mim = await getFile('https://api.zahwazein.xyz/randomimage/memeindo?apikey=zenzkey_f59c1aacf2')
+
+	let mim = mim()
     conn.sendFile(m.chat, meme, '', '', m)
     m.react('😆') 
 }
@@ -17,4 +18,3 @@ handler.command = ['meme', 'memes']
 handler.diamond = true
 
 export default handler
-*/
