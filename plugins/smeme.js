@@ -14,8 +14,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   if (!/image\/(jpe?g|png)/.test(mime)) throw `Mime ${mime} tidak support`
   let img = await q.download()
   let url = await uploadImage(img)
-  
- let smeme = `https://api.zahwazein.xyz/creator/smeme?text=${encodeURIComponent(teks1)}&text2=${encodeURIComponent(teks2)}&url=${url}&apikey=zenzkey_f59c1aacf2`
+  let smeme = `https://api.zahwazein.xyz/creator/smeme?text=${encodeURIComponent(teks1)}&text2=${encodeURIComponent(teks2)}&url=${url}&apikey=zenzkey_f59c1aacf2`
   
   let stiker = await sticker(null, wasted, global.packname, global.author)
   conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
