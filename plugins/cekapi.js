@@ -15,6 +15,7 @@ ${global.gz} *Dibuat pada:* ${zenzapi.created}
 ${global.gz} *Diupdate:* ${zenzapi.updated}
 ${global.gz} *Nama pengguna:* ${zenzapi.username}
 ${global.gz} *Hit:* ${zenzapi.today_hits}/${zenzapi.total_hits}
+${global.gz} *M:* ${zenzapi.}
 ${global.sb}
 
 ${global.htki} *HOST & PORT* ${global.htka}
