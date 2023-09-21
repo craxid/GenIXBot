@@ -19,9 +19,9 @@ text: chating,
 contextInfo: {
 externalAdReply: {
 title: namebot,
-body: wm,
+body: globaal.wm2,
 thumbnailUrl: thumb,
-sourceUrl: sig,
+sourceUrl: dygp,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
