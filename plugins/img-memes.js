@@ -8,8 +8,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 	
 let mim = await getFile('https://api.zahwazein.xyz/randomimage/memeindo?apikey=zenzkey_f59c1aacf2')
 
-	let mim = mim()
-    conn.sendFile(m.chat, meme, '', '', m)
+	let mimme = mim.data
+    conn.sendFile(m.chat, mimme, 'meme.jpg', '', m)
     m.react('😆') 
 }
 handler.help = ['meme']
