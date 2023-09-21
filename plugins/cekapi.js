@@ -17,7 +17,7 @@ ${global.sb}
 
 conn.sendMessage(m.chat, tegs, m)
     
-/conn.sendMessage(m.chat, {
+/*conn.sendMessage(m.chat, {
 text: tegs,
 contextInfo: {
 externalAdReply: {
