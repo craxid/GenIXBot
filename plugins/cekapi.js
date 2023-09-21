@@ -60,7 +60,7 @@ case 'zenz api':
 • *Hit Today:* ${zenz.result.today_hits}
 • *Account:* ${zenz.result.account_type}
 
-• *Expired:* ${zenz.result.expired}`, m)
+• *Expired:* ${zenz.result.premium_expired}`, m)
 } else m.reply('Invalid Apikey !')
             break
 
