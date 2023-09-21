@@ -12,9 +12,9 @@ let zenzapi = await zenz.json()
 let tegs = `
 ${global.htki} *API Stalker* ${global.htka}
 ${global.gz} *Dibuat pada:* ${zenzapi.created}
-${global.gz} *Diupdate:* ${zenzapi.}
-${global.gz} *World Name:* ${zenzapi.map}
-${global.gz} *Game Mode:* ${zenzapi.gamemode}
+${global.gz} *Diupdate:* ${zenzapi.updated}
+${global.gz} *Nama pengguna:* ${zenzapi.username}
+${global.gz} *Apikey:* ${zenzapi.gamemode}
 ${global.gz} *Player:* ${zenzapi.players.online}/${zenzapi.players.max}
 ${global.sb}
 
