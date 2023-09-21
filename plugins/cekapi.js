@@ -23,7 +23,7 @@ externalAdReply: {
 title: (`API Stalker`),
 body: ('tes'),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.ncnl.eu.org:40383'),
+sourceUrl: (`${zenzapi.profile_images`),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
