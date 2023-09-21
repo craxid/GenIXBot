@@ -2,7 +2,7 @@
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper';
 let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
   if (!args || !args[0]) throw `✳️ Contoh :\n${usedPrefix + command} https://youtu.be/YzkTFFwxtXI`
-  if (!args[0].match(/youtu/gi)) throw `❎ Verifikasi link youtube`
+  if (!args[0].match(/youtu/gi)) throw `❎ Tidak dapat diunduh`
    m.react(rwait)
  let chat = global.db.data.chats[m.chat]
   try {
