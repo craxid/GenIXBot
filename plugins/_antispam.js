@@ -18,7 +18,7 @@ handler.all = async function (m) {
     else
         this.spam[m.sender] = {
             jid: m.sender,
-            count: 0,
+            count: 3,
             lastspam: 0
         }
 }
