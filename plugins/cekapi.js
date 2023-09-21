@@ -47,6 +47,24 @@ conn.reply(m.chat, `• *Type:* XTeam
 • *Expired:* ${lol.result.expired}`, m)
 } else m.reply('Invalid Apikey !')
             break
+            
+case 'zenz api': 
+    let zenz = await (await fetch(`https://api.lolhuman.xyz/api/checkapikey?apikey=${args[0]}`)).json()
+    m.reply(cek)
+    if (lol.message == 'success') {
+    conn.reply(m.chat, `• *Type:* Lolhuman
+• *Apikey:* ${args[0]}
+
+• *Name:* ${lol.result.username}
+• *Total Hit:* ${lol.result.requests}
+• *Hit Today:* ${lol.result.today}
+• *Account:* ${lol.result.account_type}
+
+• *Expired:* ${lol.result.expired}`, m)
+} else m.reply('Invalid Apikey !')
+            break
+
+
           default:
             return conn.sendButton(m.chat, `*${htki} CEK APIKEY ${htka}*`, 'Select Button Here', null, [['XTeam', `.cekapi ${args[0]} xteam`],['Lolhuman', `.cekapi ${args[0]} lolhuman`]],m)
         }
