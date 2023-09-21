@@ -3,7 +3,7 @@ let handler = async (m, { conn, text }) => {
     
 try {
 let zenz = await fetch(`https://api.zahwazein.xyz/user/cekapi?apikey=zenzkey_f59c1aacf2`)
-let zenzapi = await zenz.message.json()
+let zenzapi = await zenz.json()
 
 let tegs = `
 ${global.htki} *API Stalker* ${global.htka}
