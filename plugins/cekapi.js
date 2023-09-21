@@ -6,25 +6,25 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
     if (!args[0]) return m.reply('Apikeynya mana?')
   
 try {
-let zen = await fetch(`https://api.zahwazein.xyz/user/cekapi?apikey=zenzkey_f59c1aacf2`)
-let sevre = await ncnlstat.json()
+let zenz = await fetch(`https://api.zahwazein.xyz/user/cekapi?apikey=zenzkey_f59c1aacf2`)
+let zenzapi = await zenz.json()
 
 let tegs = `
 ${global.htki} *API Stalker* ${global.htka}
-${global.gz} *Version:* ${sevre.version}
-${global.gz} *MOTD:* ${sevre.motd.clean}
-${global.gz} *World Name:* ${sevre.map}
-${global.gz} *Game Mode:* ${sevre.gamemode}
-${global.gz} *Player:* ${sevre.players.online}/${sevre.players.max}
+${global.gz} *Version:* ${zenzapi.version}
+${global.gz} *MOTD:* ${zenzapi.motd.clean}
+${global.gz} *World Name:* ${zenzapi.map}
+${global.gz} *Game Mode:* ${zenzapi.gamemode}
+${global.gz} *Player:* ${zenzapi.players.online}/${zenzapi.players.max}
 ${global.sb}
 
 ${global.htki} *HOST & PORT* ${global.htka}
-${global.gz} *Host:* ${sevre.hostname}
-${global.gz} *IP:* ${sevre.ip}
-${global.gz} *Port:* ${sevre.port}
+${global.gz} *Host:* ${zenzapi.hostname}
+${global.gz} *IP:* ${zenzapi.ip}
+${global.gz} *Port:* ${zenzapi.port}
 ${global.sb}
 
-API version: ${sevre.debug.apiversion}`
+API version: ${zenzapi.debug.apiversion}`
     
 conn.sendMessage(m.chat, {
 text: tegs,
