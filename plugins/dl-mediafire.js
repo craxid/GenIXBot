@@ -2,8 +2,8 @@
 import fetch from 'node-fetch'
 import { mediafiredl } from '@bochilteam/scraper'
 import fg from 'api-dylux'
-let free = 150 // limite de descarga
-let prem = 300 //si su servidor tienes menos de 2GB baja el límite
+let free = 8 // limite de descarga
+let prem = 15 //si su servidor tienes menos de 2GB baja el límite
 let handler = async (m, { conn, args, text, usedPrefix, command, isOwner, isPrems }) => {
 	
    if (!args[0]) throw `✳️ Masukkan tautan mediafire setelah perintah`
