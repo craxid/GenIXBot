@@ -14,7 +14,7 @@ ${global.gz} *Hit:* ${zenzapi.today_hits}/${zenzapi.total_hits}
 ${global.gz} *Premium:* ${zenzapi.premium_expired}
 ${global.sb}
 `
-let pp = (``)
+let pp = (`${zenzapi.profile_image}`)
 
 conn.sendMessage(m.chat, tegs, m)
     
