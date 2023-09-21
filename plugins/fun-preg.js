@@ -1,25 +1,13 @@
+
 import fetch from 'node-fetch'
-
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-	
- let name = conn.getName(m.sender)
-  if (!text) throw `✳️ *Contoh :*\n\n *${usedPrefix + command}* Halo`
-  m.react('🫣') 
-  let res = await fetch(global.API('https://api.simsimi.net', '/v2/', { text: encodeURIComponent(text), lc: "id" }, ''))
-  //let res = await fetch(`https://api.zahwazein.xyz/entertainment/simisimi?apikey=zenzkey_f59c1aacf2&text=${text}`)
-  /*let res = await fetch(global.API('https://api.zahwazein.xyz', '/entertainment/simisimi/?apikey=zenzkey_f59c1aacf2&text=', { text: encodeURIComponent(text), lc: "id" }, ''))*/
-  /*let json = await res.json()
-  if (json.success) 
-m.reply(`≡ *SIMSIMI*
- 
-▢ *Kamu:* ${text}
-▢ *Simi:* ${json.success.replace('simsimi', 'DyLux').replace('Simsimi', 'DyLux').replace('sim simi', 'DyLux')}`) 
-  else throw json*/
+let handler = async (m, { text }) => {
+  let res = await fetch(global.API(`https://saipulanuar.ga/api/f/simi?text=${text}`))
+  let json = await res.json()
+  if (json.result) m.reply(json.result)
+  else throw json
 }
-
-handler.help = ['simi']
+handler.help = ['simi', 'simsimi', 'simih'].map(v => v + ' <teks>')
 handler.tags = ['fun']
-handler.command = ['sim', 'simi'] 
-handler.diamond = 1
+handler.command = /^((sim)?simi|simih)$/i
 
-export default handler
+module.exports = handler
