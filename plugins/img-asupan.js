@@ -7,7 +7,7 @@ let handler = async(m, { conn, usedPrefix, command }) => {
     m.react(dmoji)
     
 }
-handler.help = ['tvid']
+handler.help = ['asupan']
 handler.tags = ['img']
 handler.command = ['asupan', 'tvid', 'videos', 'vid', 'video']
 handler.premium = false
