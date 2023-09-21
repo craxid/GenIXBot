@@ -19,7 +19,7 @@ await m.reply(hasil.ParsedResults[0].ParsedText)    }
 
 handler.help = ['ocr', 'totext']
 handler.tags = ['tools']
-handler.command = ['ocr','totext']
+handler.command = /^(ocr|totext)$/i
 handler.diamond = true
 
 export default handler
