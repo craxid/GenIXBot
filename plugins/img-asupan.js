@@ -1,7 +1,7 @@
 
 let handler = async(m, { conn, usedPrefix, command }) => {
 	
-    let img = await conn.getFile(global.API('fgmods', '/api/img/asupan-la', { }, 'apikey'))
+    let img = await conn.getFile(global.API('fgmods', '/randomasupan/asupantiktok', { }, 'apikey'))
     let asupan = img.data
     conn.sendFile(m.chat, asupan, 'vid.mp4', `✅ Hasil`, m)
     m.react(dmoji)
@@ -14,3 +14,5 @@ handler.premium = false
 handler.diamond = true
 
 export default handler
+
+//https://api.zahwazein.xyz/randomasupan/asupantiktok?apikey=zenzkey_f59c1aacf2
