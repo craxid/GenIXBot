@@ -1,21 +1,13 @@
-/*import fetch from 'node-fetch'
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-	
- let name = conn.getName(m.sender)
-  if (!text) throw `Hai kak *${name}* mau ngobrol denganku? \nTanggapi dengan *${usedPrefix + command}* (isi pesan) \n\n📌 Contoh : *${usedPrefix + command}* Halo Mika`
-  m.react('🗣️') 
-  
-  let res = await fetch(global.API(`https://api.yanzbotz.my.id/api/ai/characterai?id=id3xBWK9-mcu8Y8JOQjbKzzAmOzgGgmp8HomTp-UOq8&query=${text}`))
-  
+import fetch from 'node-fetch'
+let handler = async (m, { text }) => {
+  let res = await fetch(`https://api.zahwazein.xyz/entertainment/simisimi?text=${text}&apikey=zenzkey_f59c1aacf2`)
   let json = await res.json()
-  if (json.success) m.reply(json.success.replace('simsimi', 'DyLux').replace('Simsimi', 'DyLux').replace('sim simi', 'DyLux'))
+  if (json.result) m.reply(json.result.replace('simi','Mika').replace('simsimi','Mika'))
   else throw json
 }
-handler.help = ['simi <teks>']
+handler.help = ['simi', 'simsimi', 'simih'].map(v => v + ' <teks>')
 handler.tags = ['fun']
-handler.command = ['sim', 'simi','akebi'] 
-handler.diamond = 2
+handler.command = /^((sim)?simi|simih)$/i
 
 export default handler
-*/
