@@ -14,8 +14,7 @@ ${global.htki} *API Stalker* ${global.htka}
 ${global.gz} *Dibuat pada:* ${zenzapi.created}
 ${global.gz} *Diupdate:* ${zenzapi.updated}
 ${global.gz} *Nama pengguna:* ${zenzapi.username}
-${global.gz} *Hit Hari ini:* ${zenzapi.today.hits}
-${global.gz} *Total:* ${zenzapi.players.online}/${zenzapi.players.max}
+${global.gz} *Hit:* ${zenzapi.today_hits}/${zenzapi.total_hits}
 ${global.sb}
 
 ${global.htki} *HOST & PORT* ${global.htka}
