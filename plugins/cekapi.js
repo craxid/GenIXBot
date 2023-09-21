@@ -1,6 +1,5 @@
 import fetch from 'node-fetch'
-
-let handler = async (m, { conn, usedPrefix, args, command }) => {
+let handler = async (m, { conn, text }) => {
     
 try {
 let zenz = await fetch(`https://api.zahwazein.xyz/user/cekapi?apikey=zenzkey_f59c1aacf2`)
