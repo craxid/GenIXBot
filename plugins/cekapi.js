@@ -24,7 +24,7 @@ externalAdReply: {
 title: (`API Stalker`),
 body: ('tes'),
 thumbnailUrl: (`${zenzapi.message.profile_image}`),
-sourceUrl: global.dygp,
+sourceUrl: ('https://api.zahwazein.xyz/'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
