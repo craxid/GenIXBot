@@ -1,18 +1,21 @@
 
 import CharacterAI from "node_characterai"
-const characterAI = new CharacterAI();
+
+let characterAI = new CharacterAI()
 
 (async () => {
-  await characterAI.authenticateAsGuest();
+  await characterAI.authenticateAsGuest()
 
-  const characterId = "YntB_ZeqRq2l_aVf2gWDCZl4oBttQzDvhj9cXafWcF8";
+  const characterId = "YntB_ZeqRq2l_aVf2gWDCZl4oBttQzDvhj9cXafWcF8"
 
-  const chat = await characterAI.createOrContinueChat(characterId);
+  const chat = await characterAI.createOrContinueChat(characterId)
 
-  const response = await chat.sendAndAwaitResponse("Hello discord mod!", true);
+  const response = await chat.sendAndAwaitResponse("Hello discord mod!", true)
 
-  console.log(response.text);
-})();
+  console.log(response.text)
+})()
+
+
 
 /*import fetch from 'node-fetch'
 
