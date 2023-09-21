@@ -24,7 +24,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 }
 handler.help = ['meme','mememaker']
 handler.tags = ['img']
-handler.command = /^((meme)?maker|memeq)$/i
+handler.command = /^(meme|mememaker|memeq)$/i
 handler.diamond = false
 
 export default handler
