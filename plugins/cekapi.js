@@ -26,10 +26,9 @@ case 'zenz':
 • *Expired:* ${zenz.result.premium_expired}`, m)
 } else m.reply('Invalid Apikey !')
             break
-
-
+            
           default:
-            //return conn.sendButton(m.chat, `*${htki} CEK APIKEY ${htka}*`, 'Select Button Here', null, [['XTeam', `.cekapi ${args[0]} xteam`],['Lolhuman', `.cekapi ${args[0]} lolhuman`]],m)
+
         }
     } else if (/enchant|enchan/i.test(command)) {
       const count = args[2] && args[2].length > 0 ? Math.min(99999999, Math.max(parseInt(args[2]), 1)) : !args[2] || args.length < 4 ? 1 :Math.min(1, count)
@@ -40,7 +39,6 @@ case 'zenz':
           break
 
         default:
-          //return conn.sendButton( m.chat, wm, wm, null, [`⋮☰ Menu`, `.menu`], m)
 
       }
     }
