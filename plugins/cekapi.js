@@ -35,7 +35,7 @@ renderLargerThumbnail: false
 }
 
 handler.command = /^(cek(key|api))$/i
-handler.rowner =true
+handler.rowner = true
 export default handler
 
 //https://api.zahwazein.xyz/user/cekapi?apikey=zenzkey_f59c1aacf2
