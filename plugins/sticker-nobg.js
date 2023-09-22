@@ -27,9 +27,9 @@ conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
 m.reply('Error saat mengkonversi stiker, file terlalu besar')
 await conn.sendFile(m.chat, apiUrl, 'snobg.png', null, m)
 }}
-handler.help = ['smaker']
+handler.help = ['snobg']
 handler.tags = ['sticker']
-handler.command = ['stickmaker', 'stickermaker', 'smaker'] 
+handler.command = ['snobg', 'sbg', 'stickernobg'] 
 handler.diamond = true
 
 export default handler
