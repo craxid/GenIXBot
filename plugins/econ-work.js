@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
   let hasil = Math.floor(Math.random() * 2000)
   let time = global.db.data.users[m.sender].lastwork + 900000
-  if (new Date - global.db.data.users[m.sender].lastwork < 900000) throw `*🧘🏻‍♂️ Kamu lelah* dan karena itu kamu harus menunggu *${msToTime(time - new Date())}* untuk kembali ${command}`
+  if (new Date - global.db.data.users[m.sender].lastwork < 900000) throw `*🧘🏻‍♂️ Kamu lelah* dan karena itu kamu harus menunggu *${msToTime(time - new Date())}* untuk kembali bekerja`
 
     /*let w = await axios.get(global.API('fgmods', '/api/work', { }, 'apikey'))
     let res = w.data.result*/
