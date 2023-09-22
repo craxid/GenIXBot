@@ -16,7 +16,6 @@ let mika = await fetch(`https://api.zahwazein.xyz/entertainment/simisimi?text=${
 
 let res = await mika.json()
 
-
 m.reply(res.result.message.replace('darling','Sensei').replace('dear','Sensei').replace('dearest','Sensei').replace('sayang','Sensei').replace('Anda','Sensei').replace('Hey there','Hey Sensei').replace('Hi there','Hi Sensei').replace('Hello there', 'Hello Sensei').replace('Anda','Kamu').replace('simisimi','Mika').replace('enter text params','aku gak bisa bales setiker kak'))
 }
 
