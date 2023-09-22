@@ -42,10 +42,10 @@ handler.command = ['donasi', 'donate', 'dukung']
 export default handler
 */
 
-let { generateWAMessageFromContent, prepareWAMessageMedia, proto } = require('@adiwajshing/baileys')
-let moment = require('moment-timezone')
-let fetch = require('node-fetch')
-let fs = require('fs')
+import { generateWAMessageFromContent, prepareWAMessageMedia, proto } from '@adiwajshing/baileys'
+import moment from 'moment-timezone'
+import fetch from 'node-fetch'
+let fs = require('fs'
 
 let qris = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
