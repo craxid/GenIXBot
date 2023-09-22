@@ -4,13 +4,13 @@ import fetch from 'node-fetch'
 export async function before(m, { conn }) {
 
 if (m.isBaileys && m.fromMe)
-        return !0
+        return !1
 
 if (!m.isGroup) return !0
     let user = global.db.data.users[m.sender]
     
 if (!user.chatbot)
-return !1
+return !0
 
 let mika = await fetch(`https://api.zahwazein.xyz/entertainment/simisimi?text=${m.text}&apikey=zenzkey_f59c1aacf2`)
 
