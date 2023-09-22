@@ -12,7 +12,7 @@ export async function before(m, { conn }) {
     if (before !== user.level) {
     
 let chating = `
-*Congratulations*, you have leveled up!
+*Selamat*, Kamu naik level!
 *[ ${before} ]* ➠ *[ ${user.level} ]*
 Use *.profile* to check
 `.trim()
