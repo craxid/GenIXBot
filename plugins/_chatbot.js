@@ -2,7 +2,6 @@
 import fetch from 'node-fetch'
 
 export async function before(m, { conn }) {
-await m.react(💬)
 
 if (m.isBaileys && m.fromMe)
         return !0
