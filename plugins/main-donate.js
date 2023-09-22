@@ -48,9 +48,12 @@ import fetch from 'node-fetch'
 import fs from 'fs'
 
 let qris = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
+
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-const messa = await prepareWAMessageMedia({ image: await fetch(`${global.qris}`) }, { upload: conn.waUploadToServer })
-const catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+    
+let messa = await prepareWAMessageMedia({ image: await fetch(`${global.qris}`) }, { upload: conn.waUploadToServer })
+
+let catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "productMessage": {
 "product": {
 "productImage": messa.imageMessage, 
