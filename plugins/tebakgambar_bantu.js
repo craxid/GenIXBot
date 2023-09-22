@@ -6,7 +6,6 @@ let handler = async (m, { conn }) => {
     m.reply('```' + json.jawaban.replace(/[bcdfghjklmnpqrstvwxyz]/gi, '_') + '```\nBALAS SOALNYA, BUKAN PESAN INI!')
 }
 handler.command = /^tebar$/i
-
 handler.limit = true
 
 export default handler
