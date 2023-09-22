@@ -1,4 +1,5 @@
-module.exports = {
+
+export = {
     async before(m, { match }) {
         // if (match) return !1
         if (!m.chat.endsWith('@s.whatsapp.net')) return !0
