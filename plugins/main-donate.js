@@ -47,11 +47,11 @@ import moment from 'moment-timezone'
 import fetch from 'node-fetch'
 import fs from 'fs'
 
-let qris = `${global.qris}`
-
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     
 let messa = await prepareWAMessageMedia({ image: await fetch(`${global.qris}`) }, { upload: conn.waUploadToServer })
+
+let qris = `${global.qris}`
 
 let catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "productMessage": {
