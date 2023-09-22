@@ -1,4 +1,5 @@
-let fetch = require('node-fetch')
+
+import fetch from 'node-fetch'
 
 let timeout = 120000
 let exp = 500
