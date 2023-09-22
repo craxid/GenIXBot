@@ -58,7 +58,6 @@ ${Object.entries(xp_bonus).map(([count, xp]) => `${count} Orang = Bonus ${xp} XP
 handler.help = ['ref']
 handler.tags = ['main']
 handler.command = ['ref']
-
-handler.register = true
+handler.register = false
 
 export default handler
