@@ -47,7 +47,7 @@ import moment from 'moment-timezone'
 import fetch from 'node-fetch'
 import fs from 'fs'
 
-let qris = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
+let qris = ${global.qris}
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     
