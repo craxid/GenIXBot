@@ -15,7 +15,7 @@ let handler = async (m, { conn, usedPrefix }) => {
   let json = src[Math.floor(Math.random() * src.length)]
   if (!json) throw json
   let caption = `
-deskripsi: *${json.deskripsi}*
+Deskripsi: *${json.deskripsi}*
 
 Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}tebar untuk bantuan
