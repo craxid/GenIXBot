@@ -13,7 +13,7 @@ let media = await q.download()
 let url = await uploadImage(media)
 let hasil = await (await fetch(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`)).buffer()
 
-await conn.sendFile(m.chat, hasil, 'img.jpg', '', '2023 © Mika Bot', m)
+await conn.sendFile(m.chat, hasil.data, 'img.jpg', '', '2023 © Mika Bot', m)
 	
 }
 handler.help = ['removebg']
