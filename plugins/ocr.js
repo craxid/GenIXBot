@@ -9,7 +9,9 @@ let mime = (q.msg || q).mimetype || ''
 
 if (!mime) throw `balas gambar dengan perintah .ocr`
 
-if (!/image\/(jpe?g|png)/.test(mime)) throw `_*jenis ${mime} tidak didukung!*_`
+if (!/image\/(jpe?g|png)/.test(mime)) throw `
+_*jenis ${mime} tidak didukung!*_
+`
     
     let img = await q.download()
     let url = await uploadImage(img)
