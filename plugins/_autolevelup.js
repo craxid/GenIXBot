@@ -14,7 +14,7 @@ export async function before(m, { conn }) {
 let chating = `
 *Selamat*, Kamu naik level!
 *[ ${before} ]* ➠ *[ ${user.level} ]*
-Use *.profile* to check
+gunakan *.profile* untuk memeriksa
 `.trim()
 
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
