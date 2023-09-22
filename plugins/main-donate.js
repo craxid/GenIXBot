@@ -76,6 +76,7 @@ let catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 conn.relayMessage(m.chat, catalog.message, { messageId: catalog.key.id })
 }
+
 handler.help = ['donasi']
 handler.tags = ['main']
 handler.command = /^(donasi|donate)$/i
