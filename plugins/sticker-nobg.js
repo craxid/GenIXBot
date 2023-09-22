@@ -17,7 +17,7 @@ await conn.sendFile(m.chat, hasil.data, 'img.webp', m)
 	
 }
 handler.help = ['stickernobg']
-handler.tags = ['img']
+handler.tags = ['sticker']
 handler.command = /^(stickernobg|stikernobg|sbg|snobg)$/i
 handler.diamond = 1
 
