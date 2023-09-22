@@ -9,7 +9,7 @@ let effect = text.trim().toLowerCase()
 if (!effects.includes(effect)) throw `
 
 📌 *Contoh:* 
-${usedPrefix + command}snobg 
+${usedPrefix + command} (gambar)
 `.trim()
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
