@@ -1,4 +1,4 @@
-
+/*
 let handler = async(m, { conn, usedPrefix, command }) => {
 
     let don = `
@@ -40,3 +40,43 @@ handler.tags = ['main']
 handler.command = ['donasi', 'donate', 'dukung'] 
 
 export default handler
+*/
+
+let { generateWAMessageFromContent, prepareWAMessageMedia, proto } = require('@adiwajshing/baileys')
+let moment = require('moment-timezone')
+let fetch = require('node-fetch')
+let fs = require('fs')
+
+let qris = ''
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+const messa = await prepareWAMessageMedia({ image: await fetch(`${global.qris}`) }, { upload: conn.waUploadToServer })
+const catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"productMessage": {
+"product": {
+"productImage": messa.imageMessage, 
+"productId": "6639344636131773",
+"title": `Donasi kepada Dede K.`,
+"description": `Scan untuk Donasi`,
+"currencyCode": "IDR",
+"bodyText": wm,
+"footerText": wm,
+"priceAmount1000": "20000000",
+"productImageCount": 1,
+"firstImageId": 1,
+"salePriceAmount1000": "15000000",
+"retailerId": wm,
+"url": "http://wa.me/6285892734104"
+},
+"businessOwnerJid": "6283155936234@s.whatsapp.net",
+}
+}), { userJid: m.chat, quoted: m })    
+
+conn.relayMessage(m.chat, catalog.message, { messageId: catalog.key.id })
+}
+handler.help = ['donasi']
+handler.tags = ['main']
+handler.command = /^(donasi|donate)$/i
+
+handle
+
+module.exports = handler
