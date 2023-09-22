@@ -26,7 +26,7 @@ handler.diamond = true
 
 export default handler
 */
-
+/*
 Berikut adalah kode yang telah diperbaiki:
 
 ```javascript
@@ -59,7 +59,7 @@ handler.command = /^(ocr|totext)$/i
 handler.diamond = true
 
 export default handler
-```
+/*```
 
 Beberapa perbaikan yang saya lakukan di antaranya:
 
@@ -68,4 +68,4 @@ Beberapa perbaikan yang saya lakukan di antaranya:
 3. Menambahkan `MessageType.text` saat mengirimkan hasil OCR agar pesan dikirim sebagai teks.
 4. Menambahkan opsi `quoted: m` saat mengirimkan pesan balasan agar pesan terkait kutipannya sesuai dengan kutipan pesan asli.
 
-Harap diingat untuk memasukkan library yang diperlukan dan memastikan path pada import module sudah benar.
+Harap diingat untuk memasukkan library yang diperlukan dan memastikan path pada import module sudah benar.*/
