@@ -14,7 +14,7 @@ await conn.sendFile(m.chat, hasil, '', wm, m)
 	
 }
 handler.help = ['jadianime']
-handler.tags = ['maker']
+handler.tags = ['ai']
 handler.command = /^(jadianime)$/i
 handler.limit = 5
 
