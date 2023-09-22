@@ -6,7 +6,7 @@ const effects = ['jail', 'gay', 'glass', 'wasted' ,'triggered', 'lolice', 'simpc
 let handler = async (m, { conn, usedPrefix, text, command }) => {
     
 //let effect = text.trim().toLowerCase()
-if (!effects.includes(effect)) throw `
+/*if (!effects.includes(effect)) throw*/ `
 
 📌 *Contoh:* 
 ${usedPrefix + command} (gambar)
