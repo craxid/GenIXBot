@@ -1,6 +1,6 @@
 
 import fetch from 'node-fetch'
-im uploadImage from '../lib/uploadImage.js'
+import uploadImage from '../lib/uploadImage.js'
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -20,4 +20,4 @@ handler.tags = ['maker']
 handler.command = /^(removebg)$/i
 handler.limit = true
 
-module.exports = handler
+export default handler
