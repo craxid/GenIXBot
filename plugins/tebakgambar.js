@@ -16,11 +16,11 @@ let handler = async (m, { conn, usedPrefix }) => {
   let caption = `
 Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}hint untuk hint
-Bonus: ${poin} XP
+Bonus: ${exp} XP
     `.trim()
   conn.tebakgambar[id] = [
     await conn.sendMessage(m.chat, { image: { url: json.img }, caption: caption, footer: wm }, { quoted: m }),
-    json, poin,
+    json, exp,
     setTimeout(() => {
       if (conn.tebakgambar[id]) conn.reply(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, conn.tebakgambar[id][0])
       delete conn.tebakgambar[id]
