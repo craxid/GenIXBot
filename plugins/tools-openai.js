@@ -9,9 +9,7 @@ m.react('💬')
 
 	try {
 	    
-	    let gpt = await fetch(`https://api.yanzbotz.my.id/api/ai/gpt3?query=${text}`)
-	    
-	    /*let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)*/
+	    let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)
      ;
         let res = await gpt.json()
         await m.reply(res.result.replace('YanzBotz','Mika Bot').replace('-APIs', '').replace('YanzBotz','ZuroX Project'))
