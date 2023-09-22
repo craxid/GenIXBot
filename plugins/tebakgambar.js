@@ -2,7 +2,7 @@
 import fetch from 'node-fetch'
 
 let timeout = 120000
-let exp = 500
+let exp = 200
 let src
 let handler = async (m, { conn, usedPrefix }) => {
   conn.tebakgambar = conn.tebakgambar ? conn.tebakgambar : {}
