@@ -12,7 +12,7 @@ m.reply('Tunggu Sebentar...')
 let media = await q.download()
 let url = await uploadImage(media)
 let hasil = await (await fetch(`https://api.ibeng.tech/api/maker/rmbg?url=${url}&apikey=tamvan`)).buffer()
-await conn.sendFile(m.chat, hasil, 'img.jpg', '', '2023 © Mika Bot', m)
+await conn.sendFile(m.chat, hasil, '', '2023 © Mika Bot', m)
 	
 }
 handler.help = ['removebg']
