@@ -1,4 +1,5 @@
-const similarity = require('similarity')
+
+import  similarity from 'similarity'
 const threshold = 0.72
 let handler = m => m
 handler.before = async function (m) {
