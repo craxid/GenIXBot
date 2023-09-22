@@ -1,5 +1,7 @@
 //import db from '../lib/database.js'
 import { canLevelUp } from '../lib/levelling.js'
+import { levelup } from '../lib/canvas.js'
+import db from '../lib/database.js'
 
 export async function before(m, { conn }) {
     let user = global.db.data.users[m.sender]
