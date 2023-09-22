@@ -11,9 +11,9 @@ if (!mime) throw 'Kirim/Reply Gambar dengan caption .removebg'
 m.reply('Tunggu Sebentar...')
 let media = await q.download()
 let url = await uploadImage(media)
-let hasil = conn.getFile(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`)
+let hasil = await (await fetch(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`)).buffer()
 
-await conn.sendMessage(m.chat, hasil, 'img.jpg', '', '2023 © Mika Bot')
+await conn.sendFile(m.chat, hasil, 'img.jpg', '', '2023 © Mika Bot', m)
 	
 }
 handler.help = ['removebg']
