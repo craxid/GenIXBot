@@ -18,6 +18,6 @@ await conn.sendFile(m.chat, hasil, '', '2023 © Mika Bot', m)
 handler.help = ['removebg']
 handler.tags = ['maker']
 handler.command = /^(removebg)$/i
-handler.limit = true
+handler.diamond = true
 
 export default handler
