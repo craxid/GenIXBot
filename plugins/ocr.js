@@ -38,7 +38,7 @@ import { MessageType } from '@adiwajshing/baileys'
 let handler = async (m, { conn, text }) => {
   let q = m.quoted ? m.quoted : m
   let mime = (q.msg || q).mimetype || ''
-  if (!mime) throw `Balas gambar dengan perintah .ocr`
+  if (!mime) throw `Balas gambar dengan perintah .ocr`/*
   if (!/image\/(jpe?g|png)/.test(mime)) throw `Jenis ${mime} tidak didukung!`
 
   let img = await q.download()
@@ -50,7 +50,7 @@ let handler = async (m, { conn, text }) => {
     hasil.ParsedResults[0].ParsedText,
     MessageType.text,
     { quoted: m }
-  )
+  )*/
 }
 
 handler.help = ['ocr', 'totext']
