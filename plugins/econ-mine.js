@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => {
 
   let hasil = Math.floor(Math.random() * 2000)
   let time = global.db.data.users[m.sender].lastmiming + 900000
-  if (new Date - global.db.data.users[m.sender].lastmiming < 900000) throw `⏳ _Tunggu_ *${msToTime(time - new Date())}* _Untuk kembali ke tambang_`
+  if (new Date - global.db.data.users[m.sender].lastmiming < 900000) throw `⏳ _Tunggu_ *${msToTime(time - new Date())}* _Untuk kembali menambang_`
   global.db.data.users[m.sender].exp += hasil
   m.reply(`
 🎉 Kamu mendapat *XP* sebanyak *${hasil}*`)
