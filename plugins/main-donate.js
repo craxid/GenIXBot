@@ -47,7 +47,7 @@ import moment from 'moment-timezone'
 import fetch from 'node-fetch'
 import fs from 'fs'
 
-let qris = ${global.qris}
+let qris = `${global.qris}`
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     
