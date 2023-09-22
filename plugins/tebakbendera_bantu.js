@@ -8,6 +8,6 @@ let handler = async (m, { conn }) => {
     conn.reply(m.chat, '```' + clue + '```\nBalas soalnya, bukan pesan ini', conn.tebakbendera[id][0])
 }
 handler.command = /^tekbe$/i
-handler.limit = true
+handler.diamond = true
 
 export default handler
