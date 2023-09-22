@@ -1,3 +1,4 @@
+
 import { MessageType } from "@adiwajshing/baileys"
 
 async function handler(m, { command, usedPrefix }) {
