@@ -18,7 +18,7 @@ await conn.sendFile(m.chat, hasil.data, 'img.jpg', 'Background Remover\n© Mika 
 }
 handler.help = ['removebg']
 handler.tags = ['img']
-handler.command = /^(removebg)$/i
+handler.command = /^(removebg|nobg)$/i
 handler.diamond = 3
 
 export default handler
