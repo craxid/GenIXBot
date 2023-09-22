@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
     let json = conn.tebakgambar[id][1]
     m.reply('```' + json.jawaban.replace(/[bcdfghjklmnpqrstvwxyz]/gi, '_') + '```\nBALAS SOALNYA, BUKAN PESAN INI!')
 }
-handler.command = /^hint$/i
+handler.command = /^trbar$/i
 
 handler.limit = true
 
