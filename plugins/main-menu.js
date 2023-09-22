@@ -188,7 +188,7 @@ renderLargerThumbnail: false
 }
 handler.help = ['help']
 handler.tags = ['main']
-handler.command = ['menu', 'help', '?','mika'] 
+handler.command = ['menu', 'help', '?','mika','p'] 
 handler.register = true
 
 handler.exp = 3
