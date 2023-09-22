@@ -47,7 +47,7 @@ let moment = require('moment-timezone')
 let fetch = require('node-fetch')
 let fs = require('fs')
 
-let qris = ''
+let qris = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 const messa = await prepareWAMessageMedia({ image: await fetch(`${global.qris}`) }, { upload: conn.waUploadToServer })
 const catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
