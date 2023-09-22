@@ -16,9 +16,9 @@ let hasil = await (await conn.getFile(`https://api.zahwazein.xyz/convert/sticker
 await conn.sendFile(m.chat, hasil.data, 'img.webp', 'Background Remover\n© Mika Bot', m)
 	
 }
-handler.help = ['removebg']
+handler.help = ['stickernobg']
 handler.tags = ['img']
-handler.command = /^(removebg|nobg)$/i
+handler.command = /^(stickernobg|sbg|snobg)$/i
 handler.diamond = 3
 
 export default handler
