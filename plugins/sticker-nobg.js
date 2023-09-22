@@ -19,6 +19,6 @@ await conn.sendFile(m.chat, hasil.data, 'img.webp', 'Background Remover\n© Mika
 handler.help = ['stickernobg']
 handler.tags = ['img']
 handler.command = /^(stickernobg|stikernobg|sbg|snobg)$/i
-handler.diamond = 3
+handler.diamond = 1
 
 export default handler
