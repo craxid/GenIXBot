@@ -13,7 +13,7 @@ let media = await q.download()
 let url = await uploadImage(media)
 let hasil = await (await conn.getFile(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`))
 
-conn.sendFile(m.chat, hasil.data, 'sticker.webp', '', m, null, rpl)
+conn.sendFile(m.chat, hasil.data, 'sticker.webp', m, null, rpl)
 	
 }
 handler.help = ['stickernobg']
