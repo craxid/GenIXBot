@@ -58,13 +58,13 @@ const catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "title": `Donasi kepada Dede K.`,
 "description": `Scan untuk Donasi`,
 "currencyCode": "IDR",
-"bodyText": wm,
-"footerText": wm,
+"bodyText": global.wm2,
+"footerText": global.wm2,
 "priceAmount1000": "20000000",
 "productImageCount": 1,
 "firstImageId": 1,
 "salePriceAmount1000": "15000000",
-"retailerId": wm,
+"retailerId": global.wm2,
 "url": "http://wa.me/6285892734104"
 },
 "businessOwnerJid": "6283155936234@s.whatsapp.net",
@@ -77,6 +77,4 @@ handler.help = ['donasi']
 handler.tags = ['main']
 handler.command = /^(donasi|donate)$/i
 
-handle
-
-module.exports = handler
+export default handler
