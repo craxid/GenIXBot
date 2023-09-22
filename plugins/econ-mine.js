@@ -8,7 +8,7 @@ let handler = async (m, { conn }) => {
   global.db.data.users[m.sender].exp += hasil
   m.reply(`
 🎉 Kamu mendapat *XP* sebanyak *${hasil}*`)
-  global.db.data.users[m.sender].lastmiming = new Date * 1
+  global.db.data.users[m.sender].lastmining = new Date * 1
 }
 handler.help = ['nambang']
 handler.tags = ['econ']
