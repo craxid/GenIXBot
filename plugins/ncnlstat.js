@@ -1,15 +1,13 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
-  
+if (!text) throw  `Masukan nama host dan ip\nhost.pe|19132`
 
+let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
+await m.reply(wait)
 
 try {
-    
-let host = text.split('|')[0] ? text.split('|')[0] : '-'
-  let port = text.split('|')[1] ? text.split('|')[1] : '-'
-  
-let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/${encodeURIComponent(host)}:${encodeURIComponent(port)}`)
+let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/${`)
 let sevre = await ncnlstat.json()
 
 let tegs = `
@@ -30,8 +28,7 @@ ${global.sb}
 
 API version: ${sevre.debug.apiversion}
     `
-let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
-     
+    
 conn.sendMessage(m.chat, {
 text: (`${tegs}`).replace('true','Online').replace('undefined','tidak diketahui'),
 contextInfo: {
