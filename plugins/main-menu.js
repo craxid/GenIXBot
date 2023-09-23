@@ -37,9 +37,6 @@ const defaultMenu = {
 🧿 Level : *%level* 
 👥 User : %totalreg
 📈 Runtime : %muptime
-
-*Waktu*
-${new Date().toLocaleString( 'id-ID', { timeZone: 'Asia/Jakarta' } )} WIB
 ─────────────
 Support Us!
 🔰 https://teer.id/dede_klender
