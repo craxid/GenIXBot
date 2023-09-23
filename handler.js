@@ -495,7 +495,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://minimalistic-wallpaper.demolab.com/?random'
+                                background: 'https://i.imgur.com/bbWbASn.jpg'
                             }, 'key')
 
                             let lea = API('azz', '/api/goodbye', {
@@ -504,7 +504,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://minimalistic-wallpaper.demolab.com/?random'
+                                background: 'https://i.imgur.com/klTSO3d.jpg'
                             }, 'key')
                         this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
