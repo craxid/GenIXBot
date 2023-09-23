@@ -492,8 +492,8 @@ export async function participantsUpdate({ id, participants, action }) {
 //https://api.azz.biz.id/api/welcome?name=Miftah&gcname=Miftah%20Botz&member=167&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
 
 
-let wel = conn.getFile('https://api.azz.biz.id/api/welcome?name=Miftah&gcname=Miftah%20Botz&member=167&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
-``)
+let wel = conn.getFile(`https://api.azz.biz.id/api/welcome?name=${namelef&gcname=Miftah%20Botz&member=167&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global
+`)
 
 let namelef: await this.getName(user),
 let gcnamelef: await this.getName(id),
