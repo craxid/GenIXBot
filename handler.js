@@ -489,7 +489,10 @@ export async function participantsUpdate({ id, participants, action }) {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang, @user').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'Desconocido') :
                             (chat.sBye || this.bye || conn.bye || 'Selamat tinggal, @user')).replace('@user', '@' + user.split('@')[0])
                          
-                            let wel = API('azz', '/api/welcome', {
+//https://api.azz.biz.id/api/welcome?name=Miftah&gcname=Miftah%20Botz&member=167&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
+
+
+let wel = API('azz', '/api/welcome', {
                                 name: await this.getName(user),
                                 gcname: await this.getName(id),
                                 groupicon: ppgp,
@@ -498,7 +501,6 @@ export async function participantsUpdate({ id, participants, action }) {
                                 bg: 'https://i.imgur.com/bbWbASn.jpg'
                             }, 'apikey')
 
-//https://api.azz.biz.id/api/welcome?name=Miftah&gcname=Miftah%20Botz&member=167&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
 
                             let lea = API('azz', '/api/goodbye', {
                                 name: await this.getName(user),
