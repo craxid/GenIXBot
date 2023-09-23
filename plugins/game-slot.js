@@ -11,7 +11,7 @@ Berapa banyak Kamu ingin taruhan?
     let apuesta = parseInt(args[0])
     let users = global.db.data.users[m.sender]
     let time = users.lastslot + 10000
-    if (new Date - users.lastslot < 10000) throw `⏳ Tunggu *${msToTime(time - new Date())}* agar bisa digunakan lagi`
+    if (new Date - users.lastslot < 10000) throw `⏳ Tunggu *${msToTime(time - new Date())}* agar bisa dimainkan lagi`
     if (apuesta < 100) throw '✳️ Minimal taruhan *100 XP*'
     if (users.exp < apuesta) {
         throw `✳️ Kamu tidak memiliki cukup *XP*`
