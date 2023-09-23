@@ -31,7 +31,7 @@ conn.sendMessage(m.chat, {
 text: teks,
 contextInfo: {
 externalAdReply: {
-title: (`${conn.getName(m.sender)}`),
+title: (`${name}`),
 body: (`Level: ${user.level}`),
 thumbnailUrl: pp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
