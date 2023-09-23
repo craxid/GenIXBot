@@ -17,11 +17,6 @@ let stabdif = await diff2.json()
 ▢ ${v.filename}
 ▢ *Link* : ${v.url}
    `.trim()
-      case 'channel': return `
-▢ *${v.name}* (${v.url})
-▢${v.subCountLabel} (${v.subCount}) Subscriber
-▢ ${v.videoCount} video
-`.trim()
     }
   }).filter(v => v).join('\n\n________________________\n\n')	
 conn.sendMessage(m.chat, stabdif.result, 'img.jpg', `*[ STABLE DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
