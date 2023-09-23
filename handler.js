@@ -496,7 +496,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
                                 background: 'https://i.imgur.com/bbWbASn.jpg'
-                            }, 'key')
+                            }, 'apikey')
 
                             let lea = API('azz', '/api/goodbye', {
                                 username: await this.getName(user),
@@ -505,7 +505,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
                                 background: 'https://i.imgur.com/klTSO3d.jpg'
-                            }, 'key')
+                            }, 'apikey')
                         this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
                              [(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : 'khajs')], 
