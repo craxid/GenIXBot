@@ -2,8 +2,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
   
-let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
-  
+
 if (!text) throw  `Masukan nama host dan ip\nhost.pe:19132`
 await m.reply(wait)
 
@@ -29,7 +28,8 @@ ${global.sb}
 
 API version: ${sevre.debug.apiversion}
     `
-    
+let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
+     
 conn.sendMessage(m.chat, {
 text: (`${tegs}`).replace('true','Online').replace('undefined','tidak diketahui'),
 contextInfo: {
