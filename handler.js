@@ -495,22 +495,22 @@ export async function participantsUpdate({ id, participants, action }) {
 let wel = conn.getFile(`https://api.azz.biz.id/api/welcome?name=${namewelyh}&gcname=${gcnamewelyh}&pp=${profilewelyh}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global
 `)
 
-let namewelyh = await this.getName(user),
-let gcnamewelyh = await this.getName(id),
-let groupiconwelyh = ppgp,
-let membercountwelyh = groupMetadata.participants.length,
-let profilewelyh = pp,
+let namewelyh = await this.getName(user)
+let gcnamewelyh = await this.getName(id)
+let groupiconwelyh = ppgp
+let membercountwelyh = groupMetadata.participants.length
+let profilewelyh = pp
 let bg = 'https://i.imgur.com/bbWbASn.jpg'
 
 
 
 let lea = API('azz', '/api/goodbye'
 
-name: await this.getName(user),
-gcname: await this.getName(id),
-groupicon: ppgp,
-membercount: groupMetadata.participants.length,
-profile: pp,
+name: await this.getName(user)
+gcname: await this.getName(id)
+groupicon: ppgp
+membercount: groupMetadata.participants.length
+profile: pp
 bg: 'https://i.imgur.com/klTSO3d.jpg'
 
                         this.sendFile(id, action === 'add' ? wel : lea, 'welcum.jpg', text, null, false, { mentions: [user] })
