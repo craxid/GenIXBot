@@ -13,13 +13,9 @@ let stabdif = await diff2.json()
   let tes = results.all
   let teks = results.all.map(v => {
     switch (v.type) {
-      case 'se': return `
-▢ ${v.title}
+      case 'setabil': return `
+▢ ${v.filename}
 ▢ *Link* : ${v.url}
-▢ *Durasi* : ${v.timestamp}
-▢ *Diunggah pada :* ${v.ago}
-▢ *Ditonton:* ${v.views}
-
    `.trim()
       case 'channel': return `
 ▢ *${v.name}* (${v.url})
