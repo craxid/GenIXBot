@@ -599,11 +599,11 @@ externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
 thumbnailUrl: global.mikasampul,
-sourceUrl: global.fgig,
+sourceUrl: ppmika,
 mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}}, m)
+}}})
 }
 
 let file = global.__filename(import.meta.url, true)
