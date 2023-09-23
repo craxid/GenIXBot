@@ -19,8 +19,8 @@ let handler = async(m, { conn, args, usedPrefix }) => {
 handler.help = ['codeshortlink']
 handler.tags = ['rpg']
 handler.command = /^(codeshortlink)$/i
-handler.limit = true
-handler.private = false
+handler.diamond = false
+handler.private = true
 
 export default handler
 
