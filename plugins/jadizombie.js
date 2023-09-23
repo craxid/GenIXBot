@@ -4,11 +4,12 @@ import makemeazombie from 'makemeazombie'
 
 let zombie = new makemeazombie()
 
-await m.reply(wait)
-
 async function handler(m, { conn }) {
+    
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
+await m.reply(wait)
+
 if (!mime) {
  return m.reply('Kirim/Balas gambar dengan caption *.jadizombie*')
 
