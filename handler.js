@@ -603,7 +603,7 @@ sourceUrl: global.dygp,
 mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}}, m)
+}}})
 }
 
 let file = global.__filename(import.meta.url, true)
