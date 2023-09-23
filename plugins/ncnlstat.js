@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
   
 
-if (!arg[0]) throw  `Masukan nama host dan ip\nhost.pe:19132`
+if (!args[0]) throw  `Masukan nama host dan ip\nhost.pe:19132`
 await m.reply(wait)
 
 try {
