@@ -34,6 +34,9 @@ global.APIKeys = { // APIKey Here
   //Regístrese en https://api-fgmods.ddns.net/
 }
 
+// tambahan
+global.rndm =''
+
 // Sticker WM
 global.packname = 'Mika Bot'
 global.namebot = 'Mika Misono Bot'
