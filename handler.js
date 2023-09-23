@@ -489,7 +489,7 @@ export async function participantsUpdate({ id, participants, action }) {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang, @user').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'Desconocido') :
                             (chat.sBye || this.bye || conn.bye || 'Selamat tinggal, @user')).replace('@user', '@' + user.split('@')[0])
                          
-                            let wel = API('fgmods', '/api/welcome', {
+                            let wel = API('azz', '/api/welcome', {
                                 username: await this.getName(user),
                                 groupname: await this.getName(id),
                                 groupicon: ppgp,
