@@ -499,7 +499,7 @@ let groupiconlef: ppgp,
 let membercountlef: groupMetadata.participants.length,
 let profile: pp,
 let bg: 'https://i.imgur.com/bbWbASn.jpg'
-                            }, 'apikey')
+}, 'apikey')
 
 
                             let lea = API('azz', '/api/goodbye', {
