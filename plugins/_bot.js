@@ -23,7 +23,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
 }
-handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh)$/i
+handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
 handler.command = new RegExp
 
 export default handler
