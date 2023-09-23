@@ -505,13 +505,14 @@ let bg: 'https://i.imgur.com/bbWbASn.jpg'
 
 
 let lea = API('azz', '/api/goodbye'
-                            name: await this.getName(user),
+
+name: await this.getName(user),
 gcname: await this.getName(id),
-                                groupicon: ppgp,
-                                membercount: groupMetadata.participants.length,
-                                profile: pp,
-                                bg: 'https://i.imgur.com/klTSO3d.jpg'
-                            }, 'apikey')
+groupicon: ppgp,
+membercount: groupMetadata.participants.length,
+profile: pp,
+bg: 'https://i.imgur.com/klTSO3d.jpg'
+
                         this.sendFile(id, action === 'add' ? wel : lea, 'welcum.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
                              [(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : 'khajs')], 
