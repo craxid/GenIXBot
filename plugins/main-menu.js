@@ -38,7 +38,7 @@ const defaultMenu = {
 👥 User : %totalreg
 📈 Runtime : %muptime
 
-*Waktu Server*
+*Waktu*
 ${new Date().toLocaleString( 'id-ID', { timeZone: 'Asia/Jakarta' } )} WIB
 ─────────────
 Support Us!
