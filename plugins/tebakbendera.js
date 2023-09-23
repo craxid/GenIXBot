@@ -11,13 +11,13 @@ let handler = async (m, { conn, usedPrefix }) => {
         conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.tebakbendera[id][0])
         throw false
     }
-    if (!src) src = await (await fetch(global.API('https://api.zahwazein.xyz/entertainment/tebakbendera?apikey=zenzkey_f59c1aacf2'))).json()
+    if (!src) src = await (await fetch(global.API('https://raw.githubusercontent.com', '/BochilTeam/database/master/games/tebakbendera.json'))).json()
     
 
     let json = src[Math.floor(Math.random() * src.length)]
     if (!json) throw json
     let caption = `
-Kode Negara: *${json.result.flag}*
+Kode Negara: *${json.flag}*
 
 Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}tekbe untuk bantuan
