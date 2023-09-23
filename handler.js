@@ -598,12 +598,12 @@ contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: ppmika,
-sourceUrl: global.fgig,
+thumbnailUrl: global.mikasampul,
+sourceUrl: global.dygp,
 mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})
+}}}, m)
 }
 
 let file = global.__filename(import.meta.url, true)
