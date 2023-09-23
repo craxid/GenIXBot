@@ -17,7 +17,7 @@ await conn.sendFile(m.chat, hasil, '', global.wm2, m)
 	
 }
 handler.help = ['jadianime']
-handler.tags = ['maker']
+handler.tags = ['ai']
 handler.command = /^(jadianime)$/i
 handler.diamond = 4
 
