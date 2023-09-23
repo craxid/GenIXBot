@@ -1,7 +1,7 @@
 
 import fetch from 'node-fetch'
 import uploadImage from '../lib/uploadImage.js'
-import jadianime from '..lib/jadianime.js'
+import { jadianime } from '..lib/jadianime.js'
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
