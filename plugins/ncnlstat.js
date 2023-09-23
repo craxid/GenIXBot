@@ -7,8 +7,6 @@ let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 if (!text) throw  `Masukan nama host dan ip\nhost.pe:19132`
 await m.reply(wait)
 
-
-
 try {
 let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/${text}`)
 let sevre = await ncnlstat.json()
