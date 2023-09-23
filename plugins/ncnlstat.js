@@ -1,13 +1,11 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
-if (!text) throw  `Masukan nama host dan ip\nhost.pe|19132`
-
 let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 await m.reply(wait)
 
 try {
-let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/${`)
+let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/craft.pe`)
 let sevre = await ncnlstat.json()
 
 let tegs = `
