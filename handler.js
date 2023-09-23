@@ -492,21 +492,21 @@ export async function participantsUpdate({ id, participants, action }) {
 //https://api.azz.biz.id/api/welcome?name=Miftah&gcname=Miftah%20Botz&member=167&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
 
 
-let wel = conn.getFile(`https://api.azz.biz.id/api/welcome?name=${namelef}&gcname=${gcnamelef}&pp=${profilelef}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global
+let wel = conn.getFile(`https://api.azz.biz.id/api/welcome?name=${namewelyh}&gcname=${gcnamewelyh}&pp=${profilewelyh}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global
 `)
 
-let namelef: await this.getName(user),
-let gcnamelef: await this.getName(id),
-let groupiconlef: ppgp,
-let membercountlef: groupMetadata.participants.length,
-let profilelef: pp,
+let namewelyh: await this.getName(user),
+let gcnamewelyh: await this.getName(id),
+let groupiconwelyh: ppgp,
+let membercountwelyh: groupMetadata.participants.length,
+let profilewelyh: pp,
 let bg: 'https://i.imgur.com/bbWbASn.jpg'
 
 
 
-                            let lea = API('azz', '/api/goodbye', {
-                                name: await this.getName(user),
-                                gcname: await this.getName(id),
+let lea = API('azz', '/api/goodbye'
+                            name: await this.getName(user),
+gcname: await this.getName(id),
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
