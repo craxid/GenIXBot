@@ -1,7 +1,7 @@
 
 import { color } from '../lib/color.js'
-const moment ="moment-timezone"
-let levelling from '../lib/levelling.js'
+import moment from "moment-timezone"
+import levelling from '../lib/levelling.js'
 module.exports = {
 	before(m) {
 		let user = global.db.data.users[m.sender]
@@ -19,9 +19,9 @@ text: chating,
 contextInfo: {
 externalAdReply: {
 title: namebot,
-body: wm,
+body: wm2,
 thumbnailUrl: thumb,
-sourceUrl: sig,
+sourceUrl: dy,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
