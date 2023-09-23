@@ -602,7 +602,7 @@ thumbnailUrl: global.mikasampul,
 sourceUrl: global.dygp,
 mediaType: 3,
 showAdAttribution: true,
-renderLargerThumbnail: false
+renderLargerThumbnail: true
 }}})
 }
 
