@@ -11,7 +11,8 @@ let handler = async (m, { conn, usedPrefix }) => {
     conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.tebakgambar[id][0])
     throw false
   }
-  if (!src) src = await (await fetch('https://api.zahwazein.xyz/entertainment/tebakgambar?apikey=zenzkey_f59c1aacf2')).json()
+  if (!src) src = await fetch('https://api.zahwazein.xyz/entertainment/tebakgambar?apikey=zenzkey_f59c1aacf2').json()
+  
   let json = src[Math.floor(Math.random() * src.length)]
   if (!json) throw json
   let caption = `
