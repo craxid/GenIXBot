@@ -152,7 +152,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
-    let arr = [
+    /*let arr = [
     { text: "*┌ [□□□□□□□□□□] ┐*\n*└──── 0%*", timeout: 1000 },
     { text: "*┌ [■□□□□□□□□□] ┐*\n*└──── 10%*", timeout: 1000 },
     { text: "*┌ [■■□□□□□□□□] ┐*\n*└──── 20%*", timeout: 1000 },
@@ -180,7 +180,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
         }
       }
     }, { quoted: m });
-  }
+  }*/
     
     //let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
     let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -218,7 +218,7 @@ renderLargerThumbnail: false
 }
 handler.help = ['help']
 handler.tags = ['main']
-handler.command = ['menu', 'help', '?','mika','p'] 
+handler.command = ['menu', 'help', '?'] 
 handler.register = true
 
 handler.exp = 3
