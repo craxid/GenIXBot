@@ -45,6 +45,7 @@
         "@bochilteam/scraper": "^4.2.3",
         "awesome-phonenumber": "^3.4.0",
         "node_characterai": "latest",
+        "makemeazombie": "latest",
         "axios": "^1.1.2",
         "express": "latest",
         "ocr-space-api-wrapper": "^2.1.1",
