@@ -601,7 +601,7 @@ body: ('Jangan Spam Bot!'),
 thumbnailUrl: global.mikasampul,
 sourceUrl: global.dygp,
 mediaType: 1,
-showAdAttribution: true,
+showAdAttribution: false,
 renderLargerThumbnail: true
 }}}, m)
 }
