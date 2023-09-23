@@ -1,10 +1,10 @@
 let handler = async(m, { conn, args, usedPrefix }) => {
 
-let __waktutionskh = (new Date - global.db.data.users[m.sender].lastlink)
+let __waktutionskh = (new Date - global.db.data.users[m.sender].lastewe)
 let _waktutionskh = (86800000 - __waktutionskh)
 let waktutionskh = clockString(_waktutionskh)
-if (new Date - global.db.data.users[m.sender].lastlink > 86800000) {
-global.db.data.users[m.sender].lastlink = new Date * 1
+if (new Date - global.db.data.users[m.sender].lastewe > 86800000) {
+global.db.data.users[m.sender].lastewe = new Date * 1
 let codeh = ['736390','882910','882010','715611','002819','562622','432282','322929','662522','443321','937100','762837','028393','625529','727638','992719','092739','727269','629461','239210']
 let getRandom = codeh[Math.floor(Math.random() * codeh.length)]
 conn.reply(m.chat, `
