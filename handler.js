@@ -495,7 +495,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://i.imgur.com/bbWbASn.jpg'
+                                background: 'https://minimalistic-wallpaper.demolab.com/?random'
                             }, 'apikey')
 
                             let lea = API('azz', '/api/goodbye', {
