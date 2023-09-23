@@ -17,7 +17,7 @@ zombie.transform({
     destinyFolder: './tmp'
 })
 .then(data => {
-    conn.sendFile(m.chat, data, 'zombie.jpg', `${global.wm2}`, m)
+    conn.sendFile(m.chat, data, 'zombie.jpg', `© Mika Bot`, m)
 })
  .catch(err => {
     console.log('Terjadi kesalahan:', err)
