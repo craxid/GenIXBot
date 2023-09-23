@@ -11,6 +11,6 @@ let handler = async (m, { conn, args }) => {
 handler.help = ['ktp'].map(v => v + ' <text>')
 handler.tags = ['maker']
 handler.command = /^(ktp)$/i
-handler.limit = false
+handler.diamond = 5
 
-export def handler
+export default handler
