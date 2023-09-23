@@ -13,7 +13,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 let src = await (await fetch('https://api.zahwazein.xyz/entertainment/asahotak?apikey=zenzkey_f59c1aacf2')).json()
     let json = src[Math.floor(Math.random() * src.length)]
     let caption = `
-${json.soal}
+${json.result.soal}
 
 Waktu *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}ao untuk bantuan
