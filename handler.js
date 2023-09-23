@@ -498,7 +498,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 background: 'https://i.imgur.com/bbWbASn.jpg'
                             }, 'apikey')
 
-                            let lea = API('fgmods', '/api/goodbye', {
+                            let lea = API('azz', '/api/goodbye', {
                                 username: await this.getName(user),
                                 groupname: await this.getName(id),
                                 groupicon: ppgp,
