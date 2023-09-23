@@ -24,7 +24,7 @@ gunakan *.profile* untuk memeriksa
  who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
 let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
-    
+
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 
 conn.sendMessage(m.chat, {
