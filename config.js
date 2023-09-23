@@ -35,7 +35,7 @@ global.APIKeys = { // APIKey Here
 }
 
 // tambahan
-global.rndm =''
+global.rndm ='https://api.zahwazein.xyz/randomanime/anime?apikey=zenzkey_f59c1aacf2'
 
 // Sticker WM
 global.packname = 'Mika Bot'
