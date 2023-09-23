@@ -24,7 +24,8 @@ zombie.transform({
  })
 }
 
-handler.command = handler.help = ['jadizombie']
+handler.command = ['jadizombie']
+handler.help = ['jadizombie']
 handler.tags = ['ai']
 
 export default handler
