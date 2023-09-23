@@ -1,5 +1,5 @@
 
-import uploadImage from '../lib/uploadImage'
+import uploadImage from '../lib/uploadImage.js'
 import makemeazombie from 'makemeazombie'
 
 let zombie = new makemeazombie()
