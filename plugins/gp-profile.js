@@ -16,6 +16,8 @@ let math = max - xp
 let prem = global.prems.includes(who.split`@`[0])
 let sn = createHash('md5').update(who).digest('hex')
 
+let teg = ``
+
 let str = `
 ┌───「 *Profil* 」
 ▢ *🔖 Nama:* 
