@@ -9,7 +9,7 @@ m.react('💬')
 try {
 let diff2 = await fetch(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
 	    
-	stabdif = await diff2()
+let stabdif = await diff2()
 	
 conn.sendFile(m.chat, stabdif.result.url, 'img.jpg', `*[ STABLE DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
 	}
