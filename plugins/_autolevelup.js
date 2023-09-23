@@ -14,7 +14,7 @@ export async function before(m, { conn }) {
     if (before !== user.level) {
     
 let chating = `
-*Selamat*, Kamu naik level!
+*Selamat*, *${name} naik level!
 *[ ${before} ]* ➠ *[ ${user.level} ]*
 gunakan *.profile* untuk memeriksa
 `.trim()
