@@ -10,15 +10,7 @@ try {
 let diff2 = await fetch(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
 	    
 let stabdif = await diff2.json()
-  let tes = results.all
-  let teks = results.all.map(v => {
-    switch (v.type) {
-      case 'setabil': return `
-▢ ${v.filename}
-▢ *Link* : ${v.url}
-   `.trim()
-    }
-  }).filter(v => v).join('\n\n________________________\n\n')	
+
 conn.sendMessage(m.chat, stabdif.result, 'img.jpg', `*[ STABLE DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
 	}
 	catch {
