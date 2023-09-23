@@ -21,7 +21,7 @@ global.APIs = { // API Prefix
   zenz: 'https://api.zahwazein.xyz',
   anna: 'https://api.anna.biz.id',
   lann: 'https://api.betabotz.org',
-  azz: 'https://api.azz.biz.id/'
+  azz: 'https://api.azz.biz.id'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
