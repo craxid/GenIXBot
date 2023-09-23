@@ -9,7 +9,9 @@ m.react('💬')
 try {
 let diff2 = await fetch(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
 	    
-conn.sendFile(m.chat, diff2.result.url, 'img.jpg', `*[ STABLE DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
+	stabdif = await diff2()
+	
+conn.sendFile(m.chat, stabdif.result.url, 'img.jpg', `*[ STABLE DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
 	}
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
