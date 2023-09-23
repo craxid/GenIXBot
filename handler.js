@@ -499,8 +499,8 @@ export async function participantsUpdate({ id, participants, action }) {
                             }, 'apikey')
 
                             let lea = API('azz', '/api/goodbye', {
-                                username: await this.getName(user),
-                                groupname: await this.getName(id),
+                                name: await this.getName(user),
+                                gcname: await this.getName(id),
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
