@@ -4,6 +4,7 @@ import { levelup } from '../lib/canvas.js'
 import db from '../lib/database.js'
 
 export async function before(m, { conn }) {
+      let name = conn.getName(m.sender)
     let user = global.db.data.users[m.sender]
     if (!user.autolevelup)
         return !0
