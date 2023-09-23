@@ -16,13 +16,13 @@ let math = max - xp
 let prem = global.prems.includes(who.split`@`[0])
 let sn = createHash('md5').update(who).digest('hex')
 
-let teg = ``
+let teg = `@${who.replace(/@.+/, '')}`
 
 let str = `
 ┌───「 *Profil* 」
 ▢ *🔖 Nama:* 
    • ${username} ${registered ? '\n   • ' + name + ' ': ''}
-   • @${who.replace(/@.+/, '')}
+   • teg
 ▢ *📱 Nomor:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 ▢ *🔗 Link:* wa.me/${who.split`@`[0]}${registered ? '\n▢ *🎈 Umur*: ' + age + ' Tahun' : ''}
 ▢ *⚠️ Peringatan:* ${warn}/${maxwarn}
