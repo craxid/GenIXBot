@@ -152,6 +152,36 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
+    let arr = [
+    { text: "*┌ [□□□□□□□□□□] ┐*\n*└──── 0%*", timeout: 1000 },
+    { text: "*┌ [■□□□□□□□□□] ┐*\n*└──── 10%*", timeout: 1000 },
+    { text: "*┌ [■■□□□□□□□□] ┐*\n*└──── 20%*", timeout: 1000 },
+    { text: "*┌ [■■■□□□□□□□] ┐*\n*└──── 30%*", timeout: 1000 },
+    { text: "*┌ [■■■■□□□□□□] ┐*\n*└──── 40%*", timeout: 1000 },
+    { text: "*┌ [■■■■■□□□□□] ┐*\n*└──── 50%*", timeout: 1000 },
+    { text: "*┌ [■■■■■■□□□□] ┐*\n*└──── 60%*", timeout: 1000 },
+    { text: "*┌ [■■■■■■■□□□] ┐*\n*└──── 70%*", timeout: 1000 },
+    { text: "*┌ [■■■■■■■■□□] ┐*\n*└──── 80%*", timeout: 1000 },
+    { text: "*┌ [■■■■■■■■■□] ┐*\n*└──── 90%*", timeout: 1000 },
+    { text: "*┌ [■■■■■■■■■■] ┐*\n*└──── 100%*", timeout: 1000 },
+    { text: `*${wait}*\n\n👋 ${ucapans} *${names}*`, timeout: 1000 }
+  ];
+
+  let lll = await conn.sendMessage(m.chat, { text: wait }, { quoted: m });
+
+  for (let i = 0; i < arr.length; i++) {
+    await new Promise(resolve => setTimeout(resolve, arr[i].timeout));
+    await conn.relayMessage(m.chat, {
+      protocolMessage: {
+        key: lll,
+        type: 14,
+        editedMessage: {
+          conversation: arr[i].text
+        }
+      }
+    }, { quoted: m });
+  }
+    
     //let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
     let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
