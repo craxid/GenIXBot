@@ -600,7 +600,7 @@ title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
 thumbnailUrl: global.mikasampul,
 sourceUrl: global.dygp,
-mediaType: 3,
+mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
