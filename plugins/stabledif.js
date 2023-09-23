@@ -10,12 +10,10 @@ try {
 let diff2 = await fetch(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
 	    
 let stabdif = await diff2.json()
-
-let results = await yts(text)
   let tes = results.all
   let teks = results.all.map(v => {
     switch (v.type) {
-      case 'video': return `
+      case 'se': return `
 ▢ ${v.title}
 ▢ *Link* : ${v.url}
 ▢ *Durasi* : ${v.timestamp}
