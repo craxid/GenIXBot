@@ -492,14 +492,15 @@ export async function participantsUpdate({ id, participants, action }) {
 //https://api.azz.biz.id/api/welcome?name=Miftah&gcname=Miftah%20Botz&member=167&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
 
 
-let wel = API('azz', '/api/welcome', {
+let wel = conn
+
 let namelef: await this.getName(user),
 let gcnamelef: await this.getName(id),
 let groupiconlef: ppgp,
 let membercountlef: groupMetadata.participants.length,
 let profile: pp,
 let bg: 'https://i.imgur.com/bbWbASn.jpg'
-}, 'apikey')
+
 
 
                             let lea = API('azz', '/api/goodbye', {
