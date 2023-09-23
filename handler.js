@@ -503,7 +503,7 @@ let bg = 'https://i.imgur.com/bbWbASn.jpg'
 
 
 
-let wel = conn.getFile(`https://api.azz.biz.id/api/welcome?name=${namewelyh}&gcname=${gcnamewelyh}&pp=${profilewelyh}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global`)
+let wel = conn.getFile(`https://api.azz.biz.id/api/welcome?name=${name}&gcname=${gcname}&pp=${profile}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global`)
 
 name: await this.getName(user)
 gcname: await this.getName(id)
