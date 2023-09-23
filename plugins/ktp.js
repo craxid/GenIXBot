@@ -9,7 +9,7 @@ let handler = async (m, { conn, args }) => {
     conn.sendFile(m.chat, res, 'ktp.jpg', `Nih kak\n${global.wm}`, m, false)
 }
 handler.help = ['ktp'].map(v => v + ' <text>')
-handler.tags = ['maker']
+handler.tags = ['tools']
 handler.command = /^(ktp)$/i
 handler.diamond = 5
 
