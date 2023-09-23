@@ -14,7 +14,7 @@ export async function before(m, { conn }) {
     user.role = global.rpg.role(user.level).name
     if (before !== user.level) {
     
-let chating = `
+let teks = `
 *Selamat*, ${name} naik level!
 *[ ${before} ]* ➠ *[ ${user.level} ]*
 
@@ -24,13 +24,13 @@ gunakan *.profile* untuk memeriksa
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 
 conn.sendMessage(m.chat, {
-text: chating,
+text: (teks, str),
 contextInfo: {
 externalAdReply: {
-title: global.namebot,
-body: global.wm2,
-thumbnailUrl: thumb,
-sourceUrl: global.dygp,
+title: (`${conn.getName(m.sender)}`),
+body: (`Level: ${user.level}`),
+thumbnailUrl: pp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
