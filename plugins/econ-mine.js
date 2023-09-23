@@ -3,12 +3,12 @@
 let handler = async (m, { conn }) => {
 
   let hasil = Math.floor(Math.random() * 2000)
-  let time = global.db.data.users[m.sender].lastmining + 900000
-  if (new Date - global.db.data.users[m.sender].lastmining < 900000) throw `⏳ _Tunggu_ *${msToTime(time - new Date())}* _Untuk kembali menambang_`
+  let time = global.db.data.users[m.sender].lastmiming + 900000
+  if (new Date - global.db.data.users[m.sender].lastmiming < 900000) throw `⏳ _Tunggu_ *${msToTime(time - new Date())}* _Untuk kembali menambang_`
   global.db.data.users[m.sender].exp += hasil
   m.reply(`
 🎉 Kamu mendapat *XP* sebanyak *${hasil}*`)
-  global.db.data.users[m.sender].lastmining = new Date * 1
+  global.db.data.users[m.sender].lastmiming = new Date * 1
 }
 handler.help = ['nambang']
 handler.tags = ['econ']
