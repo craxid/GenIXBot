@@ -490,13 +490,13 @@ export async function participantsUpdate({ id, participants, action }) {
                             (chat.sBye || this.bye || conn.bye || 'Selamat tinggal, @user')).replace('@user', '@' + user.split('@')[0])
                          
                             let wel = API('azz', '/api/welcome', {
-                                username: await this.getName(user),
-                                groupname: await this.getName(id),
+                                name: await this.getName(user),
+                                gcname: await this.getName(id),
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://i.imgur.com/bbWbASn.jpg'
-                            }, 'apikey')
+                                bg: 'https://i.imgur.com/bbWbASn.jpg'
+                            }, 'key')
 
                             let lea = API('azz', '/api/goodbye', {
                                 name: await this.getName(user),
@@ -504,8 +504,8 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://i.imgur.com/klTSO3d.jpg'
-                            }, 'apikey')
+                                bg: 'https://i.imgur.com/klTSO3d.jpg'
+                            }, 'key')
                         this.sendFile(id, action === 'add' ? wel : lea, '', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
                              [(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : 'khajs')], 
