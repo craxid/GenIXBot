@@ -21,7 +21,7 @@ externalAdReply: {
 title: namebot,
 body: wm2,
 thumbnailUrl: thumb,
-sourceUrl: dy,
+sourceUrl: ('https://s.id'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
