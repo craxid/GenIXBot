@@ -10,7 +10,7 @@ try {
 let diff2 = await fetch(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
 	    
 let stabdif = await diff2.json()
-
+let setab = Math.floor(Math.random() * difu)
 conn.sendMessage(m.chat, stabdif.result.url, 'img.jpg', `*[ STABLE DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
 	}
 	catch {
