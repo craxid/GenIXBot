@@ -579,7 +579,8 @@ Untuk menyalakan/mematikan fitur, ketik
 
 global.dfail = (type, m, conn) => {
     let mikapp = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
-    let rndm = conn.getFile('https://api.zahwazein.xyz/randomanime/anime?apikey=zenzkey_f59c1aacf2')
+    
+    let rndm = conn.getFile(`https://api.zahwazein.xyz/randomanime/anime?apikey=zenzkey_f59c1aacf2`)
 
     let msg = {
         rowner: '👑 Hanya untuk *Pemilik bot*',
