@@ -167,7 +167,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     { text: `*${wait}*\n\n👋 ${ucapan} *${name}*`, timeout: 1000 }
   ];
 
-  let lll = await conn.sendMessage(m.chat, { text: arr }, { quoted: m });
+  let lll = await conn.sendMessage(m.chat, { text: wait }, { quoted: m });
 
   for (let i = 0; i < arr.length; i++) {
     await new Promise(resolve => setTimeout(resolve, arr[i].timeout));
