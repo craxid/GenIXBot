@@ -579,8 +579,6 @@ Untuk menyalakan/mematikan fitur, ketik
 
 global.dfail = (type, m, conn) => {
     let mikapp = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
-    
-
     let msg = {
         rowner: '👑 Hanya untuk *Pemilik bot*',
         owner: '🔱 Hanya untuk *Admin Bot*',
@@ -600,7 +598,7 @@ contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: pp,
+thumbnailUrl: global.mikasampul,
 sourceUrl: global.dygp,
 mediaType: 3,
 showAdAttribution: true,
