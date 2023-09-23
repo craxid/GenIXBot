@@ -499,7 +499,7 @@ let namelef: await this.getName(user),
 let gcnamelef: await this.getName(id),
 let groupiconlef: ppgp,
 let membercountlef: groupMetadata.participants.length,
-let profile: pp,
+let profilelef: pp,
 let bg: 'https://i.imgur.com/bbWbASn.jpg'
 
 
