@@ -24,7 +24,7 @@ Ketik ${usedPrefix}tekbe untuk bantuan
 Bonus: ${exp} XP
 `.trim()
     conn.tebakbendera[id] = [
-        await conn.sendFile(m.chat, json.img, 'img.jpg', caption, m),
+        await conn.sendFile(m.chat, json.result.img, 'img.jpg', caption, m),
         json, exp,
         setTimeout(() => {
             if (conn.tebakbendera[id]) conn.reply(m.chat, `Waktu habis!\nJawabannya adalah *${json.name}*`, conn.tebakbendera[id][0])
