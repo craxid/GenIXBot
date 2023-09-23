@@ -5,7 +5,7 @@ let handler = async(m, { conn, args, usedPrefix }) => {
 
    if (new Date - global.db.data.users[m.sender].lastcode > 86800000) {
      if (new Date - global.db.data.users[m.sender].lastcode < 86800000) throw `Anda sudah mengambill code gift, Code gift anda sudah kadaluarsa..\nTunggu besok ya kak..`
-    conn.reply(m.chat, `*SELAMAT!*\n\nKamu telah mendapatkan\n+25000 XP\n+2`, m)
+    conn.reply(m.chat, `*SELAMAT!*\n\nKamu telah mendapatkan\n+25000 XP\n+25 Diamond`, m)
     global.db.data.users[m.sender].exp += 25000
     global.db.data.users[m.sender].diamond += 25
 
