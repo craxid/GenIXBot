@@ -1,7 +1,7 @@
 
 import fetch from 'node-fetch'
 import uploadImage from '../lib/uploadImage.js'
-import jadiAnime from '@saipulanuar/jadianime-ts'
+import jadianime from '..lib/jadianime.js'
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
@@ -9,7 +9,7 @@ if (!mime) throw 'Kirim/Reply Gambar dengan caption .jadianime'
 m.reply('Tunggu Sebentar...')
 let media = await q.download()
 let url = await uploadImage(media)
-let hasil = await jadiAnime(url)
+let hasil = await jadianime(url)
 await conn.sendFile(m.chat, hasil, 'jadianime.jpg', global.wm2, m)
 	
 }
