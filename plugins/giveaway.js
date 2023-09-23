@@ -27,12 +27,12 @@ setTimeout(() => {
 } else m.reply(`Kamu sudah mengambil gethadiah\nHarap tunggu ${waktutionskh} lagi`)
 }
 handler.help = ['gethadiah']
-handler.tags = ['rpgabsen']
+handler.tags = ['rpg']
 handler.command = /^(gethadiah|giveaway)$/i
-handler.limit = false
+handler.diamond = false
 handler.private = true
 
-module.exports = handler
+export default handler
 
 function clockString(ms) {
   let h = Math.floor(ms / 3600000)
