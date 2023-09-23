@@ -3,11 +3,11 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
   
 
-if (!text) throw  `Masukan nama host dan ip\nhost.pe:19132`
+if (!arg[0]) throw  `Masukan nama host dan ip\nhost.pe:19132`
 await m.reply(wait)
 
 try {
-let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/${text}`)
+let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/${0}`)
 let sevre = await ncnlstat.json()
 
 let tegs = `
