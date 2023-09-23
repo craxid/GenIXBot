@@ -164,7 +164,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     { text: "*┌ [■■■■■■■■□□] ┐*\n*└──── 80%*", timeout: 1000 },
     { text: "*┌ [■■■■■■■■■□] ┐*\n*└──── 90%*", timeout: 1000 },
     { text: "*┌ [■■■■■■■■■■] ┐*\n*└──── 100%*", timeout: 1000 },
-    { text: `*${wait}*\n\n👋 ${ucapan} *${names}*`, timeout: 1000 }
+    { text: `*${wait}*\n\n👋 ${ucapan} *${name}*`, timeout: 1000 }
   ];
 
   let lll = await conn.sendMessage(m.chat, { text: wait }, { quoted: m });
