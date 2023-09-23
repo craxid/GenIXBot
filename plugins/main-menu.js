@@ -199,7 +199,7 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}})
+}}}, m)
 
     //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     
