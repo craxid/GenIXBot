@@ -1,6 +1,7 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
+if (!text) throw  `Masukan nama`
 let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 await m.reply(wait)
 
