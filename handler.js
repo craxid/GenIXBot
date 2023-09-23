@@ -600,7 +600,7 @@ contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: ${rndm,
+thumbnailUrl: ${animacak.data),
 sourceUrl: global.dygp,
 mediaType: 3,
 showAdAttribution: true,
