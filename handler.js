@@ -495,10 +495,10 @@ export async function participantsUpdate({ id, participants, action }) {
 let wel = API('azz', '/api/welcome', {
 let namelef: await this.getName(user),
 let gcnamelef: await this.getName(id),
-groupiconlef: ppgp,
-                                membercount: groupMetadata.participants.length,
-                                profile: pp,
-                                bg: 'https://i.imgur.com/bbWbASn.jpg'
+let groupiconlef: ppgp,
+let membercountlef: groupMetadata.participants.length,
+let profile: pp,
+let bg: 'https://i.imgur.com/bbWbASn.jpg'
                             }, 'apikey')
 
 
