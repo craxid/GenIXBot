@@ -7,6 +7,10 @@ if (!args[0]) throw  `Masukan nama host dan ip\nhost.pe:19132`
 await m.reply(wait)
 
 try {
+    
+let host = text.split('|')[0] ? text.split('|')[0] : '-'
+  let port = text.split('|')[1] ? text.split('|')[1] : '-'
+  
 let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/${response[0]}`)
 let sevre = await ncnlstat.json()
 
