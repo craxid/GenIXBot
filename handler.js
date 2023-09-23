@@ -599,7 +599,7 @@ externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
 thumbnailUrl: global.mikasampul,
-sourceUrl: global.dygp,
+sourceUrl: global.fgig,
 mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: true
