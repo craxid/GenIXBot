@@ -492,26 +492,24 @@ export async function participantsUpdate({ id, participants, action }) {
 //https://api.azz.biz.id/api/welcome?name=Miftah&gcname=Miftah%20Botz&member=167&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
 
 
-let wel = conn.getFile(`https://api.azz.biz.id/api/welcome?name=${namewelyh}&gcname=${gcnamewelyh}&pp=${profilewelyh}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global`)
+let wel = API('azz', '/api/welcome', {
+let name: await this.getName(user),
+                                gcname: await this.getName(id),
+                                groupicon: ppgp,
+                                membercount: groupMetadata.participants.length,
+                                profile: pp,
+                                bg: 'https://i.imgur.com/bbWbASn.jpg'
+                            }, 'apikey')
 
-let namewelyh = await this.getName(user)
-let gcnamewelyh = await this.getName(id)
-let groupiconwelyh = ppgp
-let membercountwelyh = groupMetadata.participants.length
-let profilewelyh = pp
-let bg = 'https://i.imgur.com/bbWbASn.jpg'
 
-
-
-let wel = conn.getFile(`https://api.azz.biz.id/api/welcome?name=${name}&gcname=${gcname}&pp=${profile}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global`)
-
-name: await this.getName(user)
-gcname: await this.getName(id)
-groupicon: ppgp
-membercount: groupMetadata.participants.length
-profile: pp
-bg: 'https://i.imgur.com/klTSO3d.jpg'
-
+                            let lea = API('azz', '/api/goodbye', {
+                                name: await this.getName(user),
+                                gcname: await this.getName(id),
+                                groupicon: ppgp,
+                                membercount: groupMetadata.participants.length,
+                                profile: pp,
+                                bg: 'https://i.imgur.com/klTSO3d.jpg'
+                            }, 'apikey')
                         this.sendFile(id, action === 'add' ? wel : lea, 'welcum.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
                              [(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : 'khajs')], 
