@@ -495,12 +495,12 @@ export async function participantsUpdate({ id, participants, action }) {
 let wel = conn.getFile(`https://api.azz.biz.id/api/welcome?name=${namewelyh}&gcname=${gcnamewelyh}&pp=${profilewelyh}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global
 `)
 
-let namewelyh: await this.getName(user),
-let gcnamewelyh: await this.getName(id),
-let groupiconwelyh: ppgp,
-let membercountwelyh: groupMetadata.participants.length,
-let profilewelyh: pp,
-let bg: 'https://i.imgur.com/bbWbASn.jpg'
+let namewelyh = await this.getName(user),
+let gcnamewelyh = await this.getName(id),
+let groupiconwelyh = ppgp,
+let membercountwelyh = groupMetadata.participants.length,
+let profilewelyh = pp,
+let bg = 'https://i.imgur.com/bbWbASn.jpg'
 
 
 
