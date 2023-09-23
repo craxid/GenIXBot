@@ -489,28 +489,24 @@ export async function participantsUpdate({ id, participants, action }) {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang, @user').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'Desconocido') :
                             (chat.sBye || this.bye || conn.bye || 'Selamat tinggal, @user')).replace('@user', '@' + user.split('@')[0])
                          
-//https://api.azz.biz.id/api/welcome?name=Miftah&gcname=Miftah%20Botz&member=167&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
-
-
-let wel = API('azz', '/api/welcome', {
-let name: await this.getName(user),
-                                gcname: await this.getName(id),
+                            let wel = API('azz', '/api/welcome', {
+                                username: await this.getName(user),
+                                groupname: await this.getName(id),
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                bg: 'https://i.imgur.com/bbWbASn.jpg'
+                                background: 'https://i.imgur.com/bbWbASn.jpg'
                             }, 'apikey')
-
 
                             let lea = API('azz', '/api/goodbye', {
-                                name: await this.getName(user),
-                                gcname: await this.getName(id),
+                                username: await this.getName(user),
+                                groupname: await this.getName(id),
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                bg: 'https://i.imgur.com/klTSO3d.jpg'
+                                background: 'https://i.imgur.com/klTSO3d.jpg'
                             }, 'apikey')
-                        this.sendFile(id, action === 'add' ? wel : lea, 'welcum.jpg', text, null, false, { mentions: [user] })
+                        this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
                              [(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : 'khajs')], 
                              [(action == 'add' ? '⏍ INFO' : 'ッ'), (action == 'add' ? '/info' : ' ')] ], null, {mentions: [user]})
