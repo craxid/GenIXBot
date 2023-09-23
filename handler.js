@@ -598,7 +598,7 @@ contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
-thumbnailUrl: global.mikasampul,
+thumbnailUrl: mikapp,
 sourceUrl: global.dygp,
 mediaType: 3,
 showAdAttribution: true,
