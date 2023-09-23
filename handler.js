@@ -603,7 +603,10 @@ sourceUrl: global.dygp,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}}, m)
+}}}, {
+    sendEphemeral: true,
+    quoted: msg
+  })
 }
 
 let file = global.__filename(import.meta.url, true)
