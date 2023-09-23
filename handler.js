@@ -496,7 +496,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
                                 background: 'https://minimalistic-wallpaper.demolab.com/?random'
-                            }, 'apikey')
+                            }, 'key')
 
                             let lea = API('azz', '/api/goodbye', {
                                 username: await this.getName(user),
