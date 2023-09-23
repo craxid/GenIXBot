@@ -1,5 +1,5 @@
 
-let ro = 50000
+let ro = 200000
 let handler = async (m, { conn, usedPrefix, command}) => {
     let time = global.db.data.users[m.sender].lastrob + 900000
     if (new Date - global.db.data.users[m.sender].lastrob < 900000) throw `⏱️ Tunggu *${msToTime(time - new Date())}* untuk kembali merampok`
