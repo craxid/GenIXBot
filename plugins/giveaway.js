@@ -19,7 +19,7 @@ Contoh:
 4. Isi salah satu survey hingga selesai.
 
 Lalu tunggu beberapa menit
-Proses hadiah limit, money, exp, tabungan.
+Proses hadiah diamond & exp.
 Akan kalian dapatkan..`, m)
 setTimeout(() => {
       conn.reply(m.chat, `Selamat kamu mendapatkan hadiah 🎉\nMasukan *${usedPrefix}codeshortlink ${getRandom}*\n\n\n*Owner*\nTerima kasih udah di kasih jajan... 😅`, m)
