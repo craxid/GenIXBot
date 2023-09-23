@@ -28,7 +28,7 @@ API version: ${sevre.debug.apiversion}
     `
     
 conn.sendMessage(m.chat, {
-text: (`${tegs}`).replace('true','Online').replace('undefined','tidak diisi'),
+text: (`${tegs}`).replace('true','Online').replace('undefined','tidak diketahui'),
 contextInfo: {
 externalAdReply: {
 title: (`Server Stalker`),
