@@ -10,7 +10,7 @@ m.reply(wait)
 try {
     let chord = await fetch(`https://api.zahwazein.xyz/searching/chordlagu?query=${text}&apikey=zenzkey_f59c1aacf2`)
     
-    chordlagu = chord()
+    chordlagu = await chord()
 	    
 conn.sendMessage(m.chat, chordlagu.chord, `*[ CHORD LAGU ]*\n`, m)
 	}
