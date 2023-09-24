@@ -13,7 +13,7 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   conn.sendMessage(m.chat, res.data.data.url, 'ig.jpg', 'Done kak!', m)
 }
 
-handler.help = ['igpic']
+handler.help = ['igpic','igimg']
 handler.tags = ['dl']
 handler.command = /^(igpic|igimg)$/i
 handler.register = true
