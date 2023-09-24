@@ -1,4 +1,5 @@
-let handler = async(m, { conn, args, usedPrefix }) => {
+
+/*let handler = async(m, { conn, args, usedPrefix }) => {
 
 let __waktutionskh = (new Date - global.db.data.users[m.sender].lastewe)
 let _waktutionskh = (86800000 - __waktutionskh)
@@ -41,3 +42,4 @@ function clockString(ms) {
   console.log({ms,h,m,s})
   return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
 }
+*/
