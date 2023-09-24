@@ -3,7 +3,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
 	
-if (!text) throw `✳️ Mencari chord lagu dari Gambar AI menggunakan perintah yang diberikan pengguna\n\nContoh: !animedif 1girls`
+if (!text) throw `✳️ Mencari chord lagu dari perintah yang diberikan pengguna\n\nContoh: !ch`
 m.reply(wait)
 
 //code area
