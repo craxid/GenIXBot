@@ -8,11 +8,11 @@ m.reply(wait)
 
 //code area
 try {
-    let chord = await fetch(`https://api.zahwazein.xyz/searching/chordlagu?query=${text}&apikey=zenzkey_f59c1aacf2`)
+    let chordlagu = await fetch(`https://api.zahwazein.xyz/searching/chordlagu?query=${text}&apikey=zenzkey_f59c1aacf2`)
     
-    chordlagu = await chord.json()
+    chord = await chordlagu.json()
 	    
-conn.sendMessage(m.chat, chordlagu.result.chord, m)
+conn.sendMessage(m.chat, chord.result.chord, m)
 	}
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
