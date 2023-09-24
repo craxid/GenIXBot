@@ -1,5 +1,5 @@
 
-
+/*
 import fetch from "node-fetch"
 let limit = 15
 
@@ -22,3 +22,4 @@ handler.diamond = true
 export default handler
 
 //https://vihangayt.me/download/instagram?url=
+*/
