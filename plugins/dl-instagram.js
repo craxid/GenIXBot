@@ -7,7 +7,7 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `Masukkan URL!\n\nContoh: ${usedPrefix + command} https://www.instagram.com`
   await m.reply(wait)
   
-  let idgl = await fetch(`https://vihangayt.me/download/instagram?url=${text}`)
+  let idgl = await fetch(`https://api.yanzbotz.my.id/api/downloader/instagram?url=${text}`)
   let res = await idgl.json()
   
   conn.sendMessage(m.chat, res.data.url, 'ig.mp4', 'Done kak!', m)
