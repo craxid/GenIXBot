@@ -1,5 +1,6 @@
-let fetch = require('node-fetch')
-let uploadImage = require('../lib/uploadImage.js')
+
+import fetch = require('node-fetch'
+import uploadImage from '../lib/uploadImage.js'
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 let q = m.quoted ? m.quoted : m
@@ -15,6 +16,6 @@ await conn.sendFile(m.chat, hasil, '', wm, m)
 handler.help = ['jadianime']
 handler.tags = ['maker']
 handler.command = /^(jadianime)$/i
-handler.limit = true
+handler.diamond = true
 
-module.exports = handler
+export default handler
