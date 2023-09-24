@@ -8,11 +8,11 @@ m.reply(wait)
 
 //code area
 try {
-    let animdif = await conn.getFile(`https://api.zahwazein.xyz/searching/chordlagu?query=${text}&apikey=zenzkey_f59c1aacf2`)
+    let chord = await f(`https://api.zahwazein.xyz/searching/chordlagu?query=${text}&apikey=zenzkey_f59c1aacf2`)
     
 // let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
 	    
-conn.sendFile(m.chat, animdif.data, 'img.jpg', `*[ CHORD LAGU ]*\n\nPROMPT:\n${text}`, m)
+conn.sendFile(m.chat, animdif.data, `*[ CHORD LAGU ]*\n`, m)
 	}
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
