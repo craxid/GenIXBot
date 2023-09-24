@@ -84,7 +84,7 @@ handler.tags = ['ansfw']
 handler.command = ['ahegao','netorare','ass','bdsm','blowjob','cuckold','cum','ero','femdom','foot','gangbang','glasses','hentai','maid','manga','yuri','blowjob','pussy','panties','hentaigif','milf','marin-kitagawa']
 handler.diamond = 3
 handler.register = true
-handler.premium = false
+handler.premium = true
 export default handler
 
 function pickRandom(list) {
