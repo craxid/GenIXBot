@@ -7,10 +7,10 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `Masukkan URL!\n\nContoh: ${usedPrefix + command} https://www.instagram.com`
   await m.reply(wait)
   
-  let idgl = await fetch(`https://api.arifzyn.biz.id/download/instagram?url=${text}`)
+  let idgl = await fetch(`https://vihangayt.me/download/instagram2?url=${text}`)
   let res = await idgl.json()
   
-  conn.sendFile(m.chat, res.result.media, 'ig.mp4', 'Done kak!', m)
+  conn.sendFile(m.chat, res.result.download_link, 'ig.mp4', 'Done kak!', m)
 }
 
 handler.help = ['ig']
