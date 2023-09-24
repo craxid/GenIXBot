@@ -3,12 +3,12 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
 	
-if (!text) throw `✳️ Mencari chord lagu dari perintah yang diberikan pengguna\n\nContoh: !ch`
+if (!text) throw `✳️ Mencari chord lagu dari perintah yang diberikan pengguna\n\nContoh: !chord iwan fals manusia setengah dewa`
 m.reply(wait)
 
 //code area
 try {
-    let animdif = await conn.getFile(`https://api.yanzbotz.my.id/api/text2img/neima?prompt=${text}`)
+    let animdif = await conn.getFile(`https://api.zahwazein.xyz/searching/chordlagu?query=wali&apikey=zenzkey_f59c1aacf2${text}`)
     
 // let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
 	    
