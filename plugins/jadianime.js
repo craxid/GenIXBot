@@ -14,8 +14,8 @@ await conn.sendFile(m.chat, hasil, 'jadianime.jpg', ${global.wm2}, m)
 	
 }
 handler.help = ['jadianime']
-handler.tags = ['maker']
+handler.tags = ['ai']
 handler.command = /^(jadianime)$/i
-handler.diamond = true
+handler.diamond = 3
 
 export default handler
