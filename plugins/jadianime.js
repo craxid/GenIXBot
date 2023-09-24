@@ -1,36 +1,21 @@
 
-import uploadImage from '../lib/uploadImage.js'
+import fetch from 'node-fetch'
 import uploadImage from '../lib/uploadImage.js'
 
-let janime = await fetch(`https://vihangayt.me/tools/toanime?url=${gambar}`)
-
-async function handler(m, { conn }) {
-    
+let handler = async (m, { conn, usedPrefix, command }) => {
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
-await m.reply(wait)
-
-if (!mime) {
- return m.reply('Kirim/Balas gambar dengan caption *.jadizombie*')
-
- }
+if (!mime) throw 'Kirim/Reply Gambar dengan caption .jadianime'
+m.reply(wait)
 let media = await q.download()
-let gambar = await uploadImage(media)
-zombie.transform({
-    photo: `${gambar}`,
-    destinyFolder: './tmp'
-})
-.then(data => {
-    conn.sendFile(m.chat, data, 'zombie.jpg', `© Mika Bot`, m)
-})
- .catch(err => {
-    console.log('Terjadi kesalahan:', err)
- })
+let url = await uploadImage(media)
+let hasil = await fetch(`https://vihangayt.me/tools/toanime?url=${url}`)
+await conn.sendFile(m.chat, hasil.data, 'jadianime.jpg', (`${global.wm2}`), m)
+	
 }
-
-handler.command = ['jadizombie']
-handler.help = ['jadizombie']
+handler.help = ['jadianime']
 handler.tags = ['ai']
+handler.command = /^(jadianime)$/i
 handler.diamond = 3
 
 export default handler
