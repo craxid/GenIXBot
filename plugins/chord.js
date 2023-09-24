@@ -12,7 +12,7 @@ try {
     
     let chord = await chordlagu.json()
 	    
-await m.reply(m.chat, chord.result.chord)
+await m.reply(chord.result.chord)
 	}
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
