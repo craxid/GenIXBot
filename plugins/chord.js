@@ -14,7 +14,7 @@ try {
     
 // let diff = await conn.getFile(`https://api.azz.biz.id/api/animediffusion?q=${text}&key=mangea`)
 	    
-conn.sendFile(m.chat, chordlagu., `*[ CHORD LAGU ]*\n`, m)
+conn.sendFile(m.chat, chordlagu.chord, `*[ CHORD LAGU ]*\n`, m)
 	}
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
@@ -22,9 +22,9 @@ conn.sendFile(m.chat, chordlagu., `*[ CHORD LAGU ]*\n`, m)
 //end
 
 }
-handler.help = ['animedif (Your Prompt)']
+handler.help = ['chord','chordlagu']
 handler.tags = ['ai']
-handler.command = ['animedif','nimedif']
+handler.command = ['chord','chordlagu']
 handler.premium = false
 handler.diamond = true
 
