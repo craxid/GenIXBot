@@ -1,4 +1,5 @@
 
+
 import fetch from 'node-fetch'
 import uploadImage from '../lib/uploadImage.js'
 
@@ -9,7 +10,7 @@ if (!mime) throw 'Kirim/Reply Gambar dengan caption .jadianime'
 m.reply(wait)
 let media = await q.download()
 let url = await uploadImage(media)
-let hasil = await fetch(`https://vihangayt.me/tools/toanime?url=${url}`)
+let hasil = await( await fetch(`https://vihangayt.me/tools/toanime?url=${url}`)).buff
 
 conn.sendFile(m.chat, hasil.data, 'jadianime.jpg', (`${global.wm2}`), m)
 	
