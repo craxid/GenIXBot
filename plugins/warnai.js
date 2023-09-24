@@ -11,7 +11,7 @@ if (!mime) throw 'Kirim/Reply Gambar dengan caption .warnai'
 m.reply(wait)
 let media = await q.download()
 let url = await uploadImage(media)
-let hasil = await (await conn.getFile(`https://vihangayt.me/tools/toanime?url=${url}`))
+let hasil = await (await conn.getFile(`https://vihangayt.me/tools/colorize?url=${url}`))
 
 await conn.sendFile(m.chat, hasil.data, 'img.jpg', 'Old Image Colorizer\n© Mika Bot', m)
 	
