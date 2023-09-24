@@ -12,7 +12,7 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   conn.sendFile(m.chat, res.result.media, 'ig.mp4', 'Instagram Downloader\n© Mika Bot', m)
 }
 
-handler.help = ['igdl','igvid']
+handler.help = ['igdl']
 handler.tags = ['dl']
 handler.command = /^(ig(dl)?)|(instagram(dl)|igvid?)$/i
 handler.register = true
