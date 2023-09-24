@@ -2,7 +2,7 @@
 import uploadImage from '../lib/uploadImage.js'
 import uploadImage from '../lib/uploadImage.js'
 
-let zombie = new makemeazombie()
+let janime = await fetch('https://vihangayt.me/tools/toanime?url=')
 
 async function handler(m, { conn }) {
     
