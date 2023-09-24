@@ -20,3 +20,5 @@ handler.register = true
 handler.diamond = true
 
 export default handler
+
+//https://vihangayt.me/download/instagram?url=
