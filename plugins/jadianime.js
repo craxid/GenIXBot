@@ -3,18 +3,21 @@
 import fetch from 'node-fetch'
 import uploadImage from '../lib/uploadImage.js'
 
-let handler = async (m, { conn, usedPrefix, command }) => {
+let handler = async (m, { conn, usedPrefix, command, text }) => {
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+let name = await conn.getName(who)
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
-if (!mime) throw 'Kirim/Reply Gambar dengan caption .jadianime'
+if (!mime) throw 'Kirim/Reply Gambar dengan caption .removebg'
 m.reply(wait)
 let media = await q.download()
 let url = await uploadImage(media)
-let hasil = await conn.getFile(`https://vihangayt.me/tools/toanime?url=${url}`)
+let hasil = await (await conn.getFile(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`))
 
-conn.sendMessage(m.chat, hasil.data, 'jadianime.jpg', (`${global.wm2}`), m)
+await conn.sendFile(m.chat, hasil.data, 'img.jpg', 'Background Remover\n© Mika Bot', m)
 	
 }
+
 handler.help = ['jadianime']
 handler.tags = ['ai']
 handler.command = /^(jadianime)$/i
