@@ -23,7 +23,7 @@ conn.sendFile(m.chat, chordlagu.chord, `*[ CHORD LAGU ]*\n`, m)
 
 }
 handler.help = ['chord','chordlagu']
-handler.tags = ['ai']
+handler.tags = ['tools']
 handler.command = ['chord','chordlagu']
 handler.premium = false
 handler.diamond = true
