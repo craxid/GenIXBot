@@ -12,7 +12,7 @@ try {
     
     chord = await chordlagu.json()
 	    
-await m.reply(m.chat, chord.result.chord, m)
+conn.sendMessage(m.chat, chord.result.chord, m)
 	}
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
