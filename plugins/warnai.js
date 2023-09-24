@@ -13,7 +13,7 @@ let media = await q.download()
 let url = await uploadImage(media)
 let hasil = await (await conn.getFile(`https://vihangayt.me/tools/toanime?url=${url}`))
 
-await conn.sendFile(m.chat, hasil.data, 'img.jpg', '\n© Mika Bot', m)
+await conn.sendFile(m.chat, hasil.data, 'img.jpg', 'Old Image Colorizer\n© Mika Bot', m)
 	
 }
 
