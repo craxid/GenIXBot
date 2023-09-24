@@ -10,7 +10,7 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   let idgl = await fetch(`https://api.yanzbotz.my.id/api/downloader/instagram?url=${text}`)
   let res = await idgl.json()
   
-  conn.sendMessage(m.chat, res.data.url, 'ig.mp4', 'Done kak!', m)
+  conn.sendMessage(m.chat, res.url, 'ig.mp4', 'Done kak!', m)
 }
 
 handler.help = ['ig']
