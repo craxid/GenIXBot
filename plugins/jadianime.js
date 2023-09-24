@@ -2,7 +2,7 @@
 import uploadImage from '../lib/uploadImage.js'
 import uploadImage from '../lib/uploadImage.js'
 
-let janime = await fetch('https://vihangayt.me/tools/toanime?url=')
+let janime = await fetch(`https://vihangayt.me/tools/toanime?url=${gambar}`)
 
 async function handler(m, { conn }) {
     
