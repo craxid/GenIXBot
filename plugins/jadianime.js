@@ -10,7 +10,7 @@ if (!mime) throw 'Kirim/Reply Gambar dengan caption .jadianime'
 m.reply(wait)
 let media = await q.download()
 let url = await uploadImage(media)
-let hasil = await (await fetch(`https://vihangayt.me/tools/toanime?url=${url}`)).buffer()
+let hasil = await conn.getFile(`https://vihangayt.me/tools/toanime?url=${url}`)
 
 conn.sendFile(m.chat, hasil.data, 'jadianime.jpg', (`${global.wm2}`), m)
 	
