@@ -13,9 +13,9 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   conn.sendMessage(m.chat, res.result.url, 'ig.mp4', 'Done kak!', m)
 }
 
-handler.help = ['ig']
+handler.help = ['igdl','igvid']
 handler.tags = ['dl']
-handler.command = /^(ig(dl)?)|(instagram(dl)?)$/i
+handler.command = /^(ig(dl)?)|(instagram(dl)|igvid?)$/i
 handler.register = true
 handler.diamond = true
 
