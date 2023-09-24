@@ -79,8 +79,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				}
 			}
 			break;
-		case "colorize":
-		case "colorizer":
+		case "colorize2":
+		case "colorizer2":
 			{
 				conn.recolor = conn.recolor ? conn.recolor : {}
 				if (m.sender in conn.recolor)
