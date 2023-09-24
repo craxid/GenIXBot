@@ -10,7 +10,7 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
   let idgl2 = await fetch(`https://vihangayt.me/download/instagram?url=${text}`)
   let res = await idgl2.json()
   
-  conn.sendFile(m.chat, res.data.data.url, 'ig.jpg', 'Done kak!', m)
+  conn.sendFile(m.chat, res.data.data.url, 'ig.jpg', 'Instagram Downloader\n© Mika Bot', m)
 }
 
 handler.help = ['igpic','igimg']
@@ -22,4 +22,3 @@ handler.diamond = true
 export default handler
 
 //https://vihangayt.me/download/instagram?url=
-*/
