@@ -10,7 +10,7 @@ m.reply('Tunggu Sebentar...')
 let media = await q.download()
 let url = await uploadImage(media)
 let hasil = await (await fetch(`https://vihangayt.me/tools/toanime?url=${url}`)).buffer()
-await conn.sendFile(m.chat, hasil, '', ${global.wm2}, m)
+await conn.sendFile(m.chat, hasil, 'jadianime.jpg', ${global.wm2}, m)
 	
 }
 handler.help = ['jadianime']
