@@ -139,9 +139,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 			break;
 	}
 }
-handler.help = ["enhancer", "hdr", "colorize","remini"]
+handler.help = ["enhancer", "hdr","remini"]
 handler.tags = ["tools"]
 handler.premium = false
 handler.diamond = 3
-handler.command = ["unblur", "enchaner", "enhance", "hdr", "colorize","remini"]
+handler.command = ["unblur", "enchaner", "enhance", "hdr","remini"]
 export default handler
