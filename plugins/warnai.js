@@ -13,13 +13,13 @@ let media = await q.download()
 let url = await uploadImage(media)
 let hasil = await (await conn.getFile(`https://vihangayt.me/tools/toanime?url=${url}`))
 
-await conn.sendFile(m.chat, hasil.data, 'img.jpg', 'Foto ke Anime\n© Mika Bot', m)
+await conn.sendFile(m.chat, hasil.data, 'img.jpg', '\n© Mika Bot', m)
 	
 }
 
-handler.help = ['warnai', 'col']
+handler.help = ['warnai', 'colorizer']
 handler.tags = ['ai']
-handler.command = /^(jadianime)$/i
+handler.command = /^(warnai|colorize|colorizer)$/i
 handler.diamond = 3
 
 export default handler
