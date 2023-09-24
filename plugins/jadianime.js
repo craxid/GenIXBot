@@ -2,7 +2,7 @@
 import fetch from 'node-fetch'
 import uploadImage from '../lib/uploadImage.js'
 
-let handler = async (m, { conn, usedPrefix, command, text }) => {
+let handler = async (m, { conn, usedPrefix, command }) => {
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
 if (!mime) throw 'Kirim/Reply Gambar dengan caption .jadianime'
