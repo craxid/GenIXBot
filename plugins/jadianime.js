@@ -12,7 +12,7 @@ let media = await q.download()
 let url = await uploadImage(media)
 let hasil = await conn.getFile(`https://vihangayt.me/tools/toanime?url=${url}`)
 
-conn.sendFile(m.chat, hasil.data, 'jadianime.jpg', (`${global.wm2}`), m)
+conn.sendMessage(m.chat, hasil.data, 'jadianime.jpg', (`${global.wm2}`), m)
 	
 }
 handler.help = ['jadianime']
