@@ -5,8 +5,8 @@ import { format } from 'util'
 
 let handler = m => m
 
-const isNumber = x => typeof x === 'number' && !isNaN(x)
-const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(function () {
+let isNumber = x => typeof x === 'number' && !isNaN(x)
+let delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(function () {
     clearTimeout(this)
     resolve()
 }, ms))
@@ -24,4 +24,4 @@ handler.all = async function (m) {
 	}
 }
 
-module.exports = handler
+export default handler
