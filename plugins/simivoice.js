@@ -22,5 +22,6 @@ conn.sendMessage(m.chat, { audio: Buffer.from(data.data, "base64"), mimetype: "a
 }
 
 handler.help = ['simiv','simivoice']
-handler.tags = [fu]
+handler.tags = ['fun']
+
 export default handler
