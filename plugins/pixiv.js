@@ -19,6 +19,7 @@ let handler = async (m, { conn, text }) => {
 }
 handler.help = ['pixiv']
 handler.tags = ['img']
+handler.diamond = 3
 handler.command = /^(pixiv)$/i
 
 export default handler
