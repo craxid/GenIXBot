@@ -3,7 +3,9 @@ import fg from 'api-dylux'
 
 let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
   if (!text) throw `✳️ Masukan kueri untuk mencari gambar \n\n📌 Contoh: *${usedPrefix + command}* Misono Mika`
-  let res = await fg.googleImage(text)
+  
+  
+  let res = await fetch(``)(text)
   conn.sendFile(m.chat, res.getRandom(), 'img.png', `
 ✅ Hasil untuk: *${text}*`.trim(), m)
 }
