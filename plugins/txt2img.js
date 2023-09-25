@@ -7,7 +7,7 @@ m.reply(wait)
 
 //code area
 try {
-  let diff = await conn.getFile(`https://api.yanzbotz.my.id/api/text2img/yanzbotz?prompt=${text}`)
+  let diff = await conn.getFile(`https://api.yanzbotz.my.id/api/text2img/absolutelyV2?prompt=${text}`)
   
   
 //let diff = await conn.getFile(`https://api.azz.biz.id/api/text2img?q=${text}&key=mangea`)
