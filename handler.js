@@ -138,7 +138,6 @@ export async function handler(chatUpdate) {
                     delete: true,
                     antiLink: false,
                     viewonce: false,
-                    anticall: true,
                     useDocument: true,
                     onlyLatinos: false,
                     nsfw: false, 
@@ -154,7 +153,6 @@ export async function handler(chatUpdate) {
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: true,
-                anticall: true, // anticall on apa off?
                 restrict: false, 
                 status: 0
             }
