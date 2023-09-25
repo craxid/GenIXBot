@@ -6,7 +6,7 @@ if (!text) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan p
 m.react(wait)
 
 //code areatry {
-  let stabdo = await conn.getFile(`https://api.yanzbotz.my.id/api/text2img/absolutelyv2?prompt=${text}`)
+  let stabdif = await conn.getFile(`https://api.yanzbotz.my.id/api/text2img/absolutelyv2?prompt=${text}`)
   
   
 //let diff = await conn.getFile(`https://api.azz.biz.id/api/text2img?q=${text}&key=mangea`)
