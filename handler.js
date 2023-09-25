@@ -534,7 +534,7 @@ export async function participantsUpdate({ id, participants, action }) {
     }
 }
 //anticall
-async onCall(json) {
+/*async onCall(json) {
     if (!db.data.settings[this.user.jid].anticall) return
     let jid = json[2][0][1]['from']
     let isOffer = json[2][0][2][0][0] == 'offer'
@@ -555,7 +555,7 @@ async onCall(json) {
       this.sendJSON(nodePayload, tag)
       m.reply(`Kamu dibanned karena menelepon bot, owner : @${owner[0]}`)
     }
-  }
+  }*/
   //end anticall
 
 /**
