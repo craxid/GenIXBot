@@ -22,7 +22,7 @@ contextInfo: {
 externalAdReply: {
 title: (`${username}`),
 body: ('Pixiv Downloader'),
-thumbnailUrl: (`${piksif.result.image.urls.large}`),
+thumbnailUrl:(`${piksif.result.image.urls.large}`),
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
@@ -34,7 +34,7 @@ renderLargerThumbnail: true
 }
 handler.help = ['pixiv']
 handler.tags = ['img']
-handler.command = /^(poxiv)$/i
+handler.command = /^(pixiv)$/i
 handler.limit = true
 
 export default handler
