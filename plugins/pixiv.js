@@ -9,7 +9,7 @@ let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
   
   let pixiv = res.json()
   
-  let 
+  let piksif ``
   
   //conn.sendFile(m.chat, res.getRandom(), 'img.png', `
 ✅ Hasil untuk: *${text}*`.trim(), m)
