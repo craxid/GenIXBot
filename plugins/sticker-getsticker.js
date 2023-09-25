@@ -9,11 +9,13 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
     try {
    /*let res = await fetch(global.API('zenz', '/searching/stickersearch', { q:text }, 'apikey'))
    let json = await res.json()*/
-   let json = await fetch(`https://vihangayt.me/search/sticker?q=${text}`)
+   
+   let jeson = await fetch(`https://vihangayt.me/search/sticker?q=${text}`)
    
      /*let res = await fetch(`https://api.zahwazein.xyz/searching/stickersearch?apikey=zenzkey_f59c1aacf2&query=${text}`)
    let json = await res.json()*/
    
+   let json = await json.json()
     m.reply(`
 ✅ Results
 
