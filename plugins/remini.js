@@ -97,7 +97,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let error
 				try {
 					const This = await processing(img, "enhance")
-					conn.sendFile(m.chat, This, "", "Sudah Jadi Kak >//<", m)
+					conn.sendFile(m.chat, This, "", "Photo Enhancern© Mika Bot", m)
 				} catch (er) {
 					error = true
 				} finally {
@@ -126,7 +126,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let error
 				try {
 					const This = await processing(img, "enhance")
-					conn.sendFile(m.chat, This, "", "Sudah Jadi Kak >//<", m)
+					conn.sendFile(m.chat, This, "", "Photo Enhancer\n© Mika Bot", m)
 				} catch (er) {
 					error = true
 				} finally {
