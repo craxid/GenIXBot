@@ -18,9 +18,9 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
 ✅ Results
 
 ▢ *Title:* ${json.title}
-▢ *Total stickers:* ${json.sticker_url.length}
-▢ *Time:* _*${json.sticker_url.length * 2} s*_`)
-    for (let i of json.sticker_url) {
+▢ *Total stickers:* ${json.datasticker_url.length}
+▢ *Time:* _*${json.datasticker_url.length * 2} s*_`)
+    for (let i of json.datasticker_url) {
         const stiker = await sticker(false, i, global.packname, global.author)
         await conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
         //await delay(1500)
