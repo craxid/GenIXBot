@@ -10,7 +10,7 @@ let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
   let pixiv = res.json()
   
   let piksif `
-  User: $
+  User: ${piksif.result.user.id
   `
   
 conn.sendMessage(m.chat, {
