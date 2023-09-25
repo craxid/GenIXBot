@@ -46,7 +46,7 @@
         "@saipulanuar/jadianime-ts": "latest",
         "awesome-phonenumber": "^3.4.0",
         "node_characterai": "latest",
-        "@ibaraki-douji/pixivts": "npm:@ibaraki-douji/pixivts"
+        "@ibaraki-douji/pixivts": "npm:@ibaraki-douji/pixivts",
         "makemeazombie": "latest",
         "axios": "^1.1.2",
         "express": "latest",
