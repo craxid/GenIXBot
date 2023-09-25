@@ -5,7 +5,9 @@ let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
   if (!text) throw `✳️ Masukan kueri untuk mencari gambar \n\n📌 Contoh: *${usedPrefix + command}* Misono Mika`
   
   
-  let res = await fetch(``)(text)
+  let res = await fetch(`https://api.yanzbotz.my.id/api/cari/pixiv?query=${text}`)
+  
+  let p
   conn.sendFile(m.chat, res.getRandom(), 'img.png', `
 ✅ Hasil untuk: *${text}*`.trim(), m)
 }
