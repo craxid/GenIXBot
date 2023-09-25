@@ -10,8 +10,8 @@ let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
   let pixiv = res.json()
   
   let piksif `
-  title: ${piksif.result.user.title}
-  type: ${piksif.result.user.type}
+  title: ${piksif.result.title}
+  type: ${piksif.result.type}
   ID: ${piksif.result.user.id}
   
   `
@@ -22,7 +22,7 @@ contextInfo: {
 externalAdReply: {
 title: (`${username}`),
 body: ('Pixiv Downloader'),
-thumbnailUrl: (`${piksif.result.user.profile_image.urls.medium}`),
+thumbnailUrl: (`${piksif.result.image.urls.medium}`),
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
