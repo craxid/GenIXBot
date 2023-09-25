@@ -9,7 +9,7 @@ let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
   
   let pixiv = res.json()
   
-  let piksif `
+  let piksif = `
   title: ${piksif.result.title}
   type: ${piksif.result.type}
   ID: ${piksif.result.user.id}
