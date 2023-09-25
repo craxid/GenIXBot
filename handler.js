@@ -113,8 +113,6 @@ export async function handler(chatUpdate) {
                     chat.sDemote = ''
                 if (!('delete' in chat))
                     chat.delete = true
-                if (!('anticall' in chat))
-                    chat.antiCall = true
                 if (!('antiLink' in chat))
                     chat.antiLink = false
                 if (!('autoread' in chat))
@@ -152,7 +150,6 @@ export async function handler(chatUpdate) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = true
                 if (!('restrict' in settings)) settings.restrict = false
-                if (!('anticall' in settings)) settings.anticall = true
                 if (!('status' in settings)) settings.status = 0
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
