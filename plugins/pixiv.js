@@ -30,7 +30,7 @@ renderLargerThumbnail: true
 }}})
   
   //conn.sendFile(m.chat, res.getRandom(), 'img.png', `
-✅ Hasil untuk: *${text}*`.trim(), m)
+✅ Hasil untuk: `*${text}*`.trim(), m)
 }
 handler.help = ['pixiv']
 handler.tags = ['img']
