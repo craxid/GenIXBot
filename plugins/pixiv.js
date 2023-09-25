@@ -3,11 +3,11 @@ import { fileTypeFromBuffer } from 'file-type'
 import { Pixiv } from '@ibaraki-douji/pixivts'
 
 let pixiv = new Pixiv()
-
+await m.reply(wait)
 let handler = async (m, { conn, text }) => {
 	if (!text) throw 'Input Query / Pixiv Url'
 	let res = await pixivDl(text)
-	await m.reply(wait)
+	
 	
 	for (let i = 0; i < res.media.length; i++) {
 		let caption = i == 0 ? `${res.caption}\n\n*By:* ${res.artist}\n*Tags:* ${res.tags.join(', ')}` : ''
