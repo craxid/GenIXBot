@@ -3,9 +3,11 @@ import { fileTypeFromBuffer } from 'file-type'
 import { Pixiv } from '@ibaraki-douji/pixivts'
 
 let pixiv = new Pixiv()
-await m.reply(wait)
+
 let handler = async (m, { conn, text }) => {
 	if (!text) throw 'Input Query / Pixiv Url'
+	await m.reply(wait)
+	
 	let res = await pixivDl(text)
 	
 	
