@@ -5,7 +5,8 @@ let handler = async (m, { conn, text }) => {
 if (!text) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan pengguna\n\nContoh: !stabledif 1girls`
 m.react(wait)
 
-//code areatry {
+//code area
+try {
   let stabdif = await conn.getFile(`https://api.yanzbotz.my.id/api/text2img/absolutelyv2?prompt=${text}`)
   
   
