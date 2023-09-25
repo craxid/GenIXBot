@@ -4,9 +4,9 @@ import fetch from 'node-fetch'
 export async function before(m, { conn }) {
 
 if (m.isBaileys && m.fromMe)
-        return !0
+        return !1
 
-if (!m.isGroup) return !1
+if (!m.isGroup) return !0
     let user = global.db.data.users[m.sender]
     
 if (!user.chatbot)
