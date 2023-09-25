@@ -15,7 +15,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
      /*let res = await fetch(`https://api.zahwazein.xyz/searching/stickersearch?apikey=zenzkey_f59c1aacf2&query=${text}`)
    let json = await res.json()*/
    
-   let json = await json.json()
+   let json = await jeson.json()
     m.reply(`
 ✅ Results
 
