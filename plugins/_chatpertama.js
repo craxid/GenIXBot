@@ -20,20 +20,20 @@ ${banned ? `Kamu telah terbanned!\nHubungi: https://wa.me/+${owner[0]}` : 'Ada y
     user.pc = new Date * 1
 }
 
- handler
+export default handler
 function ucapan() {
         const hour_now = moment.tz('Asia/Jakarta').format('HH')
-        var ucapanWaktu = 'Pagi kak'
+        var ucapanWaktu = 'Selamat Pagi kak'
         if (hour_now >= '03' && hour_now <= '10') {
-          ucapanWaktu = 'Pagi kak'
+          ucapanWaktu = 'Selamat Pagi kak'
         } else if (hour_now >= '10' && hour_now <= '15') {
-          ucapanWaktu = 'Siang kak'
+          ucapanWaktu = 'Selamat Siang kak'
         } else if (hour_now >= '15' && hour_now <= '17') {
-          ucapanWaktu = 'Sore kak'
+          ucapanWaktu = 'Selamat Sore kak'
         } else if (hour_now >= '17' && hour_now <= '18') {
           ucapanWaktu = 'Selamat Petang kak'
         } else if (hour_now >= '18' && hour_now <= '23') {
-          ucapanWaktu = 'Malam kak'
+          ucapanWaktu = 'Selamat Malam kak'
         } else {
           ucapanWaktu = 'Selamat Malam!'
         }	
