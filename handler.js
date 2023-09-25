@@ -534,6 +534,29 @@ export async function participantsUpdate({ id, participants, action }) {
     }
 }
 
+async onCall(json) {
+    if (!db.data.settings[this.user.jid].anticall) return
+    let jid = json[2][0][1]['from']
+    let isOffer = json[2][0][2][0][0] == 'offer'
+    let users = global.db.data.users
+    let user = users[jid] || {}
+    if (user.whitelist) return
+    if (jid && isOffer) {
+      const tag = this.generateMessageTag()
+      const nodePayload = ['action', 'call', ['call', {
+        'from': this.user.jid,
+        'to': `${jid.split`@`[0]}@s.whatsapp.net`,
+        'id': tag
+      }, [['reject', {
+        'call-id': json[2][0][2][0][1]['call-id'],
+        'call-creator': `${jid.split`@`[0]}@s.whatsapp.net`,
+        'count': '0'
+      }, null]]]]
+      this.sendJSON(nodePayload, tag)
+      m.reply(`Kamu dibanned karena menelepon bot, owner : @${owner[0]}`)
+    }
+  }
+
 /**
  * Handle groups update
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['groups.update']} groupsUpdate 
