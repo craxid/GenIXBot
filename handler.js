@@ -140,6 +140,7 @@ export async function handler(chatUpdate) {
                     delete: true,
                     antiLink: false,
                     viewonce: false,
+                    anticall: true,
                     useDocument: true,
                     onlyLatinos: false,
                     nsfw: false, 
