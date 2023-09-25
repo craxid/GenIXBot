@@ -157,6 +157,7 @@ export async function handler(chatUpdate) {
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: true,
+                anticall: true, // anticall on apa off?
                 restrict: false, 
                 status: 0
             }
