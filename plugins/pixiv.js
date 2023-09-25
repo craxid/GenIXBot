@@ -9,7 +9,22 @@ let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
   
   let pixiv = res.json()
   
-  let piksif ``
+  let piksif `
+  
+  `
+  
+conn.sendMessage(m.chat, {
+text: piksif,
+contextInfo: {
+externalAdReply: {
+title: (`${username}`),
+body: ('Pixiv Downloader'),
+thumbnailUrl: mikapp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}})
   
   //conn.sendFile(m.chat, res.getRandom(), 'img.png', `
 ✅ Hasil untuk: *${text}*`.trim(), m)
