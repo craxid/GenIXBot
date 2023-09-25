@@ -13,8 +13,8 @@ let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
   title: ${piksif.result.title}
   type: ${piksif.result.type}
   ID: ${piksif.result.user.id}
-  
   `
+  
   
 conn.sendMessage(m.chat, {
 text: piksif,
