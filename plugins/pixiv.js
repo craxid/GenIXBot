@@ -22,7 +22,7 @@ contextInfo: {
 externalAdReply: {
 title: (`${username}`),
 body: ('Pixiv Downloader'),
-thumbnailUrl: (`${piksif.result.image.urls.medium}`),
+thumbnailUrl: (`${piksif.result.image.urls.large}`),
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
