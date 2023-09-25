@@ -7,7 +7,7 @@ m.react('💬')
 
 //code area
 try {
-let diff2 = await fetch(`https://api.zayn-c.my.id/ai-diffusion?text=${text}`)
+let diff2 = await fetch(`https://api.yanzbotz.my.id/api/text2img/absolutelyV2?prompt=${text}`)
 	    
 let stabdif = await diff2.json()
 let setab = Math.floor(Math.random() * difu)
