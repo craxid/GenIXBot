@@ -7,7 +7,8 @@ let pixiv = new Pixiv()
 let handler = async (m, { conn, text }) => {
 	if (!text) throw 'Input Query / Pixiv Url'
 	let res = await pixivDl(text)
-	await m.reply(')
+	await m.reply(wait)
+	
 	for (let i = 0; i < res.media.length; i++) {
 		let caption = i == 0 ? `${res.caption}\n\n*By:* ${res.artist}\n*Tags:* ${res.tags.join(', ')}` : ''
 		let mime = (await fileTypeFromBuffer(res.media[i])).mime 
@@ -15,10 +16,10 @@ let handler = async (m, { conn, text }) => {
 	}
 }
 handler.help = ['pixiv']
-handler.tags = ['downloader']
+handler.tags = ['img']
 handler.command = /^(pixiv)$/i
 
-module.exports = handler
+export default handler
 
 async function pixivDl(query) {
 	if (query.match(URL_REGEX)) {
