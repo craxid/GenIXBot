@@ -10,8 +10,8 @@ let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
   let pixiv = res.json()
   
   let piksif `
-  User: ${piksif.result.user.account}
-  Name: ${piksif.result.user.name}
+  title: ${piksif.result.user.title}
+  type: ${piksif.result.user.type}
   ID: ${piksif.result.user.id}
   
   `
