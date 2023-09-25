@@ -7,8 +7,11 @@ let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
   
   let res = await fetch(`https://api.yanzbotz.my.id/api/cari/pixiv?query=${text}`)
   
-  let p
-  conn.sendFile(m.chat, res.getRandom(), 'img.png', `
+  let pixiv = res.json()
+  
+  let 
+  
+  //conn.sendFile(m.chat, res.getRandom(), 'img.png', `
 ✅ Hasil untuk: *${text}*`.trim(), m)
 }
 handler.help = ['pixiv']
