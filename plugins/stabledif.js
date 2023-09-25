@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
 	
 if (!text) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan pengguna\n\nContoh: !stabledif 1girls`
-m.react('💬')
+m.react(wait)
 
 //code area
 try {
@@ -11,6 +11,7 @@ let diff2 = await fetch(`https://api.yanzbotz.my.id/api/text2img/absolutelyV2?pr
 	    
 let stabdif = await diff2.json()
 let setab = Math.floor(Math.random() * difu)
+
 conn.sendMessage(m.chat, stabdif.data, 'img.jpg', `*[ STABLE DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
 	}
 	catch {
