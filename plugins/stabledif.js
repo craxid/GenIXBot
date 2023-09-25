@@ -5,18 +5,18 @@ let handler = async (m, { conn, text }) => {
 if (!text) throw `✳️ Membuat Gambar AI menggunakan perintah yang diberikan pengguna\n\nContoh: !stabledif 1girls`
 m.react(wait)
 
-//code area
-try {
-let diff2 = await fetch(`https://api.yanzbotz.my.id/api/text2img/absolutelyV2?prompt=${text}`)
+//code areatry {
+  let stabdo = await conn.getFile(`https://api.yanzbotz.my.id/api/text2img/absolutelyv2?prompt=${text}`)
+  
+  
+//let diff = await conn.getFile(`https://api.azz.biz.id/api/text2img?q=${text}&key=mangea`)
 	    
-let stabdif = await diff2.json()
-let setab = Math.floor(Math.random() * difu)
-
-conn.sendMessage(m.chat, stabdif.data, 'img.jpg', `*[ STABLE DIFFUSION ]*\n\nPROMPT:\n${text}`, m)
+conn.sendFile(m.chat, stabdif.data, 'img.jpg', `*[ TEXT TO IMAGE ]*\n\nPROMPT:\n${text}`, m)
 	}
 	catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
+
 //end
 
 }
