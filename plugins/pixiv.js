@@ -11,6 +11,7 @@ let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
   
   let piksif `
   User: ${piksif.result.user.account}
+  Name: ${piksif.result.user.name}
   ID: ${piksif.result.user.id}
   
   `
