@@ -7,10 +7,10 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
     let room = Object.values(conn.game).find(room => room.state === 'Menunggu' && (text ? room.name === text : true))
     // m.reply('[WIP Feature]')
     if (room) {
-        m.reply('✅ Compañero encontrado')
+        m.reply('✅ Menemukan lawan')
         room.o = m.chat
         room.game.playerO = m.sender
-        room.state = 'PLAYING'
+        room.state = 'Mulai'
         let arr = room.game.render().map(v => {
             return {
                 X: '❎',
