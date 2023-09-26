@@ -34,7 +34,7 @@ Berikut adalah kode yang telah diperbaiki:
 import uploadImage from '../lib/uploadImage.js'
 import ocrapi from 'ocr-space-api-wrapper'
 
-let { MessageType } = async '@adiwajshing/baileys'
+let { MessageType } = async ('@adiwajshing/baileys')
 
 let handler = async (m, { conn, text }) => {
   let q = m.quoted ? m.quoted : m
