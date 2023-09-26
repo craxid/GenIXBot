@@ -27,7 +27,7 @@ ${global.sb}
 API version: ${sevre.debug.apiversion}
     `
 
-conn.relayMessage(from,  {
+/*conn.relayMessage(from,  {
     requestPaymentMessage: {
       currencyCodeIso4217: 'USD',
       amount1000: "1000000",
@@ -39,12 +39,13 @@ conn.relayMessage(from,  {
         mentionedJid: [sender],
         externalAdReply: {
         showAdAttribution: true
-  }}}}}}, {})
+  }}}}}}, {})*/
 
-/*
+
 conn.sendMessage(m.chat, {
 text: (`${tegs}`).replace('true','Online').replace('undefined','tidak diketahui'),
 contextInfo: {
+    mentionJ
 externalAdReply: {
 title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
@@ -53,7 +54,7 @@ sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.genix.eu.org:29427'
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}})*/
+}}})
 
 	}
 	catch {
