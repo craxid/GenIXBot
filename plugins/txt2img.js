@@ -24,7 +24,7 @@ handler.help = ['txt2img (Your Prompt)']
 handler.tags = ['ai']
 handler.command = ['txt2img','diff2','imgai','img']
 handler.premium = false
-handler.diamond = true
+handler.diamond = 3
 export default handler
 
 /*let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)*/
