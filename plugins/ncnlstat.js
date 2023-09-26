@@ -50,7 +50,7 @@ externalAdReply: {
 title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|ncnl.aternos.o:29427'),
+sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|ncnl.aternos.org:17810'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
