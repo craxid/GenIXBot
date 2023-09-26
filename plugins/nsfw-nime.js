@@ -80,7 +80,7 @@ case 'hentaigif':
 let hengif = await conn.getFile(global.API('zenz', `/api/morensfw/${command}`, { }, 'apikey'))
 
 	     
-	     conn.sendFile(m.chat, anime.data, 'img.jpg', `*✅ Random Anime NSFW:* ${command}`, m)
+	     conn.sendFile(m.chat, hengif.data, 'img.jpg', `*✅ Random Anime NSFW:* ${command}`, m)
 	     
 	     m.react(sange) 
 break
