@@ -1,4 +1,4 @@
-let { MessageType } = require('@adiwajshing/baileys')
+//let { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, usedPrefix }) => { 
     try { 
         let _spin1 = pickRandom(['1', '2', '3', '4', '5']) 
@@ -52,7 +52,7 @@ ${spins7}|${spins8}|${spins9}
         conn.reply(m.chat, 'Error', m)
         if (DevMode) {
             for (let jid of global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid)) {
-                conn.sendMessage(jid, 'Menu.js error\nNo: *' + m.sender.split`@`[0] + '*\nCommand: *' + m.text + '*\n\n*' + e + '*', MessageType.text)
+                conn.sendMessage(jid, 'Menu.js error\nNo: *' + m.sender.split`@`[0] + '*\nCommand: *' + m.text + '*\n\n*' + e + '*')
             }
         }
     }
