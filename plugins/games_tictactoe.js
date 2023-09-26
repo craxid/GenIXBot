@@ -70,12 +70,12 @@ ${arr.slice(6).join('')}
 ▢ *Player 1* ❎ : @${room.game.playerX.split('@')[0]} 
 ▢ *Player 2* ⭕ : @${room.game.playerO.split('@')[0]}
 
-Escriba *surrender* para darse por vencido 
+Ketik *nyerah* untuk menyerah
 `.trim()
         let users = global.global.db.data.users
         if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
             room[room.game._currentTurn ^ isSurrender ? 'x' : 'o'] = m.chat
-        const btn = isTie ? ['TicTacToe', '/ttt'] : ['Surrender', 'surrender']
+        const btn = isTie ? ['TicTacToe', '/ttt'] : ['yerah', 'nyerah']
         if (room.x !== room.o)
             await this.reply(room.x, str, m, {
                 mentions: this.parseMention(str)
