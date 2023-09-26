@@ -12,7 +12,7 @@ if (m.isBaileys && m.fromMe)
         return !0
         let api = await fetch(`https://api.azz.biz.id/api/alicia?q=${text}&user=Mika%20Bot&key=mangea`)
         let res = await api.json()
-        m.reply(res.success.replace('simsimi', 'DyLux').replace('Simsimi', 'DyLux').replace('sim simi', 'DyLux'))
+        m.reply(res.respon.replace('simsimi', 'DyLux').replace('Simsimi', 'DyLux').replace('sim simi', 'DyLux'))
     
 }
 
