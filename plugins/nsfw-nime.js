@@ -65,7 +65,6 @@ case 'maid':
 case 'manga':
 case 'yuri':
 case 'blowjob':
-case 'hentaigif':
 case 'netorare':
 case 'pussy':
 case 'panties':
@@ -79,9 +78,9 @@ break
  }
 
 }
-handler.help = ['ahegao','netorare','ass','bdsm','blowjob','cuckold','cum','ero','femdom','foot','gangbang','glasses','hentai','maid','manga','yuri','blowjob','pussy','panties','hentaigif','milf']
+handler.help = ['ahegao','netorare','ass','bdsm','blowjob','cuckold','cum','ero','femdom','foot','gangbang','glasses','hentai','maid','manga','yuri','blowjob','pussy','panties','milf']
 handler.tags = ['ansfw']
-handler.command = ['ahegao','netorare','ass','bdsm','blowjob','cuckold','cum','ero','femdom','foot','gangbang','glasses','hentai','maid','manga','yuri','blowjob','pussy','panties','hentaigif','milf']
+handler.command = ['ahegao','netorare','ass','bdsm','blowjob','cuckold','cum','ero','femdom','foot','gangbang','glasses','hentai','maid','manga','yuri','blowjob','pussy','panties','milf']
 handler.diamond = 3
 handler.register = true
 handler.premium = true
