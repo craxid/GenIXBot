@@ -29,8 +29,8 @@ export async function before(m) {
             }))
         if (!isSurrender && 1 > (ok = room.game.turn(m.sender === room.game.playerO, parseInt(m.text) - 1))) {
             m.reply({
-                '-3': 'Permainan ',
-                '-2': 'Inválido',
+                '-3': 'Permainan Selesai',
+                '-2': 'Tidak valid',
                 '-1': 'Posición inválida',
                 0: 'Posición inválida',
             }[ok])
