@@ -533,10 +533,10 @@ if (chat.welcome) {
                             text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
                                 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
                                 
-
+//https://api.azz.biz.id/api/goodbye?name=Miftah&member=143&gcname=Miftah%20Bot&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
                                 
                             let wel = API(`https://api.azz.biz.id/api/welcome?name=${name}&gcname=${gpname}&member=${member}&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg?random&key=global`)
-                            let lea = API(`https://api.azz.biz.id/api/welcome?name=${name}&gcname=${gpname}&member=${member}&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg?random&key=`)
+                            let lea = API(`https://api.azz.biz.id/api/goodbye?name=${name}&gcname=${gpname}&member=${member}&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg?random&key=global`)
                              this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
                         }
                     }
