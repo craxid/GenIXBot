@@ -12,9 +12,9 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
     let teks = `
 ┌──「 *STALKING* 
 ▢ *🔖 Name:* ${res.full_name} 
-▢ *🔖 Username:* ${res.username}
-▢ *👥 Followers:* ${res.followers_count}
-▢ *🫂 Following:* ${res.following_count}
+▢ *🔖 Username:* ${res.result.username}
+▢ *👥 Followers:* ${res.result.followers_count}
+▢ *🫂 Following:* ${res.result.following_count}
 ▢ *📌 Bio:* ${res.result.biography}
 ▢ *🏝️ Posts:* ${res.postsH}
 ▢ *🔗 Link* : https://instagram.com/${res.username.replace(/^@/, '')}
