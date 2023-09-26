@@ -33,7 +33,7 @@ ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 
-▢ *SALA ID* ${room.id}
+▢ *ID ROOM* ${room.id}
 
 ▢ *Reglas*
 ‣ Haz 3 filas de símbolos verticales, horizontales o diagonales para ganar
