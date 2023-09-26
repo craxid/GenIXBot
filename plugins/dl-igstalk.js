@@ -26,7 +26,7 @@ text: teks,
 contextInfo: {
 externalAdReply: {
 title: ('Instagram Stalker'),
-body: (`@${res.result.username}`),
+body: @(`${res.result.username}`),
 thumbnailUrl: (`${res.result.profile_pic_url}`),
 sourceUrl: (`https://www.instagram.com/${res.result.username.replace(/^@/, '')}`),
 mediaType: 1,
