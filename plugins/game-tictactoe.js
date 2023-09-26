@@ -35,9 +35,9 @@ ${arr.slice(6).join('')}
 
 ▢ *ID ROOM* ${room.id}
 
-▢ *Reglas*
-‣ Haz 3 filas de símbolos verticales, horizontales o diagonales para ganar
-‣ Escribe *surrender* para salir del juego y ser declarado derrotado.
+▢ *Aturan* 
+‣ Buat 3 baris simbol vertikal, horizontal atau diagonal untuk menang 
+‣ Ketik *menyerah* untuk keluar dari permainan dan dinyatakan kalah.
 `.trim()
         if (room.x !== room.o) await conn.reply(room.x, str, m, {
             mentions: conn.parseMention(str)
@@ -51,7 +51,7 @@ ${arr.slice(6).join('')}
             x: m.chat,
             o: '',
             game: new TicTacToe(m.sender, 'o'),
-            state: 'WAITING'
+            state: 'menunggu'
         }
         if (text) room.name = text
         
