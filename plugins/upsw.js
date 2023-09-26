@@ -1,12 +1,12 @@
-import fetch from "node-fetch";
+import fetch from "node-fetch"
 import uploadFile from '../lib/uploadFile.js'
 import uploadImage from '../lib/uploadImage.js'
 
-const commandList = ["upsw"];
+const commandList = ["upsw"]
 
-const mimeAudio = 'audio/mpeg';
-const mimeVideo = 'video/mp4';
-const mimeImage = 'image/jpeg';
+const mimeAudio = 'audio/mpeg'
+const mimeVideo = 'video/mp4'
+const mimeImage = 'image/jpeg'
 
 let handler = async (m, { conn, command, args }) => {
   let teks
@@ -17,39 +17,39 @@ let handler = async (m, { conn, command, args }) => {
     }
 
   if (m.quoted && m.quoted.mtype) {
-    const mtype = m.quoted.mtype;
-    let type;
+    const mtype = m.quoted.mtype
+    let type
 
     if (mtype === 'audioMessage') {
-      type = 'vn';
+      type = 'vn'
     } else if (mtype === 'videoMessage') {
-      type = 'vid';
+      type = 'vid'
     } else if (mtype === 'imageMessage') {
-      type = 'img';
+      type = 'img'
     } else if (mtype === 'extendedTextMessage') {
-      type = 'txt';
+      type = 'txt'
     } else {
-      throw "❌ Media type tidak valid!";
+      throw "❌ Media type tidak valid!"
     }
 
-    const doc = {};
+    const doc = {}
     
     if (type === 'vn') {
-    	const link = await (type === 'img' ? uploadImage : uploadFile)(await m.quoted.download());
-      doc.mimetype = mimeAudio;
-      doc.audio = { url: link } ? { url: link } : generateVoice("id-ID", "id-ID-ArdiNeural", teks);
+    	const link = await (type === 'img' ? uploadImage : uploadFile)(await m.quoted.download())
+      doc.mimetype = mimeAudio
+      doc.audio = { url: link } ? { url: link } : generateVoice("id-ID", "id-ID-ArdiNeural", teks)
     } else if (type === 'vid') {
-    	const link = await (type === 'img' ? uploadImage : uploadFile)(await m.quoted.download());
-      doc.mimetype = mimeVideo;
-      doc.caption = teks;
-      doc.video = { url: link } ? { url: link } : { url: giflogo };
+    	const link = await (type === 'img' ? uploadImage : uploadFile)(await m.quoted.download())
+      doc.mimetype = mimeVideo
+      doc.caption = teks
+      doc.video = { url: link } ? { url: link } : { url: giflogo }
     } else if (type === 'img') {
-    	const link = await (type === 'img' ? uploadImage : uploadFile)(await m.quoted.download());
-      doc.mimetype = mimeImage;
-      doc.caption = teks;
-      doc.image = { url: link } ? { url: link } : { url: logo };
+    	const link = await (type === 'img' ? uploadImage : uploadFile)(await m.quoted.download())
+      doc.mimetype = mimeImage
+      doc.caption = teks
+      doc.image = { url: link } ? { url: link } : { url: logo }
     } else if (type === 'txt') {
-      doc.text = teks;
+      doc.text = teks
     }
     
     await conn.sendMessage('status@broadcast', doc, {
@@ -57,35 +57,35 @@ let handler = async (m, { conn, command, args }) => {
       font: Math.floor(Math.random() * 9),
       statusJidList: Object.keys(global.db.data.users)
     }).then((res) => {
-      conn.reply(m.chat, `Sukses upload ${type}`, res);
+      conn.reply(m.chat, `Sukses upload ${type}`, res)
     }).catch(() => {
-      conn.reply(m.chat, `Gagal upload ${type}`, m);
-    });
+      conn.reply(m.chat, `Gagal upload ${type}`, m)
+    })
   } else {
-    throw "❌ Tidak ada media yang diberikan!";
+    throw "❌ Tidak ada media yang diberikan!"
   }
-};
+}
 
-handler.help = commandList;
-handler.tags = ["main"];
-handler.owner = true;
+handler.help = commandList
+handler.tags = ["main"]
+handler.owner = true
 handler.rowner = true
-handler.command = new RegExp(`^(${commandList.join('|')})$`, 'i');
+handler.command = new RegExp(`^(${commandList.join('|')})$`, 'i')
 
-export default handler;
+export default handler
 
 async function generateVoice(Locale = "id-ID", Voice = "id-ID-ArdiNeural", Query) {
-  const formData = new FormData();
-  formData.append("locale", Locale);
-  formData.append("content", `<voice name="${Voice}">${Query}</voice>`);
-  formData.append("ip", '46.161.194.33');
+  const formData = new FormData()
+  formData.append("locale", Locale)
+  formData.append("content", `<voice name="${Voice}">${Query}</voice>`)
+  formData.append("ip", '46.161.194.33')
   const response = await fetch('https://app.micmonster.com/restapi/create', {
     method: 'POST',
     body: formData
-  });
-  return Buffer.from(('data:audio/mpeg;base64,' + await response.text()).split(',')[1], 'base64');
+  })
+  return Buffer.from(('data:audio/mpegbase64,' + await response.text()).split(',')[1], 'base64')
 }
 
 function getRandomHexColor() {
-  return "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0");
+  return "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0")
 }
