@@ -477,7 +477,7 @@ export async function participantsUpdate({ id, participants, action }) {
     switch (action) {
         case 'add':
         case 'remove':
-            /*if (chat.welcome) {
+            if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
                     let pp = 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg'
@@ -498,8 +498,6 @@ export async function participantsUpdate({ id, participants, action }) {
                                 background: 'https://i.imgur.com/bbWbASn.jpg'
                             }, 'apikey')
 
-//https://api.azz.biz.id/api/welcome?name=Miftah&gcname=Miftah%20Botz&member=167&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
-
                             let lea = API('azz', '/api/goodbye', {
                                 username: await this.getName(user),
                                 groupname: await this.getName(id),
@@ -508,7 +506,6 @@ export async function participantsUpdate({ id, participants, action }) {
                                 profile: pp,
                                 background: 'https://i.imgur.com/klTSO3d.jpg'
                             }, 'apikey')
-                            
                         this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
                              [(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : 'khajs')], 
@@ -516,32 +513,7 @@ export async function participantsUpdate({ id, participants, action }) {
                           */
                     }
                 }
-            }*/
-            
-if (chat.welcome) {
-                    let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
-                    for (let user of participants) {
-                        let pp = 'https://i.ibb.co/sQTkHLD/ppkosong.png'
-                        let name = await this.getName(user)
-                        let gpname = await this.getName(id)
-                        let member = groupMetadata.participants.length
-                        pp: pp
-                        try {
-                            pp = await this.profilePictureUrl(user, 'image')
-                        } catch (e) {
-                        } finally {
-                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
-                                (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
-                                
-//https://api.azz.biz.id/api/goodbye?name=Miftah&member=143&gcname=Miftah%20Bot&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
-                                
-                            let wel = API(`https://api.azz.biz.id/api/welcome?name=${name}&gcname=${gpname}&member=${member}&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg?random&key=global`)
-                            let lea = API(`https://api.azz.biz.id/api/goodbye?name=${name}&gcname=${gpname}&member=${member}&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg?random&key=global`)
-                             this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
-                        }
-                    }
-                }
-            
+            }
             break
         case 'promote':
             text = (chat.sPromote || this.spromote || conn.spromote || '@user diangkat jadi admin')
