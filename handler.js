@@ -508,6 +508,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 profile: pp,
                                 background: 'https://i.imgur.com/klTSO3d.jpg'
                             }, 'apikey')
+                            
                         this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
                              [(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : 'khajs')], 
