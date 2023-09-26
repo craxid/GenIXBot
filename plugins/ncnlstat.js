@@ -45,12 +45,11 @@ API version: ${sevre.debug.apiversion}
 conn.sendMessage(m.chat, {
 text: (`${tegs}`).replace('true','Online').replace('undefined','tidak diketahui'),
 contextInfo: {
-mentionJid: m,
 externalAdReply: {
 title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|ncnl.aternos.org:17810'),
+sourceUrl: ('minecraft://?addExternalServer=NCNL Network|ncnl.aternos.org:17810'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
