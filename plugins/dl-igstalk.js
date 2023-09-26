@@ -12,7 +12,7 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
     let teks = `
 ┌──「 *STALKING* 
 ▢ *🔖 Name:* ${res.result.full_name} 
-▢ *🔖 Username:* ${res.result.username}
+▢ *🔖 Username:* @${res.result.username}
 ▢ *👥 Followers:* ${res.result.follower_count}
 ▢ *🫂 Following:* ${res.result.following_count}
 ▢ *📌 Bio:* ${res.result.biography}
@@ -26,7 +26,7 @@ text: teks,
 contextInfo: {
 externalAdReply: {
 title: ('Instagram Stalker'),
-body: (`${res.result.username}`),
+body: (`@${res.result.username}`),
 thumbnailUrl: (`${res.result.profile_pic_url}`),
 sourceUrl: (`https://www.instagram.com/${res.result.username.replace(/^@/, '')}`),
 mediaType: 1,
