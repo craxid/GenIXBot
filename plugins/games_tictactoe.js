@@ -61,7 +61,7 @@ export async function before(m) {
         }
         let winner = isSurrender ? room.game.currentTurn : room.game.winner
         let str = `
-${isWin ? `@${winner.split('@')[0]} Menang 🎉 *+${winScore} XP*` : isTie ? `Permainan selesaidengan hasil seri *+${playScore} XP*` : `Giliran kamu ${['❎', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`} 
+${isWin ? `@${winner.split('@')[0]} Menang 🎉 *+${winScore} XP*` : isTie ? `Permainan selesai dengan hasil seri *+${playScore} XP*` : `Giliran kamu ${['❎', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`} 
 
 ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
