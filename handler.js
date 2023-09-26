@@ -505,8 +505,8 @@ export async function participantsUpdate({ id, participants, action }) {
                                 gcname: await this.getName(id),
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
-                                profile: pp,
-                                background: 'https://i.imgur.com/klTSO3d.jpg'
+                                pp: pp,
+                                bg: 'https://i.imgur.com/klTSO3d.jpg'
                             }, 'apikey')
                         this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
