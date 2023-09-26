@@ -13,7 +13,7 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
 ┌──「 *STALKING* 
 ▢ *🔖 Name:* ${res.full_name} 
 ▢ *🔖 Username:* ${res.result.username}
-▢ *👥 Followers:* ${res.result.followers_count}
+▢ *👥 Followers:* ${res.result.follower_count}
 ▢ *🫂 Following:* ${res.result.following_count}
 ▢ *📌 Bio:* ${res.result.biography}
 ▢ *🏝️ Posts:* ${res.result.media_count}
