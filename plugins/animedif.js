@@ -23,7 +23,7 @@ handler.help = ['animedif (Your Prompt)']
 handler.tags = ['ai']
 handler.command = ['animedif','nimedif']
 handler.premium = false
-handler.diamond = true
+handler.diamond = 3
 
 export default handler
 
