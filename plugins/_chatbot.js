@@ -12,7 +12,7 @@ if (!m.isGroup) return !0
 if (!user.chatbot)
 return !0
 
-let mika = await fetch(`https://api.zahwazein.xyz/entertainment/simisimi?text=${m.text}&apikey=zenzkey_f59c1aacf2`)
+let mika = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${text}&name=Mika Bot`)
 
 let res = await mika.json()
 
