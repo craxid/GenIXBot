@@ -26,7 +26,21 @@ ${global.sb}
 
 API version: ${sevre.debug.apiversion}
     `
-    
+
+conn.relayMessage(from,  {
+    requestPaymentMessage: {
+      currencyCodeIso4217: 'USD',
+      amount1000: "1000000",
+      requestFrom: sender,
+      noteMessage: {
+        extendedTextMessage: {
+        text: (`${tegs}`).replace('true','Online').replace('undefined','tidak diketahui'),
+        contextInfo: {
+        mentionedJid: [sender],
+        externalAdReply: {
+        showAdAttribution: true
+  }}}}}}, {})
+
 conn.sendMessage(m.chat, {
 text: (`${tegs}`).replace('true','Online').replace('undefined','tidak diketahui'),
 contextInfo: {
