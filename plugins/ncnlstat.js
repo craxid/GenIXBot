@@ -5,7 +5,7 @@ let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 await m.reply(wait)
 
 try {
-let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/ncnl.aternos.org:17810`)
+let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/ncnl.aternos.me:17810`)
 let sevre = await ncnlstat.json()
 
 let tegs = `
@@ -49,7 +49,7 @@ externalAdReply: {
 title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=NCNL Network|ncnl.aternos.org:17810'),
+sourceUrl: ('minecraft://?addExternalServer=NCNL Network|ncnl.aternos.me:17810'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
@@ -57,7 +57,7 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-		m.reply(`👾 Server sedang offline\n\nHost: ncnl.aternos.org\nPort: 17810`)
+		m.reply(`👾 Server sedang offline\n\nHost: ncnl.aternos.me\nPort: 17810`)
 	}
 //end
 
