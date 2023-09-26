@@ -30,7 +30,7 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 └──────────────
 
 _Mengirim..._`
-conn.sendFile(m.chat, vid.thumbnail, 'play', play, m, null, rpig)
+conn.sendFile(m.chat, vid.thumbnail, 'play', play, m, null)
 
 if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Ukuran* : ${size}\n▢ *🎞 Deskripsi* : ${q}\n\n▢ _File melebihi batas ukuran_ *+${limit} MB*`) 
 if (size.includes('GB')) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Ukuran* : ${size}\n▢ *🎞 Bitrate* : ${q}\n\n▢ _File melebihi batas unduhan_ *+${limit} MB*`)   
