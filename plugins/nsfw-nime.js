@@ -77,7 +77,7 @@ break
 
 case 'hentaigif':
 
-let hengif = await conn.getFile(global.API('zenz', `/api/morensfw/${command}`, { }, 'apikey'))
+let hengif = await conn.getFile(global.API('zenz', `/api/morensfw/hentaigif`, { }, 'apikey'))
 
 	     
 	     conn.sendFile(m.chat, hengif.data, 'img.gif', `*✅ Random Anime NSFW:* ${command}`, m)
