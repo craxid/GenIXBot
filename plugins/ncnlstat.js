@@ -41,6 +41,7 @@ conn.relayMessage(from,  {
         showAdAttribution: true
   }}}}}}, {})
 
+/*
 conn.sendMessage(m.chat, {
 text: (`${tegs}`).replace('true','Online').replace('undefined','tidak diketahui'),
 contextInfo: {
@@ -52,7 +53,7 @@ sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.genix.eu.org:29427'
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}})
+}}})*/
 
 	}
 	catch {
