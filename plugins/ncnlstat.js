@@ -42,7 +42,7 @@ API version: ${sevre.debug.apiversion}
   }}}}}}, {})*/
 
 
-conn.sendMessage(m.chat, {
+conn.relayMessage(m.chat, {
 text: (`${tegs}`).replace('true','Online').replace('undefined','tidak diketahui'),
 contextInfo: {
 mentionJid: m,
