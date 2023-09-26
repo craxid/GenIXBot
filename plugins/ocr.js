@@ -33,7 +33,7 @@ Berikut adalah kode yang telah diperbaiki:
 */
 import uploadImage from '../lib/uploadImage.js'
 import ocrapi from 'ocr-space-api-wrapper'
-const { MessageType } = require('@adiwajshing/baileys')
+//const { MessageType } = require('@adiwajshing/baileys')
 
 let handler = async (m, { conn, text }) => {
   let q = m.quoted ? m.quoted : m
@@ -45,7 +45,7 @@ let handler = async (m, { conn, text }) => {
   let url = await uploadImage(img)
   let hasil = await ocrapi.ocrSpace(url)
 
-  await conn.sendMessage(m.chat, hasil.ParsedResults[0].ParsedText, MessageType.text, { quoted: m }
+  await conn.sendMessage(m.chat, hasil.ParsedResults[0].ParsedText, { quoted: m }
   )
 }
 
