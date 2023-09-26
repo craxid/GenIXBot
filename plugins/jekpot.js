@@ -58,11 +58,11 @@ ${spins7}|${spins8}|${spins9}
     }
 }
 handler.help = ['jackpot']
-handler.tags = ['game']
-handler.command = /^(jackpot|j)$/i
-handler.group = true
 
-module.exports = handler
+handler.command = /^(jackpot|j)$/i
+handler.private = true
+
+export default handler
 
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
