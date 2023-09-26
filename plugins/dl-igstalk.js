@@ -18,7 +18,7 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
 ▢ *📌 Bio:* ${res.result.biography}
 ▢ *🏝️ Posts:* ${res.result.media_count}
 ▢ *📱 Reels:* ${res.result.total_igtv_video}
-▢ *🔗 Link* : https://instagram.com/${res.result.username.replace(/^@/, '')}
+▢ *🔗 Link:* https://instagram.com/${res.result.username.replace(/^@/, '')}
 └────────────`
 
 if (teks) return conn.sendMessage(m.chat, {
