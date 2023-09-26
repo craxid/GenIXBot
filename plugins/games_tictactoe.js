@@ -61,14 +61,14 @@ export async function before(m) {
         }
         let winner = isSurrender ? room.game.currentTurn : room.game.winner
         let str = `
-${isWin ? `@${winner.split('@')[0]} Menang 🎉 *+${winScore} XP*` : isTie ? `Permainan selesai, With a tie *+${playScore} XP*` : `Ahora es tu turno ${['❎', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`} 
+${isWin ? `@${winner.split('@')[0]} Menang 🎉 *+${winScore} XP*` : isTie ? `Permainan selesai, With a tie *+${playScore} XP*` : `Giliran kamu ${['❎', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`} 
 
 ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 
-▢ *JUGADOR 1* ❎ : @${room.game.playerX.split('@')[0]} 
-▢ *JUGADOR 2* ⭕ : @${room.game.playerO.split('@')[0]}
+▢ *Player 1* ❎ : @${room.game.playerX.split('@')[0]} 
+▢ *Player 2* ⭕ : @${room.game.playerO.split('@')[0]}
 
 Escriba *surrender* para darse por vencido 
 `.trim()
