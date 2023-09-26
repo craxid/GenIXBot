@@ -27,7 +27,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
             }[v]
         })
         let str = `
-Esperando a @${room.game.currentTurn.split('@')[0]} como primer jugador
+menunggu @${room.game.currentTurn.split('@')[0]} Sebagai pemain pertama
         
 ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
