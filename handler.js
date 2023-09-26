@@ -498,9 +498,11 @@ export async function participantsUpdate({ id, participants, action }) {
                                 background: 'https://i.imgur.com/bbWbASn.jpg'
                             }, 'apikey')
 
+//https://api.azz.biz.id/api/welcome?name=Miftah&gcname=Miftah%20Botz&member=167&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
+
                             let lea = API('azz', '/api/goodbye', {
-                                username: await this.getName(user),
-                                groupname: await this.getName(id),
+                                name: await this.getName(user),
+                                gcname: await this.getName(id),
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
