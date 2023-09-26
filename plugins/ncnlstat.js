@@ -5,7 +5,7 @@ let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 await m.reply(wait)
 
 try {
-let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/craft.pe`)
+let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/ncnl.aternos.org:17810`)
 let sevre = await ncnlstat.json()
 
 let tegs = `
@@ -50,7 +50,7 @@ externalAdReply: {
 title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.genix.eu.org:29427'),
+sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|ncnl.aternos.o:29427'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
