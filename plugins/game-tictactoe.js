@@ -55,10 +55,10 @@ ${arr.slice(6).join('')}
         }
         if (text) room.name = text
         
-     conn.reply(m.chat, `⏳ *Esperando pareja*\nEscriba el siguiente comando para aceptar
+     conn.reply(m.chat, `⏳ *Menunggu lawan*\nMasukkan perintah berikut untuk menerima
 ▢ *${usedPrefix + command} ${text}*
 
-🎁 Recompensa: *4999 XP*`, m, {
+🎁 Hadiah: *4999 XP*`, m, {
             mentions: conn.parseMention(text)
         })
         
