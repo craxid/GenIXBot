@@ -28,10 +28,9 @@ Bonus: ${exp} XP
         }, timeout)
     ]
 }
-handler.help = ['tebakkata']
-handler.tags = ['game']
-handler.command = /^tebakkata/i
+handler.help = ['fam100']
+handler.command = /^fam100/i
 handler.diamond = false
-handler.group = true
+handler.rowner = true
 
 export default handler
