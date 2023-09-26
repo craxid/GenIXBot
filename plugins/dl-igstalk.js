@@ -5,7 +5,10 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
     if (!text) throw `✳️ Masukan Username Instagram\n\n📌Contoh: ${usedPrefix + command} dede_klender` 
     try {
         
-    let res = await fetch(`https://api.zahwazein.xyz/stalker/ig?username=${text}&apikey=zenzkey_f59c1aacf2`)
+    let ig = await fetch(`https://api.zahwazein.xyz/stalker/ig?username=${text}&apikey=zenzkey_f59c1aacf2`)
+    
+    let res = await igestak.json()
+    
     let teks = `
 ┌──「 *STALKING* 
 ▢ *🔖 Name:* ${res.name} 
