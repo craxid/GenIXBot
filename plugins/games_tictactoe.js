@@ -31,8 +31,8 @@ export async function before(m) {
             m.reply({
                 '-3': 'Permainan Selesai',
                 '-2': 'Tidak valid',
-                '-1': 'Posición inválida',
-                0: 'Posición inválida',
+                '-1': 'Posisi salah',
+                0: 'Posisi tidak valid',
             }[ok])
             return !0
         }
