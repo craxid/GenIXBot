@@ -15,7 +15,7 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
 ▢ *🔖 Username:* ${res.username}
 ▢ *👥 Followers:* ${res.followersH}
 ▢ *🫂 Following:* ${res.followingH}
-▢ *📌 Bio:* ${res.description}
+▢ *📌 Bio:* ${res.result.biography}
 ▢ *🏝️ Posts:* ${res.postsH}
 ▢ *🔗 Link* : https://instagram.com/${res.username.replace(/^@/, '')}
 └────────────`
