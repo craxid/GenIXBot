@@ -501,12 +501,12 @@ export async function participantsUpdate({ id, participants, action }) {
 //https://api.azz.biz.id/api/welcome?name=Miftah&gcname=Miftah%20Botz&member=167&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
 
                             let lea = API('azz', '/api/goodbye', {
-                                name: await this.getName(user),
-                                gcname: await this.getName(id),
+                                username: await this.getName(user),
+                                groupname: await this.getName(id),
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
-                                pp: pp,
-                                bg: 'https://i.imgur.com/klTSO3d.jpg'
+                                profile: pp,
+                                background: 'https://i.imgur.com/klTSO3d.jpg'
                             }, 'apikey')
                         this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
