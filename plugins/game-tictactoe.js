@@ -4,13 +4,13 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
     conn.game = conn.game ? conn.game : {}
     if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw `✳️ Kamu masih berada dalam game, untuk merestart sesi ketik : *${usedPrefix}delttt*`
     if (!text) throw `✳️ Nama room`
-    let room = Object.values(conn.game).find(room => room.state === 'Menunggu' && (text ? room.name === text : true))
+    let room = Object.values(conn.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
     // m.reply('[WIP Feature]')
     if (room) {
         m.reply('✅ Menemukan lawan')
         room.o = m.chat
         room.game.playerO = m.sender
-        room.state = 'Mulai'
+        room.state = 'STARTING'
         let arr = room.game.render().map(v => {
             return {
                 X: '❎',
@@ -27,7 +27,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
             }[v]
         })
         let str = `
-menunggu @${room.game.currentTurn.split('@')[0]} Sebagai pemain pertama
+WAITING @${room.game.currentTurn.split('@')[0]} Sebagai pemain pertama
         
 ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
@@ -51,11 +51,11 @@ ${arr.slice(6).join('')}
             x: m.chat,
             o: '',
             game: new TicTacToe(m.sender, 'o'),
-            state: 'menunggu'
+            state: 'WAITING'
         }
         if (text) room.name = text
         
-     conn.reply(m.chat, `⏳ *Menunggu lawan*\nMasukkan perintah berikut untuk menerima
+     conn.reply(m.chat, `⏳ *WAITING lawan*\nMasukkan perintah berikut untuk menerima
 ▢ *${usedPrefix + command} ${text}*
 
 🎁 Hadiah: *4999 XP*`, m, {
