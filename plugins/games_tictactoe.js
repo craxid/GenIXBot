@@ -12,7 +12,7 @@ export async function before(m) {
     let isTie = !1
     let isSurrender = !1
     this.game = this.game ? this.game : {}
-    let room = Object.values(this.game).find(room => room.id && room.game && room.state && room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender) && room.state == 'PLAYING')
+    let room = Object.values(this.game).find(room => room.id && room.game && room.state && room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender) && room.state == 'mulai')
     if (room) {
         // m.reply(`[DEBUG]\n${parseInt(m.text)}`)
         if (!/^([1-9]|(me)?nyerah|surr?ender)$/i.test(m.text))
@@ -29,7 +29,7 @@ export async function before(m) {
             }))
         if (!isSurrender && 1 > (ok = room.game.turn(m.sender === room.game.playerO, parseInt(m.text) - 1))) {
             m.reply({
-                '-3': 'El juego ha terminado',
+                '-3': 'Permainan ',
                 '-2': 'Inválido',
                 '-1': 'Posición inválida',
                 0: 'Posición inválida',
