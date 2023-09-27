@@ -39,10 +39,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   } finally {
       
 const iyhkh = {
-text: ('S'),
+text: ('Sticker Maker\n© Mika Bot'),
 contextInfo: {
 externalAdReply: {
-title: (`${username}`),
+title: ('Mik'),
 body: ('Aku Online Kak!'),
 thumbnailUrl: mikapp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
