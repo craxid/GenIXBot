@@ -31,7 +31,7 @@ https://cloud.google.com/translate/docs/languages
     } 
 
 }
-handler.help = ['translate <leng> <text>']
+handler.help = ['translate <lang> <text>']
 handler.tags = ['tools']
 handler.command = ['translate', 'tl', 'terjemah', 'tr']
 
