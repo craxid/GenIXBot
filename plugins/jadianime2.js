@@ -16,9 +16,7 @@ if (!mime) {
  }
 let media = await q.download()
 let gambar = await uploadImage(media)
-zombie.transform({
-    photo: `${gambar}`,
-    destinyFolder: './tmp'
+zombie.transform({ photo: `${gambar}`, destinyFolder: './tmp'
 })
 .then(data => {
     conn.sendFile(m.chat, data, 'zombie.jpg', `© Mika Bot`, m)
