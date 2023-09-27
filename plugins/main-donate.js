@@ -30,7 +30,7 @@ externalAdReply: {
 showAdAttribution: true,
 }}}
 
-conn.sendFile(m.chat, yth, img, 'img.jpg', m)
+conn.sendMessage(m.chat, yth, img, 'img.jpg', m)
 
 
 }
