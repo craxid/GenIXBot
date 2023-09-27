@@ -9,10 +9,10 @@ ${gobal.gy} Pulsa: 085892734104 ( IM3 )
 ${gobal.gy} Gopay: 085892734104
 ${gobal.sb}
 
-${gobal.htki}*Website* 〕ꕥ━⬣ 
-┃Saweria: https://saweria.co/ClanDare
-┃Trakteer: https://teer.id/dede_klender
-┗━━━ꕥ
+${gobal.htki} *Website* ${global.htka}
+${gobal.gy} Saweria: https://saweria.co/ClanDare
+${gobal.gy} Trakteer: https://teer.id/dede_klender
+${gobal.gy}
 
 ▢ *[ADS] Dapatkan $5 hanya dengan mengisi survey*
 • *Link :* https://lootup.me?refer=3892731
