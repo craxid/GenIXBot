@@ -32,7 +32,7 @@ export default handler
 
 async function addExif(buffer, packname, author, categories = [''], extra = {}) {
 	const img = new Image()
-	const json = { 'sticker-pack-id': 'zykuan', 'sticker-pack-name': packname, 'sticker-pack-publisher': author, 'emojis': categories, 'is-avatar-sticker': 1, ...extra }
+	const json = { 'sticker-pack-id': 'zykuan', 'sticker-pack-name': global.packname, 'sticker-pack-publisher': global.author, 'emojis': categories, 'is-avatar-sticker': 1, ...extra }
 	let exifAttr = Buffer.from([0x49, 0x49, 0x2A, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57, 0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0x00, 0x00, 0x00])
 	let jsonBuffer = Buffer.from(JSON.stringify(json), 'utf8')
 	let exif = Buffer.concat([exifAttr, jsonBuffer])
