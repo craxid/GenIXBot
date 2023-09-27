@@ -39,7 +39,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   } finally {
       
 const iyhkh = {
-text: ('Sticker Maker\n© Mika Bot'),
 contextInfo: {
 externalAdReply: {
 title: ('Mika Bot'),
