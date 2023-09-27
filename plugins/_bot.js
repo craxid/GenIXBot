@@ -1,5 +1,5 @@
 
-/*let handler = async (m, { conn }) => {
+let handler = async (m, { conn }) => {
 let name = await conn.getName(m.sender)
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
@@ -23,14 +23,19 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
+
+const flo = {
+key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) }, message: { "liveLocationMessage": { "title": `apa sih`,"h": `Hmm`, 'jpegThumbnail': await reSize(global.ppmika, 100, 100)}}
+}
+
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
 handler.command = new RegExp
 
 export default handler
-*/
 
-let handler = async (m, { conn }) => {
+
+/*let handler = async (m, { conn }) => {
 
 let thumbn = 'https://telegra.ph/file/ff4ecbd141633dc02c619.jpg'
 
@@ -59,4 +64,4 @@ export default handler
 
 function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
-}
+}*/
