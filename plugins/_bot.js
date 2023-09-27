@@ -11,7 +11,7 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     let username = conn.getName(who)
     
-if (mika) return conn.sendMessage(m.chat, {
+/*if (mika) return conn.sendMessage(m.chat, {
 text: mika,
 contextInfo: {
 externalAdReply: {
@@ -22,11 +22,13 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})
+}}})*/
 
 const flo = {
 key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) }, message: { "liveLocationMessage": { "title": `apa sih`,"h": `Hmm`, 'jpegThumbnail': await reSize(global.ppmika, 100, 100)}}
 }
+
+
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
