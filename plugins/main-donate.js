@@ -38,7 +38,7 @@ showAdAttribution: true,
 renderLargerThumbnail: false
 }}}
 
-conn.sendMessage(m.chat, img, m)
+conn.sendMessage(m.chat, don, img, m)
 
 }
 handler.help = ['donate']
