@@ -6,7 +6,7 @@ let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 
 let akacn = 'https://nekos.life/api/v2/img/waifu'
 
-let acakmulu =akacn.
+let acakmulu =akacn.json()
 
 let mika = `Halo kak ${name} 👋\nAda yang bisa ${global.packname} bantu?\n\nKetik !help untuk membuka Menu`
 
@@ -21,7 +21,7 @@ contextInfo: {
 externalAdReply: {
 title: (`${username}`),
 body: ('Aku Online Kak!'),
-thumbnailUrl: akacn,
+thumbnailUrl: acakmulu.data,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
