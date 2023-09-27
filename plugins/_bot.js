@@ -51,7 +51,7 @@ let pick = pickRandom(a)
 conn.sendMessage(m.chat, {text: pick}, {quoted: flo})
 
 }
-handler.customPrefix = /^(mika|bot)/i
+handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
 handler.command = new RegExp()
 
 
