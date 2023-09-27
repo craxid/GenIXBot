@@ -25,18 +25,12 @@ let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 
 conn.sendFile(m.chat, img, 'img.jpg', don, m)
 
-/*conn.sendMessage(m.chat, {
-text: don,
+//conn.sendMessage(m.chat, {
+{
 contextInfo: {
 externalAdReply: {
-title: (`Donasi`),
-body: ('Dukung aku agar bot ini tetap hidup'),
-thumbnailUrl: ,
-sourceUrl: global.dygp,
-mediaType: 3,
 showAdAttribution: true,
-renderLargerThumbnail: false
-}}}*/
+}}}
 
 }
 handler.help = ['donate']
