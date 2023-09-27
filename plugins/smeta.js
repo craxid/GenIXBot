@@ -31,7 +31,7 @@ let handler = async (m, { conn, text }) => {
 	}
 }
 
-handler.help = handler.dym = ["smeta"]
+handler.help =  ["smeta"]
 handler.tags = ["sticker"]
 handler.command = /^(smeta)$/i
 
