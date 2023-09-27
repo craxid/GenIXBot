@@ -16,6 +16,6 @@ if (m.isBaileys && m.fromMe)
         
         let res = await api.json()
         
-        m.reply(res.respon.replace('Alicia','Mika Bot').replace('6283808217881','6285892734104').replace('Ricky','ZuroX Project'))
+        m.reply(res.respon.replace('Alicia','Mika Bot').replace('6283808217881','6285892734104').replace('Ricky','ZuroX Project').replace('api.azz.biz.id','ZuroX Project'))
     
 }
