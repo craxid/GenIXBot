@@ -21,7 +21,7 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
 ▢ *🔗 Link:* https://instagram.com/${res.result.username.replace(/^@/, '')}
 └────────────`
 
-if (teks) return conn.sendMessage(m.chat, {
+if (teks) return  {
 text: teks,
 contextInfo: {
 externalAdReply: {
@@ -33,7 +33,8 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
 }}}, res)
-     //await conn.sendFile(m.chat, res.profilePic, 'igstalk.png', teks, m)
+     
+//await conn.sendFile(m.chat, , teks, m)
       } catch {
         m.reply(`✳️ Pastikan nama pengguna ada di *Instagram*`)
       }
