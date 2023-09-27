@@ -4,6 +4,15 @@ let name = await conn.getName(m.sender)
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 
+async function reSize(buffer, ukur1, ukur2) {
+			return new Promise(async (resolve, reject) => {
+				let jimp = require('jimp')
+				var baper = await jimp.read(buffer);
+				var ab = await baper.resize(ukur1, ukur2).getBufferAsync(jimp.MIME_JPEG)
+				resolve(ab)
+			})
+		}
+
 let mika = `Halo kak ${name} 👋\nAda yang bisa ${global.packname} bantu?\n\nKetik !help untuk membuka Menu`
 
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
