@@ -24,7 +24,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
 
-conn.senMessage(m.chat, mika, flo, m)
+conn.senMessage(m.chat, mika, iyhkh, m)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
