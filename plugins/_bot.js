@@ -6,6 +6,8 @@ let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 
 let akacn = 'https://nekos.life/api/v2/img/waifu'
 
+let acakmulu =akacn.
+
 let mika = `Halo kak ${name} 👋\nAda yang bisa ${global.packname} bantu?\n\nKetik !help untuk membuka Menu`
 
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -19,7 +21,7 @@ contextInfo: {
 externalAdReply: {
 title: (`${username}`),
 body: ('Aku Online Kak!'),
-thumbnailUrl: akacn.length,
+thumbnailUrl: akacn,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
