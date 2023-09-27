@@ -26,18 +26,19 @@ let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 
 //conn.sendMessage(m.chat, 
 const hoyo = {
+text: don,
 contextInfo: {
 externalAdReply: {
 title: (`Donasi`),
 body: ('Dukung aku agar bot ini tetap hidup'),
 thumbnailUrl: img,
-sourceUrl: global.fgig,
+sourceUrl: global.dygp,
 mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: false
 }}}
 
-conn.sendMessage(m.chat, hoyo, img, m)
+conn.sendMessage(m.chat, img, m)
 
 }
 handler.help = ['donate']
