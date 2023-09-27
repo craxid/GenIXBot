@@ -28,7 +28,7 @@ const flo = {
 key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) }, message: { "liveLocationMessage": { "title": `apa sih`,"h": `Hmm`, 'jpegThumbnail': await reSize(global.ppmika, 100, 100)}}
 }
 
-conn.senMessage(m.chat, mika, )
+conn.senMessage(m.chat, mika, flo, m)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
