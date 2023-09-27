@@ -219,7 +219,7 @@ renderLargerThumbnail: false
 handler.help = ['help']
 handler.tags = ['main']
 handler.command = ['menu', 'help', '?'] 
-handler.register = true
+handler.register = false
 
 handler.exp = 3
 
