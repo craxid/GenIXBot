@@ -26,7 +26,6 @@ let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 
 //conn.sendMessage(m.chat, 
 const hoyo = {
-text: ,
 contextInfo: {
 externalAdReply: {
 title: (`Donasi`),
