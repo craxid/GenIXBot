@@ -44,7 +44,7 @@ async function reSize(buffer, ukur1, ukur2) {
 		}
 
 const flo = {
-key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) }, message: { "liveLocationMessage": { "title": `apa sih`,"h": `Hmm`, 'jpegThumbnail': await reSize(thumbn, 100, 100)}}
+key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) }, message: { "liveLocationMessage": { "title": `apa sih`,"h": `Hmm`, 'jpegThumbnail': await reSize(global.ppmika, 100, 100)}}
 }
 let a = ["apa si","iya","oy","ha?","siap","gw?","males bgt sumpah","siapa?","gw kah?","hemm","oke","sip","apa cuk","apa om?"]
 let pick = pickRandom(a)
