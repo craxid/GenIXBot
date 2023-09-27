@@ -617,7 +617,7 @@ global.dfail = (type, m, conn) => {
     }[type]
 
 const auh = {
-text: ,
+text: msg,
 contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
