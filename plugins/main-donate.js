@@ -2,6 +2,8 @@
 let handler = async(m, { conn, usedPrefix, command }) => {
 
     let don = `
+Scan menggunakan aplikasi bank / e-wallet untuk mendukung Bot
+
 ${global.htki} *${global.packname}* ${global.htka}
 ${global.gy} Dana:  085892734104
 ${global.gy} Pulsa: 083155936234 ( AXIS )
