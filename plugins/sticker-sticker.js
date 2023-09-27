@@ -42,9 +42,9 @@ const iyhkh = {
 text: ('Sticker Maker\n© Mika Bot'),
 contextInfo: {
 externalAdReply: {
-title: ('Mik'),
-body: ('Aku Online Kak!'),
-thumbnailUrl: mikapp,
+title: ('Mika Bot'),
+body: ('Sticker Maker'),
+thumbnailUrl: global.ppmika,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
