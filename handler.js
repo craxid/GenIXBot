@@ -629,7 +629,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}}
 
-await conn.sendMessage(m.chat, auh, msg, m)
+conn.sendMessage(m.chat, auh, msg, m)
 }
 
 let file = global.__filename(import.meta.url, true)
