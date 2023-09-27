@@ -38,7 +38,7 @@ showAdAttribution: true,
 renderLargerThumbnail: false
 }}}
 
-conn.sendMessage()
+conn.sendMessage(m.chat, hoyo)
 
 }
 handler.help = ['donate']
