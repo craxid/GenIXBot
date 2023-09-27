@@ -14,7 +14,7 @@ ${global.gy} Saweria: https://saweria.co/ClanDare
 ${global.gy} Trakteer: https://teer.id/dede_klender
 ${global.sb}
 
-▢ *[ADS] Dapatkan $5 hanya dengan mengisi survey*
+${gobal.zt} *[ADS] Dapatkan $5 hanya dengan mengisi survey*
 • *Link :* https://lootup.me?refer=3892731
 
 Thanks for Donation!
