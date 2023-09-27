@@ -17,7 +17,7 @@ contextInfo: {
 externalAdReply: {
 title: (`${username}`),
 body: ('Aku Online Kak!'),
-thumbnailUrl: mikapp,
+thumbnailUrl: hwaifu.length,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
