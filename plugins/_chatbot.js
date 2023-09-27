@@ -17,7 +17,7 @@ let mika = await fetch(`https://api.azz.biz.id/api/alicia?q=${m.text}&user=Mika%
 let res = await mika.json()
 
 const iyhkh = {
-text: }`}`,
+text: res.respon,
 contextInfo: {
 externalAdReply: {
 title: (`${username}`),
