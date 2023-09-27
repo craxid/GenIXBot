@@ -51,7 +51,8 @@ const handler = async (m, { conn, usedPrefix, command, text, args }) => {
 	}
 	await conn.sendMessage(m.chat, { video: { url: result["video"] } }, { quoted: m })
 } 
-handler["help"] = ["deepfake"]
-handler["command"] = ["deepfake"]
-handler["tags"] = ["ai"]
+handler.help = ["deepfake"]
+handler.command = ["deepfake"]
+handler.tags = ["ai"]
+handler.diamond = 3
 export default handler
