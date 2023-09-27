@@ -616,7 +616,9 @@ global.dfail = (type, m, conn) => {
         restrict: '🔐 Fitur ini *dinonaktifkan*'
     }[type]
 
-if (msg) return conn.sendMessage(m.chat, {
+//if (msg) return conn.sendMessage(m.chat, 
+
+const iyhajh {
 text: msg,
 contextInfo: {
 externalAdReply: {
@@ -627,7 +629,8 @@ sourceUrl: global.dygp,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})
+}}}
+conn.sendMessage(m.cha)
 }
 
 let file = global.__filename(import.meta.url, true)
