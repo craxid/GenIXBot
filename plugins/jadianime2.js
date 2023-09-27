@@ -1,5 +1,5 @@
 
-import { toanime } from 'be'
+import { toanime } from 'betabotz-tools'
 import fetch from 'node-fetch'
 import uploadImage from '../lib/uploadImage.js'
 
