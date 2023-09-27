@@ -2,7 +2,7 @@
 import { Image } from 'node-webpmux'
 import { format } from 'util'
 
-const handler = async (m, { conn, text }) => {
+let handler = async (m, { conn, text }) => {
 	if (!m.quoted) throw 'Reply a sticker!'
 	let stiker = false
 	try {
