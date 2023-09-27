@@ -37,7 +37,22 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     console.error(e)
     if (!stiker) stiker = e
   } finally {
+      
+const iyhkh = {
+text: ('S'),
+contextInfo: {
+externalAdReply: {
+title: (`${username}`),
+body: ('Aku Online Kak!'),
+thumbnailUrl: mikapp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}}
+      
     if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, null)
+    
     else throw '```Konversi gagal, coba kirim GAMBAR/VIDEO/GIF terlebih dahulu, lalu balas dengan perintah .sticker```'
   }
 }
