@@ -1,67 +1,54 @@
-/*
+
+import uploadFile from '../lib/uploadFile.js'
 import uploadImage from '../lib/uploadImage.js'
-import ocrapi from 'ocr-space-api-wrapper'
-import { MessageType } from '@adiwajshing/baileys'
+import {
+    webp2png
+} from '../lib/webp2mp4.js'
+import fetch from 'node-fetch'
 
-let handler = async (m, { conn, text }) => {
-let q = m.quoted ? m.quoted : m
-let mime = (q.msg || q).mimetype || ''
+let handler = async (m, {
+    conn,
+    args,
+    text,
+    usedPrefix,
+    command
+}) => {
+    var out
 
-if (!mime) throw `balas gambar dengan perintah .ocr`
+    let q = m.quoted ? m.quoted : m
+    let mime = (q.msg || q).mimetype || q.mediaType || ''
+    if (/video/g.test(mime)) {
+        if ((q.msg || q).seconds > 11) return m.reply('Maksimal 10 detik!')
+    }
+    if (!/webp|image|video|gif|viewOnce/g.test(mime)) return m.reply(`Reply Media Dengan Perintah\n\n${usedPrefix + command}`)
+    let img = await q.download?.()
 
-if (!/image\/(jpe?g|png)/.test(mime)) throw `
-_*jenis ${mime} tidak didukung!*_
-`
-    
-    let img = await q.download()
-    let url = await uploadImage(img)
-    let hasil = await ocrapi.ocrSpace(url)
-    
-await m.reply(hasil.ParsedResults[0].ParsedText)    }
-
-handler.help = ['ocr', 'totext']
-handler.tags = ['tools']
-handler.command = /^(ocr|totext)$/i
-handler.diamond = true
-
-export default handler
-*/
-/*
-Berikut adalah kode yang telah diperbaiki:
-
-```javascript
-*/
-import uploadImage from '../lib/uploadImage.js'
-import ocrapi from 'ocr-space-api-wrapper'
-//const { MessageType } = require('@adiwajshing/baileys')
-
-let handler = async (m, { conn, text }) => {
-  let q = m.quoted ? m.quoted : m
-  let mime = (q.msg || q).mimetype || ''
-  if (!mime) throw `Balas gambar dengan perintah .ocr`
-  if (!/image\/(jpe?g|png)/.test(mime)) throw `Jenis ${mime} tidak didukung!`
-
-  let img = await q.download()
-  let url = await uploadImage(img)
-  let hasil = await ocrapi.ocrSpace(url)
-
-  await conn.sendMessage(m.chat, hasil.ParsedResults[0].ParsedText, { quoted: m }
-  )
+    if (/webp/g.test(mime)) {
+        out = (await webp2png(img))
+    } else if (/image/g.test(mime)) {
+        out = (await uploadImage(img))
+    } else if (/video/g.test(mime)) {
+        out = (await uploadFile(img))
+    } else if (/gif/g.test(mime)) {
+        out = (await uploadFile(img))
+    } else if (/viewOnce/g.test(mime)) {
+        out = (await uploadFile(img))
+    }
+    await m.reply(wait)
+    try {
+        let res
+        if (args[0]) {
+            res = await (await fetch("https://api.ocr.space/parse/imageurl?apikey=helloworld&url=" + out + "&language=" + args[0])).json()
+        } else {
+            res = await (await fetch("https://api.ocr.space/parse/imageurl?apikey=helloworld&url=" + out)).json()
+        }
+        await m.reply("*Result:*\n" + res.ParsedResults[0].ParsedText)
+    } catch (e) {
+        throw eror
+    }
 }
-
-handler.help = ['ocr', 'totext']
+handler.help = ['ocr']
 handler.tags = ['tools']
-handler.command = /^(ocr|totext)$/i
-handler.diamond = true
+handler.command = /^(ocr)$/i
 
 export default handler
-/*```
-
-Beberapa perbaikan yang saya lakukan di antaranya:
-
-1. Mengubah penamaan variabel agar lebih deskriptif.
-2. Menggunakan `m` sebagai acuan kutipan pesan.
-3. Menambahkan `MessageType.text` saat mengirimkan hasil OCR agar pesan dikirim sebagai teks.
-4. Menambahkan opsi `quoted: m` saat mengirimkan pesan balasan agar pesan terkait kutipannya sesuai dengan kutipan pesan asli.
-
-Harap diingat untuk memasukkan library yang diperlukan dan memastikan path pada import module sudah benar.*/
