@@ -23,10 +23,10 @@ Thanks for Donation!
 `
 let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 
-conn.sendFile(m.chat, img, 'img.jpg', don, m)
+conn.sendFile(m.chat, img, 'img.jpg', yth, m)
 
 //conn.sendMessage(m.chat, {
-{
+const yth = {
 contextInfo: {
 externalAdReply: {
 showAdAttribution: true,
