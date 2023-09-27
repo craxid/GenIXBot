@@ -6,7 +6,7 @@ let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 
 let akacn = await getFile(`https://nekos.life/api/v2/img/waifu`)
 
-let jot = akacn.json()
+let jot = await akacn.json()
 
 let mika = `Halo kak ${name} 👋\nAda yang bisa ${global.packname} bantu?\n\nKetik !help untuk membuka Menu`
 
