@@ -51,7 +51,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}}
       
-    if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, null)
+    if (stiker) conn.sendFile(m.chat, iyhkh, stiker, 'sticker.webp', '', m, null)
     
     else throw '```Konversi gagal, coba kirim GAMBAR/VIDEO/GIF terlebih dahulu, lalu balas dengan perintah .sticker```'
   }
