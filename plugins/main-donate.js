@@ -24,7 +24,8 @@ Thanks for Donation!
 let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 //conn.sendFile(m.chat, img, 'img.jpg', don, m)
 
-conn.sendMessage(m.chat, {
+//conn.sendMessage(m.chat, 
+let hoyo = {
 text: ${img}, ,
 contextInfo: {
 externalAdReply: {
@@ -35,7 +36,9 @@ sourceUrl: ('https://saweria.co/ClanDare'),
 mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}})
+}}}
+
+conn.sendMessage()
 
 }
 handler.help = ['donate']
