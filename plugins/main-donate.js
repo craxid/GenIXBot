@@ -31,7 +31,7 @@ externalAdReply: {
 title: (`Donasi`),
 body: ('Dukung aku agar bot ini tetap hidup'),
 thumbnailUrl: img,
-sourceUrl: global.dygp,
+sourceUrl: global.fgig,
 mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: false
