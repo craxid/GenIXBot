@@ -1,6 +1,6 @@
 
 import { Image } from 'node-webpmux'
-import { format } = require('util')
+import { format } from 'util'
 
 const handler = async (m, { conn, text }) => {
 	if (!m.quoted) throw 'Reply a sticker!'
@@ -28,7 +28,7 @@ handler.help = handler.dym = ["smeta"]
 handler.tags = ["sticker"]
 handler.command = /^(smeta)$/i
 
-module.exports = handler
+export default handler
 
 async function addExif(buffer, packname, author, categories = [''], extra = {}) {
 	const img = new Image()
