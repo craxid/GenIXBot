@@ -3,10 +3,10 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 
     let don = `
 ${gobal.htki} *${global.packname}* ${global.htka}
-┃Dana:  085892734104
-┃Pulsa: 083155936234 ( AXIS )
-┃Pulsa: 085892734104 ( IM3 )
-┃Gopay: 085892734104
+${gobal.gy} Dana:  085892734104
+${gobal.gy} Pulsa: 083155936234 ( AXIS )
+${gobal.gy} Pulsa: 085892734104 ( IM3 )
+${gobal.gy} Gopay: 085892734104
 ┗━━━ꕥ
 ┏━━━ꕥ〔 *Website* 〕ꕥ━⬣ 
 ┃Saweria: https://saweria.co/ClanDare
