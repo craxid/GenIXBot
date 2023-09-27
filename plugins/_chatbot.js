@@ -20,8 +20,8 @@ const iyhkh = {
 text: res.respon.replace('Alicia','Mika Bot').replace('6283808217881','6285892734104').replace('Ricky','ZuroX Project'),
 contextInfo: {
 externalAdReply: {
-title: (`${username}`),
-body: ('Aku Online Kak!'),
+title: ('Chat Bot'),
+body: ('Mika Bot'),
 thumbnailUrl: mikapp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
