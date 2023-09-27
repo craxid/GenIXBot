@@ -1,4 +1,4 @@
-
+/*
 import uploadImage from '../lib/uploadImage.js'
 import { makemeazombie toanime } from 'betabotz-tools'
 
@@ -32,3 +32,4 @@ handler.tags = ['ai']
 handler.diamond = 3
 
 export default handler
+*/
