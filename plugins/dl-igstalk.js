@@ -32,7 +32,7 @@ sourceUrl: (`https://www.instagram.com/${res.result.username.replace(/^@/, '')}`
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}})
+}}}, res)
      //await conn.sendFile(m.chat, res.profilePic, 'igstalk.png', teks, m)
       } catch {
         m.reply(`✳️ Pastikan nama pengguna ada di *Instagram*`)
