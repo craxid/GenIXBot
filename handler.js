@@ -630,7 +630,7 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}}
-conn.sendMessage(m.cha)
+conn.sendMessage(m.chat, iyhajh, m)
 }
 
 let file = global.__filename(import.meta.url, true)
