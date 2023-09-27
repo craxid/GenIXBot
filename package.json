@@ -40,7 +40,7 @@
     "license": "GPL-3.0-or-later",
     "dependencies": {
         "@adiwajshing/baileys": "npm:@whiskeysockets/baileys",
-        "betabotz-tools": "latest"
+        "betabotz-tools": "latest",
         "@whiskeysockets/baileys": "^6.4.0",
         "@adiwajshing/keyed-db": "^0.2.4",
         "@bochilteam/scraper": "^4.2.3",
