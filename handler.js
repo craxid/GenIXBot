@@ -631,7 +631,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}}
 
-conn.sendMessage(m.chat, iyhkh, msg, m)
+conn.sendMessage(m.chat, msg, m)
 }
 
 let file = global.__filename(import.meta.url, true)
