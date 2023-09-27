@@ -66,7 +66,7 @@ ${end}`)
 handler.help = ['slot <jumlah taruhan>']
 handler.tags = ['game']
 handler.command = ['slot']
-handler.register = true
+handler.register = false
 handler.group = true
 
 export default handler
