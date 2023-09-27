@@ -33,5 +33,5 @@ let mika = await fetch(`https://api.azz.biz.id/api/alicia?q=${text}&user=Mika%20
 
 let res = await mika.json()
 
-m.reply(res.result.respon.replace('Alicia','Mika Bot'))
+m.reply(res.respon.replace('Alicia','Mika Bot'))
 }
