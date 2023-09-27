@@ -17,7 +17,7 @@ let mika = await fetch(`https://api.azz.biz.id/api/alicia?q=${m.text}&user=Mika%
 let res = await mika.json()
 
 const iyhkh = {
-text: res.respon,
+text: res.respon.replace('Alicia','Mika Bot').replace('6283808217881','6285892734104').replace('Ricky','ZuroX Project'),
 contextInfo: {
 externalAdReply: {
 title: (`${username}`),
