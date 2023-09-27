@@ -24,7 +24,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
 
-m.reply(m.chat, mika, iyhkh, m)
+m.reply(m.chat, iyhkh, m)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
