@@ -21,7 +21,7 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
 ▢ *🔗 Link:* https://instagram.com/${res.result.username.replace(/^@/, '')}
 └────────────`
 
-let fek = await {
+if (teks) return conn.sendMessage(m.chat, {
 text: teks,
 contextInfo: {
 externalAdReply: {
@@ -32,7 +32,7 @@ sourceUrl: (`https://www.instagram.com/${res.result.username.replace(/^@/, '')}`
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}
+}}}, res)
      
 //await conn.sendFile(m.chat, , teks, m)
       } catch {
