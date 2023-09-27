@@ -619,7 +619,7 @@ global.dfail = (type, m, conn) => {
 //if (msg) return conn.sendMessage(m.chat, 
 
 const iyhkh = {
-text: ,
+text: msg,
 contextInfo: {
 externalAdReply: {
 title: ('Mika Misono Bot'),
@@ -631,7 +631,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}}
 
-conn.sendMessage(m.chat, msg, m)
+conn.sendMessage(m.chat, iyhkh, m)
 }
 
 let file = global.__filename(import.meta.url, true)
