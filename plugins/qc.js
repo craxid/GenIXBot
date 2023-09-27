@@ -2,7 +2,7 @@ import { sticker } from '../lib/sticker.js'
 import axios from 'axios'
 
 let handler = async (m, { conn, text }) => {
-   if (!text) return m.reply('Teksnya Mana?')
+   if (!text) return m.reply('Teksnya Mana Sayang?')
    if (text.length > 30) return m.reply('Maksimal 30 Teks!')
     let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/a2ae6cbfa40f6eeea0cf1.jpg')
 
