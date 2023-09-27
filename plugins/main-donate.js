@@ -25,7 +25,7 @@ let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 //conn.sendFile(m.chat, img, 'img.jpg', don, m)
 
 //conn.sendMessage(m.chat, 
-const hoyo = {
+/*const hoyo = {
 text: don,
 contextInfo: {
 externalAdReply: {
@@ -36,9 +36,9 @@ sourceUrl: global.dygp,
 mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}}
+}}}*/
 
-conn.sendMessage(m.chat, hoyo, img, 'donate.jpg', m)
+conn.sendMessage(m.chat, don, img, 'donate.jpg', m)
 
 }
 handler.help = ['donate']
