@@ -2,17 +2,17 @@
 let handler = async(m, { conn, usedPrefix, command }) => {
 
     let don = `
-${gobal.htki} *${global.packname}* ${global.htka}
-${gobal.gy} Dana:  085892734104
-${gobal.gy} Pulsa: 083155936234 ( AXIS )
-${gobal.gy} Pulsa: 085892734104 ( IM3 )
-${gobal.gy} Gopay: 085892734104
-${gobal.sb}
+${global.htki} *${global.packname}* ${global.htka}
+${global.gy} Dana:  085892734104
+${global.gy} Pulsa: 083155936234 ( AXIS )
+${global.gy} Pulsa: 085892734104 ( IM3 )
+${global.gy} Gopay: 085892734104
+${global.sb}
 
-${gobal.htki} *Website* ${global.htka}
-${gobal.gy} Saweria: https://saweria.co/ClanDare
-${gobal.gy} Trakteer: https://teer.id/dede_klender
-${gobal.gy}
+${global.htki} *Website* ${global.htka}
+${global.gy} Saweria: https://saweria.co/ClanDare
+${global.gy} Trakteer: https://teer.id/dede_klender
+${global.sb}
 
 ▢ *[ADS] Dapatkan $5 hanya dengan mengisi survey*
 • *Link :* https://lootup.me?refer=3892731
