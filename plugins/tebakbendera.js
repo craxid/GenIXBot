@@ -36,6 +36,6 @@ handler.help = ['tebakbendera']
 handler.tags = ['game']
 handler.command = /^tebakbendera/i
 handler.group = true
-handler.register = true
+handler.register = false
 
 export default handler
