@@ -29,7 +29,7 @@ if (!m.isGroup) return !0
 if (!user.chatbot)
 return !0
 
-let mika = await fetch(`https://api.azz.biz.id/api/alicia?q=${text}&user=Mika%20Bot&key=mangea`)
+let mika = await fetch(`https://api.azz.biz.id/api/alicia?q=${m.text}&user=Mika%20Bot&key=mangea`)
 
 let res = await mika.json()
 
