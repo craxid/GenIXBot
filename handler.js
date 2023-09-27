@@ -627,7 +627,7 @@ sourceUrl: global.fgig,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})
+}}}
 
 await conn.sendMessage(m.chat, auh, msg, m)
 }
