@@ -21,7 +21,7 @@ let handler = async (m, {
         quoted: m
     })
 }
-handler.help = ['toptv (reply)']
+handler.help = ['topv (reply)']
 handler.tags = ['tools']
-handler.command = /^(toptv)/i
+handler.command = /^(topv)/i
 export default handler
