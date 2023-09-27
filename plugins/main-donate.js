@@ -26,7 +26,7 @@ let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 
 //conn.sendMessage(m.chat, 
 let hoyo = {
-text: ${img}, ,
+text: don, ,
 contextInfo: {
 externalAdReply: {
 title: (`Donasi`),
@@ -38,7 +38,7 @@ showAdAttribution: true,
 renderLargerThumbnail: false
 }}}
 
-conn.sendMessage(m.chat, hoyo)
+conn.sendMessage(m.chat, hoyo, img, m)
 
 }
 handler.help = ['donate']
