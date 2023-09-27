@@ -1,26 +1,15 @@
 import { sticker } from '../lib/sticker.js'
 import axios from 'axios'
 
-let handler = async (m, { conn, args }) => {
-let text
-    if (args.length >= 1) {
-        text = args.slice(0).join(" ")
-    } else if (m.quoted && m.quoted.text) {
-        text = m.quoted.text
-    } else throw "Input teks atau reply teks yang ingin di jadikan quote!"
-   if (!text) return m.reply('masukan text')
-   if (text.length > 50) return m.reply('Maksimal 50 Teks!')
-
-let randomColor = ['#ef1a11', '#89cff0', '#660000', '#87a96b', '#e9f6ff', '#ffe7f7', '#ca86b0', '#83a3ee', '#abcc88', '#80bd76', '#6a84bd', '#5d8d7f', '#530101', '#863434', '#013337', '#133700', '#2f3641', '#cc4291', '#7c4848', '#8a496b', '#722f37', '#0fc163', '#2f3641', '#e7a6cb', '#64c987', '#e6e6fa', '#ffa500'];
-
-const apiColor = randomColor[Math.floor(Math.random() * randomColor.length)];
-
-    let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/320b066dc81928b782c7b.png')
+let handler = async (m, { conn, text }) => {
+   if (!text) return m.reply('Teksnya Mana?')
+   if (text.length > 30) return m.reply('Maksimal 30 Teks!')
+    let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/a2ae6cbfa40f6eeea0cf1.jpg')
 
    const obj = {
       "type": "quote",
       "format": "png",
-      "backgroundColor": apiColor,
+      "backgroundColor": "#FFFFFF",
       "width": 512,
       "height": 768,
       "scale": 2,
@@ -50,6 +39,8 @@ const apiColor = randomColor[Math.floor(Math.random() * randomColor.length)];
 
 handler.help = ['qc']
 handler.tags = ['sticker']
-handler.command = /^(qc|quotely)$/i
+handler.command = /^(qc|quoted|quotly)$/i
+
+handler.limit = true
 
 export default handler
