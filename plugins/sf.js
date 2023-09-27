@@ -1,3 +1,5 @@
+
+import fs from 'fs'
 let handler = async (m, { text, usedPrefix, command }) => {
 
     if (!text) throw `where is the path?\n\nexample:\n${usedPrefix + command} plugins/menu.js`
