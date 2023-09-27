@@ -4,7 +4,9 @@ let name = await conn.getName(m.sender)
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 
-let akacn = getFile('https://nekos.life/api/v2/img/waifu')
+let akacn = await getFile(`https://nekos.life/api/v2/img/waifu`)
+
+let jot 
 
 let mika = `Halo kak ${name} 👋\nAda yang bisa ${global.packname} bantu?\n\nKetik !help untuk membuka Menu`
 
