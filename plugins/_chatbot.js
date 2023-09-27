@@ -29,5 +29,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}}
 
-m.reply(res.respon.replace('Alicia','Mika Bot').replace('6283808217881','6285892734104').replace('Ricky','ZuroX Project'))
+m.reply(m.chat, iyhkh, m)
+
+//m.reply(res.respon.replace('Alicia','Mika Bot').replace('6283808217881','6285892734104').replace('Ricky','ZuroX Project'))
 }
