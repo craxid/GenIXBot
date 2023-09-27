@@ -22,7 +22,7 @@ contextInfo: {
 externalAdReply: {
 title: ('Chat Bot'),
 body: ('Mika Bot'),
-thumbnailUrl: mikapp,
+thumbnailUrl: global.ppmika,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
