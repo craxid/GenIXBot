@@ -616,7 +616,7 @@ global.dfail = (type, m, conn) => {
         restrict: '🔐 Fitur ini *dinonaktifkan*'
     }[type]
 
- {
+const auh = {
 text: msg,
 contextInfo: {
 externalAdReply: {
@@ -629,7 +629,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
 
-await conn.sendMessage(m.chat, )
+await conn.sendMessage(m.chat, auh, m)
 }
 
 let file = global.__filename(import.meta.url, true)
