@@ -9,7 +9,7 @@ conn.reply(m.chat, stdout.toString(), m)
 }}
 handler.help = ['update']
 handler.tags = ['owner']
-handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
+handler.customPrefix = /^(fix|update)$/i
 handler.command = new RegExp
 
 handler.rowner = true
