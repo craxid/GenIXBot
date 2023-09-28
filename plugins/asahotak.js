@@ -32,7 +32,7 @@ handler.help = ['asahotak']
 handler.tags = ['game']
 handler.command = /^asahotak/i
 handler.diamond = false
-handler.group = true
+handler.group = false
 handler.register = false
 
 export default handler
