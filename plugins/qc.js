@@ -83,7 +83,7 @@ const res = await axios.post('https://bot.lyo.su/quote/generate',
 {
   headers: {'Content-Type': 'application/json'}
 })
-const buffer = await sticker(Buffer.from(res.data.result.image, 'base64'), false, "By ArifzynXD", "Bot WhatsApp")
+const buffer = await sticker(Buffer.from(res.data.result.image, 'base64'), false, "© Mika Bot", "Bot WhatsApp")
 conn.sendFile(m.chat, buffer, 'sticker.webp', '', m)
 }
 handler.command = ['qc']
