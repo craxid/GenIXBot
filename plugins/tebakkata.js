@@ -32,6 +32,6 @@ handler.help = ['tebakkata']
 handler.tags = ['game']
 handler.command = /^tebakkata/i
 handler.diamond = false
-handler.group = true
+handler.group = false
 
 export default handler
