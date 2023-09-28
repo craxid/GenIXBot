@@ -33,6 +33,6 @@ Bonus: ${exp} XP
 handler.help = ['susunkata']
 handler.tags = ['game']
 handler.command = /^susunkata/i
-handler.group = true
+handler.group = false
 
 export default handler
