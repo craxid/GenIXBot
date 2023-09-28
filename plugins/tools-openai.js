@@ -12,7 +12,7 @@ m.react('💬')
 	    let gpt = await fetch(`https://vihangayt.me/tools/chatgpt2?q=${text}`)
      ;
         let res = await gpt.json()
-        await m.reply(res.respon.replace('Azz-ai','Mika Bot').replace('yang terdiri dari Miftah dan Riki', 'dari ZuroX Project').replace('Miftah dan Riki','ZuroX Project'))
+        await m.reply(res.data.replace('Azz-ai','Mika Bot').replace('yang terdiri dari Miftah dan Riki', 'dari ZuroX Project').replace('Miftah dan Riki','ZuroX Project'))
 	} catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
