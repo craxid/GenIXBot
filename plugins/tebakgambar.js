@@ -32,7 +32,7 @@ Bonus: ${exp} XP
 }
 handler.help = ['tebakgambar']
 handler.tags = ['game']
-handler.group = true
+handler.group = false
 handler.command = /^tebakgambar/i
 
 export default handler
