@@ -35,7 +35,7 @@ Bonus: ${exp} XP
 handler.help = ['tebakbendera']
 handler.tags = ['game']
 handler.command = /^tebakbendera/i
-handler.group = true
+handler.group = false
 handler.register = false
 
 export default handler
