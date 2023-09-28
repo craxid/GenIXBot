@@ -31,8 +31,9 @@ handler.diamond = true
 export default handler
 */
 
-let fetch = require('node-fetch')
-let googleIt = require('google-it')
+import fetch from 'node-fetch'
+import googleIt from 'google-it'
+
 let handler = async (m, { conn, command, args }) => {
   let full = /f$/i.test(command)
   let text = args.join` `
