@@ -9,7 +9,7 @@ m.react('💬')
 
 	try {
 	    
-	    let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)
+	    let gpt = await fetch(`https://vihangayt.me/tools/chatgpt2?q=${text}`)
      ;
         let res = await gpt.json()
         await m.reply(res.respon.replace('Azz-ai','Mika Bot').replace('yang terdiri dari Miftah dan Riki', 'dari ZuroX Project').replace('Miftah dan Riki','ZuroX Project'))
