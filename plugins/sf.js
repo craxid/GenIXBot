@@ -15,3 +15,4 @@ handler.tags = ['owner']
 handler.command = ['savefile', 'sf']
 handler.owner = true
 export default handler
+
