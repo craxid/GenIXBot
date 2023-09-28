@@ -87,5 +87,5 @@ const buffer = await sticker(Buffer.from(res.data.result.image, 'base64'), false
 conn.sendFile(m.chat, buffer, 'sticker.webp', '', m)
 }
 handler.command = ['qc']
-
+handler.help = ['qc']
 export default handler
