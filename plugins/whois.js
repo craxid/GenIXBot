@@ -3,8 +3,8 @@ import axios from "axios"
 import cheerio from "cheerio"
 
 let handler = async (m, { text, usedPrefix, command }) => {
-if (!text) throw `Masukkan Domain!\n\n*Contoh:* zybra.`
-if (text.includes('https://') || text.includes('http://')) throw `Tolong masukkan tanpa domain *https/http!*. Contoh: api.dannnxd.repl.co`
+if (!text) throw `Masukkan Domain!\n\n*Contoh:* zybra.eu.org`
+if (text.includes('https://') || text.includes('http://')) throw `Tolong masukkan tanpa domain *https/http!*. Contoh: zybra.eu.org`
   try {
     const waiting = `Tunggu Sebentar...`
     m.reply(waiting)
@@ -21,4 +21,4 @@ handler.command = ['whois', 'whoislookup']
 handler.help = ['whois', 'whoislookup']
 handler.tags = ['tools']
 handler.premium = false
-module.exports = handler
+export default handler
