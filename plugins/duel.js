@@ -25,7 +25,7 @@ let handler = async ( m, { conn, args, command}) => {
      let pler = `@${m.sender.replace(/@.+/, '')} mengajak duel ${args[0]}\n\nPilih Y atau N`
      let mentionedJid = [m.sender]
 
-       if (new Date - user.lastduel > 300000) {
+       if (new Date - user.lastduel > 0) {
       m.reply(pler)
 
       } else conn.reply(m.chat, `Kamu sudah bertarung!\n\nTunggu hingga *${timers}*`, m)
