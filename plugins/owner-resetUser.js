@@ -12,8 +12,8 @@ let handler = async (m, { conn, text }) => {
 		var number = text
   }
 
-if(!text && !m.quoted) return m.reply(`*❏ RESET PENGGUNA*\n\n`)
-    if(isNaN(number)) return m.reply(`❏ El número que ingresaste no es válido`)
+if(!text && !m.quoted) return m.reply(`*❏ RESET PENGGUNA*\n\nTag the user, type the number or reply to the message of the user you want to RESET`)
+    if(isNaN(number)) return m.reply(`❏`)
 
       try { 
 		if(text) {
