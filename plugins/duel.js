@@ -1,4 +1,4 @@
-
+/*
 let handler = async ( m, { conn, args, command}) => {
   conn.duel = conn.duel ? conn.duel : []
   args.length != 0 ? conn.duel.push(m.mentionedJid ? m.mentionedJid[0] : (args[0].replace(/[@ .+-]/g, '').replace(' ', '') + '@s.whatsapp.net')) : ""
@@ -79,4 +79,4 @@ function clockString(ms) {
   let s = Math.floor(ms / 1000) % 60
   console.log({ms,h,m,s})
   return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
-}
+}*/
