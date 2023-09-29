@@ -3,9 +3,9 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
     let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : ''
     
-                    if (args.length < 1) return m.reply(`Kirim perintah *${prefix}nuliskiri* teks`)
-                m.reply(mess.wait)
-                if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // respon ketika limit habis
+if (args.length < 1) return m.reply(`Kirim perintah *${prefix}nuliskiri* teks`)
+    m.reply(wait)
+    if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // respon ketika limit habis
                 db.data.users[m.sender].limit -= 1 // -1 limit
                 var tulisan = body.slice(11)
                 var splitText = tulisan.replace(/(\S+\s*){1,9}/g, '$&\n')
