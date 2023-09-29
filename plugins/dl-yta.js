@@ -1,5 +1,8 @@
 
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper';
+
+limit = 8 
+
 let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
   if (!args || !args[0]) throw `✳️ Contoh :\n${usedPrefix + command} https://youtu.be/YzkTFFwxtXI`
   if (!args[0].match(/youtu/gi)) throw `❎ Tidak dapat diunduh`
@@ -12,6 +15,8 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 		const dl_url = await yt.audio[q].download()
 		const title = await yt.title
 		const size = await yt.audio[q].fileSizeH
+		
+		
 		conn.sendFile(m.chat, dl_url, title + '.mp3', `
  ≡  *Mika Bot YTDL*
   
