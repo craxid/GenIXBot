@@ -52,6 +52,7 @@ global.fgpyp = 'https://paypal.me/dedeklender'
 global.fglog = 'https://genix.eu.org/akebi_bot.jpg'
 global.qris = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 
+glibal.dilarang = 
 global.wait = '*⌛ _Tunggu bentar..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
 global.dmoji = '🤭'
