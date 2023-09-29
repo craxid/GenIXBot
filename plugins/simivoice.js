@@ -5,6 +5,8 @@ let handler = async (m, { text }) => {
 try {
 let simiv = await fetch(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
 
+await m.reply(wait)
+
 await conn.sendFile(m.chat, simiv.data, 'simi.opus')
 }
 catch {
