@@ -7,8 +7,8 @@ let handler = async (m, { text }) => {
   if (json.data) m.reply(m.chat, json.data, 'simi.opus', m)
   else throw json
 }
-handler.help = ['simi', 'simsimi', 'simih'].map(v => v + ' <teks>')
+handler.help = ['simivoice', 'simiv'].map(v => v + ' <teks>')
 handler.tags = ['fun']
-handler.command = /^((sim)?simi|simih)$/i
+handler.command = /^((simivoice)?simiv)$/i
 
 export default handler
