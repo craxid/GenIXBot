@@ -14,7 +14,7 @@ spawn('convert', ['./media/image/nulis/images/buku/sebelumkiri.jpg','-font','./i
                 .on('error', () => m.reply(mess.error))
                 .on('exit', () => {
                 
-conn.sendMessage(m.chat, { image: fs.readFileSync('./media/image/nulis/images/buku/setelahkiri.jpg')}, { quoted: fakestatus, caption: `Jangan Malas Kak...`})
+conn.sendMessage(m.chat, { image: fs.readFileSync('./media/image/nulis/images/buku/setelahkiri.jpg')})
                 })
              }
     /*
