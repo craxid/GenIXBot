@@ -9,7 +9,8 @@ export async function (m, { conn, args, text, usedPrefix, command, isAdmin, isBo
     if (!m.isGroup) return !1
     let chat = global.db.data.chats[m.chat]
     let bot = global.db.data.settings[this.user.jid] || {}
-    const isAntiSatir = isSatir.exec(m.text)
+    
+    let isAntiSatir = isSatir.exec(m.text)
 
     if (chat.antiSatir && isAntiSatir) {
         conn.sendFile(m.chat, imgr, 'satir.jpg', `*Kata Penyatir Terdeteksi!*\n\n${global.danied}`, m)
