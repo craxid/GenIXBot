@@ -3,7 +3,7 @@ let isSatir = /(([Kk]enao|[Bb]ims|[Aa]v)a|tumlul|Tumlul|[Gg]wejh|[Oo]kgey|[Ss]ia
 let handler = m => m
 
 export async function (m, { conn, args, text, usedPrefix, command, isAdmin, isBotAdmin }) {
-    let imgr = 'mika.jpg'
+    let imgr = '../src/avatar_contact.png'
     if (m.isBaileys && m.fromMe)
         return !0
     if (!m.isGroup) return !1
