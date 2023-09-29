@@ -4,7 +4,7 @@ let handler = async (m, { conn, args, groupMetadata}) => {
         if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
         else who = m.chat
         if (!who) throw `✳️ Tag or mention someone`
-        if (!(who in global.db.data.users)) throw `✳️ `
+        if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
        let warn = global.db.data.users[who].warn
        if (warn > 0) {
          global.db.data.users[who].warn -= 1
