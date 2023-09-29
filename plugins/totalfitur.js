@@ -9,7 +9,7 @@ let totalf = Object.values(global.plugins).filter(
  //await conn.sendFile(m.chat, thumb, 'fitur.jpg', `Total Fitur saat ini: ${totalf}`, m)
  
 const iyhkh = {
-text: ('Total Fitur: (`${totalf}`)'),
+text: ('Total Fitur:')(`${totalf}`)',
 contextInfo: {
 externalAdReply: {
 title: ('Total Fitur'),
