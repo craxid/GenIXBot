@@ -2,7 +2,7 @@ let isSatir = /(([Kk]enao|[Bb]ims|[Aa]v)a|tumlul|Tumlul|[Gg]wejh|[Oo]kgey|[Ss]ia
 
 let handler = m => m
 
-handler.before = function (m, { conn, args, text, usedPrefix, command, isAdmin, isBotAdmin }) {
+export async function (m, { conn, args, text, usedPrefix, command, isAdmin, isBotAdmin }) {
     let imgr = `${global.ppmika}`
     if (m.isBaileys && m.fromMe)
         return !0
