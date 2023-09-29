@@ -21,7 +21,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}}
 
-await conn.sendMessage(m.chat, iyhkh, m)
+await conn.sendMessage(m.chat, m, {quoted: iyhkh)
 
 }
 
