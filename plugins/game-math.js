@@ -31,7 +31,7 @@ _📌 Contoh : ${usedPrefix+command} normal_
 }
 handler.help = ['matematika <mode>']
 handler.tags = ['game']
-handler.group = true
+handler.group = false
 handler.command = ['mates', 'mate', 'matematika', 'math'] 
 
 
