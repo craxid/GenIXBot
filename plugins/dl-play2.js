@@ -20,6 +20,9 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
   let dl_url = await (isVideo ? yt.video[q].download() : yt.audio[q].download())
   let title = await yt.title
   let size = await (isVideo ? yt.video[q].fileSizeH : yt.audio[q].fileSizeH)
+  
+   if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _File melebihi batas unduhan_ *+${limit} MB*`)
+  
   let play = `
 	≡ *Mika Bot MUSIC*
 ┌──────────────
