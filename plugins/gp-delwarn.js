@@ -14,7 +14,7 @@ let handler = async (m, { conn, args, groupMetadata}) => {
 ▢ Warns total: *${warn - 1}*`)
          m.reply(`✳️ Un admin redujo su advertencia, ahora tienes *${warn - 1}*`, who)
          } else if (warn == 0) {
-            m.reply('✳️ El usuario no tiene ninguna advertencia')
+            m.reply('✳️ The user has no warning')
         }
 
 }
