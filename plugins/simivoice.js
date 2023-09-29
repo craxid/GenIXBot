@@ -6,9 +6,9 @@ if (!text) throw `✳️ Masukkan Teks\n\nContoh: !simivoice Hai`
 m.react(rwait)
 
 try {
-let simiv = await fetch(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
+let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
 
-await m.reply(simiv.data, 'audio.mp3', '', m, true, { mimetype: 'audio/mp4' })
+await m.reply(simiv.data)
 
 m.react(done)
 }
