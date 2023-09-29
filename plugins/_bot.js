@@ -11,7 +11,7 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     let username = conn.getName(who)
     
-let iyhkh = {
+const iyhkh = {
 text: mika,
 contextInfo: {
 externalAdReply: {
@@ -24,7 +24,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}}
 
-await m.reply(iyhkh)
+conn.sendMessage(m.chat, iyhkh, m)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
