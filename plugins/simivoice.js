@@ -4,7 +4,7 @@ let handler = async (m, { text }) => {
 
 let res = await getFile(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
 
-await conn.sendFile(m.chat, res.data, 'simi.opus', m)
+await conn.sendMessage(m.chat, res.data, 'simi.opus', m)
 catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
