@@ -35,20 +35,20 @@ let handler = async ( m, { conn, args, command}) => {
      if(kenal) throw 'Lu siapa?\nkok ikut kut mau duel'
      user.lastduel = new Date * 1
      if (Aku > Kamu) {
-       user.money -= 900
-       enemy.money += 900
+       user.exp -= 900
+       enemy.exp += 900
        delete conn.duel[m.sender]
-       conn.reply(m.chat, `@${who.split("@")[0]} *Menang* Gelud\n*Hadiah:*\n900 Money buat beli gorengan`.trim(), m)
+       conn.reply(m.chat, `@${who.split("@")[0]} *Menang* Gelud\n*Hadiah:*\n900 exp buat beli gorengan`.trim(), m)
      } else if (Aku < Kamu) {
-       user.money += 450
-       enemy.money -= 450
+       user.exp += 450
+       enemy.exp -= 450
        delete conn.duel[m.sender]
-       conn.reply(m.chat, `@${who.split("@")[0]} *Kalah* Gelud\n*Hadiah:*\n450 money lumayan buat beli Limit`.trim(), m)
+       conn.reply(m.chat, `@${who.split("@")[0]} *Kalah* Gelud\n*Hadiah:*\n450 exp lumayan buat beli Limit`.trim(), m)
      } else {
-       user.money += 250
-       enemy.money += 250
+       user.exp += 250
+       enemy.exp += 250
        delete conn.duel[m.sender]
-       conn.reply(m.chat, `@${who.split("@")[0]}\n *Seri*\nmasing-masing 250 Money`.trim(), m)
+       conn.reply(m.chat, `@${who.split("@")[0]}\n *Seri*\nmasing-masing 250 exp`.trim(), m)
      }
    }
    if (/N/.test(command)) {
