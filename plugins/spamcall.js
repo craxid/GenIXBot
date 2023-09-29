@@ -13,7 +13,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 
   let anu = await fetch(`https://api.lolhuman.xyz/api/spam/call1?apikey=dannlaina&nomor=${text}`).then(a => a.json())
   
-  let spcall = `*Nomor* : ${anu.phone_prefix}\n\nMika Bot berhasil menlpon anda!`
+  let spcall = `*Nomor* : ${anu.phone_prefix}\n\nMika Bot berhasil menelpon anda!`
   
   conn.reply(anu)
   conn.reply(m.chat, `${spcall}`.trim(), m)
