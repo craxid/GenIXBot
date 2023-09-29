@@ -27,5 +27,5 @@ await conn.sendMessage(m.chat, iyhkh, m)
 
 handler.help = ['totalfitur']
 handler.tags = ['info']
-handler.command = ['totalfitur','total',','fitur]
+handler.command = ['totalfitur','total',','fitur']
 export default handler
