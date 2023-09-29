@@ -27,7 +27,7 @@ if(!text && !m.quoted) return m.reply(`*❏ RESET PENGGUNA*\n\nTag the user, typ
   } finally {
     	let number = user.split('@')[0]
         delete global.global.db.data.users[user]
-        conn.reply(m.chat, `*❏ USUARIO REINICIADO*\n\n✅ Se@${number} *BASE DE DATOS*`, null, { mentions: [user] })
+        conn.reply(m.chat, `*❏ USUARIO REINICIADO*\n\n✅ Berhasil menghapus @${number} *BAmm*`, null, { mentions: [user] })
     }
     
 }
