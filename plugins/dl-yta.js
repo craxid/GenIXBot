@@ -16,6 +16,9 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 		const title = await yt.title
 		const size = await yt.audio[q].fileSizeH
 		
+		if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _File melebihi batas unduhan_ *+${limit} MB*`)
+
+  
 		
 		conn.sendFile(m.chat, dl_url, title + '.mp3', `
  ≡  *Mika Bot YTDL*
