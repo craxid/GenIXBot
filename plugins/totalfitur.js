@@ -12,7 +12,7 @@ const iyhkh = {
 text: Total Fitur: (`${totalf}`),
 contextInfo: {
 externalAdReply: {
-title: (`Total Fitur`),
+title: ('Total Fitur'),
 body: totalf,
 thumbnailUrl: thumb,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
