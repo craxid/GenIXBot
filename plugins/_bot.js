@@ -24,7 +24,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}}
 
-conn.sendMessage(m.chat, {quoted: iyhkh})
+conn.sendMessage(m.chat, m, {quoted: iyhkh})
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
