@@ -21,7 +21,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}}
 
-await conn.sendMessage(m.chat, ${totalf}, iyhkh, m)
+await conn.sendMessage(m.chat, ${totalf}, m)
 
 }
 
