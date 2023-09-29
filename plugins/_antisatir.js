@@ -13,7 +13,7 @@ export async function (m, { conn, args, text, usedPrefix, command, isAdmin, isBo
     let isAntiSatir = isSatir.exec(m.text)
 
     if (chat.antiSatir && isAntiSatir) {
-        conn.sendFile(m.chat, imgr, 'satir.jpg', `*Kata Penyatir Terdeteksi!*\n\n${global.danied}`, m)
+        conn.sendFile(m.chat, imgr, 'satir.jpg', `*Kata Penyatir Terdeteksi!*\n\n${global.dilarang}`, m)
         if (isBotAdmin && bot.restrict) {
             // await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
     global.db.data.users[m.sender].warn += 1
