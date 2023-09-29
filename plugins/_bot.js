@@ -42,7 +42,7 @@ const fkontak = {
     }
 }
 
-await conn.sendMessage(m.chat, {quoted: fkontak}, m)
+await conn.sendMessage(m.chat, fkontak, m)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
