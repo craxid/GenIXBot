@@ -3,7 +3,7 @@ let isSatir = /(([Kk]enao|[Bb]ims|[Aa]v)a|tumlul|Tumlul|[Gg]wejh|[Oo]kgey|[Ss]ia
 let handler = m => m
 
 handler.before = function (m, { conn, args, text, usedPrefix, command, isAdmin, isBotAdmin }) {
-    let imgr = './thumbnail.jpg'
+    let imgr = `${glo`
     if (m.isBaileys && m.fromMe)
         return !0
     if (!m.isGroup) return !1
