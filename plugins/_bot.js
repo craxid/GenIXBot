@@ -11,7 +11,7 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     let username = conn.getName(who)
     
-/*const iyhkh = {
+const iyhkh = {
 text: mika,
 contextInfo: {
 externalAdReply: {
@@ -22,27 +22,10 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}}*/
+}}}
 
-const fkontak = {
-    key: {
-        participant: `0@s.whatsapp.net`,
-        ...(m.chat ? {
-            remoteJid: `status@broadcast`
-        } : {})
-    },
-    message: {
-        'contactMessage': {
-            'displayName': `${global.botname}`,
-            'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;ttname,;;;\nFN:ttname\nitem1.TEL;waid=6289636827082:6289636827082\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
-            'jpegThumbnail': pp,
-            thumbnail: global.ppmika,
-            sendEphemeral: true
-        }
-    }
-}
 
-await conn.sendMessage(m.chat, fkontak, m)
+await conn.sendMessage(m.chat, iyhkh, m)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
