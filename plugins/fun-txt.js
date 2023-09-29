@@ -16,7 +16,6 @@ spawn('convert', ['./media/image/nulis/images/buku/sebelumkiri.jpg','-font','./i
                 
 conn.sendMessage(m.chat, { image: fs.readFileSync('./media/image/nulis/images/buku/setelahkiri.jpg')})
                 })
-             }
     /*
      if (!teks) throw `📝 Mau nulis apa? Contoh : *${usedPrefix + command}* Aku cinta anime`
       m.react(rwait)
