@@ -22,7 +22,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}}*/
 
-await conn.sendMessage(m.chat, `Total fitur saat ini: ${totalf}`, m)
+await conn.sendMessage(m.chat, global.ppmika, 'pp.jpg', `Total fitur saat ini: ${totalf}`, m)
 
 }
 
