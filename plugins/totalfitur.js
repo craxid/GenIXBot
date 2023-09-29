@@ -12,7 +12,7 @@ const iyhkh = {
 text: (`Total Fitur: ${totalf}`),
 contextInfo: {
 externalAdReply: {
-title: ('Total Fitur'),
+title: ('Mika Misono Bot'),
 body: (`Total Fitur: ${totalf}`),
 thumbnailUrl: global.ppmika,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
