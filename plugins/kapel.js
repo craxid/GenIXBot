@@ -1,6 +1,7 @@
-const fs = require("fs") 
-const axios = require ("axios")
-const fetch = require("node-fetch"
+
+import fs from "fs"
+import axios from "axios"
+imppr fetch from "node-fetch"
 const { color } from '../lib/color'
 const moment = require("moment-timezone"
 import { MessageType } from '@adiwajshing/baileys'
