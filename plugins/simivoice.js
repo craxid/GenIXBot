@@ -1,7 +1,7 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, { text }) => {
-  let res = await fetch(`https://api.zahwazein.xyz/entertainment/simisimi?text=${text}&apikey=zenzkey_f59c1aacf2`)
+  let res = await fetch(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
   let json = await res.json()
   
   if (json.data) m.reply(m.chat, json.data, 'simi.opus', m)
