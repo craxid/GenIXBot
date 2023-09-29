@@ -1,9 +1,10 @@
 const fs = require("fs") 
 const axios = require ("axios")
-const fetch = require("node-fetch")
-const { color } = require('../lib/color')
-const moment = require("moment-timezone")
-const { MessageType } = require('@adiwajshing/baileys')
+const fetch = require("node-fetch"
+const { color } from '../lib/color'
+const moment = require("moment-timezone"
+import { MessageType } from '@adiwajshing/baileys'
+
      let handler  = async (m, { conn, command }) => {
      const time = moment.tz('Asia/Jakarta').format("HH:mm:ss")
      let username = conn.getName(m.sender)
