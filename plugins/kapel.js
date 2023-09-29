@@ -25,7 +25,7 @@ import { MessageType } from '@adiwajshing/baileys'
 	 // conn.sendMessage(m.chat, randCewe, MessageType.image, { caption: '*Cewe*', quoted: m })
 }
 handler.help = ['ppcouple']
-handler.tags = ['internet']
+handler.tags = ['img']
 handler.command = /^ppcouple|ppcp$/i
 handler.owner = false
 handler.limit = true
