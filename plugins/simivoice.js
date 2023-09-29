@@ -16,6 +16,6 @@ catch {
 }
 handler.help = ['simivoice', 'simiv'].map(v => v + ' <teks>')
 handler.tags = ['fun']
-handler.command = /^((simivoice)?simiv)$/i
+handler.command = /^(simivoice|simiv)$/i
 
 export default handler
