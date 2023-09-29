@@ -1,10 +1,10 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, { text }) => {
-  let res = await fetch(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
+  let res = await getFile(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
   let json = await res.json()
   
-m.reply(m.chat, res.data, 'simi.opus', m)
+conn.sendFile(m.chat, res.data, 'simi.opus', m)
 
   else throw json
 }
