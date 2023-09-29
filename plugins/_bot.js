@@ -33,7 +33,7 @@ const fkontak = {
     },
     message: {
         'contactMessage': {
-            'displayName': `${ttname}`,
+            'displayName': `${global.botname}`,
             'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;ttname,;;;\nFN:ttname\nitem1.TEL;waid=6289636827082:6289636827082\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
             'jpegThumbnail': thumb,
             thumbnail: thumb,
