@@ -1,3 +1,4 @@
+
 let handler = async ( m, { conn, args, command}) => {
   conn.duel = conn.duel ? conn.duel : []
   args.length != 0 ? conn.duel.push(m.mentionedJid ? m.mentionedJid[0] : (args[0].replace(/[@ .+-]/g, '').replace(' ', '') + '@s.whatsapp.net')) : ""
