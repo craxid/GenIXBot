@@ -1,4 +1,5 @@
-let fetch = require('node-fetch')
+
+import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text, usedPrefix }) => {
 
