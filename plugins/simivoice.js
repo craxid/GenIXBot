@@ -2,7 +2,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { text }) => {
 
-let res = await getFile(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
+let res = await fetch(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
 
 await conn.sendMessage(m.chat, res.data, 'simi.opus', m)
 catch {
