@@ -8,7 +8,7 @@ m.react(rwait)
 try {
 let simiv = await fetch(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
 
-await m.reply(simiv.data)
+await m.reply(simiv.data, 'audio.mp3', '', m, true, { mimetype: 'audio/mp4' })
 
 m.react(done)
 }
