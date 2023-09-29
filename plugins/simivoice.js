@@ -2,6 +2,8 @@
 import fetch from 'node-fetch'
 let handler = async (m, { text }) => {
 
+if (!text) throw `✳️ Masukkan Teks\n\nContoh: !simivoice Hai`
+
 try {
 let simiv = await fetch(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
 
