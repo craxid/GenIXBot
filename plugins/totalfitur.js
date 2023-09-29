@@ -13,7 +13,7 @@ text: (`Total Fitur: ${totalf}`),
 contextInfo: {
 externalAdReply: {
 title: ('Total Fitur'),
-body: totalf,
+body: (`Total Fitur: ${totalf}`),
 thumbnailUrl: global.ppmika,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
