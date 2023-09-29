@@ -2,9 +2,11 @@
 import fetch from 'node-fetch'
 let handler = async (m, { text }) => {
 
+try {
 let res = await fetch(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
 
 await conn.sendMessage(m.chat, res.data, 'simi.opus', m)
+}
 catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
