@@ -5,15 +5,16 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     
 if (args.length < 1) return m.reply(`Kirim perintah *${prefix}nuliskiri* teks`)
     m.reply(wait)
-    if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // respon ketika limit habis
-                db.data.users[m.sender].limit -= 1 // -1 limit
-                var tulisan = body.slice(11)
-                var splitText = tulisan.replace(/(\S+\s*){1,9}/g, '$&\n')
-                var fixHeight = splitText.split('\n').slice(0, 31).join('\n')
-                spawn('convert', ['./media/image/nulis/images/buku/sebelumkiri.jpg','-font','./image/nulis/font/Indie-Flower.ttf','-size','960x1280','-pointsize','22','-interline-spacing','2','-annotate','+140+153',fixHeight,'./media/image/nulis/images/buku/setelahkiri.jpg'])
+
+var tulisan = body.slice(11)
+var splitText = tulisan.replace(/(\S+\s*){1,9}/g, '$&\n')
+var fixHeight = splitText.split('\n').slice(0, 31).join('\n')
+
+spawn('convert', ['./media/image/nulis/images/buku/sebelumkiri.jpg','-font','./image/nulis/font/Indie-Flower.ttf','-size','960x1280','-pointsize','22','-interline-spacing','2','-annotate','+140+153',fixHeight,'./media/image/nulis/images/buku/setelahkiri.jpg'])
                 .on('error', () => m.reply(mess.error))
                 .on('exit', () => {
-                akame.sendMessage(m.chat, { image: fs.readFileSync('./media/image/nulis/images/buku/setelahkiri.jpg')}, { quoted: fakestatus, caption: `Jangan Malas Kak...`})
+                
+conn.sendMessage(m.chat, { image: fs.readFileSync('./media/image/nulis/images/buku/setelahkiri.jpg')}, { quoted: fakestatus, caption: `Jangan Malas Kak...`})
                 })
              }
     /*
