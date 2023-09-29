@@ -14,7 +14,7 @@ contextInfo: {
 externalAdReply: {
 title: ('Total Fitur'),
 body: totalf,
-thumbnailUrl: thumb,
+thumbnailUrl: global.ppmika,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
