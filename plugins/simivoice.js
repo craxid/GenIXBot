@@ -4,7 +4,7 @@ let handler = async (m, { text }) => {
   let res = await fetch(`https://api.zahwazein.xyz/entertainment/simisimi?text=${text}&apikey=zenzkey_f59c1aacf2`)
   let json = await res.json()
   
-  if (json.result) m.reply(m.chat, json.data, 'simi.opus', m)
+  if (json.data) m.reply(m.chat, json.data, 'simi.opus', m)
   else throw json
 }
 handler.help = ['simi', 'simsimi', 'simih'].map(v => v + ' <teks>')
