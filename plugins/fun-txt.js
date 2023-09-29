@@ -28,7 +28,7 @@ conn.sendMessage(m.chat, { image: fs.readFileSync('./media/image/nulis/images/bu
   handler.help = ['txt']
   handler.tags = ['fun']
   handler.command = ['txt','nulis']
-  handler.premium = true
+  handler.premium = false
   
   export default handler
   
