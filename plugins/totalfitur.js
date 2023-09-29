@@ -10,6 +10,6 @@ let totalf = Object.values(global.plugins).filter(
 }
 
 handler.help = ['totalfitur']
-handler.tags = ['info']
+handler.tags = ['main']
 handler.command = ['totalfitur']
 export default handler
