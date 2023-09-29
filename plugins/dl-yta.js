@@ -1,7 +1,7 @@
 
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper';
 
-limit = 8 
+let limit = 8 
 
 let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
   if (!args || !args[0]) throw `✳️ Contoh :\n${usedPrefix + command} https://youtu.be/YzkTFFwxtXI`
