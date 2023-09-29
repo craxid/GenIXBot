@@ -28,6 +28,6 @@ handler.command = /^(spamcall)$/i
 
 handler.diamond = true
 handler.premium = true
-handler.group = true
+handler.group = false
 
 export default handler
