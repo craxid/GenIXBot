@@ -23,7 +23,7 @@ gunakan *.profile* untuk memeriksa
 
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
-let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
+let pp = await conn.profilePictureUrl(who, 'image').catch(_ => '../src/avatar_contact.png')
 
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 
