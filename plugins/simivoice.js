@@ -1,28 +1,14 @@
+
 import fetch from 'node-fetch'
-import axios from 'axios'
-let handler = m => m
-
-handler.before = async (m) => {
-    let chat = global.db.data.chats[m.chat]
-    if (chat.simivoice && !chat.isBanned ) {
-        if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return
-        if (!m.text) return
-        let api = await fetch(`https://api.simsimi.net/v2/?text=${m.text}&lc=id`)
-  let res = await api.json()
+let handler = async (m, { text }) => {
+  let res = await fetch(`https://api.zahwazein.xyz/entertainment/simisimi?text=${text}&apikey=zenzkey_f59c1aacf2`)
+  let json = await res.json()
   
-  let id = 'id_001'
-  const { data } = await axios.post("https://tiktok-tts.weilnet.workers.dev/api/generation", {
-    "text": res.success,
-    "voice": id
-})
-conn.sendMessage(m.chat, { audio: Buffer.from(data.data, "base64"), mimetype: "audio/mp4" }, {quoted: m})
-        return !0
-    }
-    return true
+  if (json.result) m.reply(json.result.message.re)
+  else throw json
 }
-
-handler.help = ['simiv','simivoice']
+handler.help = ['simi', 'simsimi', 'simih'].map(v => v + ' <teks>')
 handler.tags = ['fun']
-handler.command = ['simiv','simivoice']
+handler.command = /^((sim)?simi|simih)$/i
 
 export default handler
