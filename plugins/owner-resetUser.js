@@ -13,7 +13,7 @@ let handler = async (m, { conn, text }) => {
   }
 
 if(!text && !m.quoted) return m.reply(`*❏ RESET PENGGUNA*\n\nTag the user, type the number or reply to the message of the user you want to RESET`)
-    if(isNaN(number)) return m.reply(`❏`)
+    if(isNaN(number)) return m.reply(`❏ The number you entered is not valid`)
 
       try { 
 		if(text) {
@@ -27,7 +27,7 @@ if(!text && !m.quoted) return m.reply(`*❏ RESET PENGGUNA*\n\nTag the user, typ
   } finally {
     	let number = user.split('@')[0]
         delete global.global.db.data.users[user]
-        conn.reply(m.chat, `*❏ USUARIO REINICIADO*\n\n✅ Se reinició a @${number} de la *BASE DE DATOS*`, null, { mentions: [user] })
+        conn.reply(m.chat, `*❏ USUARIO REINICIADO*\n\n✅ Se@${number} *BASE DE DATOS*`, null, { mentions: [user] })
     }
     
 }
