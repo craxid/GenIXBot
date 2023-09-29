@@ -6,7 +6,7 @@ if (!text) throw `✳️ Masukkan Teks\n\nContoh: !simivoice Hai`
 await m.reply(wait)
 
 try {
-let simiv = await fetch(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
+let simiv = await getFile(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
 
 await conn.sendFile(m.chat, simiv.data, 'simi.opus')
 }
