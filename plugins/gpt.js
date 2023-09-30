@@ -11,7 +11,7 @@ if (!text) throw `Masukkan pertanyaan!\n\n*Contoh:* .gpt presiden Indonesia`
 const openai = 'https://telegra.ph/file/8fd766bb9f183c98ba4eb.jpg'
 
   
-  ChatGpt(text).then(a => {
+  gpt2(text).then(a => {
   let result = a.reply
   conn.sendMessage(m.chat, {text: result, contextInfo:
 					{
