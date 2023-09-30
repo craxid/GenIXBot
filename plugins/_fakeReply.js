@@ -68,7 +68,7 @@ global.fekcrot = {
                 description: 'BOT RPG', 
                 title: 'Mika Bot', 
                 body: 'Jangan spam!', 
-                thumbnailUrl: pp, 
+                thumbnailUrl: ppmika, 
                 sourceUrl: dygp 
             }}}
     
