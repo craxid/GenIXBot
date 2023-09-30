@@ -1,4 +1,5 @@
-import { ChatGpt } from '../scraper/chatGpt.js'
+
+import { gpt2 } from '../lib/gpt2.js'
 
 let handler = async (m, {
  text, 
@@ -33,6 +34,6 @@ const openai = 'https://telegra.ph/file/8fd766bb9f183c98ba4eb.jpg'
 handler.command = ['gpt2','chatgpt2']
 handler.help = ['gpt2','chatgpt2']
 handler.tags = ['ai']
-handler.diamo = true
+handler.diamond = true
 handler.premium = false
 export default handler
