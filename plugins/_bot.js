@@ -13,11 +13,8 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
  
 
 const iyhkh = {
-text: mika,
 contextInfo: {
 externalAdReply: {
-title: (`${username}`),
-body: ('Aku Online Kak!'),
 thumbnailUrl: mikapp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
