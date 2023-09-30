@@ -14,9 +14,8 @@ await m.reply(wait)
   ChatGpt(text).then(a => {
   let result = a.reply
   
-  conn.sendMessage(m.chat, {text: result, 
-contextInfo:
-{
+conn.sendMessage(m.chat, {text: result,
+contextInfo: {
     "externalAdReply": {
         "title": namebot,
         "body": command + ' ' + text,
