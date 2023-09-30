@@ -36,5 +36,6 @@ handler.help = ['spambatu <nomer/jumlah>']
 handler.tags = ['spam']
 handler.command = /^(🗿|spambatu)$/i 
 handler.premium = false
+handler.restrict = true
 handler.diamond = 3
 export default handler
