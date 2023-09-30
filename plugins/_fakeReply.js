@@ -12,7 +12,13 @@ export async function before(m,{conn }) {
     global.rpyp = { contextInfo: { externalAdReply: { mediaUrl: fgpyp, mediaType: 'VIDEO', description: 'Donate', title: 'PayPal', body: 'membantu menjaga bot tetap aktif', thumbnailUrl: pp, sourceUrl: fgpyp }}}
     
     //reply Instagram 
-    global.rpig = { contextInfo: { externalAdReply: { mediaUrl: fgig, mediaType: 'VIDEO', description: 'Follow Instagram saya', title: 'dede_klender', body: 'Follow Instagram Saya', thumbnailUrl: pp, sourceUrl: fgig }}} 
+    global.rpig = { 
+        contextInfo: { 
+        externalAdReply: { 
+            mediaUrl: fgig, 
+            mediaType: 'VIDEO', 
+            description: 'Follow Instagram saya', 
+            title: 'dede_klender', body: 'Follow Instagram Saya', thumbnailUrl: pp, sourceUrl: fgig }}} 
 	
 	//reply link yt
     global.rpyt = { 
@@ -25,7 +31,8 @@ export async function before(m,{conn }) {
                 title: 'ClanDare', 
                 body: 'untuk mengapresiasi owner bot', 
                 thumbnailUrl: pp, 
-                sourceUrl: fgyt }}}
+                sourceUrl: fgyt 
+            }}}
     
     /*reply fek
 global.fekcrot = { 
