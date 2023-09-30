@@ -16,8 +16,7 @@ await m.reply(wait)
   
 conn.sendMessage(m.chat, {text: result,
 contextInfo: {
-    "externalAdReply": {
-        "title": namebot,
+    "externalAdReply": {"title": namebot,
         "body": command + ' ' + text,
         "showAdAttribution": true,
         "mediaType": 1,
