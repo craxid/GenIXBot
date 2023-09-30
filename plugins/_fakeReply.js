@@ -65,9 +65,9 @@ global.fekcrot = {
                 showAdAttribution: true, 
                 mediaUrl: dygp, 
                 mediaType: 'VIDEO', 
-                description: ', 
-                title: 'ClanDare', 
-                body: 'untuk mengapresiasi owner bot', 
+                description: 'BOT RPG', 
+                title: 'Mika Bot', 
+                body: 'Jangan spam!', 
                 thumbnailUrl: pp, 
                 sourceUrl: fgyt 
             }}}
