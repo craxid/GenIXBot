@@ -10,17 +10,7 @@ await m.reply(wait)
   ChatGpt(text).then(a => {
   let result = a.reply
   
-conn.sendMessage(m.chat, {text: result,
-contextInfo: {
-    "externalAdReply": {"title": global.botname,
-        "body": command + ' ' + text,
-        "showAdAttribution": true,
-        "mediaType": 1,
-        "sourceUrl": '',
-        "thumbnailUrl": openai,
-        "renderLargerThumbnail": true
-    }}}, 
-    {quoted: m})
+conn.sendMessage(m.chat, {text: result},{quoted: m})
     
 }).catch(err => {
   console.error(err)
@@ -33,3 +23,13 @@ handler.tags = ['ai']
 handler.diamond = true
 handler.premium = false
 export default handler
+
+/*contextInfo: {
+    "externalAdReply": {"title": global.botname,
+        "body": command + ' ' + text,
+        "showAdAttribution": true,
+        "mediaType": 1,
+        "sourceUrl": '',
+        "thumbnailUrl": openai,
+        "renderLargerThumbnail": true
+    }}*/
