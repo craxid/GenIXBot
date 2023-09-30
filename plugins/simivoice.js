@@ -3,12 +3,12 @@ import fetch from 'node-fetch'
 let handler = async (m, { text }) => {
 
 if (!text) throw `✳️ Masukkan Teks\n\nContoh: !simivoice Hai`
-m.reply(wait)
+m.react(rwait)
 
 try {
 let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
 
-await conn.sendMessage(m.chat, { audio: { url: simiv.data }, mimetype: 'audio/mpeg' }}, { quoted: m })
+await m.reply(simiv.data, )
 
 m.react(done)
 }
