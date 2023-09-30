@@ -19,12 +19,12 @@ contextInfo:
 {
     "externalAdReply": {
         "title": namebot,
-							"body": command + ' ' + text,
-							"showAdAttribution": true,
-							"mediaType": 1,
-							"sourceUrl": '',
-							"thumbnailUrl": openai,
-							"renderLargerThumbnail": true
+        "body": command + ' ' + text,
+        "showAdAttribution": true,
+        "mediaType": 1,
+        "sourceUrl": '',
+        "thumbnailUrl": openai,
+        "renderLargerThumbnail": true
 
 						}
 					}}, {quoted: m})
