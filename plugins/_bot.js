@@ -25,7 +25,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}}
 
-await conn.sendFile(m.chat, iyhkh, m, null)
+await conn.sendMessage(m.chat, iyhkh, m, null)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
