@@ -60,15 +60,14 @@ export async function before(m,{conn }) {
     
 //reply fek
 global.fekcrot = { 
-text: mika,
 contextInfo: { 
     externalAdReply: { 
         title: (`${username}`),
         body: ('Aku Online Kak!'),
         mediaUrl: dygp, 
-        description: (`${username}`), 
-        title: 'PayPal', 
-        body: 'membantu menjaga bot tetap aktif',
+        description: 'Donate', 
+        title: (`${global.botname}`), 
+        body: (`${username}`),
         thumbnailUrl: ppmika, 
         sourceUrl: dygp, 
         showAdAttribution: true 
