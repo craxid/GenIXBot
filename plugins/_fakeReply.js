@@ -69,7 +69,7 @@ global.fekcrot = {
                 title: 'Mika Bot', 
                 body: 'Jangan spam!', 
                 thumbnailUrl: pp, 
-                sourceUrl: fgyt 
+                sourceUrl: dygp 
             }}}
     
 
