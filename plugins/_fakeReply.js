@@ -6,10 +6,15 @@ export async function before(m,{conn }) {
 	let pp = await this.profilePictureUrl(who, 'image').catch(_ => 'https://i.imgur.com/whjlJSf.jpg')
 	
 	//reply link wa
-   global.rpl = { contextInfo: { externalAdReply: { mediaUrl: dygp, 
-   mediaType: 'VIDEO', description: 'support group', 
-   title: packname, 
-   body: 'support group', thumbnailUrl: pp, 
+   global.rpl = { 
+       contextInfo: { 
+       externalAdReply: { 
+           mediaUrl: dygp, 
+           mediaType: 'VIDEO', 
+           description: 'support group', 
+           title: packname, 
+           body: 'support group', 
+           thumbnailUrl: pp, 
    sourceUrl: dygp
    }}} 
 	
