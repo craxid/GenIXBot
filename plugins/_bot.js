@@ -25,7 +25,7 @@ renderLargerThumbnail: true
 }}}*/
 
 
-await conn.sendMessage(m.chat, mika, m, null, fekcrot)
+await conn.sendMessage(m.chat, mika, m, null, rpl)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
