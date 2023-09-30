@@ -12,10 +12,10 @@ if (m.isBaileys && m.fromMe)
       if (!user.chatbot)
         return !0
         
-        let api = await fetch(`https://api.azz.biz.id/api/alicia?q=${m.text}&user=Mika%20Bot&key=mangea`)
+        let api = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.chat}&name=Misono%20Mika%20(Blue%20Archive)`)
         
         let res = await api.json()
         
-        m.reply(res.respon.replace('Alicia','Mika Bot').replace('6283808217881','6285892734104').replace('Ricky','ZuroX Project').replace('api.azz.biz.id','ZuroX Project'))
+        m.reply(res.respon)
     
 }
