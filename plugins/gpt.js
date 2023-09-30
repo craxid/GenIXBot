@@ -1,12 +1,8 @@
 
 import { ChatGpt } from '../lib/ChatGpt.js'
 
-let handler = async (m, {
- text, 
- usedPrefix, 
- conn,
- command
- }) => {
+let handler = async (m, { text, usedPrefix, conn, command }) => {
+    
 if (!text) throw `Masukkan pertanyaan!\n\n*Contoh:* .gpt2 presiden Indonesia`
 const openai = 'https://telegra.ph/file/8fd766bb9f183c98ba4eb.jpg'
 await m.reply(wait)
