@@ -9,7 +9,7 @@ let handler = async (m, {
  }) => {
 if (!text) throw `Masukkan pertanyaan!\n\n*Contoh:* .gpt presiden Indonesia`
 const openai = 'https://telegra.ph/file/8fd766bb9f183c98ba4eb.jpg'
-
+await m.reply(wait)
   
   gpt2(text).then(a => {
   let result = a.reply
