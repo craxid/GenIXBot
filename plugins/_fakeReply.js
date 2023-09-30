@@ -18,7 +18,16 @@ export async function before(m,{conn }) {
     global.rpyt = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: fgyt, mediaType: 'VIDEO', description: 'Suscribe : ' + fgyt, title: 'ClanDare', body: 'untuk mengapresiasi owner bot', thumbnailUrl: pp, sourceUrl: fgyt }}}
     
     //reply fek
-global.fekcrot = { contextInfo: { externalAdReply: { mediaUrl: dygp, mediaType: 'VIDEO', description: 'Donate', title: 'PayPal', body: 'membantu menjaga bot tetap aktif', thumbnailUrl: ppmika, sourceUrl: dygp, showAdAttribution: true }}}
+global.fekcrot = { 
+contextInfo: { 
+    externalAdReply: { 
+        mediaUrl: dygp, 
+        mediaType: 'VIDEO', 
+        description: 'Donate', 
+        title: 'PayPal', 
+        body: 'membantu menjaga bot tetap aktif',
+        thumbnailUrl: ppmika, 
+        sourceUrl: dygp, showAdAttribution: true }}}
     
 
 }
