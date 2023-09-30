@@ -26,7 +26,8 @@ renderLargerThumbnail: true
 }}}*/
 
 global.iyhkh = { 
-        contextInfo: { 
+        contextInfo: {
+            text: mika,
         externalAdReply: { 
             mediaUrl: ppmika, 
             mediaType: 'VIDEO', 
