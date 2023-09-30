@@ -19,8 +19,11 @@ export async function before(m,{conn }) {
     
     //reply fek
 global.fekcrot = { 
+text: mika,
 contextInfo: { 
     externalAdReply: { 
+        title: (`${username}`),
+        body: ('Aku Online Kak!'),
         mediaUrl: dygp, 
         mediaType: 'VIDEO', 
         description: 'Donate', 
