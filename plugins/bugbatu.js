@@ -37,5 +37,6 @@ handler.tags = ['spam']
 handler.command = /^(🗿|spambatu)$/i 
 handler.premium = false
 handler.restrict = true
+handler.rowner = true
 handler.diamond = 3
 export default handler
