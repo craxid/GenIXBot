@@ -58,7 +58,7 @@ export async function before(m,{conn }) {
                 sourceUrl: fgyt 
             }}}
     
-    /*reply fek
+//reply fek
 global.fekcrot = { 
 text: mika,
 contextInfo: { 
@@ -66,13 +66,13 @@ contextInfo: {
         title: (`${username}`),
         body: ('Aku Online Kak!'),
         mediaUrl: dygp, 
-        description: 'Donate', 
+        description: (`${username}`), 
         title: 'PayPal', 
         body: 'membantu menjaga bot tetap aktif',
         thumbnailUrl: ppmika, 
         sourceUrl: dygp, 
         showAdAttribution: true 
-    }}}*/
+    }}}
     
 
 }
