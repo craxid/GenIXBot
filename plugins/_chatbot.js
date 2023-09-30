@@ -12,10 +12,10 @@ if (m.isBaileys && m.fromMe)
       if (!user.chatbot)
         return !0
         
-        let api = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=Mika%20Misono%20(Blue%20Archive)`)
+        let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=Mika%20Misono%20(Blue%20Archive)`)
         
-        let res = await api.json()
+        let res = await cetbot.json()
         
-await m.reply(res.result.replace('Blue Archive Academy','Trinity General School').replace('Akademi Blue Archive', 'Sekolah Umum Trinity').replace('dari Blue Archive','').replace('[nama pengguna]','Sensei').replace('[Masukkan nama pengguna]','Sensei').replace('[pengguna]','Sensei').replace('[Nama Pengguna]','Sensei').replace('[Masukkan nama pengguna disini]','Sensei'))
+await m.reply(res.result.replace('Blue Archive Academy','Trinity General School').replace('Akademi Blue Archive', 'Sekolah Umum Trinity').replace('dari Blue Archive','').replace('[nama pengguna]','Sensei').replace('[Masukkan nama pengguna]','Sensei').replace('[pengguna]','Sensei').replace('[Nama Pengguna]','Sensei').replace('[Nama pengguna]','Sensei').replace('[Masukkan nama pengguna disini]','Sensei'))
     
 }
