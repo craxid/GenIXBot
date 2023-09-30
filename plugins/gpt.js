@@ -25,9 +25,9 @@ contextInfo:
         "sourceUrl": '',
         "thumbnailUrl": openai,
         "renderLargerThumbnail": true
-
-						}
-					}}, {quoted: m})
+    }}}, 
+    {quoted: m})
+    
 }).catch(err => {
   console.error(err)
   m.reply("gw pusing sorry gak bisa jawab")
