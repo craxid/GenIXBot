@@ -16,6 +16,6 @@ if (m.isBaileys && m.fromMe)
         
         let res = await api.json()
         
-        m.reply(res.result)
+        m.reply(res.result).replace('Blue Archive Academy','Trinity General School')
     
 }
