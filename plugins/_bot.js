@@ -38,7 +38,7 @@ global.iyhkh = {
             sourceUrl: fgpyp
         }}}
 
-await conn.sendFile(m.chat, mikapp, 'jpg.jpg', iyhkh, m, null)
+await conn.sendFile(m.chat, mikapp, 'jpg.jpg', m, null, iyhkh)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
