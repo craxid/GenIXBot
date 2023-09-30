@@ -27,7 +27,7 @@ renderLargerThumbnail: true
 
 global.iyhkh = { 
         contextInfo: {
-            text: mika,
+        text: mika,
         externalAdReply: { 
             mediaUrl: ppmika, 
             mediaType: 'VIDEO', 
@@ -38,7 +38,7 @@ global.iyhkh = {
             sourceUrl: fgpyp
         }}}
 
-await conn.sendFile(m.chat, iyhkh, m, null)
+await conn.sendFile(m.chat, mikapp, 'jpg.jpg', iyhkh, m, null)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
