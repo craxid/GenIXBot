@@ -1,5 +1,5 @@
 
-import { gpt2 } from '../lib/gpt2.js'
+import { ChatGpt } from '../lib/ChatGpt.js'
 
 let handler = async (m, {
  text, 
@@ -11,7 +11,7 @@ if (!text) throw `Masukkan pertanyaan!\n\n*Contoh:* .gpt presiden Indonesia`
 const openai = 'https://telegra.ph/file/8fd766bb9f183c98ba4eb.jpg'
 await m.reply(wait)
   
-  gpt2(text).then(a => {
+  ChatGpt(text).then(a => {
   let result = a.reply
   
   conn.sendMessage(m.chat, {text: result, 
@@ -33,7 +33,7 @@ contextInfo:
   m.reply("gw pusing sorry gak bisa jawab")
 })
 }
-handler.command = ['gpt2','chatgpt2']
+handler.command = ['gpt2','chatChatGpt2']
 handler.help = ['gpt2','chatgpt2']
 handler.tags = ['ai']
 handler.diamond = true
