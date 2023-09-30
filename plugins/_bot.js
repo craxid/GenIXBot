@@ -38,7 +38,7 @@ global.iyhkh = {
             sourceUrl: fgpyp
         }}}
 
-await m.reply(m.chat, iyhkh, m, null)
+await m.reply(iyhkh)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
