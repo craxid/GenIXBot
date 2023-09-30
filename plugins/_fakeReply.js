@@ -60,18 +60,17 @@ export async function before(m,{conn }) {
     
 //reply fek
 global.fekcrot = { 
-contextInfo: { 
-    externalAdReply: { 
-        title: (`${username}`),
-        body: ('Aku Online Kak!'),
-        mediaUrl: dygp, 
-        description: 'Donate', 
-        title: (`${global.botname}`), 
-        body: (`${username}`),
-        thumbnailUrl: ppmika, 
-        sourceUrl: dygp, 
-        showAdAttribution: true 
-    }}}
+        contextInfo: { 
+            externalAdReply: { 
+                showAdAttribution: true, 
+                mediaUrl: dygp, 
+                mediaType: 'VIDEO', 
+                description: ', 
+                title: 'ClanDare', 
+                body: 'untuk mengapresiasi owner bot', 
+                thumbnailUrl: pp, 
+                sourceUrl: fgyt 
+            }}}
     
 
 }
