@@ -25,7 +25,7 @@ renderLargerThumbnail: true
 }}}*/
 
 
-await conn.sendMessage(m.chat, global, m)
+await conn.sendMessage(m.chat, global.fekcrot, m)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
