@@ -38,7 +38,7 @@ global.iyhkh = {
             sourceUrl: fgpyp
         }}}
 
-await conn.sendMessage(m.chat, m, null, iyhkh)
+await conn.sendMessage(m.chat, iyhkh, m, null)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
