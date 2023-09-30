@@ -22,7 +22,7 @@ showAdAttribution: true,
 renderLargerThumbnail: false
 }}}
 
-await conn.sendMessage(m.chat, iyhkh, m)
+await conn.sendMessage(m.chat, m, null, rpig)
 
 }
 
