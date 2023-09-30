@@ -12,7 +12,7 @@ if (m.isBaileys && m.fromMe)
       if (!user.chatbot)
         return !0
         
-        let api = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.chat}&name=Misono%20Mika%20(Blue%20Archive)`)
+        let api = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=Misono%20Mika%20(Blue%20Archive)`)
         
         let res = await api.json()
         
