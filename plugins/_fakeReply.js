@@ -62,7 +62,7 @@ export async function before(m,{conn }) {
 global.fekcrot = { 
         contextInfo: { 
             externalAdReply: { 
-                showAdAttribution: true, 
+                showAdAttribution: false, 
                 mediaUrl: dygp, 
                 mediaType: 'VIDEO', 
                 description: 'BOT RPG', 
