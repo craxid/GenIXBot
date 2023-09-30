@@ -25,7 +25,6 @@ contextInfo: {
         title: (`${username}`),
         body: ('Aku Online Kak!'),
         mediaUrl: dygp, 
-        mediaType: 'VIDEO', 
         description: 'Donate', 
         title: 'PayPal', 
         body: 'membantu menjaga bot tetap aktif',
