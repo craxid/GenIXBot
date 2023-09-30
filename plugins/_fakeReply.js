@@ -17,7 +17,7 @@ export async function before(m,{conn }) {
 	//reply link yt
     global.rpyt = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: fgyt, mediaType: 'VIDEO', description: 'Suscribe : ' + fgyt, title: 'ClanDare', body: 'untuk mengapresiasi owner bot', thumbnailUrl: pp, sourceUrl: fgyt }}}
     
-    //reply fek
+    /*reply fek
 global.fekcrot = { 
 text: mika,
 contextInfo: { 
@@ -31,7 +31,7 @@ contextInfo: {
         thumbnailUrl: ppmika, 
         sourceUrl: dygp, 
         showAdAttribution: true 
-    }}}
+    }}}*/
     
 
 }
