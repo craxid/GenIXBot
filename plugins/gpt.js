@@ -33,7 +33,7 @@ contextInfo:
   m.reply("gw pusing sorry gak bisa jawab")
 })
 }
-handler.command = ['gpt2','chatChatGpt2']
+handler.command = ['gpt2','chatgpt2']
 handler.help = ['gpt2','chatgpt2']
 handler.tags = ['ai']
 handler.diamond = true
