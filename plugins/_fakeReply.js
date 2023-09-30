@@ -6,7 +6,12 @@ export async function before(m,{conn }) {
 	let pp = await this.profilePictureUrl(who, 'image').catch(_ => 'https://i.imgur.com/whjlJSf.jpg')
 	
 	//reply link wa
-   global.rpl = { contextInfo: { externalAdReply: { mediaUrl: dygp, mediaType: 'VIDEO', description: 'support group', title: packname, body: 'support group', thumbnailUrl: pp, sourceUrl: dygp }}} 
+   global.rpl = { contextInfo: { externalAdReply: { mediaUrl: dygp, 
+   mediaType: 'VIDEO', description: 'support group', 
+   title: packname, 
+   body: 'support group', thumbnailUrl: pp, 
+   sourceUrl: dygp
+   }}} 
 	
 	//reply link PayPal
     global.rpyp = { 
@@ -16,7 +21,10 @@ export async function before(m,{conn }) {
             mediaType: 'VIDEO', 
             description: 'Donate', 
             title: 'PayPal', 
-            body: 'membantu menjaga bot tetap aktif', thumbnailUrl: pp, sourceUrl: fgpyp }}}
+            body: 'membantu menjaga bot tetap aktif', 
+            thumbnailUrl: pp, 
+            sourceUrl: fgpyp
+        }}}
     
     //reply Instagram 
     global.rpig = { 
