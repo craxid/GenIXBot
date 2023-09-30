@@ -8,7 +8,7 @@ m.react(rwait)
 try {
 let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
 
-await m.reply(simiv.data)
+conn.sendMessage(m.chat, { audio: { url: simiv.data }, mimetype: 'audio/mpeg' }}, { quoted: m })
 
 m.react(done)
 }
