@@ -9,7 +9,14 @@ export async function before(m,{conn }) {
    global.rpl = { contextInfo: { externalAdReply: { mediaUrl: dygp, mediaType: 'VIDEO', description: 'support group', title: packname, body: 'support group', thumbnailUrl: pp, sourceUrl: dygp }}} 
 	
 	//reply link PayPal
-    global.rpyp = { contextInfo: { externalAdReply: { mediaUrl: fgpyp, mediaType: 'VIDEO', description: 'Donate', title: 'PayPal', body: 'membantu menjaga bot tetap aktif', thumbnailUrl: pp, sourceUrl: fgpyp }}}
+    global.rpyp = { 
+        contextInfo: { 
+        externalAdReply: { 
+            mediaUrl: fgpyp, 
+            mediaType: 'VIDEO', 
+            description: 'Donate', 
+            title: 'PayPal', 
+            body: 'membantu menjaga bot tetap aktif', thumbnailUrl: pp, sourceUrl: fgpyp }}}
     
     //reply Instagram 
     global.rpig = { 
@@ -18,7 +25,11 @@ export async function before(m,{conn }) {
             mediaUrl: fgig, 
             mediaType: 'VIDEO', 
             description: 'Follow Instagram saya', 
-            title: 'dede_klender', body: 'Follow Instagram Saya', thumbnailUrl: pp, sourceUrl: fgig }}} 
+            title: 'dede_klender', 
+            body: 'Follow Instagram Saya', 
+            thumbnailUrl: pp, 
+            sourceUrl: fgig 
+        }}} 
 	
 	//reply link yt
     global.rpyt = { 
