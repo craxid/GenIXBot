@@ -16,5 +16,19 @@ export async function before(m,{conn }) {
 	
 	//reply link yt
     global.rpyt = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: fgyt, mediaType: 'VIDEO', description: 'Suscribe : ' + fgyt, title: 'ClanDare', body: 'untuk mengapresiasi owner bot', thumbnailUrl: pp, sourceUrl: fgyt }}}
+    
+    //reply fek
+
+text: mika,
+contextInfo: {
+externalAdReply: {
+title: (`${username}`),
+body: ('Aku Online Kak!'),
+thumbnailUrl: mikapp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}}*/
 
 }
