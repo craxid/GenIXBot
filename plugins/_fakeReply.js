@@ -63,13 +63,13 @@ global.fekcrot = {
         contextInfo: { 
             externalAdReply: { 
                 showAdAttribution: true, 
-                mediaUrl: dygp, 
+                mediaUrl: fbku, 
                 mediaType: 'VIDEO', 
                 description: 'BOT RPG', 
-                title: 'Mika Bot', 
+                title: botname, 
                 body: 'Jangan spam!', 
                 thumbnailUrl: ppmika, 
-                sourceUrl: dygp 
+                sourceUrl: fbku 
             }}}
     
 
