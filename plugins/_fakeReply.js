@@ -66,7 +66,7 @@ global.fekcrot = {
                 mediaUrl: fbku, 
                 mediaType: 'VIDEO', 
                 description: 'BOT RPG', 
-                title: botname, 
+                title: 'Mika Bot', 
                 body: 'Jangan spam!', 
                 thumbnailUrl: ppmika, 
                 sourceUrl: fbku 
