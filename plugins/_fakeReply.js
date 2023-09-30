@@ -18,13 +18,7 @@ export async function before(m,{conn }) {
     global.rpyt = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: fgyt, mediaType: 'VIDEO', description: 'Suscribe : ' + fgyt, title: 'ClanDare', body: 'untuk mengapresiasi owner bot', thumbnailUrl: pp, sourceUrl: fgyt }}}
     
     //reply fek
-global.fekcrot = contextInfo: { externalAdReply: {title: (`${username}`),
-body: ('Aku Online Kak!'),
-thumbnailUrl: mikapp,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}}*/
+global.rpyp = { contextInfo: { externalAdReply: { mediaUrl: fgpyp, mediaType: 'VIDEO', description: 'Donate', title: 'PayPal', body: 'membantu menjaga bot tetap aktif', thumbnailUrl: pp, sourceUrl: fgpyp }}}
+    
 
 }
