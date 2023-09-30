@@ -1,3 +1,4 @@
+
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
@@ -29,10 +30,10 @@ global.APIKeys = { // APIKey Here
   'https://api.xteam.xyz': 'd90a9e986e18778b',
   'https://api.zahwazein.xyz': 'zenzkey_f59c1aacf2',
   'https://api.anna.biz.id': 'anna',
-  'https://api-fgmods.ddns.net': 'L7bOQXGA',
   'https://api.betabotz.org': 'tE9z2ZQb',
-  'https://api.azz.biz.id': 'mangea'
-  //Regístrese en https://api-fgmods.ddns.net/
+  'https://api.azz.biz.id': 'mangea',
+  'https://api-fgmods.ddns.net': 'L7bOQXGA'
+  //Regitrasi disini https://api-fgmods.ddns.net/
 }
 
 // Sticker WM
@@ -280,8 +281,8 @@ global.hwaifu = ['https://i.pinimg.com/originals/ed/34/f8/ed34f88af161e6278993e1
 'https://i.pinimg.com/originals/fd/21/41/fd21419275236bb153de3c8dcbbf3bf9.jpg',
 'https://i.pinimg.com/originals/80/4f/1a/804f1a05f9996c96a2d492b4854b7fd5.jpg']
 
-global.multiplier = 69 
-global.maxwarn = '3' // máxima advertencias
+global.multiplier = 100 
+global.maxwarn = '3' // batas peringatan
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
