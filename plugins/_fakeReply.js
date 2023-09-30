@@ -15,7 +15,17 @@ export async function before(m,{conn }) {
     global.rpig = { contextInfo: { externalAdReply: { mediaUrl: fgig, mediaType: 'VIDEO', description: 'Follow Instagram saya', title: 'dede_klender', body: 'Follow Instagram Saya', thumbnailUrl: pp, sourceUrl: fgig }}} 
 	
 	//reply link yt
-    global.rpyt = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: fgyt, mediaType: 'VIDEO', description: 'Suscribe : ' + fgyt, title: 'ClanDare', body: 'untuk mengapresiasi owner bot', thumbnailUrl: pp, sourceUrl: fgyt }}}
+    global.rpyt = { 
+        contextInfo: { 
+            externalAdReply: { 
+                showAdAttribution: true, 
+                mediaUrl: fgyt, 
+                mediaType: 'VIDEO', 
+                description: 'Suscribe : ' + fgyt, 
+                title: 'ClanDare', 
+                body: 'untuk mengapresiasi owner bot', 
+                thumbnailUrl: pp, 
+                sourceUrl: fgyt }}}
     
     /*reply fek
 global.fekcrot = { 
