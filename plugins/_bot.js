@@ -10,7 +10,7 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
 
     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     let username = conn.getName(who)
-/*   
+  
 const iyhkh = {
 text: mika,
 contextInfo: {
@@ -22,10 +22,10 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}}*/
+}}}
 
 
-await conn.sendMessage(m.chat, mika, m, null, rpl)
+await conn.sendMessage(m.chat, iyhkh, m, null)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
