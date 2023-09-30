@@ -22,7 +22,7 @@ export async function before(m,{conn }) {
     global.rpyp = { 
         contextInfo: { 
         externalAdReply: { 
-            mediaUrl: fgpyp, 
+            mediaUrl: ppmika, 
             mediaType: 'VIDEO', 
             description: 'Donate', 
             title: 'PayPal', 
