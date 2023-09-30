@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 export async function before(m,{conn }) {
 	
 	let who = m.sender ? m.sender : conn.user.jid && conn.user.jid ? conn.user.jid : '0@s.whatsapp.net'
-	let pp = await this.profilePictureUrl(who, 'image').catch(_ => 'https://i.imgur.com/whjlJSf.jpg')
+	let pp = await this.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg')
 	
 	//reply link wa
    global.rpl = { 
