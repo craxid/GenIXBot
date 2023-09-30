@@ -13,10 +13,12 @@ await m.reply(wait)
   
   gpt2(text).then(a => {
   let result = a.reply
-  conn.sendMessage(m.chat, {text: result, contextInfo:
-					{
-						"externalAdReply": {
-							"title": namebot,
+  
+  conn.sendMessage(m.chat, {text: result, 
+contextInfo:
+{
+    "externalAdReply": {
+        "title": namebot,
 							"body": command + ' ' + text,
 							"showAdAttribution": true,
 							"mediaType": 1,
