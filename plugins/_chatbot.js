@@ -16,6 +16,6 @@ if (m.isBaileys && m.fromMe)
         
         let res = await api.json()
         
-        m.reply(res.respon)
+        m.reply(res.result)
     
 }
