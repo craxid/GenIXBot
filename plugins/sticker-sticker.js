@@ -37,7 +37,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     console.error(e)
     if (!stiker) stiker = e
   } finally {
-    if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, null, fekcrot)
+    if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, null, rpl)
     else throw '```Konversi gagal, coba kirim GAMBAR/VIDEO/GIF terlebih dahulu, lalu balas dengan perintah .sticker```'
   }
 }
