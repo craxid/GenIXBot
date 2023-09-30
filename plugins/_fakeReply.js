@@ -27,7 +27,9 @@ contextInfo: {
         title: 'PayPal', 
         body: 'membantu menjaga bot tetap aktif',
         thumbnailUrl: ppmika, 
-        sourceUrl: dygp, showAdAttribution: true }}}
+        sourceUrl: dygp, 
+        showAdAttribution: true 
+    }}}
     
 
 }
