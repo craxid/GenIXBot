@@ -35,7 +35,7 @@ contextInfo: {
         "body": nama,
         "showAdAttribution": true,
         "mediaType": 1,
-        "sourceUrl": gllobal.dygp,
+        "sourceUrl": global.dygp,
         "thumbnailUrl": global.ppmika,
         "renderLargerThumbnail": false
     }}}, 
