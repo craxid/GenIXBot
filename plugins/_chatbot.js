@@ -26,7 +26,19 @@ let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m
         
         let res = await cetbot.json()
         
-await m.reply(res.result)
+//await m.reply(res.result)
+
+conn.sendMessage(m.chat, {text: res.result,
+contextInfo: {
+    "externalAdReply": {"title": global.botname,
+        "body": command + ' ' + text,
+        "showAdAttribution": true,
+        "mediaType": 1,
+        "sourceUrl": '',
+        "thumbnailUrl": global.ppmika,
+        "renderLargerThumbnail": true
+    }}}, 
+    {quoted: m})
     
 }
 //.replace('Blue Archive Academy','Trinity General School').replace('Akademi Blue Archive', 'Sekolah Umum Trinity').replace('dari Blue Archive','').replace('[nama pengguna]','Sensei').replace('[Masukkan nama pengguna]','Sensei').replace('[pengguna]','Sensei').replace('[Nama Pengguna]','Sensei').replace('[Nama pengguna]','Sensei').replace('[Masukkan nama pengguna disini]','Sensei')
