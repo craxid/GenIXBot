@@ -46,7 +46,7 @@ contextInfo: {
         "title": (`${name}`),
         "body": (`Level: ${user.level}`),
         "showAdAttribution": true,
-        "mediaType": 3,
+        "mediaType": 1,
         "sourceUrl": global.fgig,
         "thumbnailUrl": pp,
         "renderLargerThumbnail": true
