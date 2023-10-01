@@ -18,9 +18,9 @@ let fisik = `Mika has long pink hair that turns into a pale blue near the bottom
 
 let fisik2 = `Her halo is comprised of two pink spirals that revolve around a central spherical piece with a ring below it. Three pink sparkles and a number of small blobs float just beyond the sparkles.`
 
-let fisik2 = ``
+let fisik2 = `Mika wears a sleeveless white dress[1] that's frilled near the bottom and is inlaid with a starry print. She wears something that resembles a high-waisted skirt with two pairs of golden buttons, gold trimmings, and blue ribbons over this dress. The area above her bosom is a blue bow that's adorned with a golden cross bottony accessory on top. Like many members of the Tea Party, she wears a white capelet with golden trimmings.`
         
-let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=${detail}`)
+let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=${fisik}${fisik2}${}${detail}`)
         
         let res = await cetbot.json()
         
