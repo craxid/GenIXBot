@@ -43,8 +43,8 @@ contextInfo: {
         "body": (name),
         "showAdAttribution": true,
         "mediaType": 1,
-        "sourceUrl": global.bmkg,
-        "thumbnailUrl": global.fgig,
+        "sourceUrl": global.fgig,
+        "thumbnailUrl": global.bmkg,
         "renderLargerThumbnail": true
     }}}, 
     {quoted: m})
