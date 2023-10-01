@@ -37,7 +37,7 @@ contextInfo: {
         "mediaType": 1,
         "sourceUrl": gllobal.dygp,
         "thumbnailUrl": global.ppmika,
-        "renderLargerThumbnail": true
+        "renderLargerThumbnail": false
     }}}, 
     {quoted: m})
     
