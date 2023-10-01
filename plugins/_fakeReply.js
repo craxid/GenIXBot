@@ -59,7 +59,7 @@ export async function before(m,{conn }) {
             }}}
     
 //reply fek
-conn.sendMessage(m.chat, {text: text,
+/*conn.sendMessage(m.chat, {text: text,
 contextInfo: {
     "externalAdReply": {
         "title": (`${conn.getName(m.sender)}`),
@@ -70,7 +70,7 @@ contextInfo: {
         "thumbnailUrl": pp,
         "renderLargerThumbnail": true
     }}}, 
-    {quoted: m})
+    {quoted: m})*/
     
 
 }
