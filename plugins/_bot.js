@@ -27,7 +27,7 @@ renderLargerThumbnail: true
 
 conn.sendMessage(m.chat, {text: mika,
 contextInfo: {
-    "externalAdReply": {"title": global.botname,
+    "externalAdReply": {
         "title": (`${username}`),
         "body": ('Aku Online Kak!'),
         "showAdAttribution": true,
