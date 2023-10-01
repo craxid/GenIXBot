@@ -186,6 +186,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
+    
+    let pps = await pp
     let username = conn.getName(who)
     
 /*if (text) return conn.sendMessage(m.chat, {
@@ -209,7 +211,7 @@ contextInfo: {
         "showAdAttribution": true,
         "mediaType": 3,
         "sourceUrl": global.fgig,
-        "thumbnailUrl": pp,
+        "thumbnailUrl": pps,
         "renderLargerThumbnail": true
     }}}, 
     {quoted: m})
