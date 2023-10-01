@@ -616,7 +616,7 @@ global.dfail = (type, m, conn) => {
         restrict: '🔐 Fitur ini *dinonaktifkan*'
     }[type]
 
-if (msg) return conn.sendMessage(m.chat, {
+/*if (msg) return conn.sendMessage(m.chat, {
 text: msg,
 contextInfo: {
 externalAdReply: {
@@ -627,7 +627,20 @@ sourceUrl: global.dygp,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})
+}}})*/
+
+conn.sendMessage(m.chat, {text: msg,
+contextInfo: {
+    "externalAdReply": {
+        "title": ('Mika Misono Bot'),
+        "body": (`${username}`),
+        "showAdAttribution": true,
+        "mediaType": 1,
+        "sourceUrl": global.fgig,
+        "thumbnailUrl": global.ppmika,
+        "renderLargerThumbnail": true
+    }}}, 
+    {quoted: m})
 }
 
 let file = global.__filename(import.meta.url, true)
