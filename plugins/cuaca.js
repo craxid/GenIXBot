@@ -36,14 +36,14 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}})*/
 
-conn.sendMessage(m.chat, {text: wra,
+conn.sendMessage(m.chat, {text: wea,
 contextInfo: {
     "externalAdReply": {"title": global.botname,
-        "title": (`${username}`),
-        "body": ('Aku Online Kak!'),
+        "title": (`Laporan Cuaca`),
+        "body": (name),
         "showAdAttribution": true,
         "mediaType": 1,
-        "sourceUrl": global.fgig,
+        "sourceUrl": global.bmkg,
         "thumbnailUrl": mikapp,
         "renderLargerThumbnail": true
     }}}, 
