@@ -23,7 +23,7 @@ let handler = async (m, { args }) => {
     let bmkglogo = 'https://api.zahwazein.xyz/creator/ttp'
     
     
-    conn.sendMessage(m.chat, {
+/*conn.sendMessage(m.chat, {
 text: wea,
 contextInfo: {
 externalAdReply: {
@@ -34,7 +34,20 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})
+}}})*/
+
+conn.sendMessage(m.chat, {text: wra,
+contextInfo: {
+    "externalAdReply": {"title": global.botname,
+        "title": (`${username}`),
+        "body": ('Aku Online Kak!'),
+        "showAdAttribution": true,
+        "mediaType": 1,
+        "sourceUrl": global.fgig,
+        "thumbnailUrl": mikapp,
+        "renderLargerThumbnail": true
+    }}}, 
+    {quoted: m})
     
   } catch (e) {
     return "Error: Lokasi tidak ditemukan!"
