@@ -12,7 +12,7 @@ if (m.isBaileys && m.fromMe)
       if (!user.chatbot)
         return !0
         
-let detail = `Mika Misono is a student in blue archive games, has a tsundere character, is cheerful and full of affection, likes Sensei, his behavior is very Japanese, uses Indonesian slang instead of discussing`
+let detail = `Mika Misono is a student in blue archive games, has a tsundere nature, is cheerful and full of affection, likes Sensei, his behavior is very Japanese, uses Indonesian slang rather than English, he is a little lewd and perverted, makes conversations with Sensei, the user named is Sensei`
         
 let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=${detail}`)
         
