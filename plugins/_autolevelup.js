@@ -27,7 +27,7 @@ let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_con
 
 let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 
-conn.sendMessage(m.chat, {
+/*conn.sendMessage(m.chat, {
 text: teks,
 contextInfo: {
 externalAdReply: {
@@ -38,6 +38,21 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})
+}}})*/
+
+conn.sendMessage(m.chat, {text: text,
+contextInfo: {
+    "externalAdReply": {"title": global.botname,
+        "title": (`Laporan Cuaca`),
+        "body": (name),
+        "showAdAttribution": true,
+        "mediaType": 1,
+        "sourceUrl": global.fgig,
+        "thumbnailUrl": global.bmkg,
+        "renderLargerThumbnail": true
+    }}}, 
+    {quoted: m})
+
+
     }
 }
