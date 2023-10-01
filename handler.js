@@ -633,10 +633,10 @@ conn.sendMessage(m.chat, {text: msg,
 contextInfo: {
     "externalAdReply": {
         "title": ('Mika Misono Bot'),
-        "body": (`${username}`),
+        "body": (`Jangan spam bot`),
         "showAdAttribution": true,
         "mediaType": 1,
-        "sourceUrl": global.fgig,
+        "sourceUrl": global.dygp,
         "thumbnailUrl": global.ppmika,
         "renderLargerThumbnail": true
     }}}, 
