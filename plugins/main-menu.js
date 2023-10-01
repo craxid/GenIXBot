@@ -204,8 +204,8 @@ renderLargerThumbnail: false
 conn.sendMessage(m.chat, {text: (text.trim()),
 contextInfo: {
     "externalAdReply": {
-        "title": (`${name}`),
-        "body": (`Level: ${user.level}`),
+        "title": ('Mika Misono Bot'),
+        "body": (`${username}`),
         "showAdAttribution": true,
         "mediaType": 3,
         "sourceUrl": global.fgig,
