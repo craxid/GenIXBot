@@ -31,7 +31,7 @@ let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m
 conn.sendMessage(m.chat, {text: res.result,
 contextInfo: {
     "externalAdReply": {"title": global.botname,
-        "title": 'Mika Chatbot'
+        "title": 'Mika Chatbot',
         "body": nama,
         "showAdAttribution": true,
         "mediaType": 1,
