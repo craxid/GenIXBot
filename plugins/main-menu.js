@@ -209,7 +209,7 @@ contextInfo: {
         "title": ('Mika Misono Bot'),
         "body": (`${username}`),
         "showAdAttribution": true,
-        "mediaType": 3,
+        "mediaType": 1,
         "sourceUrl": global.fgig,
         "thumbnailUrl": global.ppmika,
         "renderLargerThumbnail": true
