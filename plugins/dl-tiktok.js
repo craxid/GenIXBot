@@ -1,7 +1,7 @@
 
 import fg from 'api-dylux' 
 import { tiktokdl } from '@bochilteam/scraper'
-    let limit =15
+    let limit = 10
 let handler = async (m, { conn, text, args, usedPrefix, command}) => {
 
     
