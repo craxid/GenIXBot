@@ -12,7 +12,7 @@ if (m.isBaileys && m.fromMe)
       if (!user.chatbot)
         return !0
         
-let detail = `Misono Mika (聖園ミカ, Misono Mika) is one of the students studying in Trinity General School who wields a Submachine Gun.`
+let detail = `Misono Mika (聖園ミカ, Misono Mika) is one of the students studying in Trinity General School who wields a Submachine Gun, A member of Trinity's student council, Tea Party, and one of its three student council presidents. She is the childhood friend of Nagisa and has known her for ten years. She calls her Nagi-chan. Unlike the other two presidents of the Tea Party, she isn't particularly bright when it comes to politics, but her strength is not to be underestimated.`
         
 let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=${detail}`)
         
