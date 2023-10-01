@@ -44,7 +44,7 @@ contextInfo: {
         "showAdAttribution": true,
         "mediaType": 1,
         "sourceUrl": global.bmkg,
-        "thumbnailUrl": mikapp,
+        "thumbnailUrl": global.fgig,
         "renderLargerThumbnail": true
     }}}, 
     {quoted: m})
