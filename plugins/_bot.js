@@ -12,7 +12,7 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
     let username = conn.getName(who)
  
 
-const iyhkh = {
+/*const iyhkh = {
 text: mika,
 contextInfo: {
 externalAdReply: {
@@ -23,10 +23,22 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}}
+}}}*/
 
-
-await conn.sendMessage(m.chat, iyhkh, m, null)
+conn.sendMessage(m.chat, {text: mika,
+contextInfo: {
+    "externalAdReply": {"title": global.botname,
+        "title": (`${username}`),
+        "body": ('Aku Online Kak!'),
+        "showAdAttribution": true,
+        "mediaType": 1,
+        "sourceUrl": global.fgig,
+        "thumbnailUrl": mikapp,
+        "renderLargerThumbnail": true
+    }}}, 
+    {quoted: m})
+    
+//await conn.sendMessage(m.chat, iyhkh, m, null)
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
