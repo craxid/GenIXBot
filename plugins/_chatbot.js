@@ -35,7 +35,7 @@ contextInfo: {
         "body": ,
         "showAdAttribution": true,
         "mediaType": 1,
-        "sourceUrl": ${nama},
+        "sourceUrl": nama,
         "thumbnailUrl": global.ppmika,
         "renderLargerThumbnail": true
     }}}, 
