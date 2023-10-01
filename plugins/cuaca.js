@@ -38,7 +38,7 @@ renderLargerThumbnail: true
 
 conn.sendMessage(m.chat, {text: wea,
 contextInfo: {
-    "externalAdReply": {"title": global.botname,
+    "externalAdReply": {
         "title": (`Laporan Cuaca`),
         "body": (name),
         "showAdAttribution": true,
