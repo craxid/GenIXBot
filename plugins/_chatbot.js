@@ -32,10 +32,10 @@ conn.sendMessage(m.chat, {text: res.result,
 contextInfo: {
     "externalAdReply": {"title": global.botname,
         "title": 'Mika Chatbot'
-        "body": ,
+        "body": nama,
         "showAdAttribution": true,
         "mediaType": 1,
-        "sourceUrl": nama,
+        "sourceUrl": gllobal.dygp,
         "thumbnailUrl": global.ppmika,
         "renderLargerThumbnail": true
     }}}, 
