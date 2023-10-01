@@ -12,7 +12,7 @@ if (m.isBaileys && m.fromMe)
       if (!user.chatbot)
         return !0
         
-        let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=Akebi%20Komichi%20from%20anime%20(Akebi-chan%20no%20Sailor-fuku)`)
+        let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=`)
         
         let res = await cetbot.json()
         
