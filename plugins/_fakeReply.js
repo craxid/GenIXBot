@@ -59,18 +59,18 @@ export async function before(m,{conn }) {
             }}}
     
 //reply fek
-global.fekcrot = { 
-        contextInfo: { 
-            externalAdReply: { 
-                showAdAttribution: true, 
-                mediaUrl: fbku, 
-                mediaType: 'VIDEO', 
-                description: 'BOT RPG', 
-                title: 'Mika Bot', 
-                body: 'Jangan spam!', 
-                thumbnailUrl: ppmika, 
-                sourceUrl: fbku 
-            }}}
+conn.sendMessage(m.chat, {text: text,
+contextInfo: {
+    "externalAdReply": {
+        "title": (`${conn.getName(m.sender)}`),
+        "body": (`Level: ${user.level}`),
+        "showAdAttribution": true,
+        "mediaType": 1,
+        "sourceUrl": global.fgig,
+        "thumbnailUrl": pp,
+        "renderLargerThumbnail": true
+    }}}, 
+    {quoted: m})
     
 
 }
