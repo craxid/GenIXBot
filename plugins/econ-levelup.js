@@ -115,7 +115,7 @@ renderLargerThumbnail: true
 conn.sendMessage(m.chat, {text: (text, str),
 contextInfo: {
     "externalAdReply": {
-        "title": (`${name}`),
+        "title": (`${conn.getName(m.sender)}`),
         "body": (`Level: ${user.level}`),
         "showAdAttribution": true,
         "mediaType": 1,
