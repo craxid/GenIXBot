@@ -637,7 +637,7 @@ contextInfo: {
         "showAdAttribution": true,
         "mediaType": 1,
         "sourceUrl": global.dygp,
-        "thumbnailUrl": global.ppmika,
+        "thumbnailUrl": global.mikasampul,
         "renderLargerThumbnail": true
     }}}, 
     {quoted: m})
