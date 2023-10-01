@@ -16,7 +16,7 @@ let detail = `Mika Misono she is from Blue Archive, is cheerful and full of affe
        
 let fisik = `Mika has long pink hair that turns into a pale blue near the bottom and a bun tied to the right of her head. She has golden eyes. On her back are a pair of angel wings that sprout from around waist level.`
 
-let fisik2 = 
+let fisik2 = `Her halo is comprised of two pink spirals that revolve around a central spherical piece with a ring below it. Three pink sparkles and a number of small blobs float just beyond the sparkles.`
         
 let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=${detail}`)
         
