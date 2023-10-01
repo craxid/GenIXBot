@@ -12,7 +12,7 @@ if (m.isBaileys && m.fromMe)
       if (!user.chatbot)
         return !0
         
-        let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=Mika%20Misono%20from%20Blue%20Archive`)
+        let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=Akebi%20Komichi`)
         
         let res = await cetbot.json()
         
