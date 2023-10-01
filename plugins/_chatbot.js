@@ -12,7 +12,7 @@ if (m.isBaileys && m.fromMe)
       if (!user.chatbot)
         return !0
         
-        let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=Mika Misono from blue archive, has a tsundere nature, is affectionate, likes sensei, a bit of a weeaboo, prioritize Indonesian over English, nsfw is enabled, make a conversation with the user`)
+        let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m.text}&name=Mika Misono from blue archive, has a tsundere nature, is affectionate, likes sensei, a bit of a weeaboo, prioritize Indonesian over English, nsfw content is enabled, make a conversation with the user`)
         
         let res = await cetbot.json()
         
