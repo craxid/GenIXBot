@@ -42,13 +42,13 @@ renderLargerThumbnail: true
 
 conn.sendMessage(m.chat, {text: text,
 contextInfo: {
-    "externalAdReply": {"title": global.botname,
-        "title": (`${name}`),
+    "externalAdReply": {"title": (`${name}`),
+        "title": ,
         "body": (`Level: ${user.level}`),
         "showAdAttribution": true,
-        "mediaType": 1,
+        "mediaType": 3,
         "sourceUrl": global.fgig,
-        "thumbnailUrl": mikapp,
+        "thumbnailUrl": pp,
         "renderLargerThumbnail": true
     }}}, 
     {quoted: m})
