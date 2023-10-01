@@ -211,7 +211,7 @@ contextInfo: {
         "showAdAttribution": true,
         "mediaType": 3,
         "sourceUrl": global.fgig,
-        "thumbnailUrl": pps,
+        "thumbnailUrl": global.ppmika,
         "renderLargerThumbnail": true
     }}}, 
     {quoted: m})
