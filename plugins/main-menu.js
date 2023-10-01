@@ -188,7 +188,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     let username = conn.getName(who)
     
-if (text) return conn.sendMessage(m.chat, {
+/*if (text) return conn.sendMessage(m.chat, {
 text: (text.trim()),
 contextInfo: {
 externalAdReply: {
@@ -199,7 +199,20 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}}, m)
+}}}, m)*/
+
+conn.sendMessage(m.chat, {text: (text.trim()),
+contextInfo: {
+    "externalAdReply": {
+        "title": (`${name}`),
+        "body": (`Level: ${user.level}`),
+        "showAdAttribution": true,
+        "mediaType": 3,
+        "sourceUrl": global.fgig,
+        "thumbnailUrl": pp,
+        "renderLargerThumbnail": true
+    }}}, 
+    {quoted: m})
 
     //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     
