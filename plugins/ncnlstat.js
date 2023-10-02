@@ -40,7 +40,7 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-		m.reply(`👾 Server sedang offline\n\nHost: craf\nPort: 19132`)
+		m.reply(`👾 Server sedang offline\n\nHost: craft.pe\nPort: 19132`)
 	}
 //end
 
