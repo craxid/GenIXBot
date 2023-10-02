@@ -24,8 +24,6 @@ ${global.gz} *IP:* ${sevre.ip}
 ${global.gz} *Port:* ${sevre.port}
 ${global.sb}
 
-List players
-
 API version: ${sevre.debug.apiversion}
     `
 
