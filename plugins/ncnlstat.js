@@ -39,9 +39,9 @@ renderLargerThumbnail: false
 }}}, {quoted: m})
 
 	}
-	catch {
+/*catch {
 		m.reply(`👾 Server sedang offline\n\nHost: play.ncnl.eu.org\nPort: 40383`)
-	}
+	}*/
 //end
 
 }
