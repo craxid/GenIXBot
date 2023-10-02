@@ -19,6 +19,7 @@ let handler = async (m, { conn, text, command, usedPrefix, isOwner }) => {
       break
       
     case 'addchangelog':
+    ca
       if (!isOwner) return conn.reply(m.chat, 'Perintah ini hanya dapat digunakan oleh *Owner*!', m)
       if (!text) return conn.reply(m.chat, `Contoh: ${usedPrefix}addchangelog <text>`, m)
       changelogs.unshift(`${new Date().toDateString()} - ${text}`)
@@ -45,4 +46,4 @@ handler.premium = false
 handler.command = /^(changelog|log|addchangelog|rchangelog|addcl)$/i
 handler.owner = false
 
-module.exports = handler
+export default handler
