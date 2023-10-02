@@ -45,7 +45,7 @@ renderLargerThumbnail: false
 //end
 
 }
-handler.help = ['server']
+handler.help = ['mcstalk']
 handler.customPrefix = /^mcstalk$/i
 handler.command = new RegExp
 handler.group = false
