@@ -42,7 +42,7 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-		m.reply(`👾 Server sedang offline\n\nHost: ncnl.aternos.me\nPort: 17810`)
+		m.reply(`👾 Server sedang offline\n\nHost: craft.pe`)
 	}
 //end
 
