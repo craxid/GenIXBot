@@ -5,7 +5,7 @@ let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 await m.reply(wait)
 
 try {
-let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/craft.pe`)
+let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/play.ncnl.eu.org:40383`)
 let sevre = await ncnlstat.json()
 
 let tegs = `
@@ -33,22 +33,22 @@ externalAdReply: {
 title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.ncnl.eu.org:40383'),
+sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|craft.pe:19132'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}}, {quoted: m})
+}}})
 
 	}
 	catch {
-		m.reply(`👾 Server sedang offline\n\nHost: craft.pe\nPort: 19132`)
+		m.reply(`👾 Server sedang offline\n\nHost: play.ncnl.eu.org\nPort: 40383`)
 	}
 //end
 
 }
 handler.help = ['mcstalk']
-handler.customPrefix = /^mcstalk$/i
+handler.customPrefix = /^nc/i
 handler.command = new RegExp
-handler.group = false
+handler.group = true
 
 export default handler
