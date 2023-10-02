@@ -48,6 +48,6 @@ renderLargerThumbnail: false
 handler.help = ['server']
 handler.customPrefix = /^mcstalk$/i
 handler.command = new RegExp
-handler.group = true
+handler.group = false
 
 export default handler
