@@ -5,7 +5,7 @@ let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 await m.reply(wait)
 
 try {
-let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/ncnl.aternos.me:17810`)
+let ncnlstat = await fetch(`https://api.mcsrvstat.us/bedrock/3/craft.pe`)
 let sevre = await ncnlstat.json()
 
 let tegs = `
@@ -23,6 +23,9 @@ ${global.gz} *Host:* ${sevre.hostname}
 ${global.gz} *IP:* ${sevre.ip}
 ${global.gz} *Port:* ${sevre.port}
 ${global.sb}
+
+List players
+
 
 API version: ${sevre.debug.apiversion}
     `
