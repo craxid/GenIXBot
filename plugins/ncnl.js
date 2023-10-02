@@ -24,7 +24,7 @@ ${global.gz} *IP:* ${sevre.ip}
 ${global.gz} *Port:* ${sevre.port}
 ${global.sb}
 
-API version: ${sevre.debug.apiversion}`
+`
     
 conn.sendMessage(m.chat, {
 text: (`${tegs}`).replace('true','Online','false','Offline'),
