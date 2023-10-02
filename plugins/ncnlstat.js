@@ -53,7 +53,7 @@ sourceUrl: ('minecraft://?addExternalServer=NCNL Network|ncnl.aternos.me:17810')
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}})
+}}}, {quoted: m})
 
 	}
 	catch {
