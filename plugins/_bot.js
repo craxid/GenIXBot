@@ -35,7 +35,7 @@ contextInfo: {
         "thumbnailUrl": mikapp,
         "renderLargerThumbnail": true
     }}}, 
-    {quoted: m})
+    {quoted: m})*/
     
 //await conn.sendMessage(m.chat, iyhkh, m, null)
 
