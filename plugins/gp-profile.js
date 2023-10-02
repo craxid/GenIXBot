@@ -36,8 +36,7 @@ let str = `
     //conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
    let lepellu = ('Level:')
    
-conn.sendMessage(m.chat, {text: str
-text: str,
+conn.sendMessage(m.chat, {text: str,
 contextInfo: {
 externalAdReply: {
 title: (`${username}`),
