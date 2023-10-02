@@ -24,19 +24,6 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}},
 {quoted: m})
-/*
-conn.sendMessage(m.chat, {text: mika,
-contextInfo: {
-    "externalAdReply": {
-        "title": (`${username}`),
-        "body": ('Aku Online Kak!'),
-        "showAdAttribution": true,
-        "mediaType": 1,
-        "sourceUrl": global.fgig,
-        "thumbnailUrl": mikapp,
-        "renderLargerThumbnail": true
-    }}}, 
-    {quoted: m})*/
     
 //await conn.sendMessage(m.chat, iyhkh, m, null)
 
