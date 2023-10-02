@@ -10,7 +10,7 @@
         "plugins": "plugins"
     },
     "scripts": {
-        "start": "pm2 start index.js --cron "0*,
+        "start": "pm2 start index.js",
         "test": "node test.js",
         "test2": "nodemon index.js"
     },
