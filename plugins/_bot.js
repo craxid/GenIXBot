@@ -12,8 +12,7 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
     let username = conn.getName(who)
  
 
-/*conn.sendMessage(m.chat, {
-text: mika,
+conn.sendMessage(m.chat, {text: mika,
 contextInfo: {
 externalAdReply: {
 title: (`${username}`),
@@ -23,8 +22,8 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}}*/
-
+}}})
+/*
 conn.sendMessage(m.chat, {text: mika,
 contextInfo: {
     "externalAdReply": {
