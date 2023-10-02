@@ -10,9 +10,23 @@ m.react('💬')
 	try {
 	    
 	    let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)
-     ;
+	    
         let res = await gpt.json()
         await m.reply(res.respon.replace('Azz-ai','Mika Bot').replace('yang terdiri dari Miftah dan Riki', 'dari ZuroX Project').replace('Miftah dan Riki','ZuroX Project'))
+        
+conn.sendMessage(m.chat, {text: res.result,
+contextInfo: {
+    "externalAdReply": {
+        "title": global.botname,
+        "body": nama,
+        "showAdAttribution": true,
+        "mediaType": 1,
+        "sourceUrl": global.fgig,
+        "thumbnailUrl": global.ppmika,
+        "renderLargerThumbnail": false
+    }}}, 
+    {quoted: m})
+        
 	} catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
