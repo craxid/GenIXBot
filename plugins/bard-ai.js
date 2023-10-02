@@ -9,7 +9,22 @@ m.react('💬')
 	    let bard = await fetch(`https://api.azz.biz.id/api/bard?q=${text}&key=mangea`)
      ;
         let res = await bard.json()
-        await m.reply(res.respon)
+        
+//await m.reply(res.respon)
+
+conn.sendMessage(m.chat, {text: res.respon.replace('Azz-ai','Mika Bot').replace('yang terdiri dari Miftah dan Riki', 'dari ZuroX Project').replace('Miftah dan Riki','ZuroX Project'),
+contextInfo: {
+    "externalAdReply": {
+        "title": global.namebot,
+        "body": ('ChatGPT AI'),
+        "showAdAttribution": true,
+        "mediaType": 1,
+        "sourceUrl": global.fgig,
+        "thumbnailUrl": global.ppmika,
+        "renderLargerThumbnail": false
+    }}}, 
+    {quoted: m})
+        
 	} catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
