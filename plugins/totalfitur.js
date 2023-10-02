@@ -9,7 +9,7 @@ let totalf = Object.values(global.plugins).filter(
  //await conn.sendFile(m.chat, thumb, 'fitur.jpg', `Total Fitur saat ini: ${totalf}`, m)
 
 
-let iyhkh = {
+conn.sendMessage(m.chat {
 text: (`Total Fitur: ${totalf}`),
 contextInfo: {
 externalAdReply: {
@@ -20,9 +20,9 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}, {quoted: m}}
+}}, {quoted: m}})
 
-await conn.sendMessage(m.chat, iyhkh, m, null)
+//await conn.sendMessage(m.chat, iyhkh, m, null)
 
 }
 
