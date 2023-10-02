@@ -1,4 +1,5 @@
-const { fnctions } = require("../lib/fnctions");
+
+import { fnctions } from "../lib/fnctions"
 
 let handler = async (m, { conn, text, command, usedPrefix, isOwner }) => {
   if (!await fnctions()) return;
@@ -41,7 +42,7 @@ handler.help = ['changelog', 'log', 'addchangelog <text>', 'rchangelog <text>']
 handler.tags = ['info']
 handler.premium = false
 
-handler.command = /^(changelog|log|addchangelog|rchangelog)$/i
+handler.command = /^(changelog|log|addchangelog|rchangelog|add)$/i
 handler.owner = false
 
 module.exports = handler
