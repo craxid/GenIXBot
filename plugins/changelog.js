@@ -1,5 +1,5 @@
 
-import { fnctions } from "../lib/fnctions"
+import { fnctions } from "../lib/fnctions.js"
 
 let handler = async (m, { conn, text, command, usedPrefix, isOwner }) => {
   if (!await fnctions()) return
