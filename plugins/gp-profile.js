@@ -21,7 +21,8 @@ let teg = `@${who.replace(/@.+/, '')}`
 let str = `
 ┌───「 *Profil* 」
 │ *🔖 Nama:* 
-   • ${registered ? '\n   • ' + name + ' ': ''}
+   • ${username} ${registered ? '\n   • ' + name + ' ': ''}
+   • @${who.replace(/@.+/, '')}
 │ *📱 Nomor:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 │ *🔗 Link:* wa.me/${who.split`@`[0]}${registered ? '\n▢ *🎈 Umur*: ' + age + ' Tahun' : ''}
 │ *⚠️ Peringatan:* ${warn}/${maxwarn}
@@ -30,7 +31,7 @@ let str = `
 │ *⬆️ XP*: Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `bisa untuk meningkatkan level *${usedPrefix}levelup*` : `Kurang _*${math}xp*_ untuk naik ke tingkat berikutnya`}
 │ *🏆 Rank:* ${role}
 │ *📇 Terdaftar:* ${registered ? 'Ya': 'Tidak'}
-▢ *⭐ Premium*: ${prem ? 'Ya' : 'Tidak'}
+│ *⭐ Premium*: ${prem ? 'Ya' : 'Tidak'}
 └──────────────`
     //conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
    let lepellu = ('Level:')
