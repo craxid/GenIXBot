@@ -32,7 +32,7 @@ externalAdReply: {
 title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.ncnl.eu.org:40383'),
+sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|craft.pe:19132'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
@@ -40,7 +40,7 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-		m.reply(`👾 Server sedang offline\n\nHost: play.ncnl.eu.org\nPort: 40383`)
+		m.reply(`👾 Server sedang offline\n\nHost: craf\nPort: 19132`)
 	}
 //end
 
