@@ -27,6 +27,6 @@ renderLargerThumbnail: false
 }
 
 handler.help = ['totalfitur']
-handler.tags = ['info']
+handler.tags = ['main']
 handler.command = ['totalfitur','total','fitur']
 export default handler
