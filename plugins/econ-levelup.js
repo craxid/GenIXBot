@@ -99,7 +99,7 @@ ${teks}
 *_Semakin sering berinteraksi dengan bot Semakin Tinggi level kamu_*
 `.trim()
 
-/*conn.sendMessage(m.chat, {
+conn.sendMessage(m.chat, {
 text: (teks, str),
 contextInfo: {
 externalAdReply: {
@@ -110,20 +110,8 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})*/
+}}}, {quoted: m})
 
-conn.sendMessage(m.chat, {text: (text, str),
-contextInfo: {
-    "externalAdReply": {
-        "title": (`${conn.getName(m.sender)}`),
-        "body": (`Level: ${user.level}`),
-        "showAdAttribution": true,
-        "mediaType": 1,
-        "sourceUrl": global.fgig,
-        "thumbnailUrl": pp,
-        "renderLargerThumbnail": true
-    }}}, 
-    {quoted: m})
         try {
             //const img = await (global.mikapp)
             //const img = await levelup(m, user.level)
