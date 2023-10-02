@@ -28,7 +28,7 @@ sourceUrl: ('https://api.zahwazein.xyz/'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}})
+}}}, {quoted: m})
 
 	}
 	catch {
