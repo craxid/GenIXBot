@@ -2,7 +2,7 @@
 import { fnctions } from "../lib/fnctions"
 
 let handler = async (m, { conn, text, command, usedPrefix, isOwner }) => {
-  if (!await fnctions()) return;
+  if (!await fnctions()) return
   let image = 'https://telegra.ph/file/e7e06f759a0549bff9a64.jpg'
   let caption = ''
   let changelogs = global.db.data.changelog || []
