@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let users = Object.entries(global.db.data.users).filter(user => user[1].banned)
     
     m.reply(`
-≡ *USUARIOS BANEADOS*
+≡ *PENGGUNA YANG DI BANNED*
 
 ▢ Total : *${users.length}* 
 
