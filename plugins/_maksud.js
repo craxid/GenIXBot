@@ -15,7 +15,8 @@ handler.before = function (m, { match, usedPrefix, text, args }) {
 		let sim = similarity(noPrefix, mean)
 		let som = sim * 100
 		let dann = `Apakah kamu mencari *${usedPrefix + mean}*?\n\n➲ Hasil Kemiripan *${parseInt(som)}%*`
-	 if (mean) this.sendMessage(m.chat, {
+
+if (mean) this.sendMessage(m.chat, {
 text: dann,
 contextInfo: {
 externalAdReply: {
