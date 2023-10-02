@@ -25,7 +25,6 @@ ${global.gz} *Port:* ${sevre.port}
 ${global.sb}
 
 List players
-Nama ${sevre.player.name.length}
 
 API version: ${sevre.debug.apiversion}
     `
