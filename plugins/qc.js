@@ -64,7 +64,7 @@ Amat besar kebencian di sisi Allah bahwa kamu mengatakan apa-apa yang tidak kamu
 */
 
 import { sticker } from '../lib/sticker.js'
-let axios from'axios'
+import axios from 'axios'
 
 let handler = async (m, { conn, args, text, usedPrefix, command, quoted }) => {
   if (!text) throw `
