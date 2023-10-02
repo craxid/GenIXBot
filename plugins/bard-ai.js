@@ -16,7 +16,7 @@ conn.sendMessage(m.chat, {text: res.respon.replace('Azz-ai','Mika Bot').replace(
 contextInfo: {
     "externalAdReply": {
         "title": global.namebot,
-        "body": ('ChatGPT AI'),
+        "body": ('Google Bard AI'),
         "showAdAttribution": true,
         "mediaType": 1,
         "sourceUrl": global.fgig,
