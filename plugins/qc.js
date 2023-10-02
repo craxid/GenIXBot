@@ -122,154 +122,154 @@ perak
 `
   if (text.length > 100) return conn.reply(m.chat, `🚩 Max 100 character.`, m)
 
-  let [color, ...message] = text.split(' ');
-  message = message.join(' ');
-  let pushname = m.pushName || "No Name";
-  let backgroundColor;
+  let [color, ...message] = text.split(' ')
+  message = message.join(' ')
+  let pushname = m.pushName || "No Name"
+  let backgroundColor
 
   switch(color) {
       case 'pink':
-      backgroundColor = '#f68ac9';
-      break;
+      backgroundColor = '#f68ac9'
+      break
        case 'biru':
-      backgroundColor = '#6cace4';
-      break;
+      backgroundColor = '#6cace4'
+      break
       case 'merah':
-      backgroundColor = '#f44336';
-      break;
+      backgroundColor = '#f44336'
+      break
        case 'hijau':
-      backgroundColor = '#4caf50';
-      break;
+      backgroundColor = '#4caf50'
+      break
        case 'kuning':
-      backgroundColor = '#ffeb3b';
-      break;
+      backgroundColor = '#ffeb3b'
+      break
        case 'ungu':
-      backgroundColor = '#9c27b0';
-      break;
+      backgroundColor = '#9c27b0'
+      break
        case 'birutua':
-      backgroundColor = '#0d47a1';
-      break;
+      backgroundColor = '#0d47a1'
+      break
       case 'birumuda':
-      backgroundColor = '#03a9f4'; 
-      break;
+      backgroundColor = '#03a9f4' 
+      break
        case 'abu':
-      backgroundColor = '#9e9e9e';
-      break;
+      backgroundColor = '#9e9e9e'
+      break
        case 'orange':
-      backgroundColor = '#ff9800';
-      break;
+      backgroundColor = '#ff9800'
+      break
        case 'hitam':
-      backgroundColor = '#000000';
-      break;
+      backgroundColor = '#000000'
+      break
       case 'putih':
-      backgroundColor = '#ffffff';
-      break;
+      backgroundColor = '#ffffff'
+      break
       case 'teal':
-      backgroundColor = '#008080';
-      break;      
+      backgroundColor = '#008080'
+      break      
       case 'merahmuda':
-      backgroundColor = '#FFC0CB';
-      break;            
+      backgroundColor = '#FFC0CB'
+      break            
       case 'cokelat':
-      backgroundColor = '#A52A2A';
+      backgroundColor = '#A52A2A'
       case 'salmon':
-      backgroundColor = '#FFA07A'; 
-      break;     
+      backgroundColor = '#FFA07A' 
+      break     
       case 'magenta':
-      backgroundColor = '#FF00FF'; 
-      break;     
+      backgroundColor = '#FF00FF' 
+      break     
       case 'tan':
-      backgroundColor = '#D2B48C'; 
-       break;    
+      backgroundColor = '#D2B48C' 
+       break    
       case 'wheat':
-      backgroundColor = '#F5DEB3'; 
-       break;    
+      backgroundColor = '#F5DEB3' 
+       break    
        case 'deeppink':
-      backgroundColor = '#FF1493'; 
-       break;   
+      backgroundColor = '#FF1493' 
+       break   
        case 'api':
-      backgroundColor = '#B22222';  
-       break;  
+      backgroundColor = '#B22222'  
+       break  
        case 'birulangit':
-      backgroundColor = '#00BFFF';  
-       break; 
+      backgroundColor = '#00BFFF'  
+       break 
        case 'jingga':
-      backgroundColor = '#FF7F50';  
-       break;          
+      backgroundColor = '#FF7F50'  
+       break          
       case 'birulangitcerah':
-      backgroundColor = '#1E90FF';   
-       break; 
+      backgroundColor = '#1E90FF'   
+       break 
        case 'hotpink':
-      backgroundColor = '#FF69B4';   
-       break; 
+      backgroundColor = '#FF69B4'   
+       break 
        case 'birumudalangit':
-      backgroundColor = '#87CEEB';   
-       break; 
+      backgroundColor = '#87CEEB'   
+       break 
        case 'hijaulaut':
-      backgroundColor = '#20B2AA';   
-       break; 
+      backgroundColor = '#20B2AA'   
+       break 
        case 'merahtua':
-      backgroundColor = '#8B0000';   
-       break; 
+      backgroundColor = '#8B0000'   
+       break 
        case 'oranyemerah':
-      backgroundColor = '#FF4500';   
-       break; 
+      backgroundColor = '#FF4500'   
+       break 
        case 'cyan':
-      backgroundColor = '#48D1CC';   
-       break; 
+      backgroundColor = '#48D1CC'   
+       break 
        case 'ungutua':
-      backgroundColor = '#BA55D3';   
-       break; 
+      backgroundColor = '#BA55D3'   
+       break 
       case 'hijaulumut':
-      backgroundColor = '#00FF7F';   
-       break; 
+      backgroundColor = '#00FF7F'   
+       break 
        case 'hijaugelap':
-      backgroundColor = '#008000';   
-       break; 
+      backgroundColor = '#008000'   
+       break 
        case 'birulaut':
-      backgroundColor = '#191970';   
-       break; 
+      backgroundColor = '#191970'   
+       break 
        case 'oranyetua':
-      backgroundColor = '#FF8C00';   
-       break; 
+      backgroundColor = '#FF8C00'   
+       break 
        case 'ungukehitaman':
-      backgroundColor = '#9400D3';   
-       break; 
+      backgroundColor = '#9400D3'   
+       break 
        case 'fuchsia':
-      backgroundColor = '#FF00FF';   
-       break; 
+      backgroundColor = '#FF00FF'   
+       break 
        case 'magentagelap':
-      backgroundColor = '#8B008B';   
-       break;                      
+      backgroundColor = '#8B008B'   
+       break                      
        case 'abu-abutua':
-      backgroundColor = '#2F4F4F';   
-       break;        
+      backgroundColor = '#2F4F4F'   
+       break        
        case 'peachpuff':
-      backgroundColor = '#FFDAB9';   
-       break;        
+      backgroundColor = '#FFDAB9'   
+       break        
        case 'hijautua':
-       backgroundColor = '#BDB76B';   
-       break;        
+       backgroundColor = '#BDB76B'   
+       break        
        case 'merahgelap':
-      backgroundColor = '#DC143C';   
-       break;        
+      backgroundColor = '#DC143C'   
+       break        
        case 'goldenrod':
-      backgroundColor = '#DAA520';   
-       break;        
+      backgroundColor = '#DAA520'   
+       break        
        case 'abu-abutua':
-      backgroundColor = '#696969';   
-       break;        
+      backgroundColor = '#696969'   
+       break        
       case 'ungugelap':
-      backgroundColor = '#483D8B';   
-       break;        
+      backgroundColor = '#483D8B'   
+       break        
        case 'emas':
-      backgroundColor = '#FFD700';   
-       break;        
+      backgroundColor = '#FFD700'   
+       break        
        case 'perak':
-      backgroundColor = '#C0C0C0';   
-       break;
+      backgroundColor = '#C0C0C0'   
+       break
       default:
-      throw 'Warna yang dipilih tidak tersedia.';
+      throw 'Warna yang dipilih tidak tersedia.'
   }
 conn.sendMessage(m.chat, {
 		react: {
@@ -300,16 +300,16 @@ try {
         replyMessage: {},
       },
     ],
-  };  
+  }  
 
   let response = await axios.post('https://bot.lyo.su/quote/generate', obj, {
     headers: {
       'Content-Type': 'application/json',
     },
-  });  
+  })  
 
-  let buffer = Buffer.from(response.data.result.image, 'base64');
-  let stickerFile = await sticker(buffer, false, global.packname, global.author);
+  let buffer = Buffer.from(response.data.result.image, 'base64')
+  let stickerFile = await sticker(buffer, false, global.packname, global.author)
 conn.sendMessage(m.chat, {
 		react: {
 			text: '✅',
@@ -318,14 +318,14 @@ conn.sendMessage(m.chat, {
 	})
   if (stickerFile) return conn.sendFile(m.chat, stickerFile, 'sticker.webp', '', m, null)
   } catch (error) {
-    console.log(error);
-    throw '*Server Bermasalah Coba Lagi*';
+    console.log(error)
+    throw '*Server Bermasalah Coba Lagi*'
   }
-};
+}
 
 handler.help = ['qc'].map(v => v + ' <warna> <text> ')
-handler.tags = ['sticker'];
-handler.command = /^(qc)$/i;
+handler.tags = ['sticker']
+handler.command = /^(qc)$/i
 handler.premium = false
 handler.diamond = true
 export default handler
