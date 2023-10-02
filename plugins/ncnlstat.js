@@ -26,7 +26,7 @@ ${global.sb}
 
 API version: ${sevre.debug.apiversion}`
     
-conn.sendMessage(m.chat, {
+await conn.sendMessage(m.chat, {
 text: (text).replace('true','Online','false','Offline'),
 contextInfo: {
 externalAdReply: {
