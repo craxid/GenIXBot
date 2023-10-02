@@ -47,7 +47,7 @@ renderLargerThumbnail: false
 
 }
 handler.help = ['mcstalk']
-handler.customPrefix = /^nc/i
+handler.customPrefix = /^mcstalk$/i
 handler.command = new RegExp
 handler.group = true
 
