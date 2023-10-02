@@ -47,20 +47,7 @@ sourceUrl: global.fgig,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})
-
-/*conn.sendMessage(m.chat, {text: str,
-contextInfo: {
-    "externalAdReply": {
-        "title": (`${username}`),
-        "body": (`Level: ${level}`),
-        "showAdAttribution": true,
-        "mediaType": 1,
-        "sourceUrl": global.fgig,
-        "thumbnailUrl": pp,
-        "renderLargerThumbnail": true
-    }}}, 
-    {quoted: m})*/
+}}}, {quoted: m})
     
     m.react(done)
 
