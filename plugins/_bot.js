@@ -12,7 +12,7 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
     let username = conn.getName(who)
  
 
-/*const iyhkh = {
+/*conn.sendMessage(m.chat, {
 text: mika,
 contextInfo: {
 externalAdReply: {
