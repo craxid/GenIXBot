@@ -37,7 +37,7 @@ sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|craft.pe:19132'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}})
+}}}, {quoted: m})
 
 	}
 	catch {
