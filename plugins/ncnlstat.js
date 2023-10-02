@@ -27,7 +27,7 @@ ${global.sb}
 API version: ${sevre.debug.apiversion}`
     
 conn.sendMessage(m.chat, {
-text: (`${tegs}`),
+text: (text),
 contextInfo: {
 externalAdReply: {
 title: (`Server Stalker`),
