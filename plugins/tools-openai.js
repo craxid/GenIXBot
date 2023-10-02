@@ -22,7 +22,7 @@ contextInfo: {
         "body": ('ChatGPT AI'),
         "showAdAttribution": true,
         "mediaType": 1,
-        "sourceUrl": global.dygp,
+        "sourceUrl": global.fgig,
         "thumbnailUrl": global.ppmika,
         "renderLargerThumbnail": false
     }}}, 
