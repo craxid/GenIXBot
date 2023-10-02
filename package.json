@@ -1,5 +1,5 @@
 { 
-    "name": "Akebi-chan",
+    "name": "Mika-chan",
     "version": "2.2.2",
     "description": "Customizable WhatsApp Bot",
     "main": "index.js",
@@ -10,7 +10,7 @@
         "plugins": "plugins"
     },
     "scripts": {
-        "start": "node index.js",
+        "start": "pm2 start index.js --cron "0*,
         "test": "node test.js",
         "test2": "nodemon index.js"
     },
