@@ -21,7 +21,7 @@ let teg = `@${who.replace(/@.+/, '')}`
 let str = `
 ┌───「 *Profil* 」
 │ *🔖 Nama:* 
-   • ${username} ${registered ? '\n   • ' + name + ' ': ''}
+   • ${registered ? '\n
    • @${who.replace(/@.+/, '')}
 │ *📱 Nomor:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 │ *🔗 Link:* wa.me/${who.split`@`[0]}${registered ? '\n▢ *🎈 Umur*: ' + age + ' Tahun' : ''}
