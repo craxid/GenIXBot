@@ -24,7 +24,7 @@ ${global.gz} *IP:* ${sevre.ip}
 ${global.gz} *Port:* ${sevre.port}
 ${global.sb}
 
-API version: ${sevre.debug.apiversion}`
+`
     
 await conn.sendMessage(m.chat, {text: tegs,
 contextInfo: {
