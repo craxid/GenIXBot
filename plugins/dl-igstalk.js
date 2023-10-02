@@ -32,7 +32,7 @@ sourceUrl: (`https://www.instagram.com/${res.result.username.replace(/^@/, '')}`
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}}, res)
+}}}, {quoted: m})
      
 //await conn.sendFile(m.chat, , teks, m)
       } catch {
