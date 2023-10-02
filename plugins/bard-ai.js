@@ -7,9 +7,7 @@ m.react('💬')
 
 	try {
 	    let bard = await fetch(`https://api.azz.biz.id/api/bard?q=${text}&key=mangea`)
-	    
-	    let gbard = await
-	    
+
         let res = await bard.json()
         
 //await m.reply(res.respon)
