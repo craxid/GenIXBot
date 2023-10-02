@@ -7,7 +7,8 @@ import moment = require("moment-timezone"
 import { MessageType } from '@adiwajshing/baileys'
 
 let handler  = async (m, { conn, command }) => {
-    
+   await m.reply(wait) 
+   
      let time = moment.tz('Asia/Jakarta').format("HH:mm:ss")
      
      let username = conn.getName(m.sender)
