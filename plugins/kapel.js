@@ -2,7 +2,7 @@
 import fs from "fs"
 import axios from "axios"
 import fetch from "node-fetch"
-import { color } from '../lib/color'
+import { color } from '../lib/color.js'
 import moment = require("moment-timezone"
 import { MessageType } from '@adiwajshing/baileys'
 
@@ -28,7 +28,7 @@ handler.help = ['ppcouple']
 handler.tags = ['img']
 handler.command = /^ppcouple|ppcp$/i
 handler.owner = false
-handler.limit = true
+handler.diamond = true
 handler.premium = false
 handler.group = false
 handler.private = false
