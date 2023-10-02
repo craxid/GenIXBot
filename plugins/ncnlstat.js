@@ -27,7 +27,7 @@ ${global.sb}
 API version: ${sevre.debug.apiversion}`
     
 await conn.sendMessage(m.chat, {
-text: (text).replace('true','Online','false','Offline'),
+text: (text),
 contextInfo: {
 externalAdReply: {
 title: (`Server Stalker`),
