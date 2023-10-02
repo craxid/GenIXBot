@@ -327,5 +327,5 @@ handler.help = ['qc'].map(v => v + ' <warna> <text> ')
 handler.tags = ['sticker'];
 handler.command = /^(qc)$/i;
 handler.premium = false
-handler.limit = true
-module.exports = handler;
+handler.diamond = true
+export default handler
