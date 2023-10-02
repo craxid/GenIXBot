@@ -19,7 +19,7 @@ let handler = async (m, { conn, text, command, usedPrefix, isOwner }) => {
       break
       
     case 'addchangelog':
-    ca
+    case 'addcl':
       if (!isOwner) return conn.reply(m.chat, 'Perintah ini hanya dapat digunakan oleh *Owner*!', m)
       if (!text) return conn.reply(m.chat, `Contoh: ${usedPrefix}addchangelog <text>`, m)
       changelogs.unshift(`${new Date().toDateString()} - ${text}`)
