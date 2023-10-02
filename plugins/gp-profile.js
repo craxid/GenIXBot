@@ -48,7 +48,6 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}}, {quoted: m})
-    
     m.react(done)
 
 }
