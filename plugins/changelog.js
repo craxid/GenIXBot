@@ -39,10 +39,10 @@ let handler = async (m, { conn, text, command, usedPrefix, isOwner }) => {
 }
 
 handler.help = ['changelog', 'log', 'addchangelog <text>', 'rchangelog <text>']
-handler.tags = ['info']
+handler.tags = ['owner']
 handler.premium = false
 
-handler.command = /^(changelog|log|addchangelog|rchangelog|add)$/i
+handler.command = /^(changelog|log|addchangelog|rchangelog|addcl)$/i
 handler.owner = false
 
 module.exports = handler
