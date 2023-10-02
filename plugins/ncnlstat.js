@@ -10,31 +10,29 @@ let sevre = await ncnlstat.json()
 
 let tegs = `
 ${global.htki} *NCNL Server* ${global.htka}
-${global.gz} *Version:* ${sevre.version}
+${global.gz} *Versi:* ${sevre.version}
 ${global.gz} *MOTD:* ${sevre.motd.clean}
-${global.gz} *World Name:* ${sevre.map.raw}
-${global.gz} *Game Mode:* ${sevre.gamemode}
+${global.gz} *Nama Dunia:* ${sevre.map.clean}
+${global.gz} *Mode:* ${sevre.gamemode}
 ${global.gz} *Player:* ${sevre.players.online}/${sevre.players.max}
 ${global.gz} *Status:* ${sevre.online}
 ${global.sb}
 
 ${global.htki} *HOST & PORT* ${global.htka}
 ${global.gz} *Host:* ${sevre.hostname}
-${global.gz} *IP:* ${sevre.ip}
 ${global.gz} *Port:* ${sevre.port}
 ${global.sb}
 
-API version: ${sevre.debug.apiversion}
-    `
+API version: ${sevre.debug.apiversion}`
     
 conn.sendMessage(m.chat, {
-text: (`${tegs}`).replace('true','Online').replace('undefined','tidak diketahui'),
+text: (`${tegs}`).replace('true','Online','false','Offline'),
 contextInfo: {
 externalAdReply: {
 title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
-sourceUrl: ('minecraft://?addExternalServer=NCNL Network|ncnl.aternos.me:17810'),
+sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|play.ncnl.eu.org:40383'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
@@ -42,14 +40,14 @@ renderLargerThumbnail: false
 
 	}
 	catch {
-		m.reply(`👾 Server sedang offline\n\nHost: craft.pe`)
+		m.reply(`👾 Server sedang offline\n\nHost: play.ncnl.eu.org\nPort: 40383`)
 	}
 //end
 
 }
 handler.help = ['server']
-handler.customPrefix = /^mcstalk|mcstalk$/i
+handler.customPrefix = /^ncnl|server$/i
 handler.command = new RegExp
-handler.group = false
+handler.group = true
 
 export default handler
