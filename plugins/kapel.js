@@ -6,8 +6,10 @@ import { color } from '../lib/color.js'
 import moment = require("moment-timezone"
 import { MessageType } from '@adiwajshing/baileys'
 
-    let handler  = async (m, { conn, command }) => {
-     const time = moment.tz('Asia/Jakarta').format("HH:mm:ss")
+let handler  = async (m, { conn, command }) => {
+    
+     let time = moment.tz('Asia/Jakarta').format("HH:mm:ss")
+     
      let username = conn.getName(m.sender)
      console.log(color('[COMMAND]', 'pink'), color(command, 'yellow'), color(time, 'white'), color('Name:', 'yellow'), color(username, 'cyan'), color('Number:', 'yellow'), color(m.sender.split('@')[0], 'cyan'))
      let data = fs.readFileSync('./lib/ppcouple.js');
@@ -35,7 +37,7 @@ handler.private = false
 
 export default handler
 
-const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
+let fetchJson = (url, options) => new Promise(async (resolve, reject) => {
     fetch(url, options)
         .then(response => response.json())
         .then(json => {
@@ -48,7 +50,7 @@ const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
 })
 
 
-const getBuffer = async (url, options) => {
+let getBuffer = async (url, options) => {
 	try {
 		options ? options : {}
 		const res = await axios({
