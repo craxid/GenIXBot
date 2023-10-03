@@ -9,9 +9,9 @@
         "src": "src",
         "plugins": "plugins"
     },
-    "scripts": {
-        "start": "pm2 start index.js --name Mika-chan",
-        "restart": "pm2 restart Mika-chan"
+"scripts": {
+"start": "pm2 start index.js --name Mika-chan",
+"restart": "pm2 restart Mika-chan"
         
     },
     "keywords": [
