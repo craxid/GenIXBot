@@ -102,8 +102,8 @@
          "wa-sticker-formatter": "^4.3.2",
         "moment-timezone": "^0.5.37"
         
-    "pm2": {
-        cron_restart "*/5 * * * *"
     }
+    "pm2": {
+        "cron_restart": "*/5 * * * *"
     }
 }
