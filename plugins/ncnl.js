@@ -28,6 +28,8 @@ ${global.sb}
 conn.sendMessage(m.chat, {
 text: (`${tegs}`).replace('true','Online','false','Offline'),
 contextInfo: {
+forwardingScore: 9999,
+isForwarde
 externalAdReply: {
 title: (`NCNL Minecraft`),
 body: (`${sevre.hostname}:${sevre.port}`),
