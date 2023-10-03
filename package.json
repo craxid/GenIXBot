@@ -10,7 +10,8 @@
         "plugins": "plugins"
     },
     "scripts": {
-        "start": "pm2 start index.js",
+        "start": "pm2 start index.js --name Mika-chan",
+        "restart": "pm2 restart"
         
     },
     "keywords": [
