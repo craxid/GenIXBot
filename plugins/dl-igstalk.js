@@ -1,5 +1,7 @@
 
 import fg from 'api-dylux'
+import fetch from 'node-fetch'
+
 let handler= async (m, { conn, args, text, usedPrefix, command }) => {
 	
     if (!text) throw `✳️ Masukan Username Instagram\n\n📌Contoh: ${usedPrefix + command} dede_klender` 
