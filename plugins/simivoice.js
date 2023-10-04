@@ -4,8 +4,9 @@ let handler = async (m, { text }) => {
 
 if (!text) throw `✳️ Masukkan Model dan teks\n\nContoh: !voice siti Hai\n\nDaftar Suara
 
-Siti 
-Dani
+Ardi 
+Gadis
+Jannie
 
 `
 m.react(rwait)
