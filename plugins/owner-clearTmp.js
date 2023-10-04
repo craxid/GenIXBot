@@ -6,7 +6,7 @@ import { readdirSync, unlinkSync, rmSync } from 'fs';
 
 let handler = async (m, { conn, __dirname, args }) => {
 
-  m.reply(`✅ Se limpió la carpeta *tmp + sessions*`);
+  m.reply(`✅ Verhasil menggapus *tmp + session*`);
   m.react(done);
   // -- eliminar archivos temporales ---
   const tmpDirs = [tmpdir(), join(__dirname, '../tmp')];
@@ -15,7 +15,7 @@ let handler = async (m, { conn, __dirname, args }) => {
   tmpFiles.forEach((file) => unlinkSync(file));
 
   // -- eliminar sesiones del bot ---
-  const Sessions = "./sessions";
+  const Sessions = "./session";
   readdirSync(Sessions).forEach((file) => {
     if (file !== 'creds.json') {
       unlinkSync(`${Sessions}/${file}`, { recursive: true, force: true });
