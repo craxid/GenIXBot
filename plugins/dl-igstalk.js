@@ -24,8 +24,8 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
 if (teks) return conn.sendMessage(m.chat, {
 text: teks,
 contextInfo: {
-forwardScore: 1000,
-isForwarding: 
+forwardingScore: 1000,
+isForwarded: true,
 externalAdReply: {
 title: ('Instagram Stalker'),
 body: (`${res.result.username}`),
