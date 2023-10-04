@@ -631,10 +631,11 @@ renderLargerThumbnail: true
 
 conn.sendMessage(m.chat, {text: msg,
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
     "externalAdReply": {
         "title": ('Mika Misono Bot'),
         "body": (`Jangan spam bot`),
-        "showAdAttribution": true,
         "mediaType": 1,
         "sourceUrl": global.dygp,
         "thumbnailUrl": global.mikasampul,
