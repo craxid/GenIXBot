@@ -43,7 +43,7 @@ handler.private = false
 
 export default handler
 
-const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
+let fetchJson = (url, options) => new Promise(async (resolve, reject) => {
     fetch(url, options)
         .then(response => response.json())
         .then(json => {
@@ -56,7 +56,7 @@ const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
 })
 
 
-const getBuffer = async (url, options) => {
+let getBuffer = async (url, options) => {
 	try {
 		options ? options : {}
 		const res = await axios({
