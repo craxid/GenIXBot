@@ -2,12 +2,11 @@
 import fetch from 'node-fetch'
 let handler = async (m, { text }) => {
 
-if (!text) throw `✳️ Masukkan Teks\n\nContoh: !simivoice Hai`
+if (!text) throw `✳️ Masukkan Teks\n\nContoh: !voice Hai`
 m.react(rwait)
 
 try {
-let model = teks
-let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/${teks}?query=${text}`)
+let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/aoi?query=${text}`)
 
 await m.reply(simiv.data)
 
