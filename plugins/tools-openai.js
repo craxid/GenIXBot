@@ -17,10 +17,11 @@ m.react('💬')
         
 conn.sendMessage(m.chat, {text: res.respon.replace('Azz-ai','Mika Bot').replace('yang terdiri dari Miftah dan Riki', 'dari ZuroX Project').replace('Miftah dan Riki','ZuroX Project'),
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
     "externalAdReply": {
         "title": global.namebot,
         "body": ('ChatGPT AI'),
-        "showAdAttribution": true,
         "mediaType": 1,
         "sourceUrl": global.fgig,
         "thumbnailUrl": global.ppmika,
