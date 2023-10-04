@@ -14,13 +14,14 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
 
 conn.sendMessage(m.chat, {text: mika,
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
 externalAdReply: {
 title: (`${username}`),
 body: ('Aku Online Kak!'),
 thumbnailUrl: mikapp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
-showAdAttribution: true,
 renderLargerThumbnail: true
 }}},
 {quoted: m})
