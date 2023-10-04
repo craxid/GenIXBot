@@ -5,7 +5,7 @@ let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 await m.reply(wait)
 
 try {
-let ncnls = await fetch(`https://api.mcsrvstat.us/bedrock/3/craft.pe`)
+let ncnls = await fetch(`https://api.mcsrvstat.us/bedrock/3/craft.pe:19132`)
 let sevre = await ncnls.json()
 
 let tegs = `
