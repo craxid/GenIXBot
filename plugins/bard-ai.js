@@ -19,7 +19,6 @@ isForwarded: true,
     "externalAdReply": {
         "title": global.namebot,
         "body": ('Google Bard AI'),
-        "showAdAttribution": true,
         "mediaType": 1,
         "sourceUrl": global.fgig,
         "thumbnailUrl": global.ppmika,
