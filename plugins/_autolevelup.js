@@ -30,13 +30,14 @@ let thumb = 'https://telegra.ph/file/bd044275940ed1b62efcd.jpg'
 conn.sendMessage(m.chat, {
 text: teks,
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
 externalAdReply: {
 title: (`${name}`),
 body: (`Level: ${user.level}`),
 thumbnailUrl: pp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
-showAdAttribution: true,
 renderLargerThumbnail: true
 }}}, {quoted: m})
 
