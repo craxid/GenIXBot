@@ -25,7 +25,7 @@ let handler = async (m, { args }) => {
     
 conn.sendMessage(m.chat, {text: wea,
 contextInfo: {
-forwardingScore: 
+forwardingScore: 9999
 isForwarded: true,
 externalAdReply: {
 title: ('Laporan Cuaca'),
@@ -33,7 +33,6 @@ body: (name),
 thumbnailUrl: global.bmkg,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
-showAdAttribution: true,
 renderLargerThumbnail: true
 }}}, {quoted: m})
     
