@@ -5,7 +5,7 @@ let thumb = 'https://telegra.ph/file/016c521fb63069af28cec.jpg'
 await m.reply(wait)
 
 try {
-let ncnls = await fetch(`https://api.mcsrvstat.us/bedrock/3/craft.pe:19132`)
+let ncnls = await fetch(`https://api.mcsrvstat.us/bedrock/3/craft.pe`)
 let sevre = await ncnls.json()
 
 let tegs = `
@@ -28,13 +28,14 @@ ${global.sb}
 conn.sendMessage(m.chat, {
 text: (`${tegs}`).replace('true','Online','false','Offline'),
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
 externalAdReply: {
 title: (`Server Stalker`),
 body: (`${sevre.hostname}:${sevre.port}`),
 thumbnailUrl: thumb,
 sourceUrl: ('minecraft://?addExternalServer=NCNL Legacy|craft.pe:19132'),
 mediaType: 1,
-showAdAttribution: true,
 renderLargerThumbnail: false
 }}}, {quoted: m})
 
