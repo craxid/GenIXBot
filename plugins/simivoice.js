@@ -34,8 +34,9 @@ case 'shiori':
 case 'dimas':
 case 'tuti':
 case 'jajang':
+let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/siti?query=${text}`)
 
-await m.reply(simiv.data)
+conn.sendFile(simiv.data)
 
 m.react(done)
 }
