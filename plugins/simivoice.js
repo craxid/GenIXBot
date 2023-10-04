@@ -2,7 +2,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { text }) => {
 
-if (!text) throw `✳️ Masukkan Teks\n\nContoh: !simivoice Hai`
+if (!text) throw `✳️ Masukkan Model dan teks\n\nContoh: !voice siti Hai\n\nDafta`
 m.react(rwait)
 
 try {
