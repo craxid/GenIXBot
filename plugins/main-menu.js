@@ -205,10 +205,11 @@ renderLargerThumbnail: false
 
 conn.sendMessage(m.chat, {text: (text.trim()),
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
     "externalAdReply": {
         "title": ('Mika Misono Bot'),
         "body": (`${username}`),
-        "showAdAttribution": true,
         "mediaType": 1,
         "sourceUrl": global.fgig,
         "thumbnailUrl": global.ppmika,
