@@ -102,13 +102,14 @@ ${teks}
 conn.sendMessage(m.chat, {
 text: (teks, str),
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
 externalAdReply: {
 title: (`${conn.getName(m.sender)}`),
 body: (`Level: ${user.level}`),
 thumbnailUrl: pp,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
-showAdAttribution: true,
 renderLargerThumbnail: true
 }}}, {quoted: m})
 
