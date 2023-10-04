@@ -6,6 +6,7 @@ if (!text) throw `✳️ Masukkan Teks\n\nContoh: !simivoice Hai`
 m.react(rwait)
 
 try {
+let model = teks
 let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/aoi?query=${text}`)
 
 await m.reply(simiv.data)
