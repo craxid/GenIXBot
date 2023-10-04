@@ -1,28 +1,23 @@
+
 import fetch from 'node-fetch'
-import axios from 'axios'
-let handler = m => m
+let handler = async (m, { text }) => {
 
-handler.before = async (m) => {
-    let chat = global.db.data.chats[m.chat]
-    if (chat.simivoice && !chat.isBanned ) {
-        if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return
-        if (!m.text) return
-        let api = await fetch(`https://api.simsimi.net/v2/?text=${m.text}&lc=id`)
-  let res = await api.json()
-  
-  let id = 'id_001'
-  const { data } = await axios.post("https://tiktok-tts.weilnet.workers.dev/api/generation", {
-    "text": res.success,
-    "voice": id
-})
-conn.sendMessage(m.chat, { audio: Buffer.from(data.data, "base64"), mimetype: "audio/mp4" }, {quoted: m})
-        return !0
-    }
-    return true
+if (!text) throw `✳️ Masukkan Teks\n\nContoh: !simivoice Hai`
+m.react(rwait)
+
+try {
+let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
+
+await m.reply(simiv.data)
+
+m.react(done)
 }
-
-handler.help = ['simiv','simivoice']
+catch {
+		m.reply(`❎ Error: Ada sebuah kesalahan`)
+	}
+}
+handler.help = ['simivoice', 'simiv'].map(v => v + ' <teks>')
 handler.tags = ['fun']
-handler.command = ['simiv','simivoice']
+handler.command = /^(simivoice|simiv)$/i
 
 export default handler
