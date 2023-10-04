@@ -23,17 +23,17 @@ switch (type) {
 /*try {
 let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/siti?query=${text}`)*/
 
-case 'Ardi':
-case 'Gadis':
-'jannie'
+case 'ardi':
+case 'gadis':
+case 'jannie'
 'aoi'
-'Daichi'
-'Mayu'
-'Naoki'
-'Shiori'
-'Dimas'
-'Tuti'
-'Jajang'
+'daichi'
+'mayu'
+'naoki'
+'shiori'
+'dimas'
+'tuti'
+'jajang'
 
 await m.reply(simiv.data)
 
