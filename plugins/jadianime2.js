@@ -1,6 +1,6 @@
 /*
 import uploadImage from '../lib/uploadImage.js'
-import { makemeazombie toanime } from 'betabotz-tools'
+import { toanime } from 'betabotz-tools'
 
 let zombie = new makemeazombie()
 
@@ -11,7 +11,7 @@ let mime = (q.msg || q).mimetype || ''
 await m.reply(wait)
 
 if (!mime) {
- return m.reply('Kirim/Balas gambar dengan caption *.jadizombie*')
+ return m.reply('Kirim/Balas gambar dengan caption *.jadianime2*')
 
  }
 let media = await q.download()
@@ -26,8 +26,8 @@ zombie.transform({ photo: `${gambar}`, destinyFolder: './tmp'
  })
 }
 
-handler.command = ['jadizombie']
-handler.help = ['jadizombie']
+handler.command = ['jadianime2']
+handler.help = ['jadianime2']
 handler.tags = ['ai']
 handler.diamond = 3
 
