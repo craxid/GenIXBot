@@ -24,13 +24,14 @@ let handler= async (m, { conn, args, text, usedPrefix, command }) => {
 if (teks) return conn.sendMessage(m.chat, {
 text: teks,
 contextInfo: {
+forwardScore: 1000,
+isForwarding: 
 externalAdReply: {
 title: ('Instagram Stalker'),
 body: (`${res.result.username}`),
 thumbnailUrl: (`${res.result.profile_pic_url}`),
 sourceUrl: (`https://www.instagram.com/${res.result.username.replace(/^@/, '')}`),
 mediaType: 1,
-showAdAttribution: true,
 renderLargerThumbnail: false
 }}}, {quoted: m})
      
