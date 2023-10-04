@@ -25,6 +25,8 @@ let handler = async (m, { args }) => {
     
 conn.sendMessage(m.chat, {text: wea,
 contextInfo: {
+forwardingScore: 
+isForwarded: true,
 externalAdReply: {
 title: ('Laporan Cuaca'),
 body: (name),
