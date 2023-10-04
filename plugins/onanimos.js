@@ -1,5 +1,5 @@
 
-import { MessageType } from "@adiwajshing/baileys"
+import { MessageType } from '@whiskeysockets/baileys'
 
 async function handler(m, { command, usedPrefix }) {
     command = command.toLowerCase()
