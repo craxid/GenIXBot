@@ -10,6 +10,9 @@ Jannie
 Aoi
 Daichi
 Mayu
+Naoki
+Shiori
+Dimas
 
 `
 m.react(rwait)
