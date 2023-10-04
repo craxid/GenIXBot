@@ -13,12 +13,13 @@ Mayu
 Naoki
 Shiori
 Dimas
-
+Tuti
+Jajang
 `
 m.react(rwait)
 
 try {
-let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/ai/simivoice?query=${text}`)
+let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/siti?query=${text}`)
 
 await m.reply(simiv.data)
 
