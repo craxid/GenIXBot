@@ -1,6 +1,6 @@
 
 import fetch from 'node-fetch'
-let handler = async (m, { text }) => {
+let handler = async (m, { conn, text, command }) => {
 
 if (!text) throw `✳️ Masukkan Model dan teks\n\nContoh: !voice siti Hai\n\nDaftar Suara
 
