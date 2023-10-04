@@ -1,6 +1,6 @@
 
 import fetch from 'node-fetch'
-let handler = async (m, { conn, text, command }) => {
+let handler = async (m, { text }) => {
 
 if (!text) throw `✳️ Masukkan Model dan teks\n\nContoh: !voice siti Hai\n\nDaftar Suara
 
@@ -17,26 +17,11 @@ Tuti
 Jajang
 `
 m.react(rwait)
-let type = (command).toLowerCase()
-switch (type) {
 
-/*try {
-let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/siti?query=${text}`)*/
+try {
+let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/siti?query=ain${text}`)
 
-case 'ardi':
-case 'gadis':
-case 'jannie':
-case 'aoi':
-case 'daichi':
-case 'mayu':
-case 'naoki':
-case 'shiori':
-case 'dimas':
-case 'tuti':
-case 'jajang':
-let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/${command}?query=${text}`)
-
-conn.sendFile(simiv.data)
+await m.reply(simiv.data)
 
 m.react(done)
 }
