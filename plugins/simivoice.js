@@ -25,15 +25,15 @@ let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/siti?query=${
 
 case 'Ardi':
 case 'Gadis':
-Jannie
-Aoi
-Daichi
-Mayu
-Naoki
-Shiori
-Dimas
-Tuti
-Jajang'
+'jannie'
+'aoi'
+'Daichi'
+'Mayu'
+'Naoki'
+'Shiori'
+'Dimas'
+'Tuti'
+'Jajang'
 
 await m.reply(simiv.data)
 
