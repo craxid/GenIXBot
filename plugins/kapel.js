@@ -4,7 +4,7 @@ import axios from "axios"
 import fetch from "node-fetch"
 import { color } from '../lib/color.js'
 import moment = require("moment-timezone"
-import { MessageType } from '@whiskeysockets/baileys'
+//import { MessageType } from '@whiskeysockets/baileys'
 
 let handler  = async (m, { conn, command }) => {
    await m.reply(wait) 
