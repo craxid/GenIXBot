@@ -7,6 +7,9 @@ if (!text) throw `✳️ Masukkan Model dan teks\n\nContoh: !voice siti Hai\n\nD
 Ardi 
 Gadis
 Jannie
+Aoi
+Daichi
+Mayu
 
 `
 m.react(rwait)
