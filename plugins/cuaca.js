@@ -33,8 +33,7 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}}
-{quoted: m})
+}}}, {quoted: m})
     
   } catch (e) {
     return "Error: Lokasi tidak ditemukan!"
