@@ -2,8 +2,9 @@
 import fetch from 'node-fetch'
 let handler = async (m, { text }) => {
 
-if (!text) throw `✳️ Masukkan Model dan teks\n\nContoh: !voice siti Hai\n\nDaftar Suara
+if (!text) throw `✳️ Masukkan model dan teks\n\nContoh: !voice siti Hai
 
+*Daftar Suara:*
 Ardi 
 Gadis
 Jannie
