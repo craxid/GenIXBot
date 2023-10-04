@@ -17,9 +17,13 @@ Tuti
 Jajang
 `
 m.react(rwait)
+let type = (command).toLowerCase()
+switch (type) {
 
-try {
-let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/siti?query=${text}`)
+/*try {
+let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/siti?query=${text}`)*/
+
+
 
 await m.reply(simiv.data)
 
