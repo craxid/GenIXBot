@@ -36,7 +36,7 @@ handler.before = async (m) => {
   let res = await api.json()
   
   let id = 'id_001'
-  const { data } = await axios.post("https://api.yanzbotz.my.id/api/tts/aoi?query=${res.success}", {
+  const { data } = await axios.post(`https://api.yanzbotz.my.id/api/tts/aoi?query=${res.success}`, {
     "text": res.success,
     "voice": id
 })
