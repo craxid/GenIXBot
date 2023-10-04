@@ -19,6 +19,9 @@ Jajang
 m.react(rwait)
 
 try {
+let model = text.split('|')[0] ? text.split('|')[0] : '-'
+  let teks2 = text.split('|')[1] ? text.split('|')[1] : '-'
+    
 let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/siti?query=ain${text}`)
 
 await m.reply(simiv.data)
