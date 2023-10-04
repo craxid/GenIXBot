@@ -30,10 +30,11 @@ let cetbot = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${m
 
 conn.sendMessage(m.chat, {text: res.result,
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
     "externalAdReply": {
         "title": global.botname,
         "body": nama,
-        "showAdAttribution": true,
         "mediaType": 1,
         "sourceUrl": global.fgig,
         "thumbnailUrl": global.ppmika,
