@@ -1,40 +1,28 @@
-
 import fetch from 'node-fetch'
-let handler = async (m, { text }) => {
+import axios from 'axios'
+let handler = m => m
 
-if (!text) throw `✳️ Masukkan model dan teks\n\nContoh: !voice siti Hai
-
-*Daftar Suara:*
-Ardi 
-Gadis
-Jannie
-Aoi
-Daichi
-Mayu
-Naoki
-Shiori
-Dimas
-Tuti
-Jajang
-`
-m.react(rwait)
-
-try {
-let model = text.split('|')[0] ? text.split('|')[0] : '-'
-  let teks = text.split('|')[1] ? text.split('|')[1] : '-'
-    
-let simiv = await fetch(`https://api.yanzbotz.my.id/api/tts/${encodeURIComponent(model)}?query=${encodeURIComponent(teks)}`)
-
-conn.sendMessage(m.chat, { audio: Buffer.from(simiv.data, "base64"), mimetype: "audio/mp4" }, {quoted: m})
-
-m.react(done)
+handler.before = async (m) => {
+    let chat = global.db.data.chats[m.chat]
+    if (chat.simivoice && !chat.isBanned ) {
+        if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return
+        if (!m.text) return
+        let api = await fetch(`https://api.simsimi.net/v2/?text=${m.text}&lc=id`)
+  let res = await api.json()
+  
+  let id = 'id_001'
+  const { data } = await axios.post("https://tiktok-tts.weilnet.workers.dev/api/generation", {
+    "text": res.success,
+    "voice": id
+})
+conn.sendMessage(m.chat, { audio: Buffer.from(data.data, "base64"), mimetype: "audio/mp4" }, {quoted: m})
+        return !0
+    }
+    return true
 }
-catch {
-		m.reply(`❎ Error: Ada sebuah kesalahan`)
-	}
-}
-handler.help = ['voice', 'simiv'].map(v => v + ' <teks>')
+
+handler.help = ['simiv','simivoice']
 handler.tags = ['fun']
-handler.command = /^(voice|simiv)$/i
+handler.command = ['simiv','simivoice']
 
 export default handler
