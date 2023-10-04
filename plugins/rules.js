@@ -43,6 +43,8 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
 conn.sendMessage(m.chat, {
 text: mika,
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
 externalAdReply: {
 title: (`${username}`),
 body: ('Kebijakan Bot'),
@@ -51,7 +53,7 @@ sourceUrl: global.dygp,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})
+}}}, {quoted: m})
 }
 handler.customPrefix = /^rule(|s)$/i
 handler.command = new RegExp
