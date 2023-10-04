@@ -32,8 +32,8 @@ catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
 }
-handler.help = ['simivoice', 'simiv'].map(v => v + ' <teks>')
+handler.help = ['voice', 'simiv'].map(v => v + ' <teks>')
 handler.tags = ['fun']
-handler.command = /^(simivoice|simiv)$/i
+handler.command = /^(voice|simiv)$/i
 
 export default handler
