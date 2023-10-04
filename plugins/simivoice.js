@@ -24,7 +24,7 @@ let model = text.split('|')[0] ? text.split('|')[0] : '-'
     
 let simiv = await conn.getFile(`https://api.yanzbotz.my.id/api/tts/${encodeURIComponent(model)}?query=${encodeURIComponent(teks)}`)
 
-await conn.sendFile(simiv.data, 'voice.ogg', m)
+await conn.sendMessage(simiv.data, 'voice.ogg', m)
 
 m.react(done)
 }
