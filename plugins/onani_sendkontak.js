@@ -1,6 +1,6 @@
 
 import PhoneNumber from 'awesome-phonenumber'
-let { MessageType, Presence } = require('@adiwajshing/baileys')
+import { MessageType, Presence } from '@adiwajshing/baileys'
 
 async function handler(m, { command, conn, text }) {
 	this.anonymous = this.anonymous ? this.anonymous : {}
