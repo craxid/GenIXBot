@@ -12,13 +12,14 @@ let totalf = Object.values(global.plugins).filter(
 conn.sendMessage(m.chat, {
 text: (`Total Fitur: ${totalf}`),
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: (`Total Fitur: ${totalf}`),
 thumbnailUrl: global.ppmika,
 sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
-showAdAttribution: true,
 renderLargerThumbnail: false
 }}}, {quoted: m})
 
