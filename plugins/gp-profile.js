@@ -38,13 +38,14 @@ let str = `
    
 conn.sendMessage(m.chat, {text: str,
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
 externalAdReply: {
 title: (`${username}`),
 body: (`Level: ${level}`),
 thumbnailUrl: pp,
 sourceUrl: global.fgig,
 mediaType: 1,
-showAdAttribution: true,
 renderLargerThumbnail: true
 }}}, {quoted: m})
     m.react(done)
