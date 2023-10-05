@@ -3,16 +3,16 @@ import FormData from 'form-data'
 import { fileTypeFromBuffer } from "file-type"
 import fs from "fs"
 
-const tmpFile = (buffer) => {
+let tmpFile = (buffer) => {
   return new Promise(async (resolve, reject) => {
-    const { ext, mime } = await fileTypeFromBuffer(buffer)
-    const form = new FormData();
+    let { ext, mime } = await fileTypeFromBuffer(buffer)
+    let form = new FormData();
     form.append('file', buffer, {
       filename: new Date() * 1 + '.' + ext,   
       contentType: mime
     });
 
-    const { data } = await axios.post("https://tmpfiles.org/api/v1/upload", form, {
+    let { data } = await axios.post("https://tmpfiles.org/api/v1/upload", form, {
       headers: {
         ...form.getHeaders(),
       },
