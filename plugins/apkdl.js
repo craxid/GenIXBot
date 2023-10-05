@@ -13,7 +13,9 @@ let apkname = `Nama Aplikasi : ${apkdl.data.name}.apk`
 
  (size.split('MB')[0] >= limit) return m.reply(`
 ≡  *Mika Bot YTDL*
-▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${apkdl.data.size}\n\n▢ _File melebihi batas unduhan_ *+${limit} MB*`)
+▢ *⚖️ Nama Aplikasi* : ${apkdl.data.name}
+▢ *🎞️ Size* : ${apkdl.data.size}
+▢ _File melebihi batas unduhan_ *+${limit} MB*`)
 
 let detil = `
 *Nama Aplikasi:* ${apkdl.data.name}
