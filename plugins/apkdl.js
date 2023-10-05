@@ -32,4 +32,4 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-conn.sendFile(ling.dllink, 'aplokasi.a')
+await conn.sendFile(ling.dllink, 'aplikasi.apk', m)
