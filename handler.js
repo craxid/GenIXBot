@@ -619,29 +619,16 @@ global.dfail = (type, m, conn) => {
 /*if (msg) return conn.sendMessage(m.chat, {
 text: msg,
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
 externalAdReply: {
 title: ('Mika Misono Bot'),
 body: ('Jangan Spam Bot!'),
 thumbnailUrl: global.mikasampul,
 sourceUrl: global.dygp,
 mediaType: 1,
-showAdAttribution: true,
 renderLargerThumbnail: true
-}}})*/
-
-conn.sendMessage(m.chat, {text: msg,
-contextInfo: {
-forwardingScore: 9999,
-isForwarded: true,
-    "externalAdReply": {
-        "title": ('Mika Misono Bot'),
-        "body": (`Jangan spam bot`),
-        "mediaType": 1,
-        "sourceUrl": global.dygp,
-        "thumbnailUrl": global.mikasampul,
-        "renderLargerThumbnail": true
-    }}}, 
-    {quoted: m})
+}}}, {quoted: m})
 }
 
 let file = global.__filename(import.meta.url, true)
