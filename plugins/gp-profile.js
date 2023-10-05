@@ -48,7 +48,6 @@ sourceUrl: global.fgig,
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, {quoted: m})
-    m.react(done)
 
 }
 handler.help = ['profile']
