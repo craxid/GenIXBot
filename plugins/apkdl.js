@@ -32,4 +32,6 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-conn.sendMessage(m.chat, { document: { url: ling.dllink }, fileName: ling.name, mimetype: res.mimetype }, { quoted: m })
+conn.sendMessage(m.chat, { document: { url: ling.dllink }, fileName: ling.name }, { quoted: m })
+
+}
