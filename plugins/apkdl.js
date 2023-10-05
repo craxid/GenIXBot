@@ -40,7 +40,7 @@ conn.sendMessage(m.chat, { document: { url: data.ling.dllink }, fileName: data.l
 	}
 }
 handler.help = ['apkdl']
-handler.tags =['dl']
+handler.tags = ['dl']
 handler.command = /^apkdl$/i
 handler.diamond = true
 export default handler
