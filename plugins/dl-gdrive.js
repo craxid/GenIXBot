@@ -22,6 +22,6 @@ handler.help = ['gdrive']
 handler.tags = ['dl', 'prem']
 handler.command = ['gdrive','gd','gddl']
 handler.diamond = 2
-handler.premium = true
+handler.premium = false
 
 export default handler
