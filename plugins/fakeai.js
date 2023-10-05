@@ -6,7 +6,7 @@ Buy Script?
   • WA: +62 857-0436-85323
   • TELE: t.me/rely_xd
 */
-
+/*
 import axios from "axios"
 import uploadImage from "../lib/uploadImage.js"
 
@@ -56,3 +56,4 @@ handler.command = ["deepfake"]
 handler.tags = ["ai"]
 handler.diamond = 3
 export default handler
+*/
