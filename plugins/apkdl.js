@@ -18,7 +18,7 @@ Nama Paket: ${data.ling.package}
 Ukuran: ${data.ling.size}
 `
 
-conn.sendMessage(m.chat, {text: mika,
+conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
