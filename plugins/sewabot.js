@@ -1,5 +1,6 @@
 
 import fetch from 'node-fetch'
+import prepare from '@whiskeysockets/baileys'
 
 let handler = async (m, { conn }) => {
   let pepe = 'https://telegra.ph/file/2e2eb7d093fec08fd00d4.jpg'
