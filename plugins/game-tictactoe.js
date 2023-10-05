@@ -58,7 +58,7 @@ ${arr.slice(6).join('')}
      conn.reply(m.chat, `⏳ *Menunggu lawan*\nMasukkan perintah berikut untuk menerima tantangan
 ▢ *${usedPrefix + command} ${text}*
 
-🎁 Hadiah: *4999 XP*`, m, {
+🎁 Hadiah: *3000 XP*`, m, {
             mentions: conn.parseMention(text)
         })
         
