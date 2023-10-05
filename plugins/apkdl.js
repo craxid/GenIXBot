@@ -18,8 +18,8 @@ return m.reply(`
 ${global.htki} *Mika Bot APK-DL* ${global.htka}
 ${global.gx} *⚖️ Nama Aplikasi* : ${apkdl.data.name}
 ${global.gx} *🎞️ Size* : ${apkdl.data.size}
-
-${global. _File melebihi batas unduhan_ *+${limit} MB*`)
+${global.
+${global.gy} _File melebihi batas unduhan_ *+${limit} MB*`)
 
 let detil = `
 *Nama Aplikasi:* ${apkdl.data.name}
