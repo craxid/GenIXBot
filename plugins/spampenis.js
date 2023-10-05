@@ -6,7 +6,9 @@ m.reply(wait)
 
 let kntl = await ("kontol\n").repeat(100)
 
-handler.help = ['spampenis <jimlah>']
+conn.sendMessage(kntl)
+
+handler.help = ['spampenis <jumlah>']
 handler.diamond = 3
 handler.tags = ['spam']
 handler.command = ['spampenis','penis','kontol']
