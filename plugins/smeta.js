@@ -1,12 +1,13 @@
 
 import pkg from 'node-webpmux';
 import { format } from 'util';
+const { Image } = pkg;
 
 let handler = async (m, { conn, text }) => {
 	if (!m.quoted) throw 'Reply a sticker!';
 	let stiker = false;
 
-const { Image } = pkg;
+
 
 	try {
 		let [packname, ...author] = text.split('|');
