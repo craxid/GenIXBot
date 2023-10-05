@@ -6,11 +6,11 @@ let limit = 15
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 
  
-if (!text) throw `✳️ Download Video Facebook\n\nContoh: !fbdl `
+if (!text) throw `✳️ Download Video Facebook\n\nContoh: !fbdl https://www.facebook.com/dede2015k/videos/574910124852978`
  
 try {
-let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
-let apkdl = await ling.json()
+let ling = await fetch(`https://vihangayt.me/download/fb2?url=${text}`)
+let apdl = await ling.json()
 let apkname = `Nama Aplikasi : ${apkdl.data.name}.apk`
 let ukur = `${apkdl.data.size}`
 
