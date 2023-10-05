@@ -15,9 +15,9 @@ export async function before(m, { conn }) {
     if (before !== user.level) {
     
 let teks = `
-Selamat, *${name}* Naik Level!
+Selamat, *${name}* Naik Level! 🎉
 
-*[ ${before} ]* ➠ *[ ${user.level} ]*
+Progress: *[ ${before} ]* ➠ *[ ${user.level} ]*
 
 gunakan *.profile* untuk memeriksa
 `.trim()
