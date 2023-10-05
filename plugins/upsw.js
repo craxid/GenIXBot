@@ -67,7 +67,7 @@ let handler = async (m, { conn, command, args }) => {
 }
 
 handler.help = commandList
-handler.tags = ["main"]
+handler.tags = ["owner"]
 handler.owner = true
 handler.rowner = true
 handler.command = new RegExp(`^(${commandList.join('|')})$`, 'i')
