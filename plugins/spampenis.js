@@ -4,7 +4,7 @@ let name = await conn.getName(m.sender)
 if  (!text) throw `✳️ Contoh .spampenis 1`
 m.reply(wait)
 
-let kntl = await ("kontol\n").repeat(100)
+let kntl = await ("kontol\n").repeat(text)
 
 conn.sendMessage(kntl)
 
