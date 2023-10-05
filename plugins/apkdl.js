@@ -13,7 +13,7 @@ let apkdl = await ling.json()
 let apkname = `Nama Aplikasi : ${apkdl.data.name}.apk`
 let ukur = `${apkdl.size}`
 
-if (size.split('MB')[0] >= limit)
+if (ukur.split('MB')[0] >= limit)
 return m.reply(`
 ≡  *Mika Bot APKDL*
 ▢ *⚖️ Nama Aplikasi* : ${apkdl.data.name}
