@@ -25,7 +25,6 @@ let tags = {
   'tools': 'TOOLS',
   'fun': 'FUN',
   'cmd': 'DATABASE',
-  'ansfw': 'NSFW ANIME',
   'owner': 'OWNER', 
   'advanced': 'LANJUTAN',
 }
