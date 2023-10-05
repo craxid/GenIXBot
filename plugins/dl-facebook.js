@@ -6,10 +6,10 @@ let limit = 15
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 
  
- if (!args[0]) throw `✳️ Kirim tautan video Facebook\n\n📌 Contoh :\n*${usedPrefix + command}* https://fb.watch/d7nB8-L-gR/`
+ if (!args[0]) throw `✳️ Kirim tautan video Facebook\n\n📌 Contoh :\n*${usedPrefix + command}* https://www.facebook.com/dede2015k/videos/574910124852978/`
     m.react(rwait)
    try {
-    let result = await fetch('https://vihangayt.me/download/fb?url=')(args[0]);
+    let result = await fetch('https://vihangayt.me/download/fb?url=${[0]}')
     
     if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)
     
