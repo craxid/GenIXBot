@@ -23,8 +23,8 @@ contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
-title: (`${username}`),
-body: ('Aku Online Kak!'),
+title: ('Mika Bot'),
+body: ('APK Downloader'),
 thumbnailUrl: (`${data.ling.icon}`),
 sourceUrl: global.fbku,
 mediaType: 1,
