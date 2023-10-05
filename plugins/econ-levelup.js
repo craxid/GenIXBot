@@ -88,7 +88,7 @@ Kurang *${max - user.exp}XP* lagi!
 
 let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     
-        let teks = `Selamat, ${conn.getName(m.sender)} naik level 🎉`
+        let teks = `Selamat, ${conn.getName(m.sender)} Naik Level 🎉`
         let str = `
 ${teks} 
 • 👾 Level Sebelumnya : ${before}
