@@ -12,10 +12,11 @@ let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
 let apkdl = await ling.json()
 
 let detil = `
-Nama Aplikasi: ${apkdl.data.name}
-Update: ${apkdl.data.lastup}
-Nama Paket: ${apkdl.data.package}
-Ukuran: ${apkdl.data.size}
+*Nama Aplikasi:* ${apkdl.data.name}
+*Update:* ${apkdl.data.lastup}
+*Nama Paket:* ${apkdl.data.package}
+*Ukuran:* ${apkdl.data.size}
+_Sedang mengirim..._
 `
 
 conn.sendMessage(m.chat, {text: detil,
