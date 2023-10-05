@@ -36,7 +36,7 @@ conn.sendMessage(m.chat, { document: { url: ling.dllink }, fileName: ling.name }
 
  }
 }
-handler.help = ['apkdl ']
-handler.command = /^a$/i
-handler.rowner = true
+handler.help = ['apkdl']
+handler.command = /^apkdl$/i
+handler.diamond = true
 export default handler
