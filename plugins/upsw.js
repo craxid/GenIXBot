@@ -57,9 +57,9 @@ let handler = async (m, { conn, command, args }) => {
       font: Math.floor(Math.random() * 9),
       statusJidList: Object.keys(global.db.data.users)
     }).then((res) => {
-      conn.reply(m.chat, `Sukses upload ${type}`, res)
+      conn.reply(m.chat, `Sukses upload story tipe ${type}`, res)
     }).catch(() => {
-      conn.reply(m.chat, `Gagal upload ${type}`, m)
+      conn.reply(m.chat, `Gagal upload story tipe ${type}`, m)
     })
   } else {
     throw "❌ Tidak ada media yang diberikan!"
