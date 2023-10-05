@@ -10,12 +10,13 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     m.react(rwait)
    try {
     let result = await fetch(`https://vihangayt.me/download/fb?url=${text}`)
+    let fbdl = result.json()
     
     if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)
     
     let tex = `
 ┌─⊷ *Mika Bot FBDL*
-▢ *Title:* ${result.title}
+▢ *Title:* ${.title}
 └───────────`;
     conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, m);
     m.react(done);
