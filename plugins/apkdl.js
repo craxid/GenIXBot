@@ -34,7 +34,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendMessage(m.chat, { document: { url: apkdl.data.dllink }, fileName: apkdl.data.name }, { quoted: m })
+await conn.sendafi(m.chat, { document: { url: apkdl.data.dllink }, fileName: apkdl.data.name }, { quoted: m })
 
  }
  catch {
