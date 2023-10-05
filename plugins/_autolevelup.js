@@ -37,7 +37,7 @@ externalAdReply: {
 title: (`${name}`),
 body: (`Level: ${user.level}`),
 thumbnailUrl: pp,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
+sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, {quoted: m})
