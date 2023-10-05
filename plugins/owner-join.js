@@ -47,6 +47,7 @@ let handler = async (m, { conn, text, usedPrefix, command, args, participants, i
 untuk melihat menu bot, ketik 
 
 ${usedPrefix}help
+
 @${conn.user.jid.split('@')[0]} Bot akan keluar secara otomatis setelah \n\n${msToDate(global.db.data.chats[res].expired - now)}`
   await conn.reply(res, mes, m, {
         mentions: d
