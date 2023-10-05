@@ -1,7 +1,8 @@
 //https://vihangayt.me/download/apk?id=
 
 import fetch from 'node-fetch'
-let handler = async (m, { conn, text }) => {
+let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
+
 let limit = 50
 
 if (!text) throw `✳️ Download aplikasi menggunakan ID\n\nContoh: !apkdl com.whatsapp`
