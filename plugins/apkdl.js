@@ -34,7 +34,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, apkdl.data.dllink, '`${apkname}.apk', apkname, m)
+await conn.sendFile(m.chat, apkdl.data.dllink, (`${apkname}`).'apk', apkname, m)
 
  }
  catch {
