@@ -16,7 +16,6 @@ Nama Aplikasi: ${ling.name}
 Update: ${ling.lastup}
 Nama Paket: ${ling.package}
 Ukuran: ${ling.size}
-
 `
 
 conn.sendMessage(m.chat, {text: mika,
@@ -26,9 +25,9 @@ isForwarded: true,
 externalAdReply: {
 title: (`${username}`),
 body: ('Aku Online Kak!'),
-thumbnailUrl: mikapp,
-sourceUrl: (''),
+thumbnailUrl: (`${ling.icon}`),
+sourceUrl: global.fbku,
 mediaType: 1,
-renderLargerThumbnail: true
+renderLargerThumbnail: false
 }}},
 {quoted: m})
