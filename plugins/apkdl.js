@@ -12,7 +12,8 @@ let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
 let apkdl = await ling.json()
 
 let detil = `
-Nama Apli
+Nama Aplikasi: ${ling.name}
+Update: ${
 `
 
 conn.sendMessage(m.chat, {text: mika,
