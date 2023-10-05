@@ -24,9 +24,8 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
    if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _File melebihi batas unduhan_ *+${limit} MB*`)
   
   let play = `
-	≡ *Mika Bot MUSIC*
-┌──────────────
-▢ 📌 *Judul* : ${vid.title}
+${htki} *Mika Bot MUSIC* ${htka}
+${global.gx}  📌 *Judul* : ${vid.title}
 ▢ 📆 *Diunggah pada:* ${vid.ago}
 ▢ ⌚ *Durasi* ${vid.timestamp} Menit
 ▢ 👀 *Dilihat:* ${vid.views} Kali
