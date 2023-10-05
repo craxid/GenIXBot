@@ -39,9 +39,14 @@ if (size.split('MB')[0] >= limit) return m.reply(`
 ▢ *⚖️ Ukuran* : ${size}
 ▢ *🎞 Deskripsi* : ${q}
 ▢ _File melebihi batas ukuran_ *+${limit} MB*`) 
-if (size.includes('GB')) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Ukuran* : ${size}\n▢ *🎞 Bitrate* : ${q}\n\n▢ _File melebihi batas unduhan_ *+${limit} MB*`)   
+
+if (size.includes('GB')) return m.reply(` ≡  *Mika Bot YTDL*
+▢ *⚖️ Ukuran* : ${size}
+▢ *🎞 Bitrate* : ${q}
+▢ _File melebihi batas unduhan_ *+${limit} MB*`) 
+
 	  conn.sendFile(m.chat, dl_url, title + '.mp' + (3 + /vid$/.test(command)), `
- ≡  *Mika Bot YTDL*
+${htki} *Mika Bot YTDL* ${htka
   
 ▢ *📌 Judul* : ${title}
 ▢ *🎞 Bitrate* : ${q}
