@@ -15,8 +15,8 @@ let ukur = `${apkdl.data.size}`
 
 if (ukur.split('MB')[0] >= limit)
 return m.reply(`
-≡  *Mika Bot APKDL*
-▢ *⚖️ Nama Aplikasi* : ${apkdl.data.name}
+${global.htki} *Mika Bot APK-DL* ${global.htka}
+# *⚖️ Nama Aplikasi* : ${apkdl.data.name}
 ▢ *🎞️ Size* : ${apkdl.data.size}
 
 ▢ _File melebihi batas unduhan_ *+${limit} MB*`)
