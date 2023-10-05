@@ -11,7 +11,7 @@ let handler = async (m, { conn }) => {
   let b = await conn.profilePictureUrl(owner[0]+'@s.whatsapp.net', 'image').catch((_) => "https://telegra.ph/file/057b8dff2f6ba7d4553ae.jpg")
   let c = pickRandom([a, b])
   let d = await fetch(c).then(a => a.buffer())
-  let prepapre = prepare.generateWAMessageFromContent(m.key.remoteJid,{listMessage:{
+  let prepare = prepare.generateWAMessageFromContent(m.key.remoteJid,{listMessage:{
   title: `${await conn.getName(conn.user.jid)}`,
   description: `Mau sewa bot? silahkan chat owner ${conn.user.name}
 
