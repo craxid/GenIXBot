@@ -34,7 +34,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendMessage(m.chat, { document: { url: apkdl.data.dllink }, fileName: apkdl.data.name}, { quoted: m })
+await conn.sendMessage(m.chat, { document: { url: apkdl.data.dllink }, fileName: apkdl.data.name, mimetype: application/vnd.android.package-archive }, { quoted: m })
 
  }
  catch {
@@ -46,3 +46,4 @@ handler.tags = ['dl']
 handler.command = /^apkdl$/i
 handler.diamond = 3
 export default handler
+
