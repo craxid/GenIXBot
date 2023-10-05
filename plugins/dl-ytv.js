@@ -18,7 +18,8 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 		const title = await yt.title
 		const size = await yt.video[q].fileSizeH 
 		
-if (size.split('MB')[0] >= limit) return m.reply(`
+if (size.split('MB')[0] >= limit) 
+return m.reply(`
 ≡  *Mika Bot YTDL*
 ▢ *⚖️ Ukuran* : ${size}
 ▢ *🎞️ Kualitas* : ${q}
