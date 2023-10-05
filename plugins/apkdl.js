@@ -10,7 +10,7 @@ m.reply(wait)
 try {
 let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
 let apkdl = await ling.json()
-let apkname =  `Name : ${name}`
+let apkname =  `Name : ${apkdl.data.name}`
 let detil = `
 *Nama Aplikasi:* ${apkdl.data.name}
 *Update:* ${apkdl.data.lastup}
@@ -34,7 +34,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, apkdl.data.dllink, 'Aplikasi.apk', { quoted: m })
+await conn.sendFile(m.chat, apkdl.data.dllink, 'Aplikasi.apk', apkname, m)
 
  }
  catch {
