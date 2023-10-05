@@ -1,4 +1,4 @@
-
+/*
 import fetch from 'node-fetch'
 import axios from 'axios'
 let handler = async (m, { conn, usedPrefix, command }) => {
@@ -9,7 +9,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
    
    m.react(rwait)
 let type = (command).toLowerCase()
-switch (type) {
+switch (type) {*/
 /*
 	
 	//-- nsfw tipo anime
@@ -48,7 +48,7 @@ case 'hentai':
 break
 
 default:*/
-
+/*
 case 'ahegao':
 case 'ass':
 case 'bdsm':
@@ -100,3 +100,4 @@ export default handler
 function pickRandom(list) {
     return list[Math.floor(list.length * Math.random())]
   }
+*/
