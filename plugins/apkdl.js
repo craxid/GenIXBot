@@ -15,7 +15,8 @@ let detil = `
 Nama Aplikasi: ${ling.name}
 Update: ${ling.lastup}
 Nama Paket: ${ling.package}
-Size
+Ukuran: ${ling.size}
+
 `
 
 conn.sendMessage(m.chat, {text: mika,
@@ -26,7 +27,7 @@ externalAdReply: {
 title: (`${username}`),
 body: ('Aku Online Kak!'),
 thumbnailUrl: mikapp,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
+sourceUrl: (''),
 mediaType: 1,
 renderLargerThumbnail: true
 }}},
