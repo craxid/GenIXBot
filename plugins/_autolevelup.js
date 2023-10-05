@@ -15,7 +15,8 @@ export async function before(m, { conn }) {
     if (before !== user.level) {
     
 let teks = `
-Selamat, *${name}* naik level!
+Selamat, *${name}* Naik Level!
+
 *[ ${before} ]* ➠ *[ ${user.level} ]*
 
 gunakan *.profile* untuk memeriksa
