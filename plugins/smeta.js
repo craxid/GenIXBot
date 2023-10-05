@@ -5,9 +5,10 @@ import { format } from 'util';
 let handler = async (m, { conn, text }) => {
 	if (!m.quoted) throw 'Reply a sticker!';
 	let stiker = false;
-	
+
+const { Image } = pkg;
+
 	try {
-	    const { Image } = pkg;
 		let [packname, ...author] = text.split('|');
 		author = (author || []).join('|');
 		let mime = m.quoted.mimetype || '';
