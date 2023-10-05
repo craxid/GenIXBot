@@ -15,6 +15,7 @@ let apkname = `Nama Aplikasi : ${apkdl.data.name}.apk`
 ≡  *Mika Bot YTDL*
 ▢ *⚖️ Nama Aplikasi* : ${apkdl.data.name}
 ▢ *🎞️ Size* : ${apkdl.data.size}
+
 ▢ _File melebihi batas unduhan_ *+${limit} MB*`)
 
 let detil = `
