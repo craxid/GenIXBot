@@ -19,10 +19,10 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _File melebihi batas unduhan_ *+${limit} MB*`)
 		
 		conn.sendFile(m.chat, dl_url, title + '.mp3', `
- ≡  *Mika Bot YTDL*
+${global.htki} *Mika Bot YTDL* ${global.htka}
   
-▢ *📌 Judul* : ${title}
-▢ *⚖️ Ukuran* : ${size}
+${global.gx} *📌 Judul* : ${title}
+${global.gx} *⚖️ Ukuran* : ${size}
 `.trim(), m, false, { mimetype: 'audio/mpeg', asDocument: chat.useDocument })
 		m.react(done)
         } catch {
