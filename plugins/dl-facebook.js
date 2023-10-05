@@ -10,32 +10,32 @@ if (!text) throw `✳️ Download Video Facebook\n\nContoh: !fbdl https://www.fa
  
 try {
 let ling = await fetch(`https://vihangayt.me/download/fb2?url=${text}`)
-let apdl = await ling.json()
-let apkname = `Nama Aplikasi : ${apkdl.data.name}.apk`
-let ukur = `${apkdl.data.size}`
+let fbdl = await ling.json()
+let apkname = `Nama Aplikasi : ${fbdl.data.name}.apk`
+let ukur = `${fbdl.data.size}`
 
 if (ukur.split('MB')[0] >= limit)
 return m.reply(`
-${global.htki} *Mika Bot APK-DL* ${global.htka}
+${global.htki} *Mika Bot FBDL* ${global.htka}
 
-${global.htjava} *Nama Aplikasi* : ${apkdl.data.name}
-${global.htjava} *Size* : ${apkdl.data.size}
+${global.htjava} *Nama Aplikasi* : ${fbdl.data.name}
+${global.htjava} *Size* : ${fbdl.data.size}
 
 ${global.htjava} _File melebihi batas unduhan_ *+${limit} MB*`)
 
 let detil = `
-*Nama Aplikasi:* ${apkdl.data.name}
-*Update:* ${apkdl.data.lastup}
-*Nama Paket:* ${apkdl.data.package}
-*Ukuran:* ${apkdl.data.size}
+*Nama Aplikasi:* ${fbdl.data.name}
+*Update:* ${fbdl.data.lastup}
+*Nama Paket:* ${fbdl.data.package}
+*Ukuran:* ${fbdl.data.size}
 
 _Sedang mengirim..._
 `
 let detil2 = `
-*Nama Aplikasi:* ${apkdl.data.name}.apk
-*Update:* ${apkdl.data.lastup}
-*Nama Paket:* ${apkdl.data.package}
-*Ukuran:* ${apkdl.data.size}
+*Nama Aplikasi:* ${fbdl.data.name}.apk
+*Update:* ${fbdl.data.lastup}
+*Nama Paket:* ${fbdl.data.package}
+*Ukuran:* ${fbdl.data.size}
 `
 
 conn.sendMessage(m.chat, {text: detil,
@@ -44,15 +44,15 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('APK Downloader'),
-body: (`${apkdl.data.name}`),
-thumbnailUrl: (`${apkdl.data.icon}`),
-sourceUrl: (`https://play.google.com/store/apps/details?id=${apkdl.data.package}`),
+body: (`${fbdl.data.name}`),
+thumbnailUrl: (`${fbdl.data.thumb}`),
+sourceUrl: (`https://play.google.com/store/apps/details?id=${fbdl.data.package}`),
 mediaType: 1,
-renderLargerThumbnail: false
+renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, apkdl.data.dllink, (`${apkdl.data.name} (Mika Bot).apk`), detil2, m)
+await conn.sendFile(m.chat, fbdl.data.dllink, (`${fbdl.data.name} (Mika Bot).apk`), detil2, m)
 
  }
  catch {
