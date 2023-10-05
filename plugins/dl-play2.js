@@ -27,8 +27,8 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 ${global.htki} *Mika Bot MUSIC* ${global.htka}
 ${global.gx} 📌 *Judul* : ${vid.title}
 ${global.gx} 📆 *Diunggah pada:* ${vid.ago}
-${global.gx}  ⌚ *Durasi* ${vid.timestamp} Menit
-${global.gx}  👀 *Dilihat:* ${vid.views} Kali
+${global.gx} ⌚ *Durasi* ${vid.timestamp} Menit
+${global.gx} 👀 *Dilihat:* ${vid.views} Kali
 ${global.sb}
 
 _Mengirim..._`
