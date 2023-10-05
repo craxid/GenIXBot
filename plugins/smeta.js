@@ -7,7 +7,7 @@ let handler = async (m, { conn, text }) => {
 	let stiker = false
 	
 	try {
-	    const { Image } = pkg; 
+	    const { Image } 
 		let [packname, ...author] = text.split('|')
 		author = (author || []).join('|')
 		let mime = m.quoted.mimetype || ''
