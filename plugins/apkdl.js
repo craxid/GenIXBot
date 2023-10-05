@@ -20,7 +20,7 @@ let detil = `
 _Sedang mengirim..._
 `
 
-await conn.sendMessage(m.chat, {text: detil,
+conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
