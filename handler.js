@@ -480,12 +480,11 @@ export async function participantsUpdate({ id, participants, action }) {
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg'
+                    //let pp = 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg'
+                    let pp = ''
                     let ppgp = 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg'
                     try {
-                        pp2 = await this.profilePictureUrl(user, 'image')
-                        
-                        pp = await ('./avatar_contact.png')
+                        pp = await this.profilePictureUrl(user, 'image')
                         ppgp = await this.profilePictureUrl(id, 'image')
                         } finally {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang, @user').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'Desconocido') :
