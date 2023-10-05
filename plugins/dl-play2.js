@@ -46,11 +46,11 @@ if (size.includes('GB')) return m.reply(` ≡  *Mika Bot YTDL*
 ▢ _File melebihi batas unduhan_ *+${limit} MB*`) 
 
 	  conn.sendFile(m.chat, dl_url, title + '.mp' + (3 + /vid$/.test(command)), `
-${htki} *Mika Bot YTDL* ${htka
-  
-▢ *📌 Judul* : ${title}
-▢ *🎞 Bitrate* : ${q}
-▢ *⚖️ Ukuran* : ${size}
+${global.htki} *Mika Bot YTDL* ${global.htka}
+${global.gx} *📌 Judul* : ${title}
+${global.gx} *🎞 Bitrate* : ${q}
+${global.gx} *⚖️ Ukuran* : ${size}
+${global.sb}
 `.trim(), m, false, { mimetype: isVideo ? '' : 'audio/mpeg', asDocument: chat.useDocument })
 		m.react(done) 
     } catch {
