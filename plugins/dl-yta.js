@@ -23,6 +23,7 @@ ${global.htki} *Mika Bot YTDL* ${global.htka}
   
 ${global.gx} *📌 Judul* : ${title}
 ${global.gx} *⚖️ Ukuran* : ${size}
+${global.sb}
 `.trim(), m, false, { mimetype: 'audio/mpeg', asDocument: chat.useDocument })
 		m.react(done)
         } catch {
