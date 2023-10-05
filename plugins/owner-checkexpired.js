@@ -11,9 +11,9 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     
     m.reply(`✳️ Sewa kamu akan berakhir pada
     
-    ${msToDate(global.db.data.chats[who].expired - now)}
+${msToDate(global.db.data.chats[who].expired - now)}
 
-  _Setelahnya bot akan otomatis keluar dari grup_`) 
+_Setelahnya bot akan otomatis keluar dari grup_`) 
     
 }
 handler.help = ['checkexpired']
