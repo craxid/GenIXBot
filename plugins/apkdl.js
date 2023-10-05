@@ -9,7 +9,7 @@ if (!text) throw `✳️ Download aplikasi menggunakan ID\n\nContoh: !apkdl com.
 try {
 let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
 let apkdl = await ling.json()
-let apkname =  `Nama Aplikasi : ${apkdl.data.name}.apk`
+let apkname = `Nama Aplikasi : ${apkdl.data.name}.apk`
 let detil = `
 *Nama Aplikasi:* ${apkdl.data.name}
 *Update:* ${apkdl.data.lastup}
