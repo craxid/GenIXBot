@@ -16,7 +16,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     
     let tex = `
 ┌─⊷ *Mika Bot FBDL*`;
-    conn.sendFile(m.chat, fbdl.data.download., 'fb.mp4', tex, m);
+    conn.sendFile(m.chat, fbdl.data.download.url, 'fb.mp4', tex, m);
     m.react(done);
   } catch (error) {
  	m.reply('Error: Coba lagi dengan tautan lain')
