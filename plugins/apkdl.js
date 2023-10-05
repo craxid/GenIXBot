@@ -5,12 +5,11 @@ let handler = async (m, { conn, text }) => {
   
 
 if (!text) throw `✳️ Download aplikasi menggunakan ID\n\nContoh: !apkdl com.whatsapp`
-m.reply(wait)
  
 try {
 let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
 let apkdl = await ling.json()
-let apkname =  `Name : ${apkdl.data.name}`
+let apkname =  `Nama Aplikasi : ${apkdl.data.name}`
 let detil = `
 *Nama Aplikasi:* ${apkdl.data.name}
 *Update:* ${apkdl.data.lastup}
