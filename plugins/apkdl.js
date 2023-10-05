@@ -12,10 +12,10 @@ let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
 let apkdl = await ling.json()
 
 let detil = `
-Nama Aplikasi: ${ling.name}
-Update: ${ling.lastup}
-Nama Paket: ${ling.package}
-Ukuran: ${ling.size}
+Nama Aplikasi: ${data.ling.name}
+Update: ${data.ling.lastup}
+Nama Paket: ${data.ling.package}
+Ukuran: ${data.ling.size}
 `
 
 conn.sendMessage(m.chat, {text: mika,
@@ -25,14 +25,14 @@ isForwarded: true,
 externalAdReply: {
 title: (`${username}`),
 body: ('Aku Online Kak!'),
-thumbnailUrl: (`${ling.icon}`),
+thumbnailUrl: (`${data.ling.icon}`),
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-conn.sendMessage(m.chat, { document: { url: ling.dllink }, fileName: ling.name }, { quoted: m })
+conn.sendMessage(m.chat, { document: { url: data.ling.dllink }, fileName: data.ling.name }, { quoted: m })
 
  }
 }
