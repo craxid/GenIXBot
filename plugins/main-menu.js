@@ -30,7 +30,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-◈ ━━━ *Misono Mika  ┃ ᴮᴼᵀ* ━━━━ ◈
+${htki} *Misono Mika* ${htka}
  
 👋🏻 %ucapan *%name*
 🧿 Level : *%level* 
