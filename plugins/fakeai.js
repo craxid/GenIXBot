@@ -15,16 +15,16 @@ let handler = async (m, { conn, usedPrefix, command, text, args }) => {
 	if (m.sender in conn.deep_fake_AI) {
 		return m.reply("_Masih proses, jika tidak muncul, mungkin error ketik .resetdf untuk mengulang kembali._")
 	}
-	const q = m.quoted ? m.quoted : m
-	const mime = (q.msg || q).mimetype || q.mediaType || ""
+	let q = m.quoted ? m.quoted : m
+	let mime = (q.msg || q).mimetype || q.mediaType || ""
 	if (!/image\/(jpe?g|png)/.test(mime)) {
 		return m.reply(
 			`Example: reply/kirim image dengan caption *${usedPrefix + command}* style\nUntuk cek list style, command *${usedPrefix}styledf*`
 		)
 	}
 	conn.deep_fake_AI[m.sender] = true
-	const [style = `${text}`,] = args
-	const configs = {
+	let [style = `${text}`,] = args
+	let configs = {
 		init_image: await uploadImage(await q.download()),
 		style,
 	}
@@ -35,7 +35,7 @@ let handler = async (m, { conn, usedPrefix, command, text, args }) => {
 		},
 		{ quoted: m }
 	)
-	const { data } = await axios
+	let { data } = await axios
 		.request({
 			baseURL: "https://api.itsrose.life",
 			url: "/deep_fake/video",
@@ -44,7 +44,7 @@ let handler = async (m, { conn, usedPrefix, command, text, args }) => {
 			data: { ...configs },
 		})
 		.catch((e) => e?.response)
-	const { status, message, result } = data
+	let { status, message, result } = data
 	if (!status) {
 		throw delete conn.deep_fake_AI[m.sender]
 		return m.reply(message)
