@@ -30,6 +30,7 @@ Owner: https://wa.me/+${owner[0]}
   },
   footerText: '2023 © Mika Bot',
   }},{})
+  
   conn.relayMessage(prepare.key.remoteJid,prepare.message,{messageId:prepare.key.id})
   const data = global.owner.filter(([id, isCreator]) => id && isCreator)
   conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
