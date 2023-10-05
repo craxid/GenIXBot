@@ -34,7 +34,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, apkdl.data.dllink, 'Aplokasi.apk', { quoted: m })
+await conn.sendFile(m.chat, apkdl.data.dllink, 'Aplikasi.apk', { quoted: m })
 
  }
  catch {
