@@ -16,6 +16,7 @@ let ukur = `${apkdl.data.size}`
 if (ukur.split('MB')[0] >= limit)
 return m.reply(`
 ${global.htki} *Mika Bot APK-DL* ${global.htka}
+
 ${global.htjava} *Nama Aplikasi* : ${apkdl.data.name}
 ${global.htjava} *Size* : ${apkdl.data.size}
 
@@ -60,6 +61,6 @@ await conn.sendFile(m.chat, apkdl.data.dllink, (`${apkdl.data.name} (Mika Bot).a
 handler.help = ['apkdl']
 handler.tags = ['dl']
 handler.command = /^apkdl$/i
-handler.diamond = 3
+handler.diamond = false
 export default handler
 
