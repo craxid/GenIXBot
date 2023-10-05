@@ -27,9 +27,8 @@ return m.reply(`
 `)
        
 	  conn.sendFile(m.chat, dl_url, title + '.mp4', `
- ≡  *Mika Bot YT Video*
-  
-▢ *📌 Judul* : ${title}
+${htki} *Mika Bot YT Video* ${htka}
+${ *📌 Judul* : ${title}
 ▢ *📟 Ekstensi* : mp4
 ▢ *🎞️ Kualitas* : ${q}
 ▢ *⚖️ Ukuran* : ${size}
