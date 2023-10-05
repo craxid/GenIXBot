@@ -20,17 +20,17 @@ let handler = async (m, { conn, text }) => {
 		let img2 = new Image();
 		
 		await img2.load(await m.quoted.download());
-		stiker = await addExif(img, packname || '', author || '+62 831-5593-6234')
+		stiker = await addExif(img, packname || '', author || '+62 831-5593-6234');
 		
 	} catch (e) {
 		console.error(e)
 		if (Buffer.isBuffer(e)) stiker = e
 		
-	} finally {
+	}! finally {
 		if (stiker) conn.sendMessage(m.chat, { sticker: stiker }, { quoted: m })
 		else throw 'Conversion failed'
-	}
-}
+	};
+};
 
 handler.help = ["smeta"]
 handler.tags = ["sticker"]
