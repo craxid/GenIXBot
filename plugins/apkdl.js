@@ -39,7 +39,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, apkdl.data.dllink, (`${apkdl.data.name}_(Mika_Bot).apk`), detil2, m)
+await conn.sendFile(m.chat, apkdl.data.dllink, (`${apkdl.data.name} (Mika Bot).apk`), detil2, m)
 
  }
  catch {
