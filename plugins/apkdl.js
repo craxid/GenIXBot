@@ -2,7 +2,7 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
-  
+let limit = 50
 
 if (!text) throw `✳️ Download aplikasi menggunakan ID\n\nContoh: !apkdl com.whatsapp`
  
@@ -10,6 +10,10 @@ try {
 let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
 let apkdl = await ling.json()
 let apkname = `Nama Aplikasi : ${apkdl.data.name}.apk`
+
+ (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _File melebihi batas unduhan_ *+${limit} MB*`)
+
+ 
 let detil = `
 *Nama Aplikasi:* ${apkdl.data.name}
 *Update:* ${apkdl.data.lastup}
