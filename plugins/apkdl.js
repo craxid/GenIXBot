@@ -18,6 +18,12 @@ let detil = `
 
 _Sedang mengirim..._
 `
+let detil2 = `
+*Nama Aplikasi:* ${apkdl.data.name}
+*Update:* ${apkdl.data.lastup}
+*Nama Paket:* ${apkdl.data.package}
+*Ukuran:* ${apkdl.data.size}
+`
 
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
@@ -33,7 +39,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, apkdl.data.dllink, (`${apkdl.data.name}_(Mika_Bot).apk`), apkname, m)
+await conn.sendFile(m.chat, apkdl.data.dllink, (`${apkdl.data.name}_(Mika_Bot).apk`), detil2, m)
 
  }
  catch {
