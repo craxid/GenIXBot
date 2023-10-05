@@ -16,6 +16,7 @@ let detil = `
 *Update:* ${apkdl.data.lastup}
 *Nama Paket:* ${apkdl.data.package}
 *Ukuran:* ${apkdl.data.size}
+
 _Sedang mengirim..._
 `
 
@@ -24,8 +25,8 @@ contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
-title: ('Mika Bot'),
-body: ('APK Downloader'),
+title: ('APK Downloader'),
+body: (`${apkdl.data.name}`),
 thumbnailUrl: (`${apkdl.data.icon}`),
 sourceUrl: global.fbku,
 mediaType: 1,
