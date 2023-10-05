@@ -47,6 +47,6 @@ async function addExif(buffer, packname, author, categories = [''], extra = {}) 
 	let exif = Buffer.concat([exifAttr, jsonBuffer]);
 	exif.writeUIntLE(jsonBuffer.length, 14, 4);
 	await img.load(buffer);
-	img.exif = exif
-	return await img.save(null)
-}
+	img.exif = exif;
+	return await img.save(null);
+};
