@@ -10,7 +10,7 @@ let handler = async (m, { conn }) => {
   let b = await conn.profilePictureUrl(owner[0]+'@s.whatsapp.net', 'image').catch((_) => "https://telegra.ph/file/057b8dff2f6ba7d4553ae.jpg")
   let c = pickRandom([a, b])
   let d = await fetch(c).then(a => a.buffer())
-  let prepare = await require('@adiwajshing/baileys').generateWAMessageFromContent(m.key.remoteJid,{listMessage:{
+  let prepare = await require('@whiskeysockets/baileys').generateWAMessageFromContent(m.key.remoteJid,{listMessage:{
   title: `${await conn.getName(conn.user.jid)}`,
   description: `Mau sewa bot? silahkan chat owner ${conn.user.name}
 
@@ -37,7 +37,7 @@ Owner: https://wa.me/+${owner[0]}
 }
 handler.help = ['sewa']
 handler.tags = ['main']
-handler.command = /^(sewa)$/i
+handler.command = /^(sewa|sewabot)$/i
 
 module.exports = handler
 
