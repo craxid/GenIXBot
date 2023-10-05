@@ -16,7 +16,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     
     let tex = `
 ┌─⊷ *Mika Bot FBDL*
-▢ *Title:* ${.title}
+▢ *Title:* ${fbdl.data.title}
 └───────────`;
     conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, m);
     m.react(done);
