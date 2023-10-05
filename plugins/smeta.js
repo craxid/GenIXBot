@@ -1,5 +1,5 @@
 
-import { Image } from 'node-webpmux'
+import pkg from 'node-webpmux'
 import { format } from 'util'
 
 let handler = async (m, { conn, text }) => {
