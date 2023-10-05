@@ -33,7 +33,7 @@ const defaultMenu = {
 *${htki} Mika Misono Bot ${htka}*
  
 👋🏻 %ucapan *%name*
-🧿 Level : *%level* 
+🧿 Level Kamu : *%level* 
 👥 Total User : %totalreg
 📈 Runtime : %muptime
 ─────────────
