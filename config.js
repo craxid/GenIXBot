@@ -39,6 +39,8 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 global.packname = 'Mika Bot'
 global.namebot = 'Mika Misono Bot'
+
+//wm lainnya
 global.pesanbot = 'Jangan spam Bot'
 global.deka = ['6285892734104']
 global.author = '+62 831-5593-6234' 
