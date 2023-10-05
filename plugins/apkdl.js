@@ -31,9 +31,9 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('APK Downloader'),
-body: (`https://play.google.com/store/apps/details?id=${apkdl.data.name}`),
+body: (`${apkdl.data.name}`),
 thumbnailUrl: (`${apkdl.data.icon}`),
-sourceUrl: global.fbku,
+sourceUrl: (`https://play.google.com/store/apps/details?id=${apkdl.data.package}`),
 mediaType: 1,
 renderLargerThumbnail: false
 }}},
