@@ -28,8 +28,8 @@ return m.reply(`
        
 	  conn.sendFile(m.chat, dl_url, title + '.mp4', `
 ${htki} *Mika Bot YT Video* ${htka}
-${ *📌 Judul* : ${title}
-▢ *📟 Ekstensi* : mp4
+${global.gx} *📌 Judul* : ${title}
+${global.gx} *📟 Ekstensi* : mp4
 ▢ *🎞️ Kualitas* : ${q}
 ▢ *⚖️ Ukuran* : ${size}
 `.trim(), m, false, { asDocument: chat.useDocument })
