@@ -34,7 +34,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-conn.sendMessage(m.chat, { document: { url: apkdl.data.dllink }, fileName: apkdl.data.name, mimetype: "application/vnd.android.package-archive" }, { quoted: m })
+conn.sendMessage(m.chat, { document: { url: apkdl.data.dllink }, fileName: apkdl.data.name, mimetype: application/vnd.android.package-archive }, { quoted: m })
 
  }
  catch {
