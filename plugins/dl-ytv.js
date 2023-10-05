@@ -32,6 +32,7 @@ ${global.gx} *📌 Judul* : ${title}
 ${global.gx} *📟 Ekstensi* : mp4
 ${global.gx} *🎞️ Kualitas* : ${q}
 ${global.gx}  *⚖️ Ukuran* : ${size}
+${global.sb}
 `.trim(), m, false, { asDocument: chat.useDocument })
 		m.react(done) 
 		
