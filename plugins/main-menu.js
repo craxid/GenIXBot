@@ -34,7 +34,7 @@ const defaultMenu = {
  
 👋🏻 %ucapan *%name*
 🧿 Level : *%level* 
-👥 User : %totalreg
+👥 Total User : %totalreg
 📈 Runtime : %muptime
 ─────────────
 Support Us!
