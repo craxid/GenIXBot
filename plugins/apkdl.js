@@ -17,9 +17,9 @@ if (ukur.split('MB')[0] >= limit)
 return m.reply(`
 ${global.htki} *Mika Bot APK-DL* ${global.htka}
 ${global.gx} *⚖️ Nama Aplikasi* : ${apkdl.data.name}
-▢ *🎞️ Size* : ${apkdl.data.size}
+${global.gx} *🎞️ Size* : ${apkdl.data.size}
 
-▢ _File melebihi batas unduhan_ *+${limit} MB*`)
+${global. _File melebihi batas unduhan_ *+${limit} MB*`)
 
 let detil = `
 *Nama Aplikasi:* ${apkdl.data.name}
