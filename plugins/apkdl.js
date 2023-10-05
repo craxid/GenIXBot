@@ -12,10 +12,10 @@ let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
 let apkdl = await ling.json()
 
 let detil = `
-Nama Aplikasi: ${data.apkdl.name}
-Update: ${data.apkdl.lastup}
-Nama Paket: ${data.apkdl.package}
-Ukuran: ${data.apkdl.size}
+Nama Aplikasi: ${apkdl.data.name}
+Update: ${apkdl.data.lastup}
+Nama Paket: ${apkdl.data.package}
+Ukuran: ${apkdl.data.size}
 `
 
 conn.sendMessage(m.chat, {text: detil,
@@ -25,14 +25,14 @@ isForwarded: true,
 externalAdReply: {
 title: ('Mika Bot'),
 body: ('APK Downloader'),
-thumbnailUrl: (`${data.apkdl.icon}`),
+thumbnailUrl: (`${apkdl.data.icon}`),
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-conn.sendMessage(m.chat, { document: { url: data.apkdl.dllink }, fileName: data.apkdl.name }, { quoted: m })
+conn.sendMessage(m.chat, { document: { url: apkdl.data.dllink }, fileName: apkdl.data.name }, { quoted: m })
 
  }
  catch {
