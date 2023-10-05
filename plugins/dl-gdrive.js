@@ -12,7 +12,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 ▢ *Ukuran File:* ${res.fileSize}
 ▢ *Jenis:* ${res.mimetype}`)
 		
-	conn.sendMessage(m.chat, { document: { url: res.downloadUrl }, fileName: res.fileName, mimetype: res.mimetype }, { quoted: m })
+	conn.sendMessage(m.chat, { document: { url: res.downloadUrl }, fileName: res.fileName, mimetype: "application/vnd.android.package-archive" }, { quoted: m })
 	m.react(done)
    } catch {
 	m.reply('Error: ganti linknya dengan yang lain') 
