@@ -7,6 +7,7 @@ let handler = async (m, { conn, text }) => {
 	let stiker = false
 	
 	try {
+	    const { Image 
 		let [packname, ...author] = text.split('|')
 		author = (author || []).join('|')
 		let mime = m.quoted.mimetype || ''
@@ -16,7 +17,7 @@ let handler = async (m, { conn, text }) => {
 		let img = await m.quoted.download()
 		
 		if (!img) throw 'Reply a sticker!'
-		let img2 = new Image()
+		let img2 = new pkg()
 		
 		await img2.load(await m.quoted.download())
 		stiker = await addExif(img, packname || '', author || '+62 831-5593-6234')
