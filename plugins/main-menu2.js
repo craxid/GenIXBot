@@ -1,5 +1,5 @@
 
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 
 let handler = async function (m, { conn, text, usedPrefix }) {
   
@@ -29,3 +29,4 @@ handler.tags = ['main']
 handler.command = ['menu2', 'audios'] 
 
 export default handler
+*/
