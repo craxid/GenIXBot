@@ -17,7 +17,7 @@ let handler = async (m, { conn, text }) => {
 		let img = await m.quoted.download()
 		
 		if (!img) throw 'Reply a sticker!'
-		let img2 = new pkg()
+		let img2 = new Image()
 		
 		await img2.load(await m.quoted.download())
 		stiker = await addExif(img, packname || '', author || '+62 831-5593-6234')
