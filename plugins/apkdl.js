@@ -32,4 +32,4 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendFile(ling.dllink, 'aplikasi.apk', m)
+conn.sendMessage(m.chat, { document: { url: ling.dllink }, fileName: ling.name, mimetype: res.mimetype }, { quoted: m })
