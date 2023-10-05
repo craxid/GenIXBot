@@ -39,7 +39,7 @@ handler.help = ['sewa']
 handler.tags = ['main']
 handler.command = /^(sewa|sewabot)$/i
 
-module.exports = handler
+export default handler
 
 function pickRandom(list) {
         return list[Math.floor(Math.random() * list.length)]
