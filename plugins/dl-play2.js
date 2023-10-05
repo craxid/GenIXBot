@@ -25,16 +25,20 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
   
   let play = `
 ${htki} *Mika Bot MUSIC* ${htka}
-${global.gx}  📌 *Judul* : ${vid.title}
-▢ 📆 *Diunggah pada:* ${vid.ago}
-▢ ⌚ *Durasi* ${vid.timestamp} Menit
-▢ 👀 *Dilihat:* ${vid.views} Kali
-└──────────────
+${global.gx} 📌 *Judul* : ${vid.title}
+${global.gx} 📆 *Diunggah pada:* ${vid.ago}
+${global.gx}  ⌚ *Durasi* ${vid.timestamp} Menit
+${global.gx}  👀 *Dilihat:* ${vid.views} Kali
+${global.sb}
 
 _Mengirim..._`
 conn.sendFile(m.chat, vid.thumbnail, 'play', play, m, null)
 
-if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Ukuran* : ${size}\n▢ *🎞 Deskripsi* : ${q}\n\n▢ _File melebihi batas ukuran_ *+${limit} MB*`) 
+if (size.split('MB')[0] >= limit) return m.reply(`
+≡  *Mika Bot YTDL*
+▢ *⚖️ Ukuran* : ${size}
+▢ *🎞 Deskripsi* : ${q}
+▢ _File melebihi batas ukuran_ *+${limit} MB*`) 
 if (size.includes('GB')) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Ukuran* : ${size}\n▢ *🎞 Bitrate* : ${q}\n\n▢ _File melebihi batas unduhan_ *+${limit} MB*`)   
 	  conn.sendFile(m.chat, dl_url, title + '.mp' + (3 + /vid$/.test(command)), `
  ≡  *Mika Bot YTDL*
