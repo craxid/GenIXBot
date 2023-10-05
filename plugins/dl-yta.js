@@ -20,7 +20,6 @@ if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *
 		
 		conn.sendFile(m.chat, dl_url, title + '.mp3', `
 ${global.htki} *Mika Bot YTDL* ${global.htka}
-  
 ${global.gx} *📌 Judul* : ${title}
 ${global.gx} *⚖️ Ukuran* : ${size}
 ${global.sb}
