@@ -30,7 +30,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         }
       }
     } else if (args[0]) {
-      if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author, categories, 'is-avatar-sticker': 1)
+      if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author)
       else return m.reply('URL invalid')
     }
   } catch (e) {
