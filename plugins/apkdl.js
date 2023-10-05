@@ -11,6 +11,8 @@ try {
 let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
 let apkdl = await ling.json()
 
+let asu = apkdl.ling.name()
+
 let detil = `
 *Nama Aplikasi:* ${apkdl.data.name}
 *Update:* ${apkdl.data.lastup}
