@@ -15,10 +15,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)
     
     let tex = `
-┌─⊷ *Mika Bot FBDL*
-▢ *Title:* ${fbdl.data.title}
-└───────────`;
-    conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, m);
+┌─⊷ *Mika Bot FBDL*`;
+    conn.sendFile(m.chat, fbdl.data.download., 'fb.mp4', tex, m);
     m.react(done);
   } catch (error) {
  	m.reply('Error: Coba lagi dengan tautan lain')
