@@ -11,9 +11,10 @@ let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
 let apkdl = await ling.json()
 let apkname = `Nama Aplikasi : ${apkdl.data.name}.apk`
 
- (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _File melebihi batas unduhan_ *+${limit} MB*`)
+ (size.split('MB')[0] >= limit) return m.reply(`
+≡  *Mika Bot YTDL*
+▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${apkdl.data.size}\n\n▢ _File melebihi batas unduhan_ *+${limit} MB*`)
 
- 
 let detil = `
 *Nama Aplikasi:* ${apkdl.data.name}
 *Update:* ${apkdl.data.lastup}
