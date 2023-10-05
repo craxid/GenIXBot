@@ -34,4 +34,9 @@ renderLargerThumbnail: false
 
 conn.sendMessage(m.chat, { document: { url: ling.dllink }, fileName: ling.name }, { quoted: m })
 
+ }
 }
+handler.help = ['apkdl ']
+handler.command = /^a$/i
+handler.rowner = true
+export default handler
