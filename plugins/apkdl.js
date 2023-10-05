@@ -11,7 +11,7 @@ try {
 let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
 let apkdl = await ling.json()
 let apkname = `Nama Aplikasi : ${apkdl.data.name}.apk`
-let ukur = `${apkdl.size}`
+let ukur = `${apkdl.data.size}`
 
 if (ukur.split('MB')[0] >= limit)
 return m.reply(`
