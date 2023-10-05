@@ -20,7 +20,7 @@ ${global.gx} *⚖️ Nama Aplikasi* : ${apkdl.data.name}
 ${global.gx} *🎞️ Size* : ${apkdl.data.size}
 ${global.sb}
 
-${global.gy} _File melebihi batas unduhan_ *+${limit} MB*`)
+${global.htjava} _File melebihi batas unduhan_ *+${limit} MB*`)
 
 let detil = `
 *Nama Aplikasi:* ${apkdl.data.name}
