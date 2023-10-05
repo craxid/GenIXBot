@@ -11,8 +11,6 @@ try {
 let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
 let apkdl = await ling.json()
 
-let asu = apkdl.ling.name('apk')
-
 let detil = `
 *Nama Aplikasi:* ${apkdl.data.name}
 *Update:* ${apkdl.data.lastup}
@@ -36,7 +34,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendMessage(m.chat, { document: { url: apkdl.data.dllink }, fileName: asu}, { quoted: m })
+await conn.sendMessage(m.chat, { document: { url: apkdl.data.dllink }, fileName: apkdl.data.name}, { quoted: m })
 
  }
  catch {
