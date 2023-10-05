@@ -20,7 +20,7 @@ let detil = `
 _Sedang mengirim..._
 `
 
-conn.sendMessage(m.chat, {text: detil,
+await conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
@@ -34,7 +34,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-conn.sendMessage(m.chat, { document: { url: apkdl.data.dllink }, fileName: apkdl.data.name, mimetype: application/vnd.android.package-archive }, { quoted: m })
+await conn.sendMessage(m.chat, { document: { url: apkdl.data.dllink }, fileName: apkdl.data.name, mimetype: application/vnd.android.package-archive }, { quoted: m })
 
  }
  catch {
