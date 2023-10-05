@@ -3,7 +3,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text }) => {
   
-	
+
 if (!text) throw `✳️ Download aplikasi menggunakan ID\n\nContoh: !apkdl com.whatsapp`
 m.reply(wait)
  
@@ -35,6 +35,9 @@ renderLargerThumbnail: false
 conn.sendMessage(m.chat, { document: { url: data.ling.dllink }, fileName: data.ling.name }, { quoted: m })
 
  }
+ catch {
+		m.reply(`❎ Error: Ada sebuah kesalahan`)
+	}
 }
 handler.help = ['apkdl']
 handler.command = /^apkdl$/i
