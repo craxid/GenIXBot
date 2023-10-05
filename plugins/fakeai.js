@@ -10,7 +10,7 @@ Buy Script?
 import axios from "axios"
 import uploadImage from "../lib/uploadImage.js"
 
-const handler = async (m, { conn, usedPrefix, command, text, args }) => {
+let handler = async (m, { conn, usedPrefix, command, text, args }) => {
 	conn.deep_fake_AI = conn.deep_fake_AI ? conn.deep_fake_AI : {}
 	if (m.sender in conn.deep_fake_AI) {
 		return m.reply("_Masih proses, jika tidak muncul, mungkin error ketik .resetdf untuk mengulang kembali._")
