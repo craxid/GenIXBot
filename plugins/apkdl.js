@@ -13,7 +13,9 @@ let apkdl = await ling.json()
 
 let detil = `
 Nama Aplikasi: ${ling.name}
-Update: ${
+Update: ${ling.lastup}
+Nama Paket: ${ling.package}
+Size
 `
 
 conn.sendMessage(m.chat, {text: mika,
