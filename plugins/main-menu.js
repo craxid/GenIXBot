@@ -224,8 +224,6 @@ isForwarded: true,
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
     ],m, rpl)*/
-
-    m.react('📚') 
     
   } catch (e) {
     conn.reply(m.chat, '❎  Maaf, menunya error', m)
