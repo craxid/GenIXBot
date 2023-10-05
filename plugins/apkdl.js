@@ -17,7 +17,7 @@ if (ukur.split('MB')[0] >= limit)
 return m.reply(`
 ${global.htki} *Mika Bot APK-DL* ${global.htka}
 ${global.htjava} *Nama Aplikasi* : ${apkdl.data.name}
-${global.htjavahtjava} *Size* : ${apkdl.data.size}
+${global.htjava} *Size* : ${apkdl.data.size}
 
 ${global.htjava} _File melebihi batas unduhan_ *+${limit} MB*`)
 
