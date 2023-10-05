@@ -9,11 +9,11 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     var nDays = 86400000 * args[0]
     var now = new Date() * 1
     
-    m.reply(`✳️ 
+    m.reply(`✳️ Sewa kamu akan berakhir pada
     
     ${msToDate(global.db.data.chats[who].expired - now)}
 
-  _Despues el bot saldrá automáticamente del grupo_`) 
+  __`) 
     
 }
 handler.help = ['checkexpired']
