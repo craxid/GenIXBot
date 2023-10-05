@@ -31,3 +31,5 @@ mediaType: 1,
 renderLargerThumbnail: false
 }}},
 {quoted: m})
+
+conn.sendFile(ling.dllink, 'aplokasi.a')
