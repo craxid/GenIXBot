@@ -19,7 +19,7 @@ await conn.sendFile(m.chat, hasil.data, 'img.jpg', 'Foto ke Anime\n© Mika Bot',
 }
 
 handler.help = ['jadianime']
-handler.tags = ['ai']
+handler.tags = ['ai', 'prem']
 handler.command = /^(jadianime)$/i
 handler.diamond = 3
 
