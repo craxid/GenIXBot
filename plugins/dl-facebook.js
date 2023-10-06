@@ -37,7 +37,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, fbd.sd, 'ig.mp4', 'Facebook Downloader\n© Mika Bot', m)
+await conn.sendFile(m.chat, fbdl.data.sd, 'ig.mp4', 'Facebook Downloader\n© Mika Bot', m)
 
  }
  catch {
