@@ -43,8 +43,7 @@ await conn.sendFile(m.chat, ttdl.result.video.no_watermark, 'ttdl.mp4', 'TikTok 
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
 }
-    
-}  
+
 handler.help = ['tiktok']
 handler.tags = ['dl']
 handler.command = /^(tiktok|ttdl|tiktokdl|tiktoknowm)$/i
