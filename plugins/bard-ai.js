@@ -32,7 +32,7 @@ isForwarded: true,
 
 }
 handler.help = ['bard <text>']
-handler.tags = ['ai']
+handler.tags = ['ai','prem']
 handler.command = ['bard','bardai']
 handler.premium = false
 handler.diamond = true
