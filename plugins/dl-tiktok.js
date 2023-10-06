@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text, args, usedPrefix, command}) => {
 
-if (!text) throw `✳️ Masukan link Tiktok\n\n 📌 Contoh : ${usedPrefix + command} https://vm.tiktok.com/L3N2t1Kt02/`
+if (!text) throw `✳️ Masukan link Tiktok\n\n 📌 Contoh : !ttdl https://vm.tiktok.com/L3N2t1Kt02/`
 
 try {
 let ling = await fetch(`https://api.azz.biz.id/api/tiktok?url=${text}`)
@@ -30,7 +30,7 @@ body: (`${ttdl.result.author.nickname}`),
 thumbnailUrl: (`${ttdl.result.author.avatar}`),
 sourceUrl: global.fbku,
 mediaType: 1,
-renderLargerThumbnail: true
+renderLargerThumbnail: false
 }}},
 {quoted: m})
 
