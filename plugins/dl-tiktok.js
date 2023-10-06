@@ -10,14 +10,14 @@ let ling = await fetch(`https://api.arifzyn.xyz/download/tiktok?url=${text}`)
 let ttdl = await ling.json()
 
 let detil = `
-*User:* ${ttdl.result.author.name}
-*Username:* ${ttdl.result.author.username}
+*User:* ${ttdl.result.name}
+*Username:* ${ttdl.result.username}
 
 _Sedang mengirim..._
 `
 let detil2 = `
-*User:* ${ttdl.result.author.nickname}
-*ID:* ${ttdl.result.author.unique_id}
+*User:* ${ttdl.result.nickname}
+*ID:* ${ttdl.result.unique_id}
 `
 
 conn.sendMessage(m.chat, {text: detil,
@@ -26,8 +26,8 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('TikTok Downloader'),
-body: (`${ttdl.result.author.nickname}`),
-thumbnailUrl: (`${ttdl.result.author.avatar}`),
+body: (`${ttdl.result.name}`),
+thumbnailUrl: (`${ttdl.result.profile}`),
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: false
