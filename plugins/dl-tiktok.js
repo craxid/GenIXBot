@@ -20,7 +20,7 @@ let detil = `
 *Dibagikan:* ${ttdl.result.shares}
 *Deskripsi:* ${ttdl.result.description}
 
-_*Sedang mengirim...*_
+_*Sedang dikirim...*_
 `
 let detil2 = `
 *Nama:* ${ttdl.result.name}
