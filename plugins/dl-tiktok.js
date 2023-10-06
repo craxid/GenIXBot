@@ -31,7 +31,6 @@ let detil2 = `
 *Komentar:* ${ttdl.result.comments}
 *Difavoritkan*: ${ttdl.result.favorite}
 *Dibagikan:* ${ttdl.result.shares}
-
 *Deskripsi:* ${ttdl.result.description}
 `
 
