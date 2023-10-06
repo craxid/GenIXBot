@@ -35,7 +35,7 @@ isForwarded: true,
 
 }
 handler.help = ['gpt <text>']
-handler.tags = ['ai']
+handler.tags = ['ai','prem']
 handler.command = ['ai', 'chatgpt', 'openai', 'gpt']
 handler.premium = false
 handler.diamond = true
