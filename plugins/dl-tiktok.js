@@ -64,6 +64,32 @@ if (!args[0].match(/tiktok/gi)) throw `❎  Mohon periksa apakah link berasal da
 m.react(rwait)
 
 try {
+    
+let p = await fg.tiktok(args[0]) 
+    
+if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)
+
+    let te = `
+┌─⊷ TIKTOK
+▢ *Nama:* ${p.nickname}
+▢ *Username:* ${p.unique_id}
+▢ *Durasi:* ${p.duration}
+▢ *Deskripsi:* ${p.description}
+└───────────`
+
+/*conn.sendFile(m.chat, p.play, 'tiktok.mp4', te, m)
+    m.react(done)
+    } catch {  	
+    try { 
+	const { author: { nickname }, video, description } = await tiktokdl(args[0])
+    const url = video.no_watermark || video.no_watermark2 || video.no_watermark_raw
+    if (!url) throw '❎ Error while downloading the video'*/
+    
+/*conn.sendFile(m.chat, url, 'fb.mp4', `
+┌─⊷ *TIKTOK DL*
+▢ *Nickname:* ${nickname} ${description ? `\n▢ *Deskripsi:* ${description}` : ''}
+└───────────`, m)*/
+
 let ling = await fetch(`https://api.azz.biz.id/api/tiktok?url=${text}&key=global`)
 let ttdl = await ling.json()
    
@@ -91,30 +117,6 @@ mediaType: 1,
 renderLargerThumbnail: false
 }}},
 {quoted: m})
-    
-    let p = await fg.tiktok(args[0]) 
-    
-if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)
-
-    let te = `
-┌─⊷ TIKTOK
-▢ *Nama:* ${p.nickname}
-▢ *Username:* ${p.unique_id}
-▢ *Durasi:* ${p.duration}
-▢ *Deskripsi:* ${p.description}
-└───────────`
-    conn.sendFile(m.chat, p.play, 'tiktok.mp4', te, m)
-    m.react(done)
-    } catch {  	
-    try { 
-	const { author: { nickname }, video, description } = await tiktokdl(args[0])
-    const url = video.no_watermark || video.no_watermark2 || video.no_watermark_raw
-    if (!url) throw '❎ Error while downloading the video'
-    
-/*conn.sendFile(m.chat, url, 'fb.mp4', `
-┌─⊷ *TIKTOK DL*
-▢ *Nickname:* ${nickname} ${description ? `\n▢ *Deskripsi:* ${description}` : ''}
-└───────────`, m)*/
 
 await conn.sendFile(m.chat, url, ttdl.mp4, detil2, m)
 
