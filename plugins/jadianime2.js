@@ -12,10 +12,7 @@ if (!mime) throw 'Kirim/Reply Gambar dengan caption .jadianime'
 m.reply(wait)
 let media = await q.download()
 let url = await uploadImage(media)
-toanime({
-    photo: `${url}`,
-    destinyFolder: './tmp'
-})
+toanime(url)
 .then(data => {
     conn.sendFile(m.chat, data, 'anime.jpg', `© Mika Bot`, m)
 })
