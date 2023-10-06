@@ -34,6 +34,7 @@ handler.diamond = 3
 export default handler
 */
 
+import { toanime } from 'betabotz-tools'
 import fetch from 'node-fetch'
 import uploadImage from '../lib/uploadImage.js'
 
