@@ -64,7 +64,30 @@ m.react(rwait)
 
 try {
     
+let detil = `
+*User:* ${nickname}
+*ID:* ${descrip}
 
+_Sedang mengirim..._
+`
+let detil2 = `
+*User:* ${ttdl.result.author.nickname}
+*ID:* ${ttdl.result.author.unique_id}
+`
+
+conn.sendMessage(m.chat, {text: detil,
+contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
+externalAdReply: {
+title: ('TikTok Downloader'),
+body: (`${ttdl.result.author.nickname}`),
+thumbnailUrl: (`${ttdl.result.author.avatar}`),
+sourceUrl: global.fbku,
+mediaType: 1,
+renderLargerThumbnail: false
+}}},
+{quoted: m})
     
     let p = await fg.tiktok(args[0]) 
     
