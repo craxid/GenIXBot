@@ -6,11 +6,11 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) throw `✳️ Masukan link Tiktok\n\n 📌 Contoh : !ttdl https://vm.tiktok.com/L3N2t1Kt02/`
 
 try {
-let ling = await fetch(`https://api.azz.biz.id/api/tiktok?url=${text}&key=global`)
+let ling = await fetch(`https://api.arifzyn.xyz/download/tiktok?url=${text}`)
 let ttdl = await ling.json()
 
 let detil = `
-*User:* ${ttdl.result.author.nickname}
+*User:* ${ttdl.result.author.username}
 *ID:* ${ttdl.result.author.unique_id}
 
 _Sedang mengirim..._
