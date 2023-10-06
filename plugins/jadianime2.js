@@ -32,27 +32,3 @@ handler.tags = ['ai']
 handler.diamond = 3
 
 export default handler
-*/
-
-import { toanime } from 'betabotz-tools'
-import fetch from 'node-fetch'
-import uploadImage from '../lib/uploadImage.js'
-
-let handler = async (m, { conn, usedPrefix, command, text }) => {
-let q = m.quoted ? m.quoted : m
-let mime = (q.msg || q).mimetype || ''
-if (!mime) throw 'Kirim/Reply Gambar dengan caption .jadianime'
-m.reply('Tunggu Sebentar...')
-let media = await q.download()
-let url = await uploadImage(media)
-let hasil = await toanime(url)
-
-await conn.sendFile(m.chat, hasil.image_data, '', global.namebot, m)
-	
-}
-handler.help = ['jadianime2']
-handler.tags = ['maker']
-handler.command = /^(jadianime2)$/i
-handler.diamond = true
-handler.rowner = true
-export default handler
