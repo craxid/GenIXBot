@@ -25,17 +25,13 @@ ${global.htjava} _File melebihi batas unduhan_ *+${limit} MB*`)
 
 let detil = `
 *Judul:* ${fbdl.data.title}
-*Deskripsi:* ${fbdl.data.lastup}
-*Nama Paket:* ${fbdl.data.package}
-*Ukuran:* ${fbdl.data.size}
+*Deskripsi:* ${fbdl.data.desc}
 
 _Sedang mengirim..._
 `
 let detil2 = `
 *Judul:* ${fbdl.data.title}
-*Update:* ${fbdl.data.lastup}
-*Nama Paket:* ${fbdl.data.package}
-*Ukuran:* ${fbdl.data.size}
+*Deskripsi:* ${fbdl.data.desc}
 `
 
 conn.sendMessage(m.chat, {text: detil,
@@ -43,7 +39,7 @@ contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
-title: ('APK Downloader'),
+title: ('Facebook Downloader'),
 body: (`${fbdl.data.name}`),
 thumbnailUrl: (`${fbdl.data.thumb}`),
 sourceUrl: (`https://play.google.com/store/apps/details?id=${fbdl.data.package}`),
