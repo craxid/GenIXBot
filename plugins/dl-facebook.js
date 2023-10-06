@@ -11,17 +11,6 @@ if (!text) throw `✳️ Download Video Facebook\n\nContoh: !fbdl https://www.fa
 try {
 let ling = await fetch(`https://vihangayt.me/download/fb2?url=${text}`)
 let fbdl = await ling.json()
-let apkname = `Nama Aplikasi : ${fbdl.data.name}.apk`
-let ukur = `${fbdl.data.size}`
-
-if (ukur.split('MB')[0] >= limit)
-return m.reply(`
-${global.htki} *Mika Bot FBDL* ${global.htka}
-
-${global.htjava} *Nama Aplikasi* : ${fbdl.data.name}
-${global.htjava} *Size* : ${fbdl.data.size}
-
-${global.htjava} _File melebihi batas unduhan_ *+${limit} MB*`)
 
 let detil = `
 *Judul:* ${fbdl.data.title}
