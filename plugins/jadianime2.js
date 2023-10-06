@@ -18,9 +18,10 @@ await conn.sendFile(m.chat, hasil.image_data, 'img.jpg', 'Foto ke Anime\n© Mika
 	
 }
 
-handler.help = ['jadianime']
+handler.help = ['jadianime2']
 handler.tags = ['ai']
-handler.command = /^(jadianime)$/i
+handler.command = /^(jadianime2)$/i
 handler.diamond = 3
+handler.rowner = true
 
 export default handler
