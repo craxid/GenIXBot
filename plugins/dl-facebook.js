@@ -6,7 +6,7 @@ let limit = 15
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 
  
-if (!text) throw `✳️ Download Video Facebook\n\nContoh: !fbdl https://www.facebook.com/dede2015k/videos/574910124852978`
+if (!text) throw `✳️ Download Video Facebook\n\nContoh: !fbdl https://www.facebook.com/dede2015k/videos/574910124852978/`
  
 try {
 let ling = await fetch(`https://vihangayt.me/download/fb2?url=${text}`)
