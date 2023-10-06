@@ -20,7 +20,7 @@ let detil = `
 _Sedang mengirim..._
 `
 let detil2 = `
-*User:* ${ttdl.result.author.title}
+*User:* ${ttdl.result.author.nickname}
 *ID:* ${ttdl.result.author.unique_id}
 `
 
@@ -30,7 +30,7 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('Facebook Downloader'),
-body: (`${ttdl.result.title}`),
+body: (`${ttdl.result.author.nickname}`),
 thumbnailUrl: (`${ttdl.result.avatar}`),
 sourceUrl: global.fbku,
 mediaType: 1,
