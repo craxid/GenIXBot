@@ -9,7 +9,7 @@ m.react('💬')
 
 	try {
 	    
-	    let gpt = await fetch(`https://api.yanzbotz.my.id/ai/gpt5?text=${text}`)
+	    let gpt = await fetch(`https://api.yanzbotz.my.id/api/ai/gpt5?text=${text}`)
 	    
         let res = await gpt.json()
         
