@@ -12,15 +12,17 @@ if (!mime) throw 'Kirim/Reply Gambar dengan caption .jadianime'
 m.reply(wait)
 let media = await q.download()
 let url = await uploadImage(media)
-let hasil = await toanime(url)
+let hasil = await toanime(url).then(data => {
+    conn.sendFile(m.chat, data, 'anime.jpg', `© Mika Bot`, m)
+})
 
-await conn.sendFile(m.chat, hasil.image_data, 'img.jpg', 'Foto ke Anime\n© Mika Bot', m)
+//await conn.sendFile(m.chat, hasil.image_data, 'img.jpg', 'Foto ke Anime\n© Mika Bot', m)
 	
 }
 
 handler.help = ['jadianime2']
 handler.tags = ['ai']
-handler.command = /^(jadianime2)$/i
+handler.command = /^(jadianime2|toanim)$/i
 handler.diamond = 3
 handler.rowner = true
 
