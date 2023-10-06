@@ -10,18 +10,18 @@ if (!args[0].match(/tiktok/gi)) throw `❎  Mohon periksa apakah link berasal da
 m.react(rwait)
 
 try {
-let ling = await fetch(`https://vihangayt.me/download/fb2?url=${text}`)
-let fbdl = await ling.json()
+let ling = await fetch(`https://api.azz.biz.id/api/tiktok?url=${text}`)
+let ttdl = await ling.json()
 
 let detil = `
-*Judul:* ${fbdl.data.title}
-*Deskripsi:* ${fbdl.data.desc}
+*Judul:* ${ttdl.data.title}
+*Deskripsi:* ${ttdl.data.desc}
 
 _Sedang mengirim..._
 `
 let detil2 = `
-*Judul:* ${fbdl.data.title}
-*Deskripsi:* ${fbdl.data.desc}
+*Judul:* ${ttdl.data.title}
+*Deskripsi:* ${ttdl.data.desc}
 `
 
 conn.sendMessage(m.chat, {text: detil,
@@ -30,15 +30,15 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('Facebook Downloader'),
-body: (`${fbdl.data.title}`),
-thumbnailUrl: (`${fbdl.data.thumb}`),
+body: (`${ttdl.data.title}`),
+thumbnailUrl: (`${ttdl.data.thumb}`),
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, fbdl.data.sd, 'ig.mp4', 'TikTok Downloader\n© Mika Bot', m)
+await conn.sendFile(m.chat, ttdl.data.sd, 'ig.mp4', 'TikTok Downloader\n© Mika Bot', m)
 
  }
  catch {
