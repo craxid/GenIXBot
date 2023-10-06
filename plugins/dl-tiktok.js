@@ -82,7 +82,10 @@ if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *
     const url = video.no_watermark || video.no_watermark2 || video.no_watermark_raw
     if (!url) throw '❎ Error while downloading the video'
     
-    conn.sendFile()
+    conn.sendFile(m.chat, url, 'fb.mp4', `
+┌─⊷ *TIKTOK DL-
+▢ *Nickname:* ${nickname} ${description ? `\n▢ *Deskripsi:* ${description}` : ''}
+└───────────`, m)
 m.react(done)
 
 } catch {
