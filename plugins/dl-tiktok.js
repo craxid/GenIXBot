@@ -10,10 +10,10 @@ let ling = await fetch(`https://api.arifzyn.xyz/download/tiktok?url=${text}`)
 let ttdl = await ling.json()
 
 let detil = `
-*User:* ${ttdl.result.name}
+*Nama:* ${ttdl.result.name}
 *Username:* ${ttdl.result.username}
 *Tipe:* ${ttdl.result.type}
-*Dilihat:* ${ttdl.result.view}
+*Dilihat:* ${ttdl.result.views}
 *Disukai:* ${ttdl.result.likes}
 *Komentar:* ${ttdl.result.comments}
 *Difavoritkan*: ${ttdl.result.favorite}
@@ -23,10 +23,10 @@ let detil = `
 _Sedang mengirim..._
 `
 let detil2 = `
-*User:* ${ttdl.result.name}
+*Nama:* ${ttdl.result.name}
 *Username:* ${ttdl.result.username}
 *Tipe:* ${ttdl.result.type}
-*Dilihat:* ${ttdl.result.view}
+*Dilihat:* ${ttdl.result.views}
 *Disukai:* ${ttdl.result.likes}
 *Komentar:* ${ttdl.result.comments}
 *Difavoritkan*: ${ttdl.result.favorite}
