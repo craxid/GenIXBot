@@ -63,7 +63,9 @@ if (!args[0].match(/tiktok/gi)) throw `❎  Mohon periksa apakah link berasal da
 m.react(rwait)
 
 try {
-    
+let ling = await fetch(`https://api.azz.biz.id/api/tiktok?url=${text}&key=global`)
+let ttdl = await ling.json()
+   
 let detil = `
 *User:* ${nickname}
 *Deskriipsi:* ${description}
@@ -81,7 +83,7 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('TikTok Downloader'),
-body: (`${ttdl.result.author.nickname}`),
+body: (`${nickname}`),
 thumbnailUrl: (`${ttdl.result.author.avatar}`),
 sourceUrl: global.fbku,
 mediaType: 1,
