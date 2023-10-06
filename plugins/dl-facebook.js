@@ -3,7 +3,7 @@ import fb from 'api-dylux'
 import ferch from 'node-fetch'
 let limit = 15
 
-let handler = async (m, { conn, text, args, usedPrefix, command }) => {
+let handler = async (m, { conn, text, usedPrefix, command }) => {
 
  
 if (!text) throw `✳️ Download Video Facebook\n\nContoh: !fbdl https://www.facebook.com/dede2015k/videos/574910124852978`
