@@ -18,7 +18,7 @@ await conn.sendFile(m.chat, hasil.data, 'img.jpg', 'Old Image Colorizer\n© Mika
 }
 
 handler.help = ['warnai', 'colorizer']
-handler.tags = ['ai']
+handler.tags = ['ai','prem']
 handler.command = /^(warnai|colorize|colorizer)$/i
 handler.diamond = 3
 
