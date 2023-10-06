@@ -13,7 +13,9 @@ let detil = `
 *User:* ${ttdl.result.name}
 *Username:* ${ttdl.result.username}
 *Tipe:* ${ttdl.result.type}
-*
+*Dilihat:* ${ttdl.result.view}
+*Disukai:* ${ttdl.result.likes}
+
 _Sedang mengirim..._
 `
 let detil2 = `
