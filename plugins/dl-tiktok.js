@@ -118,7 +118,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, url, ttdl.mp4, detil2, m)
+await conn.sendFile(m.chat, url, 'ttdl.mp4', detil2, m)
 
 m.react(done)
 } catch {
