@@ -53,6 +53,7 @@ export default handler
 */
 
 import fg from 'api-dylux' 
+import fetch from 'node-fetch'
 import { tiktokdl } from '@bochilteam/scraper'
     let limit =15
 let handler = async (m, { conn, text, args, usedPrefix, command}) => {
