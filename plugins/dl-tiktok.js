@@ -5,7 +5,6 @@ let limit = 10
 let handler = async (m, { conn, text, args, usedPrefix, command}) => {
 
 if (!text) throw `✳️ Masukan link Tiktok\n\n 📌 Contoh : ${usedPrefix + command} https://vm.tiktok.com/L3N2t1Kt02/`
-if (!args[0].match(/tiktok/gi)) throw `❎  Mohon periksa apakah link berasal dari TikTok`
 
 try {
 let ling = await fetch(`https://api.azz.biz.id/api/tiktok?url=${text}`)
