@@ -19,7 +19,7 @@ conn.sendFile(m.chat, stabdif.data, 'img.jpg', `*[ STABLE DIFFUSION ]*\n\nPROMPT
 
 }
 handler.help = ['stabledif <text>']
-handler.tags = ['ai']
+handler.tags = ['ai','prem']
 handler.command = ['diffusion','stabledif']
 handler.premium = false
 handler.diamond = 3
