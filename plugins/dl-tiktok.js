@@ -38,7 +38,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, ttdl.result.sd, 'ig.mp4', 'TikTok Downloader\n© Mika Bot', m)
+await conn.sendFile(m.chat, ttdl.result.no_watermark, 'ttdl.mp4', 'TikTok Downloader\n\nNo Watermark\n\n© Mika Bot', m)
 
  }
  catch {
