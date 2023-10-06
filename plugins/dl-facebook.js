@@ -6,20 +6,18 @@ let limit = 15
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 
  
-if (!text) throw `✳️ Download Video Facebook\n\nContoh: !fbdl https://www.facebook.com/dede2015k/videos/574910124852978/`
+if (!text) throw `✳️ Download Video Facebook\n\nContoh: !fbdl https://www.facebook.com/dede2015k/videos/228452386672915`
  
 try {
-let ling = await fetch(`https://vihangayt.me/download/fb2?url=${text}`)
+let ling = await fetch(`https://api.arifzyn.xyz/download/facebook?url=${text}`)
 let fbdl = await ling.json()
 
 let detil = `
-*Judul:* ${fbdl.data.title}
 *Deskripsi:* ${fbdl.data.desc}
 
 _Sedang mengirim..._
 `
 let detil2 = `
-*Judul:* ${fbdl.data.title}
 *Deskripsi:* ${fbdl.data.desc}
 `
 
