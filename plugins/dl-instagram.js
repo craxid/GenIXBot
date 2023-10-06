@@ -15,7 +15,7 @@ var handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = ['igdl']
 handler.tags = ['dl']
 handler.command = /^(ig(dl)?)|(instagram(dl)|igvid?)$/i
-handler.register = true
+handler.register = false
 handler.diamond = true
 
 export default handler
