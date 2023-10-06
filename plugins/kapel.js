@@ -6,8 +6,6 @@ import { color } from '../lib/color.js'
 import moment from "moment-timezone"
 //import { MessageType } from '@whiskeysockets/baileys'
 
-
-import fs from 'fs'
 let handler  = async (m, { conn, command }) => {
    await m.reply(wait) 
    
