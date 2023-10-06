@@ -34,8 +34,8 @@ handler.diamond = 3
 export default handler
 */
 
-import fetch from 'node-fetch')
-let uploadImage = require('../lib/uploadImage.js')
+import fetch from 'node-fetch'
+import uploadImage from '../lib/uploadImage.js'
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 let q = m.quoted ? m.quoted : m
