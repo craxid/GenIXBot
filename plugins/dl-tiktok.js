@@ -63,6 +63,9 @@ if (!args[0].match(/tiktok/gi)) throw `❎  Mohon periksa apakah link berasal da
 m.react(rwait)
 
 try {
+    
+
+    
     let p = await fg.tiktok(args[0]) 
     
 if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)
