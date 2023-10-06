@@ -17,6 +17,9 @@ let data = await toanime(url)
 await conn.sendFile(m.chat, data.image_data, 'toanime.jpg', 'Foto ke Anime\n© Mika Bot', m)
 	
 }
+catch(err => {
+    console.log('Terjadi kesalahan:', err)
+ })
 
 handler.help = ['jadianime2']
 handler.tags = ['ai']
