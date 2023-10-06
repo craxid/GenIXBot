@@ -113,7 +113,8 @@ if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *
 ▢ *Nickname:* ${nickname} ${description ? `\n▢ *Deskripsi:* ${description}` : ''}
 └───────────`, m)*/
 
-await conn.
+await conn.sendFile(m.chat, url, ttdl.mp4, detil2, m)
+
 m.react(done)
 } catch {
     m.reply(`❎ Error while downloading the video`)
