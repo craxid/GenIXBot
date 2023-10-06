@@ -140,7 +140,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 	}
 }
 handler.help = ["enhancer", "hdr","remini"]
-handler.tags = ["tools"]
+handler.tags = ["tools", "prem"]
 handler.premium = false
 handler.diamond = 3
 handler.command = ["unblur", "enchaner", "enhance", "hdr","remini"]
