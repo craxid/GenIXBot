@@ -27,9 +27,9 @@ contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
-title: ('Facebook Downloader'),
+title: ('TikTok Downloader'),
 body: (`${ttdl.result.author.nickname}`),
-thumbnailUrl: (`${ttdl.result.avatar}`),
+thumbnailUrl: (`${ttdl.result.author.avatar}`),
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
