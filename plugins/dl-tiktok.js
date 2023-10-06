@@ -81,6 +81,7 @@ if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *
 	const { author: { nickname }, video, description } = await tiktokdl(args[0])
     const url = video.no_watermark || video.no_watermark2 || video.no_watermark_raw
     if (!url) throw '❎ Error while downloading the video'
+    
     conn.sendFile(m.chat, url, 'fb.mp4', `
 ┌─⊷ *TIKTOK DL*
 ▢ *Nickname:* ${nickname} ${description ? `\n▢ *Deskripsi:* ${description}` : ''}
@@ -88,7 +89,7 @@ if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *
 m.react(done)
 } catch {
     m.reply(`❎ Error while downloading the video`)
-}
+ }
 }
     
 }  
