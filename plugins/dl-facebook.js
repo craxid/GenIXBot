@@ -13,12 +13,12 @@ let ling = await fetch(`https://api.arifzyn.xyz/download/facebook?url=${text}`)
 let fbdl = await ling.json()
 
 let detil = `
-*Deskripsi:* ${fbdl.data.desc}
+*Deskripsi:* ${fbdl.result.desc}
 
 _Sedang mengirim..._
 `
 let detil2 = `
-*Deskripsi:* ${fbdl.data.desc}
+*Deskripsi:* ${fbdl.result.desc}
 `
 
 conn.sendMessage(m.chat, {text: detil,
@@ -28,14 +28,14 @@ isForwarded: true,
 externalAdReply: {
 title: ('Facebook Downloader'),
 body: global.namebot,
-thumbnailUrl: (`${fbdl.data.thumb}`),
+thumbnailUrl: (`${fbdl.result.thumb}`),
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, fbdl.data.video_hd, 'ig.mp4', 'Facebook Downloader\n© Mika Bot', m)
+await conn.sendFile(m.chat, fbdl.result.video_hd, 'ig.mp4', 'Facebook Downloader\n© Mika Bot', m)
 
  }
  catch {
