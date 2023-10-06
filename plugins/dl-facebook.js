@@ -24,15 +24,15 @@ ${global.htjava} *Size* : ${fbdl.data.size}
 ${global.htjava} _File melebihi batas unduhan_ *+${limit} MB*`)
 
 let detil = `
-*Nama Aplikasi:* ${fbdl.data.name}
-*Update:* ${fbdl.data.lastup}
+*Judul:* ${fbdl.data.title}
+*Deskripsi:* ${fbdl.data.lastup}
 *Nama Paket:* ${fbdl.data.package}
 *Ukuran:* ${fbdl.data.size}
 
 _Sedang mengirim..._
 `
 let detil2 = `
-*Nama Aplikasi:* ${fbdl.data.name}.apk
+*Judul:* ${fbdl.data.title}
 *Update:* ${fbdl.data.lastup}
 *Nama Paket:* ${fbdl.data.package}
 *Ukuran:* ${fbdl.data.size}
