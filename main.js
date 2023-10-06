@@ -143,7 +143,7 @@ if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
   //---
   return filename.map(file => {
     const stats = statSync(file)
-    if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minuto
+    if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 menit
     return false
   })
 }
