@@ -10,33 +10,41 @@ if (!args[0].match(/tiktok/gi)) throw `❎  Mohon periksa apakah link berasal da
 m.react(rwait)
 
 try {
-    let p = await fg.tiktok(args[0]) 
-    
-if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)
+let ling = await fetch(`https://vihangayt.me/download/fb2?url=${text}`)
+let fbdl = await ling.json()
 
-    let te = `
-┌─⊷ TIKTOK
-▢ *Nama:* ${p.nickname}
-▢ *Username:* ${p.unique_id}
-▢ *Durasi:* ${p.duration}
-▢ *Deskripsi:* ${p.description}
-└───────────`
-    conn.sendFile(m.chat, p.play, 'tiktok.mp4', te, m)
-    m.react(done)
-    } catch {  	
-    try { 
-	const { author: { nickname }, video, description } = await tiktokdl(args[0])
-    const url = video.no_watermark || video.no_watermark2 || video.no_watermark_raw
-    if (!url) throw '❎ Error while downloading the video'
-    conn.sendFile(m.chat, url, 'fb.mp4', `
-┌─⊷ *TIKTOK DL-2*
-▢ *Nickname:* ${nickname} ${description ? `\n▢ *Deskripsi:* ${description}` : ''}
-└───────────`, m)
-m.react(done)
-} catch {
-    m.reply(`❎ Error while downloading the video`)
+let detil = `
+*Judul:* ${fbdl.data.title}
+*Deskripsi:* ${fbdl.data.desc}
+
+_Sedang mengirim..._
+`
+let detil2 = `
+*Judul:* ${fbdl.data.title}
+*Deskripsi:* ${fbdl.data.desc}
+`
+
+conn.sendMessage(m.chat, {text: detil,
+contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
+externalAdReply: {
+title: ('Facebook Downloader'),
+body: (`${fbdl.data.title}`),
+thumbnailUrl: (`${fbdl.data.thumb}`),
+sourceUrl: global.fbku,
+mediaType: 1,
+renderLargerThumbnail: true
+}}},
+{quoted: m})
+
+await conn.sendFile(m.chat, fbdl.data.sd, 'ig.mp4', 'TikTok Downloader\n© Mika Bot', m)
+
+ }
+ catch {
+		m.reply(`❎ Error: Ada sebuah kesalahan`)
+	}
 }
-} 
     
 }  
 handler.help = ['tiktok']
