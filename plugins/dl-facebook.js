@@ -40,15 +40,15 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('Facebook Downloader'),
-body: (`${fbdl.data.name}`),
+body: (`${fbdl.data.title}`),
 thumbnailUrl: (`${fbdl.data.thumb}`),
-sourceUrl: (`https://play.google.com/store/apps/details?id=${fbdl.data.package}`),
+sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, fbdl.data.dllink, (`${fbdl.data.name} (Mika Bot).apk`), detil2, m)
+await conn.sendFile(m.chat, fbdl.data.s, 'video.mp4', detil2, m)
 
  }
  catch {
