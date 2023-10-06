@@ -14,14 +14,14 @@ let ling = await fetch(`https://api.azz.biz.id/api/tiktok?url=${text}`)
 let ttdl = await ling.json()
 
 let detil = `
-*User:* ${ttdl.data.nickname}
-*ID:* ${ttdl.data.unique_id}
+*User:* ${ttdl.result.nickname}
+*ID:* ${ttdl.result.unique_id}
 
 _Sedang mengirim..._
 `
 let detil2 = `
-*User:* ${ttdl.data.title}
-*I:* ${ttdl.data.unique_id}
+*User:* ${ttdl.result.title}
+*ID:* ${ttdl.result.unique_id}
 `
 
 conn.sendMessage(m.chat, {text: detil,
@@ -30,15 +30,15 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('Facebook Downloader'),
-body: (`${ttdl.data.title}`),
-thumbnailUrl: (`${ttdl.data.thumb}`),
+body: (`${ttdl.result.title}`),
+thumbnailUrl: (`${ttdl.result.avatar}`),
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, ttdl.data.sd, 'ig.mp4', 'TikTok Downloader\n© Mika Bot', m)
+await conn.sendFile(m.chat, ttdl.result.sd, 'ig.mp4', 'TikTok Downloader\n© Mika Bot', m)
 
  }
  catch {
