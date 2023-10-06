@@ -1,6 +1,6 @@
 
 import fb from 'api-dylux'
-import ferch from 'node-fetch'
+import fetch from 'node-fetch'
 let limit = 15
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
