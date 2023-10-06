@@ -16,7 +16,7 @@ let detil = `
 *Dilihat:* ${ttdl.result.views}
 *Disukai:* ${ttdl.result.likes}
 *Komentar:* ${ttdl.result.comments}
-*Difavoritkan*: ${ttdl.result.favorite}
+*Difavoritkan:* ${ttdl.result.favorite}
 *Dibagikan:* ${ttdl.result.shares}
 *Deskripsi:* ${ttdl.result.description}
 
@@ -29,7 +29,7 @@ let detil2 = `
 *Dilihat:* ${ttdl.result.views}
 *Disukai:* ${ttdl.result.likes}
 *Komentar:* ${ttdl.result.comments}
-*Difavoritkan*: ${ttdl.result.favorite}
+*Difavoritkan:* ${ttdl.result.favorite}
 *Dibagikan:* ${ttdl.result.shares}
 *Deskripsi:* ${ttdl.result.description}
 `
