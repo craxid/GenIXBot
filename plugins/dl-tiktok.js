@@ -1,7 +1,7 @@
 
-import fg from 'api-dylux' 
-import { tiktokdl } from '@bochilteam/scraper'
-    let limit = 10
+import fetch from 'node-fetch'
+
+let limit = 10
 let handler = async (m, { conn, text, args, usedPrefix, command}) => {
 
 if (!text) throw `✳️ Masukan link Tiktok\n\n 📌 Contoh : ${usedPrefix + command} https://vm.tiktok.com/L3N2t1Kt02/`
