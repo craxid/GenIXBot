@@ -27,7 +27,7 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('Facebook Downloader'),
-body: (`${fbdl.data.title}`),
+body: global.namebot,
 thumbnailUrl: (`${fbdl.data.thumb}`),
 sourceUrl: global.fbku,
 mediaType: 1,
