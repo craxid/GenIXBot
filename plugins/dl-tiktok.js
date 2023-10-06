@@ -45,3 +45,5 @@ handler.command = /^(tiktok|ttdl|tiktokdl|tiktoknowm)$/i
 handler.diamond = true
 
 export default handler
+
+//https://api.azz.biz.id/api/tiktok?url=https://www.tiktok.com/@omagadsus/video/7025456384175017243?is_from_webapp=1&sender_device=pc&web_id6982004129280116226&key=global
