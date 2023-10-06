@@ -12,7 +12,8 @@ let ttdl = await ling.json()
 let detil = `
 *User:* ${ttdl.result.name}
 *Username:* ${ttdl.result.username}
-
+*Tipe:* ${ttdl.result.type}
+*
 _Sedang mengirim..._
 `
 let detil2 = `
