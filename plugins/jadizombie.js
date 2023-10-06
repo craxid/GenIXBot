@@ -30,7 +30,7 @@ zombie.transform({
 
 handler.command = ['jadizombie']
 handler.help = ['jadizombie']
-handler.tags = ['ai']
+handler.tags = ['ai','prem']
 handler.diamond = 3
 
 export default handler
