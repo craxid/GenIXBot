@@ -16,7 +16,8 @@ let detil = `
 *Dilihat:* ${ttdl.result.view}
 *Disukai:* ${ttdl.result.likes}
 *Komentar:* ${ttdl.result.comments}
-*Difavoritkan*: ${ttdl.result.type}
+*Difavoritkan*: ${ttdl.result.favorite}
+*Dibagikan:* ${ttdl.result.shares}
 _Sedang mengirim..._
 `
 let detil2 = `
