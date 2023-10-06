@@ -42,7 +42,7 @@ externalAdReply: {
 title: ('TikTok Downloader'),
 body: (`${ttdl.result.name}`),
 thumbnailUrl: (`${ttdl.result.profile}`),
-sourceUrl: global.fbku,
+sourceUrl: (`https://tiktok.com/${ttdl.result.username}`),
 mediaType: 1,
 renderLargerThumbnail: false
 }}},
