@@ -69,7 +69,7 @@ let p = await fg.tiktok(args[0])
     
 if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)
 
-    let te = `
+/*    let te = `
 ┌─⊷ TIKTOK
 ▢ *Nama:* ${p.nickname}
 ▢ *Username:* ${p.unique_id}
@@ -77,8 +77,9 @@ if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *
 ▢ *Deskripsi:* ${p.description}
 └───────────`
 
-/*conn.sendFile(m.chat, p.play, 'tiktok.mp4', te, m)
-    m.react(done)
+conn.sendFile(m.chat, p.play, 'tiktok.mp4', te, m)
+    m.react(done)*/
+    
     } catch {  	
     try { 
 	const { author: { nickname }, video, description } = await tiktokdl(args[0])
