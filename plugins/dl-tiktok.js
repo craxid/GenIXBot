@@ -14,14 +14,14 @@ let ling = await fetch(`https://api.azz.biz.id/api/tiktok?url=${text}`)
 let ttdl = await ling.json()
 
 let detil = `
-*Judul:* ${ttdl.data.title}
-*Deskripsi:* ${ttdl.data.desc}
+*Unser:* ${ttdl.data.nickname}
+*Deskripsi:* ${ttdl.data.unic_id}
 
 _Sedang mengirim..._
 `
 let detil2 = `
 *Judul:* ${ttdl.data.title}
-*Deskripsi:* ${ttdl.data.desc}
+*Deskripsi:* ${ttdl.data.unic_id}
 `
 
 conn.sendMessage(m.chat, {text: detil,
