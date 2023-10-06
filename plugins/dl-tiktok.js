@@ -66,13 +66,13 @@ try {
     
 let detil = `
 *User:* ${nickname}
-*ID:* ${descrip}
+*Deskriipsi:* ${description}
 
 _Sedang mengirim..._
 `
 let detil2 = `
-*User:* ${ttdl.result.author.nickname}
-*ID:* ${ttdl.result.author.unique_id}
+*User:* ${nickname}
+*Deskripsi:* ${description}
 `
 
 conn.sendMessage(m.chat, {text: detil,
