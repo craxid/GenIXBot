@@ -44,8 +44,9 @@ if (!mime) throw 'Kirim/Reply Gambar dengan caption .jadianime'
 m.reply('Tunggu Sebentar...')
 let media = await q.download()
 let url = await uploadImage(media)
-let hasil = await (await fetch(`https://phototoanime.p.rapidapi.com/draw?rapidapi-key=553e4784d3msh29ae65eb1df940bp158d54jsnc55b268d0b6b&url=${url}`)).buffer()
-await conn.sendFile(m.chat, hasil, '', global.namebot, m)
+let hasil = await toanime(url)
+
+await conn.sendFile(m.chat, hasil.image_data, '', global.namebot, m)
 	
 }
 handler.help = ['jadianime2']
