@@ -21,8 +21,18 @@ let detil = `
 _Sedang mengirim..._
 `
 let detil2 = `
-*User:* ${ttdl.result.nickname}
-*ID:* ${ttdl.result.unique_id}
+*User:* ${ttdl.result.name}
+*Username:* ${ttdl.result.username}
+*Tipe:* ${ttdl.result.type}
+*Dilihat:* ${ttdl.result.view}
+*Disukai:* ${ttdl.result.likes}
+*Komentar:* ${ttdl.result.comments}
+*Difavoritkan*: ${ttdl.result.favorite}
+*Dibagikan:* ${ttdl.result.shares}
+
+*Deskripsi:* ${ttdl.result.shares}
+
+_Sedang mengirim..._
 `
 
 conn.sendMessage(m.chat, {text: detil,
