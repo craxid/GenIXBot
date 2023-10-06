@@ -18,6 +18,8 @@ let detil = `
 *Komentar:* ${ttdl.result.comments}
 *Difavoritkan*: ${ttdl.result.favorite}
 *Dibagikan:* ${ttdl.result.shares}
+*Deskripsi:* ${ttdl.result.description}
+
 _Sedang mengirim..._
 `
 let detil2 = `
@@ -30,9 +32,7 @@ let detil2 = `
 *Difavoritkan*: ${ttdl.result.favorite}
 *Dibagikan:* ${ttdl.result.shares}
 
-*Deskripsi:* ${ttdl.result.shares}
-
-_Sedang mengirim..._
+*Deskripsi:* ${ttdl.result.description}
 `
 
 conn.sendMessage(m.chat, {text: detil,
