@@ -1,7 +1,7 @@
 
 let handler = async (m, { conn }) => {
 
-m.reply(`
+let pesan = (`
 ≡  *Mika ᴮᴼᵀ ┃ Kontribusi*
 
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
@@ -19,7 +19,19 @@ Terima Kasih kepada:
 - Teman-teman yang bantu ngetes bot
 
 _Project Bot ini Tidak akan terwujud tanpa kontribusi kalian_
-`
+`)
+
+conn.sendMessage(m.chat, { text: don,
+contextInfo: {
+externalAdReply: {
+title: (`Donasi`),
+body: ('Dukung aku agar bot ini tetap hidup'),
+thumbnailUrl: ,
+sourceUrl: global.dygp,
+mediaType: 3,
+showAdAttribution: true,
+renderLargerThumbnail: false
+}}}
  )
 }
 handler.help = ['kontribusi']
