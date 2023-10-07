@@ -481,8 +481,8 @@ case 'remove':
 if (chat.welcome) {
 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
 for (let user of participants) {
-//let pp = 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg'
-let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
+let pp = 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg'
+//let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 let ppgp = 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg'
 try {
 pp = await this.profilePictureUrl(user, 'image')
@@ -498,6 +498,7 @@ name: await this.getName(user),
 gcname: await this.getName(id),
 member: groupMetadata.participants.length,
 pp: pp,
+bg: 'https://i.imgur.com/klTSO3d.jpg'
 }, 'key')
 
 let lea = API('azz', '/api/goodbye', {
@@ -505,7 +506,8 @@ name: await this.getName(user),
 gcname: await this.getName(id),
 member: groupMetadata.participants.length,
 pp: pp,
-}, 'key')
+bg: 'https://i.imgur.com/klTSO3d.jpg'
+}, 'apikey')
                         
 this.sendFile(id, action === 'add' ? wel : lea, pp, 'Gambar.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
