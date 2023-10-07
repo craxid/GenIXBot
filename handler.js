@@ -541,9 +541,9 @@ text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Se
 
 //https://api.azz.biz.id/api/welcome?name=${name}&gcname=Miftah%20Botz&member=${member}&pp=${pp}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global
 
-let wel = API(`https://api.azz.biz.id/api/welcome?name=${name}&gcname=${gpname}&member=${member}&pp=${pp}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global`)
+let wel = API(`https://api.azz.biz.id/api/welcome?name=${name}&gcname=${gpname}&member=${member}&pp=${pp}&bg=https://i.ibb.co/8B6Q84n/LTqHsfYS.jpg&key=global`)
 
-let lea = API(`https://api.azz.biz.id/api/welcome?name=${name}&gcname=${gpname}&member=${member}&pp=${pp}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global`)
+let lea = API(`https://api.azz.biz.id/api/welcome?name=${name}&gcname=${gpname}&member=${member}&pp=${pp}&bg=https://i.ibb.co/8B6Q84n/LTqHsfYS.jpg&key=global`)
 
 this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
                         }
