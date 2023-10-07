@@ -494,8 +494,8 @@ text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Se
 (chat.sBye || this.bye || conn.bye || 'Selamat tinggal, @user')).replace('@user', '@' + user.split('@')[0])
 
 let wel = API('azz', '/api/welcome', {
-username: await this.getName(user),
-groupname: await this.getName(id),
+name: await this.getName(user),
+gcname: await this.getName(id),
 groupicon: ppgp,
 membercount: groupMetadata.participants.length,
 profile: pp,
