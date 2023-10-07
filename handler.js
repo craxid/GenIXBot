@@ -507,7 +507,7 @@ gcname: await this.getName(id),
 member: groupMetadata.participants.length,
 pp: pp,
 bg: 'https://i.imgur.com/klTSO3d.jpg'
-}, 'apikey')
+}, 'key')
                         
 this.sendFile(id, action === 'add' ? wel : lea, pp, 'Gambar.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
