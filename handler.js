@@ -496,10 +496,8 @@ text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Se
 let wel = API('azz', '/api/welcome', {
 name: await this.getName(user),
 gcname: await this.getName(id),
-groupicon: ppgp,
-membercount: groupMetadata.participants.length,
-profile: pp,
-background: 'https://i.imgur.com/bbWbASn.jpg'
+member: groupMetadata.participants.length,
+pp: pp,
 }, 'apikey')
 
 let lea = API('azz', '/api/goodbye', {
