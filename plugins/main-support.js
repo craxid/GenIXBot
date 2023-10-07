@@ -5,8 +5,8 @@ let pesan = (`
 ≡  *Mika ᴮᴼᵀ ┃ Kontribusi*
 
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
-▢ Grup
-https://chat.whatsapp.com/BDYIsBhoR2I2aXpEvZRzWP
+Link bot
+https://zybra.eu.org 
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
 
 Terima Kasih kepada:
@@ -29,7 +29,7 @@ externalAdReply: {
 title: (`Kontribusi`),
 body: ('Thanks for all!'),
 thumbnailUrl: ,
-sourceUrl: global.dygp,
+sourceUrl: global.fgig,
 thumbnailUrl: global.ppmika,
 mediaType: 1,
 renderLargerThumbnail: false
@@ -40,3 +40,7 @@ handler.tags = ['main']
 handler.command = ['contribution', 'thxto', 'kontribusi'] 
 
 export default handler
+/*▢ Grup
+https://chat.whatsapp.com/BDYIsBhoR2I2aXpEvZRzWP
+◈ ━━━━━━━━━━━━━━━━━━━━ ◈
+*/
