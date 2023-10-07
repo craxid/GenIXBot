@@ -28,7 +28,6 @@ isForwarded: true,
 externalAdReply: {
 title: (`Kontribusi`),
 body: ('Thanks for all!'),
-thumbnailUrl: ,
 sourceUrl: global.fgig,
 thumbnailUrl: global.ppmika,
 mediaType: 1,
