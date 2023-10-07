@@ -539,11 +539,11 @@ text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'We
 
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
 
-//https://api.azz.biz.id/api/welcome?name=${name}&gcname=Miftah%20Botz&member=${member}&pp=https://i.ibb.co/w7nHy5k/mark.jpg&bg=https://minimalistic-wallpaper.demolab.com/?random&key=
+//https://api.azz.biz.id/api/welcome?name=${name}&gcname=Miftah%20Botz&member=${member}&pp=${pp}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global
 
-let wel = API(`https://api.lolhuman.xyz/api/base/welcome?apikey=gunturganteng&img1=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg&img2=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg&background=https://i.ibb.co/8B6Q84n/LTqHsfYS.jpg&username=${name}&member=${member}&groupname=${gpname}`)
+let wel = API(`https://api.azz.biz.id/api/welcome?name=${name}&gcname=Miftah%20Botz&member=${member}&pp=${pp}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global`)
 
-let lea = API(`https://api.lolhuman.xyz/api/base/leave?apikey=gunturganteng&img1=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg&img2=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg&background=https://i.ibb.co/8B6Q84n/LTqHsfYS.jpg&username=${name}&member=${member}&groupname=${gpname}`)
+let lea = API(`https://api.azz.biz.id/api/welcome?name=${name}&gcname=Miftah%20Botz&member=${member}&pp=${pp}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global`)
 
 this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
                         }
