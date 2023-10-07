@@ -498,16 +498,14 @@ name: await this.getName(user),
 gcname: await this.getName(id),
 member: groupMetadata.participants.length,
 pp: pp,
-}, 'apikey')
+}, 'key')
 
 let lea = API('azz', '/api/goodbye', {
-username: await this.getName(user),
-groupname: await this.getName(id),
-groupicon: ppgp,
-membercount: groupMetadata.participants.length,
-profile: pp,
-background: 'https://i.imgur.com/klTSO3d.jpg'
-}, 'apikey')
+name: await this.getName(user),
+gcname: await this.getName(id),
+member: groupMetadata.participants.length,
+pp: pp,
+}, 'key')
                         
 this.sendFile(id, action === 'add' ? wel : lea, pp, 'Gambar.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
