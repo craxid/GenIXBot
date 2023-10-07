@@ -16,10 +16,7 @@ ${global.gy} Saweria: https://saweria.co/ClanDare
 ${global.gy} Trakteer: https://teer.id/dede_klender
 ${global.sb}
 
-${global.zt} *[ADS] Dapatkan $5 hanya dengan mengisi survey*
-• *Link :* https://lootup.me?refer=3892731
-
-Thanks for Donation!
+Terima kasih sudah membantu!
 `
 let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 conn.sendFile(m.chat, img, 'img.jpg', don, m)
@@ -43,3 +40,6 @@ handler.tags = ['main']
 handler.command = ['donasi', 'donate', 'dukung'] 
 
 export default handler
+
+//${global.zt} *[ADS] Dapatkan $5 hanya dengan mengisi survey*
+//• *Link :* https://lootup.me?refer=3892731
