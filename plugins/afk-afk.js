@@ -24,7 +24,7 @@ sourceUrl: global.fbku,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}})
+}}}, {quoted: m})
   
 }
 handler.help = ['afk <Alasan>']
