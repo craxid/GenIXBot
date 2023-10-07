@@ -519,16 +519,16 @@ this.sendFile(id, action === 'add' ? wel : lea, pp, 'Gambar.jpg', text, null, fa
             }
             break*/
             
-            case 'add':
-            case 'remove':
-                if (chat.welcome) {
-                    let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
-                    for (let user of participants) {
-                        let pp = 'https://i.ibb.co/sQTkHLD/ppkosong.png'
-                        let name = await this.getName(user)
-                        let gpname = await this.getName(id)
-                        let member = groupMetadata.participants.length
-                        pp: pp
+case 'add':
+case 'remove':
+if (chat.welcome) {
+let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
+for (let user of participants) {
+let pp = 'https://i.ibb.co/sQTkHLD/ppkosong.png'
+let name = await this.getName(user)
+let gpname = await this.getName(id)
+let member = groupMetadata.participants.length
+    pp: pp
                         try {
                             pp = await this.profilePictureUrl(user, 'image')
                         } catch (e) {
