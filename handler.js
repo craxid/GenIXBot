@@ -478,17 +478,18 @@ export async function participantsUpdate({ id, participants, action }) {
         
 case 'add':
 case 'remove':
-    if (chat.welcome) {
-    let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
-    for (let user of participants) {
-    //let pp = 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg'
-    let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
-    let ppgp = 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg'
-    try {
-    pp = await this.profilePictureUrl(user, 'image')
-    ppgp = await this.profilePictureUrl(id, 'image')
+if (chat.welcome) {
+let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
+for (let user of participants) {
+//let pp = 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg'
+let pp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
+let ppgp = 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg'
+try {
+pp = await this.profilePictureUrl(user, 'image')
+ppgp = await this.profilePictureUrl(id, 'image')
     } finally {
-    text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang, @user').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'Desconocido') :
+
+text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang, @user').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'Desconocido') :
         
     (chat.sBye || this.bye || conn.bye || 'Selamat tinggal, @user')).replace('@user', '@' + user.split('@')[0])
                          
