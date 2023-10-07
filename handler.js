@@ -494,16 +494,16 @@ case 'remove':
                          
 let wel = API('azz', '/api/welcome', {
 username: await this.getName(user),
-    groupname: await this.getName(id),
-    groupicon: ppgp,
-    membercount: groupMetadata.participants.length,
-    profile: pp,
-                                background: 'https://i.imgur.com/bbWbASn.jpg'
-                            }, 'apikey')
+groupname: await this.getName(id),
+groupicon: ppgp,
+membercount: groupMetadata.participants.length,
+profile: pp,
+background: 'https://i.imgur.com/bbWbASn.jpg'
+}, 'apikey')
 
-                            let lea = API('azz', '/api/goodbye', {
-                                username: await this.getName(user),
-                                groupname: await this.getName(id),
+let lea = API('azz', '/api/goodbye', {
+username: await this.getName(user),
+groupname: await this.getName(id),
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
