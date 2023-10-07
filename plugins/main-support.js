@@ -21,17 +21,17 @@ Terima Kasih kepada:
 _Project Bot ini Tidak akan terwujud tanpa kontribusi kalian_
 `)
 
-conn.sendMessage(m.chat, { text: don,
+conn.sendMessage(m.chat, { text: pesan,
 contextInfo: {
 externalAdReply: {
-title: (`Donasi`),
-body: ('Dukung aku agar bot ini tetap hidup'),
+title: (`Kontribusi`),
+body: ('Thanks for all!'),
 thumbnailUrl: ,
 sourceUrl: global.dygp,
 mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}}
+}}},
  )
 }
 handler.help = ['kontribusi']
