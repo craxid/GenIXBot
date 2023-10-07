@@ -23,16 +23,17 @@ _Project Bot ini Tidak akan terwujud tanpa kontribusi kalian_
 
 conn.sendMessage(m.chat, { text: pesan,
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
 externalAdReply: {
 title: (`Kontribusi`),
 body: ('Thanks for all!'),
 thumbnailUrl: ,
 sourceUrl: global.dygp,
-mediaType: 3,
-showAdAttribution: true,
+thumbnailUrl: global.ppmika,
+mediaType: 1,
 renderLargerThumbnail: false
-}}},
- )
+}}}, {quoted: m})
 }
 handler.help = ['kontribusi']
 handler.tags = ['main']
