@@ -489,14 +489,15 @@ case 'remove':
     ppgp = await this.profilePictureUrl(id, 'image')
     } finally {
     text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang, @user').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'Desconocido') :
-            (chat.sBye || this.bye || conn.bye || 'Selamat tinggal, @user')).replace('@user', '@' + user.split('@')[0])
+        
+    (chat.sBye || this.bye || conn.bye || 'Selamat tinggal, @user')).replace('@user', '@' + user.split('@')[0])
                          
-                            let wel = API('azz', '/api/welcome', {
-                                username: await this.getName(user),
-                                groupname: await this.getName(id),
-                                groupicon: ppgp,
-                                membercount: groupMetadata.participants.length,
-                                profile: pp,
+let wel = API('azz', '/api/welcome', {
+username: await this.getName(user),
+    groupname: await this.getName(id),
+    groupicon: ppgp,
+    membercount: groupMetadata.participants.length,
+    profile: pp,
                                 background: 'https://i.imgur.com/bbWbASn.jpg'
                             }, 'apikey')
 
