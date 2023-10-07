@@ -16,6 +16,8 @@ Sekarang Kamu AFK
 conn.sendMessage(m.chat, {
 text: mika,
 contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
 externalAdReply: {
 title: (`${conn.getName(m.sender)}`),
 body: ('SEDANG AFK'),
