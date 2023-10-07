@@ -504,12 +504,13 @@ background: 'https://i.imgur.com/bbWbASn.jpg'
 let lea = API('azz', '/api/goodbye', {
 username: await this.getName(user),
 groupname: await this.getName(id),
-                                groupicon: ppgp,
-                                membercount: groupMetadata.participants.length,
-                                profile: pp,
-                                background: 'https://i.imgur.com/klTSO3d.jpg'
-                            }, 'apikey')
-                        this.sendFile(id, action === 'add' ? wel : lea, pp, 'Gambar.jpg', text, null, false, { mentions: [user] })
+groupicon: ppgp,
+membercount: groupMetadata.participants.length,
+profile: pp,
+background: 'https://i.imgur.com/klTSO3d.jpg'
+}, 'apikey')
+                        
+this.sendFile(id, action === 'add' ? wel : lea, pp, 'Gambar.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
                              [(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : 'khajs')], 
                              [(action == 'add' ? '⏍ INFO' : 'ッ'), (action == 'add' ? '/info' : ' ')] ], null, {mentions: [user]})
