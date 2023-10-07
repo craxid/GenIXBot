@@ -1,7 +1,7 @@
 
 let handler = async (m, { conn }) => {
 
-let pesan = (`
+let pesan = `
 ≡  *Mika ᴮᴼᵀ ┃ Kontribusi*
 
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
@@ -19,7 +19,7 @@ Terima Kasih kepada:
 - Teman-teman yang bantu ngetes bot
 
 _Project Bot ini Tidak akan terwujud tanpa kontribusi kalian_
-`)
+`
 
 conn.sendMessage(m.chat, { text: pesan,
 contextInfo: {
@@ -35,6 +35,7 @@ mediaType: 1,
 renderLargerThumbnail: false
 }}}, {quoted: m})
 }
+
 handler.help = ['kontribusi']
 handler.tags = ['main']
 handler.command = ['contribution', 'thxto', 'kontribusi'] 
