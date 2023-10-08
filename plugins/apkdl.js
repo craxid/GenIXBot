@@ -3,7 +3,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
 
-let limit = 100
+let limit = 150
 
 if (!text) throw `✳️ Download aplikasi menggunakan ID\n\nContoh: !apkdl com.whatsapp`
  
