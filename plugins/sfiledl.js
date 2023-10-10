@@ -35,8 +35,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendMedia(m.chat, sfiledl.result.url, { mimetype: `${sfiledl.result.mimetype}`}, {fileName: `${sfiledl.result.title}`}, m)
-
+await conn.sendFile(m.chat, sfiledl.result., (`${sfiledl.result.title} (Mika Bot).apk`), detil2, m)
 
 }
 handler.help = ['sfile'].map(v => v + ' <url>')
