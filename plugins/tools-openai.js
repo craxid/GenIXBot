@@ -15,7 +15,7 @@ m.react('💬')
         
 //await m.reply(res.respon.replace('Azz-ai','Mika Bot').replace('yang terdiri dari Miftah dan Riki', 'dari ZuroX Project').replace('Miftah dan Riki','ZuroX Project'))
         
-conn.sendMessage(m.chat, {text: res.result.replace('Azz-ai','Mika Bot').replace('yang terdiri dari Miftah dan Riki', 'dari ZuroX Project').replace('Miftah dan Riki','ZuroX Project'),
+conn.sendMessage(m.chat, {text: res.respon.replace('Azz-ai','Mika Bot').replace('yang terdiri dari Miftah dan Riki', 'dari ZuroX Project').replace('Miftah dan Riki','ZuroX Project'),
 contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
