@@ -43,9 +43,9 @@ await conn.sendFile(m.chat, fbdl.result.video_hd, 'ig.mp4', 'Facebook Downloader
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
 }
-handler.help = ['facebook'].map(v => v + ' <url>')
+handler.help = ['sfile'].map(v => v + ' <url>')
 handler.tags = ['dl']
-handler.command = /^((sfile|fb)(downloder|dl)?)$/i
+handler.command = /^((sfile|dl)?)$/i
 handler.diamond = true
 
 export default handler
