@@ -34,7 +34,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendMedia(m.chat, sfiledl.result.url, 0, {fileName: `${sfiledl.result.title}`})
+await conn.sendFile(m.chat, sfiledl.result.url, 0, {fileName: `${sfiledl.result.title}`})
 
 
 }
