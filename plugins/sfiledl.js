@@ -18,7 +18,7 @@ m.reply(wait)
 
 // conn.sendFile(m.chat, json.result.url, `${json.result.title}`,null, m)
 
-conn.sendMedia(m.chat, json.result.url, 0, {fileName: `${json.result.title}`})
+await conn.sendMedia(m.chat, json.result.url, 0, {fileName: `${json.result.title}`})
 
 }
 
