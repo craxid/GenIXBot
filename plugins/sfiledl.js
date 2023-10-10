@@ -2,10 +2,10 @@
 import fetch from 'node-fetch'
 let limit = 15
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
+let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
  
-if (!text) throw `✳️ Download Video Facebook\n\nContoh: !sfile https://sfile.mobi/2SoXEZQi3mF`
+if (!args[0]) throw `Link not found..\n\nExample:\n${usedPrefix}sfile https://sfile.mobi/1Qot1AZcAsS7`
  
 try {
 let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/sfile?url=${text}`)
