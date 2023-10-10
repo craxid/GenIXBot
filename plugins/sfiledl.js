@@ -11,6 +11,8 @@ try {
 let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/sfile?url=${text}`)
 let sfiledl = await ling.json()
 
+let { url, url2, filename, ext, upload_date, filesize, filesizeB } = res
+
 let detil = `
 *Nama:* ${sfiledl.result.title}
 
