@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) throw `✳️ Download Video Facebook\n\nContoh: !sfile https://sfile.mobi/2SoXEZQi3mF`
  
 try {
-let ling = await fetch(`htt=${text}`)
+let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/sfile?url=${text}`)
 let sfiledl = await ling.json()
 
 let detil = `
@@ -17,7 +17,8 @@ let detil = `
 _Sedang mengirim..._
 `
 let detil2 = `
-*Deskripsi:* ${sfiledl.result.desc}
+*Nama:* ${sfiledl.result.desc}
+
 `
 
 conn.sendMessage(m.chat, {text: detil,
