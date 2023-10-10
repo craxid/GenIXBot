@@ -1,23 +1,49 @@
 
-import fetch from 'node-fetch';
-import { MessageType, MessageOptions, Mimetype } from '@adiwajshing/baileys';
+import fetch from 'node-fetch'
+let limit = 15
 
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-await m.reply('Tunggu bentar...')
-let res = await fetch(`https://api.yanzbotz.my.id/api/downloader/sfile?url=${args[0]}`)
+let handler = async (m, { conn, text, usedPrefix, command }) => {
 
-let json = await res.json()
+ 
+if (!text) throw `✳️ Download Video Facebook\n\nContoh: !sfile https://sfile.mobi/2SoXEZQi3mF`
+ 
+try {
+let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/sfile?url=${text}`)
+let sfiledl = await ling.json()
 
-if (!args[0]) throw `Link not found..\n\nExample:\n${usedPrefix}sfile https://sfile.mobi/1Qot1AZcAsS7`
+let { url, url2, filename, ext, upload_date, filesize, filesizeB } = res
 
-let src = `*Judul:* ${json.result.title}\n*Link:* ${json.result.url}`.trim()
+let detil = `
+*Nama:* ${sfiledl.result.title}
 
-m.reply(wait)
+_Sedang mengirim..._
+`
+let detil2 = `
+*Nama:* ${sfiledl.result.title}
+*Tipe:* ${sfiledl.result.mimetype}
+`
 
-await conn.sendMedia(m.chat, json.result.url, 0, {fileName: `${json.result.title}`})
+conn.sendMessage(m.chat, {text: detil,
+contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
+externalAdReply: {
+title: ('Sfile Downloader'),
+body: global.namebot,
+thumbnailUrl: (`${text}`),
+sourceUrl: global.fbku,
+mediaType: 1,
+renderLargerThumbnail: true
+}}},
+{quoted: m})
 
+await conn.sendFile(m.chat, { document: { url: sfile.result.url }, fileName: sfile.result.title, mimetype: sfile.result.mimetype }, { quoted: m })
+
+ }
+ catch {
+		m.reply(`❎ Error: Ada sebuah kesalahan`)
+	}
 }
-
 handler.help = ['sfile'].map(v => v + ' <url>')
 handler.tags = ['dl']
 handler.command = /^((sfile|dl)?)$/i
