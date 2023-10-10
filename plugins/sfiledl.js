@@ -27,8 +27,7 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('Sfile Downloader'),
-body: global.namebot,
-thumbnailUrl: (`${text}`),
+body: (`${text}`),
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
