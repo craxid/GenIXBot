@@ -37,7 +37,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, { document: { url: sfile.result.url }, fileName: sfile.result.title, mimetype: sfile.result.mimetype }, { quoted: m })
+await conn.sendMedia(m.chat, json.result.url, 0, {fileName: `${json.result.title}`})
 
  }
  catch {
