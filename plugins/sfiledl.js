@@ -12,13 +12,13 @@ let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/sfile?url=${te
 let sfiledl = await ling.json()
 
 let detil = `
-*Deskripsi:* ${sfiledl.result.desc}
+*Nama:* ${sfiledl.result.title}
 
 _Sedang mengirim..._
 `
 let detil2 = `
-*Nama:* ${sfiledl.result.desc}
-
+*Nama:* ${sfiledl.result.title}
+*Tipe:* ${sfiledl.result.mimetype}
 `
 
 conn.sendMessage(m.chat, {text: detil,
