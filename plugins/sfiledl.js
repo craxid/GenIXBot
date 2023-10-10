@@ -21,6 +21,8 @@ let detil2 = `
 *Tipe:* ${sfiledl.result.mimetype}
 `
 
+let poto = `../src/avatar_contact.png`
+
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
 forwardingScore: 9999,
@@ -28,9 +30,8 @@ isForwarded: true,
 externalAdReply: {
 title: ('Sfile Downloader'),
 body: (`${text}`),
-sourceUrl: global.fbku,
 mediaType: 1,
-thumbnailUrl: `../src/avatar_contact.png`,
+thumbnailUrl: poto,
 renderLargerThumbnail: true
 }}},
 {quoted: m})
