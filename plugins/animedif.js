@@ -27,4 +27,3 @@ handler.diamond = 3
 
 export default handler
 
-/*let gpt = await fetch(`https://api.azz.biz.id/api/gpt?q=${text}&key=mangea`)*/
