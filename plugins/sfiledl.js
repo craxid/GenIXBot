@@ -22,6 +22,7 @@ let detil2 = `
 `
 
 let poto = `../src/avatar_contact.png`
+let mikapp = 'https://telegra.ph/file/a9a78b769836fe10fa62d.jpg'
 
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
@@ -31,7 +32,7 @@ externalAdReply: {
 title: ('Sfile Downloader'),
 body: (`${text}`),
 mediaType: 1,
-thumbnailUrl: poto,
+thumbnailUrl: mikapp,
 renderLargerThumbnail: true
 }}},
 {quoted: m})
