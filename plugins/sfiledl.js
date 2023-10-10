@@ -7,7 +7,6 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
  
 if (!args[0]) throw `Link not found..\n\nExample:\n${usedPrefix}sfile https://sfile.mobi/1Qot1AZcAsS7`
  
-try {
 let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/sfile?url=${args[0]}`)
 let sfiledl = await ling.json()
 
@@ -37,10 +36,7 @@ renderLargerThumbnail: true
 
 await conn.sendMedia(m.chat, json.result.url, 0, {fileName: `${json.result.title}`})
 
- }
- catch {
-		m.reply(`❎ Error: Ada sebuah kesalahan`)
-	}
+
 }
 handler.help = ['sfile'].map(v => v + ' <url>')
 handler.tags = ['dl']
