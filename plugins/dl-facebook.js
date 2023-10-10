@@ -8,7 +8,6 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
  
 if (!args[0]) throw `✳️ Download Video Facebook\n\nContoh: !fbdl https://www.facebook.com/dede2015k/videos/228452386672915`
  
-try {
 let ling = await fetch(`https://api.arifzyn.xyz/download/facebook?url=${args[0]}`)
 let fbdl = await ling.json()
 
@@ -35,7 +34,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, fbdl.result.video_hd, 'ig.mp4', 'Facebook Downloader\n© Mika Bot', m)
+await conn.sendFile(m.chat, fbdl.result.video_hd, 'fesbuk.mp4', 'Facebook Downloader\n© Mika Bot', m)
 
  }
  catch {
