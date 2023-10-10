@@ -35,7 +35,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, sfiledl.result.video_hd, 'ig.mp4', 'Facebook Downloader\n© Mika Bot', m)
+await conn.sendFile(m.chat, sfiledl.result.url, filename, '', m, null, { mimetype: ext, asDocument: true })
 
  }
  catch {
