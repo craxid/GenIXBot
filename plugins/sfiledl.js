@@ -12,6 +12,7 @@ let sfiledl = await ling.json()
 
 let detil = `
 *Nama:* ${sfiledl.result.title}
+*Tipe:* ${sfiledl.result.mimetype}
 
 _Sedang mengirim..._
 `
