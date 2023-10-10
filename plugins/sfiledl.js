@@ -22,7 +22,6 @@ let detil2 = `
 `
 
 let poto = `../src/avatar_contact.png`
-let konpik = ${sfiledl.result.mimetype}.replace('hc/configuration','hc')
 
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
