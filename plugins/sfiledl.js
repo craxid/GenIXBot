@@ -1,6 +1,6 @@
 
-import fetch from 'node-fetch'
-import { MessageType, MessageOptions, Mimetype } from '@adiwajshing/baileys'
+import fetch from 'node-fetch';
+import { MessageType, MessageOptions, Mimetype } from '@adiwajshing/baileys';
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 await m.reply('Tunggu bentar...')
