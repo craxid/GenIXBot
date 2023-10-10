@@ -26,9 +26,9 @@ contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
-title: ('Facebook Downloader'),
+title: ('Sfile Downloader'),
 body: global.namebot,
-thumbnailUrl: (`${sfiledl.result.thumb}`),
+thumbnailUrl: ,
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
