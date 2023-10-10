@@ -34,7 +34,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, sfiledl.result.url, (`${sfiledl.result.title}`), detil2, m)
+await conn.sendFile(m.chat, sfiledl.result.url, {fileName: `${sfiledl.result.title}`}, detil2, m)
 
 }
 handler.help = ['sfile'].map(v => v + ' <url>')
