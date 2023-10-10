@@ -22,6 +22,7 @@ let detil2 = `
 `
 
 let poto = `../src/avatar_contact.png`
+let konpik = $sfiledl.result.mimetype.replace
 
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
