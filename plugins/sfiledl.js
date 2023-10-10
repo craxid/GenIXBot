@@ -30,6 +30,7 @@ title: ('Sfile Downloader'),
 body: (`${text}`),
 sourceUrl: global.fbku,
 mediaType: 1,
+thumbnailUrl: `${text}`,
 renderLargerThumbnail: true
 }}},
 {quoted: m})
