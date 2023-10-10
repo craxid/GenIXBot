@@ -1,8 +1,6 @@
 
-
-import fb from 'api-dylux'
 import fetch from 'node-fetch'
-let limit = 
+let limit = 15
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 
@@ -10,7 +8,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) throw `✳️ Download Video Facebook\n\nContoh: !sfile https://sfile.mobi/2SoXEZQi3mF`
  
 try {
-let ling = await fetch(`https://api.arifzyn.xyz/download/facebook?url=${text}`)
+let ling = await fetch(`htt=${text}`)
 let sfiledl = await ling.json()
 
 let detil = `
