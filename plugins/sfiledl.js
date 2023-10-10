@@ -1,6 +1,5 @@
 
 import fetch from 'node-fetch'
-import { MessageType, MessageOptions, Mimetype } from '@adiwajshing/baileys'
 let limit = 15
 
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
