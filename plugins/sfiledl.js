@@ -28,7 +28,7 @@ isForwarded: true,
 externalAdReply: {
 title: ('Sfile Downloader'),
 body: global.namebot,
-thumbnailUrl: ,
+thumbnailUrl: (`${text}`),
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
