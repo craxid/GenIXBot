@@ -37,7 +37,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, sfiledl.result.url, filename, '', m, null, { mimetype: ext, asDocument: true })
+await conn.sendFile(m.chat, sfiledl.result.url, filename, '', m, null, { mimetype: sfile.result.mimetype, asDocument: true })
 
  }
  catch {
