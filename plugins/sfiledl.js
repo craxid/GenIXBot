@@ -1,49 +1,18 @@
 
-import fetch from 'node-fetch'
-let limit = 15
-
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-
- 
-if (!text) throw `✳️ Download Video Facebook\n\nContoh: !sfile https://sfile.mobi/2SoXEZQi3mF`
- 
-try {
-let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/sfile?url=${text}`)
-let sfiledl = await ling.json()
-
-let { url, url2, filename, ext, upload_date, filesize, filesizeB } = res
-
-let detil = `
-*Nama:* ${sfiledl.result.title}
-
-_Sedang mengirim..._
-`
-let detil2 = `
-*Nama:* ${sfiledl.result.title}
-*Tipe:* ${sfiledl.result.mimetype}
-`
-
-conn.sendMessage(m.chat, {text: detil,
-contextInfo: {
-forwardingScore: 9999,
-isForwarded: true,
-externalAdReply: {
-title: ('Sfile Downloader'),
-body: global.namebot,
-thumbnailUrl: (`${text}`),
-sourceUrl: global.fbku,
-mediaType: 1,
-renderLargerThumbnail: true
-}}},
-{quoted: m})
-
-await conn.sendFile(m.chat, { document: { url: sfile.result.url }, fileName: sfile.result.title, mimetype: sfile.result.mimetype }, { quoted: m })
-
- }
- catch {
-		m.reply(`❎ Error: Ada sebuah kesalahan`)
-	}
+import fetch from 'node-fetch')
+const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys')
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+await m.reply('Tunggu Sebentar...')
+let res = await fetch(`https://api.violetics.pw/api/downloader/sfile?apikey=beta&url=${args[0]}`)
+let json = await res.json()
+if (!args[0]) throw `Link not found..\n\nExample:\n${usedPrefix}sfile https://sfile.mobi/1Qot1AZcAsS7`
+// if (!args[0].match(/https:\/\/sfile.mobi\/)/gi)) throw `Link not found..\n\nExample:\n${usedPrefix}sfile https://sfile.mobi/1Qot1AZcAsS7`
+let src = `*Judul:* ${json.result.title}\n*Size:* ${json.result.size}\n*Link:* ${json.result.url}`.trim()
+m.reply(src)
+// conn.sendFile(m.chat, json.result.url, `${json.result.title}`,null, m)
+conn.sendMedia(m.chat, json.result.url, 0, {fileName: `${json.result.title}`})
 }
+
 handler.help = ['sfile'].map(v => v + ' <url>')
 handler.tags = ['dl']
 handler.command = /^((sfile|dl)?)$/i
