@@ -1,6 +1,7 @@
 
-import fetch from 'node-fetch')
-const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys')
+import fetch from 'node-fetch'
+import { MessageType, MessageOptions, Mimetype } from '@adiwajshing/baileys'
+
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 await m.reply('Tunggu Sebentar...')
 let res = await fetch(`https://api.violetics.pw/api/downloader/sfile?apikey=beta&url=${args[0]}`)
