@@ -22,7 +22,7 @@ let detil2 = `
 `
 
 let poto = `../src/avatar_contact.png`
-let konpik = $sfiledl.result.mimetype.replace('hc/configuration','hc')
+let konpik = ${sfiledl.result.mimetype}.replace('hc/configuration','hc')
 
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
@@ -37,7 +37,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, sfiledl.result.url, (`${sfiledl.result.title}`), detil2, m)
+await conn.sendFile(m.chat, sfiledl.result.url, (`${sfiledl.result.title}`konpik), detil2, m)
 
 }
 handler.help = ['sfile'].map(v => v + ' <url>')
