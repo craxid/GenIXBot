@@ -202,6 +202,22 @@ showAdAttribution: true,
 renderLargerThumbnail: false
 }}}, m)*/
 
+let fuk = {
+    "key": {
+      "participants": "0@s.whatsapp.net",
+      "remoteJid": "status@broadcast",
+      "fromMe": false,
+      "id": ""
+    },
+    "message": {
+      "contactMessage": {
+        "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+      }
+    },
+    "participant": "0@s.whatsapp.net"
+  }
+  
+
 conn.sendMessage(m.chat, {text: (text.trim()),
 contextInfo: {
 forwardingScore: 9999,
@@ -214,7 +230,7 @@ isForwarded: true,
         "thumbnailUrl": global.ppmika,
         "renderLargerThumbnail": true
     }}}, 
-    {quoted: m})
+    {quoted: fuk})
 
     //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     
