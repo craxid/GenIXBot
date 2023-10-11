@@ -10,21 +10,6 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
 
     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
     let username = conn.getName(who)
- 
-
-/*conn.sendMessage(m.chat, {text: mika,
-contextInfo: {
-forwardingScore: 9999,
-isForwarded: true,
-externalAdReply: {
-title: (`${username}`),
-body: ('Aku Online Kak!'),
-thumbnailUrl: mikapp,
-sourceUrl: ('https://www.facebook.com/dede2015k'),
-mediaType: 1,
-renderLargerThumbnail: true
-}}},
-{quoted: m})*/
 
 let fuk = {
     "key": {
@@ -41,7 +26,23 @@ let fuk = {
     "participant": "0@s.whatsapp.net"
   }
     
-await conn.sendMessage(m.chat, { text: mika }, { quoted: fuk })
+
+conn.sendMessage(m.chat, {text: mika,
+contextInfo: {
+forwardingScore: 9999,
+isForwarded: true,
+externalAdReply: {
+title: (`${username}`),
+body: ('Aku Online Kak!'),
+thumbnailUrl: mikapp,
+sourceUrl: ('https://www.facebook.com/dede2015k'),
+mediaType: 1,
+renderLargerThumbnail: true
+}}},
+{quoted: fuk})*/
+
+
+//await conn.sendMessage(m.chat, { text: mika }, { quoted: fuk })
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
