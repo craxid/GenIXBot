@@ -39,7 +39,7 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 renderLargerThumbnail: true
 }}},
-{quoted: fuk})*/
+{quoted: fuk})
 
 
 //await conn.sendMessage(m.chat, { text: mika }, { quoted: fuk })
