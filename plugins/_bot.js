@@ -12,7 +12,7 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
     let username = conn.getName(who)
  
 
-conn.sendMessage(m.chat, {text: mika,
+/*conn.sendMessage(m.chat, {text: mika,
 contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
@@ -24,7 +24,22 @@ sourceUrl: ('https://www.facebook.com/dede2015k'),
 mediaType: 1,
 renderLargerThumbnail: true
 }}},
-{quoted: m})
+{quoted: m})*/
+
+let fuk = {
+    "key": {
+      "participants": "0@s.whatsapp.net",
+      "remoteJid": "status@broadcast",
+      "fromMe": false,
+      "id": ""
+    },
+    "message": {
+      "contactMessage": {
+        "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+      }
+    },
+    "participant": "0@s.whatsapp.net"
+  }
     
 //await conn.sendMessage(m.chat, iyhkh, m, null)
 
