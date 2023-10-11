@@ -476,7 +476,7 @@ export async function participantsUpdate({ id, participants, action }) {
     let text = ''
     switch (action) {
         
-/*case 'add':
+case 'add':
 case 'remove':
 if (chat.welcome) {
 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
@@ -517,8 +517,8 @@ this.sendFile(id, action === 'add' ? wel : lea, pp, 'Gambar.jpg', text, null, fa
                     }
                 }
             }
-            break*/
-            
+            break
+/*            
 case 'add':
 case 'remove':
 if (chat.welcome) {
@@ -549,7 +549,7 @@ this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { m
                         }
                     }
                 }
-                break
+                break*/
 
         case 'promote':
             text = (chat.sPromote || this.spromote || conn.spromote || '@user diangkat jadi admin')
