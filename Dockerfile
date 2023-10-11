@@ -33,4 +33,4 @@ RUN npm i
 
 EXPOSE 3000
 
-CMD cd /root/kode/ && node ntot.js
+CMD cd /root/kode/ && npm start
