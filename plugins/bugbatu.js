@@ -7,7 +7,7 @@ let num = text.split('/')[0]+"@s.whatsapp.net"
 let jumlah = text.split('/')[1]
 await m.reply('Tunggu Sebentar...')
 
-let dann = { 
+/*let dann = { 
 key: {
 fromMe: false, 
 participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "" } : {}) 
@@ -22,7 +22,23 @@ participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "" } : {})
 "mediaKey": "P32GszzU5piUZ5HKluLD5h/TZzubVJ7lCAd1PIz3Qb0=",
 "fileName": "SPAM CHAT",
 "fileEncSha256": "ybdZlRjhY+aXtytT0G2HHN4iKWCFisG2W69AVPLg5yk="
-}}}
+}}}*/
+
+global.fkontak = {
+    "key": {
+      "participants": "0@s.whatsapp.net",
+      "remoteJid": "status@broadcast",
+      "fromMe": false,
+      "id": ""
+    },
+    "message": {
+      "contactMessage": {
+        "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+      }
+    },
+    "participant": "0@s.whatsapp.net"
+  }
+
 for (let i = 0; i < jumlah; i++) {
   
 let gmbr = await fetch('https://genix.eu.org/akebi.jpg')
