@@ -230,7 +230,7 @@ isForwarded: true,
         "thumbnailUrl": global.ppmika,
         "renderLargerThumbnail": true
     }}}, 
-    {quoted: fuk})
+    {quoted: fuk, m})
 
     //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rpl)
     
