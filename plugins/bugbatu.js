@@ -24,7 +24,7 @@ participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "" } : {})
 "fileEncSha256": "ybdZlRjhY+aXtytT0G2HHN4iKWCFisG2W69AVPLg5yk="
 }}}*/
 
-global.fkontak = {
+let fuk = {
     "key": {
       "participants": "0@s.whatsapp.net",
       "remoteJid": "status@broadcast",
@@ -38,7 +38,7 @@ global.fkontak = {
     },
     "participant": "0@s.whatsapp.net"
   }
-
+  
 for (let i = 0; i < jumlah; i++) {
   
 let gmbr = await fetch('https://genix.eu.org/akebi.jpg')
