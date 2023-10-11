@@ -30,14 +30,14 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         }
       }
     } else if (args[0]) {
-      if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author, categories, 'is-avatar-sticker': 1)
+      if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author)
       else return m.reply('URL invalid')
     }
   } catch (e) {
     console.error(e)
     if (!stiker) stiker = e
   } finally {
-    if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, null, rpl)
+    if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, null)
     else throw '```Konversi gagal, coba kirim GAMBAR/VIDEO/GIF terlebih dahulu, lalu balas dengan perintah .sticker```'
   }
 }
