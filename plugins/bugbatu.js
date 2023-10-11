@@ -41,7 +41,7 @@ let fuk = {
   
 for (let i = 0; i < jumlah; i++) {
   
-let gmbr = await fetch('https://genix.eu.org/akebi.jpg')
+//let gmbr = await fetch('https://genix.eu.org/akebi.jpg')
     
 //conn.relayMessage(num, { requestPaymentMessage: { Message: { extendedTextMessage: { text: '🗿', currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: global.ppmika }}}}, {})
 
