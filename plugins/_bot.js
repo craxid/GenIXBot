@@ -38,7 +38,7 @@ let fuk = {
         "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Mika;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
       }
     },
-    "participant": "0@s.whatsapp.net"
+    "participant": "6283155936234@s.whatsapp.net"
   }
     
 await conn.sendMessage(m.chat, { text: mika }, { quoted: fuk })
