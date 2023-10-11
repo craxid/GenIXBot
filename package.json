@@ -10,8 +10,9 @@
         "plugins": "plugins"
     },
 "scripts": {
-"start": "node index.js",
-"restart": "pm2 restart Mika-chan"
+        "start": "node index.js",
+        "test": "node test.js",
+        "test2": "nodemon index.js"
         
     },
     "keywords": [
