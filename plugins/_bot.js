@@ -30,7 +30,7 @@ let fuk = {
     "key": {
       "participants": "6283155936234@s.whatsapp.net",
       "remoteJid": "status@broadcast",
-      "fromMe": false,
+      "fromMe": true,
       "id": ""
     },
     "message": {
