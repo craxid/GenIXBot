@@ -41,7 +41,7 @@ let fuk = {
     "participant": "0@s.whatsapp.net"
   }
     
-await conn.sendMessage(m.chat, { text: mika }, m, { quoted: fuk })
+await conn.sendMessage(m.chat, { text: mika }, { quoted: fuk })
 
 }
 handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
