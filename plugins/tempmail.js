@@ -30,8 +30,8 @@ renderLargerThumbnail: false
  }
  
 handler.help = ['tempmail'].map(v => v + ' <url>')
-handler.tags = ['dl']
-handler.command = /^((temp|)(downloder|dl)?)$/i
+handler.tags = ['tools','prem']
+handler.command = /^((temp|orary)(tmp|mail)?)$/i
 handler.diamond = true
 
 export default handler
