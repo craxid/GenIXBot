@@ -21,7 +21,7 @@ await conn.sendFile(m.chat, hasil.image_data, 'toanime.jpg', `Convert Foto ke An
 
 handler.help = ['jadianime']
 handler.tags = ['ai', 'prem']
-handler.command = /^(jadianime)$/i
+handler.command = /^(jadianime|toanime)$/i
 handler.diamond = 3
 
 export default handler
