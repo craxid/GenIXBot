@@ -6,7 +6,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
  
 if (!text) throw `✳️ Anime Character Information\n\nContoh: !char Akebi Komichi`
  
-let ling = await fetch(`https://api.yanzbotz.my.id/cari/chara?query=${text}`)
+let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/chara?query=${text}`)
 let char = await ling.json()
 m.reply(wait)
 
