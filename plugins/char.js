@@ -23,7 +23,7 @@ let detil = `
 *Ulang Tahun:* ${char.result.birthday}
 *Deskripsi:* ${char.result.description}
 `
-
+/*
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
 forwardingScore: 9999,
@@ -36,9 +36,9 @@ sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
 }}},
-{quoted: m})
+{quoted: m})*/
 
-//await conn.sendMessage(m.chat, char.result.video_hd, m)
+await conn.sendMessage(m.chat, detil,  m)
 
  }
 handler.help = ['char'].map(v => v + ' <nama>')
