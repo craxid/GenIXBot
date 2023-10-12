@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 
 let limit = 150
 
-if (!args[0]) throw `✳️ Download File Terabox`
+if (!args[0]) throw `✳️ Download File Terabox\n\n Kirim linknya!`
  
 try {
 let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/terabox?url=${args[0]}`)
