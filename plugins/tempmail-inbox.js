@@ -5,9 +5,9 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
  
-if (!args[0]) throw `✳️ Temporary Mail`
+if (!text) throw `✳️ Temporary Mail`
  
-let ling = await fetch(`https://vihangayt.me/tools/get_inbox_tempmail?q=${args(0))}`)
+let ling = await fetch(`https://vihangayt.me/tools/get_inbox_tempmail?q=${text}`)
 let tmpmail = await ling.json()
 
 let detil = `
