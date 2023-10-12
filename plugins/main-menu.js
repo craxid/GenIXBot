@@ -231,7 +231,7 @@ isForwarded: true,
         "body": (`${username}`),
         "mediaType": 1,
         "thumbnailUrl": gmbr.getRandom(),
-        "renderLargerThumbnail": true
+        "renderLargerThumbnail": false
     }}}, 
     {quoted: m, fuk})
 
