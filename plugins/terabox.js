@@ -17,11 +17,11 @@ ${global.htki} *Mika Bot Terabox-DL* ${global.htka}
 ${global.htjava} *Nama File* : ${tb.result.server_filename}
 ${global.htjava} *Size* : ${tb.result.size}
 
-${global.htjava} _File melebihi batas unduhan_ *+${limit} Byte*`)
+${global.htjava} _File melebihi batas unduhan_ *+${limit} MB*`)
 
 let detil = `
 *Nama File:* ${tb.result.server_filename}
-*Ukuran:* ${tb.result.size} byte
+*Ukuran:* ${tb.result.size} MB
 *MD5:* ${tb.result.md5}
 
 _Sedang mengirim..._
