@@ -31,8 +31,8 @@ _Sedang mengirim..._
 `
 let detil2 = `
 *Nama File:* ${tb.result.server_filename}.apk
-*Update:* ${tb.result.lastup}
-*Nama Paket:* ${tb.result.package}
+*Ukuran:* ${tb.result.size}
+*MD5:* ${tb.result.md5}
 *Ukuran:* ${tb.result.size}
 `
 
