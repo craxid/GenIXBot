@@ -12,7 +12,8 @@ if (!mime) throw 'Kirim/Reply Gambar dengan caption .jadianime'
 m.reply(wait)
 let media = await q.download()
 let url = await uploadImage(media)
-let hasil = await (await conn.getFile(`https://vihangayt.me/tools/toanime?url=${url}`))
+let hasil = await toanime(url)
+//let hasil = await (await conn.getFile(`https://vihangayt.me/tools/toanime?url=${url}`))
 
 await conn.sendFile(m.chat, hasil.data, 'img.jpg', 'Foto ke Anime\n© Mika Bot', m)
 	
