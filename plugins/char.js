@@ -31,7 +31,6 @@ externalAdReply: {
 title: ('Character Info'),
 body: char.result.nama,
 thumbnailUrl: gmbr.getRandom(),
-sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
 }}},
