@@ -42,8 +42,8 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('Terabox Downloader'),
-body: (`${tb.result.name}`),
-thumbnailUrl: (`${tb.result.icon}`),
+body: (`${tb.result.server_filename}`),
+thumbnailUrl: global.mikasampul,
 sourceUrl: (`${0}`),
 mediaType: 1,
 renderLargerThumbnail: false
