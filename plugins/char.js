@@ -27,7 +27,7 @@ isForwarded: true,
 externalAdReply: {
 title: ('Character Info'),
 body: global.namebot,
-thumbnailUrl: (`${char.result.thumb}`),
+thumbnailUrl: global.ppmika,
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
