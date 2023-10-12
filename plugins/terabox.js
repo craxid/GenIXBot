@@ -52,7 +52,7 @@ await conn.sendMessage(m.chat, { document: { url: tb.result.dllink }, fileName: 
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
 	}
 }
-handler.help = ['terabox']
+handler.help = ['terabox'].map(v => v + ' <url>')
 handler.tags = ['dl','prem']
 handler.command = /^((tera|box)(downloader|dl)?)$/i
 handler.diamond = true
