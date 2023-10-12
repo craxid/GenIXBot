@@ -4,18 +4,18 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
  
-if (!text) throw `✳️ Download Video Facebook\n\nContoh: !fbdl https://www.facebook.com/dede2015k/videos/228452386672915`
+if (!text) throw `✳️ Download Video Facebook\n\nContoh: !char https://www.facebook.com/dede2015k/videos/228452386672915`
  
 let ling = await fetch(`https://api.arifzyn.xyz/download/facebook?url=${text}`)
-let fbdl = await ling.json()
+let char = await ling.json()
 
 let detil = `
-*Deskripsi:* ${fbdl.result.desc}
+*Deskripsi:* ${char.result.desc}
 
 _Sedang mengirim..._
 `
 let detil2 = `
-*Deskripsi:* ${fbdl.result.desc}
+*Deskripsi:* ${char.result.desc}
 `
 
 conn.sendMessage(m.chat, {text: detil,
@@ -25,17 +25,17 @@ isForwarded: true,
 externalAdReply: {
 title: ('Facebook Downloader'),
 body: global.namebot,
-thumbnailUrl: (`${fbdl.result.thumb}`),
+thumbnailUrl: (`${char.result.thumb}`),
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, fbdl.result.video_hd, 'fesbuk.mp4', 'Facebook Downloader\n© Mika Bot', m)
+await conn.sendFile(m.chat, char.result.video_hd, 'fesbuk.mp4', 'Facebook Downloader\n© Mika Bot', m)
 
  }
-handler.help = ['facebook'].map(v => v + ' <url>')
+handler.help = [''har''].map(v => v + ' <url>')
 handler.tags = ['dl']
 handler.command = /^((facebook|fb)(downloder|dl)?)$/i
 handler.diamond = true
