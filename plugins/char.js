@@ -15,10 +15,8 @@ let detil = `
 *Warna Rambut:* ${char.result.warna_rambut}
 *Warna Mata:* ${char.result.warna_mata}
 *Gol. Darah:* ${char.result.gol_darah}
-*Ulang Tahun:*
+*Ulang Tahun:* ${char.result.birthday}
 *Deskripsi:* ${char.result.description}
-
-_Sedang mengirim..._
 `
 let detil2 = `
 *Deskripsi:* ${char.result.desc}
@@ -29,7 +27,7 @@ contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
-title: ('Facebook Downloader'),
+title: (''),
 body: global.namebot,
 thumbnailUrl: (`${char.result.thumb}`),
 sourceUrl: global.fbku,
