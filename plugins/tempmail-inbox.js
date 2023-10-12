@@ -21,6 +21,8 @@ ${melbox.data.text}
 *Unduh Pesan:* ${melbox.data.downloadUrl}
 `
 
+imbox = `${melbox.data}`
+
 /*
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
