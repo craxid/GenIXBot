@@ -20,7 +20,6 @@ ${melbox.data.text}
 
 *Unduh Pesan:* ${melbox.data.downloadUrl}
 `
-conn.sendMessage(m.chat, detil, m)
 
 /*
 conn.sendMessage(m.chat, {text: detil,
@@ -35,6 +34,8 @@ mediaType: 1,
 renderLargerThumbnail: false
 }}},
 {quoted: m})*/
+
+await conn.sendMessage(m.chat, detil, m)
  }
  
 handler.help = ['mailbox'].map(v => v + ' <url>')
