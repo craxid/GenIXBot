@@ -10,7 +10,8 @@ let ling = await fetch(`https://api.arifzyn.xyz/download/facebook?url=${text}`)
 let char = await ling.json()
 
 let detil = `
-*Deskripsi:* ${char.result.desc}
+*Nama:* ${char.result.nama}
+*Gender:* ${
 
 _Sedang mengirim..._
 `
