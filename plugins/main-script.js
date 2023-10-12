@@ -25,7 +25,7 @@ sourceUrl: ('https://wa.me/6285892734104?text=Hai, saya mau beli script bot'),
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}})
+}}}, {quoted: m})
     
 }
 
