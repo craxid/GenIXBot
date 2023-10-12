@@ -12,7 +12,9 @@ let tmpmail = await ling.json()
 
 let detil = `
 *Data*
-*Pengirim:* ${tmpmail.data.f}
+*Pengirim:* ${tmpmail.data.fromAddr}
+*Penerima:* ${tmpmail.data.toAddr}
+
 
 `
 
