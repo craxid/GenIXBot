@@ -10,9 +10,9 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
  
 let ling = await fetch(`https://vihangayt.me/tools/tempmail`)
 let tmpmail = await ling.json()
-let data = tmpmail.replace(',',',\n')
+
 let detil = `
-*Data:* ${data.data}
+*Data:* ${tmpmail.data}
 `
 
 conn.sendMessage(m.chat, {text: detil,
