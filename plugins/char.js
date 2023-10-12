@@ -32,10 +32,10 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, char.result.video_hd, 'fesbuk.mp4', 'Facebook Downloader\n© Mika Bot', m)
+await conn.sendMessage(m.chat, char.result.video_hd, m)
 
  }
-handler.help = [''har''].map(v => v + ' <url>')
+handler.help = ['char'].map(v => v + ' <nama>')
 handler.tags = ['dl']
 handler.command = /^((facebook|fb)(downloder|dl)?)$/i
 handler.diamond = true
