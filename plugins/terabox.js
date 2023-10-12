@@ -7,14 +7,14 @@ let limit = 150
 if (!args[0]) throw `✳️ Download aplikasi menggunakan ID\n\nContoh: !apkdl com.whatsapp`
  
 try {
-let ling = await fetch(`https://vihangayt.me/download/apk?id=${0}`)
+let ling = await fetch(`https://vihangayt.me/download/apk?id=${args[0]}`)
 let apkdl = await ling.json()
 let apkname = `Nama Aplikasi : ${tb.result.name}.apk`
 let ukur = `${tb.result.size}`
 
 if (ukur.split('MB')[0] >= limit)
 return m.reply(`
-${global.htki} *Mika Bot APK-DL* ${global.htka}
+${global.htki} *Mika Bot Terabox-DL* ${global.htka}
 
 ${global.htjava} *Nama Aplikasi* : ${tb.result.name}
 ${global.htjava} *Size* : ${tb.result.size}
