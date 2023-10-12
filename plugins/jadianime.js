@@ -8,7 +8,7 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 let name = await conn.getName(who)
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
-if (!mime) throw 'Kirim/Reply Gambar dengan caption .jadianime'
+if (!mime) throw `Kirim/Reply Gambar dengan caption ${usedPrefix + command}`
 m.reply(wait)
 let media = await q.download()
 let url = await uploadImage(media)
