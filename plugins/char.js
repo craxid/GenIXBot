@@ -29,7 +29,7 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('Character Info'),
-body: global.namebot,
+body: char.result.nama,
 thumbnailUrl: gmbr.getRandom(),
 sourceUrl: global.fbku,
 mediaType: 1,
