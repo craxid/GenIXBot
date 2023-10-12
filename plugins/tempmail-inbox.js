@@ -21,7 +21,7 @@ ${melbox.data.text}
 *Unduh Pesan:* ${melbox.data.downloadUrl}
 `
 
-conn.sendMessage(m.chat, {text: detil.replace('undefined','Kosong'),
+conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
