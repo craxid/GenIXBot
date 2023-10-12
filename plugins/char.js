@@ -33,7 +33,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendMessage(m.chat, char.result.video_hd, m)
+//await conn.sendMessage(m.chat, char.result.video_hd, m)
 
  }
 handler.help = ['char'].map(v => v + ' <nama>')
