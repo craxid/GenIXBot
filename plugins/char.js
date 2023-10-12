@@ -31,7 +31,7 @@ isForwarded: true,
 externalAdReply: {
 title: ('Character Info'),
 body: global.namebot,
-thumbnailUrl: gmbr.getRandom(),
+thumbnailUrl: thumb.data,
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
