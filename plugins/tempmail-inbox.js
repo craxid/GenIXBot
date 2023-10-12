@@ -11,14 +11,14 @@ let ling = await fetch(`https://vihangayt.me/tools/get_inbox_tempmail?q=${text}`
 let melbox = await ling.json()
 
 let detil = `
-*Pengirim:* ${melbox.data.fromAddr}
-*Penerima:* ${melbox.data.toAddr}
-*Subjek:* ${melbox.data.headerSubject}
+*Pengirim:* ${melbox.data..fromAddr}
+*Penerima:* ${melbox.data..toAddr}
+*Subjek:* ${melbox.data..headerSubject}
 
 *Pesan:*
-${melbox.data.text}
+${melbox.data..text}
 
-*Unduh Pesan:* ${melbox.data.downloadUrl}
+*Unduh Pesan:* ${melbox.data..downloadUrl}
 `
 
 /*
