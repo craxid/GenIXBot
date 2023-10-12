@@ -15,7 +15,7 @@ let detil = `
 *Pengirim:* ${tmpmail.data.fromAddr}
 *Penerima:* ${tmpmail.data.toAddr}
 
-
+*Unduh Pesan:* ${tmpmail.data.download.Url}
 `
 
 conn.sendMessage(m.chat, {text: detil,
