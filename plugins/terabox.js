@@ -19,13 +19,12 @@ ${global.htki} *Mika Bot Terabox-DL* ${global.htka}
 ${global.htjava} *Nama File* : ${tb.result.server-name}
 ${global.htjava} *Size* : ${tb.result.size}
 
-${global.htjava} _File melebihi batas unduhan_ *+${limit} MB*`)
+${global.htjava} _File melebihi batas unduhan_ *+${limit} Byte*`)
 
 let detil = `
 *Nama File:* ${tb.result.server_filename}
 *Ukuran:* ${tb.result.size} byte
 *MD5:* ${tb.result.md5}
-*Ukuran:* ${tb.result.size}
 
 _Sedang mengirim..._
 `
@@ -33,7 +32,6 @@ let detil2 = `
 *Nama File:* ${tb.result.server_filename}
 *Ukuran:* ${tb.result.size} byte
 *MD5:* ${tb.result.md5}
-*Ukuran:* ${tb.result.size}
 `
 
 conn.sendMessage(m.chat, {text: detil,
