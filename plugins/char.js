@@ -39,7 +39,7 @@ renderLargerThumbnail: true
  }
 handler.help = ['char'].map(v => v + ' <nama>')
 handler.tags = ['dl']
-handler.command = /^((facebook|fb)(downloder|dl)?)$/i
+handler.command = /^((char|acter)?)$/i
 handler.diamond = true
 
 export default handler
