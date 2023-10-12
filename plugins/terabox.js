@@ -28,7 +28,7 @@ _Sedang mengirim..._
 `
 let detil2 = `
 *Nama File:* ${tb.result.server_filename}
-*Ukuran:* ${tb.result.size} byte
+*Ukuran:* ${tb.result.size} MB
 *MD5:* ${tb.result.md5}
 `
 
