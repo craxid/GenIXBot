@@ -12,12 +12,9 @@ let ling = await fetch(`https://vihangayt.me/tools/tempmail`)
 let fbdl = await ling.json()
 
 let detil = `
-*Deskripsi:* ${fbdl.result.desc}
+*Data:* ${fbdl.data}
 
 _Sedang mengirim..._
-`
-let detil2 = `
-*Deskripsi:* ${fbdl.result.desc}
 `
 
 conn.sendMessage(m.chat, {text: detil,
