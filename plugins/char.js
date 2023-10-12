@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
  
-if (!text) throw `✳️ Download Video Facebook\n\nContoh: !char https://www.facebook.com/dede2015k/videos/228452386672915`
+if (!text) throw `✳️ Anime Character Information\n\nContoh: !char Akebi Komichi`
  
 let ling = await fetch(`https://api.yanzbotz.my.id/cari/chara?query=${text}`)
 let char = await ling.json()
