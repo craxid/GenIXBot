@@ -48,8 +48,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, tb.result.dllink, { document: { url: tb.result.dllink }, fileName: tb.result. }, detil2, m)
-
+await conn.sendFile(m.chat, tb.result.dllink, { document: { url: tb.result.dllink }, fileName: tb.result.server_filename }, detil2, m)
  }
  catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
