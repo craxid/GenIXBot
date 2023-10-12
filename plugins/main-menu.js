@@ -230,7 +230,6 @@ isForwarded: true,
         "title": ('Mika Misono Bot'),
         "body": (`${username}`),
         "mediaType": 1,
-        "sourceUrl": global.fgig,
         "thumbnailUrl": gmbr.getRandom(),
         "renderLargerThumbnail": true
     }}}, 
