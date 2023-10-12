@@ -20,6 +20,7 @@ ${melbox.data.text}
 
 *Unduh Pesan:* ${melbox.data.downloadUrl}
 `
+conn.sendMessage(m.chat, {text: melbox.data
 
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
