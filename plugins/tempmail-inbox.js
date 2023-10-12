@@ -22,6 +22,7 @@ ${melbox.data.text}
 `
 conn.sendMessage(m.chat, detil, m)
 
+/*
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
 forwardingScore: 9999,
@@ -33,7 +34,7 @@ thumbnailUrl: global.ppmika,
 mediaType: 1,
 renderLargerThumbnail: false
 }}},
-{quoted: m})
+{quoted: m})*/
  }
  
 handler.help = ['mailbox'].map(v => v + ' <url>')
