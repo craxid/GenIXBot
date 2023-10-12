@@ -14,7 +14,10 @@ let detil = `
 *Data*
 *Pengirim:* ${tmpmail.data.fromAddr}
 *Penerima:* ${tmpmail.data.toAddr}
-*Subjek:* ${tmpmail.data.headerubject}
+*Subjek:* ${tmpmail.data.headerSubject}
+
+*Pesan:*
+${tmpmail.data.text}
 
 *Unduh Pesan:* ${tmpmail.data.download.Url}
 `
