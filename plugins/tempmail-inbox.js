@@ -35,7 +35,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})*/
 
-await conn.sendMessage(m.chat, detil, m)
+await conn.sendMessage(m.chat, {text: detil}, m)
  }
  
 handler.help = ['mailbox'].map(v => v + ' <url>')
