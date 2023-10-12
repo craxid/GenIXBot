@@ -48,9 +48,9 @@ renderLargerThumbnail: false
 
 await conn.sendMessage(m.chat, { document: { url: tb.result.dllink }, fileName: tb.result.server_filename }, detil2, m)
  }
- /*catch {
+ catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
-	}*/
+	}
 }
 handler.help = ['terabox']
 handler.tags = ['dl']
