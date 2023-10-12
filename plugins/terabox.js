@@ -42,7 +42,7 @@ externalAdReply: {
 title: ('Terabox Downloader'),
 body: (`${tb.result.server_filename}`),
 thumbnailUrl: global.mikasampul,
-sourceUrl: (`${0}`),
+sourceUrl: (`${args[0]}`),
 mediaType: 1,
 renderLargerThumbnail: false
 }}},
