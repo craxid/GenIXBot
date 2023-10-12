@@ -11,7 +11,8 @@ let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/chara?query=${text}`
 let char = await ling.json()
 m.reply(wait)
 
-let gmbr 
+let gmbr = await gmbr.googleImage(text)
+
 
 let detil = `
 *Nama:* ${char.result.nama}
