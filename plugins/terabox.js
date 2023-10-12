@@ -9,8 +9,6 @@ if (!args[0]) throw `✳️ Download File Terabox`
 try {
 let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/terabox?url=${args[0]}`)
 let tb = await ling.json()
-let apkname = `Nama Aplikasi : ${tb.result.name}.apk`
-let ukur = `${tb.result.size}`
 
 if (ukur.split('MB')[0] >= limit)
 return m.reply(`
