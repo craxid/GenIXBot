@@ -30,7 +30,7 @@ let detil = `
 _Sedang mengirim..._
 `
 let detil2 = `
-*Nama Aplikasi:* ${tb.result.name}.apk
+*Nama File:* ${tb.result.server_filename}.apk
 *Update:* ${tb.result.lastup}
 *Nama Paket:* ${tb.result.package}
 *Ukuran:* ${tb.result.size}
