@@ -59,7 +59,7 @@ await conn.sendFile(m.chat, apkdl.data.dllink, (`${apkdl.data.name}`), detil2, m
 }
 handler.help = ['terabox']
 handler.tags = ['dl']
-handler.command = /^((tera|box(dl))$/i
+handler.command = /^((tera|box?)$/i
 handler.diamond = false
 export default handler
 
