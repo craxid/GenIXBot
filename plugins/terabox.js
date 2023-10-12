@@ -14,7 +14,7 @@ if (tb.result.size.split('MB')[0] >= limit)
 return m.reply(`
 ${global.htki} *Mika Bot Terabox-DL* ${global.htka}
 
-${global.htjava} *Nama File* : ${tb.result.server-name}
+${global.htjava} *Nama File* : ${tb.result.server_filename}
 ${global.htjava} *Size* : ${tb.result.size}
 
 ${global.htjava} _File melebihi batas unduhan_ *+${limit} Byte*`)
