@@ -11,7 +11,6 @@ let ling = await fetch(`https://vihangayt.me/tools/get_inbox_tempmail?q=${text}`
 let tmpmail = await ling.json()
 
 let detil = `
-*Data*
 *Pengirim:* ${tmpmail.data.fromAddr}
 *Penerima:* ${tmpmail.data.toAddr}
 *Subjek:* ${tmpmail.data.headerSubject}
