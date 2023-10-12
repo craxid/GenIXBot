@@ -10,7 +10,7 @@ try {
 let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/terabox?url=${args[0]}`)
 let tb = await ling.json()
 
-if (ukur.split('MB')[0] >= limit)
+if (tb.result.size.split('MB')[0] >= limit)
 return m.reply(`
 ${global.htki} *Mika Bot Terabox-DL* ${global.htka}
 
