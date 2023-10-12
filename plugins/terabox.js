@@ -4,10 +4,10 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 
 let limit = 150
 
-if (!{args}) throw `✳️ Download aplikasi menggunakan ID\n\nContoh: !apkdl com.whatsapp`
+if (!args[0]) throw `✳️ Download aplikasi menggunakan ID\n\nContoh: !apkdl com.whatsapp`
  
 try {
-let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
+let ling = await fetch(`https://vihangayt.me/download/apk?id=${0}`)
 let apkdl = await ling.json()
 let apkname = `Nama Aplikasi : ${tb.result.name}.apk`
 let ukur = `${tb.result.size}`
