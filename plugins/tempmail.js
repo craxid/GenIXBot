@@ -6,7 +6,7 @@ let limit = 15
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
  
-if (!args[0]) throw `✳️ Temporary Mail`
+//if (!args[0]) throw `✳️ Temporary Mail`
  
 let ling = await fetch(`https://vihangayt.me/tools/tempmail`)
 let tmpmail = await ling.json()
