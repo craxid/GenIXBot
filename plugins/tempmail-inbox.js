@@ -37,7 +37,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})*/
 
-await conn.sendMessage(m.chat, {text: ${melbox.data}}, {quoted: m})
+await conn.sendMessage(m.chat, {text: imbox}, {quoted: m})
  }
  
 handler.help = ['mailbox'].map(v => v + ' <url>')
