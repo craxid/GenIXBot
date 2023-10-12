@@ -22,7 +22,7 @@ let detil = `
 *Ulang Tahun:* ${char.result.birthday}
 *Deskripsi:* ${char.result.description}
 `
-/*
+
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
 forwardingScore: 9999,
@@ -30,14 +30,14 @@ isForwarded: true,
 externalAdReply: {
 title: ('Character Info'),
 body: global.namebot,
-thumbnailUrl: thumb.getRandom(),
+thumbnailUrl: gmbr.getRandom(),
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
 }}},
-{quoted: m})*/
+{quoted: m})
 
-await conn.sendMessage(m.chat, detil, gmbr.getRandom(), 'thumb.jpg', m)
+//await conn.sendMessage(m.chat, detil, gmbr.getRandom(), 'thumb.jpg', m)
 
  }
 handler.help = ['char'].map(v => v + ' <nama>')
