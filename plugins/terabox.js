@@ -53,7 +53,7 @@ await conn.sendMessage(m.chat, { document: { url: tb.result.dllink }, fileName: 
 	}
 }
 handler.help = ['terabox']
-handler.tags = ['dl']
+handler.tags = ['dl','prem']
 handler.command = /^((tera|box)(downloader|dl)?)$/i
 handler.diamond = true
 export default handler
