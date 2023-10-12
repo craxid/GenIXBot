@@ -38,7 +38,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})*/
 
-await conn.sendMessage(m.chat, detil,  m)
+await conn.sendMessage(m.chat, detil, gmbr.getRandom(), 'thumb.jpg', m)
 
  }
 handler.help = ['char'].map(v => v + ' <nama>')
