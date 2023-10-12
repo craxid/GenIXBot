@@ -12,7 +12,7 @@ let char = await ling.json()
 m.reply(wait)
 
 let gmbr = await gmbr.googleImage(text)
-
+thimb = gmbr.get
 
 let detil = `
 *Nama:* ${char.result.nama}
@@ -31,7 +31,7 @@ isForwarded: true,
 externalAdReply: {
 title: ('Character Info'),
 body: global.namebot,
-thumbnailUrl: global.ppmika,
+thumbnailUrl: (`${fbdl.result.thumb}`),
 sourceUrl: global.fbku,
 mediaType: 1,
 renderLargerThumbnail: true
