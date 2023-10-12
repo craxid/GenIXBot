@@ -57,7 +57,7 @@ Support Us!
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
       
-      
+    let gmbr = await thum.googleImage(Mika)
       
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let { exp, diamond, level, role } = global.db.data.users[m.sender]
