@@ -8,6 +8,7 @@ if (!text) throw `✳️ Anime Character Information\n\nContoh: !char Akebi Komi
  
 let ling = await fetch(`https://api.yanzbotz.my.id/cari/chara?query=${text}`)
 let char = await ling.json()
+m.reply(wait)
 
 let detil = `
 *Nama:* ${char.result.nama}
