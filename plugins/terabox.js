@@ -8,7 +8,7 @@ if (!args[0]) throw `✳️ Download aplikasi menggunakan ID\n\nContoh: !apkdl c
  
 try {
 let ling = await fetch(`https://vihangayt.me/download/apk?id=${args[0]}`)
-let apkdl = await ling.json()
+let tb = await ling.json()
 let apkname = `Nama Aplikasi : ${tb.result.name}.apk`
 let ukur = `${tb.result.size}`
 
