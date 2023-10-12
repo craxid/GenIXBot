@@ -10,7 +10,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
  
 let ling = await fetch(`https://vihangayt.me/tools/tempmail`)
 let tmpmail = await ling.json()
-
+let da = 
 let detil = `
 *Data:* ${tmpmail.data}
 `
