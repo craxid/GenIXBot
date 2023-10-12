@@ -4,7 +4,7 @@ import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 import moment from 'moment-timezone'
-import thum from 'api-dylux'
+import { pinterest } from '@bochilteam/scraper'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
   'main': 'MAIN MENU',
@@ -57,7 +57,7 @@ Support Us!
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
       
-    let gmbr = await thum.googleImage('Mika Misono')
+    let gmbr = await thum.pinterest('Mika Misono')
       
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let { exp, diamond, level, role } = global.db.data.users[m.sender]
