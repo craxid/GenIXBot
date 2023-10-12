@@ -14,7 +14,8 @@ let detil = `
 *Gender:* ${char.result.gender}
 *Warna Rambut:* ${char.result.warna_rambut}
 *Warna Mata:* ${char.result.warna_mata}
-*Gol. Darah: $
+*Gol. Darah:* ${char.result.gol_darah}
+*Deskripsi:* $
 
 _Sedang mengirim..._
 `
