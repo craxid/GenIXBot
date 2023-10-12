@@ -1,13 +1,12 @@
 
 import fetch from 'node-fetch'
-let limit = 15
 
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
  
-if (!args[0]) throw `✳️ Download Video Facebook\n\nContoh: !fbdl https://www.facebook.com/dede2015k/videos/228452386672915`
+if (!text) throw `✳️ Download Video Facebook\n\nContoh: !fbdl https://www.facebook.com/dede2015k/videos/228452386672915`
  
-let ling = await fetch(`https://api.arifzyn.xyz/download/facebook?url=${args[0]}`)
+let ling = await fetch(`https://api.arifzyn.xyz/download/facebook?url=${text}`)
 let fbdl = await ling.json()
 
 let detil = `
