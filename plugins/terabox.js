@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 
 let limit = 150
 
-if (!text) throw `✳️ Download aplikasi menggunakan ID\n\nContoh: !apkdl com.whatsapp`
+if (!{args}) throw `✳️ Download aplikasi menggunakan ID\n\nContoh: !apkdl com.whatsapp`
  
 try {
 let ling = await fetch(`https://vihangayt.me/download/apk?id=${text}`)
@@ -22,9 +22,9 @@ ${global.htjava} *Size* : ${tb.result.size}
 ${global.htjava} _File melebihi batas unduhan_ *+${limit} MB*`)
 
 let detil = `
-*Nama Aplikasi:* ${tb.result.name}
-*Update:* ${tb.result.lastup}
-*Nama Paket:* ${tb.result.package}
+*Nama File:* ${tb.result.server_filename}
+*Ukuran:* ${tb.result.size} byte
+*MD5:* ${tb.result.md5}
 *Ukuran:* ${tb.result.size}
 
 _Sedang mengirim..._
@@ -44,7 +44,7 @@ externalAdReply: {
 title: ('Terabox Downloader'),
 body: (`${tb.result.name}`),
 thumbnailUrl: (`${tb.result.icon}`),
-sourceUrl: (`https://play.google.com/store/apps/details?id=${tb.result.package}`),
+sourceUrl: (`${0}`),
 mediaType: 1,
 renderLargerThumbnail: false
 }}},
