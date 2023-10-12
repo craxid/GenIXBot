@@ -32,9 +32,9 @@ renderLargerThumbnail: false
 {quoted: m})
  }
  
-handler.help = ['tempmail'].map(v => v + ' <url>')
+handler.help = ['mailbox'].map(v => v + ' <url>')
 handler.tags = ['tools','prem']
-handler.command = /^((temp|orary)(tmp|mail)?)$/i
+handler.command = /^mailbox$/i
 handler.diamond = true
 
 export default handler
