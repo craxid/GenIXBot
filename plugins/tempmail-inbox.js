@@ -11,7 +11,9 @@ let ling = await fetch(`https://vihangayt.me/tools/get_inbox_tempmail?q=${text}`
 let tmpmail = await ling.json()
 
 let detil = `
-*Data:* ${tmpmail.data}
+*Data*
+*Pengirim:* ${tmpmail.data.f}
+
 `
 
 conn.sendMessage(m.chat, {text: detil,
