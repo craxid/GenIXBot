@@ -226,12 +226,12 @@ conn.sendMessage(m.chat, {text: (text.trim()),
 contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
-    "externalAdReply": {
-        "title": ('Mika Misono Bot'),
-        "body": (`${username}`),
-        "mediaType": 1,
-        "thumbnailUrl": gmbr.getRandom(),
-        "renderLargerThumbnail": false
+"externalAdReply": {
+    "title": ('Mika Misono Bot'),
+    "body": (`${username}`),
+    "mediaType": 1,
+    "thumbnailUrl": gmbr.getRandom(),
+    "renderLargerThumbnail": false
     }}}, 
     {quoted: m, fuk})
 
