@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 
 let limit = 150
 
-if (!args[0]) throw `✳️ Download aplikasi menggunakan ID\n\nContoh: !apkdl com.whatsapp`
+if (!args[0]) throw `✳️ Download File Terabox`
  
 try {
 let ling = await fetch(`https://vihangayt.me/download/apk?id=${args[0]}`)
