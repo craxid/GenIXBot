@@ -12,7 +12,7 @@ let ling = await fetch(`https://vihangayt.me/tools/tempmail`)
 let tmpmail = await ling.json()
 let data = tmpmail.replace(',',',\n')
 let detil = `
-*Data:* ${tmpmail.data}
+*Data:* ${data.data}
 `
 
 conn.sendMessage(m.chat, {text: detil,
