@@ -13,8 +13,6 @@ let tmpmail = await ling.json()
 
 let detil = `
 *Data:* ${tmpmail.data}
-
-_Sedang mengirim..._
 `
 
 conn.sendMessage(m.chat, {text: detil,
@@ -25,16 +23,15 @@ externalAdReply: {
 title: ('Temporary Mail'),
 body: global.namebot,
 thumbnailUrl: global.ppmika,
-,
 mediaType: 1,
-renderLargerThumbnail: true
+renderLargerThumbnail: false
 }}},
 {quoted: m})
  }
  
-handler.help = ['facebook'].map(v => v + ' <url>')
+handler.help = ['tempmail'].map(v => v + ' <url>')
 handler.tags = ['dl']
-handler.command = /^((facebook|fb)(downloder|dl)?)$/i
+handler.command = /^((temp|)(downloder|dl)?)$/i
 handler.diamond = true
 
 export default handler
