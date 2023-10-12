@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
  
 if (!args[0]) throw `✳️ Temporary Mail`
  
-let ling = await fetch(`https://api.arifzyn.xyz/download/facebook?url=${args[0]}`)
+let ling = await fetch(`https://vihangayt.me/tools/tempmail`)
 let fbdl = await ling.json()
 
 let detil = `
