@@ -231,7 +231,7 @@ isForwarded: true,
         "body": (`${username}`),
         "mediaType": 1,
         "sourceUrl": global.fgig,
-        "thumbnailUrl": gmbr.randomIm,
+        "thumbnailUrl": gmbr.getRandom(),
         "renderLargerThumbnail": true
     }}}, 
     {quoted: m, fuk})
