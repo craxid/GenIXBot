@@ -11,7 +11,9 @@ let char = await ling.json()
 
 let detil = `
 *Nama:* ${char.result.nama}
-*Gender:* ${
+*Gender:* ${char.result.gender}
+*Warna Rambut:* ${char.result.warna_rambut}
+*W
 
 _Sedang mengirim..._
 `
