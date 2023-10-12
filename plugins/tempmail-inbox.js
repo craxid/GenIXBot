@@ -8,17 +8,17 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 if (!text) throw `✳️ Temporary Mail`
  
 let ling = await fetch(`https://vihangayt.me/tools/get_inbox_tempmail?q=${text}`)
-let tmpmail = await ling.json()
+let melbox = await ling.json()
 
 let detil = `
-*Pengirim:* ${tmpmail.data.fromAddr}
-*Penerima:* ${tmpmail.data.toAddr}
-*Subjek:* ${tmpmail.data.headerSubject}
+*Pengirim:* ${melbox.data.fromAddr}
+*Penerima:* ${melbox.data.toAddr}
+*Subjek:* ${melbox.data.headerSubject}
 
 *Pesan:*
-${tmpmail.data.text}
+${melbox.data.text}
 
-*Unduh Pesan:* ${tmpmail.data.downloadUrl}
+*Unduh Pesan:* ${melbox.data.downloadUrl}
 `
 
 conn.sendMessage(m.chat, {text: detil.replace('undefined','Kosong'),
