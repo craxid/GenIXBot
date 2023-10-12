@@ -15,7 +15,7 @@ let url = await uploadImage(media)
 let hasil = await toanime(url)
 //let hasil = await (await conn.getFile(`https://vihangayt.me/tools/toanime?url=${url}`))
 
-await conn.sendFile(m.chat, hasil.image_data, 'img.jpg', 'Convert Foto ke Anime\n© Mika Bot', m)
+await conn.sendMessage(m.chat, hasil.image_data, 'img.jpg', 'Convert Foto ke Anime\n© Mika Bot', m)
 	
 }
 
