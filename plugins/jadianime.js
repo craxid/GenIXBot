@@ -16,7 +16,7 @@ let hasil = await toanime(url)
 let tegs = 'Convert Foto ke Anime\n©Mika Bot'
 //let hasil = await (await conn.getFile(`https://vihangayt.me/tools/toanime?url=${url}`))
 
-await conn.sendFile(m.chat, hasil.data, 'toanime.jpg', 'Convert Foto ke Anime\n© Mika Bot', m)
+await conn.sendFile(m.chat, hasil.image_data, 'toanime.jpg', 'Convert Foto ke Anime\n© Mika Bot', m)
 }
 
 handler.help = ['toanime','toanime']
