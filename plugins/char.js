@@ -12,7 +12,6 @@ let char = await ling.json()
 m.reply(wait)
 
 let gmbr = await gmbr.googleImage(text)
-thumb = gmbr.getRandom()
 
 let detil = `
 *Nama:* ${char.result.nama}
