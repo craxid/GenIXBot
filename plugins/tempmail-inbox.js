@@ -21,7 +21,7 @@ ${tmpmail.data.text}
 *Unduh Pesan:* ${tmpmail.data.downloadUrl}
 `
 
-conn.sendMessage(m.chat, {text: ${detil}.replace('undefined','Kosong'),
+conn.sendMessage(m.chat, {text: detil.replace('undefined','Kosong'),
 contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
