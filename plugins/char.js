@@ -18,9 +18,6 @@ let detil = `
 *Ulang Tahun:* ${char.result.birthday}
 *Deskripsi:* ${char.result.description}
 `
-let detil2 = `
-*Deskripsi:* ${char.result.desc}
-`
 
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
