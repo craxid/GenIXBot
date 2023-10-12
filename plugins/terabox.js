@@ -48,7 +48,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, tb.result.dllink, (`${tb.result.server_filename}`), detil2, m)
+await conn.sendFile(m.chat, tb.result.dllink, { fileName: tb.result.server_filename }, detil2, m)
 
  }
  catch {
