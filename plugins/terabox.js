@@ -41,7 +41,7 @@ contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
-title: ('APK Downloader'),
+title: ('Tera Downloader'),
 body: (`${apkdl.data.name}`),
 thumbnailUrl: (`${apkdl.data.icon}`),
 sourceUrl: (`https://play.google.com/store/apps/details?id=${apkdl.data.package}`),
@@ -59,8 +59,8 @@ await conn.sendFile(m.chat, apkdl.data.dllink, (`${apkdl.data.name}`), detil2, m
 }
 handler.help = ['terabox']
 handler.tags = ['dl']
-handler.command = /^((tera|box?)$/i
-handler.diamond = false
+handler.command = /^((tera|box)(downloader|dl)?)$/i
+handler.diamond = true
 export default handler
 
 
