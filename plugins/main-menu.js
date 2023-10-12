@@ -4,6 +4,7 @@ import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 import moment from 'moment-timezone'
+import thum from 'api-dylux'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
   'main': 'MAIN MENU',
@@ -55,6 +56,9 @@ Support Us!
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
+      
+      
+      
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let { exp, diamond, level, role } = global.db.data.users[m.sender]
     let { min, xp, max } = xpRange(level, global.multiplier)
