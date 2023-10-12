@@ -57,7 +57,7 @@ Support Us!
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
       
-    let gmbr = await thum.googleImage(Mika)
+    let gmbr = await thum.googleImage(Mika%Misono)
       
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let { exp, diamond, level, role } = global.db.data.users[m.sender]
@@ -231,7 +231,7 @@ isForwarded: true,
         "body": (`${username}`),
         "mediaType": 1,
         "sourceUrl": global.fgig,
-        "thumbnailUrl": global.ppmika,
+        "thumbnailUrl": gmbr.randomIm,
         "renderLargerThumbnail": true
     }}}, 
     {quoted: m, fuk})
