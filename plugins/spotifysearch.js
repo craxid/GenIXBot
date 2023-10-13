@@ -1,8 +1,9 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, {conn, text }) => {
-if (!text) throw '✳️ Masukan kueri Spotify'
 
+
+if (!text) throw '✳️ Masukan kueri Spotify'
 
   let results = await yts(text)
   let tes = results.all
