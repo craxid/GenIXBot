@@ -5,8 +5,9 @@ let handler = async (m, {conn, text }) => {
 
 if (!text) throw '✳️ Masukan kueri Spotify'
 
-let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=wali%20cari%20berkah`)
-let results = await yts(text)
+let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text}`)
+
+let hasil = await ling(text)
 let tes = results.all
 let teks = results.all.map(v => {
     switch (v.type) {
