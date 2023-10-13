@@ -30,8 +30,8 @@ isForwarded: true,
 externalAdReply: {
 title: ('Facebook Downloader'),
 body: global.namebot,
-thumbnailUrl: (`${fbdl.result.thumb}`),
-sourceUrl: global.fbku,
+thumbnailUrl: (`${fbdl.result.data.metadata.image}`),
+sourceUrl: (`${fbdl.result.data.metadata.image}`),
 mediaType: 1,
 renderLargerThumbnail: true
 }}},
