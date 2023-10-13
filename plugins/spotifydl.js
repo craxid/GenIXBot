@@ -20,15 +20,14 @@ let detil = `
 _Sedang mengirim..._
 `
 let detil2 = `
-*Deskripsi:* ${spotify.result.desc}
-`
+*`
 
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
-title: ('Facebook Downloader'),
+title: ('Spotify Downloader'),
 body: global.namebot,
 thumbnailUrl: (`${spotify.result.data.metadata.image}`),
 sourceUrl: (`${spotify.result.data.metadata.weburl}`),
