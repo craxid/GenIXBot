@@ -13,8 +13,8 @@ let teks = hasil.all.map(v => {
     switch (v.type) {
     case 'video': return `
 ▢ ${v.result.data.title}
-▢ *Link* : ${v.url}
-▢ *Durasi* : ${v.timestamp}
+▢ *Link* : ${v.result.data.url}
+▢ *Durasi* : ${v.result.data.duration}
 ▢ *Diunggah pada :* ${v.ago}
 ▢ *Ditonton:* ${v.views}
 
