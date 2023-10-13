@@ -10,25 +10,25 @@ try {
 let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/terabox?url=${args[0]}`)
 let tb = await ling.json()
 
-if (tb.result.size.split('MB')[0] >= limit)
+if (tb.result.size.split('Byte')[0] >= limit)
 return m.reply(`
 ${global.htki} *Mika Bot Terabox-DL* ${global.htka}
 
 ${global.htjava} *Nama File* : ${tb.result.server_filename}
 ${global.htjava} *Size* : ${tb.result.size}
 
-${global.htjava} _File melebihi batas unduhan_ *+${limit} MB*`)
+${global.htjava} _File melebihi batas unduhan_ *+${limit} Byte*`)
 
 let detil = `
 *Nama File:* ${tb.result.server_filename}
-*Ukuran:* ${tb.result.size} MB
+*Ukuran:* ${tb.result.size} Byte
 *MD5:* ${tb.result.md5}
 
 _Sedang mengirim..._
 `
 let detil2 = `
 *Nama File:* ${tb.result.server_filename}
-*Ukuran:* ${tb.result.size} MB
+*Ukuran:* ${tb.result.size} B
 *MD5:* ${tb.result.md5}
 `
 
