@@ -29,6 +29,6 @@ let teks = hasil.all.map(v => {
 }
 handler.help = ['spotifysearch'] 
 handler.tags = ['dl']
-handler.command = ['ytsearch', 'yts'] 
+handler.command = ['spotifysearch', 'sps'] 
 
 export default handler
