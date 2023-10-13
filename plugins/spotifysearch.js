@@ -7,11 +7,11 @@ if (!text) throw '✳️ Masukan kueri Spotify'
 
 let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text}`)
 
-let hasil = await ling(text)
-let tes = results.all
-let teks = results.all.map(v => {
+let hasil = await ling.json()
+let tes = hasil.all
+let teks = hasil.all.map(v => {
     switch (v.type) {
-      case 'video': return `
+    case 'video': return `
 ▢ ${v.title}
 ▢ *Link* : ${v.url}
 ▢ *Durasi* : ${v.timestamp}
@@ -19,6 +19,7 @@ let teks = results.all.map(v => {
 ▢ *Ditonton:* ${v.views}
 
    `.trim()
+
       case 'channel': return `
 ▢ *${v.name}* (${v.url})
 ▢${v.subCountLabel} (${v.subCount}) Subscriber
