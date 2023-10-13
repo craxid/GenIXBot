@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 
 let limit = 250000000
 
-if (!args[0]) throw `✳️ Download File Terabox\n\n Mana ID nya?\nContoh: https://www.terabox.app/wap/share/filelist?surl=iniIDnya\nAmbil id di`
+if (!args[0]) throw `✳️ Download File Terabox\n\n Mana ID nya?\nContoh: https://www.terabox.app/wap/share/filelist?surl=iniIDnya\nAmbil id dibelakang linknya!`
  
 try {
 let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/terabox?url=https://www.terabox.app/wap/share/filelist?surl=${args[0]}`)
