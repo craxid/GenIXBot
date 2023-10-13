@@ -7,7 +7,7 @@ let limit = 15
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
  
-if (!args[0]) throw `✳️ Download Video Facebook\n\nContoh: !fbdl https://www.facebook.com/dede2015k/videos/228452386672915`
+if (!args[0]) throw `✳️ Spotify Downloader\n\nContoh: !spotify https://api.yanzbotz.my.id/api/downloader/spotify?url=https://open.spotify.com/track/4Jj3yew48NodVHWePPUGR7`
  
 let ling = await fetch(`https://api.arifzyn.xyz/download/facebook?url=${args[0]}`)
 let fbdl = await ling.json()
@@ -40,7 +40,7 @@ await conn.sendFile(m.chat, fbdl.result.video_hd, 'fesbuk.mp4', 'Facebook Downlo
  }
 handler.help = ['facebook'].map(v => v + ' <url>')
 handler.tags = ['dl']
-handler.command = /^((spoti|dl)?)$/i
+handler.command = /^((spotify|dl)?)$/i
 handler.diamond = true
 
 export default handler
