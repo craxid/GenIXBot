@@ -13,7 +13,7 @@ let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/spotify?url=${
 let fbdl = await ling.json()
 
 let detil = `
-*Deskripsi:* ${fbdl.result.desc}
+*Deskripsi:* ${fbdl.result.data.metadata.desc}
 
 _Sedang mengirim..._
 `
