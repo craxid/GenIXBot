@@ -12,7 +12,7 @@ let tes = hasil.all
 let teks = hasil.all.map(v => {
     switch (v.type) {
     case 'video': return `
-▢ ${v.title}
+▢ ${v.result.data.title}
 ▢ *Link* : ${v.url}
 ▢ *Durasi* : ${v.timestamp}
 ▢ *Diunggah pada :* ${v.ago}
