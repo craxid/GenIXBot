@@ -15,8 +15,7 @@ let teks = hasil.all.map(v => {
 ▢ ${v.result.data.title}
 ▢ *Link* : ${v.result.data.url}
 ▢ *Durasi* : ${v.result.data.duration}
-▢ *Diunggah pada :* ${v.ago}
-▢ *Ditonton:* ${v.views}
+▢ *Popularitas:* ${v.resilt.data.popularity}
 
    `.trim()
 
