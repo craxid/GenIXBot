@@ -46,7 +46,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, tb.result.dllink, m)
+await conn.sendFile(m.chat, tb.result.dllink, `${tb.result.`, m)
  }
  catch {
 		m.reply(`Error: Ada sebuah kesalahan`)
