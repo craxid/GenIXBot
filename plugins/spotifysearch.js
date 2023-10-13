@@ -16,19 +16,18 @@ let teks = hasil.all.map(v => {
 ▢ *Link* : ${v.result.data.url}
 ▢ *Durasi* : ${v.result.data.duration}
 ▢ *Popularitas:* ${v.resilt.data.popularity}
-
    `.trim()
 
-      case 'channel': return `
+/*case 'channel': return `
 ▢ *${v.name}* (${v.url})
 ▢${v.subCountLabel} (${v.subCount}) Subscriber
 ▢ ${v.videoCount} video
-`.trim()
+`.trim()*/
     }
   }).filter(v => v).join('\n\n________________________\n\n')
   conn.sendFile(m.chat, tes[0].thumbnail, 'yts.jpeg', teks, m)
 }
-handler.help = ['ytsearch'] 
+handler.help = ['spotifysearch'] 
 handler.tags = ['dl']
 handler.command = ['ytsearch', 'yts'] 
 
