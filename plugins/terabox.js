@@ -28,7 +28,7 @@ _Sedang mengirim..._
 `
 let detil2 = `
 *Nama File:* ${tb.result.server_filename}
-*Ukuran:* ${tb.result.size} B
+*Ukuran:* ${tb.result.size} Byte
 *MD5:* ${tb.result.md5}
 `
 
@@ -39,7 +39,7 @@ isForwarded: true,
 externalAdReply: {
 title: ('Terabox Downloader'),
 body: tb.result.server_filename,
-thumbnailUrl: global.mikasampul,
+thumbnailUrl: global.ppmika,
 sourceUrl: (`${args[0]}`),
 mediaType: 1,
 renderLargerThumbnail: false
