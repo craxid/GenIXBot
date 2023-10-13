@@ -20,7 +20,10 @@ let detil = `
 _Sedang mengirim..._
 `
 let detil2 = `
-*`
+*Artis:* ${spotify.result.data.metadata.artist}
+*Judul:* ${spotify.result.data.metadata.name}
+*Album:* ${spotify.result.data.metadata.album}
+`
 
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
