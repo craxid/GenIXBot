@@ -5,10 +5,10 @@ import fetch from 'node-fetch'
 let limit = 15
 
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
-
  
 if (!args[0]) throw `✳️ Spotify Downloader\n\nContoh: !spotify https://open.spotify.com/track/4Jj3yew48NodVHWePPUGR7`
- 
+m.react(rwait)
+
 let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/spotify?url=${args[0]}`)
 let spotify = await ling.json()
 
