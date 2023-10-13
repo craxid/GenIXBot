@@ -31,13 +31,13 @@ externalAdReply: {
 title: ('Facebook Downloader'),
 body: global.namebot,
 thumbnailUrl: (`${fbdl.result.data.metadata.image}`),
-sourceUrl: (`${fbdl.result.data.metadata.image}`),
+sourceUrl: (`${fbdl.result.data.metadata.weburl}`),
 mediaType: 1,
 renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, fbdl.result.video_hd, 'fesbuk.mp4', 'Facebook Downloader\n© Mika Bot', m)
+await conn.sendFile(m.chat, fbdl.result.video_hd, 'Spotify', 'Spotify Downloader\n© Mika Bot', m)
 
  }
 handler.help = ['facebook'].map(v => v + ' <url>')
