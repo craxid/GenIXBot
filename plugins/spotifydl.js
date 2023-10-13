@@ -37,7 +37,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, spotify.result.video_hd, `${`, 'Spotify Downloader\n© Mika Bot', m)
+await conn.sendFile(m.chat, spotify.result.video_hd, spotify.result.data.metadata.downlaod, 'Spotify Downloader\n© Mika Bot', m)
 
  }
 handler.help = ['facebook'].map(v => v + ' <url>')
