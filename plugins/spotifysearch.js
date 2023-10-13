@@ -17,12 +17,6 @@ let teks = hasil.all.map(v => {
 ▢ *Durasi* : ${v.result.data.duration}
 ▢ *Popularitas:* ${v.resilt.data.popularity}
    `.trim()
-
-/*case 'channel': return `
-▢ *${v.name}* (${v.url})
-▢${v.subCountLabel} (${v.subCount}) Subscriber
-▢ ${v.videoCount} video
-`.trim()*/
     }
   }).filter(v => v).join('\n\n________________________\n\n')
   conn.sendFile(m.chat, tes[0].thumbnail, 'yts.jpeg', teks, m)
