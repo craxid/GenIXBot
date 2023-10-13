@@ -42,7 +42,7 @@
     "dependencies": {
         "@adiwajshing/baileys": "npm:@whiskeysockets/baileys",
         "betabotz-tools": "latest",
-        "toanime": "latest",
+        "kazenime": "npm:@kazesolo/toanime",
         "@whiskeysockets/baileys": "^6.4.0",
         "@adiwajshing/keyed-db": "^0.2.4",
         "@bochilteam/scraper": "^4.2.3",
