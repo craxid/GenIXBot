@@ -46,11 +46,11 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, { document: { url: tb.result.dllink }}, m)
+await conn.sendFile(m.chat, tb.result.dllink, m)
  }
- /*catch {
+ catch {
 		m.reply(`❎ Error: Ada sebuah kesalahan`)
-	}*/
+	}
 }
 handler.help = ['terabox'].map(v => v + ' <url>')
 handler.tags = ['dl','prem']
