@@ -7,7 +7,7 @@ let limit = 250000000
 if (!args[0]) throw `✳️ Download File Terabox\n\n Mana linknya?`
  
 try {
-let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/terabox?url=${args[0]}`)
+let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/terabox?url=https://www.terabox.app/share?surl=${args[0]}`)
 let tb = await ling.json()
 
 if (tb.result.size.split('Byte')[0] >= limit)
