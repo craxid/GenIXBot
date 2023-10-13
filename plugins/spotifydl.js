@@ -15,7 +15,7 @@ let fbdl = await ling.json()
 let detil = `
 *Artis:* ${fbdl.result.data.metadata.artist}
 *Judul:* ${fbdl.result.data.metadata.name}
-*Album:* ${fbdl.result.data.metadata.name}
+*Album:* ${fbdl.result.data.metadata.album}
 
 _Sedang mengirim..._
 `
