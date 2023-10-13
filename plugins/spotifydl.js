@@ -37,7 +37,7 @@ renderLargerThumbnail: true
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, fbdl.result.video_hd, 'Spotify', 'Spotify Downloader\n© Mika Bot', m)
+await conn.sendFile(m.chat, fbdl.result.video_hd, ``, 'Spotify Downloader\n© Mika Bot', m)
 
  }
 handler.help = ['facebook'].map(v => v + ' <url>')
