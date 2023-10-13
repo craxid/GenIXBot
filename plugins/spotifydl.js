@@ -7,9 +7,9 @@ let limit = 15
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
  
-if (!args[0]) throw `✳️ Spotify Downloader\n\nContoh: !spotify https://api.yanzbotz.my.id/api/downloader/spotify?url=https://open.spotify.com/track/4Jj3yew48NodVHWePPUGR7`
+if (!args[0]) throw `✳️ Spotify Downloader\n\nContoh: !spotify https://open.spotify.com/track/4Jj3yew48NodVHWePPUGR7`
  
-let ling = await fetch(`https://api.arifzyn.xyz/download/facebook?url=${args[0]}`)
+let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/spotify?url=${args[0]}`)
 let fbdl = await ling.json()
 
 let detil = `
