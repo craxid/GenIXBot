@@ -35,7 +35,7 @@ body: spotify.result.data.metadata.name,
 thumbnailUrl: (`${spotify.result.data.metadata.image}`),
 sourceUrl: (`${spotify.result.data.metadata.weburl}`),
 mediaType: 1,
-renderLargerThumbnail: true
+renderLargerThumbnail: false
 }}},
 {quoted: m})
 
