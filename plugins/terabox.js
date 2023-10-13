@@ -49,7 +49,7 @@ renderLargerThumbnail: false
 await conn.sendFile(m.chat, tb.result.dllink, m)
  }
  catch {
-		m.reply(`Error: ${tb.result.error}`)
+		m.reply(`Error: Ada sebuah kesalahan`)
 	}
 }
 handler.help = ['terabox'].map(v => v + ' <url>')
