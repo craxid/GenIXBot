@@ -31,7 +31,7 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('Spotify Downloader'),
-body: global.namebot,
+body: spotify.result.data.metadata.name,
 thumbnailUrl: (`${spotify.result.data.metadata.image}`),
 sourceUrl: (`${spotify.result.data.metadata.weburl}`),
 mediaType: 1,
