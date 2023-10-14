@@ -42,7 +42,7 @@ renderLargerThumbnail: false
 await conn.sendFile(m.chat, spotify.result.data.metadata.download, (`${spotify.result.data.metadata.name} (Mika Bot).m4a`), 'Spotify Downloader\n© Mika Bot', m)
 
  }
-handler.help = ['facebook'].map(v => v + ' <url>')
+handler.help = ['spotify'].map(v => v + ' <url>')
 handler.tags = ['dl']
 handler.command = /^((spotify|dl)?)$/i
 handler.diamond = true
