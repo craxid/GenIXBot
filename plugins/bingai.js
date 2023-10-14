@@ -21,5 +21,5 @@ export default async function handler(m, {
 }
 handler.command = ["bing", "bingai"]
 handler.help = ["bing / bingai < prompt >"]
-handler.tags = ["ai"]
+handler.tags = ["ai", "prem"]
 handler.diamond = true
