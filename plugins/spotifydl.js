@@ -43,7 +43,7 @@ await conn.sendFile(m.chat, spotify.result.data.metadata.download, (`${spotify.r
 
  }
 handler.help = ['spotify'].map(v => v + ' <url>')
-handler.tags = ['dl']
+handler.tags = ['dl','prem']
 handler.command = /^((spotify|dl)?)$/i
 handler.diamond = true
 
