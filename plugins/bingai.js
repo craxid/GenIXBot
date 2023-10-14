@@ -24,3 +24,5 @@ handler.command = ["bing", "bingai"]
 handler.help = ["bing / bingai < prompt >"]
 handler.tags = ["ai", "prem"]
 handler.diamond = true
+
+export default handler
