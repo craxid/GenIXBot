@@ -2,7 +2,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
 
-let limit = 250000000
+let limit = 2500000
 
 if (!args[0]) throw `✳️ Download File Terabox\n\n Mana ID nya?\nContoh: https://www.terabox.app/wap/share/filelist?surl=iniIDnya\nAmbil id dibelakang linknya!`
  
