@@ -3,12 +3,10 @@ import { ChatBot, conversation_style } from 'bingai-js'
 
 let handler = async (m, { conn, text }) => {
     if (!text) return m.reply("Usage:\n!bing < prompt >\n\nExample:\n!bing What is Javascript")
-    
+
 export default async function handler(m, {
     text: prompt
 })
-
-    
     try {
         m.reply(wait)
         const cookie = bingCookie
