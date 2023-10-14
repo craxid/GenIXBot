@@ -21,7 +21,7 @@ let handler = async (m, { conn, text }) => {
 m.reply(await a.ask(prompt, conversation_style.creative))
     } 
 catch (e) {
-    m.reply('')
+    m.reply('Error: Ada sebuah kesalahan')
     
     conn.reply(set.owner[0] + '@s.whatsapp.net', 'Fitur: Bing Ai\n\n' + String(e), null)
     }
