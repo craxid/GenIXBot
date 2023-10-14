@@ -26,7 +26,7 @@ contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
-title: ('Spot Search'),
+title: ('Spotify Search'),
 body: spotfind.result.data.name,
 thumbnailUrl: global.ppmika,
 sourceUrl: (`${spotfind.result.data.url}`),
@@ -38,9 +38,9 @@ renderLargerThumbnail: false
 //await conn.sendFile(m.chat, spotfind.result.data.download, (`${spotfind.result.data.name} (Mika Bot).m4a`), 'spotfind Downloader\n© Mika Bot', m)
 
  }
-handler.help = ['spotfindsearch'].map(v => v + ' <url>')
+handler.help = ['spotifysearch'].map(v => v + ' <url>')
 handler.tags = ['dl','prem']
-handler.command = /^((spotfindsearch)?)$/i
+handler.command = /^((spotifysearch)?)$/i
 handler.diamond = false
 
 export default handler
