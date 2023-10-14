@@ -11,8 +11,7 @@ m.react(rwait)
 
 let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text}`)
 
-if (spotfind && ling.result.length > 0) {
-const hasil = hasil.result[0];
+switch ()
 
 let detil = `
 *Judul:* ${hasil.title}
@@ -40,7 +39,6 @@ renderLargerThumbnail: false
 
 //await conn.sendFile(m.chat, hasil.download, (`${hasil.name} (Mika Bot).m4a`), 'spotfind Downloader\n© Mika Bot', m)
 
- }
 handler.help = ['spotifysearch'].map(v => v + ' <url>')
 handler.tags = ['dl','prem']
 handler.command = /^((spotifysearch)?)$/i
