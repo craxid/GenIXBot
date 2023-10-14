@@ -13,9 +13,9 @@ let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text
 let spotify = await ling.json()
 
 let detil = `
-*Artis:* ${spotify.result.data.metadata.artist}
-*Judul:* ${spotify.result.data.metadata.title}
-*Album:* ${spotify.result.data.metadata.album}
+*Judul:* ${spotify.result.data.metadata.artist}
+*Durasi:* ${spotify.result.data.metadata.title}
+*Popularitas:* ${spotify.result.data.metadata.popularities}
 
 _Sedang mengirim..._
 `
