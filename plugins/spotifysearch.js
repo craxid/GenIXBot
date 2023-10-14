@@ -17,11 +17,8 @@ let detil = `
 *Durasi:* ${spotify.result.data.metadata.title}
 *Popularitas:* ${spotify.result.data.metadata.popularity}
 *Pratinjau:* ${spotify.result.data.metadata.preview}
-`
-let detil2 = `
-*Artis:* ${spotify.result.data.metadata.artist}
-*Judul:* ${spotify.result.data.metadata.name}
-*Album:* ${spotify.result.data.metadata.album}
+
+*URL:* ${spotify.result.data.metadata.url}
 `
 
 conn.sendMessage(m.chat, {text: detil,
