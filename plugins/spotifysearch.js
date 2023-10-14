@@ -15,9 +15,8 @@ let spotify = await ling.json()
 let detil = `
 *Judul:* ${spotify.result.data.metadata.artist}
 *Durasi:* ${spotify.result.data.metadata.title}
-*Popularitas:* ${spotify.result.data.metadata.popularities}
-
-_Sedang mengirim..._
+*Popularitas:* ${spotify.result.data.metadata.popularity}
+*Pratinjau:* $
 `
 let detil2 = `
 *Artis:* ${spotify.result.data.metadata.artist}
