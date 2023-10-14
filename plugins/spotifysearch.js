@@ -11,7 +11,7 @@ m.react(rwait)
 
 let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text}`)
 
-switch ()
+switch (hasil.result) {
 
 let detil = `
 *Judul:* ${hasil.title}
