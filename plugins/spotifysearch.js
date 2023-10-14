@@ -13,12 +13,12 @@ let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text
 let hasil = await ling.json()
 
 let detil = `
-*Judul:* ${hasil.title}
-*Durasi:* ${hasil.duration}
-*Popularitas:* ${hasil.popularity}
-*Pratinjau:* ${hasil.preview}
+*Judul:* ${hasil.result.data.title}
+*Durasi:* ${hasil.result.data.duration}
+*Popularitas:* ${hasil.result.data.popularity}
+*Pratinjau:* ${hasil.result.data.preview}
 
-*URL:* ${hasil.url}
+*URL:* ${hasil.result.data.url}
 `
 
 conn.sendMessage(m.chat, {text: detil,
@@ -27,16 +27,16 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('Spotify Search'),
-body: hasil.name,
+body: hasil.result.data.name,
 thumbnailUrl: global.ppmika,
-sourceUrl: (`${hasil.url}`),
+sourceUrl: (`${hasil.result.data.url}`),
 mediaType: 1,
 renderLargerThumbnail: false
 }}},
 {quoted: m})
 }
 
-//await conn.sendFile(m.chat, hasil.download, (`${hasil.name} (Mika Bot).m4a`), 'spotfind Downloader\n© Mika Bot', m)
+//await conn.sendFile(m.chat, hasil.result.data.download, (`${hasil.result.data.name} (Mika Bot).m4a`), 'spotfind Downloader\n© Mika Bot', m)
 
 handler.help = ['spotifysearch'].map(v => v + ' <url>')
 handler.tags = ['dl','prem']
@@ -45,7 +45,7 @@ handler.diamond = false
 
 export default handler
 
-//https://api.yanzbotz.my.id/api/downloader/spotfind?url=https://open.hasil.com/track/4Jj3yew48NodVHWePPUGR7
+//https://api.yanzbotz.my.id/api/downloader/spotfind?url=https://open.hasil.result.data.com/track/4Jj3yew48NodVHWePPUGR7
 
-//https://api.yanzbotz.my.id/api/downloader/spotfind?url=https://open.hasil.com/track/4Jj3yew48NodVHWePPUGR7
+//https://api.yanzbotz.my.id/api/downloader/spotfind?url=https://open.hasil.result.data.com/track/4Jj3yew48NodVHWePPUGR7
 //https://api.yanzbotz.my.id/api/cari/spotfind?query=
