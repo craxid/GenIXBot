@@ -6,7 +6,7 @@ let limit = 15
 
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
  
-if (!text) throw `✳️ Spotify Search\n\nContoh: !spotify Let it Go`
+if (!text) throw `✳️ Spotify Search\n\nContoh: !spotifysearch Let it Go`
 m.react(rwait)
 
 let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text}`)
