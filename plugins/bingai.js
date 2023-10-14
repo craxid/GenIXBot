@@ -5,10 +5,10 @@ import { ChatBot, conversation_style } from 'bingai-js'
 })*/
 
 let handler = async (m, { conn, text }) => {
-    if (!prompt) return m.reply("Usage:\n!bing < prompt >\n\nExample:\n!bing What is Javascript")
+    if (!text) return m.reply("Usage:\n!bing < prompt >\n\nExample:\n!bing What is Javascript")
     
     try {
-        m.reply(msg.wait)
+        m.reply(wait)
         const cookie = bingCookie
         const a = new ChatBot(cookie);
         await a.init();
@@ -21,7 +21,7 @@ let handler = async (m, { conn, text }) => {
 m.reply(await a.ask(prompt, conversation_style.creative))
     } 
 catch (e) {
-    m.reply(msg.err)
+    m.reply('')
     
     conn.reply(set.owner[0] + '@s.whatsapp.net', 'Fitur: Bing Ai\n\n' + String(e), null)
     }
