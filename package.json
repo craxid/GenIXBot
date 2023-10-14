@@ -49,6 +49,7 @@
         "awesome-phonenumber": "^3.4.0",
         "@ibaraki-douji/pixivts": "npm:@ibaraki-douji/pixivts",
         "makemeazombie": "latest",
+        "bingai-js": "^1.5.0",
         "axios": "^1.1.2",
         "express": "latest",
         "ocr-space-api-wrapper": "^2.1.1",
