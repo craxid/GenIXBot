@@ -19,7 +19,7 @@ let handler = async (m, { conn, text }) => {
          */
          
 m.reply(await a.ask(prompt, conversation_style.creative))
-    } 
+    }
 catch (e) {
     m.reply('Error: Ada sebuah kesalahan')
     }
