@@ -15,12 +15,12 @@ if (spotfind && ling.result.length > 0) {
 const hasil = hasil.result[0];
 
 let detil = `
-*Judul:* ${hasil.result.data.title}
-*Durasi:* ${hasil.result.data.duration}
-*Popularitas:* ${hasil.result.data.popularity}
-*Pratinjau:* ${hasil.result.data.preview}
+*Judul:* ${hasil.title}
+*Durasi:* ${hasil.duration}
+*Popularitas:* ${hasil.popularity}
+*Pratinjau:* ${hasil.preview}
 
-*URL:* ${hasil.result.data.url}
+*URL:* ${hasil.url}
 `
 
 conn.sendMessage(m.chat, {text: detil,
@@ -29,16 +29,16 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('Spotify Search'),
-body: hasil.result.data.name,
+body: hasil.name,
 thumbnailUrl: global.ppmika,
-sourceUrl: (`${hasil.result.data.url}`),
+sourceUrl: (`${hasil.url}`),
 mediaType: 1,
 renderLargerThumbnail: false
 }}},
 {quoted: m})
 }
 
-//await conn.sendFile(m.chat, hasil.result.data.download, (`${hasil.result.data.name} (Mika Bot).m4a`), 'spotfind Downloader\n© Mika Bot', m)
+//await conn.sendFile(m.chat, hasil.download, (`${hasil.name} (Mika Bot).m4a`), 'spotfind Downloader\n© Mika Bot', m)
 
  }
 handler.help = ['spotifysearch'].map(v => v + ' <url>')
