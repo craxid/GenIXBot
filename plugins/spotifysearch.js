@@ -10,8 +10,7 @@ if (!text) throw `✳️ Spotify Search\n\nContoh: !spotifysearch Let it Go`
 m.react(rwait)
 
 let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text}`)
-
-switch (hasil.result) {
+let hasil = await ling.result()
 
 let detil = `
 *Judul:* ${hasil.title}
