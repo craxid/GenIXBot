@@ -1,3 +1,4 @@
+
 import { ChatBot, conversation_style } from 'bingai-js'
 export default async function handler(m, {
     text: prompt
