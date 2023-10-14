@@ -13,12 +13,12 @@ let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text
 let spotify = await ling.json()
 
 let detil = `
-*Judul:* ${spotify.result.data.metadata.artist}
-*Durasi:* ${spotify.result.data.metadata.title}
-*Popularitas:* ${spotify.result.data.metadata.popularity}
-*Pratinjau:* ${spotify.result.data.metadata.preview}
+*Judul:* ${spotify.result.data.artist}
+*Durasi:* ${spotify.result.data.title}
+*Popularitas:* ${spotify.result.data.popularity}
+*Pratinjau:* ${spotify.result.data.preview}
 
-*URL:* ${spotify.result.data.metadata.url}
+*URL:* ${spotify.result.data.url}
 `
 
 conn.sendMessage(m.chat, {text: detil,
@@ -27,15 +27,15 @@ forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
 title: ('Spotify Search'),
-body: spotify.result.data.metadata.name,
-thumbnailUrl: (`${spotify.result.data.metadata.image}`),
-sourceUrl: (`${spotify.result.data.metadata.weburl}`),
+body: spotify.result.data.name,
+thumbnailUrl: global.ppmika,
+sourceUrl: (`${spotify.result.data.url}`),
 mediaType: 1,
 renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-//await conn.sendFile(m.chat, spotify.result.data.metadata.download, (`${spotify.result.data.metadata.name} (Mika Bot).m4a`), 'Spotify Downloader\n© Mika Bot', m)
+//await conn.sendFile(m.chat, spotify.result.data.download, (`${spotify.result.data.name} (Mika Bot).m4a`), 'Spotify Downloader\n© Mika Bot', m)
 
  }
 handler.help = ['spotifysearch'].map(v => v + ' <url>')
