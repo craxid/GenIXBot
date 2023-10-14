@@ -13,8 +13,8 @@ let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text
 let spotfind = await ling.json()
 
 let detil = `
-*Judul:* ${spotfind.result.data.artist}
-*Durasi:* ${spotfind.result.data.title}
+*Judul:* ${spotfind.result.data.title}
+*Durasi:* ${spotfind.result.data.duration}
 *Popularitas:* ${spotfind.result.data.popularity}
 *Pratinjau:* ${spotfind.result.data.preview}
 
