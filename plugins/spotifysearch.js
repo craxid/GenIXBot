@@ -6,15 +6,15 @@ let limit = 15
 
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
  
-if (!args[0]) throw `✳️ Spotify Downloader\n\nContoh: !spotify https://open.spotify.com/track/4Jj3yew48NodVHWePPUGR7`
+if (!text) throw `✳️ Spotify Downloader\n\nContoh: !spotify https://open.spotify.com/track/4Jj3yew48NodVHWePPUGR7`
 m.react(rwait)
 
-let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${`)
+let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text}`)
 let spotify = await ling.json()
 
 let detil = `
 *Artis:* ${spotify.result.data.metadata.artist}
-*Judul:* ${spotify.result.data.metadata.name}
+*Judul:* ${spotify.result.data.metadata.title}
 *Album:* ${spotify.result.data.metadata.album}
 
 _Sedang mengirim..._
