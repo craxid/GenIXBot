@@ -12,6 +12,8 @@ m.react(rwait)
 let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text}`)
 let spotfind = await ling.json()
 
+if (spotfind && results.videos.length > 0) {
+
 let detil = `
 *Judul:* ${spotfind.result.data.title}
 *Durasi:* ${spotfind.result.data.duration}
