@@ -9,7 +9,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 if (!args[0]) throw `✳️ Spotify Downloader\n\nContoh: !spotify https://open.spotify.com/track/4Jj3yew48NodVHWePPUGR7`
 m.react(rwait)
 
-let ling = await fetch(`https://api.yanzbotz.my.id/api/downloader/spotify?url=${args[0]}`)
+let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${`)
 let spotify = await ling.json()
 
 let detil = `
@@ -30,7 +30,7 @@ contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
 externalAdReply: {
-title: ('Spotify Downloader'),
+title: ('Spotify Search'),
 body: spotify.result.data.metadata.name,
 thumbnailUrl: (`${spotify.result.data.metadata.image}`),
 sourceUrl: (`${spotify.result.data.metadata.weburl}`),
@@ -39,7 +39,7 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-/await conn.sendFile(m.chat, spotify.result.data.metadata.download, (`${spotify.result.data.metadata.name} (Mika Bot).m4a`), 'Spotify Downloader\n© Mika Bot', m)
+//await conn.sendFile(m.chat, spotify.result.data.metadata.download, (`${spotify.result.data.metadata.name} (Mika Bot).m4a`), 'Spotify Downloader\n© Mika Bot', m)
 
  }
 handler.help = ['spotifysearch'].map(v => v + ' <url>')
