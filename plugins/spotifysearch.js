@@ -39,15 +39,17 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, spotify.result.data.metadata.download, (`${spotify.result.data.metadata.name}(Mika Bot).m4a`), 'Spotify Downloader\n© Mika Bot', m)
+await conn.sendFile(m.chat, spotify.result.data.metadata.download, (`${spotify.result.data.metadata.name} (Mika Bot).m4a`), 'Spotify Downloader\n© Mika Bot', m)
 
  }
 handler.help = ['facebook'].map(v => v + ' <url>')
 handler.tags = ['dl']
-handler.command = /^((spotify|dl)?)$/i
+handler.command = /^((spotifysearch)?)$/i
 handler.diamond = true
 
 export default handler
+
+//https://api.yanzbotz.my.id/api/downloader/spotify?url=https://open.spotify.com/track/4Jj3yew48NodVHWePPUGR7
 
 //https://api.yanzbotz.my.id/api/downloader/spotify?url=https://open.spotify.com/track/4Jj3yew48NodVHWePPUGR7
 //https://api.yanzbotz.my.id/api/cari/spotify?query=
