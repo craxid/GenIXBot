@@ -41,7 +41,7 @@ renderLargerThumbnail: false
 handler.help = ['spotifysearch'].map(v => v + ' <url>')
 handler.tags = ['dl','prem']
 handler.command = /^((spotifysearch)?)$/i
-handler.diamond = true
+handler.diamond = false
 
 export default handler
 
