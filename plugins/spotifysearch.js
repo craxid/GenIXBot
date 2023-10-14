@@ -39,11 +39,11 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})
 
-await conn.sendFile(m.chat, spotify.result.data.metadata.download, (`${spotify.result.data.metadata.name} (Mika Bot).m4a`), 'Spotify Downloader\n© Mika Bot', m)
+/await conn.sendFile(m.chat, spotify.result.data.metadata.download, (`${spotify.result.data.metadata.name} (Mika Bot).m4a`), 'Spotify Downloader\n© Mika Bot', m)
 
  }
-handler.help = ['facebook'].map(v => v + ' <url>')
-handler.tags = ['dl']
+handler.help = ['spotifysearch'].map(v => v + ' <url>')
+handler.tags = ['dl','prem']
 handler.command = /^((spotifysearch)?)$/i
 handler.diamond = true
 
