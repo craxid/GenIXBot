@@ -23,7 +23,6 @@ let detil = `
 *URL:* ${spotfind.result.data.url}
 `
 
-
 conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
 forwardingScore: 9999,
@@ -37,6 +36,7 @@ mediaType: 1,
 renderLargerThumbnail: false
 }}},
 {quoted: m})
+}
 
 //await conn.sendFile(m.chat, spotfind.result.data.download, (`${spotfind.result.data.name} (Mika Bot).m4a`), 'spotfind Downloader\n© Mika Bot', m)
 
