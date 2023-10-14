@@ -22,8 +22,6 @@ m.reply(await a.ask(prompt, conversation_style.creative))
     } 
 catch (e) {
     m.reply('Error: Ada sebuah kesalahan')
-    
-    conn.reply(set.owner[0] + '@s.whatsapp.net', 'Fitur: Bing Ai\n\n' + String(e), null)
     }
 }
 handler.command = ["bing", "bingai"]
@@ -32,3 +30,4 @@ handler.tags = ["ai", "prem"]
 handler.diamond = true
 
 export default handler
+//conn.reply(set.owner[0] + '@s.whatsapp.net', 'Fitur: Bing Ai\n\n' + String(e), null)
