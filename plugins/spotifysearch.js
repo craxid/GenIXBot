@@ -13,6 +13,7 @@ let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text
 let spotfind = await ling.json()
 
 if (spotfind && spotfind.result.length > 0) {
+let hasil = spotfin
 
 let detil = `
 *Judul:* ${spotfind.result.data.title}
