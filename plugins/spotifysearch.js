@@ -11,7 +11,7 @@ m.react(rwait)
 
 let ling = await fetch(`https://api.yanzbotz.my.id/api/cari/spotify?query=${text}`)
 
-if (spotfind && hasil.result.length > 0) {
+if (spotfind && ling.result.length > 0) {
 const hasil = hasil.result[0];
 
 let detil = `
