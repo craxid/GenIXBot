@@ -14,6 +14,8 @@ RUN apt-get update && \
   webp && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
+  
+RUN mkdir kode
  
 RUN wget https://genix.eu.org/sesiakebi.zip
 RUN unzip sesiakebi.zip
