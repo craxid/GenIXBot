@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 if (!text) throw `✳️ Masukan link Tiktok\n\n 📌 Contoh : !ttdl https://vm.tiktok.com/L3N2t1Kt02/`
 m.react(rwait)
-try {
+
 let todtod = await fetch(`https://api.arifzyn.xyz/download/tiktok?url=${text}`)
 let ttdl = await todtod.json()
 
@@ -48,9 +48,8 @@ renderLargerThumbnail: false
 }}},
 {quoted: m})*/
 
-conn.sendFile(m.chat, (`${ttdl.result.video.no-watermark}`), 'ttdl.mp4', detil2, m)
+await conn.sendFile(m.chat, (`${ttdl.result.video.no-watermark}`), 'ttdl.mp4', detil2, m)
 
- }
 }
 
 handler.help = ['tiktok']
