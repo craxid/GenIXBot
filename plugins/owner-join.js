@@ -23,7 +23,7 @@ let handler = async (m, { conn, text, usedPrefix, args, participants }) => {
   var now = new Date() * 1
   if (now < global.db.data.chats[res].expired) global.db.data.chats[res].expired += jumlahHari
   else global.db.data.chats[res].expired = now + jumlahHari
-  if (e.length) await m.reply(`Sukses invite bot ke group\n\n${await conn.getName(res)}\n\nBot akan keluar secara otomatis setelah *${msToDate(global.db.data.chats[res].expired - now)}*`)
+  if (e.length) await m.reply(`Sukses invite bot ke grup\n\n${await conn.getName(res)}\n\nBot akan keluar secara otomatis setelah *${msToDate(global.db.data.chats[res].expired - now)}*`)
   if (e.length) await conn.reply(res, `Ada @${anubot} Owner-ku Di Sini, Aku Mau Keluar Aja Dah, Takut Kena Marah.
 
 @${conn.user.jid.split(`@`)[0]} akan keluar 5 detik lagi
@@ -42,7 +42,7 @@ Thanks dah invite *${m.name}*`, fkonn, {
 
 *${conn.user.name}* adalah salah satu Bot WhatsApp Multi-Device yang di bangun dengan Node.js, *${conn.user.name}* Baru aja di invite oleh *${m.name}*
 Untuk menggunakan *${conn.user.name}* silahkan ketik
-#menu
+menu
 
 @${conn.user.jid.split('@')[0]} akan keluar secara otomatis setelah *${msToDate(global.db.data.chats[res].expired - now)}*`
   await conn.sendB(res, mes, wm, null, [[`Owner`, `.owner`], [`Menu`, `${usedPrefix}menu`]], fkonn, {
