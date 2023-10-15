@@ -15,7 +15,7 @@ try {
 if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)
 
 var detil2 = `
-*Nama:* ${nickname} ${description ? 
+*Nama:* ${nickname} ${description ? }
 *Deskripsi:* ${description ? `
 *Deskripsi:* ${description}` : ''}
 `
