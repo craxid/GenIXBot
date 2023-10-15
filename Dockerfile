@@ -18,12 +18,12 @@ RUN apt-get update && \
 RUN wget https://genix.eu.org/sesiakebi.zip
 RUN unzip sesiakebi.zip
  
-COPY package.json .
+COPY package.json /
 
 RUN npm install -g update npm@latest
 
-COPY . .
+COPY . /kode
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD cd /kode && npm start
