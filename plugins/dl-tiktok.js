@@ -14,6 +14,18 @@ try {
     
 if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)
 
+var detil2 = `
+*Nama:* ${ttdl.result.name}
+*Username:* ${ttdl.result.username}
+*Tipe:* ${ttdl.result.type}
+*Dilihat:* ${ttdl.result.views}
+*Disukai:* ${ttdl.result.likes}
+*Komentar:* ${ttdl.result.comments}
+*Difavoritkan:* ${ttdl.result.favorite}
+*Dibagikan:* ${ttdl.result.shares}
+*Deskripsi:* ${ttdl.result.description}
+`
+
     let te = `
 ┌─⊷ TIKTOK
 ▢ *Nama:* ${p.nickname}
