@@ -57,7 +57,7 @@ let handler = async (m, { conn, command, usedPrefix, text }) => {
   if (!text) throw `Ketik ${usedPrefix + command} judul lagu dan penyanyinya 
 
 Contoh : ${usedPrefix + command} oh asmara kobo kanaeru`
-   await m.reply('Tunggu Sebentar...')
+   await m.reply('Tunggu bentar...')
   const response = await fetch(`https://myvin.me/spotify/play?q=${text}`)
   if (!response.ok) throw `Gagal memanggil API: ${response.statusText}`
 
