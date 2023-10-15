@@ -1,3 +1,4 @@
+
 let handler = async (m, { conn, text, usedPrefix, args, participants }) => {
   var time = db.data.users[m.sender].lastjoin + 86400000
   var linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
@@ -42,7 +43,7 @@ Thanks dah invite *${m.name}*`, fkonn, {
 
 *${conn.user.name}* adalah salah satu Bot WhatsApp Multi-Device yang di bangun dengan Node.js, *${conn.user.name}* Baru aja di invite oleh *${m.name}*
 Untuk menggunakan *${conn.user.name}* silahkan ketik
-menu
+!menu
 
 @${conn.user.jid.split('@')[0]} akan keluar secara otomatis setelah *${msToDate(global.db.data.chats[res].expired - now)}*`
   await conn.sendB(res, mes, wm, null, [[`Owner`, `.owner`], [`Menu`, `${usedPrefix}menu`]], fkonn, {
