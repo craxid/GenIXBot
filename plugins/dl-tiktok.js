@@ -15,8 +15,9 @@ try {
 if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)
 
 var detil2 = `
-*Nama:* ${nickname}
-*Deskripsi:* ${description ? `\n▢ *Deskripsi:* ${description}` : ''}
+*Nama:* ${nickname} ${description ? 
+*Deskripsi:* ${description ? `
+*Deskripsi:* ${description}` : ''}
 `
 
     let te = `
@@ -33,10 +34,7 @@ var detil2 = `
 	const { author: { nickname }, video, description } = await tiktokdl(args[0])
     const url = video.no_watermark || video.no_watermark2 || video.no_watermark_raw
     if (!url) throw '❎ Error while downloading the video'
-    conn.sendFile(m.chat, url, 'fb.mp4', `
-┌─⊷ *TIKTOK DL-2*
-▢ *Nickname:* ${nickname} ${description ? `\n▢ *Deskripsi:* ${description}` : ''}
-└───────────`, m)
+    conn.sendFile(m.chat, url, 'ttdl.mp4', detil2, m)
 m.react(done)
 } catch {
     m.reply(`❎ Error while downloading the video`)
