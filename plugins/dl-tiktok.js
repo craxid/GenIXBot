@@ -49,7 +49,6 @@ renderLargerThumbnail: false
 {quoted: m})*/
 
 await conn.sendFile(m.chat, (`${ttdl.result.video.no-watermark}`), 'ttdl.mp4', detil2, m)
-
 }
 
 handler.help = ['tiktok']
