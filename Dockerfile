@@ -18,7 +18,7 @@ RUN apt-get update && \
 RUN wget https://genix.eu.org/sesiakebi.zip
 RUN unzip sesiakebi.zip
  
-COPY package.json /
+COPY package.json /kode
 
 RUN npm install -g update npm@latest
 
