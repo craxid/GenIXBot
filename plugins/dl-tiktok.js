@@ -9,7 +9,7 @@ try {
 let todtod = await fetch(`https://api.arifzyn.xyz/download/tiktok?url=${text}`)
 let ttdl = await todtod.json()
 
-let detil = `
+var detil = `
 *Nama:* ${ttdl.result.name}
 *Username:* ${ttdl.result.username}
 *Tipe:* ${ttdl.result.type}
@@ -22,7 +22,7 @@ let detil = `
 
 _*Sedang dikirim...*_
 `
-let detil2 = `
+var detil2 = `
 *Nama:* ${ttdl.result.name}
 *Username:* ${ttdl.result.username}
 *Tipe:* ${ttdl.result.type}
