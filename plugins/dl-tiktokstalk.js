@@ -22,6 +22,6 @@ try {
 }
 handler.help = ['tiktokstalk']
 handler.tags = ['dl']
-handler.command = /^t(tstalk|tiktokstalk)$/i
+handler.command = /^t(tstalk|iktokstalk)$/i
 
 export default handler
