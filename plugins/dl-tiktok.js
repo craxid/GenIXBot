@@ -15,8 +15,8 @@ try {
 if (size.split('MB')[0] >= limit) return m.reply(` ≡  *Mika Bot YTDL*\n\n▢ *⚖️ Size* : ${size}\n▢ *🎞️ Query* : ${q}\n\n▢ _The file exceeds the download limit_ *+${limit} MB*`)
 
 var detil2 = `
-*Nama:* ${ttdl.result.nickname}
-*Deskripsi:* ${ttdl.result.username}
+*Nama:* ${nickname}
+*Deskripsi:* ${description ? `\n▢ *Deskripsi:* ${description}` : ''}
 `
 
     let te = `
