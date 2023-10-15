@@ -60,7 +60,7 @@ ${usedPrefix}help
 }
 handler.help = ['join <chat.whatsapp.com> <hari>']
 handler.tags = ['owner']
-handler.command = ['join', 'invite'] 
+handler.command = ['join'] 
 hanlder.premium = true
 handler.rowner = true
 
