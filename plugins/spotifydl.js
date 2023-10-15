@@ -41,6 +41,9 @@ renderLargerThumbnail: false
 
 //await conn.sendFile(m.chat, spotify.result.data.metadata.download, (`${spotify.result.data.metadata.name} (Mika Bot).m4a`), 'Spotify Downloader\n© Mika Bot', m)
 
+const buffer = await response.buffer()
+  conn.sendFile(m.chat, buffer, 'audio.mp3', '', m, 0, { mimetype: 'audio/mp4' })
+
  }
 handler.help = ['spotify'].map(v => v + ' <url>')
 handler.tags = ['dl','prem']
