@@ -34,7 +34,7 @@ var detil2 = `
 *Deskripsi:* ${ttdl.result.description}
 `
 
-conn.sendMessage(m.chat, {text: detil,
+/*conn.sendMessage(m.chat, {text: detil,
 contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
@@ -46,7 +46,7 @@ sourceUrl: (`https://tiktok.com/${ttdl.result.username}`),
 mediaType: 1,
 renderLargerThumbnail: false
 }}},
-{quoted: m})
+{quoted: m})*/
 
 conn.sendMessage(m.chat, (`${ttdl.result.video.no-watermark}`), 'ttdl.mp4', detil2, m)
 
