@@ -15,22 +15,15 @@ RUN apt-get update && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
  
-RUN mkdir /root/kode \
-&& cd /root/kode/ \
-&& wget https://genix.eu.org/sesiakebi.zip \
-&& unzip sesiakebi.zip \
-&& rm -rf session/sender-key* \
-&& rm -rf session/session* \
-&& npm i -g pm2
-
+RUN wget https://genix.eu.org/sesiakebi.zip
+RUN unzip sesiakebi.zip
+ 
 COPY package.json .
 
-COPY . /root/kode/
-RUN chmod +x /root/kode/indeks.sh 
+RUN npm install -g update npm@latest
 
-RUN npm install -g npm@latest
-RUN npm i
+COPY . .
 
 EXPOSE 3000
 
-CMD cd /root/kode/ && npm start
+CMD ["npm", "start"]
