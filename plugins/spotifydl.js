@@ -1,6 +1,6 @@
 
 
-/*import fb from 'api-dylux'
+import fb from 'api-dylux'
 import fetch from 'node-fetch'
 let limit = 15
 
@@ -47,11 +47,11 @@ handler.tags = ['dl','prem']
 handler.command = /^((spotify|dl)?)$/i
 handler.diamond = true
 
-export default handler*/
+export default handler
 
 //https://api.yanzbotz.my.id/api/downloader/spotify?url=https://open.spotify.com/track/4Jj3yew48NodVHWePPUGR7
 
-import fetch 'node-fetch'
+/*import fetch 'node-fetch'
 
 let handler = async (m, { conn, command, usedPrefix, text }) => {
   if (!text) throw `Ketik ${usedPrefix + command} judul lagu dan penyanyinya 
@@ -70,4 +70,4 @@ handler.command = ['spotify']
 handler.tags = ['dl']
 handler.diamond = true
 
-export default handler
+export default handler*/
