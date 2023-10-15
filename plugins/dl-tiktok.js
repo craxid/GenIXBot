@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 if (!text) throw `✳️ Masukan link Tiktok\n\n 📌 Contoh : !ttdl https://vm.tiktok.com/L3N2t1Kt02/`
-
+m.react(rwait)
 try {
 let todtod = await fetch(`https://api.arifzyn.xyz/download/tiktok?url=${text}`)
 let ttdl = await todtod.json()
