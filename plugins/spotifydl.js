@@ -51,7 +51,7 @@ export default handler*/
 
 //https://api.yanzbotz.my.id/api/downloader/spotify?url=https://open.spotify.com/track/4Jj3yew48NodVHWePPUGR7
 
-import fetch 'node-fetch')
+import fetch 'node-fetch'
 
 let handler = async (m, { conn, command, usedPrefix, text }) => {
   if (!text) throw `Ketik ${usedPrefix + command} judul lagu dan penyanyinya 
