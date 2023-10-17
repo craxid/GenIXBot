@@ -11,7 +11,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   if (!age) throw '✳️ Umur tidak boleh kosong'
   if (name.length >= 30) throw '✳️ Umur terlalu tua' 
   age = parseInt(age)
-  if (age > 100) throw '👴🏻 Sepuh main bot 🙏'
+  if (age > 80) throw '👴🏻 Umur lu ketuaan'
   if (age < 5) throw '🚼  Ngapain dek main bot? mending nenen sono '
   user.name = name.trim()
   user.age = age
