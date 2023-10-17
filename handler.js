@@ -476,7 +476,7 @@ export async function participantsUpdate({ id, participants, action }) {
     let text = ''
     switch (action) {
         
-case 'add':
+/*case 'add':
 case 'remove':
 if (chat.welcome) {
 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
@@ -512,44 +512,35 @@ bg: 'https://i.imgur.com/klTSO3d.jpg'
 this.sendFile(id, action === 'add' ? wel : lea, pp, 'Gambar.jpg', text, null, false, { mentions: [user] })
                         /*this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [
                              [(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : 'khajs')], 
-                             [(action == 'add' ? '⏍ INFO' : 'ッ'), (action == 'add' ? '/info' : ' ')] ], null, {mentions: [user]})*/
+                             [(action == 'add' ? '⏍ INFO' : 'ッ'), (action == 'add' ? '/info' : ' ')] ], null, {mentions: [user]})
                           
                     }
                 }
             }
-            break
-/*            
+            break*/
 case 'add':
-case 'remove':
-if (chat.welcome) {
-let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
-for (let user of participants) {
-let pp = 'https://i.ibb.co/sQTkHLD/ppkosong.png'
-let name = await this.getName(user)
-let gpname = await this.getName(id)
-let member = groupMetadata.participants.length
-pp: pp
-
-try {
-pp = await this.profilePictureUrl(user, 'image')
-} catch (e) {
-} finally {
-
-text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
-
-(chat.sBye || this.bye || conn.bye || 'Selamat tinggal, @user!')).replace('@user', await this.getName(user))
-
-//https://api.azz.biz.id/api/welcome?name=${name}&gcname=Miftah%20Botz&member=${member}&pp=${pp}&bg=https://minimalistic-wallpaper.demolab.com/?random&key=global
-
-let wel = API(`https://api.azz.biz.id/api/welcome?name=${name}&gcname=${gpname}&member=${member}&pp=${pp}&bg=https://i.ibb.co/8B6Q84n/LTqHsfYS.jpg&key=global`)
-
-let lea = API(`https://api.azz.biz.id/api/welcome?name=${name}&gcname=${gpname}&member=${member}&pp=${pp}&bg=https://i.ibb.co/8B6Q84n/LTqHsfYS.jpg&key=global`)
-
-this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
+            case 'remove':
+                if (chat.welcome) {
+                    let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
+                    for (let user of participants) {
+                        let pp = 'https://i.ibb.co/sQTkHLD/ppkosong.png'
+                        let name = await this.getName(user)
+                        let gpname = await this.getName(id)
+                        let member = groupMetadata.participants.length
+                        pp: pp
+                        try {
+                            pp = await this.profilePictureUrl(user, 'image')
+                        } catch (e) {
+                        } finally {
+                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
+                                (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
+                            let wel = API(`https://api.lolhuman.xyz/api/base/welcome?apikey=gunturganteng&img1=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg&img2=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg&background=https://i.ibb.co/8B6Q84n/LTqHsfYS.jpg&username=${name}&member=${member}&groupname=${gpname}`)
+                            let lea = API(`https://api.lolhuman.xyz/api/base/leave?apikey=gunturganteng&img1=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg&img2=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg&background=https://i.ibb.co/8B6Q84n/LTqHsfYS.jpg&username=${name}&member=${member}&groupname=${gpname}`)
+                             this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
                         }
                     }
                 }
-                break*/
+                break         
 
         case 'promote':
             text = (chat.sPromote || this.spromote || conn.spromote || '@user diangkat jadi admin')
