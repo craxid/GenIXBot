@@ -19,7 +19,7 @@ let tegs = 'Convert Foto ke Anime\n©Mika Bot'
 await conn.sendFile(m.chat, hasil.image_data, 'toanime.jpg', tegs, m)
 }
 
-handler.help = ['toanime','toanime']
+handler.help = ['toanime','jadianime']
 handler.tags = ['ai', 'prem']
 handler.command = /^(toanime|jadianime)$/i
 handler.diamond = 3
