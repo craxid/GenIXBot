@@ -532,7 +532,7 @@ try {
 pp = await this.profilePictureUrl(user, 'image')
 } catch (e) {
 } finally {
-text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
+text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
 
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
 
@@ -544,7 +544,7 @@ this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { m
         }
     }
 }
-                break         
+break         
 
         case 'promote':
             text = (chat.sPromote || this.spromote || conn.spromote || '@user diangkat jadi admin')
