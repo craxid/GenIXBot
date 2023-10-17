@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
     let json = conn.asahotak[id][1]
     let ans = json.jawaban
     let clue = ans.replace(/[bcdfghjklmnpqrstvwxyz]/g, '_')
-    m.reply('```' + clue + '```')
+    m.reply('```' + clue + '```\nBalas soalnya, bukan pesan ini')
 }
 handler.command = /^ao$/i
 handler.diamond = true
