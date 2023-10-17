@@ -536,9 +536,9 @@ text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'We
 
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
 
-let wel = API(`https://api.lolhuman.xyz/api/base/welcome?apikey=DannKristii&img1=${pp}&img2=${pp}&background=https://i.ibb.co/8B6Q84n/LTqHsfYS.jpg&username=${name}&member=${member}&groupname=${gpname}`)
+let wel = API(`https://api.lolhuman.xyz/api/base/welcome?apikey=DannKristii&img1=${pp}&img2=${pp}&background=https://telegra.ph/file/a9a78b769836fe10fa62d.jpg&username=${name}&member=${member}&groupname=${gpname}`)
 
-let lea = API(`https://api.lolhuman.xyz/api/base/leave?apikey=DannKristii&img1=${pp}&img2=${pp}&background=https://i.ibb.co/8B6Q84n/LTqHsfYS.jpg&username=${name}&member=${member}&groupname=${gpname}`)
+let lea = API(`https://api.lolhuman.xyz/api/base/leave?apikey=DannKristii&img1=${pp}&img2=${pp}&background=https://telegra.ph/file/a9a78b769836fe10fa62d.jpg&username=${name}&member=${member}&groupname=${gpname}`)
 
 this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
         }
