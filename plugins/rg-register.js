@@ -9,7 +9,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   let [_, name, splitter, age] = text.match(Reg)
   if (!name) throw '✳️ Nama tidak boleh kosong'
   if (!age) throw '✳️ Umur tidak boleh kosong'
-  if (name.length >= 30) throw '✳️ Umur terlalu tua' 
+  if (name.length >= 80) throw '✳️ Umur terlalu tua' 
   age = parseInt(age)
   if (age > 80) throw '👴🏻 Umur lu ketuaan'
   if (age < 5) throw '🚼  Ngapain dek main bot? mending nenen sono '
