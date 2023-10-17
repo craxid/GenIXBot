@@ -20,7 +20,7 @@ let fuk = {
     },
     "message": {
       "contactMessage": {
-        "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Mika;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${username}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+        "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Mika;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
       }
     },
     "participant": "0@s.whatsapp.net"
@@ -45,7 +45,7 @@ renderLargerThumbnail: true
 //await conn.sendMessage(m.chat, { text: mika }, { quoted: fuk })
 
 }
-handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p|help)$/i
+handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
 handler.command = new RegExp
 
 export default handler
