@@ -45,7 +45,7 @@ renderLargerThumbnail: true
 //await conn.sendMessage(m.chat, { text: mika }, { quoted: fuk })
 
 }
-handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p)$/i
+handler.customPrefix = /^(bot|bot?|bott|mika|oy|bang|banh|p|help)$/i
 handler.command = new RegExp
 
 export default handler
