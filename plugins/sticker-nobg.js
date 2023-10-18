@@ -1,37 +1,24 @@
+
+import fetch from 'node-fetch'
 import uploadImage from '../lib/uploadImage.js'
-import { sticker } from '../lib/sticker.js'
-import MessageType from '@whiskeysockets/baileys'
-
-let handler = async (m, { conn, usedPrefix, text, command }) => {
-    
-//let effect = text.trim().toLowerCase()
-/*if (!effects.includes(effect)) throw*/ `
-
-📌 *Contoh:* 
-${usedPrefix + command} (gambar)
-`.trim()
+import { sticker } from '.lib/sticker.js'
+let handler = async (m, { conn, usedPrefix, command, text }) => {
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+let name = await conn.getName(who)
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
-if (!mime) throw '✳️ Balas sebuah gambar'
-if (!/image\/(jpe?g|png)/.test(mime)) throw `✳️ Format tidak didukung`
-let img = await q.download()
-let url = await uploadImage(img)
-let apiUrl = await (await fetch(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`))
-try {
-    
-let stiker = await sticker(null, apiUrl, global.packname, global.author)
+if (!mime) throw 'Kirim/Reply Gambar dengan caption .removebg'
+m.reply(wait)
+let media = await q.download()
+let url = await uploadImage(media)
+let hasil = await (await conn.getFile(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`))
 
-conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
-
-} catch (e) {
-    
-m.reply('Error saat mengkonversi stiker, file terlalu besar')
-
-await conn.sendFile(m.chat, apiUrl, 'snobg.webp', '', null, m)
-}}
-handler.help = ['snobg']
-handler.tags = ['sticker']
-handler.command = ['snobg', 'sbg', 'stickernobg'] 
-handler.diamond = true
+await conn.sendFile(m.chat, hasil.data, 'img.jpg', 'Background Remover\n© Mika Bot', m)
+	
+}
+handler.help = ['removebg']
+handler.tags = ['img']
+handler.command = /^(removebg|nobg)$/i
+handler.diamond = 3
 
 export default handler
