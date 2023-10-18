@@ -14,7 +14,7 @@ if (m.isBaileys && m.fromMe)
 
 let nama = conn.getName(m.sender) 
        
-let cetbot = await fetch(`https://api.azz.biz.id/api/gpt?q=${m.text}`)
+let cetbot = await fetch(`https://api.azz.biz.id/api/gpt?q=${m.text}&key=global`)
         
         let res = await cetbot.json()
         
