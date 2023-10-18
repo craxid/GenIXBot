@@ -75,6 +75,8 @@ export async function handler(chatUpdate) {
                     user.autolevelup = true
                 if (!('chatbot' in user))
                     user.chatbot = false
+                if (!('autoai' in user))
+                    user.autoai = false
             } else
                 global.db.data.users[m.sender] = {
                     exp: 0,
@@ -92,6 +94,7 @@ export async function handler(chatUpdate) {
                     role: 'Noob',
                     autolevelup: true,
                     chatbot: false,
+                    autoai:
                 }
             let chat = global.db.data.chats[m.chat]
             if (typeof chat !== 'object')
