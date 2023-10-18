@@ -14,7 +14,7 @@ if (m.isBaileys && m.fromMe)
 
 let nama = conn.getName(m.sender) 
        
-let cetbot = await fetch(`https://tools.reversery.com/ai/ai.php?query=${m.text}`)
+let cetbot = await fetch(`https://tools.revesery.com/ai/ai.php?query=${m.text}`)
         
         let res = await cetbot.json()
         
