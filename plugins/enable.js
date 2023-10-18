@@ -199,7 +199,6 @@ const listMessage = {
 
 ┌─⊷ *ADMIN*
 ▢ welcome
-▢ autoread
 ▢ antilink
 ▢ detect 
 ▢ document
@@ -208,8 +207,10 @@ const listMessage = {
 ┌─⊷ *USERS*
 ▢ autolevelup
 ▢ chatbot 
+▢ autoai
 └─────────────
 ┌─⊷ *OWNER*
+▢ autoread
 ▢ public
 ▢ solopv
 ▢ sologp
