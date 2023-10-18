@@ -18,9 +18,9 @@ let cetbot = await fetch(`https://tools.revesery.com/ai/ai.php?query=${m.text}`)
         
         let res = await cetbot.json()
         
-//await m.reply(res.result)
+await m.reply(res.result)
 
-conn.sendMessage(m.chat, {text: res.result,
+/*conn.sendMessage(m.chat, {text: res.result,
 contextInfo: {
 forwardingScore: 9999,
 isForwarded: true,
@@ -32,6 +32,6 @@ isForwarded: true,
         "thumbnailUrl": global.ppmika,
         "renderLargerThumbnail": false
     }}}, 
-    {quoted: m})
+    {quoted: m})*/
     
 }
