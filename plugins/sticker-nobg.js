@@ -13,7 +13,7 @@ let media = await q.download()
 let url = await uploadImage(media)
 let hasil = await (await conn.getFile(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`))
 
-let stiker = await sticker(null, apiUrl, global.packname, global.author)
+let stiker = await sticker(null, hasil, global.packname, global.author)
 conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
 await conn.sendFile(m.chat, hasil.data, 'img.webp', 'Sticker No bg\n© Mika Bot', m)
 	
