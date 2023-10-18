@@ -9,7 +9,7 @@ if (m.isBaileys && m.fromMe)
     
     let user = global.db.data.users[m.sender]
     
-      if (!user.chatbot)
+      if (!user.autoai)
         return !0
 
 let nama = conn.getName(m.sender) 
