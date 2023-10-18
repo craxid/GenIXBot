@@ -18,10 +18,15 @@ let img = await q.download()
 let url = await uploadImage(img)
 let apiUrl = conn.getFile(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}`)
 try {
+    
 let stiker = await sticker(null, apiUrl, global.packname, global.author)
+
 conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
+
 } catch (e) {
+    
 m.reply('Error saat mengkonversi stiker, file terlalu besar')
+
 await conn.sendFile(m.chat, apiUrl, 'snobg.webp', '', null, m)
 }}
 handler.help = ['snobg']
