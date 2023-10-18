@@ -1,7 +1,6 @@
 import uploadImage from '../lib/uploadImage.js'
 import { sticker } from '../lib/sticker.js'
 import MessageType from '@whiskeysockets/baileys'
-const effects = ['jail', 'gay', 'glass', 'wasted' ,'triggered', 'lolice', 'simpcard', 'horny']
 
 let handler = async (m, { conn, usedPrefix, text, command }) => {
     
@@ -17,7 +16,7 @@ if (!mime) throw '✳️ Balas sebuah gambar'
 if (!/image\/(jpe?g|png)/.test(mime)) throw `✳️ Format tidak didukung`
 let img = await q.download()
 let url = await uploadImage(img)
-let apiUrl = conn.getFile(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${encodeURIComponent(url)}`, {
+let apiUrl = fetch(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${encodeURIComponent(url)}`, {
 avatar: url
 })
 try {
