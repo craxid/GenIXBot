@@ -8,5 +8,5 @@ let handler = async (m, { conn }) => {
     conn.reply(m.chat, '```' + clue + '```\nBalas soalnya, bukan pesan ini', conn.susunkata[id][0])
 }
 handler.command = /^suska$/i
-handler.limit = true
+handler.diamond = true
 export default handler
