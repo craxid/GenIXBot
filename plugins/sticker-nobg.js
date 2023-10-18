@@ -1,7 +1,7 @@
 
 import fetch from 'node-fetch'
 import uploadImage from '../lib/uploadImage.js'
-import { sticker } from '.lib/sticker.js'
+import { sticker } from '../lib/sticker.js'
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let name = await conn.getName(who)
@@ -13,7 +13,7 @@ let media = await q.download()
 let url = await uploadImage(media)
 let hasil = await (await conn.getFile(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`))
 
-await conn.sendFile(m.chat, hasil.data, 'img.jpg', 'Background Remover\n© Mika Bot', m)
+await conn.sendFile(m.chat, hasil.data, 'img.webp', 'S\n© Mika Bot', m)
 	
 }
 handler.help = ['removebg']
