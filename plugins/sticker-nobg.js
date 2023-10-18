@@ -12,7 +12,7 @@ if (!mime) throw 'Kirim/Reply Gambar dengan caption .snobg'
 m.reply(wait)
 let media = await q.download()
 let url = await uploadImage(media)
-let hasil = await conn.getFile(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`)
+let hasil = await (await conn.getFile(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`))
 
 try {
 let stiker = await sticker(null, hasil, global.packname, global.author)
