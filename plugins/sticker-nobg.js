@@ -13,12 +13,12 @@ let media = await q.download()
 let url = await uploadImage(media)
 let hasil = await (await conn.getFile(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`))
 
-await conn.sendFile(m.chat, hasil.data, 'img.webp', 'S\n© Mika Bot', m)
+await conn.sendFile(m.chat, hasil.data, 'img.webp', 'Sticker No bg\n© Mika Bot', m)
 	
 }
-handler.help = ['removebg']
+handler.help = ['snobg']
 handler.tags = ['img']
-handler.command = /^(removebg|nobg)$/i
-handler.diamond = 3
+handler.command = /^(snobg|stickernobg)$/i
+handler.diamond = true
 
 export default handler
