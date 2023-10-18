@@ -19,7 +19,7 @@ let stiker = await sticker(null, hasil, global.packname, global.author)
 conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
 } catch (e) {
 m.reply('Error saat mengkonversi stiker, file terlalu besar')
-await conn.sendFile(m.chat, hasil, 'snobg.webp', null, m)
+await conn.sendFile(m.chat, hasil, 'snobg.webp', '', null, m)
 }
 	
 }
