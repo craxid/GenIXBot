@@ -135,7 +135,7 @@ if (!opts['test']) {
 if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
 
 /* Clear */
-/*async function clearTmp() {
+async function clearTmp() {
   const tmp = [tmpdir(), join(__dirname, './tmp')]
   const filename = []
   tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
@@ -150,8 +150,8 @@ if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
 setInterval(async () => {
 	var a = await clearTmp()
 	console.log(chalk.cyan(`✅  Auto clear  | menghapus folder tmp setiap 3 menit`))
-}, 180000) //3 muntos
-*/
+}, 180000) //3 menit
+
 
 async function connectionUpdate(update) {
   const {connection, lastDisconnect, isNewLogin} = update;
