@@ -33,6 +33,5 @@ isForwarded: true,
         "renderLargerThumbnail": false
     }}}, 
     {quoted: m})*/
-    https://api.azz.biz.id/api/gpt?q=
     handler.diamond = true
 }
