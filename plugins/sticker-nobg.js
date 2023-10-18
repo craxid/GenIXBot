@@ -12,14 +12,14 @@ if (!mime) throw 'Kirim/Reply Gambar dengan caption .snobg'
 m.reply(wait)
 let media = await q.download()
 let url = await uploadImage(media)
-let hasil = await fetch(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`)
+let hasil = await ( await getFile(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`))
 
 try {
 let stiker = await sticker(null, hasil, global.packname, global.author)
 conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
 } catch (e) {
 m.reply('Error saat mengkonversi stiker, file terlalu besar')
-await conn.sendFile(m.chat, hasil, 'smaker.png', null, m)
+await conn.sendFile(m.chat, hasil, 'snobg.webp', null, m)
 }
 	
 }
