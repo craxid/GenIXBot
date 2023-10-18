@@ -14,7 +14,7 @@ if (m.isBaileys && m.fromMe)
 
 let nama = conn.getName(m.sender) 
        
-let cetbot = await fetch(`https://tools.revesery.com/ai/ai.php?query=${m.text}`)
+let cetbot = await fetch(`https://api.azz.biz.id/api/gpt?q=${m.text}`)
         
         let res = await cetbot.json()
         
@@ -33,5 +33,6 @@ isForwarded: true,
         "renderLargerThumbnail": false
     }}}, 
     {quoted: m})*/
-    
+    https://api.azz.biz.id/api/gpt?q=
+    handler.diamond = true
 }
