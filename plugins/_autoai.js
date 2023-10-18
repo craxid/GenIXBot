@@ -33,5 +33,4 @@ isForwarded: true,
         "renderLargerThumbnail": false
     }}}, 
     {quoted: m})*/
-    handler.diamond = true
 }
