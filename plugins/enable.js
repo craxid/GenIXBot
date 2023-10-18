@@ -143,6 +143,11 @@ const listMessage = {
       isUser = true
       user.chatbot = isEnable
      break
+
+     case 'autoai':
+      isUser = true
+      user.autoai = isEnable
+     break
      
     case 'restrict':
     case 'restringir':
