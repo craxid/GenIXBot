@@ -16,7 +16,7 @@ if (!mime) throw '✳️ Balas sebuah gambar'
 if (!/image\/(jpe?g|png)/.test(mime)) throw `✳️ Format tidak didukung`
 let img = await q.download()
 let url = await uploadImage(img)
-let apiUrl = await (await conn.getFile(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`))
+let apiUrl = await (await fetch(`https://api.zahwazein.xyz/convert/sticker-nobg?url=${url}&apikey=zenzkey_f59c1aacf2`))
 try {
     
 let stiker = await sticker(null, apiUrl, global.packname, global.author)
