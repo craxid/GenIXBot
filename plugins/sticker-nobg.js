@@ -20,7 +20,7 @@ conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
 } catch (e) {
 m.reply('Error saat mengkonversi stiker, file terlalu besar')
 await conn.sendFile(m.chat, hasil, 'smaker.png', null, m)
-}}
+}
 	
 }
 handler.help = ['snobg']
