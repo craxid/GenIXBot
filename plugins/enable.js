@@ -12,6 +12,7 @@ const sections = [
 	{title: "🔗 | Antilink", rowId: `${usedPrefix + command} antilink`},
     {title: "🚫 | Antidelete", rowId: `${usedPrefix + command} antidelete`},
 	{title: "⏏️ | Autolevelup", rowId: `${usedPrefix + command} autolevelup`},
+	{title: "⏏️ | Autoai", rowId: `${usedPrefix + command} autoai`},
 	{title: "⏏️ | Autoread", rowId: `${usedPrefix + command} autoread`},
 	{title: "🗣️ | ChatBot", rowId: `${usedPrefix + command} chatbot`},
 	{title: "🔎 | Detect", rowId: `${usedPrefix + command} detect`},
