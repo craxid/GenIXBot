@@ -14,7 +14,7 @@ handler.before = async function (m) {
  //   await conn.modifyChat(m.chat, 'mute', -Math.floor(new Date / 1e3) * 1e3 - 1e3).catch(console.log)
     
     let dann = `Hai, ${ucapan()} *${username.replace(/@.+/, '')}* 👋
-${banned ? `Kamu telah terbanned!\nHubungi: https://wa.me/+${owner[0]}` : 'Ada yang bisa Mika bantu?\n\nKetik !help untuk membuka menu.\nKetik *!autoai* untuk mengaktifkan ChatGPT tanpa command.'}`
+${banned ? `Kamu telah terbanned!\nHubungi: https://wa.me/+${owner[0]}` : 'Ada yang bisa Mika bantu?\n\nKetik !help untuk membuka menu.\n\nKetik *!autoai* untuk mengaktifkan ChatGPT tanpa command.'}`
    
     await m.reply(dann)
     user.pc = new Date * 1
