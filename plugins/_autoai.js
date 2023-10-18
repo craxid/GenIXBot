@@ -18,7 +18,7 @@ let cetbot = await fetch(`https://api.azz.biz.id/api/gpt?q=${m.text}`)
         
         let res = await cetbot.json()
         
-await m.reply(res.result)
+await m.reply(res.respon)
 
 /*conn.sendMessage(m.chat, {text: res.result,
 contextInfo: {
@@ -33,4 +33,5 @@ isForwarded: true,
         "renderLargerThumbnail": false
     }}}, 
     {quoted: m})*/
+    handler.diamond = true
 }
