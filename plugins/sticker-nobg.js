@@ -15,7 +15,7 @@ let hasil = await (await conn.getFile(`https://api.zahwazein.xyz/convert/sticker
 
 let stiker = await sticker(null, hasil, global.packname, global.author)
 conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
-await conn.sendFile(m.chat, hasil.data, 'img.webp', 'Sticker No bg\n© Mika Bot', m)
+//await conn.sendFile(m.chat, hasil.data, 'img.webp', 'Sticker No bg\n© Mika Bot', m)
 	
 }
 handler.help = ['snobg']
