@@ -9,7 +9,7 @@ handler.all = async function (m, { isBlocked }) {
 • 14 Day / Rp 15k
 • 30 Day / Rp 25k
 
-Jika berminat hubungi: @${global.owner[0]} untuk order:)
+Jika berminat hubungi: @${global.deka} untuk order:)
 `
     this.reply(m.chat, teks, m)
     const data = global.owner.filter(([id, isCreator]) => id && isCreator)
