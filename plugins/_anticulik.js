@@ -9,6 +9,7 @@ handler.all = async function (m, { isBlocked }) {
 • 14 Day / Rp 15k
 • 30 Day / Rp 25k
 
+Kamu dapat mengundang bot kedalam grup
 Jika berminat hubungi: @${global.deka} untuk order:)
 `
     this.reply(m.chat, teks, m)
