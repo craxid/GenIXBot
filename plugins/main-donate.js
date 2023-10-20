@@ -26,7 +26,7 @@ text: don,
 contextInfo: {
 externalAdReply: {
 title: (`Donasi`),
-body: ('Dukung aku agar bot ini tetap hidup'),
+body: (''),
 mediaType: 1,
 sourceUrl: ('https://teer.id/dede_klender'),
 thumbnailUrl: imej,
