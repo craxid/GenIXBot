@@ -149,8 +149,8 @@ async function clearTmp() {
 }
 setInterval(async () => {
 	var a = await clearTmp()
-	console.log(chalk.cyan(`✅  Auto clear  | menghapus folder tmp setiap 3 menit`))
-}, 180000) //3 menit
+	console.log(chalk.cyan(`✅  Auto clear  | menghapus folder tmp setiap 1 jam`))
+}, 3600000) //1 jam
 
 
 async function connectionUpdate(update) {
