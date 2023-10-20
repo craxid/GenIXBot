@@ -1,7 +1,7 @@
 
 import fetch from 'node-fetch'
 
-let handler = async (m, { conn, args }) => {
+let handler = async (m, { conn, args, text }) => {
    let response = args.join(' ').split('|')
   if (!args[0]) throw `Masukkan Text\nContoh: ${usedPrefix + command} NIK|Nama|Tempat/Tanggal Lahir|L/P|Gol. Darah|Alamat|rtrw|Kelurahan/Desa|Kecamatan|Agama|Status|Pekerjaan|WNI/WNA?|Masa Berlaku|Provinsi|Kabupaten`
   
