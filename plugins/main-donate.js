@@ -26,8 +26,7 @@ contextInfo: {
 externalAdReply: {
 title: (`Donasi`),
 body: ('Dukung aku agar bot ini tetap hidup'),
-thumbnailUrl: ,
-sourceUrl: global.dygp,
+thumbnailUrl: 'https://teer.id/dede_klender',
 mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: false
