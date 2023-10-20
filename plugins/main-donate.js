@@ -26,9 +26,9 @@ contextInfo: {
 externalAdReply: {
 title: (`Donasi`),
 body: ('Dukung aku agar bot ini tetap hidup'),
+thumbnailUrl: ${img},
 sourceUrl: ('https://teer.id/dede_klender'),
 mediaType: 3,
-thumbnailUrl: img,
 thumbnailHeight: 640,
 thumbnailWidth: 640,
 showAdAttribution: true,
