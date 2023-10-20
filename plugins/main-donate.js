@@ -4,8 +4,6 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 //${global.htjava} Scan QR diatas menggunakan aplikasi bank / e-wallet untuk mendukung Bot
 
     let don = `
-${global.htjava} Dukunganmu sangat berarti bagi kelangsungan hiduo
-
 ${global.htki} *${global.packname}* ${global.htka}
 ${global.gy} Dana:  085892734104
 ${global.gy} Pulsa: 083155936234 ( AXIS )
@@ -17,7 +15,7 @@ ${global.htki} *Website* ${global.htka}
 ${global.gy} Trakteer: https://teer.id/dede_klender
 ${global.sb}
 
-Terima kasih atas dukungannya!
+${global.htjava} Dukunganmu sangat berarti bagi kelangsungan hiduo bot
 `
 let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 let imej = 'https://cdn.trakteer.id/images/embed/trbtn-red-9.png'
