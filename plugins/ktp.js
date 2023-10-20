@@ -9,7 +9,7 @@ let handler = async (m, { conn, args }) => {
   
   m.reply(wait)
   
-  let res = await fetch(`https://oni-chan.my.id/api/py-chan/ktpmaker?nik=${encodeURIComponent(0)}&nama=${encodeURIComponent(1)}&ttl=${encodeURIComponent(2)}&jk=${encodeURIComponent(3)}&gd=${encodeURIComponent(4)}&almt=${encodeURIComponent(5)}&rtw=${encodeURIComponent(6)}&kel=${encodeURIComponent(7)}&kc=${encodeURIComponent(8)}&agm=${encodeURIComponent(9)}&st=${encodeURIComponent(10)}&krj=${encodeURIComponent(11)}&ngr=${encodeURIComponent(12)}&blk=${encodeURIComponent(13)}&prv=${encodeURIComponent(14)}&kab=${encodeURIComponent(15)}&picturl=https://telegra.ph/file/13d20b5f39f5e4cf1aaf2.jpg&apikey=ui5F-4yJ3-Fo9s`)
+  let res = await fetch(`https://oni-chan.my.id/api/py-chan/ktpmaker?nik=${response[0]}&nama=${response[1]}&ttl=${response[2]}&jk=${response[3]}&gd=${response[4]}&almt=${response[5]}&rtw=${response[6]}&kel=${response[7]}&kc=${response[8]}&agm=${response[9]}&st=${response[10]}&krj=${response[11]}&ngr=${response[12]}&blk=${response[13]}&prv=${response[14]}&kab=${response[15]}&picturl=https://telegra.ph/file/13d20b5f39f5e4cf1aaf2.jpg&apikey=ui5F-4yJ3-Fo9s`)
   
     conn.sendFile(m.chat, res, 'ktp.jpg', `Nih kak\n© Mika Bot`, m)
 }
