@@ -33,7 +33,7 @@ thumbnailHeight: 640,
 thumbnailWidth: 640,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}}
+}}, {quoted: m}})
 
 }
 handler.help = ['donate']
