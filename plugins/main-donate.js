@@ -26,14 +26,15 @@ contextInfo: {
 externalAdReply: {
 title: (`Donasi`),
 body: ('Dukung aku agar bot ini tetap hidup'),
-mediaType: 2,
+mediaType: 1,
 sourceUrl: ('https://teer.id/dede_klender'),
 thumbnailUrl: img,
 thumbnailHeight: 640,
 thumbnailwidth: 640,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}}, {quoted: m})
+}}}, {quoted: m}thumbnailHeight: 640,
+thumbnailwidth: 640,)
 
 }
 handler.help = ['donate']
