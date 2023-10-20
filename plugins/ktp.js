@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args }) => {
    let response = args.join(' ').split('|')
-  if (!args[0]) throw 'Masukkan Text\nContoh: !ktp NIK|Nama|Tempat/Tanggal Lahir|L/P||02/02|Kelurahan Suka makmur|Kecamatan Suka Maju|Islam|Belum Kawin|Mahasiswa|Indonesia|Seumur Hidup|Provinsi Suka Mundur|Kabupaten Sukasuka'
+  if (!args[0]) throw 'Masukkan Text\nContoh: !ktp NIK|Nama|Tempat/Tanggal Lahir|L/P|Gol. Darah|Alamat||Kecamatan Suka Maju|Islam|Belum Kawin|Mahasiswa|Indonesia|Seumur Hidup|Provinsi Suka Mundur|Kabupaten Sukasuka'
   
   m.reply(wait)
   
