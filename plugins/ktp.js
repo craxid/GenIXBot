@@ -3,7 +3,9 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, args, text, command }) => {
    let response = args.join(' ').split('|')
-  if (!args[0]) throw `Masukkan Text\n\nContoh: ${usedPrefix + command} NIK|Nama|Tempat/Tanggal Lahir|Jenis Kelamin|Gol. Darah|Alamat|rtrw|Kelurahan/Desa|Kecamatan|Agama|Status|Pekerjaan|WNI/WNA?|Masa Berlaku|Provinsi|Kota|link foto`
+  if (!args[0]) throw `Masukkan Text\n\nContoh: ${usedPrefix + command} NIK|Nama|Tempat/Tanggal Lahir|Jenis Kelamin|Gol. Darah|Alamat|rtrw|Kelurahan/Desa|Kecamatan|Agama|Status Perkawinan|Pekerjaan|WNI/WNA?|Masa Berlaku|Provinsi|Kota|link foto
+  
+Contoh2: .ktp 085892734104|Dede Karyawan|Jakarta 1-2-1234|Laki-laki|A|Jalan an|001/02|Suka Maju|Suka Mundur|Hindoe|Kawin|Rebahan|WNI|Seumur Hidup|DKI Jakarta|Jakarta Timur|https://telegra.ph/file/a8edd9771fbf84239b471.png`
   
   if (!text.includes('|')) throw  `✳️ Pisahkan dengan *|* \n\n📌 Contoh : \n\n*${usedPrefix + command}* NIK|Nama|Tempat/Tanggal Lahir|Jenis Kelamin|Gol. Darah|Alamat|rt/rw|Kelurahan/Desa|Kecamatan|Agama|Status|Pekerjaan|WNI/WNA?|Masa Berlaku|Provinsi|Kota|link foto`
   
