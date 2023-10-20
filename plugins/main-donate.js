@@ -1,9 +1,9 @@
 
 let handler = async(m, { conn, usedPrefix, command }) => {
 
-    let don = `
-${global.htjava} Scan QR diatas menggunakan aplikasi bank / e-wallet untuk mendukung Bot
+//${global.htjava} Scan QR diatas menggunakan aplikasi bank / e-wallet untuk mendukung Bot
 
+    let don = `
 ${global.htki} *${global.packname}* ${global.htka}
 ${global.gy} Dana:  085892734104
 ${global.gy} Pulsa: 083155936234 ( AXIS )
@@ -30,7 +30,7 @@ mediaType: 1,
 sourceUrl: ('https://teer.id/dede_klender'),
 thumbnailUrl: img,
 showAdAttribution: true,
-renderLargerThumbnail: true
+renderLargerThumbnail: false
 }}}, {quoted: m})
 
 }
