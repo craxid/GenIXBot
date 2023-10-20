@@ -18,6 +18,7 @@ ${global.sb}
 Terima kasih atas dukungannya!
 `
 let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
+let imej = 'https://cdn.trakteer.id/images/embed/trbtn-red-9.png'
 //conn.sendFile(m.chat, img, 'img.jpg', don, m)
 
 conn.sendMessage(m.chat, {
@@ -28,7 +29,7 @@ title: (`Donasi`),
 body: ('Dukung aku agar bot ini tetap hidup'),
 mediaType: 1,
 sourceUrl: ('https://teer.id/dede_klender'),
-thumbnailUrl: img,
+thumbnailUrl: imej,
 showAdAttribution: true,
 renderLargerThumbnail: false
 }}}, {quoted: m})
