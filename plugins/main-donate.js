@@ -15,12 +15,12 @@ ${global.htki} *Website* ${global.htka}
 ${global.gy} Trakteer: https://teer.id/dede_klender
 ${global.sb}
 
-Terima kasih sudah membantu !
+Terima kasih atas dukungannya!
 `
 let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 //conn.sendFile(m.chat, img, 'img.jpg', don, m)
 
-/*conn.sendMessage(m.chat, {
+conn.sendMessage(m.chat, {
 text: don,
 contextInfo: {
 externalAdReply: {
@@ -31,7 +31,7 @@ sourceUrl: global.dygp,
 mediaType: 3,
 showAdAttribution: true,
 renderLargerThumbnail: false
-}}}*/
+}}}
 
 }
 handler.help = ['donate']
