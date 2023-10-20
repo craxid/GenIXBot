@@ -31,7 +31,7 @@ sourceUrl: ('https://teer.id/dede_klender'),
 thumbnailUrl: img,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}, {quoted: m}})
+}}}, {quoted: m})
 
 }
 handler.help = ['donate']
