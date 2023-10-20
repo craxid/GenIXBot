@@ -3,9 +3,9 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, args, text, command }) => {
    let response = args.join(' ').split('|')
-  if (!args[0]) throw `Masukkan Text\nContoh: ${usedPrefix + command} NIK|Nama|Tempat/Tanggal Lahir|Jenis Kelamin|Gol. Darah|Alamat|rtrw|Kelurahan/Desa|Kecamatan|Agama|Status|Pekerjaan|WNI/WNA?|Masa Berlaku|Provinsi|Kota|link foto`
+  if (!args[0]) throw `Masukkan Text\n\nContoh: ${usedPrefix + command} NIK|Nama|Tempat/Tanggal Lahir|Jenis Kelamin|Gol. Darah|Alamat|rtrw|Kelurahan/Desa|Kecamatan|Agama|Status|Pekerjaan|WNI/WNA?|Masa Berlaku|Provinsi|Kota|link foto`
   
-  if (!text.includes('|')) throw  `✳️ Pisahkan dengan *|* \n\n📌 Contoh : \n*${usedPrefix + command}* NIK|Nama|Tempat/Tanggal Lahir|Jenis Kelamin|Gol. Darah|Alamat|rt/rw|Kelurahan/Desa|Kecamatan|Agama|Status|Pekerjaan|WNI/WNA?|Masa Berlaku|Provinsi|Kota|link foto`
+  if (!text.includes('|')) throw  `✳️ Pisahkan dengan *|* \n\n📌 Contoh : \n\n*${usedPrefix + command}* NIK|Nama|Tempat/Tanggal Lahir|Jenis Kelamin|Gol. Darah|Alamat|rt/rw|Kelurahan/Desa|Kecamatan|Agama|Status|Pekerjaan|WNI/WNA?|Masa Berlaku|Provinsi|Kota|link foto`
   
   m.reply(wait)
   
