@@ -26,9 +26,11 @@ contextInfo: {
 externalAdReply: {
 title: (`Donasi`),
 body: ('Dukung aku agar bot ini tetap hidup'),
+mediaType: 1,
 thumbnailUrl: ('https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'),
 sourceUrl: ('https://teer.id/dede_klender'),
-mediaType: 1,
+thumbnailHeight: 640,
+thumbnailWidth: 640,
 showAdAttribution: true,
 renderLargerThumbnail: false
 }}}
