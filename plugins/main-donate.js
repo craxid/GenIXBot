@@ -4,6 +4,8 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 //${global.htjava} Scan QR diatas menggunakan aplikasi bank / e-wallet untuk mendukung Bot
 
     let don = `
+${global.htjava} Dukunganmu sangat berarti bagi kelangsungan hiduo
+
 ${global.htki} *${global.packname}* ${global.htka}
 ${global.gy} Dana:  085892734104
 ${global.gy} Pulsa: 083155936234 ( AXIS )
