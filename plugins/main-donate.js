@@ -29,8 +29,10 @@ body: ('Dukung aku agar bot ini tetap hidup'),
 mediaType: 1,
 sourceUrl: ('https://teer.id/dede_klender'),
 thumbnailUrl: img,
+thumbnailHeight: 640,
+thumbnailWidth: 640,
 showAdAttribution: true,
-renderLargerThumbnail: false
+renderLargerThumbnail: true
 }}, {quoted: m}})
 
 }
