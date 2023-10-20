@@ -5,8 +5,6 @@ let handler = async (m, { conn, args, text }) => {
    let response = args.join(' ').split('|')
   if (!args[0]) throw `Masukkan Text\nContoh: ${usedPrefix + command} NIK|Nama|Tempat/Tanggal Lahir|L/P|Gol. Darah|Alamat|rtrw|Kelurahan/Desa|Kecamatan|Agama|Status|Pekerjaan|WNI/WNA?|Masa Berlaku|Provinsi|Kabupaten`
   
-  if (!text.includes('|')) throw  `✳️ Pisahkan dengan *|* \n\n📌 Contoh : \n*${usedPrefix + command}* NIK|Nama|Tempat/Tanggal Lahir|L/P|Gol. Darah|Alamat|rtrw|Kelurahan/Desa|Kecamatan|Agama|Status|Pekerjaan|WNI/WNA?|Masa Berlaku|Provinsi|Kabupaten`
-  
   m.reply(wait)
   
   let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
