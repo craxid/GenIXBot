@@ -15,7 +15,7 @@ ${global.htki} *Website* ${global.htka}
 ${global.gy} Trakteer: https://teer.id/dede_klender
 ${global.sb}
 
-${global.htjava} Dukunganmu sangat berarti bagi kelangsungan hiduo bot
+${global.htjava} Dukunganmu sangat berarti bagi kelangsungan hidup bot
 `
 let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 let imej = 'https://cdn.trakteer.id/images/embed/trbtn-red-9.png'
