@@ -28,7 +28,8 @@ title: (`Donasi`),
 body: ('Dukung aku agar bot ini tetap hidup'),
 sourceUrl: ('https://teer.id/dede_klender'),
 mediaType: 3,
-thumbnailUrl: global.ppmika,
+thumbnailUrl: img,
+thymbnailHeight: 6
 showAdAttribution: true,
 renderLargerThumbnail: false
 }}}
