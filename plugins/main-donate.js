@@ -23,8 +23,6 @@ let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
 conn.sendMessage(m.chat, {
 text: don,
 contextInfo: {
-thumbnailHeight: 640,
-thumbnailWidth: 640,
 externalAdReply: {
 title: (`Donasi`),
 body: ('Dukung aku agar bot ini tetap hidup'),
