@@ -12,14 +12,13 @@ ${global.gy} Gopay: 085892734104
 ${global.sb}
 
 ${global.htki} *Website* ${global.htka}
-${global.gy} Saweria: https://saweria.co/ClanDare
 ${global.gy} Trakteer: https://teer.id/dede_klender
 ${global.sb}
 
-Terima kasih sudah membantu!
+Terima kasih sudah membantu !
 `
 let img = 'https://telegra.ph/file/77e1d9fa9c14042bcfcb4.png'
-conn.sendFile(m.chat, img, 'img.jpg', don, m)
+//conn.sendFile(m.chat, img, 'img.jpg', don, m)
 
 /*conn.sendMessage(m.chat, {
 text: don,
