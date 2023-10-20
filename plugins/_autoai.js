@@ -18,7 +18,7 @@ let cetbot = await fetch(`https://api.azz.biz.id/api/gpt?q=${m.text}&key=global`
         
         let res = await cetbot.json()
         
-await m.reply(res.respon)
+await m.reply(res.respon.replace('Azz-ai','Mika Bot').replace('yang terdiri dari Miftah dan Riki', 'dari ZuroX Project').replace('Miftah dan Riki','ZuroX Project'))
 
 /*conn.sendMessage(m.chat, {text: res.result,
 contextInfo: {
