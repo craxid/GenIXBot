@@ -19,7 +19,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         
         await conn.reply(data.jid, tek, m)
         .then(() => {
-            m.reply('Berhasil mengirim pesan menfess!')
+            m.reply('Berhasil mengirim pesan menfess!\nApabila kamu mendapat balasan, balasannya akan dikirim kesini.')
             conn.menfess[id] = {
                 id,
                 dari: m.sender,
