@@ -13,6 +13,7 @@ Berapa banyak Kamu ingin taruhan?
     let time = users.lastslot + 10000
     if (new Date - users.lastslot < 10000) throw `⏳ Tunggu *${msToTime(time - new Date())}* agar bisa dimainkan lagi`
     if (apuesta < 100) throw '✳️ Minimal taruhan *100 XP*'
+    if (user < 18) throw m.reply(`❎ Kamu masih dibawah umur, Kamu harus berusia setidaknya 18 tahun untuk menggunakan perintah ini`) 
     if (users.exp < apuesta) {
         throw `✳️ Kamu tidak memiliki cukup *XP*`
     }
