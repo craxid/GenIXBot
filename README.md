@@ -17,6 +17,8 @@
 <h3 align="center">WHATSAPP BOT</h3>
 
 ***
+# NO LONGER MAINTAINED
+Jika ada bug/kerusakan sebaiknya memperbaikinya sendiri
 
 ### Informasi
 - Ubah nomor owner dengan nomormu di [Config](https://github.com/CraXID/GenIXBot/blob/main/config.js#L6)
