@@ -20,6 +20,9 @@
 # NO LONGER MAINTAINED
 Jika ada bug/kerusakan sebaiknya memperbaikinya sendiri.
 
+Gunakan Repo baru ini untuk tetap mendapatkan update
+[NEW REPO](https://github.com/craxid/crxbot)
+
 ### Informasi
 - Ubah nomor owner dengan nomormu di [Config](https://github.com/CraXID/GenIXBot/blob/main/config.js#L6)
 - Kamu dapat mengubah versi baileys ke versi terbaru dengan mengedit package.json [disini](https://github.com/CraXID/genixbot/blob/main/package.json#L42)
